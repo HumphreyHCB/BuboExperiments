@@ -1,0 +1,37 @@
+digraph CFG_94 {
+  rankdir=LR;
+  graph [fontsize=20, ranksep=1.5, nodesep=1.0, overlap=false, splines=true];
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  label="Bounce$Ball.bounce()";
+  labelloc=top;
+  labeljust=left;
+  b0 [label="B0\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b1 [label="B1\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b2 [label="B2\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>\nHotSpotMethod<Math.abs(int)>", fillcolor="white"];
+  b3 [label="B3\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b4 [label="B4\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>\nHotSpotMethod<Math.abs(int)>", fillcolor="white"];
+  b5 [label="B5\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b6 [label="B6\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b7 [label="B7\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b8 [label="B8\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>\nHotSpotMethod<Math.abs(int)>", fillcolor="white"];
+  b9 [label="B9\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b10 [label="B10\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>\nHotSpotMethod<Math.abs(int)>", fillcolor="white"];
+  b11 [label="B11\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b12 [label="B12\nLoop: <none>\n---\nHotSpotMethod<Bounce$Ball.bounce()>", fillcolor="white"];
+  b0 -> b1;
+  b0 -> b2;
+  b1 -> b3;
+  b2 -> b3;
+  b3 -> b4;
+  b3 -> b6;
+  b4 -> b6;
+  b5 -> b6;
+  b6 -> b9;
+  b6 -> b8;
+  b7 -> b9;
+  b8 -> b9;
+  b9 -> b10;
+  b9 -> b12;
+  b10 -> b12;
+  b11 -> b12;
+}

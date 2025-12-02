@@ -1,0 +1,899 @@
+========================================
+Benchmark : DeltaBlue
+Timestamp : 2025-11-17T14:17:28+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   DeltaBlue   500   60000 
+========================================
+Starting DeltaBlue benchmark ...
+DeltaBlue: iterations=1 runtime: 1727008us
+DeltaBlue: iterations=2 runtime: 800730us
+DeltaBlue: iterations=3 runtime: 302824us
+DeltaBlue: iterations=4 runtime: 275915us
+DeltaBlue: iterations=5 runtime: 277262us
+DeltaBlue: iterations=6 runtime: 260644us
+DeltaBlue: iterations=7 runtime: 261775us
+DeltaBlue: iterations=8 runtime: 259701us
+DeltaBlue: iterations=9 runtime: 295011us
+DeltaBlue: iterations=10 runtime: 260312us
+DeltaBlue: iterations=11 runtime: 259617us
+DeltaBlue: iterations=12 runtime: 259907us
+DeltaBlue: iterations=13 runtime: 303836us
+DeltaBlue: iterations=14 runtime: 277292us
+DeltaBlue: iterations=15 runtime: 287817us
+DeltaBlue: iterations=16 runtime: 276972us
+DeltaBlue: iterations=17 runtime: 274800us
+DeltaBlue: iterations=18 runtime: 262779us
+DeltaBlue: iterations=19 runtime: 264319us
+DeltaBlue: iterations=20 runtime: 272899us
+DeltaBlue: iterations=21 runtime: 262231us
+DeltaBlue: iterations=22 runtime: 262408us
+DeltaBlue: iterations=23 runtime: 270034us
+DeltaBlue: iterations=24 runtime: 271261us
+DeltaBlue: iterations=25 runtime: 291325us
+DeltaBlue: iterations=26 runtime: 262555us
+DeltaBlue: iterations=27 runtime: 261819us
+DeltaBlue: iterations=28 runtime: 262054us
+DeltaBlue: iterations=29 runtime: 370853us
+DeltaBlue: iterations=30 runtime: 276536us
+DeltaBlue: iterations=31 runtime: 289501us
+DeltaBlue: iterations=32 runtime: 266574us
+DeltaBlue: iterations=33 runtime: 281488us
+DeltaBlue: iterations=34 runtime: 280691us
+DeltaBlue: iterations=35 runtime: 261825us
+DeltaBlue: iterations=36 runtime: 262146us
+DeltaBlue: iterations=37 runtime: 261850us
+DeltaBlue: iterations=38 runtime: 260990us
+DeltaBlue: iterations=39 runtime: 299113us
+DeltaBlue: iterations=40 runtime: 268034us
+DeltaBlue: iterations=41 runtime: 262777us
+DeltaBlue: iterations=42 runtime: 267875us
+DeltaBlue: iterations=43 runtime: 264810us
+DeltaBlue: iterations=44 runtime: 262493us
+DeltaBlue: iterations=45 runtime: 287208us
+DeltaBlue: iterations=46 runtime: 262089us
+DeltaBlue: iterations=47 runtime: 263864us
+DeltaBlue: iterations=48 runtime: 270971us
+DeltaBlue: iterations=49 runtime: 276935us
+DeltaBlue: iterations=50 runtime: 290965us
+DeltaBlue: iterations=51 runtime: 326950us
+DeltaBlue: iterations=52 runtime: 337580us
+DeltaBlue: iterations=53 runtime: 300424us
+DeltaBlue: iterations=54 runtime: 273405us
+DeltaBlue: iterations=55 runtime: 261825us
+DeltaBlue: iterations=56 runtime: 272634us
+DeltaBlue: iterations=57 runtime: 304983us
+DeltaBlue: iterations=58 runtime: 265801us
+DeltaBlue: iterations=59 runtime: 290543us
+DeltaBlue: iterations=60 runtime: 287957us
+DeltaBlue: iterations=61 runtime: 261758us
+DeltaBlue: iterations=62 runtime: 268355us
+DeltaBlue: iterations=63 runtime: 291646us
+DeltaBlue: iterations=64 runtime: 274395us
+DeltaBlue: iterations=65 runtime: 288211us
+DeltaBlue: iterations=66 runtime: 280855us
+DeltaBlue: iterations=67 runtime: 281671us
+DeltaBlue: iterations=68 runtime: 267136us
+DeltaBlue: iterations=69 runtime: 281518us
+DeltaBlue: iterations=70 runtime: 294313us
+DeltaBlue: iterations=71 runtime: 275568us
+DeltaBlue: iterations=72 runtime: 286452us
+DeltaBlue: iterations=73 runtime: 261778us
+DeltaBlue: iterations=74 runtime: 268736us
+DeltaBlue: iterations=75 runtime: 274560us
+DeltaBlue: iterations=76 runtime: 272184us
+DeltaBlue: iterations=77 runtime: 269642us
+DeltaBlue: iterations=78 runtime: 277240us
+DeltaBlue: iterations=79 runtime: 261861us
+DeltaBlue: iterations=80 runtime: 266012us
+DeltaBlue: iterations=81 runtime: 278389us
+DeltaBlue: iterations=82 runtime: 261554us
+DeltaBlue: iterations=83 runtime: 265728us
+DeltaBlue: iterations=84 runtime: 271343us
+DeltaBlue: iterations=85 runtime: 287506us
+DeltaBlue: iterations=86 runtime: 267514us
+DeltaBlue: iterations=87 runtime: 282856us
+DeltaBlue: iterations=88 runtime: 264480us
+DeltaBlue: iterations=89 runtime: 268131us
+DeltaBlue: iterations=90 runtime: 273466us
+DeltaBlue: iterations=91 runtime: 267575us
+DeltaBlue: iterations=92 runtime: 265765us
+DeltaBlue: iterations=93 runtime: 270635us
+DeltaBlue: iterations=94 runtime: 263896us
+DeltaBlue: iterations=95 runtime: 266872us
+DeltaBlue: iterations=96 runtime: 289924us
+DeltaBlue: iterations=97 runtime: 269178us
+DeltaBlue: iterations=98 runtime: 273846us
+DeltaBlue: iterations=99 runtime: 268921us
+DeltaBlue: iterations=100 runtime: 269090us
+DeltaBlue: iterations=101 runtime: 274159us
+DeltaBlue: iterations=102 runtime: 270869us
+DeltaBlue: iterations=103 runtime: 291179us
+DeltaBlue: iterations=104 runtime: 274340us
+DeltaBlue: iterations=105 runtime: 275120us
+DeltaBlue: iterations=106 runtime: 267241us
+DeltaBlue: iterations=107 runtime: 266775us
+DeltaBlue: iterations=108 runtime: 269519us
+DeltaBlue: iterations=109 runtime: 263625us
+DeltaBlue: iterations=110 runtime: 266181us
+DeltaBlue: iterations=111 runtime: 295886us
+DeltaBlue: iterations=112 runtime: 262110us
+DeltaBlue: iterations=113 runtime: 267633us
+DeltaBlue: iterations=114 runtime: 275800us
+DeltaBlue: iterations=115 runtime: 263686us
+DeltaBlue: iterations=116 runtime: 266731us
+DeltaBlue: iterations=117 runtime: 289953us
+DeltaBlue: iterations=118 runtime: 265158us
+DeltaBlue: iterations=119 runtime: 275061us
+DeltaBlue: iterations=120 runtime: 267897us
+DeltaBlue: iterations=121 runtime: 263017us
+DeltaBlue: iterations=122 runtime: 277427us
+DeltaBlue: iterations=123 runtime: 276317us
+DeltaBlue: iterations=124 runtime: 263094us
+DeltaBlue: iterations=125 runtime: 272276us
+DeltaBlue: iterations=126 runtime: 283707us
+DeltaBlue: iterations=127 runtime: 264991us
+DeltaBlue: iterations=128 runtime: 262646us
+DeltaBlue: iterations=129 runtime: 291049us
+DeltaBlue: iterations=130 runtime: 269165us
+DeltaBlue: iterations=131 runtime: 262149us
+DeltaBlue: iterations=132 runtime: 273892us
+DeltaBlue: iterations=133 runtime: 262395us
+DeltaBlue: iterations=134 runtime: 263835us
+DeltaBlue: iterations=135 runtime: 280121us
+DeltaBlue: iterations=136 runtime: 261740us
+DeltaBlue: iterations=137 runtime: 261630us
+DeltaBlue: iterations=138 runtime: 273447us
+DeltaBlue: iterations=139 runtime: 261588us
+DeltaBlue: iterations=140 runtime: 308170us
+DeltaBlue: iterations=141 runtime: 287830us
+DeltaBlue: iterations=142 runtime: 263276us
+DeltaBlue: iterations=143 runtime: 262023us
+DeltaBlue: iterations=144 runtime: 278414us
+DeltaBlue: iterations=145 runtime: 262861us
+DeltaBlue: iterations=146 runtime: 269429us
+DeltaBlue: iterations=147 runtime: 276572us
+DeltaBlue: iterations=148 runtime: 262072us
+DeltaBlue: iterations=149 runtime: 263026us
+DeltaBlue: iterations=150 runtime: 272054us
+DeltaBlue: iterations=151 runtime: 263114us
+DeltaBlue: iterations=152 runtime: 261871us
+DeltaBlue: iterations=153 runtime: 278122us
+DeltaBlue: iterations=154 runtime: 263898us
+DeltaBlue: iterations=155 runtime: 306440us
+DeltaBlue: iterations=156 runtime: 279227us
+DeltaBlue: iterations=157 runtime: 263429us
+DeltaBlue: iterations=158 runtime: 297445us
+DeltaBlue: iterations=159 runtime: 286878us
+DeltaBlue: iterations=160 runtime: 266915us
+DeltaBlue: iterations=161 runtime: 262087us
+DeltaBlue: iterations=162 runtime: 270231us
+DeltaBlue: iterations=163 runtime: 262366us
+DeltaBlue: iterations=164 runtime: 262399us
+DeltaBlue: iterations=165 runtime: 308306us
+DeltaBlue: iterations=166 runtime: 284018us
+DeltaBlue: iterations=167 runtime: 263660us
+DeltaBlue: iterations=168 runtime: 270927us
+DeltaBlue: iterations=169 runtime: 263874us
+DeltaBlue: iterations=170 runtime: 261293us
+DeltaBlue: iterations=171 runtime: 298433us
+DeltaBlue: iterations=172 runtime: 261739us
+DeltaBlue: iterations=173 runtime: 260342us
+DeltaBlue: iterations=174 runtime: 292851us
+DeltaBlue: iterations=175 runtime: 273820us
+DeltaBlue: iterations=176 runtime: 261862us
+DeltaBlue: iterations=177 runtime: 291231us
+DeltaBlue: iterations=178 runtime: 278369us
+DeltaBlue: iterations=179 runtime: 261326us
+DeltaBlue: iterations=180 runtime: 273544us
+DeltaBlue: iterations=181 runtime: 259991us
+DeltaBlue: iterations=182 runtime: 281995us
+DeltaBlue: iterations=183 runtime: 287247us
+DeltaBlue: iterations=184 runtime: 285720us
+DeltaBlue: iterations=185 runtime: 334934us
+DeltaBlue: iterations=186 runtime: 324220us
+DeltaBlue: iterations=187 runtime: 298976us
+DeltaBlue: iterations=188 runtime: 267191us
+DeltaBlue: iterations=189 runtime: 295551us
+DeltaBlue: iterations=190 runtime: 292375us
+DeltaBlue: iterations=191 runtime: 268507us
+DeltaBlue: iterations=192 runtime: 276722us
+DeltaBlue: iterations=193 runtime: 274490us
+DeltaBlue: iterations=194 runtime: 291133us
+DeltaBlue: iterations=195 runtime: 283230us
+DeltaBlue: iterations=196 runtime: 266275us
+DeltaBlue: iterations=197 runtime: 271669us
+DeltaBlue: iterations=198 runtime: 274796us
+DeltaBlue: iterations=199 runtime: 260148us
+DeltaBlue: iterations=200 runtime: 268906us
+DeltaBlue: iterations=201 runtime: 291242us
+DeltaBlue: iterations=202 runtime: 272938us
+DeltaBlue: iterations=203 runtime: 351461us
+DeltaBlue: iterations=204 runtime: 347606us
+DeltaBlue: iterations=205 runtime: 272707us
+DeltaBlue: iterations=206 runtime: 262605us
+DeltaBlue: iterations=207 runtime: 287708us
+DeltaBlue: iterations=208 runtime: 259961us
+DeltaBlue: iterations=209 runtime: 261790us
+DeltaBlue: iterations=210 runtime: 280995us
+DeltaBlue: iterations=211 runtime: 273029us
+DeltaBlue: iterations=212 runtime: 284501us
+DeltaBlue: iterations=213 runtime: 270382us
+DeltaBlue: iterations=214 runtime: 261661us
+DeltaBlue: iterations=215 runtime: 261619us
+DeltaBlue: iterations=216 runtime: 279916us
+DeltaBlue: iterations=217 runtime: 259618us
+DeltaBlue: iterations=218 runtime: 260580us
+DeltaBlue: iterations=219 runtime: 276023us
+DeltaBlue: iterations=220 runtime: 263521us
+DeltaBlue: iterations=221 runtime: 322888us
+DeltaBlue: iterations=222 runtime: 333922us
+DeltaBlue: iterations=223 runtime: 276404us
+DeltaBlue: iterations=224 runtime: 263035us
+DeltaBlue: iterations=225 runtime: 282924us
+DeltaBlue: iterations=226 runtime: 261464us
+DeltaBlue: iterations=227 runtime: 260451us
+DeltaBlue: iterations=228 runtime: 289252us
+DeltaBlue: iterations=229 runtime: 263767us
+DeltaBlue: iterations=230 runtime: 278682us
+DeltaBlue: iterations=231 runtime: 274362us
+DeltaBlue: iterations=232 runtime: 260006us
+DeltaBlue: iterations=233 runtime: 259970us
+DeltaBlue: iterations=234 runtime: 275818us
+DeltaBlue: iterations=235 runtime: 301713us
+DeltaBlue: iterations=236 runtime: 332452us
+DeltaBlue: iterations=237 runtime: 299943us
+DeltaBlue: iterations=238 runtime: 264226us
+DeltaBlue: iterations=239 runtime: 264162us
+DeltaBlue: iterations=240 runtime: 274524us
+DeltaBlue: iterations=241 runtime: 262294us
+DeltaBlue: iterations=242 runtime: 264735us
+DeltaBlue: iterations=243 runtime: 358718us
+DeltaBlue: iterations=244 runtime: 264255us
+DeltaBlue: iterations=245 runtime: 266188us
+DeltaBlue: iterations=246 runtime: 277153us
+DeltaBlue: iterations=247 runtime: 260847us
+DeltaBlue: iterations=248 runtime: 280268us
+DeltaBlue: iterations=249 runtime: 285510us
+DeltaBlue: iterations=250 runtime: 270125us
+DeltaBlue: iterations=251 runtime: 262278us
+DeltaBlue: iterations=252 runtime: 278898us
+DeltaBlue: iterations=253 runtime: 258854us
+DeltaBlue: iterations=254 runtime: 259350us
+DeltaBlue: iterations=255 runtime: 273091us
+DeltaBlue: iterations=256 runtime: 275673us
+DeltaBlue: iterations=257 runtime: 374291us
+DeltaBlue: iterations=258 runtime: 313077us
+DeltaBlue: iterations=259 runtime: 262790us
+DeltaBlue: iterations=260 runtime: 269815us
+DeltaBlue: iterations=261 runtime: 290984us
+DeltaBlue: iterations=262 runtime: 266739us
+DeltaBlue: iterations=263 runtime: 261293us
+DeltaBlue: iterations=264 runtime: 266605us
+DeltaBlue: iterations=265 runtime: 260056us
+DeltaBlue: iterations=266 runtime: 283122us
+DeltaBlue: iterations=267 runtime: 284870us
+DeltaBlue: iterations=268 runtime: 260499us
+DeltaBlue: iterations=269 runtime: 283496us
+DeltaBlue: iterations=270 runtime: 265422us
+DeltaBlue: iterations=271 runtime: 261415us
+DeltaBlue: iterations=272 runtime: 261071us
+DeltaBlue: iterations=273 runtime: 265980us
+DeltaBlue: iterations=274 runtime: 320225us
+DeltaBlue: iterations=275 runtime: 351305us
+DeltaBlue: iterations=276 runtime: 296302us
+DeltaBlue: iterations=277 runtime: 267895us
+DeltaBlue: iterations=278 runtime: 263881us
+DeltaBlue: iterations=279 runtime: 271815us
+DeltaBlue: iterations=280 runtime: 277809us
+DeltaBlue: iterations=281 runtime: 268945us
+DeltaBlue: iterations=282 runtime: 276828us
+DeltaBlue: iterations=283 runtime: 261892us
+DeltaBlue: iterations=284 runtime: 275635us
+DeltaBlue: iterations=285 runtime: 266126us
+DeltaBlue: iterations=286 runtime: 259556us
+DeltaBlue: iterations=287 runtime: 259632us
+DeltaBlue: iterations=288 runtime: 267911us
+DeltaBlue: iterations=289 runtime: 309429us
+DeltaBlue: iterations=290 runtime: 355088us
+DeltaBlue: iterations=291 runtime: 268096us
+DeltaBlue: iterations=292 runtime: 263836us
+DeltaBlue: iterations=293 runtime: 262118us
+DeltaBlue: iterations=294 runtime: 272922us
+DeltaBlue: iterations=295 runtime: 261978us
+DeltaBlue: iterations=296 runtime: 262647us
+DeltaBlue: iterations=297 runtime: 275634us
+DeltaBlue: iterations=298 runtime: 285781us
+DeltaBlue: iterations=299 runtime: 291038us
+DeltaBlue: iterations=300 runtime: 283436us
+DeltaBlue: iterations=301 runtime: 262208us
+DeltaBlue: iterations=302 runtime: 282573us
+DeltaBlue: iterations=303 runtime: 265381us
+DeltaBlue: iterations=304 runtime: 266767us
+DeltaBlue: iterations=305 runtime: 272674us
+DeltaBlue: iterations=306 runtime: 275065us
+DeltaBlue: iterations=307 runtime: 261753us
+DeltaBlue: iterations=308 runtime: 423394us
+DeltaBlue: iterations=309 runtime: 270772us
+DeltaBlue: iterations=310 runtime: 331584us
+DeltaBlue: iterations=311 runtime: 343671us
+DeltaBlue: iterations=312 runtime: 278705us
+DeltaBlue: iterations=313 runtime: 264477us
+DeltaBlue: iterations=314 runtime: 277944us
+DeltaBlue: iterations=315 runtime: 281256us
+DeltaBlue: iterations=316 runtime: 264924us
+DeltaBlue: iterations=317 runtime: 257570us
+DeltaBlue: iterations=318 runtime: 276381us
+DeltaBlue: iterations=319 runtime: 266632us
+DeltaBlue: iterations=320 runtime: 262484us
+DeltaBlue: iterations=321 runtime: 276648us
+DeltaBlue: iterations=322 runtime: 259210us
+DeltaBlue: iterations=323 runtime: 256274us
+DeltaBlue: iterations=324 runtime: 301145us
+DeltaBlue: iterations=325 runtime: 318271us
+DeltaBlue: iterations=326 runtime: 289788us
+DeltaBlue: iterations=327 runtime: 309378us
+DeltaBlue: iterations=328 runtime: 344143us
+DeltaBlue: iterations=329 runtime: 408186us
+DeltaBlue: iterations=330 runtime: 262118us
+DeltaBlue: iterations=331 runtime: 263533us
+DeltaBlue: iterations=332 runtime: 257869us
+DeltaBlue: iterations=333 runtime: 262097us
+DeltaBlue: iterations=334 runtime: 257196us
+DeltaBlue: iterations=335 runtime: 259555us
+DeltaBlue: iterations=336 runtime: 278433us
+DeltaBlue: iterations=337 runtime: 291534us
+DeltaBlue: iterations=338 runtime: 261816us
+DeltaBlue: iterations=339 runtime: 276916us
+DeltaBlue: iterations=340 runtime: 257869us
+DeltaBlue: iterations=341 runtime: 256194us
+DeltaBlue: iterations=342 runtime: 264883us
+DeltaBlue: iterations=343 runtime: 265314us
+DeltaBlue: iterations=344 runtime: 255900us
+DeltaBlue: iterations=345 runtime: 286898us
+DeltaBlue: iterations=346 runtime: 358436us
+DeltaBlue: iterations=347 runtime: 304073us
+DeltaBlue: iterations=348 runtime: 286287us
+DeltaBlue: iterations=349 runtime: 279708us
+DeltaBlue: iterations=350 runtime: 261655us
+DeltaBlue: iterations=351 runtime: 277972us
+DeltaBlue: iterations=352 runtime: 256807us
+DeltaBlue: iterations=353 runtime: 281555us
+DeltaBlue: iterations=354 runtime: 280150us
+DeltaBlue: iterations=355 runtime: 271874us
+DeltaBlue: iterations=356 runtime: 261409us
+DeltaBlue: iterations=357 runtime: 262080us
+DeltaBlue: iterations=358 runtime: 257965us
+DeltaBlue: iterations=359 runtime: 274317us
+DeltaBlue: iterations=360 runtime: 262399us
+DeltaBlue: iterations=361 runtime: 258412us
+DeltaBlue: iterations=362 runtime: 264204us
+DeltaBlue: iterations=363 runtime: 300205us
+DeltaBlue: iterations=364 runtime: 360022us
+DeltaBlue: iterations=365 runtime: 305298us
+DeltaBlue: iterations=366 runtime: 283954us
+DeltaBlue: iterations=367 runtime: 257586us
+DeltaBlue: iterations=368 runtime: 260611us
+DeltaBlue: iterations=369 runtime: 297715us
+DeltaBlue: iterations=370 runtime: 258542us
+DeltaBlue: iterations=371 runtime: 274018us
+DeltaBlue: iterations=372 runtime: 265954us
+DeltaBlue: iterations=373 runtime: 279887us
+DeltaBlue: iterations=374 runtime: 257446us
+DeltaBlue: iterations=375 runtime: 281012us
+DeltaBlue: iterations=376 runtime: 256484us
+DeltaBlue: iterations=377 runtime: 259711us
+DeltaBlue: iterations=378 runtime: 266144us
+DeltaBlue: iterations=379 runtime: 267411us
+DeltaBlue: iterations=380 runtime: 266884us
+DeltaBlue: iterations=381 runtime: 307105us
+DeltaBlue: iterations=382 runtime: 351091us
+DeltaBlue: iterations=383 runtime: 284415us
+DeltaBlue: iterations=384 runtime: 269027us
+DeltaBlue: iterations=385 runtime: 279196us
+DeltaBlue: iterations=386 runtime: 262511us
+DeltaBlue: iterations=387 runtime: 264263us
+DeltaBlue: iterations=388 runtime: 260159us
+DeltaBlue: iterations=389 runtime: 257366us
+DeltaBlue: iterations=390 runtime: 262598us
+DeltaBlue: iterations=391 runtime: 276986us
+DeltaBlue: iterations=392 runtime: 264172us
+DeltaBlue: iterations=393 runtime: 266437us
+DeltaBlue: iterations=394 runtime: 257815us
+DeltaBlue: iterations=395 runtime: 257813us
+DeltaBlue: iterations=396 runtime: 273667us
+DeltaBlue: iterations=397 runtime: 256956us
+DeltaBlue: iterations=398 runtime: 259105us
+DeltaBlue: iterations=399 runtime: 268198us
+DeltaBlue: iterations=400 runtime: 261714us
+DeltaBlue: iterations=401 runtime: 256425us
+DeltaBlue: iterations=402 runtime: 270584us
+DeltaBlue: iterations=403 runtime: 270791us
+DeltaBlue: iterations=404 runtime: 260076us
+DeltaBlue: iterations=405 runtime: 275690us
+DeltaBlue: iterations=406 runtime: 311925us
+DeltaBlue: iterations=407 runtime: 276075us
+DeltaBlue: iterations=408 runtime: 261904us
+DeltaBlue: iterations=409 runtime: 257070us
+DeltaBlue: iterations=410 runtime: 280285us
+DeltaBlue: iterations=411 runtime: 268226us
+DeltaBlue: iterations=412 runtime: 257999us
+DeltaBlue: iterations=413 runtime: 257598us
+DeltaBlue: iterations=414 runtime: 266540us
+DeltaBlue: iterations=415 runtime: 256666us
+DeltaBlue: iterations=416 runtime: 258176us
+DeltaBlue: iterations=417 runtime: 269681us
+DeltaBlue: iterations=418 runtime: 285664us
+DeltaBlue: iterations=419 runtime: 281886us
+DeltaBlue: iterations=420 runtime: 268667us
+DeltaBlue: iterations=421 runtime: 255698us
+DeltaBlue: iterations=422 runtime: 266078us
+DeltaBlue: iterations=423 runtime: 271339us
+DeltaBlue: iterations=424 runtime: 258333us
+DeltaBlue: iterations=425 runtime: 276501us
+DeltaBlue: iterations=426 runtime: 268745us
+DeltaBlue: iterations=427 runtime: 260471us
+DeltaBlue: iterations=428 runtime: 272625us
+DeltaBlue: iterations=429 runtime: 275202us
+DeltaBlue: iterations=430 runtime: 260206us
+DeltaBlue: iterations=431 runtime: 258524us
+DeltaBlue: iterations=432 runtime: 274914us
+DeltaBlue: iterations=433 runtime: 264644us
+DeltaBlue: iterations=434 runtime: 257445us
+DeltaBlue: iterations=435 runtime: 265018us
+DeltaBlue: iterations=436 runtime: 257290us
+DeltaBlue: iterations=437 runtime: 257392us
+DeltaBlue: iterations=438 runtime: 266682us
+DeltaBlue: iterations=439 runtime: 258971us
+DeltaBlue: iterations=440 runtime: 268079us
+DeltaBlue: iterations=441 runtime: 268595us
+DeltaBlue: iterations=442 runtime: 258208us
+DeltaBlue: iterations=443 runtime: 272936us
+DeltaBlue: iterations=444 runtime: 274260us
+DeltaBlue: iterations=445 runtime: 257450us
+DeltaBlue: iterations=446 runtime: 264847us
+DeltaBlue: iterations=447 runtime: 308183us
+DeltaBlue: iterations=448 runtime: 262202us
+DeltaBlue: iterations=449 runtime: 258001us
+DeltaBlue: iterations=450 runtime: 293683us
+DeltaBlue: iterations=451 runtime: 256784us
+DeltaBlue: iterations=452 runtime: 258141us
+DeltaBlue: iterations=453 runtime: 262074us
+DeltaBlue: iterations=454 runtime: 277557us
+DeltaBlue: iterations=455 runtime: 262283us
+DeltaBlue: iterations=456 runtime: 279853us
+DeltaBlue: iterations=457 runtime: 258421us
+DeltaBlue: iterations=458 runtime: 257405us
+DeltaBlue: iterations=459 runtime: 268766us
+DeltaBlue: iterations=460 runtime: 258499us
+DeltaBlue: iterations=461 runtime: 256847us
+DeltaBlue: iterations=462 runtime: 266780us
+DeltaBlue: iterations=463 runtime: 261549us
+DeltaBlue: iterations=464 runtime: 258454us
+DeltaBlue: iterations=465 runtime: 268675us
+DeltaBlue: iterations=466 runtime: 280022us
+DeltaBlue: iterations=467 runtime: 257698us
+DeltaBlue: iterations=468 runtime: 267814us
+DeltaBlue: iterations=469 runtime: 257711us
+DeltaBlue: iterations=470 runtime: 259131us
+DeltaBlue: iterations=471 runtime: 261893us
+DeltaBlue: iterations=472 runtime: 260890us
+DeltaBlue: iterations=473 runtime: 276432us
+DeltaBlue: iterations=474 runtime: 268636us
+DeltaBlue: iterations=475 runtime: 260604us
+DeltaBlue: iterations=476 runtime: 263256us
+DeltaBlue: iterations=477 runtime: 271794us
+DeltaBlue: iterations=478 runtime: 263439us
+DeltaBlue: iterations=479 runtime: 259050us
+DeltaBlue: iterations=480 runtime: 268453us
+DeltaBlue: iterations=481 runtime: 264245us
+DeltaBlue: iterations=482 runtime: 257844us
+DeltaBlue: iterations=483 runtime: 274925us
+DeltaBlue: iterations=484 runtime: 258985us
+DeltaBlue: iterations=485 runtime: 275187us
+DeltaBlue: iterations=486 runtime: 274926us
+DeltaBlue: iterations=487 runtime: 257489us
+DeltaBlue: iterations=488 runtime: 258348us
+DeltaBlue: iterations=489 runtime: 284199us
+DeltaBlue: iterations=490 runtime: 261460us
+DeltaBlue: iterations=491 runtime: 259427us
+DeltaBlue: iterations=492 runtime: 272599us
+DeltaBlue: iterations=493 runtime: 260773us
+DeltaBlue: iterations=494 runtime: 258660us
+DeltaBlue: iterations=495 runtime: 285617us
+DeltaBlue: iterations=496 runtime: 277893us
+DeltaBlue: iterations=497 runtime: 259887us
+DeltaBlue: iterations=498 runtime: 284553us
+DeltaBlue: iterations=499 runtime: 259464us
+DeltaBlue: iterations=500 runtime: 262332us
+DeltaBlue: iterations=500 average: 278952us total: 139476274us
+
+
+Total Runtime: 139476274us
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 281032 || Activation Count:4068 Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 8016 || Activation Count:170 Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 59 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 4988 || Activation Count:47 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 74 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 15726 || Activation Count:5 Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 3670 || Activation Count:43 Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 20582 || Activation Count:191 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 86 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 27604 || Activation Count:166 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 105 (som.Vector.<init>(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1744596 || Activation Count:9289 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 113 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 18790 || Activation Count:269 Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 26294 || Activation Count:269 Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 19162 || Activation Count:269 Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 142 (java.lang.invoke.DirectMethodHandle.allocateInstance(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 939456 || Activation Count:2486 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateInstanceDynamic(Class, AllocationSnippets$FillContent, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolean) [bci: 0]
+-at jdk.internal.misc.Unsafe.al
+Comp 148 (som.Vector.forEach(ForEachInterface)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 26 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 149 (deltablue.Planner.addPropagate(AbstractConstraint,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 26 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19]
+-at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 52] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+
+Comp 150 (deltablue.EqualityConstraint.<init>(Variable,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 639676 || Activation Count:13696 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19]
+-at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 52]
+-at deltablue.AbstractConstraint.satisfy(int, Planner
+Comp 155 (deltablue.Planner.incrementalAdd(AbstractConstraint)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1789052 || Activation Count:39520 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19]
+-at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 52]
+-at deltablue.AbstractConstraint.satisfy(int, Planner
+Comp 162 (java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(Object,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1534350 || Activation Count:27398 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateInstanceDynamic(Class, AllocationSnippets$FillContent, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolean) [bci: 0]
+-at jdk.internal.misc.Unsafe.al
+Comp 179 (som.Vector.forEach(ForEachInterface)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 46718 || Activation Count:1664 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 180 (deltablue.Planner.addPropagate(AbstractConstraint,-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3063136 || Activation Count:54881 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19]
+-at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 52] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+
+Comp 183 (deltablue.Planner.incrementalAdd(AbstractConstraint)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 8314664 || Activation Count:1 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12] | -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 26]
+Comp 187 (deltablue.Planner.addConstraintsConsumingTo(Variable,-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 321930 || Activation Count:5118 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci
+Comp 190 (deltablue.Planner.addPropagate(AbstractConstraint,-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 2445516 || Activation Count:54881 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19]
+-at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 52] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+
+Comp 193 (deltablue.Planner.incrementalAdd(AbstractConstraint)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 131413536 || Activation Count:1 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12] | -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 26]
+Comp 199 (som.Vector.forEach(ForEachInterface)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 5132614 || Activation Count:56545 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 216 (deltablue.Plan.execute()-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 4218268 || Activation Count:1 Source: -at deltablue.Plan.execute() [bci: 8] | -at deltablue.Plan.execute() [bci: 34]
+Comp 217 (deltablue.Plan.execute()-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 455237130 || Activation Count:99 Source: -at deltablue.Plan.execute() [bci: 8] | -at deltablue.Plan.execute() [bci: 34]
+Comp 225 (som.Vector.forEach(ForEachInterface)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 51984828 || Activation Count:116545 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 233 (deltablue.Planner.removePropagateFrom(Variable)-Re-Comp) loops:
+Found Encoding : 1:-1,0:-1
+├── Loop 1
+└── Loop 0
+  loop 1 Cycles: 406 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 235 (som.Vector.forEach(ForEachInterface)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 2700002 || Activation Count:56550 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 236 (deltablue.Planner.addPropagate(AbstractConstraint,-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1466520 || Activation Count:54881 Source: -at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 5] | -at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 58]
+Comp 237 (som.Vector.forEach(ForEachInterface)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 4201286 || Activation Count:119999 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 238 (deltablue.Planner.addPropagate(AbstractConstraint,-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 18063454158 || Activation Count:179765494 Source: -at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 5] | -at deltablue.Planner.addPropagate(AbstractConstraint, int) [bci: 58]
+Comp 248 (deltablue.Planner.incrementalAdd(AbstractConstraint)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 9422638074 || Activation Count:1614 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12] | -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 26]
+Comp 251 (deltablue.UnaryConstraint.<init>(Variable,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 26 || Activation Count:1 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12]
+-at deltablue.AbstractConstraint.addConstraint(Planner) [bci: 6]
+-at deltablue.UnaryConstraint.<init>(Variable, Strength$Sym, Planner) [bci: 12] | -at deltablue.Planner.incrementalAd
+Comp 257 (deltablue.Planner.projectionTest(int)-Re-Comp) loops:
+Found Encoding : 1:-1,0:-1
+├── Loop 1
+└── Loop 0
+  loop 1 Cycles: 520 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 265 (som.Vector.forEach(ForEachInterface)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 100161254 || Activation Count:4 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 266 (som.Vector.forEach(ForEachInterface)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 24113120086 || Activation Count:239699012 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 269 (deltablue.Planner.makePlan(Vector)-Re-Comp) loops:
+Found Encoding : 1:-1,0:-1,2:0
+├── Loop 1
+└── Loop 0
+    └── Loop 2
+  loop 0 Cycles: 14289036 || Activation Count:1 Source: -at deltablue.Planner.makePlan(Vector) [bci: 16] | -at deltablue.Planner.makePlan(Vector) [bci: 84]
+  loop 1 Cycles: 632 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19]
+-at deltablue.Planner.makePlan(Vector) [bci: 78] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at deltablue.Planner
+  loop 2 Cycles: 1526018 || Activation Count:44644 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19]
+-at deltablue.Planner.makePlan(Vector) [bci: 78] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at deltablue.Planner
+Comp 270 (deltablue.Planner.makePlan(Vector)-Re-Comp) loops:
+Found Encoding : 0:-1,1:0
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 25194618528 || Activation Count:2496 Source: -at deltablue.Planner.makePlan(Vector) [bci: 16] | -at deltablue.Planner.makePlan(Vector) [bci: 84]
+  loop 1 Cycles: 7201501702 || Activation Count:89883494 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.addConstraintsConsumingTo(Variable, Vector) [bci: 19]
+-at deltablue.Planner.makePlan(Vector) [bci: 78] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at deltablue.Planner
+Comp 272 (deltablue.Plan.execute()-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 7157036 || Activation Count:1 Source: -at deltablue.Plan.execute() [bci: 8] | -at deltablue.Plan.execute() [bci: 34]
+Comp 273 (deltablue.Plan.execute()-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 279213172002 || Activation Count:62209 Source: -at deltablue.Plan.execute() [bci: 8] | -at deltablue.Plan.execute() [bci: 34]
+Comp 281 (deltablue.Planner.removePropagateFrom(Variable)-Re-Comp) loops:
+Found Encoding : 1:-1,2:-1,0:-1,3:0,4:0
+├── Loop 1
+├── Loop 2
+└── Loop 0
+    ├── Loop 3
+    └── Loop 4
+  loop 0 Cycles: 15351976 || Activation Count:1 Source: -at deltablue.Planner.removePropagateFrom(Variable) [bci: 30] | -at deltablue.Planner.removePropagateFrom(Variable) [bci: 81]
+  loop 1 Cycles: 292 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 60] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 60]
+  loop 2 Cycles: 96 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.constraintsConsuming(Variable, ForEachInterface) [bci: 19]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 75] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at
+  loop 3 Cycles: 6606562 || Activation Count:44642 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 60] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 60]
+  loop 4 Cycles: 1369196 || Activation Count:44642 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.constraintsConsuming(Variable, ForEachInterface) [bci: 19]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 75] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at
+Comp 282 (deltablue.Planner.removePropagateFrom(Variable)-Re-Comp) loops:
+Found Encoding : 3:-1,0:-1,1:0,2:0
+├── Loop 3
+└── Loop 0
+    ├── Loop 1
+    └── Loop 2
+  loop 0 Cycles: 31532209802 || Activation Count:2496 Source: -at deltablue.Planner.removePropagateFrom(Variable) [bci: 30] | -at deltablue.Planner.removePropagateFrom(Variable) [bci: 81]
+  loop 1 Cycles: 8072341772 || Activation Count:89883494 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 60] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 60]
+  loop 2 Cycles: 10468328570 || Activation Count:89883494 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at deltablue.Planner.constraintsConsuming(Variable, ForEachInterface) [bci: 19]
+-at deltablue.Planner.removePropagateFrom(Variable) [bci: 75] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at
+  loop 3 Cycles: 945748 || Activation Count:2496 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 301 (deltablue.Planner.chainTest(int)-Re-Comp) loops:
+Found Encoding : 2:-1,0:-1,3:0,4:-1,5:-1,1:-1,8:-1,6:-1,9:-1,7:-1
+├── Loop 2
+├── Loop 0
+│   └── Loop 3
+├── Loop 4
+├── Loop 5
+├── Loop 1
+├── Loop 8
+├── Loop 6
+├── Loop 9
+└── Loop 7
+  loop 0 Cycles: 18714076 || Activation Count:1 Source: -at deltablue.Planner.chainTest(int) [bci: 28] | -at deltablue.Planner.chainTest(int) [bci: 67]
+  loop 1 Cycles: 545166888 || Activation Count:1 Source: -at deltablue.Planner.chainTest(int) [bci: 114] | -at deltablue.Planner.chainTest(int) [bci: 161]
+  loop 4 Cycles: 70048942 || Activation Count:1 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12]
+-at deltablue.AbstractConstraint.addConstraint(Planner) [bci: 6]
+-at deltablue.UnaryConstraint.<init>(Variable, Strength$Sym, Planner) [bci: 12]
+-at deltablue.StayConstraint.<init>(V
+  loop 5 Cycles: 24455754 || Activation Count:1 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12]
+-at deltablue.AbstractConstraint.addConstraint(Planner) [bci: 6]
+-at deltablue.UnaryConstraint.<init>(Variable, Strength$Sym, Planner) [bci: 12]
+-at deltablue.EditConstraint.<init>(V
+  loop 6 Cycles: 1270 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Vector.remove(Object) [bci: 36]
+-at deltablue.Variable.removeConstraint(AbstractConstraint) [bci: 5]
+-at deltablue.UnaryConstraint.removeFromGraph() [bci: 12]
+-at deltablue.Planner.incrementa
+  loop 7 Cycles: 52 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Vector.remove(Object) [bci: 36]
+-at deltablue.Variable.removeConstraint(AbstractConstraint) [bci: 5]
+-at deltablue.UnaryConstraint.removeFromGraph() [bci: 12]
+-at deltablue.AbstractConstraint
+  loop 8 Cycles: 902 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 9 Cycles: 612 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 302 (deltablue.Planner.chainTest(int)-Re-Comp) loops:
+Found Encoding : 7:-1,0:-1,4:0,2:-1,3:-1,1:-1,8:-1,5:-1,9:-1,6:-1
+├── Loop 7
+├── Loop 0
+│   └── Loop 4
+├── Loop 2
+├── Loop 3
+├── Loop 1
+├── Loop 8
+├── Loop 5
+├── Loop 9
+└── Loop 6
+  loop 0 Cycles: 9607452418 || Activation Count:498 Source: -at deltablue.Planner.chainTest(int) [bci: 28] | -at deltablue.Planner.chainTest(int) [bci: 67]
+  loop 1 Cycles: 236966588804 || Activation Count:498 Source: -at deltablue.Planner.chainTest(int) [bci: 114] | -at deltablue.Planner.chainTest(int) [bci: 161]
+  loop 2 Cycles: 9574098818 || Activation Count:498 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12]
+-at deltablue.AbstractConstraint.addConstraint(Planner) [bci: 6]
+-at deltablue.UnaryConstraint.<init>(Variable, Strength$Sym, Planner) [bci: 12]
+-at deltablue.StayConstraint.<init>(V
+  loop 3 Cycles: 8981402848 || Activation Count:498 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12]
+-at deltablue.AbstractConstraint.addConstraint(Planner) [bci: 6]
+-at deltablue.UnaryConstraint.<init>(Variable, Strength$Sym, Planner) [bci: 12]
+-at deltablue.EditConstraint.<init>(V
+  loop 5 Cycles: 515204 || Activation Count:498 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Vector.remove(Object) [bci: 36]
+-at deltablue.Variable.removeConstraint(AbstractConstraint) [bci: 5]
+-at deltablue.UnaryConstraint.removeFromGraph() [bci: 12]
+-at deltablue.Planner.incrementa
+  loop 6 Cycles: 27406 || Activation Count:498 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Vector.remove(Object) [bci: 36]
+-at deltablue.Variable.removeConstraint(AbstractConstraint) [bci: 5]
+-at deltablue.UnaryConstraint.removeFromGraph() [bci: 12]
+-at deltablue.AbstractConstraint
+  loop 8 Cycles: 226840 || Activation Count:498 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 9 Cycles: 274692 || Activation Count:498 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 305 (deltablue.Planner.projectionTest(int)-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1
+├── Loop 0
+└── Loop 1
+  loop 0 Cycles: 2299000 || Activation Count:1 Source: -at deltablue.Planner.projectionTest(int) [bci: 170] | -at deltablue.Planner.projectionTest(int) [bci: 219]
+  loop 1 Cycles: 2026954 || Activation Count:1 Source: -at deltablue.Planner.projectionTest(int) [bci: 231] | -at deltablue.Planner.projectionTest(int) [bci: 280]
+Comp 306 (deltablue.Planner.projectionTest(int)-Re-Comp) loops:
+Found Encoding : 3:-1,0:-1,1:-1,2:-1
+├── Loop 3
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 27704530368 || Activation Count:498 Source: -at deltablue.Planner.projectionTest(int) [bci: 39] | -at deltablue.Planner.projectionTest(int) [bci: 104]
+  loop 1 Cycles: 990673958 || Activation Count:498 Source: -at deltablue.Planner.projectionTest(int) [bci: 170] | -at deltablue.Planner.projectionTest(int) [bci: 219]
+  loop 2 Cycles: 969884102 || Activation Count:498 Source: -at deltablue.Planner.projectionTest(int) [bci: 231] | -at deltablue.Planner.projectionTest(int) [bci: 280]
+  loop 3 Cycles: 202788 || Activation Count:498 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 307 (java.util.Arrays.setAll(Object[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 7543258 || Activation Count:2 Source: -at java.util.Arrays.setAll(Arrays.java:5097) [bci: 7] | -at java.util.Arrays.setAll(Arrays.java:5099) [bci: 29]
+Comp 308 (java.util.Arrays.setAll(Object[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1203501806 || Activation Count:496 Source: -at java.util.Arrays.setAll(Arrays.java:5097) [bci: 7] | -at java.util.Arrays.setAll(Arrays.java:5099) [bci: 29]
+Comp 313 (java.util.Arrays.copyOf(Object[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 6802712 || Activation Count:35380 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 322 (java.util.Arrays.copyOf(Object[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 17574 || Activation Count:59 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 323 (java.util.Vector.grow()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1282068 || Activation Count:4670 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 324 (java.util.Vector.grow(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 812 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 325 (deltablue.Planner.change(Variable,) loops:
+Found Encoding : 1:-1,0:-1,4:0,5:-1,2:-1,6:-1,3:-1
+├── Loop 1
+├── Loop 0
+│   └── Loop 4
+├── Loop 5
+├── Loop 2
+├── Loop 6
+└── Loop 3
+  loop 0 Cycles: 24097941958 || Activation Count:767 Source: -at deltablue.Planner.change(Variable, int) [bci: 30] | -at deltablue.Planner.change(Variable, int) [bci: 53]
+  loop 1 Cycles: 91360 || Activation Count:383 Source: -at deltablue.Planner.incrementalAdd(AbstractConstraint) [bci: 12]
+-at deltablue.AbstractConstraint.addConstraint(Planner) [bci: 6]
+-at deltablue.UnaryConstraint.<init>(Variable, Strength$Sym, Planner) [bci: 12]
+-at deltablue.EditConstraint.<init>(V
+  loop 2 Cycles: 186537360 || Activation Count:767 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Vector.remove(Object) [bci: 36]
+-at deltablue.Variable.removeConstraint(AbstractConstraint) [bci: 5]
+-at deltablue.UnaryConstraint.removeFromGraph() [bci: 12]
+-at deltablue.Planner.incrementa
+  loop 3 Cycles: 191409612 || Activation Count:767 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Vector.remove(Object) [bci: 36]
+-at deltablue.Variable.removeConstraint(AbstractConstraint) [bci: 5]
+-at deltablue.UnaryConstraint.removeFromGraph() [bci: 12]
+-at deltablue.AbstractConstraint
+  loop 4 Cycles: 24094898968 || Activation Count:7670 Source: -at deltablue.Plan.execute() [bci: 8]
+-at deltablue.Planner.change(Variable, int) [bci: 44] | -at deltablue.Plan.execute() [bci: 34]
+-at deltablue.Planner.change(Variable, int) [bci: 44]
+  loop 5 Cycles: 78932 || Activation Count:383 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 6 Cycles: 44402 || Activation Count:383 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 326 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 34828 || Activation Count:164 Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 15712 || Activation Count:164 Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 5754 || Activation Count:164 Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+Comp 327 (java.lang.StringCoding.implEncodeAsciiArray(char[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 720 || Activation Count:1 Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+Comp 328 (java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 13418 || Activation Count:35 Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+-- DeltaBlue completed successfully.

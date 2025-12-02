@@ -1,0 +1,599 @@
+========================================
+Benchmark : Queens
+Timestamp : 2025-11-03T18:55:01+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -Djdk.graal.CompilationFailureAction=Diagnose   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   Queens   500   5000 
+========================================
+Starting Queens benchmark ...
+Queens: iterations=1 runtime: 859494us
+Queens: iterations=2 runtime: 597697us
+Queens: iterations=3 runtime: 608151us
+Queens: iterations=4 runtime: 608172us
+Queens: iterations=5 runtime: 638001us
+Queens: iterations=6 runtime: 602919us
+Queens: iterations=7 runtime: 610043us
+Queens: iterations=8 runtime: 607445us
+Queens: iterations=9 runtime: 607610us
+Queens: iterations=10 runtime: 607621us
+Queens: iterations=11 runtime: 607605us
+Queens: iterations=12 runtime: 603790us
+Queens: iterations=13 runtime: 607639us
+Queens: iterations=14 runtime: 606551us
+Queens: iterations=15 runtime: 608020us
+Queens: iterations=16 runtime: 608010us
+Queens: iterations=17 runtime: 607967us
+Queens: iterations=18 runtime: 608715us
+Queens: iterations=19 runtime: 608134us
+Queens: iterations=20 runtime: 589930us
+Queens: iterations=21 runtime: 607955us
+Queens: iterations=22 runtime: 604560us
+Queens: iterations=23 runtime: 607993us
+Queens: iterations=24 runtime: 609363us
+Queens: iterations=25 runtime: 607485us
+Queens: iterations=26 runtime: 607650us
+Queens: iterations=27 runtime: 603077us
+Queens: iterations=28 runtime: 607600us
+Queens: iterations=29 runtime: 604864us
+Queens: iterations=30 runtime: 607627us
+Queens: iterations=31 runtime: 600741us
+Queens: iterations=32 runtime: 607686us
+Queens: iterations=33 runtime: 603702us
+Queens: iterations=34 runtime: 628390us
+Queens: iterations=35 runtime: 624855us
+Queens: iterations=36 runtime: 607729us
+Queens: iterations=37 runtime: 607686us
+Queens: iterations=38 runtime: 607620us
+Queens: iterations=39 runtime: 607721us
+Queens: iterations=40 runtime: 607792us
+Queens: iterations=41 runtime: 607516us
+Queens: iterations=42 runtime: 595595us
+Queens: iterations=43 runtime: 605817us
+Queens: iterations=44 runtime: 608168us
+Queens: iterations=45 runtime: 608070us
+Queens: iterations=46 runtime: 602115us
+Queens: iterations=47 runtime: 598753us
+Queens: iterations=48 runtime: 604358us
+Queens: iterations=49 runtime: 597059us
+Queens: iterations=50 runtime: 607598us
+Queens: iterations=51 runtime: 607662us
+Queens: iterations=52 runtime: 607656us
+Queens: iterations=53 runtime: 607706us
+Queens: iterations=54 runtime: 607564us
+Queens: iterations=55 runtime: 607639us
+Queens: iterations=56 runtime: 607615us
+Queens: iterations=57 runtime: 602312us
+Queens: iterations=58 runtime: 602268us
+Queens: iterations=59 runtime: 601221us
+Queens: iterations=60 runtime: 607632us
+Queens: iterations=61 runtime: 590670us
+Queens: iterations=62 runtime: 607682us
+Queens: iterations=63 runtime: 607756us
+Queens: iterations=64 runtime: 607649us
+Queens: iterations=65 runtime: 607639us
+Queens: iterations=66 runtime: 607695us
+Queens: iterations=67 runtime: 607637us
+Queens: iterations=68 runtime: 607626us
+Queens: iterations=69 runtime: 608472us
+Queens: iterations=70 runtime: 607563us
+Queens: iterations=71 runtime: 607680us
+Queens: iterations=72 runtime: 599783us
+Queens: iterations=73 runtime: 602040us
+Queens: iterations=74 runtime: 607659us
+Queens: iterations=75 runtime: 595620us
+Queens: iterations=76 runtime: 607571us
+Queens: iterations=77 runtime: 607579us
+Queens: iterations=78 runtime: 607575us
+Queens: iterations=79 runtime: 605428us
+Queens: iterations=80 runtime: 607688us
+Queens: iterations=81 runtime: 607571us
+Queens: iterations=82 runtime: 607649us
+Queens: iterations=83 runtime: 603739us
+Queens: iterations=84 runtime: 607644us
+Queens: iterations=85 runtime: 607636us
+Queens: iterations=86 runtime: 607716us
+Queens: iterations=87 runtime: 607634us
+Queens: iterations=88 runtime: 593109us
+Queens: iterations=89 runtime: 598525us
+Queens: iterations=90 runtime: 603586us
+Queens: iterations=91 runtime: 608389us
+Queens: iterations=92 runtime: 605364us
+Queens: iterations=93 runtime: 602905us
+Queens: iterations=94 runtime: 592016us
+Queens: iterations=95 runtime: 607656us
+Queens: iterations=96 runtime: 602142us
+Queens: iterations=97 runtime: 607623us
+Queens: iterations=98 runtime: 607684us
+Queens: iterations=99 runtime: 605512us
+Queens: iterations=100 runtime: 607605us
+Queens: iterations=101 runtime: 607639us
+Queens: iterations=102 runtime: 598968us
+Queens: iterations=103 runtime: 607558us
+Queens: iterations=104 runtime: 607547us
+Queens: iterations=105 runtime: 592257us
+Queens: iterations=106 runtime: 607237us
+Queens: iterations=107 runtime: 602769us
+Queens: iterations=108 runtime: 603538us
+Queens: iterations=109 runtime: 607728us
+Queens: iterations=110 runtime: 607836us
+Queens: iterations=111 runtime: 604736us
+Queens: iterations=112 runtime: 604041us
+Queens: iterations=113 runtime: 608309us
+Queens: iterations=114 runtime: 607567us
+Queens: iterations=115 runtime: 601636us
+Queens: iterations=116 runtime: 604558us
+Queens: iterations=117 runtime: 602834us
+Queens: iterations=118 runtime: 604430us
+Queens: iterations=119 runtime: 607676us
+Queens: iterations=120 runtime: 607613us
+Queens: iterations=121 runtime: 603065us
+Queens: iterations=122 runtime: 607485us
+Queens: iterations=123 runtime: 607638us
+Queens: iterations=124 runtime: 607583us
+Queens: iterations=125 runtime: 598872us
+Queens: iterations=126 runtime: 607647us
+Queens: iterations=127 runtime: 607686us
+Queens: iterations=128 runtime: 603820us
+Queens: iterations=129 runtime: 607769us
+Queens: iterations=130 runtime: 607735us
+Queens: iterations=131 runtime: 603471us
+Queens: iterations=132 runtime: 607744us
+Queens: iterations=133 runtime: 596643us
+Queens: iterations=134 runtime: 602935us
+Queens: iterations=135 runtime: 608450us
+Queens: iterations=136 runtime: 607563us
+Queens: iterations=137 runtime: 607585us
+Queens: iterations=138 runtime: 607608us
+Queens: iterations=139 runtime: 607646us
+Queens: iterations=140 runtime: 607640us
+Queens: iterations=141 runtime: 607656us
+Queens: iterations=142 runtime: 604379us
+Queens: iterations=143 runtime: 607651us
+Queens: iterations=144 runtime: 606169us
+Queens: iterations=145 runtime: 604360us
+Queens: iterations=146 runtime: 607637us
+Queens: iterations=147 runtime: 607668us
+Queens: iterations=148 runtime: 607596us
+Queens: iterations=149 runtime: 607700us
+Queens: iterations=150 runtime: 607594us
+Queens: iterations=151 runtime: 605483us
+Queens: iterations=152 runtime: 607661us
+Queens: iterations=153 runtime: 607639us
+Queens: iterations=154 runtime: 607635us
+Queens: iterations=155 runtime: 597258us
+Queens: iterations=156 runtime: 607591us
+Queens: iterations=157 runtime: 607688us
+Queens: iterations=158 runtime: 605729us
+Queens: iterations=159 runtime: 607610us
+Queens: iterations=160 runtime: 601822us
+Queens: iterations=161 runtime: 604759us
+Queens: iterations=162 runtime: 595252us
+Queens: iterations=163 runtime: 607452us
+Queens: iterations=164 runtime: 607602us
+Queens: iterations=165 runtime: 607541us
+Queens: iterations=166 runtime: 607715us
+Queens: iterations=167 runtime: 600528us
+Queens: iterations=168 runtime: 604730us
+Queens: iterations=169 runtime: 604891us
+Queens: iterations=170 runtime: 607637us
+Queens: iterations=171 runtime: 597991us
+Queens: iterations=172 runtime: 605841us
+Queens: iterations=173 runtime: 607526us
+Queens: iterations=174 runtime: 607607us
+Queens: iterations=175 runtime: 575269us
+Queens: iterations=176 runtime: 600465us
+Queens: iterations=177 runtime: 602900us
+Queens: iterations=178 runtime: 607481us
+Queens: iterations=179 runtime: 607667us
+Queens: iterations=180 runtime: 608292us
+Queens: iterations=181 runtime: 602818us
+Queens: iterations=182 runtime: 607724us
+Queens: iterations=183 runtime: 607639us
+Queens: iterations=184 runtime: 607641us
+Queens: iterations=185 runtime: 602849us
+Queens: iterations=186 runtime: 607596us
+Queens: iterations=187 runtime: 607596us
+Queens: iterations=188 runtime: 607644us
+Queens: iterations=189 runtime: 607612us
+Queens: iterations=190 runtime: 607671us
+Queens: iterations=191 runtime: 607688us
+Queens: iterations=192 runtime: 602473us
+Queens: iterations=193 runtime: 604968us
+Queens: iterations=194 runtime: 607722us
+Queens: iterations=195 runtime: 602251us
+Queens: iterations=196 runtime: 589382us
+Queens: iterations=197 runtime: 601565us
+Queens: iterations=198 runtime: 607522us
+Queens: iterations=199 runtime: 603966us
+Queens: iterations=200 runtime: 607645us
+Queens: iterations=201 runtime: 607648us
+Queens: iterations=202 runtime: 600323us
+Queens: iterations=203 runtime: 599043us
+Queens: iterations=204 runtime: 604814us
+Queens: iterations=205 runtime: 608235us
+Queens: iterations=206 runtime: 607938us
+Queens: iterations=207 runtime: 603709us
+Queens: iterations=208 runtime: 603519us
+Queens: iterations=209 runtime: 608272us
+Queens: iterations=210 runtime: 608215us
+Queens: iterations=211 runtime: 605023us
+Queens: iterations=212 runtime: 608253us
+Queens: iterations=213 runtime: 608318us
+Queens: iterations=214 runtime: 608259us
+Queens: iterations=215 runtime: 603530us
+Queens: iterations=216 runtime: 608950us
+Queens: iterations=217 runtime: 608259us
+Queens: iterations=218 runtime: 608273us
+Queens: iterations=219 runtime: 608219us
+Queens: iterations=220 runtime: 603689us
+Queens: iterations=221 runtime: 608234us
+Queens: iterations=222 runtime: 608200us
+Queens: iterations=223 runtime: 608206us
+Queens: iterations=224 runtime: 608675us
+Queens: iterations=225 runtime: 599592us
+Queens: iterations=226 runtime: 607588us
+Queens: iterations=227 runtime: 607616us
+Queens: iterations=228 runtime: 602148us
+Queens: iterations=229 runtime: 607568us
+Queens: iterations=230 runtime: 608283us
+Queens: iterations=231 runtime: 604792us
+Queens: iterations=232 runtime: 596830us
+Queens: iterations=233 runtime: 594494us
+Queens: iterations=234 runtime: 605230us
+Queens: iterations=235 runtime: 602609us
+Queens: iterations=236 runtime: 607317us
+Queens: iterations=237 runtime: 607581us
+Queens: iterations=238 runtime: 607754us
+Queens: iterations=239 runtime: 607667us
+Queens: iterations=240 runtime: 607700us
+Queens: iterations=241 runtime: 607734us
+Queens: iterations=242 runtime: 607628us
+Queens: iterations=243 runtime: 602799us
+Queens: iterations=244 runtime: 600233us
+Queens: iterations=245 runtime: 607731us
+Queens: iterations=246 runtime: 608300us
+Queens: iterations=247 runtime: 607564us
+Queens: iterations=248 runtime: 607405us
+Queens: iterations=249 runtime: 607532us
+Queens: iterations=250 runtime: 607640us
+Queens: iterations=251 runtime: 606771us
+Queens: iterations=252 runtime: 605584us
+Queens: iterations=253 runtime: 607626us
+Queens: iterations=254 runtime: 607596us
+Queens: iterations=255 runtime: 602126us
+Queens: iterations=256 runtime: 607609us
+Queens: iterations=257 runtime: 607626us
+Queens: iterations=258 runtime: 607709us
+Queens: iterations=259 runtime: 597209us
+Queens: iterations=260 runtime: 594189us
+Queens: iterations=261 runtime: 607591us
+Queens: iterations=262 runtime: 607601us
+Queens: iterations=263 runtime: 607627us
+Queens: iterations=264 runtime: 607564us
+Queens: iterations=265 runtime: 607671us
+Queens: iterations=266 runtime: 607604us
+Queens: iterations=267 runtime: 599754us
+Queens: iterations=268 runtime: 580145us
+Queens: iterations=269 runtime: 594312us
+Queens: iterations=270 runtime: 607630us
+Queens: iterations=271 runtime: 607612us
+Queens: iterations=272 runtime: 607597us
+Queens: iterations=273 runtime: 607611us
+Queens: iterations=274 runtime: 587598us
+Queens: iterations=275 runtime: 607467us
+Queens: iterations=276 runtime: 602799us
+Queens: iterations=277 runtime: 599259us
+Queens: iterations=278 runtime: 605516us
+Queens: iterations=279 runtime: 607599us
+Queens: iterations=280 runtime: 607669us
+Queens: iterations=281 runtime: 605857us
+Queens: iterations=282 runtime: 607683us
+Queens: iterations=283 runtime: 607736us
+Queens: iterations=284 runtime: 607506us
+Queens: iterations=285 runtime: 596528us
+Queens: iterations=286 runtime: 597832us
+Queens: iterations=287 runtime: 607660us
+Queens: iterations=288 runtime: 607577us
+Queens: iterations=289 runtime: 605853us
+Queens: iterations=290 runtime: 600359us
+Queens: iterations=291 runtime: 608418us
+Queens: iterations=292 runtime: 588691us
+Queens: iterations=293 runtime: 606149us
+Queens: iterations=294 runtime: 600430us
+Queens: iterations=295 runtime: 602575us
+Queens: iterations=296 runtime: 602341us
+Queens: iterations=297 runtime: 607705us
+Queens: iterations=298 runtime: 607667us
+Queens: iterations=299 runtime: 603817us
+Queens: iterations=300 runtime: 606520us
+Queens: iterations=301 runtime: 607588us
+Queens: iterations=302 runtime: 607664us
+Queens: iterations=303 runtime: 599722us
+Queens: iterations=304 runtime: 600478us
+Queens: iterations=305 runtime: 607633us
+Queens: iterations=306 runtime: 603838us
+Queens: iterations=307 runtime: 607662us
+Queens: iterations=308 runtime: 585899us
+Queens: iterations=309 runtime: 602823us
+Queens: iterations=310 runtime: 607586us
+Queens: iterations=311 runtime: 607742us
+Queens: iterations=312 runtime: 607664us
+Queens: iterations=313 runtime: 608752us
+Queens: iterations=314 runtime: 607610us
+Queens: iterations=315 runtime: 607802us
+Queens: iterations=316 runtime: 607734us
+Queens: iterations=317 runtime: 607752us
+Queens: iterations=318 runtime: 607765us
+Queens: iterations=319 runtime: 584755us
+Queens: iterations=320 runtime: 607695us
+Queens: iterations=321 runtime: 607733us
+Queens: iterations=322 runtime: 607780us
+Queens: iterations=323 runtime: 607742us
+Queens: iterations=324 runtime: 607701us
+Queens: iterations=325 runtime: 607690us
+Queens: iterations=326 runtime: 607831us
+Queens: iterations=327 runtime: 607743us
+Queens: iterations=328 runtime: 607756us
+Queens: iterations=329 runtime: 607731us
+Queens: iterations=330 runtime: 607762us
+Queens: iterations=331 runtime: 607620us
+Queens: iterations=332 runtime: 593979us
+Queens: iterations=333 runtime: 607798us
+Queens: iterations=334 runtime: 607779us
+Queens: iterations=335 runtime: 603950us
+Queens: iterations=336 runtime: 593729us
+Queens: iterations=337 runtime: 601715us
+Queens: iterations=338 runtime: 600109us
+Queens: iterations=339 runtime: 607982us
+Queens: iterations=340 runtime: 608018us
+Queens: iterations=341 runtime: 607915us
+Queens: iterations=342 runtime: 602652us
+Queens: iterations=343 runtime: 607984us
+Queens: iterations=344 runtime: 607953us
+Queens: iterations=345 runtime: 607939us
+Queens: iterations=346 runtime: 607936us
+Queens: iterations=347 runtime: 607948us
+Queens: iterations=348 runtime: 601514us
+Queens: iterations=349 runtime: 608106us
+Queens: iterations=350 runtime: 603275us
+Queens: iterations=351 runtime: 601710us
+Queens: iterations=352 runtime: 601862us
+Queens: iterations=353 runtime: 597287us
+Queens: iterations=354 runtime: 607906us
+Queens: iterations=355 runtime: 607863us
+Queens: iterations=356 runtime: 595110us
+Queens: iterations=357 runtime: 608294us
+Queens: iterations=358 runtime: 607875us
+Queens: iterations=359 runtime: 608033us
+Queens: iterations=360 runtime: 607913us
+Queens: iterations=361 runtime: 605211us
+Queens: iterations=362 runtime: 601542us
+Queens: iterations=363 runtime: 607918us
+Queens: iterations=364 runtime: 605611us
+Queens: iterations=365 runtime: 599865us
+Queens: iterations=366 runtime: 607758us
+Queens: iterations=367 runtime: 601683us
+Queens: iterations=368 runtime: 607824us
+Queens: iterations=369 runtime: 596612us
+Queens: iterations=370 runtime: 607941us
+Queens: iterations=371 runtime: 598985us
+Queens: iterations=372 runtime: 605031us
+Queens: iterations=373 runtime: 607838us
+Queens: iterations=374 runtime: 607837us
+Queens: iterations=375 runtime: 607874us
+Queens: iterations=376 runtime: 603524us
+Queens: iterations=377 runtime: 607914us
+Queens: iterations=378 runtime: 599932us
+Queens: iterations=379 runtime: 606205us
+Queens: iterations=380 runtime: 602437us
+Queens: iterations=381 runtime: 597687us
+Queens: iterations=382 runtime: 601995us
+Queens: iterations=383 runtime: 607871us
+Queens: iterations=384 runtime: 600638us
+Queens: iterations=385 runtime: 578610us
+Queens: iterations=386 runtime: 607876us
+Queens: iterations=387 runtime: 608037us
+Queens: iterations=388 runtime: 585871us
+Queens: iterations=389 runtime: 607878us
+Queens: iterations=390 runtime: 608010us
+Queens: iterations=391 runtime: 607924us
+Queens: iterations=392 runtime: 607771us
+Queens: iterations=393 runtime: 597294us
+Queens: iterations=394 runtime: 607888us
+Queens: iterations=395 runtime: 607893us
+Queens: iterations=396 runtime: 607969us
+Queens: iterations=397 runtime: 601060us
+Queens: iterations=398 runtime: 607922us
+Queens: iterations=399 runtime: 594995us
+Queens: iterations=400 runtime: 590809us
+Queens: iterations=401 runtime: 601255us
+Queens: iterations=402 runtime: 605243us
+Queens: iterations=403 runtime: 607764us
+Queens: iterations=404 runtime: 607972us
+Queens: iterations=405 runtime: 607667us
+Queens: iterations=406 runtime: 603629us
+Queens: iterations=407 runtime: 599734us
+Queens: iterations=408 runtime: 607901us
+Queens: iterations=409 runtime: 607932us
+Queens: iterations=410 runtime: 605679us
+Queens: iterations=411 runtime: 607976us
+Queens: iterations=412 runtime: 607858us
+Queens: iterations=413 runtime: 607932us
+Queens: iterations=414 runtime: 607877us
+Queens: iterations=415 runtime: 601604us
+Queens: iterations=416 runtime: 607869us
+Queens: iterations=417 runtime: 607958us
+Queens: iterations=418 runtime: 607856us
+Queens: iterations=419 runtime: 607900us
+Queens: iterations=420 runtime: 607849us
+Queens: iterations=421 runtime: 607981us
+Queens: iterations=422 runtime: 607970us
+Queens: iterations=423 runtime: 607919us
+Queens: iterations=424 runtime: 608319us
+Queens: iterations=425 runtime: 598168us
+Queens: iterations=426 runtime: 603852us
+Queens: iterations=427 runtime: 604836us
+Queens: iterations=428 runtime: 596893us
+Queens: iterations=429 runtime: 607888us
+Queens: iterations=430 runtime: 607944us
+Queens: iterations=431 runtime: 607963us
+Queens: iterations=432 runtime: 607928us
+Queens: iterations=433 runtime: 597167us
+Queens: iterations=434 runtime: 607929us
+Queens: iterations=435 runtime: 607924us
+Queens: iterations=436 runtime: 607950us
+Queens: iterations=437 runtime: 598814us
+Queens: iterations=438 runtime: 607909us
+Queens: iterations=439 runtime: 607925us
+Queens: iterations=440 runtime: 607898us
+Queens: iterations=441 runtime: 582125us
+Queens: iterations=442 runtime: 607865us
+Queens: iterations=443 runtime: 604806us
+Queens: iterations=444 runtime: 606146us
+Queens: iterations=445 runtime: 607921us
+Queens: iterations=446 runtime: 608228us
+Queens: iterations=447 runtime: 607052us
+Queens: iterations=448 runtime: 603320us
+Queens: iterations=449 runtime: 608708us
+Queens: iterations=450 runtime: 607982us
+Queens: iterations=451 runtime: 607946us
+Queens: iterations=452 runtime: 607930us
+Queens: iterations=453 runtime: 607904us
+Queens: iterations=454 runtime: 607878us
+Queens: iterations=455 runtime: 607902us
+Queens: iterations=456 runtime: 607892us
+Queens: iterations=457 runtime: 607917us
+Queens: iterations=458 runtime: 607901us
+Queens: iterations=459 runtime: 607821us
+Queens: iterations=460 runtime: 592029us
+Queens: iterations=461 runtime: 599457us
+Queens: iterations=462 runtime: 607914us
+Queens: iterations=463 runtime: 603296us
+Queens: iterations=464 runtime: 607843us
+Queens: iterations=465 runtime: 607897us
+Queens: iterations=466 runtime: 656515us
+Queens: iterations=467 runtime: 607864us
+Queens: iterations=468 runtime: 594998us
+Queens: iterations=469 runtime: 603245us
+Queens: iterations=470 runtime: 607883us
+Queens: iterations=471 runtime: 607861us
+Queens: iterations=472 runtime: 607858us
+Queens: iterations=473 runtime: 607892us
+Queens: iterations=474 runtime: 606286us
+Queens: iterations=475 runtime: 607926us
+Queens: iterations=476 runtime: 608045us
+Queens: iterations=477 runtime: 607878us
+Queens: iterations=478 runtime: 607842us
+Queens: iterations=479 runtime: 607889us
+Queens: iterations=480 runtime: 607906us
+Queens: iterations=481 runtime: 607992us
+Queens: iterations=482 runtime: 607949us
+Queens: iterations=483 runtime: 605807us
+Queens: iterations=484 runtime: 607980us
+Queens: iterations=485 runtime: 604090us
+Queens: iterations=486 runtime: 604784us
+Queens: iterations=487 runtime: 607903us
+Queens: iterations=488 runtime: 607935us
+Queens: iterations=489 runtime: 607927us
+Queens: iterations=490 runtime: 608215us
+Queens: iterations=491 runtime: 607854us
+Queens: iterations=492 runtime: 602118us
+Queens: iterations=493 runtime: 607838us
+Queens: iterations=494 runtime: 600952us
+Queens: iterations=495 runtime: 605398us
+Queens: iterations=496 runtime: 608035us
+Queens: iterations=497 runtime: 607891us
+Queens: iterations=498 runtime: 607852us
+Queens: iterations=499 runtime: 607920us
+Queens: iterations=500 runtime: 603105us
+Queens: iterations=500 average: 605888us total: 302944343us
+
+
+Total Runtime: 302944343us
+Index : Stub<new_instance_or_null(KlassPointer)Object> Activation Count : 11368
+Index : Stub<write_barrier_pre-stack-only(Object)void> Activation Count : 4096
+Index : java.lang.Enum.ordinal() Activation Count : 1806
+Index : java.lang.Class.isPrimitive() Activation Count : 4058
+Index : jdk.internal.util.StrongReferenceKey.get() Activation Count : 1272
+Index : java.lang.Class.getClassLoader() Activation Count : 720
+Index : java.lang.invoke.MethodType.returnType() Activation Count : 982
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.index() Activation Count : 4972
+Index : java.lang.invoke.MemberName.getDeclaringClass() Activation Count : 642
+Index : java.lang.invoke.MethodType.form() Activation Count : 250
+Index : java.util.stream.FindOps$FindSink.cancellationRequested() Activation Count : 404
+Index : java.lang.Object.<init>() Activation Count : 17590
+Index : jdk.internal.module.ModuleReferenceImpl.moduleResolution() Activation Count : 204
+Index : java.lang.String.hashCode() Activation Count : 39367
+Index : java.lang.module.ModuleDescriptor$Requires.modifiers() Activation Count : 384
+Index : java.lang.module.ModuleDescriptor$Requires.name() Activation Count : 702
+Index : java.lang.module.ModuleDescriptor.requires() Activation Count : 152
+Index : java.lang.module.ModuleDescriptor.isAutomatic() Activation Count : 1196
+Index : java.util.HashMap$Node.getKey() Activation Count : 904
+Index : java.util.HashMap$Node.getValue() Activation Count : 902
+Index : java.util.ImmutableCollections$Set12.isEmpty() Activation Count : 2104
+Index : java.lang.module.ModuleDescriptor$Exports.source() Activation Count : 10990
+Index : java.lang.module.ModuleDescriptor$Exports.targets() Activation Count : 8954
+Index : java.lang.module.ModuleDescriptor.provides() Activation Count : 300
+Index : java.lang.module.ModuleDescriptor.exports() Activation Count : 390
+Index : java.util.Objects.requireNonNull(Object) Activation Count : 8910
+Index : java.util.ImmutableCollections$SetN$SetNIterator.hasNext() Activation Count : 31908
+Index : java.lang.module.ModuleDescriptor.uses() Activation Count : 68
+Index : java.util.ImmutableCollections$SetN$SetNIterator.next() Activation Count : 209497
+Index : java.util.HashMap.hash(Object) Activation Count : 20115
+Index : java.lang.module.ModuleDescriptor$Exports.isQualified() Activation Count : 12967
+Index : java.lang.module.ModuleDescriptor$Provides.service() Activation Count : 146
+Index : java.lang.Byte.toUnsignedInt(byte) Activation Count : 25868
+Index : java.util.HashMap.putVal(int, Activation Count : 56197
+Index : java.util.HashMap$Node.<init>(int, Activation Count : 340
+Index : java.lang.String.equals(Object) Activation Count : 6908
+Index : java.util.KeyValueHolder.getKey() Activation Count : 130
+Index : java.util.KeyValueHolder.getValue() Activation Count : 58
+Index : java.lang.module.ModuleDescriptor.packages() Activation Count : 296
+Index : java.lang.module.ResolvedModule.reference() Activation Count : 560
+Index : java.lang.module.ModuleDescriptor$Version.toString() Activation Count : 60
+Index : java.lang.AbstractStringBuilder.length() Activation Count : 738
+Index : java.util.HashMap.newNode(int, Activation Count : 8370
+Index : java.util.HashMap.afterNodeInsertion(boolean) Activation Count : 1674
+Index : java.util.HashMap.resize() Activation Count : 11442
+Index : java.lang.module.ResolvedModule.configuration() Activation Count : 94
+Index : java.lang.module.ModuleDescriptor.isOpen() Activation Count : 30
+Index : java.util.HashMap.size() Activation Count : 28
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.width() Activation Count : 1348
+Index : jdk.internal.classfile.impl.SplitConstantPool.size() Activation Count : 3382
+Index : java.lang.invoke.MethodType.ptypes() Activation Count : 162
+Index : java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8() Activation Count : 26
+Index : java.lang.AbstractStringBuilder.getValue() Activation Count : 228
+Index : java.lang.StringLatin1.equals(byte[], Activation Count : 5002
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.constantPool() Activation Count : 1128
+Index : jdk.internal.classfile.impl.RawBytecodeHelper.bci() Activation Count : 2466
+Index : Queens.getRowColumn(int, Activation Count : 34032
+Index : Queens.placeQueen(int) Activation Count : 188124897531
+Index : java.util.Arrays.fill(boolean[], Activation Count : 928944
+Index : java.lang.Boolean.booleanValue() Activation Count : 13312
+Index : java.util.Arrays.fill(int[], Activation Count : 157680
+Index : Queens.queens() Activation Count : 121132
+Index : Queens.benchmark() Activation Count : 554727162
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString() Activation Count : 584
+Index : java.lang.String.value() Activation Count : 644
+Index : java.lang.String.coder() Activation Count : 12658
+Index : jdk.internal.classfile.impl.BufWriterImpl.size() Activation Count : 364
+Index : jdk.internal.util.WeakReferenceKey.hashCode() Activation Count : 84
+Index : jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool() Activation Count : 218
+Index : Queens.verifyResult(Object) Activation Count : 27392
+Index : Benchmark.innerBenchmarkLoop(int) Activation Count : 27123
+Index : Benchmark.innerBenchmarkLoop(int)-Re-Comp Activation Count : 14850990
+Index : java.nio.Buffer.position() Activation Count : 3788
+Index : java.nio.Buffer.limit() Activation Count : 2780
+Index : java.nio.Buffer.capacity() Activation Count : 752
+Index : java.nio.charset.CharsetEncoder.maxBytesPerChar() Activation Count : 752
+Index : java.lang.String.length() Activation Count : 22640
+Index : java.lang.StringLatin1.inflate(byte[], Activation Count : 18247
+Index : jdk.internal.constant.PrimitiveClassDescImpl.descriptorString() Activation Count : 174
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.hashCode() Activation Count : 132
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface() Activation Count : 54
+Index : java.util.ArrayList.size() Activation Count : 122
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag() Activation Count : 47
+Index : java.lang.invoke.MethodTypeForm.erasedType() Activation Count : 22
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[], Activation Count : 290
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp Activation Count : 240
+-- Queens completed successfully.

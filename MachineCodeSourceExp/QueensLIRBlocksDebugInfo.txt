@@ -1,0 +1,2835 @@
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-28[java.lang.String.isLatin1()]
+Block 0 has 4 instructions
+    isLatin1 : 1
+    null : 3
+Block 1 has 3 instructions
+    isLatin1 : 3
+Block 2 has 4 instructions
+    isLatin1 : 4
+
+
+
+
+Dumping LIR block debug info for :StubCompilation-161[Stub<ExceptionHandlerStub.exceptionHandler>]
+Block 0 has 12 instructions
+    null : 2
+    exceptionHandler : 10
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+java.lang.String.isLatin1()boolean -1 codeSignature differs 937dd1c2962246f2ee6caecf9c0db14acf0ac863ccdaf94f60534a31d4aa6a36 != 86c512a37be92c13fb44baed46f9aa447c513a4a9ba5ef10dc5f340802134c98
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-29[java.lang.String.coder()]
+Block 0 has 4 instructions
+    coder : 2
+    null : 2
+java.lang.String.coder()byte -1 codeSignature differs 1ffb93d9c4c1114a8818fb0e2b1e9aaa875be33ef8058fa64875c18b21b02f35 != 8ca4f65f1eeb16b579b0288f5839b5f40fb24baf4f41bf6029bfe83044523048
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-30[java.lang.String.charAt(int)]
+Block 0 has 5 instructions
+    null : 3
+    checkIndex : 1
+    charAt : 1
+Block 1 has 2 instructions
+    isLatin1 : 1
+    checkIndex : 1
+Block 2 has 4 instructions
+    isLatin1 : 1
+    charAt : 3
+Block 4 has 4 instructions
+    null : 2
+    charAt : 2
+Block 5 has 4 instructions
+    charAt : 4
+Block 3 has 4 instructions
+    null : 2
+    charAt : 2
+java.lang.String.charAt(int)char -1 codeSignature differs 4da5cead6a904f78cc233dd4ff98d28a9033e94d6d147697398afe93a303b8d7 != 46e5d4b27a5f4ddc0dc3c9069a00ab494e41f57b7871c89026c692ec721d6cca
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-31[java.lang.StringLatin1.charAt(byte[], int)]
+Block 0 has 4 instructions
+    null : 3
+    checkIndex : 1
+Block 1 has 4 instructions
+    checkIndex : 1
+    charAt : 3
+Block 2 has 4 instructions
+    charAt : 4
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-32[jdk.internal.util.Preconditions.checkFromIndexSize(int, int, int, BiFunction)]
+Block 0 has 6 instructions
+    null : 3
+    checkFromIndexSize : 3
+Block 2 has 3 instructions
+    checkFromIndexSize : 3
+Block 5 has 3 instructions
+    checkFromIndexSize : 3
+Block 4 has 4 instructions
+    checkFromIndexSize : 4
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-33[java.lang.Object.<init>()]
+Block 0 has 3 instructions
+    null : 2
+    <init> : 1
+java.lang.Object.<init>()void -1 codeSignature differs 37ecf541181815ac2ff65e6f875c61d89579b4d35600eb90f851be4c0dbb51e1 != 0d933a1997bee362f171e881ce5058202e49482c7de80120b23c310865788cfe
+
+
+
+
+Dumping LIR block debug info for :StubCompilation-162[Stub<IntrinsicStubsGen.vectorizedHashCodeBoolean>]
+Block 0 has 4 instructions
+    null : 2
+    vectorizedHashCodeBoolean : 2
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-34[java.lang.String.hashCode()]
+Block 0 has 6 instructions
+    null : 4
+    hashCode : 2
+Block 12 has 3 instructions
+    hashCode : 3
+Block 1 has 2 instructions
+    hashCode : 2
+Block 2 has 4 instructions
+    isLatin1 : 1
+    hashCode : 3
+Block 3 has 2 instructions
+    isLatin1 : 1
+    hashCode : 1
+Block 4 has 8 instructions
+    hashCode : 3
+    vectorizedHashCode : 5
+Block 6 has 4 instructions
+    null : 1
+    hashCode : 3
+Block 8 has 3 instructions
+    null : 1
+    hashCode : 2
+Block 9 has 4 instructions
+    hashCode : 4
+Block 7 has 3 instructions
+    null : 1
+    hashCode : 2
+Block 5 has 3 instructions
+    null : 1
+    hashCode : 2
+java.lang.String.hashCode()int -1 codeSignature differs 0fa2bb87abc23fce633a2cceea327a164b1e7c60a17afbc1e32aeb002fec0ad3 != fe03f93659bcd57f7c4263c20da067b2714bb51019fd78796544ea1a02945ad4
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-35[java.util.Objects.checkFromIndexSize(int, int, int)]
+Block 0 has 6 instructions
+    null : 3
+    checkFromIndexSize : 3
+Block 2 has 3 instructions
+    checkFromIndexSize : 3
+Block 5 has 3 instructions
+    checkFromIndexSize : 3
+Block 4 has 4 instructions
+    checkFromIndexSize : 4
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-36[java.lang.StringLatin1.equals(byte[], byte[])]
+Block 0 has 6 instructions
+    null : 3
+    equals : 3
+Block 15 has 3 instructions
+    equals : 3
+Block 1 has 2 instructions
+    equals : 2
+Block 3 has 5 instructions
+    null : 3
+    equals : 2
+Block 4 has 2 instructions
+    equals : 2
+Block 7 has 3 instructions
+    null : 1
+    equals : 2
+Block 9 has 3 instructions
+    equals : 3
+Block 10 has 3 instructions
+    equals : 3
+Block 8 has 2 instructions
+    equals : 2
+Block 11 has 3 instructions
+    equals : 3
+Block 12 has 3 instructions
+    equals : 3
+Block 14 has 4 instructions
+    equals : 4
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 codeSignature differs ff827e7a3d1ceb3d5e72f82ea0a738a846c6d59da436cc255328c179994cf621 != cd66d543421d3dd905d4390d120065fdfc0f807b59e902689dd3cbd0598fd0be
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-37[java.util.concurrent.ConcurrentHashMap.tabAt(ConcurrentHashMap$Node[], int)]
+Block 0 has 6 instructions
+    null : 2
+    getReferenceAcquire : 2
+    tabAt : 2
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-38[jdk.internal.misc.Unsafe.getReferenceAcquire(Object, long)]
+Block 0 has 5 instructions
+    null : 2
+    getReferenceAcquire : 1
+    getReferenceVolatile : 2
+jdk.internal.misc.Unsafe.getReferenceAcquire(java.lang.Object, long)java.lang.Object -1 codeSignature differs 699e1503ad516f4eba2c31a4b823f57e9219b7ba393f1e5358e47688e0faf822 != b2b45acaa866189597c90965a2ddf3a5853a39db792493367caf320aeb07fad5
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-39[jdk.internal.util.Preconditions.checkIndex(int, int, BiFunction)]
+Block 0 has 4 instructions
+    null : 3
+    checkIndex : 1
+Block 2 has 2 instructions
+    checkIndex : 2
+Block 3 has 3 instructions
+    checkIndex : 3
+Block 5 has 4 instructions
+    checkIndex : 4
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-40[java.util.Objects.requireNonNull(Object)]
+Block 0 has 6 instructions
+    null : 4
+    requireNonNull : 2
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-44[java.lang.Enum.ordinal()]
+Block 0 has 4 instructions
+    null : 2
+    ordinal : 2
+java.lang.Enum.ordinal()int -1 codeSignature differs 4f1cef4fad8f8d109d5e7398bb60cb51ff5cfa366b33f8039d7ec9fb744cc5dc != 2d3f082b71404099f0ad7e3108f060e779644de01d39b11c2b77bf9091489acd
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-45[java.lang.AbstractStringBuilder.length()]
+Block 0 has 4 instructions
+    null : 2
+    length : 2
+java.lang.AbstractStringBuilder.length()int -1 codeSignature differs 4f1cef4fad8f8d109d5e7398bb60cb51ff5cfa366b33f8039d7ec9fb744cc5dc != 2d3f082b71404099f0ad7e3108f060e779644de01d39b11c2b77bf9091489acd
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-47[java.lang.invoke.MethodTypeForm.basicType()]
+Block 0 has 5 instructions
+    basicType : 3
+    null : 2
+java.lang.invoke.MethodTypeForm.basicType()java.lang.invoke.MethodType -1 codeSignature differs 5810741379d35bdadcbfbb88ae73a525b4d3e852ffdc52f89a59193614c84f5f != 608f5fe574121dd0c729a5d83327c34384af6e5c8ec5c217703c370bfaa5ed53
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-50[java.lang.AbstractStringBuilder.getValue()]
+Block 0 has 5 instructions
+    getValue : 3
+    null : 2
+java.lang.AbstractStringBuilder.getValue()byte[] -1 codeSignature differs 5810741379d35bdadcbfbb88ae73a525b4d3e852ffdc52f89a59193614c84f5f != 608f5fe574121dd0c729a5d83327c34384af6e5c8ec5c217703c370bfaa5ed53
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-51[sun.invoke.util.Wrapper.basicTypeChar()]
+Block 0 has 4 instructions
+    basicTypeChar : 2
+    null : 2
+sun.invoke.util.Wrapper.basicTypeChar()char -1 codeSignature differs 82fab6ae4a8b530f701e234b38d942d052d79ba04a7a2edbae67d2d5256aae7c != c46c4159c12a7b012776aea73a38db9137d4fc18fb9209ead41ee61220b48e85
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-53[java.lang.invoke.MethodType$ConcurrentWeakInternSet$WeakEntry.hashCode()]
+Block 0 has 4 instructions
+    null : 2
+    hashCode : 2
+java.lang.invoke.MethodType$ConcurrentWeakInternSet$WeakEntry.hashCode()int -1 codeSignature differs ed2bbbc59dfbf769001630c422210e491f0208a42e87ec2a479322640c6fa380 != f63dd3bba8df7e86db6b8a7f00927a3df130b8d1906612f2abb9386564f406b7
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-56[java.lang.invoke.MethodType.returnType()]
+Block 0 has 5 instructions
+    null : 2
+    returnType : 3
+java.lang.invoke.MethodType.returnType()java.lang.Class -1 codeSignature differs d642fe25c39dd9ce50bfd22f80ab8b9616c0f2a0c737219ca4113c2f7e828a5b != c3f570805d47e75a5abe1687be975baeecad474f0cb03aa8b52b2f067b4b5806
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-57[java.lang.String.equals(Object)]
+Block 0 has 4 instructions
+    null : 3
+    equals : 1
+Block 2 has 2 instructions
+    equals : 2
+Block 4 has 2 instructions
+    equals : 2
+Block 5 has 7 instructions
+    equals : 7
+Block 6 has 2 instructions
+    equals : 2
+Block 20 has 3 instructions
+    null : 2
+    equals : 1
+Block 24 has 2 instructions
+    equals : 2
+Block 7 has 2 instructions
+    equals : 2
+Block 9 has 5 instructions
+    null : 3
+    equals : 2
+Block 10 has 2 instructions
+    equals : 2
+Block 13 has 3 instructions
+    null : 1
+    equals : 2
+Block 15 has 3 instructions
+    equals : 3
+Block 16 has 3 instructions
+    equals : 3
+Block 14 has 2 instructions
+    equals : 2
+Block 3 has 3 instructions
+    null : 1
+    equals : 2
+Block 17 has 3 instructions
+    null : 1
+    equals : 2
+Block 1 has 3 instructions
+    equals : 3
+Block 18 has 3 instructions
+    null : 2
+    equals : 1
+Block 23 has 3 instructions
+    null : 1
+    equals : 2
+Block 19 has 4 instructions
+    null : 3
+    equals : 1
+Block 22 has 4 instructions
+    equals : 4
+Block 21 has 4 instructions
+    null : 3
+    equals : 1
+Block 11 has 4 instructions
+    null : 2
+    equals : 2
+java.lang.String.equals(java.lang.Object)boolean -1 codeSignature differs b6e004e295186f3759b0c19c6620d2c226b9b4e8ed333597121aae53512d1b26 != b7fc50318f68cf4ef83aa8729372641003b517804ba9e0fc3cbdce96b4db0dd5
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-60[java.lang.invoke.MemberName.getDeclaringClass()]
+Block 0 has 5 instructions
+    getDeclaringClass : 3
+    null : 2
+java.lang.invoke.MemberName.getDeclaringClass()java.lang.Class -1 codeSignature differs 083307614407071cc01a15d171f6aacf051ae6451e297b659d90554c1b658de4 != ea00fe69fd2ccf80f85b00ba66aa76bb88eacc43cafad7f4cb4ff82f8fb7cf92
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-63[java.lang.String.length()]
+Block 0 has 8 instructions
+    coder : 1
+    null : 3
+    length : 4
+java.lang.String.length()int -1 codeSignature differs a73d84c2d25cd44f941bd02bd142e917d61d1738d6e5be4207726dc77b5875a3 != 1b4ca72d18504ad8983ed6d8bc733a4d768cd4a4dbf62ef2211ee37bc49aac32
+
+
+
+
+Dumping LIR block debug info for :StubCompilation-163[Stub<OSR_migration_end(long)void>]
+Block 0 has 8 instructions
+    null : 2
+    getGraph : 6
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-72[jdk.internal.util.ArraysSupport.signedHashCode(int, byte[], int, int)]
+Block 0 has 5 instructions
+    null : 3
+    signedHashCode : 2
+Block 1 has 4 instructions
+    signedHashCode : 4
+Block 8 has 2 instructions
+    signedHashCode : 2
+Block 9 has 10 instructions
+    null : 3
+    signedHashCode : 7
+Block 11 has 8 instructions
+    null : 1
+    signedHashCode : 7
+Block 10 has 2 instructions
+    signedHashCode : 2
+Block 12 has 7 instructions
+    null : 6
+    signedHashCode : 1
+Block 14 has 43 instructions
+    null : 1
+    signedHashCode : 42
+Block 13 has 2 instructions
+    null : 1
+    signedHashCode : 1
+Block 15 has 3 instructions
+    null : 2
+    signedHashCode : 1
+Block 17 has 8 instructions
+    null : 1
+    signedHashCode : 7
+Block 16 has 2 instructions
+    null : 1
+    signedHashCode : 1
+Block 22 has 3 instructions
+    signedHashCode : 3
+Block 2 has 8 instructions
+    null : 6
+    signedHashCode : 2
+Block 3 has 2 instructions
+    signedHashCode : 2
+Block 21 has 3 instructions
+    null : 1
+    signedHashCode : 2
+Block 6 has 3 instructions
+    null : 1
+    signedHashCode : 2
+Block 20 has 4 instructions
+    signedHashCode : 4
+Block 19 has 3 instructions
+    null : 1
+    signedHashCode : 2
+Block 5 has 3 instructions
+    null : 1
+    signedHashCode : 2
+jdk.internal.util.ArraysSupport.signedHashCode(int, byte[], int, int)int -1 codeSignature differs b9ae3075b323acb83e8488b32e2a14acd62faf20172a943e6926071d22c9d471 != 43f76d61376ed19324a31fd5f72972a763db30d3c35278f92f6e5491e5592b2c
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-74[java.lang.invoke.MethodHandle.type()]
+Block 0 has 5 instructions
+    null : 2
+    type : 3
+java.lang.invoke.MethodHandle.type()java.lang.invoke.MethodType -1 codeSignature differs ed20170a90dc274dad8b1bbab63210d52e479cd165a2786ed9c2a417054cdf41 != 018cce7c00b3e4c7fc126fd550619432259cfa6fe27b4ac948b8363cad393275
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-76[java.lang.invoke.LambdaForm$Name.index()]
+Block 0 has 4 instructions
+    null : 2
+    index : 2
+java.lang.invoke.LambdaForm$Name.index()int -1 codeSignature differs 4cf3cf1d7c690be1120a3fda546d6f80935423076a42a9e23eb1075e61fd8c09 != 3fccc79a913d06dae140933e61fa44fd893ad804bbb3d15172d2be0f8f2e0ff7
+Starting Queens benchmark ...
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-77[Queens.getRowColumn(int, int)]
+Block 0 has 5 instructions
+    null : 3
+    getRowColumn : 2
+Block 1 has 3 instructions
+    getRowColumn : 3
+Block 2 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 8 has 2 instructions
+    getRowColumn : 2
+Block 3 has 4 instructions
+    getRowColumn : 4
+Block 4 has 2 instructions
+    getRowColumn : 2
+Block 6 has 5 instructions
+    getRowColumn : 5
+Block 7 has 3 instructions
+    getRowColumn : 3
+Block 5 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 12 has 4 instructions
+    getRowColumn : 4
+Queens.getRowColumn(int, int)boolean -1 codeSignature differs c72c5d496a4904197061eac3b86ec47caff7e328d033ff500f25e6cd5df51b99 != 5e8595e8d4f61938008673d000ec559cd5b52725b9049987de236899a1a96268
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-78[Queens.placeQueen(int)]
+Block 0 has 7 instructions
+    null : 5
+    getRowColumn : 2
+Block 2 has 7 instructions
+    placeQueen : 1
+    null : 2
+    getRowColumn : 4
+Block 20 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 22 has 4 instructions
+    null : 1
+    getRowColumn : 3
+Block 23 has 4 instructions
+    null : 2
+    getRowColumn : 2
+Block 40 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 42 has 7 instructions
+    null : 3
+    getRowColumn : 4
+Block 43 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 60 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 62 has 7 instructions
+    null : 3
+    getRowColumn : 4
+Block 63 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 80 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 82 has 2 instructions
+    getRowColumn : 2
+Block 100 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 102 has 2 instructions
+    getRowColumn : 2
+Block 120 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 122 has 2 instructions
+    getRowColumn : 2
+Block 123 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 140 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 142 has 2 instructions
+    getRowColumn : 2
+Block 161 has 3 instructions
+    placeQueen : 3
+Block 4 has 3 instructions
+    getRowColumn : 3
+Block 5 has 3 instructions
+    getRowColumn : 3
+Block 7 has 3 instructions
+    getRowColumn : 3
+Block 8 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 24 has 4 instructions
+    null : 1
+    getRowColumn : 3
+Block 25 has 2 instructions
+    getRowColumn : 2
+Block 27 has 3 instructions
+    getRowColumn : 3
+Block 28 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 29 has 3 instructions
+    placeQueen : 2
+    null : 1
+Block 44 has 3 instructions
+    getRowColumn : 3
+Block 45 has 2 instructions
+    getRowColumn : 2
+Block 47 has 3 instructions
+    getRowColumn : 3
+Block 48 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 49 has 3 instructions
+    placeQueen : 2
+    null : 1
+Block 64 has 3 instructions
+    getRowColumn : 3
+Block 65 has 2 instructions
+    getRowColumn : 2
+Block 67 has 3 instructions
+    getRowColumn : 3
+Block 68 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 69 has 3 instructions
+    placeQueen : 2
+    null : 1
+Block 84 has 3 instructions
+    getRowColumn : 3
+Block 85 has 2 instructions
+    getRowColumn : 2
+Block 87 has 3 instructions
+    getRowColumn : 3
+Block 88 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 104 has 4 instructions
+    null : 1
+    getRowColumn : 3
+Block 105 has 2 instructions
+    getRowColumn : 2
+Block 107 has 4 instructions
+    null : 1
+    getRowColumn : 3
+Block 108 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 124 has 4 instructions
+    null : 1
+    getRowColumn : 3
+Block 125 has 2 instructions
+    getRowColumn : 2
+Block 127 has 4 instructions
+    null : 1
+    getRowColumn : 3
+Block 128 has 2 instructions
+    placeQueen : 1
+    getRowColumn : 1
+Block 129 has 3 instructions
+    placeQueen : 2
+    null : 1
+Block 144 has 4 instructions
+    null : 1
+    getRowColumn : 3
+Block 145 has 2 instructions
+    getRowColumn : 2
+Block 147 has 4 instructions
+    null : 1
+    getRowColumn : 3
+Block 148 has 3 instructions
+    placeQueen : 1
+    getRowColumn : 2
+Block 26 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 46 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 66 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 126 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 10 has 3 instructions
+    placeQueen : 3
+Block 12 has 6 instructions
+    placeQueen : 2
+    getRowColumn : 1
+    setRowColumn : 3
+Block 14 has 6 instructions
+    placeQueen : 4
+    null : 2
+Block 15 has 7 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 4
+Block 16 has 4 instructions
+    null : 1
+    setRowColumn : 3
+Block 17 has 2 instructions
+    setRowColumn : 2
+Block 19 has 8 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 5
+Block 30 has 3 instructions
+    placeQueen : 3
+Block 32 has 6 instructions
+    placeQueen : 2
+    getRowColumn : 1
+    setRowColumn : 3
+Block 34 has 5 instructions
+    placeQueen : 4
+    null : 1
+Block 35 has 7 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 4
+Block 36 has 4 instructions
+    null : 1
+    setRowColumn : 3
+Block 37 has 2 instructions
+    setRowColumn : 2
+Block 39 has 7 instructions
+    placeQueen : 1
+    null : 1
+    setRowColumn : 5
+Block 50 has 3 instructions
+    placeQueen : 3
+Block 52 has 6 instructions
+    placeQueen : 2
+    getRowColumn : 1
+    setRowColumn : 3
+Block 54 has 5 instructions
+    placeQueen : 4
+    null : 1
+Block 55 has 7 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 4
+Block 56 has 4 instructions
+    null : 1
+    setRowColumn : 3
+Block 57 has 2 instructions
+    setRowColumn : 2
+Block 59 has 7 instructions
+    placeQueen : 1
+    null : 1
+    setRowColumn : 5
+Block 70 has 3 instructions
+    placeQueen : 3
+Block 72 has 6 instructions
+    placeQueen : 2
+    getRowColumn : 1
+    setRowColumn : 3
+Block 74 has 5 instructions
+    placeQueen : 4
+    null : 1
+Block 75 has 7 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 4
+Block 76 has 4 instructions
+    null : 1
+    setRowColumn : 3
+Block 77 has 2 instructions
+    setRowColumn : 2
+Block 79 has 7 instructions
+    placeQueen : 1
+    null : 1
+    setRowColumn : 5
+Block 90 has 3 instructions
+    placeQueen : 3
+Block 92 has 7 instructions
+    placeQueen : 2
+    null : 1
+    getRowColumn : 1
+    setRowColumn : 3
+Block 94 has 5 instructions
+    placeQueen : 4
+    null : 1
+Block 95 has 7 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 4
+Block 96 has 4 instructions
+    null : 1
+    setRowColumn : 3
+Block 97 has 2 instructions
+    setRowColumn : 2
+Block 99 has 7 instructions
+    placeQueen : 1
+    null : 1
+    setRowColumn : 5
+Block 110 has 3 instructions
+    placeQueen : 3
+Block 112 has 7 instructions
+    placeQueen : 2
+    null : 1
+    getRowColumn : 1
+    setRowColumn : 3
+Block 114 has 5 instructions
+    placeQueen : 4
+    null : 1
+Block 115 has 7 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 4
+Block 116 has 4 instructions
+    null : 1
+    setRowColumn : 3
+Block 117 has 2 instructions
+    setRowColumn : 2
+Block 119 has 7 instructions
+    placeQueen : 1
+    null : 1
+    setRowColumn : 5
+Block 130 has 3 instructions
+    placeQueen : 3
+Block 132 has 7 instructions
+    placeQueen : 2
+    null : 1
+    getRowColumn : 1
+    setRowColumn : 3
+Block 134 has 5 instructions
+    placeQueen : 4
+    null : 1
+Block 135 has 7 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 4
+Block 136 has 4 instructions
+    null : 1
+    setRowColumn : 3
+Block 137 has 2 instructions
+    setRowColumn : 2
+Block 139 has 7 instructions
+    placeQueen : 1
+    null : 1
+    setRowColumn : 5
+Block 150 has 3 instructions
+    placeQueen : 3
+Block 152 has 6 instructions
+    placeQueen : 2
+    getRowColumn : 1
+    setRowColumn : 3
+Block 155 has 6 instructions
+    placeQueen : 4
+    null : 2
+Block 156 has 7 instructions
+    placeQueen : 1
+    null : 2
+    setRowColumn : 4
+Block 157 has 4 instructions
+    null : 1
+    setRowColumn : 3
+Block 158 has 2 instructions
+    setRowColumn : 2
+Block 160 has 6 instructions
+    placeQueen : 1
+    null : 1
+    setRowColumn : 4
+Block 215 has 3 instructions
+    placeQueen : 3
+Block 154 has 3 instructions
+    placeQueen : 3
+Block 218 has 4 instructions
+    getRowColumn : 4
+Block 175 has 5 instructions
+    null : 1
+    getRowColumn : 4
+Block 210 has 4 instructions
+    getRowColumn : 4
+Block 196 has 4 instructions
+    getRowColumn : 4
+Block 189 has 5 instructions
+    null : 1
+    getRowColumn : 4
+Block 203 has 4 instructions
+    getRowColumn : 4
+Block 182 has 5 instructions
+    null : 1
+    getRowColumn : 4
+Block 206 has 5 instructions
+    null : 1
+    setRowColumn : 4
+Block 199 has 5 instructions
+    null : 1
+    setRowColumn : 4
+Block 178 has 5 instructions
+    null : 1
+    setRowColumn : 4
+Block 213 has 4 instructions
+    setRowColumn : 4
+Block 164 has 4 instructions
+    setRowColumn : 4
+Block 192 has 5 instructions
+    null : 1
+    setRowColumn : 4
+Block 171 has 5 instructions
+    null : 1
+    setRowColumn : 4
+Block 185 has 5 instructions
+    null : 1
+    setRowColumn : 4
+Block 141 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 168 has 4 instructions
+    getRowColumn : 4
+Block 61 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 163 has 3 instructions
+    null : 1
+    setRowColumn : 2
+Block 41 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 151 has 3 instructions
+    placeQueen : 1
+    null : 1
+    getRowColumn : 1
+Block 167 has 3 instructions
+    null : 1
+    getRowColumn : 2
+Block 166 has 3 instructions
+    placeQueen : 1
+    null : 1
+    getRowColumn : 1
+Queens.placeQueen(int)boolean -1 codeSignature differs b77a0eb9a4074b117e304e7d26f04a2c4d710d52412fc442bce87648dd61a3c0 != 4b40010fae8b37fbda8aef501f285d0fc9d93fc25dbc015b6fcabf5e84c7d01a
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-79[java.util.Arrays.fill(boolean[], boolean)]
+Block 0 has 5 instructions
+    null : 3
+    fill : 2
+Block 2 has 5 instructions
+    null : 3
+    fill : 2
+Block 4 has 2 instructions
+    fill : 2
+Block 6 has 7 instructions
+    null : 3
+    fill : 4
+Block 8 has 4 instructions
+    fill : 4
+Block 7 has 2 instructions
+    fill : 2
+Block 16 has 2 instructions
+    fill : 2
+Block 9 has 3 instructions
+    null : 2
+    fill : 1
+Block 14 has 4 instructions
+    fill : 4
+Block 13 has 2 instructions
+    null : 1
+    fill : 1
+Block 11 has 18 instructions
+    fill : 18
+Block 10 has 2 instructions
+    null : 1
+    fill : 1
+Block 17 has 4 instructions
+    fill : 4
+java.util.Arrays.fill(boolean[], boolean)void -1 codeSignature differs eb504e4e8db25652edb86fb3c53d70a32b842f2f3e3a648f86c877d0a45cc8ac != 07cf9610811a6d1ac2b02eecec54dde6115d25c4a600d9116db9f627c74775c9
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-80[java.lang.Boolean.booleanValue()]
+Block 0 has 4 instructions
+    null : 2
+    booleanValue : 2
+java.lang.Boolean.booleanValue()boolean -1 codeSignature differs 113a22beddef80603d7aca811fd86cb4566757de377820f376c3d043f04b4ae8 != e8ad78130d4ed267ff14682ac2457053e330fc5dc09750884a9cd8770414cf3b
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-81[java.util.Arrays.fill(int[], int)]
+Block 0 has 5 instructions
+    null : 3
+    fill : 2
+Block 2 has 5 instructions
+    null : 3
+    fill : 2
+Block 4 has 2 instructions
+    fill : 2
+Block 6 has 6 instructions
+    null : 3
+    fill : 3
+Block 8 has 4 instructions
+    fill : 4
+Block 7 has 2 instructions
+    fill : 2
+Block 16 has 2 instructions
+    fill : 2
+Block 9 has 3 instructions
+    null : 2
+    fill : 1
+Block 14 has 4 instructions
+    fill : 4
+Block 13 has 2 instructions
+    null : 1
+    fill : 1
+Block 11 has 10 instructions
+    fill : 10
+Block 10 has 2 instructions
+    null : 1
+    fill : 1
+Block 17 has 4 instructions
+    fill : 4
+java.util.Arrays.fill(int[], int)void -1 codeSignature differs d976cddceba1c68991d01aa975b70f492a64f4d4fa9c196cf45d1a6fff660330 != 9c5fdf723a947ac024e5834c18bfb1e4f966ca46c496adccec37a76d7805c00a
+
+
+
+
+Dumping LIR block debug info for :StubCompilation-164[Stub<new_array_or_null(KlassPointer,int)Object>]
+Block 0 has 12 instructions
+    null : 2
+    getGraph : 10
+Block 2 has 5 instructions
+    getGraph : 5
+Block 1 has 4 instructions
+    getGraph : 4
+
+
+
+
+Dumping LIR block debug info for :StubCompilation-165[Stub<write_barrier_pre-stack-only(Object)void>]
+Block 0 has 10 instructions
+    null : 5
+    getGraph : 5
+
+
+
+
+Dumping LIR block debug info for :StubCompilation-166[Stub<write_barrier_post-stack-only(Word)void>]
+Block 0 has 10 instructions
+    null : 4
+    getGraph : 6
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-82[Queens.queens()]
+Block 0 has 7 instructions
+    null : 4
+    allocateArray : 2
+    queens : 1
+Block 2 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 3 has 16 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 5 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 6 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 8 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 9 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 11 has 15 instructions
+    allocateArray : 15
+Block 12 has 17 instructions
+    allocateArray : 1
+    queens : 8
+    fill : 8
+Block 1 has 7 instructions
+    null : 3
+    allocateArray : 4
+Block 7 has 7 instructions
+    null : 3
+    allocateArray : 4
+Block 4 has 7 instructions
+    null : 3
+    allocateArray : 4
+Block 10 has 7 instructions
+    null : 2
+    allocateArray : 4
+    queens : 1
+Queens.queens()boolean -1 codeSignature differs 4eb6bff7e6a99f095f17c989a36803771a8ee790e57953bfc407229b862a6a04 != a3a74b79b68205e7a2efba47431854fb8930fa1f176927055b51978360a126fc
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-83[Queens.benchmark()]
+Block 0 has 8 instructions
+    null : 4
+    allocateArray : 2
+    queens : 2
+Block 2 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 3 has 16 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 5 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 6 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 8 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 9 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 11 has 16 instructions
+    null : 1
+    allocateArray : 15
+Block 12 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 14 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 16 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 17 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 19 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 20 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 22 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 23 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 25 has 15 instructions
+    allocateArray : 15
+Block 26 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 28 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 30 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 31 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 33 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 34 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 36 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 37 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 39 has 15 instructions
+    allocateArray : 15
+Block 40 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 42 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 44 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 45 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 47 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 48 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 50 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 51 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 53 has 15 instructions
+    allocateArray : 15
+Block 54 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 56 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 58 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 59 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 61 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 62 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 64 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 65 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 67 has 15 instructions
+    allocateArray : 15
+Block 68 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 70 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 72 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 73 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 75 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 76 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 78 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 79 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 81 has 15 instructions
+    allocateArray : 15
+Block 82 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 84 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 86 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 87 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 89 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 90 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 92 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 93 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 95 has 15 instructions
+    allocateArray : 15
+Block 96 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 98 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 100 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 101 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 103 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 104 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 106 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 107 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 109 has 15 instructions
+    allocateArray : 15
+Block 110 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 112 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 114 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 115 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 117 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 118 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 120 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 121 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 123 has 15 instructions
+    allocateArray : 15
+Block 124 has 18 instructions
+    null : 1
+    allocateArray : 1
+    queens : 7
+    fill : 8
+    benchmark : 1
+Block 126 has 4 instructions
+    allocateArray : 2
+    queens : 1
+    benchmark : 1
+Block 128 has 13 instructions
+    null : 1
+    allocateArray : 12
+Block 129 has 17 instructions
+    null : 1
+    allocateArray : 3
+    queens : 5
+    fill : 8
+Block 131 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 132 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 134 has 14 instructions
+    null : 1
+    allocateArray : 13
+Block 135 has 24 instructions
+    allocateArray : 3
+    queens : 5
+    fill : 16
+Block 137 has 15 instructions
+    allocateArray : 15
+Block 138 has 17 instructions
+    null : 1
+    allocateArray : 1
+    queens : 6
+    fill : 8
+    benchmark : 1
+Block 140 has 3 instructions
+    booleanValueOf : 1
+    benchmark : 2
+Block 1 has 9 instructions
+    null : 4
+    allocateArray : 5
+Block 7 has 9 instructions
+    null : 4
+    allocateArray : 5
+Block 18 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 85 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 38 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 80 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 136 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 133 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 130 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 127 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 77 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 119 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 15 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 35 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 74 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 71 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 108 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 105 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 102 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 99 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 94 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 91 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 88 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 32 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 66 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 4 has 9 instructions
+    null : 4
+    allocateArray : 5
+Block 29 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 60 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 63 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 122 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 57 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 116 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 113 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 10 has 9 instructions
+    null : 5
+    allocateArray : 4
+Block 24 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 49 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 52 has 8 instructions
+    null : 4
+    allocateArray : 4
+Block 46 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 43 has 7 instructions
+    null : 2
+    allocateArray : 5
+Block 21 has 8 instructions
+    null : 3
+    allocateArray : 5
+Block 41 has 4 instructions
+    benchmark : 4
+Block 139 has 4 instructions
+    benchmark : 4
+Block 69 has 4 instructions
+    benchmark : 4
+Block 27 has 4 instructions
+    benchmark : 4
+Block 55 has 4 instructions
+    benchmark : 4
+Block 111 has 4 instructions
+    benchmark : 4
+Block 125 has 4 instructions
+    benchmark : 4
+Block 83 has 4 instructions
+    benchmark : 4
+Block 97 has 4 instructions
+    benchmark : 4
+Block 13 has 5 instructions
+    null : 1
+    benchmark : 4
+Queens.benchmark()java.lang.Object -1 codeSignature differs e82557db41dc2b1e9f63d4d775ad797878ae451dd082d6eec2b23400e4675abd != de05dd6637e87301f5075e22dde6a70de20991428318f46d3b3a6979a13b0910
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-84[java.lang.invoke.LambdaForm$BasicType.basicTypeClass()]
+Block 0 has 5 instructions
+    null : 2
+    basicTypeClass : 3
+java.lang.invoke.LambdaForm$BasicType.basicTypeClass()java.lang.Class -1 codeSignature differs 0f47ae2f146a2170abf95ff93ec4a5d96adccd43b102c047de0924d048b8b5a0 != 9ead2b1a754fbca11852d65d609a2acff46e21d203fae3dfab35974c9d0f7361
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-85[java.lang.invoke.MethodType.form()]
+Block 0 has 5 instructions
+    null : 2
+    form : 3
+java.lang.invoke.MethodType.form()java.lang.invoke.MethodTypeForm -1 codeSignature differs 5810741379d35bdadcbfbb88ae73a525b4d3e852ffdc52f89a59193614c84f5f != 608f5fe574121dd0c729a5d83327c34384af6e5c8ec5c217703c370bfaa5ed53
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-86[java.lang.invoke.MethodTypeForm.parameterSlotCount()]
+Block 0 has 4 instructions
+    null : 2
+    parameterSlotCount : 2
+java.lang.invoke.MethodTypeForm.parameterSlotCount()int -1 codeSignature differs 4cf3cf1d7c690be1120a3fda546d6f80935423076a42a9e23eb1075e61fd8c09 != 3fccc79a913d06dae140933e61fa44fd893ad804bbb3d15172d2be0f8f2e0ff7
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-87[java.lang.invoke.MethodType.ptypes()]
+Block 0 has 5 instructions
+    ptypes : 3
+    null : 2
+java.lang.invoke.MethodType.ptypes()java.lang.Class[] -1 codeSignature differs ed20170a90dc274dad8b1bbab63210d52e479cd165a2786ed9c2a417054cdf41 != 018cce7c00b3e4c7fc126fd550619432259cfa6fe27b4ac948b8363cad393275
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-95[java.lang.invoke.LambdaForm$Name.type()]
+Block 0 has 5 instructions
+    null : 2
+    type : 3
+java.lang.invoke.LambdaForm$Name.type()java.lang.invoke.LambdaForm$BasicType -1 codeSignature differs ed20170a90dc274dad8b1bbab63210d52e479cd165a2786ed9c2a417054cdf41 != 018cce7c00b3e4c7fc126fd550619432259cfa6fe27b4ac948b8363cad393275
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-96[java.util.ArrayList.size()]
+Block 0 has 4 instructions
+    null : 2
+    size : 2
+java.util.ArrayList.size()int -1 codeSignature differs d71579e855a4cc33780f9173fe1d9ac98c7524bddd05cfd724a5335406bf902e != 7d591363de9a699e2145b3ed005418d97924d8a063b3b20e46ee1fef3f199567
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-105[java.lang.invoke.MethodTypeForm.erasedType()]
+Block 0 has 5 instructions
+    null : 2
+    erasedType : 3
+java.lang.invoke.MethodTypeForm.erasedType()java.lang.invoke.MethodType -1 codeSignature differs ed20170a90dc274dad8b1bbab63210d52e479cd165a2786ed9c2a417054cdf41 != 018cce7c00b3e4c7fc126fd550619432259cfa6fe27b4ac948b8363cad393275
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-111[java.lang.StringLatin1.indexOfChar(byte[], int, int, int)]
+Block 0 has 4 instructions
+    null : 3
+    indexOfChar : 1
+Block 1 has 3 instructions
+    indexOfChar : 3
+Block 2 has 3 instructions
+    indexOfChar : 3
+Block 4 has 3 instructions
+    indexOfChar : 3
+Block 13 has 2 instructions
+    indexOfChar : 2
+Block 14 has 3 instructions
+    indexOfChar : 3
+Block 12 has 2 instructions
+    indexOfChar : 2
+Block 21 has 3 instructions
+    indexOfChar : 3
+Block 5 has 8 instructions
+    null : 6
+    indexOfChar : 2
+Block 6 has 2 instructions
+    indexOfChar : 2
+Block 17 has 3 instructions
+    indexOfChar : 3
+Block 3 has 3 instructions
+    null : 1
+    indexOfChar : 2
+Block 8 has 3 instructions
+    null : 1
+    indexOfChar : 2
+Block 19 has 4 instructions
+    indexOfChar : 4
+Block 18 has 3 instructions
+    null : 1
+    indexOfChar : 2
+Block 9 has 3 instructions
+    null : 1
+    indexOfChar : 2
+java.lang.StringLatin1.indexOfChar(byte[], int, int, int)int -1 codeSignature differs eeff0c3a71b1b46890da150e3727b47f8d663a64c26b7a0f1e1660441cb5fe88 != ef74d133946ff6f5799fa722a9468cff7187798c2a9c09bec6ddec2933847877
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-116[jdk.internal.org.objectweb.asm.ByteVector.putUTF8(String)]
+Block 0 has 11 instructions
+    arraycopyExactStubCallSnippet : 1
+    coder : 1
+    null : 3
+    length : 4
+    putUTF8 : 2
+Block 1 has 6 instructions
+    putUTF8 : 6
+Block 20 has 10 instructions
+    null : 8
+    putUTF8 : 2
+Block 21 has 3 instructions
+    putUTF8 : 3
+Block 22 has 3 instructions
+    putUTF8 : 3
+Block 23 has 7 instructions
+    null : 2
+    putUTF8 : 5
+Block 25 has 2 instructions
+    checkIndex : 1
+    putUTF8 : 1
+Block 27 has 4 instructions
+    null : 2
+    checkIndex : 2
+Block 28 has 2 instructions
+    checkIndex : 2
+Block 31 has 3 instructions
+    checkIndex : 1
+    putUTF8 : 2
+Block 33 has 7 instructions
+    null : 5
+    putUTF8 : 2
+Block 34 has 2 instructions
+    putUTF8 : 2
+Block 36 has 2 instructions
+    checkIndex : 1
+    putUTF8 : 1
+Block 38 has 2 instructions
+    checkIndex : 1
+    putUTF8 : 1
+Block 39 has 3 instructions
+    isLatin1 : 1
+    null : 1
+    putUTF8 : 1
+Block 40 has 5 instructions
+    isLatin1 : 1
+    null : 1
+    putUTF8 : 1
+    charAt : 2
+Block 42 has 2 instructions
+    checkIndex : 1
+    putUTF8 : 1
+Block 43 has 6 instructions
+    null : 3
+    putUTF8 : 3
+Block 45 has 4 instructions
+    putUTF8 : 2
+    charAt : 2
+Block 47 has 2 instructions
+    putUTF8 : 2
+Block 48 has 5 instructions
+    putUTF8 : 5
+Block 44 has 2 instructions
+    putUTF8 : 2
+Block 50 has 4 instructions
+    putUTF8 : 4
+Block 26 has 3 instructions
+    null : 1
+    checkIndex : 2
+Block 2 has 2 instructions
+    enlarge : 1
+    putUTF8 : 1
+Block 4 has 13 instructions
+    null : 3
+    allocateArray : 2
+    enlarge : 7
+    putUTF8 : 1
+Block 6 has 11 instructions
+    allocateArray : 10
+    enlarge : 1
+Block 7 has 3 instructions
+    null : 1
+    allocateArray : 2
+Block 9 has 4 instructions
+    allocateArray : 3
+    enlarge : 1
+Block 8 has 2 instructions
+    allocateArray : 2
+Block 12 has 3 instructions
+    allocateArray : 3
+Block 13 has 2 instructions
+    arraycopyExactStubCallSnippet : 1
+    allocateArray : 1
+Block 15 has 2 instructions
+    arraycopyExactStubCallSnippet : 1
+    putUTF8 : 1
+Block 17 has 2 instructions
+    arraycopyExactStubCallSnippet : 1
+    putUTF8 : 1
+Block 19 has 25 instructions
+    null : 12
+    arraycopy : 7
+    enlarge : 4
+    putUTF8 : 2
+Block 24 has 3 instructions
+    null : 1
+    putUTF8 : 2
+Block 5 has 20 instructions
+    null : 15
+    allocateArray : 4
+    enlarge : 1
+Block 11 has 19 instructions
+    null : 15
+    allocateArray : 4
+Block 62 has 6 instructions
+    null : 2
+    putUTF8 : 4
+Block 52 has 4 instructions
+    putUTF8 : 4
+Block 29 has 4 instructions
+    null : 2
+    checkIndex : 2
+Block 59 has 5 instructions
+    null : 1
+    checkIndex : 4
+Block 18 has 4 instructions
+    arraycopyExactStubCallSnippet : 1
+    null : 2
+    putUTF8 : 1
+Block 64 has 5 instructions
+    null : 1
+    putUTF8 : 4
+Block 3 has 4 instructions
+    null : 2
+    enlarge : 1
+    putUTF8 : 1
+Block 14 has 4 instructions
+    arraycopyExactStubCallSnippet : 1
+    null : 2
+    putUTF8 : 1
+Block 54 has 4 instructions
+    null : 2
+    checkIndex : 2
+Block 55 has 4 instructions
+    null : 2
+    checkIndex : 2
+Block 57 has 4 instructions
+    null : 2
+    checkIndex : 1
+    putUTF8 : 1
+Block 56 has 4 instructions
+    null : 2
+    checkIndex : 1
+    putUTF8 : 1
+Block 16 has 4 instructions
+    arraycopyExactStubCallSnippet : 1
+    null : 2
+    putUTF8 : 1
+Block 58 has 4 instructions
+    null : 2
+    checkIndex : 2
+Block 63 has 4 instructions
+    null : 2
+    putUTF8 : 2
+Block 53 has 4 instructions
+    null : 2
+    checkIndex : 1
+    putUTF8 : 1
+Block 37 has 4 instructions
+    null : 2
+    checkIndex : 2
+Block 41 has 4 instructions
+    null : 2
+    checkIndex : 1
+    putUTF8 : 1
+jdk.internal.org.objectweb.asm.ByteVector.putUTF8(java.lang.String)jdk.internal.org.objectweb.asm.ByteVector -1 codeSignature differs 41695d0334e92be1e952fad1b85c26f0552c4a2c54bb34bf82e43393fb3d214e != a175ca63368d15f2e28b33f9d9b716b1cc4d895fdec458e6ded9782b769b71f0
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-117[jdk.internal.util.ClassFileDumper.isEnabled()]
+Block 0 has 4 instructions
+    null : 2
+    isEnabled : 2
+jdk.internal.util.ClassFileDumper.isEnabled()boolean -1 codeSignature differs 113a22beddef80603d7aca811fd86cb4566757de377820f376c3d043f04b4ae8 != e8ad78130d4ed267ff14682ac2457053e330fc5dc09750884a9cd8770414cf3b
+Queens: iterations=1 runtime: 251229us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-120[Queens.verifyResult(Object)]
+Block 0 has 4 instructions
+    null : 3
+    verifyResult : 1
+Block 2 has 5 instructions
+    verifyResult : 5
+Block 3 has 2 instructions
+    verifyResult : 2
+Block 5 has 3 instructions
+    verifyResult : 3
+Block 7 has 3 instructions
+    verifyResult : 3
+Block 1 has 3 instructions
+    null : 1
+    verifyResult : 2
+Block 8 has 4 instructions
+    verifyResult : 1
+    booleanValue : 3
+Queens.verifyResult(java.lang.Object)boolean -1 codeSignature differs 2b868eccf571b7ca08cde31ef17dd4340f579b3021faa7331b4946ef12df631e != 622b29946db0879788d3d36f4c71a91daba08d5dbb68531af5abfe943be9884c
+Queens: iterations=2 runtime: 74389us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-121[java.util.concurrent.locks.AbstractOwnableSynchronizer.getExclusiveOwnerThread()]
+Block 0 has 5 instructions
+    getExclusiveOwnerThread : 3
+    null : 2
+java.util.concurrent.locks.AbstractOwnableSynchronizer.getExclusiveOwnerThread()java.lang.Thread -1 codeSignature differs d642fe25c39dd9ce50bfd22f80ab8b9616c0f2a0c737219ca4113c2f7e828a5b != c3f570805d47e75a5abe1687be975baeecad474f0cb03aa8b52b2f067b4b5806
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-122[java.util.concurrent.locks.AbstractQueuedSynchronizer.getState()]
+Block 0 has 4 instructions
+    getState : 2
+    null : 2
+java.util.concurrent.locks.AbstractQueuedSynchronizer.getState()int -1 codeSignature differs d71579e855a4cc33780f9173fe1d9ac98c7524bddd05cfd724a5335406bf902e != 7d591363de9a699e2145b3ed005418d97924d8a063b3b20e46ee1fef3f199567
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-123[java.util.concurrent.locks.AbstractQueuedSynchronizer.setState(int)]
+Block 0 has 5 instructions
+    null : 2
+    setState : 3
+java.util.concurrent.locks.AbstractQueuedSynchronizer.setState(int)void -1 codeSignature differs f2e915d0d1b247e0b67ab448b81d1038675263f3c6c27aba66445f5d3bc81cbb != bd3807a629c4803674a6ddd08a3aa8a46e5c3b5d0e1a0e1359a5e2edc4accacc
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-124[java.util.concurrent.locks.ReentrantLock.lock()]
+Block 0 has 12 instructions
+    currentThread : 2
+    null : 4
+    lock : 2
+    initialTryLock : 4
+Block 6 has 6 instructions
+    null : 1
+    setExclusiveOwnerThread : 4
+    initialTryLock : 1
+Block 7 has 2 instructions
+    null : 1
+    lock : 1
+Block 1 has 4 instructions
+    getExclusiveOwnerThread : 2
+    initialTryLock : 2
+Block 2 has 4 instructions
+    getState : 1
+    initialTryLock : 3
+Block 4 has 4 instructions
+    null : 1
+    setState : 2
+    initialTryLock : 1
+Block 5 has 4 instructions
+    null : 1
+    initialTryLock : 3
+Block 3 has 4 instructions
+    initialTryLock : 4
+java.util.concurrent.locks.ReentrantLock.lock()void -1 codeSignature differs 08ea60caf3b9e17fc3e783f3debbc52466988b551ea6e0f440b144041d3e7ceb != b9dcf139327e02945df211bafc37d7ffa95387a8265d685eeb6bff8502614102
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-125[java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int)]
+Block 0 has 6 instructions
+    compareAndSetState : 1
+    null : 2
+    compareAndSetInt : 3
+java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int)boolean -1 codeSignature differs 42567022cff3863ac29955bc0ebe19bc56ec91eda6e0308f374bad952cf331f6 != 7e56cf8ddc9a939e96178e30c27a75a62f9cb923d6ef1c6f65611aa11c6a451b
+Queens: iterations=3 runtime: 74531us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-126[java.util.concurrent.locks.ReentrantLock$Sync.lock()]
+Block 0 has 9 instructions
+    currentThread : 2
+    null : 3
+    initialTryLock : 4
+Block 6 has 6 instructions
+    null : 1
+    setExclusiveOwnerThread : 4
+    initialTryLock : 1
+Block 7 has 2 instructions
+    null : 1
+    lock : 1
+Block 1 has 4 instructions
+    getExclusiveOwnerThread : 2
+    initialTryLock : 2
+Block 2 has 4 instructions
+    getState : 1
+    initialTryLock : 3
+Block 4 has 4 instructions
+    null : 1
+    setState : 2
+    initialTryLock : 1
+Block 5 has 4 instructions
+    null : 1
+    initialTryLock : 3
+Block 3 has 4 instructions
+    initialTryLock : 4
+java.util.concurrent.locks.ReentrantLock$Sync.lock()void -1 codeSignature differs 341a942c70ba7a707cbabb45a75f842c6d8be6a7227278e641ff4ee3ad69327c != c82fde6f69de2018ec8539ecc11e50e138066e3d23a62021d2c0a9c7656f7756
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-128[java.util.concurrent.locks.AbstractOwnableSynchronizer.setExclusiveOwnerThread(Thread)]
+Block 0 has 7 instructions
+    null : 2
+    setExclusiveOwnerThread : 5
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-127[java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)]
+Block 0 has 8 instructions
+    currentThread : 1
+    getState : 1
+    getExclusiveOwnerThread : 2
+    null : 3
+    tryRelease : 1
+Block 1 has 2 instructions
+    tryRelease : 2
+Block 4 has 5 instructions
+    tryRelease : 2
+    release : 1
+    setState : 2
+Block 5 has 3 instructions
+    release : 2
+    signalNext : 1
+Block 13 has 3 instructions
+    release : 2
+    signalNext : 1
+Block 2 has 4 instructions
+    tryRelease : 2
+    setExclusiveOwnerThread : 2
+Block 7 has 5 instructions
+    release : 1
+    signalNext : 4
+Block 11 has 3 instructions
+    getAndBitwiseAndInt : 3
+Block 10 has 6 instructions
+    getIntVolatile : 1
+    getAndBitwiseAndInt : 5
+Block 12 has 5 instructions
+    signalNext : 4
+    getAndBitwiseAndInt : 1
+Block 14 has 3 instructions
+    release : 3
+Block 15 has 4 instructions
+    tryRelease : 3
+    release : 1
+java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)boolean -1 codeSignature differs 90802c254c939ab1c8850b1aa9365f06d1ceb2c5c238ea831fd0560d50265fe8 != 2c1e673983d96ba9e15a37bd756063d811c65ca7f5bf6223285df694cda5d124
+Queens: iterations=4 runtime: 77975us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-130[Benchmark.innerBenchmarkLoop(int)]
+Block 0 has 4 instructions
+    innerBenchmarkLoop : 1
+    null : 3
+Block 2 has 4 instructions
+    innerBenchmarkLoop : 2
+    null : 2
+Block 3 has 4 instructions
+    innerBenchmarkLoop : 2
+    null : 1
+    verifyResult : 1
+Block 5 has 5 instructions
+    verifyResult : 5
+Block 6 has 3 instructions
+    verifyResult : 3
+Block 8 has 2 instructions
+    verifyResult : 2
+Block 10 has 2 instructions
+    innerBenchmarkLoop : 1
+    verifyResult : 1
+Block 12 has 3 instructions
+    innerBenchmarkLoop : 1
+    null : 1
+    booleanValue : 1
+Block 14 has 5 instructions
+    innerBenchmarkLoop : 2
+    null : 2
+    verifyResult : 1
+Block 16 has 5 instructions
+    verifyResult : 5
+Block 17 has 2 instructions
+    verifyResult : 2
+Block 19 has 3 instructions
+    null : 1
+    verifyResult : 2
+Block 21 has 2 instructions
+    innerBenchmarkLoop : 1
+    verifyResult : 1
+Block 23 has 3 instructions
+    innerBenchmarkLoop : 2
+    booleanValue : 1
+Block 13 has 4 instructions
+    innerBenchmarkLoop : 2
+    null : 2
+Block 18 has 3 instructions
+    null : 1
+    verifyResult : 2
+Block 15 has 3 instructions
+    null : 1
+    verifyResult : 2
+Block 25 has 3 instructions
+    innerBenchmarkLoop : 3
+Block 4 has 3 instructions
+    null : 1
+    verifyResult : 2
+Block 11 has 4 instructions
+    innerBenchmarkLoop : 1
+    null : 2
+    booleanValue : 1
+Block 29 has 6 instructions
+    null : 2
+    booleanValue : 4
+Block 22 has 4 instructions
+    innerBenchmarkLoop : 1
+    null : 2
+    booleanValue : 1
+Block 27 has 5 instructions
+    null : 1
+    booleanValue : 4
+Block 30 has 4 instructions
+    innerBenchmarkLoop : 3
+    booleanValue : 1
+Block 28 has 4 instructions
+    null : 2
+    booleanValue : 2
+Block 26 has 4 instructions
+    innerBenchmarkLoop : 1
+    null : 2
+    booleanValue : 1
+Benchmark.innerBenchmarkLoop(int)boolean -1 codeSignature differs c22ceaa4189b64a2814509a4b0fb4c8e466b084a4f7afdf7544f22466761f250 != 9ce4eaf1bf5524830f95d439ce3627ab37b7e9656d9f2567c35b700a5f549268
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-131[jdk.internal.misc.InternalLock.lock()]
+Block 0 has 6 instructions
+    null : 3
+    lock : 3
+Block 2 has 8 instructions
+    currentThread : 2
+    lock : 2
+    initialTryLock : 4
+Block 8 has 6 instructions
+    null : 1
+    setExclusiveOwnerThread : 4
+    initialTryLock : 1
+Block 9 has 2 instructions
+    null : 1
+    lock : 1
+Block 3 has 4 instructions
+    getExclusiveOwnerThread : 2
+    initialTryLock : 2
+Block 4 has 4 instructions
+    getState : 1
+    initialTryLock : 3
+Block 6 has 4 instructions
+    null : 1
+    setState : 2
+    initialTryLock : 1
+Block 1 has 4 instructions
+    lock : 4
+Block 7 has 4 instructions
+    null : 1
+    initialTryLock : 3
+Block 5 has 4 instructions
+    initialTryLock : 4
+jdk.internal.misc.InternalLock.lock()void -1 codeSignature differs b452dff26cd28d3dfdab29803fbfeef4bf912e3c69be1f581c32c150859424e5 != 2698ecd2b9d3ff4aae5db0867cdc5bb0f8c044d4f3cfd85ae3b1cbbab2997160
+Queens: iterations=5 runtime: 79438us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-132[jdk.internal.misc.InternalLock.unlock()]
+Block 0 has 6 instructions
+    unlock : 3
+    null : 3
+Block 2 has 7 instructions
+    currentThread : 1
+    unlock : 2
+    getState : 1
+    getExclusiveOwnerThread : 2
+    tryRelease : 1
+Block 3 has 2 instructions
+    tryRelease : 2
+Block 6 has 5 instructions
+    tryRelease : 2
+    release : 1
+    setState : 2
+Block 18 has 2 instructions
+    unlock : 2
+Block 4 has 4 instructions
+    tryRelease : 2
+    setExclusiveOwnerThread : 2
+Block 7 has 3 instructions
+    release : 2
+    signalNext : 1
+Block 9 has 3 instructions
+    unlock : 1
+    signalNext : 2
+Block 11 has 2 instructions
+    signalNext : 2
+Block 13 has 4 instructions
+    null : 1
+    signalNext : 2
+    getAndBitwiseAndInt : 1
+Block 15 has 3 instructions
+    getAndBitwiseAndInt : 3
+Block 14 has 6 instructions
+    getIntVolatile : 1
+    getAndBitwiseAndInt : 5
+Block 16 has 7 instructions
+    null : 1
+    signalNext : 5
+    getAndBitwiseAndInt : 1
+Block 1 has 4 instructions
+    unlock : 4
+Block 19 has 6 instructions
+    unlock : 2
+    null : 1
+    tryRelease : 3
+jdk.internal.misc.InternalLock.unlock()void -1 codeSignature differs 4ada0f5ca77c1b9d8ac099d5b34641921a65cbb91649dacce18d71d39471c41c != 1cacee70c4edd982945367aba84346015b7e606242593c91e92a3af3e4872337
+Queens: iterations=6 runtime: 71405us
+Queens: iterations=7 runtime: 71687us
+Queens: iterations=8 runtime: 71771us
+Queens: iterations=9 runtime: 71735us
+Queens: iterations=10 runtime: 73146us
+Queens: iterations=11 runtime: 71374us
+Queens: iterations=12 runtime: 71453us
+Queens: iterations=13 runtime: 71577us
+Queens: iterations=14 runtime: 71454us
+Queens: iterations=15 runtime: 71430us
+Queens: iterations=16 runtime: 71502us
+Queens: iterations=17 runtime: 71701us
+Queens: iterations=18 runtime: 71685us
+Queens: iterations=19 runtime: 71736us
+Queens: iterations=20 runtime: 73026us
+Queens: iterations=21 runtime: 77146us
+Queens: iterations=22 runtime: 71721us
+Queens: iterations=23 runtime: 71778us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-133[java.nio.Buffer.limit()]
+Block 0 has 4 instructions
+    null : 2
+    limit : 2
+java.nio.Buffer.limit()int -1 codeSignature differs ed2bbbc59dfbf769001630c422210e491f0208a42e87ec2a479322640c6fa380 != f63dd3bba8df7e86db6b8a7f00927a3df130b8d1906612f2abb9386564f406b7
+Queens: iterations=24 runtime: 71843us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-134[java.nio.Buffer.position()]
+Block 0 has 4 instructions
+    null : 2
+    position : 2
+java.nio.Buffer.position()int -1 codeSignature differs 403607da32c0b09a60b7b6aaef38ba90e5c30d606621dcc8a67551d10c45b3fd != 6e6a5565c5798a65279ce79439c456a12c8461280199b42986bc61841364195a
+Queens: iterations=25 runtime: 73970us
+Queens: iterations=26 runtime: 72898us
+Queens: iterations=27 runtime: 71970us
+Queens: iterations=28 runtime: 71856us
+Queens: iterations=29 runtime: 73185us
+Queens: iterations=30 runtime: 73796us
+Queens: iterations=31 runtime: 73681us
+Queens: iterations=32 runtime: 73959us
+Queens: iterations=33 runtime: 71999us
+Queens: iterations=34 runtime: 72669us
+Queens: iterations=35 runtime: 71743us
+Queens: iterations=36 runtime: 71728us
+Queens: iterations=37 runtime: 71526us
+Queens: iterations=38 runtime: 71388us
+Queens: iterations=39 runtime: 71481us
+Queens: iterations=40 runtime: 71446us
+Queens: iterations=41 runtime: 71382us
+Queens: iterations=42 runtime: 71367us
+Queens: iterations=43 runtime: 71380us
+Queens: iterations=44 runtime: 71332us
+Queens: iterations=45 runtime: 71382us
+Queens: iterations=46 runtime: 71332us
+Queens: iterations=47 runtime: 71375us
+Queens: iterations=48 runtime: 71396us
+Queens: iterations=49 runtime: 71359us
+Queens: iterations=50 runtime: 71420us
+Queens: iterations=51 runtime: 71462us
+Queens: iterations=52 runtime: 71522us
+Queens: iterations=53 runtime: 71387us
+Queens: iterations=54 runtime: 72738us
+Queens: iterations=55 runtime: 71349us
+Queens: iterations=56 runtime: 71358us
+Queens: iterations=57 runtime: 71393us
+Queens: iterations=58 runtime: 71369us
+Queens: iterations=59 runtime: 71420us
+Queens: iterations=60 runtime: 71365us
+Queens: iterations=61 runtime: 71449us
+Queens: iterations=62 runtime: 71392us
+Queens: iterations=63 runtime: 71442us
+Queens: iterations=64 runtime: 71335us
+Queens: iterations=65 runtime: 71339us
+Queens: iterations=66 runtime: 71390us
+Queens: iterations=67 runtime: 71357us
+Queens: iterations=68 runtime: 72392us
+Queens: iterations=69 runtime: 71862us
+Queens: iterations=70 runtime: 72586us
+Queens: iterations=71 runtime: 72189us
+Queens: iterations=72 runtime: 71738us
+Queens: iterations=73 runtime: 71374us
+Queens: iterations=74 runtime: 72425us
+Queens: iterations=75 runtime: 78292us
+Queens: iterations=76 runtime: 72733us
+Queens: iterations=77 runtime: 71498us
+Queens: iterations=78 runtime: 71511us
+Queens: iterations=79 runtime: 71557us
+Queens: iterations=80 runtime: 71553us
+Queens: iterations=81 runtime: 71507us
+Queens: iterations=82 runtime: 71465us
+Queens: iterations=83 runtime: 71531us
+Queens: iterations=84 runtime: 71557us
+Queens: iterations=85 runtime: 71444us
+Queens: iterations=86 runtime: 71403us
+Queens: iterations=87 runtime: 71656us
+Queens: iterations=88 runtime: 71659us
+Queens: iterations=89 runtime: 71560us
+Queens: iterations=90 runtime: 71637us
+Queens: iterations=91 runtime: 71535us
+Queens: iterations=92 runtime: 71487us
+Queens: iterations=93 runtime: 71632us
+Queens: iterations=94 runtime: 71694us
+Queens: iterations=95 runtime: 71770us
+Queens: iterations=96 runtime: 71609us
+Queens: iterations=97 runtime: 71827us
+Queens: iterations=98 runtime: 72865us
+Queens: iterations=99 runtime: 71488us
+Queens: iterations=100 runtime: 71318us
+Queens: iterations=101 runtime: 71498us
+Queens: iterations=102 runtime: 71530us
+Queens: iterations=103 runtime: 71524us
+Queens: iterations=104 runtime: 71644us
+Queens: iterations=105 runtime: 71631us
+Queens: iterations=106 runtime: 71478us
+Queens: iterations=107 runtime: 71583us
+Queens: iterations=108 runtime: 71676us
+Queens: iterations=109 runtime: 71606us
+Queens: iterations=110 runtime: 71607us
+Queens: iterations=111 runtime: 71562us
+Queens: iterations=112 runtime: 71533us
+Queens: iterations=113 runtime: 71503us
+Queens: iterations=114 runtime: 71480us
+Queens: iterations=115 runtime: 71419us
+Queens: iterations=116 runtime: 71463us
+Queens: iterations=117 runtime: 71518us
+Queens: iterations=118 runtime: 71633us
+Queens: iterations=119 runtime: 72319us
+Queens: iterations=120 runtime: 71576us
+Queens: iterations=121 runtime: 72609us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-135[java.nio.Buffer.capacity()]
+Block 0 has 4 instructions
+    null : 2
+    capacity : 2
+java.nio.Buffer.capacity()int -1 codeSignature differs 55241df1fbdf271fdacfa5b71f0584873a1d3ae6add665e2545f90821b1eb45f != 8eed89d60c5bb31230ad652579d0e106c37b731bcabf1e49276e6047b569af28
+Queens: iterations=122 runtime: 71495us
+Queens: iterations=123 runtime: 71597us
+Queens: iterations=124 runtime: 71794us
+Queens: iterations=125 runtime: 71502us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-136[java.nio.charset.CharsetEncoder.maxBytesPerChar()]
+Block 0 has 4 instructions
+    null : 2
+    maxBytesPerChar : 2
+java.nio.charset.CharsetEncoder.maxBytesPerChar()float -1 codeSignature differs 4a45a0bf69a224bdf08935d6de3fa183fc2c47d46ae23ba2584717b4b4532b2f != 1381fcd6e41a707dc4ced47acd0e3f5a4cc25fcd3999bfbf8fc3eff4c0de8af6
+Queens: iterations=126 runtime: 71471us
+Queens: iterations=127 runtime: 71527us
+Queens: iterations=128 runtime: 71581us
+Queens: iterations=129 runtime: 71416us
+Queens: iterations=130 runtime: 71635us
+Queens: iterations=131 runtime: 71506us
+Queens: iterations=132 runtime: 71575us
+Queens: iterations=133 runtime: 71532us
+Queens: iterations=134 runtime: 71541us
+Queens: iterations=135 runtime: 71457us
+Queens: iterations=136 runtime: 71668us
+Queens: iterations=137 runtime: 71541us
+Queens: iterations=138 runtime: 71720us
+Queens: iterations=139 runtime: 71893us
+Queens: iterations=140 runtime: 71834us
+Queens: iterations=141 runtime: 71530us
+Queens: iterations=142 runtime: 71493us
+Queens: iterations=143 runtime: 72693us
+Queens: iterations=144 runtime: 71508us
+Queens: iterations=145 runtime: 72201us
+Queens: iterations=146 runtime: 72815us
+Queens: iterations=147 runtime: 73436us
+Queens: iterations=148 runtime: 71556us
+Queens: iterations=149 runtime: 71616us
+Queens: iterations=150 runtime: 71575us
+Queens: iterations=151 runtime: 71445us
+Queens: iterations=152 runtime: 71556us
+Queens: iterations=153 runtime: 71481us
+Queens: iterations=154 runtime: 71500us
+Queens: iterations=155 runtime: 71644us
+Queens: iterations=156 runtime: 71503us
+Queens: iterations=157 runtime: 71468us
+Queens: iterations=158 runtime: 71535us
+Queens: iterations=159 runtime: 71588us
+Queens: iterations=160 runtime: 71540us
+Queens: iterations=161 runtime: 71529us
+Queens: iterations=162 runtime: 71685us
+Queens: iterations=163 runtime: 71574us
+Queens: iterations=164 runtime: 71734us
+Queens: iterations=165 runtime: 72960us
+Queens: iterations=166 runtime: 71442us
+Queens: iterations=167 runtime: 71558us
+Queens: iterations=168 runtime: 71503us
+Queens: iterations=169 runtime: 71571us
+Queens: iterations=170 runtime: 71586us
+Queens: iterations=171 runtime: 71532us
+Queens: iterations=172 runtime: 71577us
+Queens: iterations=173 runtime: 71426us
+Queens: iterations=174 runtime: 71597us
+Queens: iterations=175 runtime: 71864us
+Queens: iterations=176 runtime: 71723us
+Queens: iterations=177 runtime: 71459us
+Queens: iterations=178 runtime: 71627us
+Queens: iterations=179 runtime: 71521us
+Queens: iterations=180 runtime: 71535us
+Queens: iterations=181 runtime: 71642us
+Queens: iterations=182 runtime: 71538us
+Queens: iterations=183 runtime: 71511us
+Queens: iterations=184 runtime: 71523us
+Queens: iterations=185 runtime: 71452us
+Queens: iterations=186 runtime: 71638us
+Queens: iterations=187 runtime: 72987us
+Queens: iterations=188 runtime: 71608us
+Queens: iterations=189 runtime: 71538us
+Queens: iterations=190 runtime: 71626us
+Queens: iterations=191 runtime: 71557us
+Queens: iterations=192 runtime: 71653us
+Queens: iterations=193 runtime: 71427us
+Queens: iterations=194 runtime: 71547us
+Queens: iterations=195 runtime: 71517us
+Queens: iterations=196 runtime: 71533us
+Queens: iterations=197 runtime: 71425us
+Queens: iterations=198 runtime: 71490us
+Queens: iterations=199 runtime: 71444us
+Queens: iterations=200 runtime: 71657us
+Queens: iterations=201 runtime: 71410us
+Queens: iterations=202 runtime: 71615us
+Queens: iterations=203 runtime: 71462us
+Queens: iterations=204 runtime: 71583us
+Queens: iterations=205 runtime: 71487us
+Queens: iterations=206 runtime: 71503us
+Queens: iterations=207 runtime: 71571us
+Queens: iterations=208 runtime: 71954us
+Queens: iterations=209 runtime: 72746us
+Queens: iterations=210 runtime: 71599us
+Queens: iterations=211 runtime: 71508us
+Queens: iterations=212 runtime: 71608us
+Queens: iterations=213 runtime: 71535us
+Queens: iterations=214 runtime: 71597us
+Queens: iterations=215 runtime: 71453us
+Queens: iterations=216 runtime: 71534us
+Queens: iterations=217 runtime: 71551us
+Queens: iterations=218 runtime: 71578us
+Queens: iterations=219 runtime: 71460us
+Queens: iterations=220 runtime: 71585us
+Queens: iterations=221 runtime: 71485us
+Queens: iterations=222 runtime: 71584us
+Queens: iterations=223 runtime: 71650us
+Queens: iterations=224 runtime: 71496us
+Queens: iterations=225 runtime: 71473us
+Queens: iterations=226 runtime: 71595us
+Queens: iterations=227 runtime: 71454us
+Queens: iterations=228 runtime: 71528us
+Queens: iterations=229 runtime: 71672us
+Queens: iterations=230 runtime: 71552us
+Queens: iterations=231 runtime: 71573us
+Queens: iterations=232 runtime: 72574us
+Queens: iterations=233 runtime: 71683us
+Queens: iterations=234 runtime: 71752us
+Queens: iterations=235 runtime: 71694us
+Queens: iterations=236 runtime: 71473us
+Queens: iterations=237 runtime: 71520us
+Queens: iterations=238 runtime: 72898us
+Queens: iterations=239 runtime: 71433us
+Queens: iterations=240 runtime: 71451us
+Queens: iterations=241 runtime: 71712us
+Queens: iterations=242 runtime: 71470us
+Queens: iterations=243 runtime: 71529us
+Queens: iterations=244 runtime: 71606us
+Queens: iterations=245 runtime: 71641us
+Queens: iterations=246 runtime: 71625us
+Queens: iterations=247 runtime: 71609us
+Queens: iterations=248 runtime: 71530us
+Queens: iterations=249 runtime: 71440us
+Queens: iterations=250 runtime: 71486us
+Queens: iterations=251 runtime: 71540us
+Queens: iterations=252 runtime: 71483us
+Queens: iterations=253 runtime: 71458us
+Queens: iterations=254 runtime: 72981us
+Queens: iterations=255 runtime: 71614us
+Queens: iterations=256 runtime: 71441us
+Queens: iterations=257 runtime: 71466us
+Queens: iterations=258 runtime: 71459us
+Queens: iterations=259 runtime: 71593us
+Queens: iterations=260 runtime: 71456us
+Queens: iterations=261 runtime: 71542us
+Queens: iterations=262 runtime: 71489us
+Queens: iterations=263 runtime: 71594us
+Queens: iterations=264 runtime: 71608us
+Queens: iterations=265 runtime: 71465us
+Queens: iterations=266 runtime: 71514us
+Queens: iterations=267 runtime: 71563us
+Queens: iterations=268 runtime: 71487us
+Queens: iterations=269 runtime: 71626us
+Queens: iterations=270 runtime: 71587us
+Queens: iterations=271 runtime: 71782us
+Queens: iterations=272 runtime: 76879us
+Queens: iterations=273 runtime: 71518us
+Queens: iterations=274 runtime: 71550us
+Queens: iterations=275 runtime: 71608us
+Queens: iterations=276 runtime: 72617us
+Queens: iterations=277 runtime: 72019us
+Queens: iterations=278 runtime: 71897us
+Queens: iterations=279 runtime: 71537us
+Queens: iterations=280 runtime: 71597us
+Queens: iterations=281 runtime: 71561us
+Queens: iterations=282 runtime: 71599us
+Queens: iterations=283 runtime: 71674us
+Queens: iterations=284 runtime: 71611us
+Queens: iterations=285 runtime: 71736us
+Queens: iterations=286 runtime: 71577us
+Queens: iterations=287 runtime: 71594us
+Queens: iterations=288 runtime: 71725us
+Queens: iterations=289 runtime: 71756us
+Queens: iterations=290 runtime: 71693us
+Queens: iterations=291 runtime: 71621us
+Queens: iterations=292 runtime: 71628us
+Queens: iterations=293 runtime: 71553us
+Queens: iterations=294 runtime: 71609us
+Queens: iterations=295 runtime: 71533us
+Queens: iterations=296 runtime: 71739us
+Queens: iterations=297 runtime: 71683us
+Queens: iterations=298 runtime: 72557us
+Queens: iterations=299 runtime: 71483us
+Queens: iterations=300 runtime: 71514us
+Queens: iterations=301 runtime: 71506us
+Queens: iterations=302 runtime: 71518us
+Queens: iterations=303 runtime: 72477us
+Queens: iterations=304 runtime: 71716us
+Queens: iterations=305 runtime: 71570us
+Queens: iterations=306 runtime: 71624us
+Queens: iterations=307 runtime: 71450us
+Queens: iterations=308 runtime: 72565us
+Queens: iterations=309 runtime: 71520us
+Queens: iterations=310 runtime: 71492us
+Queens: iterations=311 runtime: 71384us
+Queens: iterations=312 runtime: 71535us
+Queens: iterations=313 runtime: 71747us
+Queens: iterations=314 runtime: 71490us
+Queens: iterations=315 runtime: 71509us
+Queens: iterations=316 runtime: 71523us
+Queens: iterations=317 runtime: 71640us
+Queens: iterations=318 runtime: 71495us
+Queens: iterations=319 runtime: 71502us
+Queens: iterations=320 runtime: 73090us
+Queens: iterations=321 runtime: 72224us
+Queens: iterations=322 runtime: 72295us
+Queens: iterations=323 runtime: 72296us
+Queens: iterations=324 runtime: 72335us
+Queens: iterations=325 runtime: 72297us
+Queens: iterations=326 runtime: 72193us
+Queens: iterations=327 runtime: 72416us
+Queens: iterations=328 runtime: 75850us
+Queens: iterations=329 runtime: 72406us
+Queens: iterations=330 runtime: 72369us
+Queens: iterations=331 runtime: 72321us
+Queens: iterations=332 runtime: 72263us
+Queens: iterations=333 runtime: 72251us
+Queens: iterations=334 runtime: 72338us
+Queens: iterations=335 runtime: 72214us
+Queens: iterations=336 runtime: 72268us
+Queens: iterations=337 runtime: 72383us
+Queens: iterations=338 runtime: 72282us
+Queens: iterations=339 runtime: 78812us
+Queens: iterations=340 runtime: 79042us
+Queens: iterations=341 runtime: 72314us
+Queens: iterations=342 runtime: 72767us
+Queens: iterations=343 runtime: 72299us
+Queens: iterations=344 runtime: 72253us
+Queens: iterations=345 runtime: 72322us
+Queens: iterations=346 runtime: 72414us
+Queens: iterations=347 runtime: 72545us
+Queens: iterations=348 runtime: 72385us
+Queens: iterations=349 runtime: 72303us
+Queens: iterations=350 runtime: 72330us
+Queens: iterations=351 runtime: 72317us
+Queens: iterations=352 runtime: 72257us
+Queens: iterations=353 runtime: 72284us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-137[java.lang.StringLatin1.inflate(byte[], int, char[], int, int)]
+Block 0 has 4 instructions
+    null : 3
+    inflate : 1
+Block 2 has 7 instructions
+    inflate : 4
+    null : 3
+Block 4 has 5 instructions
+    inflate : 2
+    null : 3
+Block 5 has 2 instructions
+    inflate : 2
+Block 7 has 4 instructions
+    inflate : 4
+Block 9 has 5 instructions
+    inflate : 2
+    null : 3
+Block 10 has 2 instructions
+    inflate : 2
+Block 12 has 2 instructions
+    inflate : 2
+Block 13 has 2 instructions
+    inflate : 2
+Block 14 has 10 instructions
+    inflate : 6
+    null : 4
+Block 16 has 7 instructions
+    inflate : 7
+Block 15 has 2 instructions
+    inflate : 2
+Block 24 has 2 instructions
+    inflate : 2
+Block 17 has 6 instructions
+    inflate : 1
+    null : 5
+Block 19 has 35 instructions
+    inflate : 35
+Block 18 has 2 instructions
+    null : 1
+    inflate : 1
+Block 22 has 7 instructions
+    inflate : 7
+Block 21 has 2 instructions
+    null : 1
+    inflate : 1
+Block 30 has 3 instructions
+    inflate : 2
+    null : 1
+Block 31 has 4 instructions
+    inflate : 4
+Block 27 has 3 instructions
+    inflate : 2
+    null : 1
+Block 28 has 3 instructions
+    inflate : 2
+    null : 1
+Block 26 has 3 instructions
+    inflate : 2
+    null : 1
+Block 25 has 3 instructions
+    inflate : 2
+    null : 1
+Block 29 has 3 instructions
+    inflate : 2
+    null : 1
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 codeSignature differs e927c56df7ff3e5d097b4399366d4989f1d7bb110424001adb8ffeaf907bfd2a != 5fd4303e33a9e1b0822b439ed1ca0c8ff73b95725686104b80399fe7b5f8678c
+Queens: iterations=354 runtime: 72301us
+Queens: iterations=355 runtime: 72325us
+Queens: iterations=356 runtime: 72281us
+Queens: iterations=357 runtime: 72272us
+Queens: iterations=358 runtime: 72411us
+Queens: iterations=359 runtime: 72243us
+Queens: iterations=360 runtime: 72337us
+Queens: iterations=361 runtime: 72232us
+Queens: iterations=362 runtime: 72249us
+Queens: iterations=363 runtime: 72269us
+Queens: iterations=364 runtime: 72393us
+Queens: iterations=365 runtime: 72789us
+Queens: iterations=366 runtime: 73018us
+Queens: iterations=367 runtime: 73064us
+Queens: iterations=368 runtime: 72961us
+Queens: iterations=369 runtime: 72329us
+Queens: iterations=370 runtime: 72287us
+Queens: iterations=371 runtime: 72254us
+Queens: iterations=372 runtime: 72399us
+Queens: iterations=373 runtime: 72528us
+Queens: iterations=374 runtime: 72325us
+Queens: iterations=375 runtime: 72299us
+Queens: iterations=376 runtime: 72372us
+Queens: iterations=377 runtime: 72247us
+Queens: iterations=378 runtime: 72337us
+Queens: iterations=379 runtime: 72305us
+Queens: iterations=380 runtime: 72343us
+Queens: iterations=381 runtime: 72364us
+Queens: iterations=382 runtime: 72688us
+Queens: iterations=383 runtime: 72331us
+Queens: iterations=384 runtime: 72524us
+Queens: iterations=385 runtime: 72395us
+Queens: iterations=386 runtime: 72355us
+Queens: iterations=387 runtime: 72637us
+Queens: iterations=388 runtime: 72307us
+Queens: iterations=389 runtime: 72493us
+Queens: iterations=390 runtime: 72271us
+Queens: iterations=391 runtime: 72254us
+Queens: iterations=392 runtime: 72254us
+Queens: iterations=393 runtime: 72237us
+Queens: iterations=394 runtime: 72390us
+Queens: iterations=395 runtime: 72271us
+Queens: iterations=396 runtime: 72347us
+Queens: iterations=397 runtime: 72222us
+Queens: iterations=398 runtime: 72262us
+Queens: iterations=399 runtime: 72368us
+Queens: iterations=400 runtime: 72290us
+Queens: iterations=401 runtime: 72204us
+Queens: iterations=402 runtime: 72410us
+Queens: iterations=403 runtime: 72306us
+Queens: iterations=404 runtime: 72275us
+Queens: iterations=405 runtime: 72222us
+Queens: iterations=406 runtime: 72304us
+Queens: iterations=407 runtime: 72310us
+Queens: iterations=408 runtime: 72289us
+Queens: iterations=409 runtime: 73159us
+Queens: iterations=410 runtime: 72466us
+Queens: iterations=411 runtime: 72260us
+Queens: iterations=412 runtime: 72324us
+Queens: iterations=413 runtime: 72294us
+Queens: iterations=414 runtime: 72269us
+Queens: iterations=415 runtime: 72501us
+Queens: iterations=416 runtime: 72524us
+Queens: iterations=417 runtime: 72231us
+Queens: iterations=418 runtime: 72299us
+Queens: iterations=419 runtime: 72218us
+Queens: iterations=420 runtime: 72431us
+Queens: iterations=421 runtime: 72368us
+Queens: iterations=422 runtime: 72248us
+Queens: iterations=423 runtime: 72285us
+Queens: iterations=424 runtime: 72303us
+Queens: iterations=425 runtime: 72278us
+Queens: iterations=426 runtime: 72309us
+Queens: iterations=427 runtime: 72294us
+Queens: iterations=428 runtime: 72265us
+Queens: iterations=429 runtime: 72332us
+Queens: iterations=430 runtime: 72458us
+Queens: iterations=431 runtime: 73069us
+Queens: iterations=432 runtime: 72276us
+Queens: iterations=433 runtime: 72313us
+Queens: iterations=434 runtime: 72248us
+Queens: iterations=435 runtime: 72345us
+Queens: iterations=436 runtime: 72269us
+Queens: iterations=437 runtime: 72290us
+Queens: iterations=438 runtime: 72272us
+Queens: iterations=439 runtime: 72250us
+Queens: iterations=440 runtime: 72407us
+Queens: iterations=441 runtime: 72516us
+Queens: iterations=442 runtime: 72446us
+Queens: iterations=443 runtime: 72337us
+Queens: iterations=444 runtime: 72246us
+Queens: iterations=445 runtime: 75040us
+Queens: iterations=446 runtime: 72296us
+Queens: iterations=447 runtime: 72217us
+Queens: iterations=448 runtime: 72236us
+Queens: iterations=449 runtime: 72305us
+Queens: iterations=450 runtime: 72241us
+Queens: iterations=451 runtime: 72417us
+Queens: iterations=452 runtime: 72236us
+Queens: iterations=453 runtime: 73074us
+Queens: iterations=454 runtime: 72296us
+Queens: iterations=455 runtime: 72295us
+Queens: iterations=456 runtime: 72289us
+Queens: iterations=457 runtime: 72248us
+Queens: iterations=458 runtime: 72203us
+Queens: iterations=459 runtime: 72211us
+Queens: iterations=460 runtime: 72286us
+Queens: iterations=461 runtime: 72341us
+Queens: iterations=462 runtime: 72246us
+Queens: iterations=463 runtime: 72402us
+Queens: iterations=464 runtime: 72250us
+Queens: iterations=465 runtime: 72241us
+Queens: iterations=466 runtime: 72261us
+Queens: iterations=467 runtime: 72235us
+Queens: iterations=468 runtime: 72238us
+Queens: iterations=469 runtime: 72361us
+Queens: iterations=470 runtime: 72211us
+Queens: iterations=471 runtime: 72403us
+Queens: iterations=472 runtime: 72218us
+Queens: iterations=473 runtime: 72196us
+Queens: iterations=474 runtime: 72266us
+Queens: iterations=475 runtime: 72242us
+Queens: iterations=476 runtime: 72634us
+Queens: iterations=477 runtime: 72235us
+Queens: iterations=478 runtime: 72241us
+Queens: iterations=479 runtime: 72221us
+Queens: iterations=480 runtime: 72216us
+Queens: iterations=481 runtime: 72210us
+Queens: iterations=482 runtime: 72374us
+Queens: iterations=483 runtime: 72224us
+Queens: iterations=484 runtime: 72569us
+Queens: iterations=485 runtime: 72451us
+Queens: iterations=486 runtime: 72369us
+Queens: iterations=487 runtime: 72287us
+Queens: iterations=488 runtime: 72310us
+Queens: iterations=489 runtime: 72211us
+Queens: iterations=490 runtime: 72489us
+Queens: iterations=491 runtime: 72379us
+Queens: iterations=492 runtime: 72425us
+Queens: iterations=493 runtime: 72247us
+Queens: iterations=494 runtime: 72263us
+Queens: iterations=495 runtime: 72226us
+Queens: iterations=496 runtime: 72325us
+Queens: iterations=497 runtime: 72254us
+Queens: iterations=498 runtime: 72746us
+Queens: iterations=499 runtime: 72257us
+Queens: iterations=500 runtime: 72255us
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-138[jdk.internal.org.objectweb.asm.SymbolTable.getMajorVersion()]
+Block 0 has 4 instructions
+    getMajorVersion : 2
+    null : 2
+jdk.internal.org.objectweb.asm.SymbolTable.getMajorVersion()int -1 codeSignature differs 4f1cef4fad8f8d109d5e7398bb60cb51ff5cfa366b33f8039d7ec9fb744cc5dc != 2d3f082b71404099f0ad7e3108f060e779644de01d39b11c2b77bf9091489acd
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-143[java.lang.Math.min(int, int)]
+Block 0 has 6 instructions
+    min : 4
+    null : 2
+Queens: iterations=500 average: 72402us total: 36201359us
+
+
+
+
+
+
+Dumping LIR block debug info for :HotSpotCompilation-150[jdk.internal.org.objectweb.asm.MethodWriter.hasAsmInstructions()]
+Block 0 has 4 instructions
+    null : 2
+    hasAsmInstructions : 2
+jdk.internal.org.objectweb.asm.MethodWriter.hasAsmInstructions()boolean -1 codeSignature differs 740c98a14cb741ac16e10a799ba5d82f1b5e0000a7c939c9669727681f056f6e != d4f940d1485c8e52f637535ab88f0ec66cce90136c4d8bb00438456395c3777f
+Total Runtime: 36201359us

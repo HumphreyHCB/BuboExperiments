@@ -1,0 +1,1058 @@
+========================================
+Benchmark : Havlak
+Timestamp : 2025-11-17T14:22:41+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   Havlak   500   15000 
+========================================
+Starting Havlak benchmark ...
+Havlak: iterations=1 runtime: 1240136us
+Havlak: iterations=2 runtime: 471570us
+Havlak: iterations=3 runtime: 430891us
+Havlak: iterations=4 runtime: 428743us
+Havlak: iterations=5 runtime: 356537us
+Havlak: iterations=6 runtime: 371552us
+Havlak: iterations=7 runtime: 352610us
+Havlak: iterations=8 runtime: 390238us
+Havlak: iterations=9 runtime: 365553us
+Havlak: iterations=10 runtime: 372484us
+Havlak: iterations=11 runtime: 355156us
+Havlak: iterations=12 runtime: 345384us
+Havlak: iterations=13 runtime: 364272us
+Havlak: iterations=14 runtime: 451430us
+Havlak: iterations=15 runtime: 350233us
+Havlak: iterations=16 runtime: 348430us
+Havlak: iterations=17 runtime: 344192us
+Havlak: iterations=18 runtime: 370231us
+Havlak: iterations=19 runtime: 341984us
+Havlak: iterations=20 runtime: 382765us
+Havlak: iterations=21 runtime: 353663us
+Havlak: iterations=22 runtime: 342348us
+Havlak: iterations=23 runtime: 359356us
+Havlak: iterations=24 runtime: 454669us
+Havlak: iterations=25 runtime: 514130us
+Havlak: iterations=26 runtime: 386452us
+Havlak: iterations=27 runtime: 354212us
+Havlak: iterations=28 runtime: 343162us
+Havlak: iterations=29 runtime: 341188us
+Havlak: iterations=30 runtime: 344321us
+Havlak: iterations=31 runtime: 352583us
+Havlak: iterations=32 runtime: 357319us
+Havlak: iterations=33 runtime: 383644us
+Havlak: iterations=34 runtime: 678114us
+Havlak: iterations=35 runtime: 342976us
+Havlak: iterations=36 runtime: 426059us
+Havlak: iterations=37 runtime: 342889us
+Havlak: iterations=38 runtime: 341583us
+Havlak: iterations=39 runtime: 361522us
+Havlak: iterations=40 runtime: 352637us
+Havlak: iterations=41 runtime: 341776us
+Havlak: iterations=42 runtime: 340575us
+Havlak: iterations=43 runtime: 343442us
+Havlak: iterations=44 runtime: 353021us
+Havlak: iterations=45 runtime: 342186us
+Havlak: iterations=46 runtime: 353134us
+Havlak: iterations=47 runtime: 388007us
+Havlak: iterations=48 runtime: 342590us
+Havlak: iterations=49 runtime: 348480us
+Havlak: iterations=50 runtime: 343300us
+Havlak: iterations=51 runtime: 374669us
+Havlak: iterations=52 runtime: 340230us
+Havlak: iterations=53 runtime: 344500us
+Havlak: iterations=54 runtime: 343575us
+Havlak: iterations=55 runtime: 352177us
+Havlak: iterations=56 runtime: 346744us
+Havlak: iterations=57 runtime: 360887us
+Havlak: iterations=58 runtime: 403935us
+Havlak: iterations=59 runtime: 340875us
+Havlak: iterations=60 runtime: 342542us
+Havlak: iterations=61 runtime: 348698us
+Havlak: iterations=62 runtime: 352484us
+Havlak: iterations=63 runtime: 349433us
+Havlak: iterations=64 runtime: 351005us
+Havlak: iterations=65 runtime: 342904us
+Havlak: iterations=66 runtime: 341967us
+Havlak: iterations=67 runtime: 341147us
+Havlak: iterations=68 runtime: 340337us
+Havlak: iterations=69 runtime: 345812us
+Havlak: iterations=70 runtime: 344121us
+Havlak: iterations=71 runtime: 364945us
+Havlak: iterations=72 runtime: 385482us
+Havlak: iterations=73 runtime: 353578us
+Havlak: iterations=74 runtime: 371664us
+Havlak: iterations=75 runtime: 360879us
+Havlak: iterations=76 runtime: 394279us
+Havlak: iterations=77 runtime: 348244us
+Havlak: iterations=78 runtime: 342256us
+Havlak: iterations=79 runtime: 346232us
+Havlak: iterations=80 runtime: 342814us
+Havlak: iterations=81 runtime: 354474us
+Havlak: iterations=82 runtime: 387486us
+Havlak: iterations=83 runtime: 346820us
+Havlak: iterations=84 runtime: 342709us
+Havlak: iterations=85 runtime: 343890us
+Havlak: iterations=86 runtime: 403499us
+Havlak: iterations=87 runtime: 350797us
+Havlak: iterations=88 runtime: 348940us
+Havlak: iterations=89 runtime: 342783us
+Havlak: iterations=90 runtime: 342321us
+Havlak: iterations=91 runtime: 341093us
+Havlak: iterations=92 runtime: 339293us
+Havlak: iterations=93 runtime: 371425us
+Havlak: iterations=94 runtime: 352393us
+Havlak: iterations=95 runtime: 355311us
+Havlak: iterations=96 runtime: 363901us
+Havlak: iterations=97 runtime: 342728us
+Havlak: iterations=98 runtime: 342360us
+Havlak: iterations=99 runtime: 356523us
+Havlak: iterations=100 runtime: 352289us
+Havlak: iterations=101 runtime: 408250us
+Havlak: iterations=102 runtime: 369251us
+Havlak: iterations=103 runtime: 343408us
+Havlak: iterations=104 runtime: 345529us
+Havlak: iterations=105 runtime: 343046us
+Havlak: iterations=106 runtime: 371612us
+Havlak: iterations=107 runtime: 360945us
+Havlak: iterations=108 runtime: 350257us
+Havlak: iterations=109 runtime: 369646us
+Havlak: iterations=110 runtime: 343765us
+Havlak: iterations=111 runtime: 347738us
+Havlak: iterations=112 runtime: 360506us
+Havlak: iterations=113 runtime: 349354us
+Havlak: iterations=114 runtime: 342800us
+Havlak: iterations=115 runtime: 362623us
+Havlak: iterations=116 runtime: 340087us
+Havlak: iterations=117 runtime: 344859us
+Havlak: iterations=118 runtime: 343265us
+Havlak: iterations=119 runtime: 343423us
+Havlak: iterations=120 runtime: 343692us
+Havlak: iterations=121 runtime: 357260us
+Havlak: iterations=122 runtime: 353307us
+Havlak: iterations=123 runtime: 341614us
+Havlak: iterations=124 runtime: 339720us
+Havlak: iterations=125 runtime: 386732us
+Havlak: iterations=126 runtime: 348307us
+Havlak: iterations=127 runtime: 353360us
+Havlak: iterations=128 runtime: 342033us
+Havlak: iterations=129 runtime: 372689us
+Havlak: iterations=130 runtime: 341443us
+Havlak: iterations=131 runtime: 364808us
+Havlak: iterations=132 runtime: 351196us
+Havlak: iterations=133 runtime: 354190us
+Havlak: iterations=134 runtime: 393330us
+Havlak: iterations=135 runtime: 341446us
+Havlak: iterations=136 runtime: 342559us
+Havlak: iterations=137 runtime: 349360us
+Havlak: iterations=138 runtime: 355127us
+Havlak: iterations=139 runtime: 369853us
+Havlak: iterations=140 runtime: 339896us
+Havlak: iterations=141 runtime: 357733us
+Havlak: iterations=142 runtime: 343640us
+Havlak: iterations=143 runtime: 361793us
+Havlak: iterations=144 runtime: 353947us
+Havlak: iterations=145 runtime: 343554us
+Havlak: iterations=146 runtime: 349780us
+Havlak: iterations=147 runtime: 341538us
+Havlak: iterations=148 runtime: 340489us
+Havlak: iterations=149 runtime: 371096us
+Havlak: iterations=150 runtime: 357880us
+Havlak: iterations=151 runtime: 360038us
+Havlak: iterations=152 runtime: 341802us
+Havlak: iterations=153 runtime: 350582us
+Havlak: iterations=154 runtime: 342141us
+Havlak: iterations=155 runtime: 340949us
+Havlak: iterations=156 runtime: 339956us
+Havlak: iterations=157 runtime: 351323us
+Havlak: iterations=158 runtime: 384086us
+Havlak: iterations=159 runtime: 342474us
+Havlak: iterations=160 runtime: 356969us
+Havlak: iterations=161 runtime: 341685us
+Havlak: iterations=162 runtime: 365725us
+Havlak: iterations=163 runtime: 360997us
+Havlak: iterations=164 runtime: 348083us
+Havlak: iterations=165 runtime: 344138us
+Havlak: iterations=166 runtime: 341918us
+Havlak: iterations=167 runtime: 351374us
+Havlak: iterations=168 runtime: 340641us
+Havlak: iterations=169 runtime: 341887us
+Havlak: iterations=170 runtime: 341519us
+Havlak: iterations=171 runtime: 342853us
+Havlak: iterations=172 runtime: 339828us
+Havlak: iterations=173 runtime: 344739us
+Havlak: iterations=174 runtime: 354911us
+Havlak: iterations=175 runtime: 342310us
+Havlak: iterations=176 runtime: 341793us
+Havlak: iterations=177 runtime: 380284us
+Havlak: iterations=178 runtime: 348006us
+Havlak: iterations=179 runtime: 364060us
+Havlak: iterations=180 runtime: 360043us
+Havlak: iterations=181 runtime: 345329us
+Havlak: iterations=182 runtime: 343413us
+Havlak: iterations=183 runtime: 351078us
+Havlak: iterations=184 runtime: 342823us
+Havlak: iterations=185 runtime: 442647us
+Havlak: iterations=186 runtime: 345375us
+Havlak: iterations=187 runtime: 362460us
+Havlak: iterations=188 runtime: 358839us
+Havlak: iterations=189 runtime: 364645us
+Havlak: iterations=190 runtime: 343317us
+Havlak: iterations=191 runtime: 357874us
+Havlak: iterations=192 runtime: 351970us
+Havlak: iterations=193 runtime: 351859us
+Havlak: iterations=194 runtime: 346725us
+Havlak: iterations=195 runtime: 340954us
+Havlak: iterations=196 runtime: 352218us
+Havlak: iterations=197 runtime: 343904us
+Havlak: iterations=198 runtime: 366448us
+Havlak: iterations=199 runtime: 372120us
+Havlak: iterations=200 runtime: 401609us
+Havlak: iterations=201 runtime: 364487us
+Havlak: iterations=202 runtime: 343079us
+Havlak: iterations=203 runtime: 360222us
+Havlak: iterations=204 runtime: 370309us
+Havlak: iterations=205 runtime: 382952us
+Havlak: iterations=206 runtime: 342548us
+Havlak: iterations=207 runtime: 345733us
+Havlak: iterations=208 runtime: 353121us
+Havlak: iterations=209 runtime: 342209us
+Havlak: iterations=210 runtime: 348659us
+Havlak: iterations=211 runtime: 349661us
+Havlak: iterations=212 runtime: 339691us
+Havlak: iterations=213 runtime: 383356us
+Havlak: iterations=214 runtime: 352024us
+Havlak: iterations=215 runtime: 342409us
+Havlak: iterations=216 runtime: 360706us
+Havlak: iterations=217 runtime: 353240us
+Havlak: iterations=218 runtime: 382530us
+Havlak: iterations=219 runtime: 341590us
+Havlak: iterations=220 runtime: 341035us
+Havlak: iterations=221 runtime: 356839us
+Havlak: iterations=222 runtime: 342679us
+Havlak: iterations=223 runtime: 342533us
+Havlak: iterations=224 runtime: 341662us
+Havlak: iterations=225 runtime: 346292us
+Havlak: iterations=226 runtime: 341552us
+Havlak: iterations=227 runtime: 341736us
+Havlak: iterations=228 runtime: 347424us
+Havlak: iterations=229 runtime: 345092us
+Havlak: iterations=230 runtime: 343107us
+Havlak: iterations=231 runtime: 342909us
+Havlak: iterations=232 runtime: 341982us
+Havlak: iterations=233 runtime: 356505us
+Havlak: iterations=234 runtime: 354741us
+Havlak: iterations=235 runtime: 376035us
+Havlak: iterations=236 runtime: 339399us
+Havlak: iterations=237 runtime: 343986us
+Havlak: iterations=238 runtime: 342273us
+Havlak: iterations=239 runtime: 341415us
+Havlak: iterations=240 runtime: 342451us
+Havlak: iterations=241 runtime: 354756us
+Havlak: iterations=242 runtime: 396044us
+Havlak: iterations=243 runtime: 355728us
+Havlak: iterations=244 runtime: 380482us
+Havlak: iterations=245 runtime: 396271us
+Havlak: iterations=246 runtime: 342279us
+Havlak: iterations=247 runtime: 342696us
+Havlak: iterations=248 runtime: 389909us
+Havlak: iterations=249 runtime: 343215us
+Havlak: iterations=250 runtime: 341768us
+Havlak: iterations=251 runtime: 347105us
+Havlak: iterations=252 runtime: 340984us
+Havlak: iterations=253 runtime: 346268us
+Havlak: iterations=254 runtime: 343631us
+Havlak: iterations=255 runtime: 372838us
+Havlak: iterations=256 runtime: 415831us
+Havlak: iterations=257 runtime: 343117us
+Havlak: iterations=258 runtime: 341973us
+Havlak: iterations=259 runtime: 340795us
+Havlak: iterations=260 runtime: 340099us
+Havlak: iterations=261 runtime: 372626us
+Havlak: iterations=262 runtime: 396895us
+Havlak: iterations=263 runtime: 353818us
+Havlak: iterations=264 runtime: 343648us
+Havlak: iterations=265 runtime: 341863us
+Havlak: iterations=266 runtime: 367650us
+Havlak: iterations=267 runtime: 383883us
+Havlak: iterations=268 runtime: 340563us
+Havlak: iterations=269 runtime: 340387us
+Havlak: iterations=270 runtime: 397787us
+Havlak: iterations=271 runtime: 350644us
+Havlak: iterations=272 runtime: 341991us
+Havlak: iterations=273 runtime: 374972us
+Havlak: iterations=274 runtime: 359866us
+Havlak: iterations=275 runtime: 349716us
+Havlak: iterations=276 runtime: 340459us
+Havlak: iterations=277 runtime: 339341us
+Havlak: iterations=278 runtime: 359423us
+Havlak: iterations=279 runtime: 351386us
+Havlak: iterations=280 runtime: 344170us
+Havlak: iterations=281 runtime: 348423us
+Havlak: iterations=282 runtime: 353362us
+Havlak: iterations=283 runtime: 342435us
+Havlak: iterations=284 runtime: 360596us
+Havlak: iterations=285 runtime: 340084us
+Havlak: iterations=286 runtime: 365312us
+Havlak: iterations=287 runtime: 343493us
+Havlak: iterations=288 runtime: 344687us
+Havlak: iterations=289 runtime: 405486us
+Havlak: iterations=290 runtime: 365657us
+Havlak: iterations=291 runtime: 352506us
+Havlak: iterations=292 runtime: 359011us
+Havlak: iterations=293 runtime: 363212us
+Havlak: iterations=294 runtime: 371206us
+Havlak: iterations=295 runtime: 357719us
+Havlak: iterations=296 runtime: 357410us
+Havlak: iterations=297 runtime: 343141us
+Havlak: iterations=298 runtime: 351874us
+Havlak: iterations=299 runtime: 352579us
+Havlak: iterations=300 runtime: 340993us
+Havlak: iterations=301 runtime: 340330us
+Havlak: iterations=302 runtime: 345223us
+Havlak: iterations=303 runtime: 342746us
+Havlak: iterations=304 runtime: 363262us
+Havlak: iterations=305 runtime: 356314us
+Havlak: iterations=306 runtime: 353504us
+Havlak: iterations=307 runtime: 345864us
+Havlak: iterations=308 runtime: 340017us
+Havlak: iterations=309 runtime: 347379us
+Havlak: iterations=310 runtime: 343544us
+Havlak: iterations=311 runtime: 353956us
+Havlak: iterations=312 runtime: 347169us
+Havlak: iterations=313 runtime: 357994us
+Havlak: iterations=314 runtime: 359724us
+Havlak: iterations=315 runtime: 341405us
+Havlak: iterations=316 runtime: 347434us
+Havlak: iterations=317 runtime: 339227us
+Havlak: iterations=318 runtime: 344647us
+Havlak: iterations=319 runtime: 342456us
+Havlak: iterations=320 runtime: 378260us
+Havlak: iterations=321 runtime: 342614us
+Havlak: iterations=322 runtime: 354110us
+Havlak: iterations=323 runtime: 342494us
+Havlak: iterations=324 runtime: 358188us
+Havlak: iterations=325 runtime: 365588us
+Havlak: iterations=326 runtime: 369624us
+Havlak: iterations=327 runtime: 388522us
+Havlak: iterations=328 runtime: 385783us
+Havlak: iterations=329 runtime: 342399us
+Havlak: iterations=330 runtime: 343168us
+Havlak: iterations=331 runtime: 342101us
+Havlak: iterations=332 runtime: 355343us
+Havlak: iterations=333 runtime: 397867us
+Havlak: iterations=334 runtime: 345339us
+Havlak: iterations=335 runtime: 350767us
+Havlak: iterations=336 runtime: 376598us
+Havlak: iterations=337 runtime: 342339us
+Havlak: iterations=338 runtime: 345429us
+Havlak: iterations=339 runtime: 341859us
+Havlak: iterations=340 runtime: 349923us
+Havlak: iterations=341 runtime: 349741us
+Havlak: iterations=342 runtime: 376743us
+Havlak: iterations=343 runtime: 342579us
+Havlak: iterations=344 runtime: 371264us
+Havlak: iterations=345 runtime: 342342us
+Havlak: iterations=346 runtime: 347714us
+Havlak: iterations=347 runtime: 343400us
+Havlak: iterations=348 runtime: 341060us
+Havlak: iterations=349 runtime: 351129us
+Havlak: iterations=350 runtime: 355645us
+Havlak: iterations=351 runtime: 361201us
+Havlak: iterations=352 runtime: 348807us
+Havlak: iterations=353 runtime: 342673us
+Havlak: iterations=354 runtime: 353075us
+Havlak: iterations=355 runtime: 346974us
+Havlak: iterations=356 runtime: 352889us
+Havlak: iterations=357 runtime: 346028us
+Havlak: iterations=358 runtime: 363962us
+Havlak: iterations=359 runtime: 342205us
+Havlak: iterations=360 runtime: 354427us
+Havlak: iterations=361 runtime: 464317us
+Havlak: iterations=362 runtime: 481564us
+Havlak: iterations=363 runtime: 342839us
+Havlak: iterations=364 runtime: 341168us
+Havlak: iterations=365 runtime: 352144us
+Havlak: iterations=366 runtime: 345134us
+Havlak: iterations=367 runtime: 343629us
+Havlak: iterations=368 runtime: 402347us
+Havlak: iterations=369 runtime: 342145us
+Havlak: iterations=370 runtime: 341912us
+Havlak: iterations=371 runtime: 359000us
+Havlak: iterations=372 runtime: 341222us
+Havlak: iterations=373 runtime: 370485us
+Havlak: iterations=374 runtime: 338784us
+Havlak: iterations=375 runtime: 419135us
+Havlak: iterations=376 runtime: 345304us
+Havlak: iterations=377 runtime: 343031us
+Havlak: iterations=378 runtime: 372093us
+Havlak: iterations=379 runtime: 341409us
+Havlak: iterations=380 runtime: 344375us
+Havlak: iterations=381 runtime: 340601us
+Havlak: iterations=382 runtime: 383046us
+Havlak: iterations=383 runtime: 355647us
+Havlak: iterations=384 runtime: 343500us
+Havlak: iterations=385 runtime: 382273us
+Havlak: iterations=386 runtime: 342098us
+Havlak: iterations=387 runtime: 345299us
+Havlak: iterations=388 runtime: 351540us
+Havlak: iterations=389 runtime: 342720us
+Havlak: iterations=390 runtime: 351173us
+Havlak: iterations=391 runtime: 343862us
+Havlak: iterations=392 runtime: 342678us
+Havlak: iterations=393 runtime: 352413us
+Havlak: iterations=394 runtime: 341894us
+Havlak: iterations=395 runtime: 342005us
+Havlak: iterations=396 runtime: 374358us
+Havlak: iterations=397 runtime: 358206us
+Havlak: iterations=398 runtime: 339321us
+Havlak: iterations=399 runtime: 343492us
+Havlak: iterations=400 runtime: 342330us
+Havlak: iterations=401 runtime: 341609us
+Havlak: iterations=402 runtime: 350347us
+Havlak: iterations=403 runtime: 377135us
+Havlak: iterations=404 runtime: 353245us
+Havlak: iterations=405 runtime: 341116us
+Havlak: iterations=406 runtime: 377711us
+Havlak: iterations=407 runtime: 347331us
+Havlak: iterations=408 runtime: 343863us
+Havlak: iterations=409 runtime: 342634us
+Havlak: iterations=410 runtime: 644802us
+Havlak: iterations=411 runtime: 342727us
+Havlak: iterations=412 runtime: 340918us
+Havlak: iterations=413 runtime: 341672us
+Havlak: iterations=414 runtime: 347869us
+Havlak: iterations=415 runtime: 344763us
+Havlak: iterations=416 runtime: 343427us
+Havlak: iterations=417 runtime: 361316us
+Havlak: iterations=418 runtime: 343327us
+Havlak: iterations=419 runtime: 342105us
+Havlak: iterations=420 runtime: 342290us
+Havlak: iterations=421 runtime: 341088us
+Havlak: iterations=422 runtime: 351088us
+Havlak: iterations=423 runtime: 346309us
+Havlak: iterations=424 runtime: 371261us
+Havlak: iterations=425 runtime: 342817us
+Havlak: iterations=426 runtime: 341157us
+Havlak: iterations=427 runtime: 350420us
+Havlak: iterations=428 runtime: 340405us
+Havlak: iterations=429 runtime: 340245us
+Havlak: iterations=430 runtime: 358925us
+Havlak: iterations=431 runtime: 344795us
+Havlak: iterations=432 runtime: 342917us
+Havlak: iterations=433 runtime: 342090us
+Havlak: iterations=434 runtime: 351957us
+Havlak: iterations=435 runtime: 341198us
+Havlak: iterations=436 runtime: 347410us
+Havlak: iterations=437 runtime: 341190us
+Havlak: iterations=438 runtime: 340518us
+Havlak: iterations=439 runtime: 360724us
+Havlak: iterations=440 runtime: 342786us
+Havlak: iterations=441 runtime: 349097us
+Havlak: iterations=442 runtime: 341095us
+Havlak: iterations=443 runtime: 341306us
+Havlak: iterations=444 runtime: 341296us
+Havlak: iterations=445 runtime: 340550us
+Havlak: iterations=446 runtime: 353079us
+Havlak: iterations=447 runtime: 374036us
+Havlak: iterations=448 runtime: 355064us
+Havlak: iterations=449 runtime: 342873us
+Havlak: iterations=450 runtime: 423211us
+Havlak: iterations=451 runtime: 359328us
+Havlak: iterations=452 runtime: 359400us
+Havlak: iterations=453 runtime: 361909us
+Havlak: iterations=454 runtime: 340325us
+Havlak: iterations=455 runtime: 344697us
+Havlak: iterations=456 runtime: 342393us
+Havlak: iterations=457 runtime: 343080us
+Havlak: iterations=458 runtime: 353044us
+Havlak: iterations=459 runtime: 355042us
+Havlak: iterations=460 runtime: 366086us
+Havlak: iterations=461 runtime: 340898us
+Havlak: iterations=462 runtime: 360568us
+Havlak: iterations=463 runtime: 344320us
+Havlak: iterations=464 runtime: 439891us
+Havlak: iterations=465 runtime: 385517us
+Havlak: iterations=466 runtime: 344855us
+Havlak: iterations=467 runtime: 368397us
+Havlak: iterations=468 runtime: 350879us
+Havlak: iterations=469 runtime: 351682us
+Havlak: iterations=470 runtime: 338941us
+Havlak: iterations=471 runtime: 378325us
+Havlak: iterations=472 runtime: 342099us
+Havlak: iterations=473 runtime: 356352us
+Havlak: iterations=474 runtime: 347878us
+Havlak: iterations=475 runtime: 367202us
+Havlak: iterations=476 runtime: 359347us
+Havlak: iterations=477 runtime: 340065us
+Havlak: iterations=478 runtime: 339715us
+Havlak: iterations=479 runtime: 353425us
+Havlak: iterations=480 runtime: 342294us
+Havlak: iterations=481 runtime: 351197us
+Havlak: iterations=482 runtime: 388758us
+Havlak: iterations=483 runtime: 351006us
+Havlak: iterations=484 runtime: 351081us
+Havlak: iterations=485 runtime: 341531us
+Havlak: iterations=486 runtime: 340688us
+Havlak: iterations=487 runtime: 351704us
+Havlak: iterations=488 runtime: 344275us
+Havlak: iterations=489 runtime: 350091us
+Havlak: iterations=490 runtime: 343444us
+Havlak: iterations=491 runtime: 347895us
+Havlak: iterations=492 runtime: 347050us
+Havlak: iterations=493 runtime: 340814us
+Havlak: iterations=494 runtime: 340466us
+Havlak: iterations=495 runtime: 388477us
+Havlak: iterations=496 runtime: 370934us
+Havlak: iterations=497 runtime: 362127us
+Havlak: iterations=498 runtime: 342884us
+Havlak: iterations=499 runtime: 342627us
+Havlak: iterations=500 runtime: 372621us
+Havlak: iterations=500 average: 358538us total: 179269471us
+
+
+Total Runtime: 179269471us
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 312126 || Activation Count:4271 Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 8816 || Activation Count:175 Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 59 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 5854 || Activation Count:47 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 70 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 22654 || Activation Count:7 Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 5478 || Activation Count:53 Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 53774 || Activation Count:191 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 86 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 24162 || Activation Count:155 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 104 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 13096 || Activation Count:184 Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 18726 || Activation Count:184 Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 13344 || Activation Count:184 Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 123 (som.Vector.<init>(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1645080 || Activation Count:14682 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 125 (som.Vector.forEach(ForEachInterface)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 187474619114 || Activation Count:7822632 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+Comp 129 (som.Vector.<init>()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 14802662 || Activation Count:65706 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 130 (java.lang.invoke.DirectMethodHandle.allocateInstance(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 900 || Activation Count:12 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateInstanceDynamic(Class, AllocationSnippets$FillContent, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolean) [bci: 0]
+-at jdk.internal.misc.Unsafe.al
+Comp 133 (java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(Object,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1481208 || Activation Count:21415 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateInstanceDynamic(Class, AllocationSnippets$FillContent, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolean) [bci: 0]
+-at jdk.internal.misc.Unsafe.al
+Comp 136 (som.Vector.hasSome(TestInterface)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 570242 || Activation Count:6303 Source: -at som.Vector.hasSome(TestInterface) [bci: 5] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+Comp 141 (som.Set.add(Object)) loops:
+Found Encoding : 0:-1,1:-1
+├── Loop 0
+└── Loop 1
+  loop 0 Cycles: 1362854 || Activation Count:45221 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at som.Set.hasSome(TestInterface) [bci: 5]
+-at som.Set.contains(Object) [bci: 7]
+-at som.Set.add(Object) [bci: 2] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+-at som.Set.hasSome(TestInterface) [b
+  loop 1 Cycles: 3911910 || Activation Count:122405 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at som.Set.hasSome(TestInterface) [bci: 5]
+-at som.IdentitySet.contains(Object) [bci: 7]
+-at som.Set.add(Object) [bci: 2] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+-at som.Set.hasSome(TestInter
+Comp 142 (som.Set.hasSome(TestInterface)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 13914 || Activation Count:6 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at som.Set.hasSome(TestInterface) [bci: 5] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+-at som.Set.hasSome(TestInterface) [bci: 5]
+Comp 148 (havlak.UnionFindNode.findSet()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 37696 || Activation Count:332 Source: -at havlak.UnionFindNode.findSet() [bci: 10] | -at havlak.UnionFindNode.findSet() [bci: 45]
+Comp 150 (havlak.HavlakLoopFinder.doDFS(BasicBlock,) loops:
+Found Encoding : 0:-1,1:0
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 3496883755746 || Activation Count:111373498 Source: -at havlak.HavlakLoopFinder.doDFS(BasicBlock, int) [bci: 34] | -at havlak.HavlakLoopFinder.doDFS(BasicBlock, int) [bci: 92]
+  loop 1 Cycles: 726931149546 || Activation Count:104052498 Source: -at havlak.HavlakLoopFinder.doDFS(BasicBlock, int) [bci: 34]
+-at havlak.HavlakLoopFinder.doDFS(BasicBlock, int) [bci: 82] | -at havlak.HavlakLoopFinder.doDFS(BasicBlock, int) [bci: 92]
+-at havlak.HavlakLoopFinder.doDFS(BasicBlock, int) [bci: 82]
+Comp 151 (havlak.HavlakLoopFinder$4.apply(Object)) loops:
+Found Encoding : 0:-1,1:-1
+├── Loop 0
+└── Loop 1
+  loop 0 Cycles: 1337020 || Activation Count:30363 Source: -at havlak.UnionFindNode.findSet() [bci: 10]
+-at havlak.HavlakLoopFinder$4.apply(Integer) [bci: 14]
+-at havlak.HavlakLoopFinder$4.apply(Object) [bci: 5] | -at havlak.UnionFindNode.findSet() [bci: 45]
+-at havlak.HavlakLoopFinder$4.apply(Integer) [bci
+  loop 1 Cycles: 3159148 || Activation Count:90102 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at havlak.HavlakLoopFinder$4.apply(Integer) [bci: 102]
+-at havlak.HavlakLoopFinder$4.apply(Object) [bci: 5] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+-at havlak.HavlakLoopFinder$4.apply(Integer
+Comp 156 (havlak.HavlakLoopFinder.processEdges(BasicBlock,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1221970 || Activation Count:5525 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.processEdges(BasicBlock, int) [bci: 20] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.processEdges(BasicBlock, int) [bci: 20]
+Comp 159 (havlak.HavlakLoopFinder.stepD(int,) loops:
+Found Encoding : 0:-1,1:0
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 688038 || Activation Count:6661 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepD(int, Vector) [bci: 21] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.stepD(int, Vector) [bci: 21]
+Comp 162 (havlak.HavlakLoopFinder.findLoops()) loops:
+Found Encoding : 3:-1,2:-1,4:-1,0:-1,9:0,5:0,6:5,10:0,11:0,7:0,1:0,8:1
+├── Loop 3
+├── Loop 2
+├── Loop 4
+└── Loop 0
+    ├── Loop 9
+    ├── Loop 5
+    │   └── Loop 6
+    ├── Loop 10
+    ├── Loop 11
+    ├── Loop 7
+    └── Loop 1
+        └── Loop 8
+  loop 0 Cycles: 162430 || Activation Count:2 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 157] | -at havlak.HavlakLoopFinder.findLoops() [bci: 350]
+  loop 1 Cycles: 2620182 || Activation Count:4176 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 230] | -at havlak.HavlakLoopFinder.findLoops() [bci: 289]
+  loop 2 Cycles: 64 || Activation Count:1 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 230] | -at havlak.HavlakLoopFinder.findLoops() [bci: 289]
+  loop 3 Cycles: 28 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Set.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int, Vector, Vector, UnionFindNode) [bci: 26]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 283] | 
+  loop 4 Cycles: 18154 || Activation Count:2 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.setLoopAttributes(int, Vector, SimpleLoop) [bci: 21]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 341] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.Hav
+  loop 5 Cycles: 215424 || Activation Count:4177 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepD(int, Vector) [bci: 21]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 188] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.stepD(int,
+  loop 7 Cycles: 36172 || Activation Count:1284 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 211] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 211]
+  loop 8 Cycles: 636022 || Activation Count:4208 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Set.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int, Vector, Vector, UnionFindNode) [bci: 26]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 283] | 
+  loop 9 Cycles: 1213660 || Activation Count:4177 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 10 Cycles: 160154 || Activation Count:2892 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 11 Cycles: 83610 || Activation Count:1284 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+Comp 163 (havlak.HavlakLoopFinder.findLoops()-Re-Comp) loops:
+Found Encoding : 8:-1,9:-1,10:-1,11:-1,12:-1,13:-1,14:-1,15:-1,0:-1,16:0,3:-1,1:-1,17:1,4:1,5:4,18:1,19:1,6:1,2:1,7:2
+├── Loop 8
+├── Loop 9
+├── Loop 10
+├── Loop 11
+├── Loop 12
+├── Loop 13
+├── Loop 14
+├── Loop 15
+├── Loop 0
+│   └── Loop 16
+├── Loop 3
+└── Loop 1
+    ├── Loop 17
+    ├── Loop 4
+    │   └── Loop 5
+    ├── Loop 18
+    ├── Loop 19
+    ├── Loop 6
+    └── Loop 2
+        └── Loop 7
+  loop 0 Cycles: 79096204 || Activation Count:14340 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 85] | -at havlak.HavlakLoopFinder.findLoops() [bci: 137]
+  loop 1 Cycles: 345473004 || Activation Count:14339 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 157] | -at havlak.HavlakLoopFinder.findLoops() [bci: 350]
+  loop 2 Cycles: 48199828 || Activation Count:157729 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 230] | -at havlak.HavlakLoopFinder.findLoops() [bci: 289]
+  loop 3 Cycles: 11744600 || Activation Count:14340 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.initAllNodes() [bci: 15]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 138] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.initAllNodes()
+  loop 4 Cycles: 7642558 || Activation Count:157729 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepD(int, Vector) [bci: 21]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 188] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.stepD(int,
+  loop 6 Cycles: 1193650 || Activation Count:43017 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 211] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 211]
+  loop 7 Cycles: 14621882 || Activation Count:129051 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Set.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int, Vector, Vector, UnionFindNode) [bci: 26]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 283] | 
+  loop 8 Cycles: 3013424 || Activation Count:14338 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 9 Cycles: 2892410 || Activation Count:14336 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 10 Cycles: 1105830 || Activation Count:14340 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 11 Cycles: 948336 || Activation Count:14339 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 12 Cycles: 932162 || Activation Count:14337 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 13 Cycles: 917676 || Activation Count:14338 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 14 Cycles: 892980 || Activation Count:14339 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 15 Cycles: 3344146 || Activation Count:14328 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 16 Cycles: 30260736 || Activation Count:148554 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 17 Cycles: 33758530 || Activation Count:157680 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 18 Cycles: 22417530 || Activation Count:114685 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 19 Cycles: 8530110 || Activation Count:43005 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+Comp 166 (havlak.HavlakLoopFinder.identifyEdges(int)) loops:
+Found Encoding : 0:-1,1:0
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 55897851628 || Activation Count:7524381 Source: -at havlak.HavlakLoopFinder.identifyEdges(int) [bci: 2] | -at havlak.HavlakLoopFinder.identifyEdges(int) [bci: 61]
+  loop 1 Cycles: 24229483098 || Activation Count:215419191 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.processEdges(BasicBlock, int) [bci: 20]
+-at havlak.HavlakLoopFinder.identifyEdges(int) [bci: 52] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoop
+Comp 171 (havlak.HavlakLoopFinder.setLoopAttributes(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 18445066580 || Activation Count:63318712 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.setLoopAttributes(int, Vector, SimpleLoop) [bci: 21] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.setLoopAttributes(int, Vector, Simple
+Comp 173 (havlak.LoopTesterApp.findLoops(LoopStructureGraph)) loops:
+Found Encoding : 0:-1,1:-1
+├── Loop 0
+└── Loop 1
+  loop 0 Cycles: 485424294 || Activation Count:7518592 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 1 Cycles: 339081036 || Activation Count:7517971 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 179 (havlak.ControlFlowGraph.createNode(int)) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 670 || Activation Count:1 Source: -at som.Vector.atPut(int, Object) [bci: 15]
+-at havlak.ControlFlowGraph.createNode(int) [bci: 41] | -at som.Vector.atPut(int, Object) [bci: 27]
+-at havlak.ControlFlowGraph.createNode(int) [bci: 41]
+Comp 192 (havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1735748 || Activation Count:5177 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Set.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int, Vector, Vector, UnionFindNode) [bci: 26] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+
+Comp 194 (som.Set.forEach(ForEachInterface)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 181339350 || Activation Count:2262 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Set.forEach(ForEachInterface) [bci: 5] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at som.Set.forEach(ForEachInterface) [bci: 5]
+Comp 195 (som.Set.contains(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 8904 || Activation Count:300 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at som.Set.hasSome(TestInterface) [bci: 5]
+-at som.Set.contains(Object) [bci: 7] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+-at som.Set.hasSome(TestInterface) [bci: 5]
+-at som.Set.contains(Objec
+Comp 197 (som.Set.add(Object)-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1
+├── Loop 0
+└── Loop 1
+  loop 0 Cycles: 1964034022 || Activation Count:48106189 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at som.Set.hasSome(TestInterface) [bci: 5]
+-at som.Set.contains(Object) [bci: 7]
+-at som.Set.add(Object) [bci: 2] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+-at som.Set.hasSome(TestInterface) [b
+  loop 1 Cycles: 185414242322 || Activation Count:271081180 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at som.Set.hasSome(TestInterface) [bci: 5]
+-at som.IdentitySet.contains(Object) [bci: 7]
+-at som.Set.add(Object) [bci: 2] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+-at som.Set.hasSome(TestInter
+Comp 199 (havlak.HavlakLoopFinder$4.apply(Integer)-Re-Comp) loops:
+Found Encoding : 3:-1,4:-1,0:-1,1:-1,2:-1
+├── Loop 3
+├── Loop 4
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 1439713132 || Activation Count:55741678 Source: -at havlak.UnionFindNode.findSet() [bci: 10]
+-at havlak.HavlakLoopFinder$4.apply(Integer) [bci: 14] | -at havlak.UnionFindNode.findSet() [bci: 45]
+-at havlak.HavlakLoopFinder$4.apply(Integer) [bci: 14]
+  loop 2 Cycles: 4576409798 || Activation Count:137035025 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at havlak.HavlakLoopFinder$4.apply(Integer) [bci: 102] | -at som.Vector.hasSome(TestInterface) [bci: 36]
+-at havlak.HavlakLoopFinder$4.apply(Integer) [bci: 102]
+  loop 3 Cycles: 11347901854 || Activation Count:192662805 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 4 Cycles: 4263499244 || Activation Count:55726390 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 200 (havlak.HavlakLoopFinder.findLoops()-Re-Comp) loops:
+Found Encoding : 13:-1,3:-1,14:3,15:3,4:3,5:3,16:-1,17:-1,6:-1,2:-1,7:2,0:-1,18:0,8:0,19:8,20:8,9:8,10:8,21:0,22:0,11:0,1:0,12:1
+├── Loop 13
+├── Loop 3
+│   ├── Loop 14
+│   ├── Loop 15
+│   ├── Loop 4
+│   └── Loop 5
+├── Loop 16
+├── Loop 17
+├── Loop 6
+├── Loop 2
+│   └── Loop 7
+└── Loop 0
+    ├── Loop 18
+    ├── Loop 8
+    │   ├── Loop 19
+    │   ├── Loop 20
+    │   ├── Loop 9
+    │   └── Loop 10
+    ├── Loop 21
+    ├── Loop 22
+    ├── Loop 11
+    └── Loop 1
+        └── Loop 12
+  loop 0 Cycles: 870098 || Activation Count:1 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 157] | -at havlak.HavlakLoopFinder.findLoops() [bci: 350]
+  loop 1 Cycles: 504370 || Activation Count:74 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 230] | -at havlak.HavlakLoopFinder.findLoops() [bci: 289]
+  loop 2 Cycles: 388 || Activation Count:1 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 230] | -at havlak.HavlakLoopFinder.findLoops() [bci: 289]
+  loop 3 Cycles: 80 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepD(int, Vector) [bci: 21]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 188] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.stepD(int,
+  loop 8 Cycles: 44390 || Activation Count:74 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepD(int, Vector) [bci: 21]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 188] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.stepD(int,
+  loop 9 Cycles: 132 || Activation Count:1 Source: -at havlak.UnionFindNode.findSet() [bci: 10]
+-at havlak.HavlakLoopFinder$6.apply(Integer) [bci: 27]
+-at havlak.HavlakLoopFinder$6.apply(Object) [bci: 5]
+-at som.Vector.forEach(ForEachInterface) [bci: 20]
+-at havlak.HavlakLoopFinder.stepD(int, Vector
+  loop 10 Cycles: 230 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.UnionFindNode.findSet() [bci: 52]
+-at havlak.HavlakLoopFinder$6.apply(Integer) [bci: 27]
+-at havlak.HavlakLoopFinder$6.apply(Object) [bci: 5]
+-at som.Vector.forEach(ForEachInterface) [bci
+  loop 11 Cycles: 2132 || Activation Count:30 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 211] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 211]
+  loop 12 Cycles: 37150 || Activation Count:207 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Set.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int, Vector, Vector, UnionFindNode) [bci: 26]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 283] |
+  loop 13 Cycles: 2222 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 16 Cycles: 304 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 18 Cycles: 25808 || Activation Count:74 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 19 Cycles: 14790 || Activation Count:42 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 20 Cycles: 348 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 21 Cycles: 2976 || Activation Count:44 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 22 Cycles: 2488 || Activation Count:30 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+Comp 201 (havlak.HavlakLoopFinder.findLoops()-Re-Comp) loops:
+Found Encoding : 9:-1,10:-1,11:-1,12:-1,13:-1,14:-1,15:-1,16:-1,0:-1,17:0,3:-1,1:-1,18:1,4:1,19:4,20:4,5:4,6:4,21:1,22:1,7:1,2:1,8:2
+├── Loop 9
+├── Loop 10
+├── Loop 11
+├── Loop 12
+├── Loop 13
+├── Loop 14
+├── Loop 15
+├── Loop 16
+├── Loop 0
+│   └── Loop 17
+├── Loop 3
+└── Loop 1
+    ├── Loop 18
+    ├── Loop 4
+    │   ├── Loop 19
+    │   ├── Loop 20
+    │   ├── Loop 5
+    │   └── Loop 6
+    ├── Loop 21
+    ├── Loop 22
+    ├── Loop 7
+    └── Loop 2
+        └── Loop 8
+  loop 0 Cycles: 38399960878 || Activation Count:7510498 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 85] | -at havlak.HavlakLoopFinder.findLoops() [bci: 137]
+  loop 1 Cycles: 241219165594 || Activation Count:7510498 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 157] | -at havlak.HavlakLoopFinder.findLoops() [bci: 350]
+  loop 2 Cycles: 88488769924 || Activation Count:215256074 Source: -at havlak.HavlakLoopFinder.findLoops() [bci: 230] | -at havlak.HavlakLoopFinder.findLoops() [bci: 289]
+  loop 3 Cycles: 11041148118 || Activation Count:7510498 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.initAllNodes() [bci: 15]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 138] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.initAllNodes()
+  loop 4 Cycles: 17356391130 || Activation Count:215256074 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepD(int, Vector) [bci: 21]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 188] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.stepD(int,
+  loop 5 Cycles: 1573564 || Activation Count:25498 Source: -at havlak.UnionFindNode.findSet() [bci: 10]
+-at havlak.HavlakLoopFinder$6.apply(Integer) [bci: 27]
+-at havlak.HavlakLoopFinder$6.apply(Object) [bci: 5]
+-at som.Vector.forEach(ForEachInterface) [bci: 20]
+-at havlak.HavlakLoopFinder.stepD(int, Vector
+  loop 6 Cycles: 766266 || Activation Count:25498 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.UnionFindNode.findSet() [bci: 52]
+-at havlak.HavlakLoopFinder$6.apply(Integer) [bci: 27]
+-at havlak.HavlakLoopFinder$6.apply(Object) [bci: 5]
+-at som.Vector.forEach(ForEachInterface) [bci:
+  loop 7 Cycles: 1745655434 || Activation Count:63277298 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 211] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 211]
+  loop 8 Cycles: 17484659224 || Activation Count:200311572 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at som.Set.forEach(ForEachInterface) [bci: 5]
+-at havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int, Vector, Vector, UnionFindNode) [bci: 26]
+-at havlak.HavlakLoopFinder.findLoops() [bci: 283] | 
+  loop 9 Cycles: 365569786 || Activation Count:7509727 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 10 Cycles: 272410668 || Activation Count:7505358 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 11 Cycles: 204505698 || Activation Count:7510447 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 12 Cycles: 205195338 || Activation Count:7484951 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 13 Cycles: 199297884 || Activation Count:7485000 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 14 Cycles: 202441522 || Activation Count:7484400 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 15 Cycles: 197549086 || Activation Count:7484949 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 16 Cycles: 523845450 || Activation Count:7509728 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 17 Cycles: 11245972144 || Activation Count:207711916 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 18 Cycles: 13384525616 || Activation Count:215222887 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 19 Cycles: 4273029434 || Activation Count:63561120 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 20 Cycles: 3031222 || Activation Count:25498 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 21 Cycles: 5936171102 || Activation Count:151936529 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 22 Cycles: 2749738732 || Activation Count:63269913 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+Comp 202 (som.Dictionary.transferEntries(Dictionary$Entry[])) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 108650 || Activation Count:1 Source: -at som.Dictionary.transferEntries(Dictionary$Entry[]) [bci: 2] | -at som.Dictionary.transferEntries(Dictionary$Entry[]) [bci: 61]
+Comp 203 (som.Dictionary.transferEntries(Dictionary$Entry[])-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 87858136 || Activation Count:6758 Source: -at som.Dictionary.transferEntries(Dictionary$Entry[]) [bci: 2] | -at som.Dictionary.transferEntries(Dictionary$Entry[]) [bci: 61]
+Comp 234 (havlak.LoopTesterApp.addDummyLoops(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 301259486 || Activation Count:1 Source: -at havlak.LoopTesterApp.addDummyLoops(int) [bci: 2] | -at havlak.LoopTesterApp.addDummyLoops(int) [bci: 21]
+Comp 235 (havlak.LoopTesterApp.addDummyLoops(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 136721962534 || Activation Count:498 Source: -at havlak.LoopTesterApp.addDummyLoops(int) [bci: 2] | -at havlak.LoopTesterApp.addDummyLoops(int) [bci: 21]
+Comp 236 (havlak.ControlFlowGraph.createNode(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 277552 || Activation Count:3487 Source: -at som.Vector.atPut(int, Object) [bci: 15]
+-at havlak.ControlFlowGraph.createNode(int) [bci: 41] | -at som.Vector.atPut(int, Object) [bci: 27]
+-at havlak.ControlFlowGraph.createNode(int) [bci: 41]
+Comp 240 (havlak.LoopTesterApp.buildStraight(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 1129692 || Activation Count:27150 Source: -at havlak.LoopTesterApp.buildStraight(int, int) [bci: 2] | -at havlak.LoopTesterApp.buildStraight(int, int) [bci: 25]
+Comp 242 (java.util.Arrays.copyOf(Object[],) loops:
+Found Encoding : 0:-1,1:-1
+├── Loop 0
+└── Loop 1
+  loop 0 Cycles: 78807802 || Activation Count:467865 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 1 Cycles: 6202 || Activation Count:40 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArrayDynamic(Class, Class, int, AllocationSnippets$FillContent, boolean, JavaKind, int, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData
+Comp 244 (som.Dictionary.splitBucket(Dictionary$Entry[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 15921870 || Activation Count:224891 Source: -at som.Dictionary.splitBucket(Dictionary$Entry[], int, Dictionary$Entry) [bci: 15] | -at som.Dictionary.splitBucket(Dictionary$Entry[], int, Dictionary$Entry) [bci: 90]
+Comp 247 (som.Dictionary.resize()) loops:
+Found Encoding : 1:-1,0:-1
+├── Loop 1
+└── Loop 0
+  loop 0 Cycles: 2779246672 || Activation Count:222715 Source: -at som.Dictionary.transferEntries(Dictionary$Entry[]) [bci: 2]
+-at som.Dictionary.resize() [bci: 20] | -at som.Dictionary.transferEntries(Dictionary$Entry[]) [bci: 61]
+-at som.Dictionary.resize() [bci: 20]
+  loop 1 Cycles: 12448928 || Activation Count:98984 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 249 (havlak.LoopTesterApp.constructCFG(int,) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,6:0,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    ├── Loop 6
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 695740 || Activation Count:1 Source: -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 6] | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 121]
+  loop 1 Cycles: 665090 || Activation Count:4 Source: -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 39] | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 108]
+  loop 2 Cycles: 463654 || Activation Count:40 Source: -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 61] | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 81]
+  loop 3 Cycles: 85794 || Activation Count:1 Source: -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 39] | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 108]
+  loop 4 Cycles: 33470 || Activation Count:2 Source: -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 61] | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 81]
+  loop 5 Cycles: 26 || Activation Count:1 Source: -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 61] | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 81]
+Comp 250 (havlak.LoopTesterApp.constructCFG(int,-Re-Comp) loops:
+Found Encoding : 0:-1,2:0,1:0,3:-1,6:3,4:3,5:4
+├── Loop 0
+│   ├── Loop 2
+│   └── Loop 1
+└── Loop 3
+    ├── Loop 6
+    └── Loop 4
+        └── Loop 5
+  loop 3 Cycles: 436083700 || Activation Count:466 Source: Source Missing | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 121]
+  loop 4 Cycles: 431152460 || Activation Count:4660 Source: -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 39] | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 108]
+  loop 5 Cycles: 330715026 || Activation Count:46600 Source: -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 61] | -at havlak.LoopTesterApp.constructCFG(int, int, int) [bci: 81]
+Comp 259 (havlak.LoopStructureGraph.<init>()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 6636050 || Activation Count:18696 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 260 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 72724 || Activation Count:202 Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 15550 || Activation Count:202 Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 12024 || Activation Count:202 Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+Comp 261 (havlak.LoopTesterApp.main(int,) loops:
+Found Encoding : 3:-1,4:-1,5:-1,6:-1,7:-1,8:-1,0:-1,9:0,10:0,11:0,1:-1,2:1
+├── Loop 3
+├── Loop 4
+├── Loop 5
+├── Loop 6
+├── Loop 7
+├── Loop 8
+├── Loop 0
+│   ├── Loop 9
+│   ├── Loop 10
+│   └── Loop 11
+└── Loop 1
+    └── Loop 2
+  loop 0 Cycles: 207696784 || Activation Count:1 Source: -at havlak.LoopTesterApp.main(int, int, int, int, int) [bci: 29] | -at havlak.LoopTesterApp.main(int, int, int, int, int) [bci: 52]
+  loop 1 Cycles: 232413968 || Activation Count:1 Source: -at som.Vector.forEach(ForEachInterface) [bci: 5]
+-at havlak.LoopStructureGraph.calculateNestingLevel() [bci: 12]
+-at havlak.LoopTesterApp.main(int, int, int, int, int) [bci: 56] | -at som.Vector.forEach(ForEachInterface) [bci: 31]
+-at havlak.LoopSt
+  loop 2 Cycles: 230152102 || Activation Count:15000 Source: -at som.Vector.hasSome(TestInterface) [bci: 5]
+-at som.Set.hasSome(TestInterface) [bci: 5]
+-at som.IdentitySet.contains(Object) [bci: 7]
+-at som.Set.add(Object) [bci: 2]
+-at havlak.SimpleLoop.addChildLoop(SimpleLoop) [bci: 5]
+-at havlak.SimpleLoop.s
+  loop 3 Cycles: 854 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 4 Cycles: 168 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 5 Cycles: 152 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 6 Cycles: 520 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 7 Cycles: 162 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 8 Cycles: 122 || Activation Count:1 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 9 Cycles: 7228 || Activation Count:18 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 10 Cycles: 1722 || Activation Count:18 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+  loop 11 Cycles: 1458 || Activation Count:18 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, bool
+Comp 262 (havlak.LoopTesterApp.main(int,-Re-Comp) loops:
+Found Encoding : 1:-1,2:-1,0:-1
+├── Loop 1
+├── Loop 2
+└── Loop 0
+  loop 0 Cycles: 45480585892 || Activation Count:90 Source: -at havlak.LoopTesterApp.main(int, int, int, int, int) [bci: 29] | -at havlak.LoopTesterApp.main(int, int, int, int, int) [bci: 52]
+Comp 270 (java.lang.StringCoding.implEncodeAsciiArray(char[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 726 || Activation Count:1 Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+Comp 271 (java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 294 || Activation Count:2 Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+-- Havlak completed successfully.

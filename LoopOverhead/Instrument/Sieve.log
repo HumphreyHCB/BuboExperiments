@@ -1,0 +1,683 @@
+========================================
+Benchmark : Sieve
+Timestamp : 2025-11-17T14:35:08+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   Sieve   500   10000 
+========================================
+Starting Sieve benchmark ...
+Sieve: iterations=1 runtime: 304770us
+Sieve: iterations=2 runtime: 281593us
+Sieve: iterations=3 runtime: 286538us
+Sieve: iterations=4 runtime: 257122us
+Sieve: iterations=5 runtime: 255116us
+Sieve: iterations=6 runtime: 255804us
+Sieve: iterations=7 runtime: 257500us
+Sieve: iterations=8 runtime: 254593us
+Sieve: iterations=9 runtime: 271285us
+Sieve: iterations=10 runtime: 255247us
+Sieve: iterations=11 runtime: 258097us
+Sieve: iterations=12 runtime: 254997us
+Sieve: iterations=13 runtime: 255288us
+Sieve: iterations=14 runtime: 253849us
+Sieve: iterations=15 runtime: 253869us
+Sieve: iterations=16 runtime: 255298us
+Sieve: iterations=17 runtime: 254640us
+Sieve: iterations=18 runtime: 254854us
+Sieve: iterations=19 runtime: 255607us
+Sieve: iterations=20 runtime: 254530us
+Sieve: iterations=21 runtime: 254467us
+Sieve: iterations=22 runtime: 255734us
+Sieve: iterations=23 runtime: 254247us
+Sieve: iterations=24 runtime: 265237us
+Sieve: iterations=25 runtime: 255348us
+Sieve: iterations=26 runtime: 254704us
+Sieve: iterations=27 runtime: 254572us
+Sieve: iterations=28 runtime: 255405us
+Sieve: iterations=29 runtime: 254311us
+Sieve: iterations=30 runtime: 254664us
+Sieve: iterations=31 runtime: 255686us
+Sieve: iterations=32 runtime: 259343us
+Sieve: iterations=33 runtime: 254336us
+Sieve: iterations=34 runtime: 255670us
+Sieve: iterations=35 runtime: 254943us
+Sieve: iterations=36 runtime: 254597us
+Sieve: iterations=37 runtime: 255172us
+Sieve: iterations=38 runtime: 254675us
+Sieve: iterations=39 runtime: 254513us
+Sieve: iterations=40 runtime: 255257us
+Sieve: iterations=41 runtime: 254718us
+Sieve: iterations=42 runtime: 254794us
+Sieve: iterations=43 runtime: 255433us
+Sieve: iterations=44 runtime: 254412us
+Sieve: iterations=45 runtime: 254278us
+Sieve: iterations=46 runtime: 287932us
+Sieve: iterations=47 runtime: 254286us
+Sieve: iterations=48 runtime: 254214us
+Sieve: iterations=49 runtime: 255224us
+Sieve: iterations=50 runtime: 255078us
+Sieve: iterations=51 runtime: 254880us
+Sieve: iterations=52 runtime: 255135us
+Sieve: iterations=53 runtime: 254241us
+Sieve: iterations=54 runtime: 254113us
+Sieve: iterations=55 runtime: 255081us
+Sieve: iterations=56 runtime: 257485us
+Sieve: iterations=57 runtime: 263691us
+Sieve: iterations=58 runtime: 254290us
+Sieve: iterations=59 runtime: 255838us
+Sieve: iterations=60 runtime: 254933us
+Sieve: iterations=61 runtime: 254727us
+Sieve: iterations=62 runtime: 254674us
+Sieve: iterations=63 runtime: 265519us
+Sieve: iterations=64 runtime: 255372us
+Sieve: iterations=65 runtime: 254706us
+Sieve: iterations=66 runtime: 254189us
+Sieve: iterations=67 runtime: 255288us
+Sieve: iterations=68 runtime: 275803us
+Sieve: iterations=69 runtime: 268852us
+Sieve: iterations=70 runtime: 262577us
+Sieve: iterations=71 runtime: 254704us
+Sieve: iterations=72 runtime: 255185us
+Sieve: iterations=73 runtime: 255545us
+Sieve: iterations=74 runtime: 255266us
+Sieve: iterations=75 runtime: 258963us
+Sieve: iterations=76 runtime: 254317us
+Sieve: iterations=77 runtime: 254650us
+Sieve: iterations=78 runtime: 254958us
+Sieve: iterations=79 runtime: 255547us
+Sieve: iterations=80 runtime: 254212us
+Sieve: iterations=81 runtime: 254079us
+Sieve: iterations=82 runtime: 254695us
+Sieve: iterations=83 runtime: 254659us
+Sieve: iterations=84 runtime: 254642us
+Sieve: iterations=85 runtime: 254556us
+Sieve: iterations=86 runtime: 254152us
+Sieve: iterations=87 runtime: 254458us
+Sieve: iterations=88 runtime: 254673us
+Sieve: iterations=89 runtime: 254472us
+Sieve: iterations=90 runtime: 254417us
+Sieve: iterations=91 runtime: 254886us
+Sieve: iterations=92 runtime: 254241us
+Sieve: iterations=93 runtime: 254942us
+Sieve: iterations=94 runtime: 254792us
+Sieve: iterations=95 runtime: 292224us
+Sieve: iterations=96 runtime: 286792us
+Sieve: iterations=97 runtime: 254783us
+Sieve: iterations=98 runtime: 254436us
+Sieve: iterations=99 runtime: 254768us
+Sieve: iterations=100 runtime: 255601us
+Sieve: iterations=101 runtime: 254689us
+Sieve: iterations=102 runtime: 266026us
+Sieve: iterations=103 runtime: 261201us
+Sieve: iterations=104 runtime: 254831us
+Sieve: iterations=105 runtime: 259148us
+Sieve: iterations=106 runtime: 254827us
+Sieve: iterations=107 runtime: 254542us
+Sieve: iterations=108 runtime: 254716us
+Sieve: iterations=109 runtime: 254998us
+Sieve: iterations=110 runtime: 255059us
+Sieve: iterations=111 runtime: 259746us
+Sieve: iterations=112 runtime: 254485us
+Sieve: iterations=113 runtime: 254338us
+Sieve: iterations=114 runtime: 265368us
+Sieve: iterations=115 runtime: 263313us
+Sieve: iterations=116 runtime: 254635us
+Sieve: iterations=117 runtime: 254710us
+Sieve: iterations=118 runtime: 255089us
+Sieve: iterations=119 runtime: 254596us
+Sieve: iterations=120 runtime: 254284us
+Sieve: iterations=121 runtime: 254322us
+Sieve: iterations=122 runtime: 254474us
+Sieve: iterations=123 runtime: 254253us
+Sieve: iterations=124 runtime: 254236us
+Sieve: iterations=125 runtime: 261847us
+Sieve: iterations=126 runtime: 253994us
+Sieve: iterations=127 runtime: 254051us
+Sieve: iterations=128 runtime: 255242us
+Sieve: iterations=129 runtime: 254200us
+Sieve: iterations=130 runtime: 254199us
+Sieve: iterations=131 runtime: 254875us
+Sieve: iterations=132 runtime: 259838us
+Sieve: iterations=133 runtime: 254422us
+Sieve: iterations=134 runtime: 261779us
+Sieve: iterations=135 runtime: 254218us
+Sieve: iterations=136 runtime: 254799us
+Sieve: iterations=137 runtime: 254836us
+Sieve: iterations=138 runtime: 254919us
+Sieve: iterations=139 runtime: 254504us
+Sieve: iterations=140 runtime: 254566us
+Sieve: iterations=141 runtime: 254716us
+Sieve: iterations=142 runtime: 255057us
+Sieve: iterations=143 runtime: 255090us
+Sieve: iterations=144 runtime: 254457us
+Sieve: iterations=145 runtime: 254726us
+Sieve: iterations=146 runtime: 261461us
+Sieve: iterations=147 runtime: 254661us
+Sieve: iterations=148 runtime: 254079us
+Sieve: iterations=149 runtime: 254573us
+Sieve: iterations=150 runtime: 253957us
+Sieve: iterations=151 runtime: 259107us
+Sieve: iterations=152 runtime: 254320us
+Sieve: iterations=153 runtime: 257682us
+Sieve: iterations=154 runtime: 254130us
+Sieve: iterations=155 runtime: 254228us
+Sieve: iterations=156 runtime: 284500us
+Sieve: iterations=157 runtime: 279214us
+Sieve: iterations=158 runtime: 266030us
+Sieve: iterations=159 runtime: 264272us
+Sieve: iterations=160 runtime: 254383us
+Sieve: iterations=161 runtime: 255139us
+Sieve: iterations=162 runtime: 254738us
+Sieve: iterations=163 runtime: 264788us
+Sieve: iterations=164 runtime: 255099us
+Sieve: iterations=165 runtime: 254983us
+Sieve: iterations=166 runtime: 254645us
+Sieve: iterations=167 runtime: 254966us
+Sieve: iterations=168 runtime: 255018us
+Sieve: iterations=169 runtime: 254979us
+Sieve: iterations=170 runtime: 255148us
+Sieve: iterations=171 runtime: 254335us
+Sieve: iterations=172 runtime: 254298us
+Sieve: iterations=173 runtime: 254886us
+Sieve: iterations=174 runtime: 263986us
+Sieve: iterations=175 runtime: 254402us
+Sieve: iterations=176 runtime: 254660us
+Sieve: iterations=177 runtime: 254490us
+Sieve: iterations=178 runtime: 254569us
+Sieve: iterations=179 runtime: 255012us
+Sieve: iterations=180 runtime: 254675us
+Sieve: iterations=181 runtime: 254684us
+Sieve: iterations=182 runtime: 255322us
+Sieve: iterations=183 runtime: 254314us
+Sieve: iterations=184 runtime: 254144us
+Sieve: iterations=185 runtime: 255143us
+Sieve: iterations=186 runtime: 260822us
+Sieve: iterations=187 runtime: 253788us
+Sieve: iterations=188 runtime: 261785us
+Sieve: iterations=189 runtime: 254966us
+Sieve: iterations=190 runtime: 254660us
+Sieve: iterations=191 runtime: 255059us
+Sieve: iterations=192 runtime: 254508us
+Sieve: iterations=193 runtime: 254232us
+Sieve: iterations=194 runtime: 254916us
+Sieve: iterations=195 runtime: 254672us
+Sieve: iterations=196 runtime: 254340us
+Sieve: iterations=197 runtime: 255072us
+Sieve: iterations=198 runtime: 255034us
+Sieve: iterations=199 runtime: 254664us
+Sieve: iterations=200 runtime: 255187us
+Sieve: iterations=201 runtime: 289151us
+Sieve: iterations=202 runtime: 254157us
+Sieve: iterations=203 runtime: 254459us
+Sieve: iterations=204 runtime: 255033us
+Sieve: iterations=205 runtime: 254653us
+Sieve: iterations=206 runtime: 254799us
+Sieve: iterations=207 runtime: 255784us
+Sieve: iterations=208 runtime: 255061us
+Sieve: iterations=209 runtime: 264701us
+Sieve: iterations=210 runtime: 255723us
+Sieve: iterations=211 runtime: 254816us
+Sieve: iterations=212 runtime: 254697us
+Sieve: iterations=213 runtime: 255202us
+Sieve: iterations=214 runtime: 254823us
+Sieve: iterations=215 runtime: 254527us
+Sieve: iterations=216 runtime: 254865us
+Sieve: iterations=217 runtime: 254742us
+Sieve: iterations=218 runtime: 255110us
+Sieve: iterations=219 runtime: 254759us
+Sieve: iterations=220 runtime: 254467us
+Sieve: iterations=221 runtime: 254628us
+Sieve: iterations=222 runtime: 254635us
+Sieve: iterations=223 runtime: 254171us
+Sieve: iterations=224 runtime: 253679us
+Sieve: iterations=225 runtime: 254683us
+Sieve: iterations=226 runtime: 254061us
+Sieve: iterations=227 runtime: 254557us
+Sieve: iterations=228 runtime: 254433us
+Sieve: iterations=229 runtime: 254416us
+Sieve: iterations=230 runtime: 254681us
+Sieve: iterations=231 runtime: 254831us
+Sieve: iterations=232 runtime: 254959us
+Sieve: iterations=233 runtime: 254588us
+Sieve: iterations=234 runtime: 255026us
+Sieve: iterations=235 runtime: 254714us
+Sieve: iterations=236 runtime: 254771us
+Sieve: iterations=237 runtime: 254840us
+Sieve: iterations=238 runtime: 254297us
+Sieve: iterations=239 runtime: 253822us
+Sieve: iterations=240 runtime: 254641us
+Sieve: iterations=241 runtime: 254403us
+Sieve: iterations=242 runtime: 254568us
+Sieve: iterations=243 runtime: 255134us
+Sieve: iterations=244 runtime: 254415us
+Sieve: iterations=245 runtime: 254387us
+Sieve: iterations=246 runtime: 254952us
+Sieve: iterations=247 runtime: 254696us
+Sieve: iterations=248 runtime: 255008us
+Sieve: iterations=249 runtime: 255591us
+Sieve: iterations=250 runtime: 254380us
+Sieve: iterations=251 runtime: 254990us
+Sieve: iterations=252 runtime: 267244us
+Sieve: iterations=253 runtime: 261116us
+Sieve: iterations=254 runtime: 260343us
+Sieve: iterations=255 runtime: 255370us
+Sieve: iterations=256 runtime: 255162us
+Sieve: iterations=257 runtime: 260020us
+Sieve: iterations=258 runtime: 255117us
+Sieve: iterations=259 runtime: 261855us
+Sieve: iterations=260 runtime: 254799us
+Sieve: iterations=261 runtime: 255226us
+Sieve: iterations=262 runtime: 258347us
+Sieve: iterations=263 runtime: 254749us
+Sieve: iterations=264 runtime: 269487us
+Sieve: iterations=265 runtime: 261449us
+Sieve: iterations=266 runtime: 254095us
+Sieve: iterations=267 runtime: 260671us
+Sieve: iterations=268 runtime: 254981us
+Sieve: iterations=269 runtime: 254502us
+Sieve: iterations=270 runtime: 254910us
+Sieve: iterations=271 runtime: 254418us
+Sieve: iterations=272 runtime: 254484us
+Sieve: iterations=273 runtime: 255314us
+Sieve: iterations=274 runtime: 254747us
+Sieve: iterations=275 runtime: 254833us
+Sieve: iterations=276 runtime: 254703us
+Sieve: iterations=277 runtime: 254487us
+Sieve: iterations=278 runtime: 255080us
+Sieve: iterations=279 runtime: 255156us
+Sieve: iterations=280 runtime: 254719us
+Sieve: iterations=281 runtime: 255104us
+Sieve: iterations=282 runtime: 255275us
+Sieve: iterations=283 runtime: 256983us
+Sieve: iterations=284 runtime: 255069us
+Sieve: iterations=285 runtime: 255128us
+Sieve: iterations=286 runtime: 254798us
+Sieve: iterations=287 runtime: 254246us
+Sieve: iterations=288 runtime: 254712us
+Sieve: iterations=289 runtime: 255379us
+Sieve: iterations=290 runtime: 254772us
+Sieve: iterations=291 runtime: 254889us
+Sieve: iterations=292 runtime: 260642us
+Sieve: iterations=293 runtime: 254423us
+Sieve: iterations=294 runtime: 254444us
+Sieve: iterations=295 runtime: 254998us
+Sieve: iterations=296 runtime: 254516us
+Sieve: iterations=297 runtime: 254373us
+Sieve: iterations=298 runtime: 254941us
+Sieve: iterations=299 runtime: 254731us
+Sieve: iterations=300 runtime: 262846us
+Sieve: iterations=301 runtime: 278151us
+Sieve: iterations=302 runtime: 254482us
+Sieve: iterations=303 runtime: 254676us
+Sieve: iterations=304 runtime: 254942us
+Sieve: iterations=305 runtime: 254488us
+Sieve: iterations=306 runtime: 279042us
+Sieve: iterations=307 runtime: 257428us
+Sieve: iterations=308 runtime: 259432us
+Sieve: iterations=309 runtime: 254637us
+Sieve: iterations=310 runtime: 271926us
+Sieve: iterations=311 runtime: 254850us
+Sieve: iterations=312 runtime: 257254us
+Sieve: iterations=313 runtime: 255016us
+Sieve: iterations=314 runtime: 254674us
+Sieve: iterations=315 runtime: 254636us
+Sieve: iterations=316 runtime: 254808us
+Sieve: iterations=317 runtime: 254531us
+Sieve: iterations=318 runtime: 254298us
+Sieve: iterations=319 runtime: 254744us
+Sieve: iterations=320 runtime: 254490us
+Sieve: iterations=321 runtime: 264494us
+Sieve: iterations=322 runtime: 255527us
+Sieve: iterations=323 runtime: 254344us
+Sieve: iterations=324 runtime: 254095us
+Sieve: iterations=325 runtime: 254316us
+Sieve: iterations=326 runtime: 254150us
+Sieve: iterations=327 runtime: 266124us
+Sieve: iterations=328 runtime: 255185us
+Sieve: iterations=329 runtime: 254357us
+Sieve: iterations=330 runtime: 254314us
+Sieve: iterations=331 runtime: 255278us
+Sieve: iterations=332 runtime: 254343us
+Sieve: iterations=333 runtime: 266130us
+Sieve: iterations=334 runtime: 254187us
+Sieve: iterations=335 runtime: 260201us
+Sieve: iterations=336 runtime: 253888us
+Sieve: iterations=337 runtime: 254994us
+Sieve: iterations=338 runtime: 255326us
+Sieve: iterations=339 runtime: 254963us
+Sieve: iterations=340 runtime: 255200us
+Sieve: iterations=341 runtime: 255012us
+Sieve: iterations=342 runtime: 270752us
+Sieve: iterations=343 runtime: 259167us
+Sieve: iterations=344 runtime: 254997us
+Sieve: iterations=345 runtime: 254977us
+Sieve: iterations=346 runtime: 255072us
+Sieve: iterations=347 runtime: 254719us
+Sieve: iterations=348 runtime: 256317us
+Sieve: iterations=349 runtime: 279914us
+Sieve: iterations=350 runtime: 258706us
+Sieve: iterations=351 runtime: 254070us
+Sieve: iterations=352 runtime: 254620us
+Sieve: iterations=353 runtime: 254080us
+Sieve: iterations=354 runtime: 254300us
+Sieve: iterations=355 runtime: 254779us
+Sieve: iterations=356 runtime: 253888us
+Sieve: iterations=357 runtime: 254081us
+Sieve: iterations=358 runtime: 259827us
+Sieve: iterations=359 runtime: 254407us
+Sieve: iterations=360 runtime: 254488us
+Sieve: iterations=361 runtime: 254873us
+Sieve: iterations=362 runtime: 254407us
+Sieve: iterations=363 runtime: 254480us
+Sieve: iterations=364 runtime: 254804us
+Sieve: iterations=365 runtime: 254661us
+Sieve: iterations=366 runtime: 254811us
+Sieve: iterations=367 runtime: 254637us
+Sieve: iterations=368 runtime: 255250us
+Sieve: iterations=369 runtime: 254642us
+Sieve: iterations=370 runtime: 254161us
+Sieve: iterations=371 runtime: 277333us
+Sieve: iterations=372 runtime: 260932us
+Sieve: iterations=373 runtime: 253941us
+Sieve: iterations=374 runtime: 270000us
+Sieve: iterations=375 runtime: 253579us
+Sieve: iterations=376 runtime: 253494us
+Sieve: iterations=377 runtime: 255042us
+Sieve: iterations=378 runtime: 254683us
+Sieve: iterations=379 runtime: 254192us
+Sieve: iterations=380 runtime: 255340us
+Sieve: iterations=381 runtime: 260384us
+Sieve: iterations=382 runtime: 255597us
+Sieve: iterations=383 runtime: 254939us
+Sieve: iterations=384 runtime: 258789us
+Sieve: iterations=385 runtime: 256256us
+Sieve: iterations=386 runtime: 265520us
+Sieve: iterations=387 runtime: 253995us
+Sieve: iterations=388 runtime: 253883us
+Sieve: iterations=389 runtime: 258677us
+Sieve: iterations=390 runtime: 254669us
+Sieve: iterations=391 runtime: 254154us
+Sieve: iterations=392 runtime: 254370us
+Sieve: iterations=393 runtime: 254445us
+Sieve: iterations=394 runtime: 254350us
+Sieve: iterations=395 runtime: 254802us
+Sieve: iterations=396 runtime: 254350us
+Sieve: iterations=397 runtime: 254407us
+Sieve: iterations=398 runtime: 254633us
+Sieve: iterations=399 runtime: 253961us
+Sieve: iterations=400 runtime: 253424us
+Sieve: iterations=401 runtime: 259211us
+Sieve: iterations=402 runtime: 265566us
+Sieve: iterations=403 runtime: 256509us
+Sieve: iterations=404 runtime: 255470us
+Sieve: iterations=405 runtime: 255022us
+Sieve: iterations=406 runtime: 254911us
+Sieve: iterations=407 runtime: 255205us
+Sieve: iterations=408 runtime: 254822us
+Sieve: iterations=409 runtime: 254947us
+Sieve: iterations=410 runtime: 255211us
+Sieve: iterations=411 runtime: 254845us
+Sieve: iterations=412 runtime: 255044us
+Sieve: iterations=413 runtime: 255388us
+Sieve: iterations=414 runtime: 282798us
+Sieve: iterations=415 runtime: 254095us
+Sieve: iterations=416 runtime: 254687us
+Sieve: iterations=417 runtime: 254475us
+Sieve: iterations=418 runtime: 254413us
+Sieve: iterations=419 runtime: 254709us
+Sieve: iterations=420 runtime: 254334us
+Sieve: iterations=421 runtime: 253934us
+Sieve: iterations=422 runtime: 259618us
+Sieve: iterations=423 runtime: 253942us
+Sieve: iterations=424 runtime: 253887us
+Sieve: iterations=425 runtime: 254610us
+Sieve: iterations=426 runtime: 253951us
+Sieve: iterations=427 runtime: 253716us
+Sieve: iterations=428 runtime: 285366us
+Sieve: iterations=429 runtime: 297648us
+Sieve: iterations=430 runtime: 254602us
+Sieve: iterations=431 runtime: 254795us
+Sieve: iterations=432 runtime: 254477us
+Sieve: iterations=433 runtime: 254249us
+Sieve: iterations=434 runtime: 284273us
+Sieve: iterations=435 runtime: 259317us
+Sieve: iterations=436 runtime: 315169us
+Sieve: iterations=437 runtime: 254750us
+Sieve: iterations=438 runtime: 253972us
+Sieve: iterations=439 runtime: 262270us
+Sieve: iterations=440 runtime: 290574us
+Sieve: iterations=441 runtime: 263016us
+Sieve: iterations=442 runtime: 254647us
+Sieve: iterations=443 runtime: 255002us
+Sieve: iterations=444 runtime: 254386us
+Sieve: iterations=445 runtime: 254440us
+Sieve: iterations=446 runtime: 254869us
+Sieve: iterations=447 runtime: 254684us
+Sieve: iterations=448 runtime: 254392us
+Sieve: iterations=449 runtime: 254472us
+Sieve: iterations=450 runtime: 261291us
+Sieve: iterations=451 runtime: 261155us
+Sieve: iterations=452 runtime: 259330us
+Sieve: iterations=453 runtime: 269056us
+Sieve: iterations=454 runtime: 263936us
+Sieve: iterations=455 runtime: 254696us
+Sieve: iterations=456 runtime: 255327us
+Sieve: iterations=457 runtime: 254809us
+Sieve: iterations=458 runtime: 254654us
+Sieve: iterations=459 runtime: 254636us
+Sieve: iterations=460 runtime: 254731us
+Sieve: iterations=461 runtime: 254324us
+Sieve: iterations=462 runtime: 254293us
+Sieve: iterations=463 runtime: 253922us
+Sieve: iterations=464 runtime: 265063us
+Sieve: iterations=465 runtime: 254400us
+Sieve: iterations=466 runtime: 253795us
+Sieve: iterations=467 runtime: 262691us
+Sieve: iterations=468 runtime: 254452us
+Sieve: iterations=469 runtime: 253858us
+Sieve: iterations=470 runtime: 253542us
+Sieve: iterations=471 runtime: 260713us
+Sieve: iterations=472 runtime: 254173us
+Sieve: iterations=473 runtime: 255121us
+Sieve: iterations=474 runtime: 255018us
+Sieve: iterations=475 runtime: 254630us
+Sieve: iterations=476 runtime: 254962us
+Sieve: iterations=477 runtime: 255012us
+Sieve: iterations=478 runtime: 259579us
+Sieve: iterations=479 runtime: 264411us
+Sieve: iterations=480 runtime: 254300us
+Sieve: iterations=481 runtime: 254534us
+Sieve: iterations=482 runtime: 254340us
+Sieve: iterations=483 runtime: 258576us
+Sieve: iterations=484 runtime: 270352us
+Sieve: iterations=485 runtime: 254644us
+Sieve: iterations=486 runtime: 254747us
+Sieve: iterations=487 runtime: 254631us
+Sieve: iterations=488 runtime: 254693us
+Sieve: iterations=489 runtime: 254846us
+Sieve: iterations=490 runtime: 254531us
+Sieve: iterations=491 runtime: 254225us
+Sieve: iterations=492 runtime: 291841us
+Sieve: iterations=493 runtime: 254217us
+Sieve: iterations=494 runtime: 267770us
+Sieve: iterations=495 runtime: 255175us
+Sieve: iterations=496 runtime: 254877us
+Sieve: iterations=497 runtime: 254908us
+Sieve: iterations=498 runtime: 254859us
+Sieve: iterations=499 runtime: 254457us
+Sieve: iterations=500 runtime: 254707us
+Sieve: iterations=500 average: 257276us total: 128638402us
+
+
+Total Runtime: 128638402us
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 250550 || Activation Count:4242 Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 5502 || Activation Count:163 Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 59 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3578 || Activation Count:46 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 69 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 26100 || Activation Count:13 Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 5858 || Activation Count:88 Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 10006 || Activation Count:191 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 86 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 7502 || Activation Count:39 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 96 (Sieve.sieve(boolean[],) loops:
+Found Encoding : 1:-1,0:-1,2:0
+├── Loop 1
+└── Loop 0
+    └── Loop 2
+  loop 0 Cycles: 76682 || Activation Count:1 Source: -at Sieve.sieve(boolean[], int) [bci: 5] | -at Sieve.sieve(boolean[], int) [bci: 59]
+  loop 1 Cycles: 2164 || Activation Count:1 Source: Source Missing | -at Sieve.sieve(boolean[], int) [bci: 53]
+  loop 2 Cycles: 25828 || Activation Count:364 Source: Source Missing | -at Sieve.sieve(boolean[], int) [bci: 53]
+Comp 97 (Sieve.sieve(boolean[],-Re-Comp) loops:
+Found Encoding : 0:-1,1:0
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 504948416 || Activation Count:6782 Source: -at Sieve.sieve(boolean[], int) [bci: 5] | -at Sieve.sieve(boolean[], int) [bci: 59]
+  loop 1 Cycles: 250994756 || Activation Count:2488994 Source: -at Sieve.sieve(boolean[], int) [bci: 30] | -at Sieve.sieve(boolean[], int) [bci: 53]
+Comp 98 (java.util.Arrays.fill(boolean[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 600 || Activation Count:1 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+  loop 1 Cycles: 4988 || Activation Count:1 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+  loop 2 Cycles: 82 || Activation Count:1 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+Comp 99 (java.util.Arrays.fill(boolean[],-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 208246 || Activation Count:6779 Source: -at java.util.Arrays.fill(Arrays.java:3318) [bci: 5] | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+  loop 1 Cycles: 35045894 || Activation Count:6779 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+  loop 2 Cycles: 176404 || Activation Count:6779 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+Comp 102 (Sieve.benchmark()) loops:
+Found Encoding : 0:-1,3:-1,4:-1,1:-1,2:1
+├── Loop 0
+├── Loop 3
+├── Loop 4
+└── Loop 1
+    └── Loop 2
+  loop 0 Cycles: 722940 || Activation Count:13696 Source: -at java.util.Arrays.fill(Arrays.java:3318) [bci: 5]
+-at Sieve.benchmark() [bci: 8] | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+  loop 1 Cycles: 1196749560 || Activation Count:13696 Source: -at Sieve.sieve(boolean[], int) [bci: 5]
+-at Sieve.benchmark() [bci: 16] | -at Sieve.sieve(boolean[], int) [bci: 59]
+-at Sieve.benchmark() [bci: 16]
+  loop 2 Cycles: 603010216 || Activation Count:5026432 Source: -at Sieve.sieve(boolean[], int) [bci: 30]
+-at Sieve.benchmark() [bci: 16] | -at Sieve.sieve(boolean[], int) [bci: 53]
+-at Sieve.benchmark() [bci: 16]
+  loop 3 Cycles: 76703748 || Activation Count:13696 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+  loop 4 Cycles: 516476 || Activation Count:13696 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+Comp 117 (Benchmark.innerBenchmarkLoop(int)) loops:
+Found Encoding : 1:-1,7:-1,8:-1,2:-1,3:2,0:-1,4:0,9:0,10:0,5:0,6:5
+├── Loop 1
+├── Loop 7
+├── Loop 8
+├── Loop 2
+│   └── Loop 3
+└── Loop 0
+    ├── Loop 4
+    ├── Loop 9
+    ├── Loop 10
+    └── Loop 5
+        └── Loop 6
+  loop 0 Cycles: 791747042 || Activation Count:1 Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+  loop 1 Cycles: 1286 || Activation Count:1 Source: -at java.util.Arrays.fill(Arrays.java:3318) [bci: 5]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoo
+  loop 2 Cycles: 90014 || Activation Count:1 Source: -at Sieve.sieve(boolean[], int) [bci: 5]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at Sieve.sieve(boolean[], int) [bci: 59]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 3 Cycles: 41778 || Activation Count:367 Source: -at Sieve.sieve(boolean[], int) [bci: 30]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at Sieve.sieve(boolean[], int) [bci: 53]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 4 Cycles: 447080 || Activation Count:9519 Source: -at java.util.Arrays.fill(Arrays.java:3318) [bci: 5]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoo
+  loop 5 Cycles: 725430576 || Activation Count:9519 Source: -at Sieve.sieve(boolean[], int) [bci: 5]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at Sieve.sieve(boolean[], int) [bci: 59]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 6 Cycles: 364156078 || Activation Count:3493473 Source: -at Sieve.sieve(boolean[], int) [bci: 30]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at Sieve.sieve(boolean[], int) [bci: 53]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 7 Cycles: 5168 || Activation Count:1 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 8 Cycles: 84 || Activation Count:1 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 9 Cycles: 49295652 || Activation Count:9519 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 10 Cycles: 373326 || Activation Count:9519 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+Comp 118 (Benchmark.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,4:0,5:0,2:0,3:2
+└── Loop 0
+    ├── Loop 1
+    ├── Loop 4
+    ├── Loop 5
+    └── Loop 2
+        └── Loop 3
+  loop 0 Cycles: 423157248812 || Activation Count:497 Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+  loop 1 Cycles: 290024194 || Activation Count:4970000 Source: -at java.util.Arrays.fill(Arrays.java:3318) [bci: 5]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoo
+  loop 2 Cycles: 390879101204 || Activation Count:4970000 Source: -at Sieve.sieve(boolean[], int) [bci: 5]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at Sieve.sieve(boolean[], int) [bci: 59]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 3 Cycles: 198604779710 || Activation Count:1823990000 Source: -at Sieve.sieve(boolean[], int) [bci: 30]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9] | -at Sieve.sieve(boolean[], int) [bci: 53]
+-at Sieve.benchmark() [bci: 16]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 4 Cycles: 25922153674 || Activation Count:4970000 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+  loop 5 Cycles: 206991238 || Activation Count:4970000 Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3320) [bci: 20]
+-at Sieve.benchmark() [bci: 8]
+-at Benchmark.innerBenchmarkLoop(int) [bci: 9]
+Comp 128 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 41622 || Activation Count:182 Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 17056 || Activation Count:182 Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 10002 || Activation Count:182 Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+-- Sieve completed successfully.

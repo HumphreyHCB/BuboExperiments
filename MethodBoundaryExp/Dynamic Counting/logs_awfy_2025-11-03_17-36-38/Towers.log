@@ -1,0 +1,602 @@
+========================================
+Benchmark : Towers
+Timestamp : 2025-11-03T19:15:50+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -Djdk.graal.CompilationFailureAction=Diagnose   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   Towers   500   2500 
+========================================
+Starting Towers benchmark ...
+Towers: iterations=1 runtime: 996277us
+Towers: iterations=2 runtime: 885704us
+Towers: iterations=3 runtime: 906216us
+Towers: iterations=4 runtime: 877595us
+Towers: iterations=5 runtime: 882854us
+Towers: iterations=6 runtime: 878239us
+Towers: iterations=7 runtime: 885327us
+Towers: iterations=8 runtime: 884740us
+Towers: iterations=9 runtime: 1129727us
+Towers: iterations=10 runtime: 878562us
+Towers: iterations=11 runtime: 864093us
+Towers: iterations=12 runtime: 884643us
+Towers: iterations=13 runtime: 872614us
+Towers: iterations=14 runtime: 884521us
+Towers: iterations=15 runtime: 884656us
+Towers: iterations=16 runtime: 884501us
+Towers: iterations=17 runtime: 884577us
+Towers: iterations=18 runtime: 884434us
+Towers: iterations=19 runtime: 876970us
+Towers: iterations=20 runtime: 879267us
+Towers: iterations=21 runtime: 872671us
+Towers: iterations=22 runtime: 883543us
+Towers: iterations=23 runtime: 884439us
+Towers: iterations=24 runtime: 879830us
+Towers: iterations=25 runtime: 865728us
+Towers: iterations=26 runtime: 884527us
+Towers: iterations=27 runtime: 884446us
+Towers: iterations=28 runtime: 884457us
+Towers: iterations=29 runtime: 884639us
+Towers: iterations=30 runtime: 875719us
+Towers: iterations=31 runtime: 884652us
+Towers: iterations=32 runtime: 884379us
+Towers: iterations=33 runtime: 882450us
+Towers: iterations=34 runtime: 863880us
+Towers: iterations=35 runtime: 870286us
+Towers: iterations=36 runtime: 859264us
+Towers: iterations=37 runtime: 880181us
+Towers: iterations=38 runtime: 873598us
+Towers: iterations=39 runtime: 884608us
+Towers: iterations=40 runtime: 872398us
+Towers: iterations=41 runtime: 879035us
+Towers: iterations=42 runtime: 873787us
+Towers: iterations=43 runtime: 879336us
+Towers: iterations=44 runtime: 884440us
+Towers: iterations=45 runtime: 884561us
+Towers: iterations=46 runtime: 873234us
+Towers: iterations=47 runtime: 884572us
+Towers: iterations=48 runtime: 884462us
+Towers: iterations=49 runtime: 884560us
+Towers: iterations=50 runtime: 884472us
+Towers: iterations=51 runtime: 884448us
+Towers: iterations=52 runtime: 886120us
+Towers: iterations=53 runtime: 879313us
+Towers: iterations=54 runtime: 884497us
+Towers: iterations=55 runtime: 882331us
+Towers: iterations=56 runtime: 875900us
+Towers: iterations=57 runtime: 881631us
+Towers: iterations=58 runtime: 870590us
+Towers: iterations=59 runtime: 882124us
+Towers: iterations=60 runtime: 879561us
+Towers: iterations=61 runtime: 868227us
+Towers: iterations=62 runtime: 873733us
+Towers: iterations=63 runtime: 884451us
+Towers: iterations=64 runtime: 877281us
+Towers: iterations=65 runtime: 866333us
+Towers: iterations=66 runtime: 884442us
+Towers: iterations=67 runtime: 884490us
+Towers: iterations=68 runtime: 884465us
+Towers: iterations=69 runtime: 884415us
+Towers: iterations=70 runtime: 861145us
+Towers: iterations=71 runtime: 884436us
+Towers: iterations=72 runtime: 884408us
+Towers: iterations=73 runtime: 881980us
+Towers: iterations=74 runtime: 884439us
+Towers: iterations=75 runtime: 884437us
+Towers: iterations=76 runtime: 884428us
+Towers: iterations=77 runtime: 884409us
+Towers: iterations=78 runtime: 847458us
+Towers: iterations=79 runtime: 872306us
+Towers: iterations=80 runtime: 884443us
+Towers: iterations=81 runtime: 867932us
+Towers: iterations=82 runtime: 877441us
+Towers: iterations=83 runtime: 884481us
+Towers: iterations=84 runtime: 877515us
+Towers: iterations=85 runtime: 881651us
+Towers: iterations=86 runtime: 882689us
+Towers: iterations=87 runtime: 878689us
+Towers: iterations=88 runtime: 880067us
+Towers: iterations=89 runtime: 879259us
+Towers: iterations=90 runtime: 878725us
+Towers: iterations=91 runtime: 881624us
+Towers: iterations=92 runtime: 884472us
+Towers: iterations=93 runtime: 876642us
+Towers: iterations=94 runtime: 875559us
+Towers: iterations=95 runtime: 884440us
+Towers: iterations=96 runtime: 876626us
+Towers: iterations=97 runtime: 879509us
+Towers: iterations=98 runtime: 878444us
+Towers: iterations=99 runtime: 884417us
+Towers: iterations=100 runtime: 884606us
+Towers: iterations=101 runtime: 878490us
+Towers: iterations=102 runtime: 855013us
+Towers: iterations=103 runtime: 884688us
+Towers: iterations=104 runtime: 884478us
+Towers: iterations=105 runtime: 884456us
+Towers: iterations=106 runtime: 884496us
+Towers: iterations=107 runtime: 884455us
+Towers: iterations=108 runtime: 875915us
+Towers: iterations=109 runtime: 876722us
+Towers: iterations=110 runtime: 877769us
+Towers: iterations=111 runtime: 877883us
+Towers: iterations=112 runtime: 875695us
+Towers: iterations=113 runtime: 884580us
+Towers: iterations=114 runtime: 884459us
+Towers: iterations=115 runtime: 884628us
+Towers: iterations=116 runtime: 884519us
+Towers: iterations=117 runtime: 884465us
+Towers: iterations=118 runtime: 884574us
+Towers: iterations=119 runtime: 884450us
+Towers: iterations=120 runtime: 878082us
+Towers: iterations=121 runtime: 884469us
+Towers: iterations=122 runtime: 871832us
+Towers: iterations=123 runtime: 884509us
+Towers: iterations=124 runtime: 884688us
+Towers: iterations=125 runtime: 881135us
+Towers: iterations=126 runtime: 884430us
+Towers: iterations=127 runtime: 884638us
+Towers: iterations=128 runtime: 868269us
+Towers: iterations=129 runtime: 874829us
+Towers: iterations=130 runtime: 870891us
+Towers: iterations=131 runtime: 884554us
+Towers: iterations=132 runtime: 884457us
+Towers: iterations=133 runtime: 876194us
+Towers: iterations=134 runtime: 879504us
+Towers: iterations=135 runtime: 884549us
+Towers: iterations=136 runtime: 876485us
+Towers: iterations=137 runtime: 867400us
+Towers: iterations=138 runtime: 865015us
+Towers: iterations=139 runtime: 884430us
+Towers: iterations=140 runtime: 884596us
+Towers: iterations=141 runtime: 881111us
+Towers: iterations=142 runtime: 884462us
+Towers: iterations=143 runtime: 884620us
+Towers: iterations=144 runtime: 881992us
+Towers: iterations=145 runtime: 884558us
+Towers: iterations=146 runtime: 884420us
+Towers: iterations=147 runtime: 878974us
+Towers: iterations=148 runtime: 884466us
+Towers: iterations=149 runtime: 884566us
+Towers: iterations=150 runtime: 868425us
+Towers: iterations=151 runtime: 862108us
+Towers: iterations=152 runtime: 880233us
+Towers: iterations=153 runtime: 884507us
+Towers: iterations=154 runtime: 879659us
+Towers: iterations=155 runtime: 884452us
+Towers: iterations=156 runtime: 884670us
+Towers: iterations=157 runtime: 870070us
+Towers: iterations=158 runtime: 883826us
+Towers: iterations=159 runtime: 872548us
+Towers: iterations=160 runtime: 884431us
+Towers: iterations=161 runtime: 867548us
+Towers: iterations=162 runtime: 884423us
+Towers: iterations=163 runtime: 879319us
+Towers: iterations=164 runtime: 884487us
+Towers: iterations=165 runtime: 884603us
+Towers: iterations=166 runtime: 882338us
+Towers: iterations=167 runtime: 884433us
+Towers: iterations=168 runtime: 880920us
+Towers: iterations=169 runtime: 884372us
+Towers: iterations=170 runtime: 884522us
+Towers: iterations=171 runtime: 884438us
+Towers: iterations=172 runtime: 880732us
+Towers: iterations=173 runtime: 872740us
+Towers: iterations=174 runtime: 884576us
+Towers: iterations=175 runtime: 884451us
+Towers: iterations=176 runtime: 880377us
+Towers: iterations=177 runtime: 884208us
+Towers: iterations=178 runtime: 877460us
+Towers: iterations=179 runtime: 884458us
+Towers: iterations=180 runtime: 858600us
+Towers: iterations=181 runtime: 879406us
+Towers: iterations=182 runtime: 884376us
+Towers: iterations=183 runtime: 884439us
+Towers: iterations=184 runtime: 880344us
+Towers: iterations=185 runtime: 884454us
+Towers: iterations=186 runtime: 884444us
+Towers: iterations=187 runtime: 884438us
+Towers: iterations=188 runtime: 881691us
+Towers: iterations=189 runtime: 884460us
+Towers: iterations=190 runtime: 884452us
+Towers: iterations=191 runtime: 884441us
+Towers: iterations=192 runtime: 884454us
+Towers: iterations=193 runtime: 884475us
+Towers: iterations=194 runtime: 883986us
+Towers: iterations=195 runtime: 873651us
+Towers: iterations=196 runtime: 879666us
+Towers: iterations=197 runtime: 881541us
+Towers: iterations=198 runtime: 872658us
+Towers: iterations=199 runtime: 884485us
+Towers: iterations=200 runtime: 875116us
+Towers: iterations=201 runtime: 884427us
+Towers: iterations=202 runtime: 884382us
+Towers: iterations=203 runtime: 873498us
+Towers: iterations=204 runtime: 884427us
+Towers: iterations=205 runtime: 884424us
+Towers: iterations=206 runtime: 884397us
+Towers: iterations=207 runtime: 873783us
+Towers: iterations=208 runtime: 883269us
+Towers: iterations=209 runtime: 884403us
+Towers: iterations=210 runtime: 884427us
+Towers: iterations=211 runtime: 873540us
+Towers: iterations=212 runtime: 885172us
+Towers: iterations=213 runtime: 878593us
+Towers: iterations=214 runtime: 884452us
+Towers: iterations=215 runtime: 878899us
+Towers: iterations=216 runtime: 884396us
+Towers: iterations=217 runtime: 879828us
+Towers: iterations=218 runtime: 884465us
+Towers: iterations=219 runtime: 884439us
+Towers: iterations=220 runtime: 881594us
+Towers: iterations=221 runtime: 877703us
+Towers: iterations=222 runtime: 884431us
+Towers: iterations=223 runtime: 884453us
+Towers: iterations=224 runtime: 881775us
+Towers: iterations=225 runtime: 877201us
+Towers: iterations=226 runtime: 884525us
+Towers: iterations=227 runtime: 878381us
+Towers: iterations=228 runtime: 884467us
+Towers: iterations=229 runtime: 885307us
+Towers: iterations=230 runtime: 884463us
+Towers: iterations=231 runtime: 884467us
+Towers: iterations=232 runtime: 881535us
+Towers: iterations=233 runtime: 884423us
+Towers: iterations=234 runtime: 868564us
+Towers: iterations=235 runtime: 871167us
+Towers: iterations=236 runtime: 881908us
+Towers: iterations=237 runtime: 880546us
+Towers: iterations=238 runtime: 872660us
+Towers: iterations=239 runtime: 877143us
+Towers: iterations=240 runtime: 882181us
+Towers: iterations=241 runtime: 932686us
+Towers: iterations=242 runtime: 884415us
+Towers: iterations=243 runtime: 875308us
+Towers: iterations=244 runtime: 884405us
+Towers: iterations=245 runtime: 879767us
+Towers: iterations=246 runtime: 878329us
+Towers: iterations=247 runtime: 879464us
+Towers: iterations=248 runtime: 884425us
+Towers: iterations=249 runtime: 884468us
+Towers: iterations=250 runtime: 872707us
+Towers: iterations=251 runtime: 874915us
+Towers: iterations=252 runtime: 884414us
+Towers: iterations=253 runtime: 879943us
+Towers: iterations=254 runtime: 874274us
+Towers: iterations=255 runtime: 881479us
+Towers: iterations=256 runtime: 884463us
+Towers: iterations=257 runtime: 884432us
+Towers: iterations=258 runtime: 881670us
+Towers: iterations=259 runtime: 884443us
+Towers: iterations=260 runtime: 881710us
+Towers: iterations=261 runtime: 882508us
+Towers: iterations=262 runtime: 859957us
+Towers: iterations=263 runtime: 884400us
+Towers: iterations=264 runtime: 865239us
+Towers: iterations=265 runtime: 884438us
+Towers: iterations=266 runtime: 884400us
+Towers: iterations=267 runtime: 869128us
+Towers: iterations=268 runtime: 882137us
+Towers: iterations=269 runtime: 884453us
+Towers: iterations=270 runtime: 884439us
+Towers: iterations=271 runtime: 884445us
+Towers: iterations=272 runtime: 884421us
+Towers: iterations=273 runtime: 884422us
+Towers: iterations=274 runtime: 884418us
+Towers: iterations=275 runtime: 884418us
+Towers: iterations=276 runtime: 884417us
+Towers: iterations=277 runtime: 874283us
+Towers: iterations=278 runtime: 878631us
+Towers: iterations=279 runtime: 884482us
+Towers: iterations=280 runtime: 884465us
+Towers: iterations=281 runtime: 884467us
+Towers: iterations=282 runtime: 884443us
+Towers: iterations=283 runtime: 878942us
+Towers: iterations=284 runtime: 884400us
+Towers: iterations=285 runtime: 884468us
+Towers: iterations=286 runtime: 884492us
+Towers: iterations=287 runtime: 881385us
+Towers: iterations=288 runtime: 879919us
+Towers: iterations=289 runtime: 877080us
+Towers: iterations=290 runtime: 884406us
+Towers: iterations=291 runtime: 884368us
+Towers: iterations=292 runtime: 875742us
+Towers: iterations=293 runtime: 875701us
+Towers: iterations=294 runtime: 874353us
+Towers: iterations=295 runtime: 884397us
+Towers: iterations=296 runtime: 878634us
+Towers: iterations=297 runtime: 885187us
+Towers: iterations=298 runtime: 884422us
+Towers: iterations=299 runtime: 884428us
+Towers: iterations=300 runtime: 884418us
+Towers: iterations=301 runtime: 884389us
+Towers: iterations=302 runtime: 884416us
+Towers: iterations=303 runtime: 881469us
+Towers: iterations=304 runtime: 882574us
+Towers: iterations=305 runtime: 881711us
+Towers: iterations=306 runtime: 882547us
+Towers: iterations=307 runtime: 884521us
+Towers: iterations=308 runtime: 879567us
+Towers: iterations=309 runtime: 932970us
+Towers: iterations=310 runtime: 884454us
+Towers: iterations=311 runtime: 882268us
+Towers: iterations=312 runtime: 865158us
+Towers: iterations=313 runtime: 876469us
+Towers: iterations=314 runtime: 884538us
+Towers: iterations=315 runtime: 884493us
+Towers: iterations=316 runtime: 884569us
+Towers: iterations=317 runtime: 884510us
+Towers: iterations=318 runtime: 884602us
+Towers: iterations=319 runtime: 880796us
+Towers: iterations=320 runtime: 874823us
+Towers: iterations=321 runtime: 884470us
+Towers: iterations=322 runtime: 884415us
+Towers: iterations=323 runtime: 877825us
+Towers: iterations=324 runtime: 864374us
+Towers: iterations=325 runtime: 877104us
+Towers: iterations=326 runtime: 862074us
+Towers: iterations=327 runtime: 870566us
+Towers: iterations=328 runtime: 858996us
+Towers: iterations=329 runtime: 871004us
+Towers: iterations=330 runtime: 884474us
+Towers: iterations=331 runtime: 879836us
+Towers: iterations=332 runtime: 874989us
+Towers: iterations=333 runtime: 875241us
+Towers: iterations=334 runtime: 879103us
+Towers: iterations=335 runtime: 867083us
+Towers: iterations=336 runtime: 869958us
+Towers: iterations=337 runtime: 884450us
+Towers: iterations=338 runtime: 884567us
+Towers: iterations=339 runtime: 884432us
+Towers: iterations=340 runtime: 884477us
+Towers: iterations=341 runtime: 877130us
+Towers: iterations=342 runtime: 884422us
+Towers: iterations=343 runtime: 875474us
+Towers: iterations=344 runtime: 884412us
+Towers: iterations=345 runtime: 881859us
+Towers: iterations=346 runtime: 881211us
+Towers: iterations=347 runtime: 884375us
+Towers: iterations=348 runtime: 884385us
+Towers: iterations=349 runtime: 885124us
+Towers: iterations=350 runtime: 884391us
+Towers: iterations=351 runtime: 878262us
+Towers: iterations=352 runtime: 884348us
+Towers: iterations=353 runtime: 884392us
+Towers: iterations=354 runtime: 884362us
+Towers: iterations=355 runtime: 870518us
+Towers: iterations=356 runtime: 877580us
+Towers: iterations=357 runtime: 873797us
+Towers: iterations=358 runtime: 884408us
+Towers: iterations=359 runtime: 884444us
+Towers: iterations=360 runtime: 873013us
+Towers: iterations=361 runtime: 881283us
+Towers: iterations=362 runtime: 880371us
+Towers: iterations=363 runtime: 883038us
+Towers: iterations=364 runtime: 874115us
+Towers: iterations=365 runtime: 865239us
+Towers: iterations=366 runtime: 884423us
+Towers: iterations=367 runtime: 884446us
+Towers: iterations=368 runtime: 868272us
+Towers: iterations=369 runtime: 870474us
+Towers: iterations=370 runtime: 858651us
+Towers: iterations=371 runtime: 884425us
+Towers: iterations=372 runtime: 857198us
+Towers: iterations=373 runtime: 873592us
+Towers: iterations=374 runtime: 884442us
+Towers: iterations=375 runtime: 884509us
+Towers: iterations=376 runtime: 884446us
+Towers: iterations=377 runtime: 932839us
+Towers: iterations=378 runtime: 884423us
+Towers: iterations=379 runtime: 880121us
+Towers: iterations=380 runtime: 884425us
+Towers: iterations=381 runtime: 880088us
+Towers: iterations=382 runtime: 884395us
+Towers: iterations=383 runtime: 884403us
+Towers: iterations=384 runtime: 877055us
+Towers: iterations=385 runtime: 884440us
+Towers: iterations=386 runtime: 881541us
+Towers: iterations=387 runtime: 884412us
+Towers: iterations=388 runtime: 874898us
+Towers: iterations=389 runtime: 879506us
+Towers: iterations=390 runtime: 884153us
+Towers: iterations=391 runtime: 881527us
+Towers: iterations=392 runtime: 884412us
+Towers: iterations=393 runtime: 884450us
+Towers: iterations=394 runtime: 884406us
+Towers: iterations=395 runtime: 884459us
+Towers: iterations=396 runtime: 884424us
+Towers: iterations=397 runtime: 877555us
+Towers: iterations=398 runtime: 884434us
+Towers: iterations=399 runtime: 872853us
+Towers: iterations=400 runtime: 884450us
+Towers: iterations=401 runtime: 884511us
+Towers: iterations=402 runtime: 884391us
+Towers: iterations=403 runtime: 870203us
+Towers: iterations=404 runtime: 884437us
+Towers: iterations=405 runtime: 877277us
+Towers: iterations=406 runtime: 884403us
+Towers: iterations=407 runtime: 851667us
+Towers: iterations=408 runtime: 884512us
+Towers: iterations=409 runtime: 876856us
+Towers: iterations=410 runtime: 884431us
+Towers: iterations=411 runtime: 874706us
+Towers: iterations=412 runtime: 884485us
+Towers: iterations=413 runtime: 872864us
+Towers: iterations=414 runtime: 884409us
+Towers: iterations=415 runtime: 884426us
+Towers: iterations=416 runtime: 881872us
+Towers: iterations=417 runtime: 874134us
+Towers: iterations=418 runtime: 880851us
+Towers: iterations=419 runtime: 878892us
+Towers: iterations=420 runtime: 884427us
+Towers: iterations=421 runtime: 884413us
+Towers: iterations=422 runtime: 881517us
+Towers: iterations=423 runtime: 855451us
+Towers: iterations=424 runtime: 880484us
+Towers: iterations=425 runtime: 861808us
+Towers: iterations=426 runtime: 882416us
+Towers: iterations=427 runtime: 884439us
+Towers: iterations=428 runtime: 872522us
+Towers: iterations=429 runtime: 881524us
+Towers: iterations=430 runtime: 884451us
+Towers: iterations=431 runtime: 884403us
+Towers: iterations=432 runtime: 878450us
+Towers: iterations=433 runtime: 884420us
+Towers: iterations=434 runtime: 879329us
+Towers: iterations=435 runtime: 884409us
+Towers: iterations=436 runtime: 884477us
+Towers: iterations=437 runtime: 884439us
+Towers: iterations=438 runtime: 877007us
+Towers: iterations=439 runtime: 884445us
+Towers: iterations=440 runtime: 873717us
+Towers: iterations=441 runtime: 879589us
+Towers: iterations=442 runtime: 884429us
+Towers: iterations=443 runtime: 884429us
+Towers: iterations=444 runtime: 884428us
+Towers: iterations=445 runtime: 932676us
+Towers: iterations=446 runtime: 880331us
+Towers: iterations=447 runtime: 884397us
+Towers: iterations=448 runtime: 884452us
+Towers: iterations=449 runtime: 879284us
+Towers: iterations=450 runtime: 879504us
+Towers: iterations=451 runtime: 879903us
+Towers: iterations=452 runtime: 884411us
+Towers: iterations=453 runtime: 881107us
+Towers: iterations=454 runtime: 881272us
+Towers: iterations=455 runtime: 883791us
+Towers: iterations=456 runtime: 884439us
+Towers: iterations=457 runtime: 884436us
+Towers: iterations=458 runtime: 879631us
+Towers: iterations=459 runtime: 884403us
+Towers: iterations=460 runtime: 884451us
+Towers: iterations=461 runtime: 884398us
+Towers: iterations=462 runtime: 884410us
+Towers: iterations=463 runtime: 884404us
+Towers: iterations=464 runtime: 872397us
+Towers: iterations=465 runtime: 884419us
+Towers: iterations=466 runtime: 884406us
+Towers: iterations=467 runtime: 884425us
+Towers: iterations=468 runtime: 876419us
+Towers: iterations=469 runtime: 884390us
+Towers: iterations=470 runtime: 884402us
+Towers: iterations=471 runtime: 863796us
+Towers: iterations=472 runtime: 879384us
+Towers: iterations=473 runtime: 884430us
+Towers: iterations=474 runtime: 884406us
+Towers: iterations=475 runtime: 882284us
+Towers: iterations=476 runtime: 884451us
+Towers: iterations=477 runtime: 884474us
+Towers: iterations=478 runtime: 884380us
+Towers: iterations=479 runtime: 884546us
+Towers: iterations=480 runtime: 879227us
+Towers: iterations=481 runtime: 884413us
+Towers: iterations=482 runtime: 878772us
+Towers: iterations=483 runtime: 884423us
+Towers: iterations=484 runtime: 884467us
+Towers: iterations=485 runtime: 884472us
+Towers: iterations=486 runtime: 884431us
+Towers: iterations=487 runtime: 878303us
+Towers: iterations=488 runtime: 881335us
+Towers: iterations=489 runtime: 884422us
+Towers: iterations=490 runtime: 884441us
+Towers: iterations=491 runtime: 884483us
+Towers: iterations=492 runtime: 884419us
+Towers: iterations=493 runtime: 884408us
+Towers: iterations=494 runtime: 884399us
+Towers: iterations=495 runtime: 882105us
+Towers: iterations=496 runtime: 859246us
+Towers: iterations=497 runtime: 881308us
+Towers: iterations=498 runtime: 884381us
+Towers: iterations=499 runtime: 884365us
+Towers: iterations=500 runtime: 877810us
+Towers: iterations=500 average: 881456us total: 440728327us
+
+
+Total Runtime: 440728327us
+Index : Stub<new_instance_or_null(KlassPointer)Object> Activation Count : 11368
+Index : Stub<write_barrier_pre-stack-only(Object)void> Activation Count : 4096
+Index : java.lang.Enum.ordinal() Activation Count : 1806
+Index : java.lang.Class.isPrimitive() Activation Count : 4062
+Index : jdk.internal.util.StrongReferenceKey.get() Activation Count : 1272
+Index : java.lang.Class.getClassLoader() Activation Count : 720
+Index : java.lang.invoke.MethodType.returnType() Activation Count : 982
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.index() Activation Count : 4972
+Index : java.lang.invoke.MemberName.getDeclaringClass() Activation Count : 642
+Index : java.lang.invoke.MethodType.form() Activation Count : 250
+Index : java.util.stream.FindOps$FindSink.cancellationRequested() Activation Count : 408
+Index : java.lang.Object.<init>() Activation Count : 31099
+Index : jdk.internal.module.ModuleReferenceImpl.moduleResolution() Activation Count : 204
+Index : java.lang.String.hashCode() Activation Count : 39362
+Index : java.lang.module.ModuleDescriptor$Requires.modifiers() Activation Count : 384
+Index : java.lang.module.ModuleDescriptor$Requires.name() Activation Count : 702
+Index : java.lang.module.ModuleDescriptor.requires() Activation Count : 152
+Index : java.lang.module.ModuleDescriptor.isAutomatic() Activation Count : 1196
+Index : java.util.HashMap$Node.getKey() Activation Count : 904
+Index : java.util.HashMap$Node.getValue() Activation Count : 902
+Index : java.util.ImmutableCollections$Set12.isEmpty() Activation Count : 2103
+Index : java.lang.module.ModuleDescriptor$Exports.source() Activation Count : 10990
+Index : java.lang.module.ModuleDescriptor$Exports.targets() Activation Count : 8954
+Index : java.lang.module.ModuleDescriptor.provides() Activation Count : 300
+Index : java.lang.module.ModuleDescriptor.exports() Activation Count : 390
+Index : java.util.Objects.requireNonNull(Object) Activation Count : 8924
+Index : java.util.ImmutableCollections$SetN$SetNIterator.hasNext() Activation Count : 31914
+Index : java.lang.module.ModuleDescriptor.uses() Activation Count : 68
+Index : java.util.ImmutableCollections$SetN$SetNIterator.next() Activation Count : 209960
+Index : java.util.HashMap.hash(Object) Activation Count : 20125
+Index : java.lang.module.ModuleDescriptor$Exports.isQualified() Activation Count : 12975
+Index : java.lang.module.ModuleDescriptor$Provides.service() Activation Count : 146
+Index : java.lang.Byte.toUnsignedInt(byte) Activation Count : 25992
+Index : java.util.HashMap.putVal(int, Activation Count : 56152
+Index : java.util.HashMap$Node.<init>(int, Activation Count : 340
+Index : java.lang.String.equals(Object) Activation Count : 6916
+Index : java.util.KeyValueHolder.getKey() Activation Count : 130
+Index : java.util.KeyValueHolder.getValue() Activation Count : 58
+Index : java.lang.module.ModuleDescriptor.packages() Activation Count : 296
+Index : java.lang.module.ResolvedModule.reference() Activation Count : 560
+Index : java.lang.module.ModuleDescriptor$Version.toString() Activation Count : 60
+Index : java.lang.AbstractStringBuilder.length() Activation Count : 750
+Index : java.util.HashMap.newNode(int, Activation Count : 8370
+Index : java.util.HashMap.afterNodeInsertion(boolean) Activation Count : 1674
+Index : java.util.HashMap.resize() Activation Count : 14020
+Index : java.lang.module.ResolvedModule.configuration() Activation Count : 94
+Index : java.lang.module.ModuleDescriptor.isOpen() Activation Count : 30
+Index : java.util.HashMap.size() Activation Count : 28
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.width() Activation Count : 1348
+Index : jdk.internal.classfile.impl.SplitConstantPool.size() Activation Count : 3382
+Index : java.lang.invoke.MethodType.ptypes() Activation Count : 162
+Index : java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8() Activation Count : 27
+Index : java.lang.AbstractStringBuilder.getValue() Activation Count : 234
+Index : java.lang.StringLatin1.equals(byte[], Activation Count : 5260
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.constantPool() Activation Count : 1128
+Index : jdk.internal.classfile.impl.RawBytecodeHelper.bci() Activation Count : 2466
+Index : Towers$TowersDisk.setNext(Towers$TowersDisk) Activation Count : 26880
+Index : Towers$TowersDisk.getSize() Activation Count : 26428
+Index : Towers$TowersDisk.getNext() Activation Count : 13312
+Index : Towers.pushDisk(Towers$TowersDisk, Activation Count : 206284
+Index : Towers.moveDisks(int, Activation Count : 274581064982
+Index : java.lang.Integer.intValue() Activation Count : 13392
+Index : Towers$TowersDisk.<init>(int) Activation Count : 14068
+Index : Towers.buildTowerAt(int, Activation Count : 1002885
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString() Activation Count : 584
+Index : java.lang.String.value() Activation Count : 646
+Index : java.lang.String.coder() Activation Count : 12740
+Index : jdk.internal.classfile.impl.BufWriterImpl.size() Activation Count : 364
+Index : jdk.internal.util.WeakReferenceKey.hashCode() Activation Count : 84
+Index : jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool() Activation Count : 218
+Index : java.lang.Integer.valueOf(int) Activation Count : 539
+Index : Towers.benchmark() Activation Count : 1571504
+Index : Towers.verifyResult(Object) Activation Count : 47145
+Index : Benchmark.innerBenchmarkLoop(int) Activation Count : 12214
+Index : Benchmark.innerBenchmarkLoop(int)-Re-Comp Activation Count : 117841557
+Index : java.nio.Buffer.position() Activation Count : 3788
+Index : java.nio.Buffer.limit() Activation Count : 2780
+Index : java.nio.Buffer.capacity() Activation Count : 752
+Index : java.nio.charset.CharsetEncoder.maxBytesPerChar() Activation Count : 752
+Index : java.lang.String.length() Activation Count : 22870
+Index : java.lang.StringLatin1.inflate(byte[], Activation Count : 18247
+Index : jdk.internal.constant.PrimitiveClassDescImpl.descriptorString() Activation Count : 174
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.hashCode() Activation Count : 132
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface() Activation Count : 54
+Index : java.util.ArrayList.size() Activation Count : 124
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag() Activation Count : 47
+Index : java.lang.invoke.MethodTypeForm.erasedType() Activation Count : 22
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[], Activation Count : 290
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp Activation Count : 240
+-- Towers completed successfully.

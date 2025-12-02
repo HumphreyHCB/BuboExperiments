@@ -1,0 +1,597 @@
+========================================
+Benchmark : Permute
+Timestamp : 2025-11-03T18:49:37+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -Djdk.graal.CompilationFailureAction=Diagnose   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   Permute   500   3500 
+========================================
+Starting Permute benchmark ...
+Permute: iterations=1 runtime: 678091us
+Permute: iterations=2 runtime: 686016us
+Permute: iterations=3 runtime: 649619us
+Permute: iterations=4 runtime: 649364us
+Permute: iterations=5 runtime: 649602us
+Permute: iterations=6 runtime: 798490us
+Permute: iterations=7 runtime: 645467us
+Permute: iterations=8 runtime: 645497us
+Permute: iterations=9 runtime: 649844us
+Permute: iterations=10 runtime: 641922us
+Permute: iterations=11 runtime: 649143us
+Permute: iterations=12 runtime: 623173us
+Permute: iterations=13 runtime: 603251us
+Permute: iterations=14 runtime: 642852us
+Permute: iterations=15 runtime: 649688us
+Permute: iterations=16 runtime: 638699us
+Permute: iterations=17 runtime: 642662us
+Permute: iterations=18 runtime: 643462us
+Permute: iterations=19 runtime: 619496us
+Permute: iterations=20 runtime: 635861us
+Permute: iterations=21 runtime: 634167us
+Permute: iterations=22 runtime: 646472us
+Permute: iterations=23 runtime: 646970us
+Permute: iterations=24 runtime: 649681us
+Permute: iterations=25 runtime: 649699us
+Permute: iterations=26 runtime: 643100us
+Permute: iterations=27 runtime: 649694us
+Permute: iterations=28 runtime: 639037us
+Permute: iterations=29 runtime: 643723us
+Permute: iterations=30 runtime: 649682us
+Permute: iterations=31 runtime: 643258us
+Permute: iterations=32 runtime: 649684us
+Permute: iterations=33 runtime: 649695us
+Permute: iterations=34 runtime: 641884us
+Permute: iterations=35 runtime: 649705us
+Permute: iterations=36 runtime: 649718us
+Permute: iterations=37 runtime: 649817us
+Permute: iterations=38 runtime: 649695us
+Permute: iterations=39 runtime: 648966us
+Permute: iterations=40 runtime: 637213us
+Permute: iterations=41 runtime: 646409us
+Permute: iterations=42 runtime: 649648us
+Permute: iterations=43 runtime: 643542us
+Permute: iterations=44 runtime: 649697us
+Permute: iterations=45 runtime: 647145us
+Permute: iterations=46 runtime: 644511us
+Permute: iterations=47 runtime: 649677us
+Permute: iterations=48 runtime: 649701us
+Permute: iterations=49 runtime: 649759us
+Permute: iterations=50 runtime: 622473us
+Permute: iterations=51 runtime: 649687us
+Permute: iterations=52 runtime: 649797us
+Permute: iterations=53 runtime: 649690us
+Permute: iterations=54 runtime: 649687us
+Permute: iterations=55 runtime: 649677us
+Permute: iterations=56 runtime: 649685us
+Permute: iterations=57 runtime: 649659us
+Permute: iterations=58 runtime: 649703us
+Permute: iterations=59 runtime: 649690us
+Permute: iterations=60 runtime: 642502us
+Permute: iterations=61 runtime: 645384us
+Permute: iterations=62 runtime: 642361us
+Permute: iterations=63 runtime: 649713us
+Permute: iterations=64 runtime: 639210us
+Permute: iterations=65 runtime: 648853us
+Permute: iterations=66 runtime: 643877us
+Permute: iterations=67 runtime: 649718us
+Permute: iterations=68 runtime: 638384us
+Permute: iterations=69 runtime: 649669us
+Permute: iterations=70 runtime: 649668us
+Permute: iterations=71 runtime: 643031us
+Permute: iterations=72 runtime: 648414us
+Permute: iterations=73 runtime: 643844us
+Permute: iterations=74 runtime: 629414us
+Permute: iterations=75 runtime: 649702us
+Permute: iterations=76 runtime: 646569us
+Permute: iterations=77 runtime: 647596us
+Permute: iterations=78 runtime: 646306us
+Permute: iterations=79 runtime: 649726us
+Permute: iterations=80 runtime: 649645us
+Permute: iterations=81 runtime: 649774us
+Permute: iterations=82 runtime: 649646us
+Permute: iterations=83 runtime: 649691us
+Permute: iterations=84 runtime: 649703us
+Permute: iterations=85 runtime: 649671us
+Permute: iterations=86 runtime: 649681us
+Permute: iterations=87 runtime: 643008us
+Permute: iterations=88 runtime: 649634us
+Permute: iterations=89 runtime: 649702us
+Permute: iterations=90 runtime: 649659us
+Permute: iterations=91 runtime: 649691us
+Permute: iterations=92 runtime: 644459us
+Permute: iterations=93 runtime: 649667us
+Permute: iterations=94 runtime: 649733us
+Permute: iterations=95 runtime: 649639us
+Permute: iterations=96 runtime: 649734us
+Permute: iterations=97 runtime: 649662us
+Permute: iterations=98 runtime: 647428us
+Permute: iterations=99 runtime: 649683us
+Permute: iterations=100 runtime: 649684us
+Permute: iterations=101 runtime: 649684us
+Permute: iterations=102 runtime: 649668us
+Permute: iterations=103 runtime: 646010us
+Permute: iterations=104 runtime: 642052us
+Permute: iterations=105 runtime: 649631us
+Permute: iterations=106 runtime: 634283us
+Permute: iterations=107 runtime: 649658us
+Permute: iterations=108 runtime: 649701us
+Permute: iterations=109 runtime: 644525us
+Permute: iterations=110 runtime: 643943us
+Permute: iterations=111 runtime: 649812us
+Permute: iterations=112 runtime: 636817us
+Permute: iterations=113 runtime: 649693us
+Permute: iterations=114 runtime: 649784us
+Permute: iterations=115 runtime: 640402us
+Permute: iterations=116 runtime: 649694us
+Permute: iterations=117 runtime: 640885us
+Permute: iterations=118 runtime: 649678us
+Permute: iterations=119 runtime: 649662us
+Permute: iterations=120 runtime: 649720us
+Permute: iterations=121 runtime: 643971us
+Permute: iterations=122 runtime: 649672us
+Permute: iterations=123 runtime: 649737us
+Permute: iterations=124 runtime: 649788us
+Permute: iterations=125 runtime: 645049us
+Permute: iterations=126 runtime: 636022us
+Permute: iterations=127 runtime: 635755us
+Permute: iterations=128 runtime: 649700us
+Permute: iterations=129 runtime: 649742us
+Permute: iterations=130 runtime: 649708us
+Permute: iterations=131 runtime: 649721us
+Permute: iterations=132 runtime: 649732us
+Permute: iterations=133 runtime: 639965us
+Permute: iterations=134 runtime: 647123us
+Permute: iterations=135 runtime: 647233us
+Permute: iterations=136 runtime: 649804us
+Permute: iterations=137 runtime: 644837us
+Permute: iterations=138 runtime: 642683us
+Permute: iterations=139 runtime: 649651us
+Permute: iterations=140 runtime: 644386us
+Permute: iterations=141 runtime: 649782us
+Permute: iterations=142 runtime: 649691us
+Permute: iterations=143 runtime: 649632us
+Permute: iterations=144 runtime: 643107us
+Permute: iterations=145 runtime: 626568us
+Permute: iterations=146 runtime: 649702us
+Permute: iterations=147 runtime: 641381us
+Permute: iterations=148 runtime: 649709us
+Permute: iterations=149 runtime: 646071us
+Permute: iterations=150 runtime: 649700us
+Permute: iterations=151 runtime: 649713us
+Permute: iterations=152 runtime: 649679us
+Permute: iterations=153 runtime: 643670us
+Permute: iterations=154 runtime: 649679us
+Permute: iterations=155 runtime: 642173us
+Permute: iterations=156 runtime: 649820us
+Permute: iterations=157 runtime: 647791us
+Permute: iterations=158 runtime: 649839us
+Permute: iterations=159 runtime: 634596us
+Permute: iterations=160 runtime: 649729us
+Permute: iterations=161 runtime: 648033us
+Permute: iterations=162 runtime: 644804us
+Permute: iterations=163 runtime: 644584us
+Permute: iterations=164 runtime: 649772us
+Permute: iterations=165 runtime: 649768us
+Permute: iterations=166 runtime: 649758us
+Permute: iterations=167 runtime: 645378us
+Permute: iterations=168 runtime: 622805us
+Permute: iterations=169 runtime: 642501us
+Permute: iterations=170 runtime: 641631us
+Permute: iterations=171 runtime: 645815us
+Permute: iterations=172 runtime: 644338us
+Permute: iterations=173 runtime: 649695us
+Permute: iterations=174 runtime: 649800us
+Permute: iterations=175 runtime: 641565us
+Permute: iterations=176 runtime: 637001us
+Permute: iterations=177 runtime: 640138us
+Permute: iterations=178 runtime: 649741us
+Permute: iterations=179 runtime: 649733us
+Permute: iterations=180 runtime: 649798us
+Permute: iterations=181 runtime: 649719us
+Permute: iterations=182 runtime: 649737us
+Permute: iterations=183 runtime: 649668us
+Permute: iterations=184 runtime: 649696us
+Permute: iterations=185 runtime: 649722us
+Permute: iterations=186 runtime: 643604us
+Permute: iterations=187 runtime: 640193us
+Permute: iterations=188 runtime: 647725us
+Permute: iterations=189 runtime: 647182us
+Permute: iterations=190 runtime: 644785us
+Permute: iterations=191 runtime: 640134us
+Permute: iterations=192 runtime: 630759us
+Permute: iterations=193 runtime: 644940us
+Permute: iterations=194 runtime: 643569us
+Permute: iterations=195 runtime: 649727us
+Permute: iterations=196 runtime: 645926us
+Permute: iterations=197 runtime: 643763us
+Permute: iterations=198 runtime: 644216us
+Permute: iterations=199 runtime: 649659us
+Permute: iterations=200 runtime: 644671us
+Permute: iterations=201 runtime: 635983us
+Permute: iterations=202 runtime: 642471us
+Permute: iterations=203 runtime: 623366us
+Permute: iterations=204 runtime: 630715us
+Permute: iterations=205 runtime: 644648us
+Permute: iterations=206 runtime: 615722us
+Permute: iterations=207 runtime: 649844us
+Permute: iterations=208 runtime: 644191us
+Permute: iterations=209 runtime: 649735us
+Permute: iterations=210 runtime: 649760us
+Permute: iterations=211 runtime: 649709us
+Permute: iterations=212 runtime: 650441us
+Permute: iterations=213 runtime: 649731us
+Permute: iterations=214 runtime: 641616us
+Permute: iterations=215 runtime: 644104us
+Permute: iterations=216 runtime: 640000us
+Permute: iterations=217 runtime: 649737us
+Permute: iterations=218 runtime: 649730us
+Permute: iterations=219 runtime: 649748us
+Permute: iterations=220 runtime: 674893us
+Permute: iterations=221 runtime: 649745us
+Permute: iterations=222 runtime: 649706us
+Permute: iterations=223 runtime: 649729us
+Permute: iterations=224 runtime: 649753us
+Permute: iterations=225 runtime: 646729us
+Permute: iterations=226 runtime: 649686us
+Permute: iterations=227 runtime: 634728us
+Permute: iterations=228 runtime: 639220us
+Permute: iterations=229 runtime: 630594us
+Permute: iterations=230 runtime: 650024us
+Permute: iterations=231 runtime: 649825us
+Permute: iterations=232 runtime: 645014us
+Permute: iterations=233 runtime: 637183us
+Permute: iterations=234 runtime: 644214us
+Permute: iterations=235 runtime: 644149us
+Permute: iterations=236 runtime: 646134us
+Permute: iterations=237 runtime: 645973us
+Permute: iterations=238 runtime: 649747us
+Permute: iterations=239 runtime: 641504us
+Permute: iterations=240 runtime: 646862us
+Permute: iterations=241 runtime: 649745us
+Permute: iterations=242 runtime: 649639us
+Permute: iterations=243 runtime: 649661us
+Permute: iterations=244 runtime: 641485us
+Permute: iterations=245 runtime: 631514us
+Permute: iterations=246 runtime: 645415us
+Permute: iterations=247 runtime: 649748us
+Permute: iterations=248 runtime: 649746us
+Permute: iterations=249 runtime: 649736us
+Permute: iterations=250 runtime: 649821us
+Permute: iterations=251 runtime: 646340us
+Permute: iterations=252 runtime: 649707us
+Permute: iterations=253 runtime: 649809us
+Permute: iterations=254 runtime: 649702us
+Permute: iterations=255 runtime: 649767us
+Permute: iterations=256 runtime: 629066us
+Permute: iterations=257 runtime: 649637us
+Permute: iterations=258 runtime: 649692us
+Permute: iterations=259 runtime: 649723us
+Permute: iterations=260 runtime: 633828us
+Permute: iterations=261 runtime: 642448us
+Permute: iterations=262 runtime: 641146us
+Permute: iterations=263 runtime: 632644us
+Permute: iterations=264 runtime: 645254us
+Permute: iterations=265 runtime: 643176us
+Permute: iterations=266 runtime: 638638us
+Permute: iterations=267 runtime: 649731us
+Permute: iterations=268 runtime: 645058us
+Permute: iterations=269 runtime: 639560us
+Permute: iterations=270 runtime: 642117us
+Permute: iterations=271 runtime: 649718us
+Permute: iterations=272 runtime: 649723us
+Permute: iterations=273 runtime: 649628us
+Permute: iterations=274 runtime: 649689us
+Permute: iterations=275 runtime: 649754us
+Permute: iterations=276 runtime: 646284us
+Permute: iterations=277 runtime: 649746us
+Permute: iterations=278 runtime: 649722us
+Permute: iterations=279 runtime: 640769us
+Permute: iterations=280 runtime: 645177us
+Permute: iterations=281 runtime: 649713us
+Permute: iterations=282 runtime: 638024us
+Permute: iterations=283 runtime: 649702us
+Permute: iterations=284 runtime: 649691us
+Permute: iterations=285 runtime: 649752us
+Permute: iterations=286 runtime: 649717us
+Permute: iterations=287 runtime: 649699us
+Permute: iterations=288 runtime: 649694us
+Permute: iterations=289 runtime: 649817us
+Permute: iterations=290 runtime: 649711us
+Permute: iterations=291 runtime: 695615us
+Permute: iterations=292 runtime: 650762us
+Permute: iterations=293 runtime: 649674us
+Permute: iterations=294 runtime: 649785us
+Permute: iterations=295 runtime: 649776us
+Permute: iterations=296 runtime: 649673us
+Permute: iterations=297 runtime: 644849us
+Permute: iterations=298 runtime: 643339us
+Permute: iterations=299 runtime: 649662us
+Permute: iterations=300 runtime: 649727us
+Permute: iterations=301 runtime: 649707us
+Permute: iterations=302 runtime: 649699us
+Permute: iterations=303 runtime: 649639us
+Permute: iterations=304 runtime: 646031us
+Permute: iterations=305 runtime: 649668us
+Permute: iterations=306 runtime: 645666us
+Permute: iterations=307 runtime: 649704us
+Permute: iterations=308 runtime: 649689us
+Permute: iterations=309 runtime: 646574us
+Permute: iterations=310 runtime: 649667us
+Permute: iterations=311 runtime: 641140us
+Permute: iterations=312 runtime: 643808us
+Permute: iterations=313 runtime: 647165us
+Permute: iterations=314 runtime: 649654us
+Permute: iterations=315 runtime: 649627us
+Permute: iterations=316 runtime: 649679us
+Permute: iterations=317 runtime: 649656us
+Permute: iterations=318 runtime: 647631us
+Permute: iterations=319 runtime: 632011us
+Permute: iterations=320 runtime: 627243us
+Permute: iterations=321 runtime: 649746us
+Permute: iterations=322 runtime: 641634us
+Permute: iterations=323 runtime: 649666us
+Permute: iterations=324 runtime: 649659us
+Permute: iterations=325 runtime: 643847us
+Permute: iterations=326 runtime: 649657us
+Permute: iterations=327 runtime: 649704us
+Permute: iterations=328 runtime: 648870us
+Permute: iterations=329 runtime: 642371us
+Permute: iterations=330 runtime: 649687us
+Permute: iterations=331 runtime: 649646us
+Permute: iterations=332 runtime: 650363us
+Permute: iterations=333 runtime: 649728us
+Permute: iterations=334 runtime: 647074us
+Permute: iterations=335 runtime: 649677us
+Permute: iterations=336 runtime: 651159us
+Permute: iterations=337 runtime: 637136us
+Permute: iterations=338 runtime: 649310us
+Permute: iterations=339 runtime: 644569us
+Permute: iterations=340 runtime: 649284us
+Permute: iterations=341 runtime: 649289us
+Permute: iterations=342 runtime: 649241us
+Permute: iterations=343 runtime: 649307us
+Permute: iterations=344 runtime: 647425us
+Permute: iterations=345 runtime: 649284us
+Permute: iterations=346 runtime: 649268us
+Permute: iterations=347 runtime: 649311us
+Permute: iterations=348 runtime: 694000us
+Permute: iterations=349 runtime: 649236us
+Permute: iterations=350 runtime: 649270us
+Permute: iterations=351 runtime: 649284us
+Permute: iterations=352 runtime: 641364us
+Permute: iterations=353 runtime: 649281us
+Permute: iterations=354 runtime: 646345us
+Permute: iterations=355 runtime: 649276us
+Permute: iterations=356 runtime: 641932us
+Permute: iterations=357 runtime: 642320us
+Permute: iterations=358 runtime: 649267us
+Permute: iterations=359 runtime: 649261us
+Permute: iterations=360 runtime: 649290us
+Permute: iterations=361 runtime: 649273us
+Permute: iterations=362 runtime: 637182us
+Permute: iterations=363 runtime: 647350us
+Permute: iterations=364 runtime: 649297us
+Permute: iterations=365 runtime: 649312us
+Permute: iterations=366 runtime: 649310us
+Permute: iterations=367 runtime: 649313us
+Permute: iterations=368 runtime: 649282us
+Permute: iterations=369 runtime: 649307us
+Permute: iterations=370 runtime: 649247us
+Permute: iterations=371 runtime: 644385us
+Permute: iterations=372 runtime: 649282us
+Permute: iterations=373 runtime: 649271us
+Permute: iterations=374 runtime: 645822us
+Permute: iterations=375 runtime: 642581us
+Permute: iterations=376 runtime: 647018us
+Permute: iterations=377 runtime: 645816us
+Permute: iterations=378 runtime: 649308us
+Permute: iterations=379 runtime: 646104us
+Permute: iterations=380 runtime: 649273us
+Permute: iterations=381 runtime: 641758us
+Permute: iterations=382 runtime: 645792us
+Permute: iterations=383 runtime: 646359us
+Permute: iterations=384 runtime: 649281us
+Permute: iterations=385 runtime: 647685us
+Permute: iterations=386 runtime: 648633us
+Permute: iterations=387 runtime: 649271us
+Permute: iterations=388 runtime: 649281us
+Permute: iterations=389 runtime: 649239us
+Permute: iterations=390 runtime: 649303us
+Permute: iterations=391 runtime: 646792us
+Permute: iterations=392 runtime: 649276us
+Permute: iterations=393 runtime: 647124us
+Permute: iterations=394 runtime: 649262us
+Permute: iterations=395 runtime: 645714us
+Permute: iterations=396 runtime: 646342us
+Permute: iterations=397 runtime: 649295us
+Permute: iterations=398 runtime: 649270us
+Permute: iterations=399 runtime: 646625us
+Permute: iterations=400 runtime: 646347us
+Permute: iterations=401 runtime: 649931us
+Permute: iterations=402 runtime: 649317us
+Permute: iterations=403 runtime: 648748us
+Permute: iterations=404 runtime: 644406us
+Permute: iterations=405 runtime: 669581us
+Permute: iterations=406 runtime: 637992us
+Permute: iterations=407 runtime: 633619us
+Permute: iterations=408 runtime: 649274us
+Permute: iterations=409 runtime: 644476us
+Permute: iterations=410 runtime: 649323us
+Permute: iterations=411 runtime: 646013us
+Permute: iterations=412 runtime: 649332us
+Permute: iterations=413 runtime: 643223us
+Permute: iterations=414 runtime: 649323us
+Permute: iterations=415 runtime: 649348us
+Permute: iterations=416 runtime: 649309us
+Permute: iterations=417 runtime: 649326us
+Permute: iterations=418 runtime: 649296us
+Permute: iterations=419 runtime: 649310us
+Permute: iterations=420 runtime: 649283us
+Permute: iterations=421 runtime: 649291us
+Permute: iterations=422 runtime: 648290us
+Permute: iterations=423 runtime: 649288us
+Permute: iterations=424 runtime: 646246us
+Permute: iterations=425 runtime: 644153us
+Permute: iterations=426 runtime: 645571us
+Permute: iterations=427 runtime: 649269us
+Permute: iterations=428 runtime: 646363us
+Permute: iterations=429 runtime: 632331us
+Permute: iterations=430 runtime: 645648us
+Permute: iterations=431 runtime: 649312us
+Permute: iterations=432 runtime: 649304us
+Permute: iterations=433 runtime: 648615us
+Permute: iterations=434 runtime: 645139us
+Permute: iterations=435 runtime: 649304us
+Permute: iterations=436 runtime: 649313us
+Permute: iterations=437 runtime: 631164us
+Permute: iterations=438 runtime: 649335us
+Permute: iterations=439 runtime: 647578us
+Permute: iterations=440 runtime: 649295us
+Permute: iterations=441 runtime: 638349us
+Permute: iterations=442 runtime: 649283us
+Permute: iterations=443 runtime: 643955us
+Permute: iterations=444 runtime: 649265us
+Permute: iterations=445 runtime: 649289us
+Permute: iterations=446 runtime: 649310us
+Permute: iterations=447 runtime: 649314us
+Permute: iterations=448 runtime: 649301us
+Permute: iterations=449 runtime: 649291us
+Permute: iterations=450 runtime: 649274us
+Permute: iterations=451 runtime: 642701us
+Permute: iterations=452 runtime: 649271us
+Permute: iterations=453 runtime: 641599us
+Permute: iterations=454 runtime: 649282us
+Permute: iterations=455 runtime: 649301us
+Permute: iterations=456 runtime: 649293us
+Permute: iterations=457 runtime: 644691us
+Permute: iterations=458 runtime: 649322us
+Permute: iterations=459 runtime: 649309us
+Permute: iterations=460 runtime: 649315us
+Permute: iterations=461 runtime: 649296us
+Permute: iterations=462 runtime: 649292us
+Permute: iterations=463 runtime: 641528us
+Permute: iterations=464 runtime: 649297us
+Permute: iterations=465 runtime: 649289us
+Permute: iterations=466 runtime: 649269us
+Permute: iterations=467 runtime: 639390us
+Permute: iterations=468 runtime: 639794us
+Permute: iterations=469 runtime: 649270us
+Permute: iterations=470 runtime: 642798us
+Permute: iterations=471 runtime: 649289us
+Permute: iterations=472 runtime: 649313us
+Permute: iterations=473 runtime: 646861us
+Permute: iterations=474 runtime: 646867us
+Permute: iterations=475 runtime: 637197us
+Permute: iterations=476 runtime: 649273us
+Permute: iterations=477 runtime: 645879us
+Permute: iterations=478 runtime: 645712us
+Permute: iterations=479 runtime: 649259us
+Permute: iterations=480 runtime: 649303us
+Permute: iterations=481 runtime: 643301us
+Permute: iterations=482 runtime: 635249us
+Permute: iterations=483 runtime: 649309us
+Permute: iterations=484 runtime: 649276us
+Permute: iterations=485 runtime: 649324us
+Permute: iterations=486 runtime: 649319us
+Permute: iterations=487 runtime: 649377us
+Permute: iterations=488 runtime: 645246us
+Permute: iterations=489 runtime: 649348us
+Permute: iterations=490 runtime: 649327us
+Permute: iterations=491 runtime: 645045us
+Permute: iterations=492 runtime: 649330us
+Permute: iterations=493 runtime: 646899us
+Permute: iterations=494 runtime: 649312us
+Permute: iterations=495 runtime: 646126us
+Permute: iterations=496 runtime: 649326us
+Permute: iterations=497 runtime: 649291us
+Permute: iterations=498 runtime: 669623us
+Permute: iterations=499 runtime: 649322us
+Permute: iterations=500 runtime: 644446us
+Permute: iterations=500 average: 647031us total: 323515509us
+
+
+Total Runtime: 323515509us
+Index : Stub<new_instance_or_null(KlassPointer)Object> Activation Count : 11368
+Index : Stub<write_barrier_pre-stack-only(Object)void> Activation Count : 4096
+Index : java.lang.Enum.ordinal() Activation Count : 1806
+Index : java.lang.Class.isPrimitive() Activation Count : 4058
+Index : jdk.internal.util.StrongReferenceKey.get() Activation Count : 1272
+Index : java.lang.Class.getClassLoader() Activation Count : 720
+Index : java.lang.invoke.MethodType.returnType() Activation Count : 982
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.index() Activation Count : 4972
+Index : java.lang.invoke.MemberName.getDeclaringClass() Activation Count : 642
+Index : java.lang.invoke.MethodType.form() Activation Count : 250
+Index : java.util.stream.FindOps$FindSink.cancellationRequested() Activation Count : 398
+Index : java.lang.Object.<init>() Activation Count : 24291
+Index : jdk.internal.module.ModuleReferenceImpl.moduleResolution() Activation Count : 204
+Index : java.lang.String.hashCode() Activation Count : 39316
+Index : java.lang.module.ModuleDescriptor$Requires.modifiers() Activation Count : 384
+Index : java.lang.module.ModuleDescriptor$Requires.name() Activation Count : 702
+Index : java.lang.module.ModuleDescriptor.requires() Activation Count : 152
+Index : java.lang.module.ModuleDescriptor.isAutomatic() Activation Count : 1196
+Index : java.util.HashMap$Node.getKey() Activation Count : 904
+Index : java.util.HashMap$Node.getValue() Activation Count : 902
+Index : java.util.ImmutableCollections$Set12.isEmpty() Activation Count : 2101
+Index : java.lang.module.ModuleDescriptor$Exports.source() Activation Count : 10990
+Index : java.lang.module.ModuleDescriptor$Exports.targets() Activation Count : 8954
+Index : java.lang.module.ModuleDescriptor.provides() Activation Count : 300
+Index : java.lang.module.ModuleDescriptor.exports() Activation Count : 390
+Index : java.util.Objects.requireNonNull(Object) Activation Count : 8910
+Index : java.util.ImmutableCollections$SetN$SetNIterator.hasNext() Activation Count : 31899
+Index : java.lang.module.ModuleDescriptor.uses() Activation Count : 68
+Index : java.util.ImmutableCollections$SetN$SetNIterator.next() Activation Count : 206718
+Index : java.util.HashMap.hash(Object) Activation Count : 20120
+Index : java.lang.module.ModuleDescriptor$Exports.isQualified() Activation Count : 12952
+Index : java.lang.module.ModuleDescriptor$Provides.service() Activation Count : 146
+Index : java.lang.Byte.toUnsignedInt(byte) Activation Count : 25768
+Index : java.util.HashMap.putVal(int, Activation Count : 56170
+Index : java.util.HashMap$Node.<init>(int, Activation Count : 340
+Index : java.lang.String.equals(Object) Activation Count : 6920
+Index : java.util.KeyValueHolder.getKey() Activation Count : 130
+Index : java.util.KeyValueHolder.getValue() Activation Count : 58
+Index : java.lang.module.ModuleDescriptor.packages() Activation Count : 296
+Index : java.lang.module.ResolvedModule.reference() Activation Count : 560
+Index : java.lang.module.ModuleDescriptor$Version.toString() Activation Count : 60
+Index : java.lang.AbstractStringBuilder.length() Activation Count : 738
+Index : java.util.HashMap.newNode(int, Activation Count : 8370
+Index : java.util.HashMap.afterNodeInsertion(boolean) Activation Count : 1674
+Index : java.util.HashMap.resize() Activation Count : 14225
+Index : java.lang.module.ResolvedModule.configuration() Activation Count : 94
+Index : java.lang.module.ModuleDescriptor.isOpen() Activation Count : 30
+Index : java.util.HashMap.size() Activation Count : 28
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.width() Activation Count : 1348
+Index : jdk.internal.classfile.impl.SplitConstantPool.size() Activation Count : 3382
+Index : java.lang.invoke.MethodType.ptypes() Activation Count : 162
+Index : java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8() Activation Count : 26
+Index : java.lang.AbstractStringBuilder.getValue() Activation Count : 228
+Index : java.lang.StringLatin1.equals(byte[], Activation Count : 4903
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.constantPool() Activation Count : 1128
+Index : jdk.internal.classfile.impl.RawBytecodeHelper.bci() Activation Count : 2466
+Index : Permute.swap(int, Activation Count : 13464
+Index : Permute.permute(int) Activation Count : 202824909099
+Index : java.lang.Integer.intValue() Activation Count : 13392
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString() Activation Count : 584
+Index : java.lang.String.value() Activation Count : 644
+Index : java.lang.String.coder() Activation Count : 12658
+Index : jdk.internal.classfile.impl.BufWriterImpl.size() Activation Count : 364
+Index : jdk.internal.util.WeakReferenceKey.hashCode() Activation Count : 84
+Index : jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool() Activation Count : 218
+Index : java.lang.Integer.valueOf(int) Activation Count : 539
+Index : Permute.benchmark() Activation Count : 191746
+Index : Permute.verifyResult(Object) Activation Count : 41088
+Index : Benchmark.innerBenchmarkLoop(int) Activation Count : 5204
+Index : Benchmark.innerBenchmarkLoop(int)-Re-Comp Activation Count : 17291482
+Index : java.nio.Buffer.position() Activation Count : 3788
+Index : java.nio.Buffer.limit() Activation Count : 2780
+Index : java.nio.Buffer.capacity() Activation Count : 752
+Index : java.nio.charset.CharsetEncoder.maxBytesPerChar() Activation Count : 752
+Index : java.lang.String.length() Activation Count : 22620
+Index : java.lang.StringLatin1.inflate(byte[], Activation Count : 16021
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[], Activation Count : 194
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp Activation Count : 4184
+Index : jdk.internal.constant.PrimitiveClassDescImpl.descriptorString() Activation Count : 174
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.hashCode() Activation Count : 132
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface() Activation Count : 54
+Index : java.util.ArrayList.size() Activation Count : 122
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag() Activation Count : 47
+Index : java.lang.invoke.MethodTypeForm.erasedType() Activation Count : 22
+-- Permute completed successfully.

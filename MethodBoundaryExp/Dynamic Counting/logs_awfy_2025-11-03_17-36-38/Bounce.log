@@ -1,0 +1,598 @@
+========================================
+Benchmark : Bounce
+Timestamp : 2025-11-03T18:07:43+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -Djdk.graal.CompilationFailureAction=Diagnose   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   Bounce   500   10000 
+========================================
+Starting Bounce benchmark ...
+Bounce: iterations=1 runtime: 1639873us
+Bounce: iterations=2 runtime: 1656361us
+Bounce: iterations=3 runtime: 1659953us
+Bounce: iterations=4 runtime: 1610721us
+Bounce: iterations=5 runtime: 1607433us
+Bounce: iterations=6 runtime: 1602737us
+Bounce: iterations=7 runtime: 1605888us
+Bounce: iterations=8 runtime: 1605616us
+Bounce: iterations=9 runtime: 1608477us
+Bounce: iterations=10 runtime: 1604262us
+Bounce: iterations=11 runtime: 1587339us
+Bounce: iterations=12 runtime: 1590921us
+Bounce: iterations=13 runtime: 1587941us
+Bounce: iterations=14 runtime: 1600784us
+Bounce: iterations=15 runtime: 1604155us
+Bounce: iterations=16 runtime: 1606313us
+Bounce: iterations=17 runtime: 1608710us
+Bounce: iterations=18 runtime: 1609388us
+Bounce: iterations=19 runtime: 1608736us
+Bounce: iterations=20 runtime: 1601013us
+Bounce: iterations=21 runtime: 1598391us
+Bounce: iterations=22 runtime: 1609362us
+Bounce: iterations=23 runtime: 1604551us
+Bounce: iterations=24 runtime: 1599726us
+Bounce: iterations=25 runtime: 1608772us
+Bounce: iterations=26 runtime: 1588432us
+Bounce: iterations=27 runtime: 1600012us
+Bounce: iterations=28 runtime: 1605914us
+Bounce: iterations=29 runtime: 1606431us
+Bounce: iterations=30 runtime: 1600653us
+Bounce: iterations=31 runtime: 1601924us
+Bounce: iterations=32 runtime: 1603895us
+Bounce: iterations=33 runtime: 1604489us
+Bounce: iterations=34 runtime: 1609512us
+Bounce: iterations=35 runtime: 1601285us
+Bounce: iterations=36 runtime: 1599702us
+Bounce: iterations=37 runtime: 1592662us
+Bounce: iterations=38 runtime: 1582671us
+Bounce: iterations=39 runtime: 1608683us
+Bounce: iterations=40 runtime: 1608760us
+Bounce: iterations=41 runtime: 1601182us
+Bounce: iterations=42 runtime: 1603992us
+Bounce: iterations=43 runtime: 1609435us
+Bounce: iterations=44 runtime: 1608744us
+Bounce: iterations=45 runtime: 1604457us
+Bounce: iterations=46 runtime: 1608642us
+Bounce: iterations=47 runtime: 1609369us
+Bounce: iterations=48 runtime: 1600314us
+Bounce: iterations=49 runtime: 1589868us
+Bounce: iterations=50 runtime: 1604358us
+Bounce: iterations=51 runtime: 1609231us
+Bounce: iterations=52 runtime: 1598028us
+Bounce: iterations=53 runtime: 1608735us
+Bounce: iterations=54 runtime: 1600766us
+Bounce: iterations=55 runtime: 1609375us
+Bounce: iterations=56 runtime: 1609468us
+Bounce: iterations=57 runtime: 1604529us
+Bounce: iterations=58 runtime: 1604432us
+Bounce: iterations=59 runtime: 1609454us
+Bounce: iterations=60 runtime: 1608779us
+Bounce: iterations=61 runtime: 1604537us
+Bounce: iterations=62 runtime: 1659556us
+Bounce: iterations=63 runtime: 1593045us
+Bounce: iterations=64 runtime: 1601742us
+Bounce: iterations=65 runtime: 1608773us
+Bounce: iterations=66 runtime: 1588983us
+Bounce: iterations=67 runtime: 1608643us
+Bounce: iterations=68 runtime: 1608767us
+Bounce: iterations=69 runtime: 1608747us
+Bounce: iterations=70 runtime: 1598627us
+Bounce: iterations=71 runtime: 1606378us
+Bounce: iterations=72 runtime: 1609004us
+Bounce: iterations=73 runtime: 1608712us
+Bounce: iterations=74 runtime: 1601588us
+Bounce: iterations=75 runtime: 1602445us
+Bounce: iterations=76 runtime: 1587876us
+Bounce: iterations=77 runtime: 1608677us
+Bounce: iterations=78 runtime: 1601414us
+Bounce: iterations=79 runtime: 1608804us
+Bounce: iterations=80 runtime: 1609025us
+Bounce: iterations=81 runtime: 1608622us
+Bounce: iterations=82 runtime: 1592709us
+Bounce: iterations=83 runtime: 1595253us
+Bounce: iterations=84 runtime: 1594953us
+Bounce: iterations=85 runtime: 1603290us
+Bounce: iterations=86 runtime: 1597851us
+Bounce: iterations=87 runtime: 1608595us
+Bounce: iterations=88 runtime: 1608986us
+Bounce: iterations=89 runtime: 1604524us
+Bounce: iterations=90 runtime: 1599901us
+Bounce: iterations=91 runtime: 1608681us
+Bounce: iterations=92 runtime: 1604377us
+Bounce: iterations=93 runtime: 1603725us
+Bounce: iterations=94 runtime: 1608665us
+Bounce: iterations=95 runtime: 1602885us
+Bounce: iterations=96 runtime: 1608745us
+Bounce: iterations=97 runtime: 1609025us
+Bounce: iterations=98 runtime: 1604468us
+Bounce: iterations=99 runtime: 1587466us
+Bounce: iterations=100 runtime: 1595153us
+Bounce: iterations=101 runtime: 1608975us
+Bounce: iterations=102 runtime: 1608718us
+Bounce: iterations=103 runtime: 1597761us
+Bounce: iterations=104 runtime: 1602467us
+Bounce: iterations=105 runtime: 1606236us
+Bounce: iterations=106 runtime: 1601591us
+Bounce: iterations=107 runtime: 1595936us
+Bounce: iterations=108 runtime: 1598444us
+Bounce: iterations=109 runtime: 1609001us
+Bounce: iterations=110 runtime: 1603815us
+Bounce: iterations=111 runtime: 1608651us
+Bounce: iterations=112 runtime: 1608647us
+Bounce: iterations=113 runtime: 1601446us
+Bounce: iterations=114 runtime: 1596112us
+Bounce: iterations=115 runtime: 1596202us
+Bounce: iterations=116 runtime: 1608646us
+Bounce: iterations=117 runtime: 1603739us
+Bounce: iterations=118 runtime: 1586280us
+Bounce: iterations=119 runtime: 1608575us
+Bounce: iterations=120 runtime: 1604023us
+Bounce: iterations=121 runtime: 1608697us
+Bounce: iterations=122 runtime: 1609093us
+Bounce: iterations=123 runtime: 1604172us
+Bounce: iterations=124 runtime: 1608622us
+Bounce: iterations=125 runtime: 1600413us
+Bounce: iterations=126 runtime: 1607173us
+Bounce: iterations=127 runtime: 1585088us
+Bounce: iterations=128 runtime: 1595113us
+Bounce: iterations=129 runtime: 1602811us
+Bounce: iterations=130 runtime: 1607297us
+Bounce: iterations=131 runtime: 1609471us
+Bounce: iterations=132 runtime: 1594691us
+Bounce: iterations=133 runtime: 1608700us
+Bounce: iterations=134 runtime: 1607286us
+Bounce: iterations=135 runtime: 1608621us
+Bounce: iterations=136 runtime: 1598571us
+Bounce: iterations=137 runtime: 1640073us
+Bounce: iterations=138 runtime: 1608719us
+Bounce: iterations=139 runtime: 1600101us
+Bounce: iterations=140 runtime: 1608729us
+Bounce: iterations=141 runtime: 1601322us
+Bounce: iterations=142 runtime: 1608600us
+Bounce: iterations=143 runtime: 1604939us
+Bounce: iterations=144 runtime: 1605849us
+Bounce: iterations=145 runtime: 1608582us
+Bounce: iterations=146 runtime: 1602411us
+Bounce: iterations=147 runtime: 1601229us
+Bounce: iterations=148 runtime: 1593485us
+Bounce: iterations=149 runtime: 1599175us
+Bounce: iterations=150 runtime: 1596013us
+Bounce: iterations=151 runtime: 1578163us
+Bounce: iterations=152 runtime: 1599121us
+Bounce: iterations=153 runtime: 1584123us
+Bounce: iterations=154 runtime: 1604375us
+Bounce: iterations=155 runtime: 1600305us
+Bounce: iterations=156 runtime: 1608734us
+Bounce: iterations=157 runtime: 1595096us
+Bounce: iterations=158 runtime: 1580648us
+Bounce: iterations=159 runtime: 1578378us
+Bounce: iterations=160 runtime: 1599452us
+Bounce: iterations=161 runtime: 1605023us
+Bounce: iterations=162 runtime: 1608785us
+Bounce: iterations=163 runtime: 1605231us
+Bounce: iterations=164 runtime: 1609140us
+Bounce: iterations=165 runtime: 1588802us
+Bounce: iterations=166 runtime: 1604615us
+Bounce: iterations=167 runtime: 1600061us
+Bounce: iterations=168 runtime: 1609115us
+Bounce: iterations=169 runtime: 1600328us
+Bounce: iterations=170 runtime: 1596692us
+Bounce: iterations=171 runtime: 1599984us
+Bounce: iterations=172 runtime: 1588912us
+Bounce: iterations=173 runtime: 1605681us
+Bounce: iterations=174 runtime: 1595207us
+Bounce: iterations=175 runtime: 1608735us
+Bounce: iterations=176 runtime: 1609102us
+Bounce: iterations=177 runtime: 1608715us
+Bounce: iterations=178 runtime: 1608807us
+Bounce: iterations=179 runtime: 1594718us
+Bounce: iterations=180 runtime: 1592319us
+Bounce: iterations=181 runtime: 1598767us
+Bounce: iterations=182 runtime: 1608665us
+Bounce: iterations=183 runtime: 1596195us
+Bounce: iterations=184 runtime: 1597298us
+Bounce: iterations=185 runtime: 1600455us
+Bounce: iterations=186 runtime: 1593471us
+Bounce: iterations=187 runtime: 1600344us
+Bounce: iterations=188 runtime: 1608860us
+Bounce: iterations=189 runtime: 1599155us
+Bounce: iterations=190 runtime: 1608748us
+Bounce: iterations=191 runtime: 1608808us
+Bounce: iterations=192 runtime: 1608771us
+Bounce: iterations=193 runtime: 1588637us
+Bounce: iterations=194 runtime: 1598888us
+Bounce: iterations=195 runtime: 1601767us
+Bounce: iterations=196 runtime: 1588470us
+Bounce: iterations=197 runtime: 1567178us
+Bounce: iterations=198 runtime: 1593961us
+Bounce: iterations=199 runtime: 1597855us
+Bounce: iterations=200 runtime: 1587475us
+Bounce: iterations=201 runtime: 1608838us
+Bounce: iterations=202 runtime: 1587285us
+Bounce: iterations=203 runtime: 1603961us
+Bounce: iterations=204 runtime: 1607298us
+Bounce: iterations=205 runtime: 1608737us
+Bounce: iterations=206 runtime: 1598466us
+Bounce: iterations=207 runtime: 1606950us
+Bounce: iterations=208 runtime: 1608777us
+Bounce: iterations=209 runtime: 1603061us
+Bounce: iterations=210 runtime: 1609161us
+Bounce: iterations=211 runtime: 1596092us
+Bounce: iterations=212 runtime: 1584726us
+Bounce: iterations=213 runtime: 1608778us
+Bounce: iterations=214 runtime: 1604269us
+Bounce: iterations=215 runtime: 1593430us
+Bounce: iterations=216 runtime: 1606556us
+Bounce: iterations=217 runtime: 1608824us
+Bounce: iterations=218 runtime: 1609037us
+Bounce: iterations=219 runtime: 1599931us
+Bounce: iterations=220 runtime: 1597789us
+Bounce: iterations=221 runtime: 1604488us
+Bounce: iterations=222 runtime: 1604373us
+Bounce: iterations=223 runtime: 1608612us
+Bounce: iterations=224 runtime: 1603292us
+Bounce: iterations=225 runtime: 1595569us
+Bounce: iterations=226 runtime: 1596211us
+Bounce: iterations=227 runtime: 1593757us
+Bounce: iterations=228 runtime: 1587012us
+Bounce: iterations=229 runtime: 1603117us
+Bounce: iterations=230 runtime: 1602273us
+Bounce: iterations=231 runtime: 1601915us
+Bounce: iterations=232 runtime: 1608729us
+Bounce: iterations=233 runtime: 1608845us
+Bounce: iterations=234 runtime: 1608946us
+Bounce: iterations=235 runtime: 1595088us
+Bounce: iterations=236 runtime: 1596593us
+Bounce: iterations=237 runtime: 1603179us
+Bounce: iterations=238 runtime: 1608727us
+Bounce: iterations=239 runtime: 1609246us
+Bounce: iterations=240 runtime: 1604322us
+Bounce: iterations=241 runtime: 1596615us
+Bounce: iterations=242 runtime: 1608874us
+Bounce: iterations=243 runtime: 1609136us
+Bounce: iterations=244 runtime: 1596530us
+Bounce: iterations=245 runtime: 1600513us
+Bounce: iterations=246 runtime: 1585108us
+Bounce: iterations=247 runtime: 1609148us
+Bounce: iterations=248 runtime: 1608718us
+Bounce: iterations=249 runtime: 1608772us
+Bounce: iterations=250 runtime: 1584661us
+Bounce: iterations=251 runtime: 1608643us
+Bounce: iterations=252 runtime: 1604807us
+Bounce: iterations=253 runtime: 1608672us
+Bounce: iterations=254 runtime: 1588096us
+Bounce: iterations=255 runtime: 1595925us
+Bounce: iterations=256 runtime: 1604965us
+Bounce: iterations=257 runtime: 1599818us
+Bounce: iterations=258 runtime: 1603482us
+Bounce: iterations=259 runtime: 1608770us
+Bounce: iterations=260 runtime: 1606725us
+Bounce: iterations=261 runtime: 1598624us
+Bounce: iterations=262 runtime: 1605627us
+Bounce: iterations=263 runtime: 1593536us
+Bounce: iterations=264 runtime: 1596940us
+Bounce: iterations=265 runtime: 1598382us
+Bounce: iterations=266 runtime: 1591248us
+Bounce: iterations=267 runtime: 1608820us
+Bounce: iterations=268 runtime: 1609158us
+Bounce: iterations=269 runtime: 1588843us
+Bounce: iterations=270 runtime: 1607831us
+Bounce: iterations=271 runtime: 1603987us
+Bounce: iterations=272 runtime: 1590724us
+Bounce: iterations=273 runtime: 1600536us
+Bounce: iterations=274 runtime: 1595916us
+Bounce: iterations=275 runtime: 1591878us
+Bounce: iterations=276 runtime: 1604954us
+Bounce: iterations=277 runtime: 1598803us
+Bounce: iterations=278 runtime: 1603672us
+Bounce: iterations=279 runtime: 1579553us
+Bounce: iterations=280 runtime: 1580485us
+Bounce: iterations=281 runtime: 1604987us
+Bounce: iterations=282 runtime: 1604653us
+Bounce: iterations=283 runtime: 1588640us
+Bounce: iterations=284 runtime: 1608650us
+Bounce: iterations=285 runtime: 1606685us
+Bounce: iterations=286 runtime: 1598832us
+Bounce: iterations=287 runtime: 1604737us
+Bounce: iterations=288 runtime: 1604594us
+Bounce: iterations=289 runtime: 1602124us
+Bounce: iterations=290 runtime: 1607018us
+Bounce: iterations=291 runtime: 1608831us
+Bounce: iterations=292 runtime: 1600257us
+Bounce: iterations=293 runtime: 1603274us
+Bounce: iterations=294 runtime: 1562972us
+Bounce: iterations=295 runtime: 1608694us
+Bounce: iterations=296 runtime: 1608812us
+Bounce: iterations=297 runtime: 1605745us
+Bounce: iterations=298 runtime: 1609045us
+Bounce: iterations=299 runtime: 1590600us
+Bounce: iterations=300 runtime: 1602908us
+Bounce: iterations=301 runtime: 1600606us
+Bounce: iterations=302 runtime: 1604106us
+Bounce: iterations=303 runtime: 1602026us
+Bounce: iterations=304 runtime: 1599867us
+Bounce: iterations=305 runtime: 1605650us
+Bounce: iterations=306 runtime: 1609126us
+Bounce: iterations=307 runtime: 1597309us
+Bounce: iterations=308 runtime: 1604034us
+Bounce: iterations=309 runtime: 1606382us
+Bounce: iterations=310 runtime: 1604145us
+Bounce: iterations=311 runtime: 1596360us
+Bounce: iterations=312 runtime: 1608742us
+Bounce: iterations=313 runtime: 1598016us
+Bounce: iterations=314 runtime: 1609119us
+Bounce: iterations=315 runtime: 1608753us
+Bounce: iterations=316 runtime: 1608736us
+Bounce: iterations=317 runtime: 1607077us
+Bounce: iterations=318 runtime: 1595340us
+Bounce: iterations=319 runtime: 1599640us
+Bounce: iterations=320 runtime: 1594802us
+Bounce: iterations=321 runtime: 1601046us
+Bounce: iterations=322 runtime: 1603449us
+Bounce: iterations=323 runtime: 1591780us
+Bounce: iterations=324 runtime: 1606754us
+Bounce: iterations=325 runtime: 1606425us
+Bounce: iterations=326 runtime: 1577303us
+Bounce: iterations=327 runtime: 1609061us
+Bounce: iterations=328 runtime: 1583452us
+Bounce: iterations=329 runtime: 1600550us
+Bounce: iterations=330 runtime: 1599480us
+Bounce: iterations=331 runtime: 1609155us
+Bounce: iterations=332 runtime: 1604646us
+Bounce: iterations=333 runtime: 1598594us
+Bounce: iterations=334 runtime: 1601943us
+Bounce: iterations=335 runtime: 1598181us
+Bounce: iterations=336 runtime: 1608740us
+Bounce: iterations=337 runtime: 1588017us
+Bounce: iterations=338 runtime: 1608620us
+Bounce: iterations=339 runtime: 1609180us
+Bounce: iterations=340 runtime: 1608769us
+Bounce: iterations=341 runtime: 1590640us
+Bounce: iterations=342 runtime: 1608801us
+Bounce: iterations=343 runtime: 1595099us
+Bounce: iterations=344 runtime: 1604437us
+Bounce: iterations=345 runtime: 1608719us
+Bounce: iterations=346 runtime: 1604660us
+Bounce: iterations=347 runtime: 1602946us
+Bounce: iterations=348 runtime: 1575762us
+Bounce: iterations=349 runtime: 1608675us
+Bounce: iterations=350 runtime: 1604102us
+Bounce: iterations=351 runtime: 1603926us
+Bounce: iterations=352 runtime: 1591391us
+Bounce: iterations=353 runtime: 1608555us
+Bounce: iterations=354 runtime: 1602858us
+Bounce: iterations=355 runtime: 1592999us
+Bounce: iterations=356 runtime: 1609040us
+Bounce: iterations=357 runtime: 1597753us
+Bounce: iterations=358 runtime: 1608634us
+Bounce: iterations=359 runtime: 1608797us
+Bounce: iterations=360 runtime: 1607817us
+Bounce: iterations=361 runtime: 1606324us
+Bounce: iterations=362 runtime: 1588485us
+Bounce: iterations=363 runtime: 1597600us
+Bounce: iterations=364 runtime: 1608871us
+Bounce: iterations=365 runtime: 1600771us
+Bounce: iterations=366 runtime: 1608738us
+Bounce: iterations=367 runtime: 1600184us
+Bounce: iterations=368 runtime: 1606231us
+Bounce: iterations=369 runtime: 1598624us
+Bounce: iterations=370 runtime: 1571867us
+Bounce: iterations=371 runtime: 1604201us
+Bounce: iterations=372 runtime: 1585449us
+Bounce: iterations=373 runtime: 1596490us
+Bounce: iterations=374 runtime: 1608731us
+Bounce: iterations=375 runtime: 1608772us
+Bounce: iterations=376 runtime: 1584317us
+Bounce: iterations=377 runtime: 1590595us
+Bounce: iterations=378 runtime: 1608703us
+Bounce: iterations=379 runtime: 1604576us
+Bounce: iterations=380 runtime: 1608801us
+Bounce: iterations=381 runtime: 1595065us
+Bounce: iterations=382 runtime: 1595384us
+Bounce: iterations=383 runtime: 1608583us
+Bounce: iterations=384 runtime: 1595116us
+Bounce: iterations=385 runtime: 1604062us
+Bounce: iterations=386 runtime: 1606949us
+Bounce: iterations=387 runtime: 1608864us
+Bounce: iterations=388 runtime: 1603109us
+Bounce: iterations=389 runtime: 1608785us
+Bounce: iterations=390 runtime: 1609123us
+Bounce: iterations=391 runtime: 1608765us
+Bounce: iterations=392 runtime: 1608655us
+Bounce: iterations=393 runtime: 1608678us
+Bounce: iterations=394 runtime: 1607139us
+Bounce: iterations=395 runtime: 1605715us
+Bounce: iterations=396 runtime: 1606250us
+Bounce: iterations=397 runtime: 1600563us
+Bounce: iterations=398 runtime: 1567759us
+Bounce: iterations=399 runtime: 1590028us
+Bounce: iterations=400 runtime: 1608606us
+Bounce: iterations=401 runtime: 1605538us
+Bounce: iterations=402 runtime: 1609083us
+Bounce: iterations=403 runtime: 1602851us
+Bounce: iterations=404 runtime: 1608589us
+Bounce: iterations=405 runtime: 1602639us
+Bounce: iterations=406 runtime: 1604982us
+Bounce: iterations=407 runtime: 1591566us
+Bounce: iterations=408 runtime: 1602726us
+Bounce: iterations=409 runtime: 1606684us
+Bounce: iterations=410 runtime: 1609211us
+Bounce: iterations=411 runtime: 1598241us
+Bounce: iterations=412 runtime: 1595969us
+Bounce: iterations=413 runtime: 1590817us
+Bounce: iterations=414 runtime: 1603132us
+Bounce: iterations=415 runtime: 1590969us
+Bounce: iterations=416 runtime: 1608726us
+Bounce: iterations=417 runtime: 1595731us
+Bounce: iterations=418 runtime: 1594803us
+Bounce: iterations=419 runtime: 1597004us
+Bounce: iterations=420 runtime: 1608616us
+Bounce: iterations=421 runtime: 1608664us
+Bounce: iterations=422 runtime: 1570298us
+Bounce: iterations=423 runtime: 1588683us
+Bounce: iterations=424 runtime: 1604534us
+Bounce: iterations=425 runtime: 1602395us
+Bounce: iterations=426 runtime: 1605798us
+Bounce: iterations=427 runtime: 1593172us
+Bounce: iterations=428 runtime: 1603771us
+Bounce: iterations=429 runtime: 1606218us
+Bounce: iterations=430 runtime: 1607189us
+Bounce: iterations=431 runtime: 1609093us
+Bounce: iterations=432 runtime: 1604289us
+Bounce: iterations=433 runtime: 1598047us
+Bounce: iterations=434 runtime: 1596247us
+Bounce: iterations=435 runtime: 1602113us
+Bounce: iterations=436 runtime: 1591694us
+Bounce: iterations=437 runtime: 1608720us
+Bounce: iterations=438 runtime: 1608642us
+Bounce: iterations=439 runtime: 1608668us
+Bounce: iterations=440 runtime: 1598248us
+Bounce: iterations=441 runtime: 1600374us
+Bounce: iterations=442 runtime: 1594706us
+Bounce: iterations=443 runtime: 1608679us
+Bounce: iterations=444 runtime: 1604146us
+Bounce: iterations=445 runtime: 1608813us
+Bounce: iterations=446 runtime: 1604749us
+Bounce: iterations=447 runtime: 1605201us
+Bounce: iterations=448 runtime: 1609022us
+Bounce: iterations=449 runtime: 1608712us
+Bounce: iterations=450 runtime: 1599240us
+Bounce: iterations=451 runtime: 1604336us
+Bounce: iterations=452 runtime: 1608996us
+Bounce: iterations=453 runtime: 1608736us
+Bounce: iterations=454 runtime: 1608678us
+Bounce: iterations=455 runtime: 1608649us
+Bounce: iterations=456 runtime: 1595789us
+Bounce: iterations=457 runtime: 1609103us
+Bounce: iterations=458 runtime: 1609816us
+Bounce: iterations=459 runtime: 1608971us
+Bounce: iterations=460 runtime: 1622690us
+Bounce: iterations=461 runtime: 1609064us
+Bounce: iterations=462 runtime: 1608744us
+Bounce: iterations=463 runtime: 1606214us
+Bounce: iterations=464 runtime: 1606351us
+Bounce: iterations=465 runtime: 1609044us
+Bounce: iterations=466 runtime: 1608713us
+Bounce: iterations=467 runtime: 1604176us
+Bounce: iterations=468 runtime: 1608719us
+Bounce: iterations=469 runtime: 1609146us
+Bounce: iterations=470 runtime: 1604007us
+Bounce: iterations=471 runtime: 1608664us
+Bounce: iterations=472 runtime: 1598063us
+Bounce: iterations=473 runtime: 1609131us
+Bounce: iterations=474 runtime: 1608861us
+Bounce: iterations=475 runtime: 1591407us
+Bounce: iterations=476 runtime: 1606966us
+Bounce: iterations=477 runtime: 1609067us
+Bounce: iterations=478 runtime: 1599596us
+Bounce: iterations=479 runtime: 1608690us
+Bounce: iterations=480 runtime: 1595870us
+Bounce: iterations=481 runtime: 1601215us
+Bounce: iterations=482 runtime: 1592529us
+Bounce: iterations=483 runtime: 1584000us
+Bounce: iterations=484 runtime: 1608867us
+Bounce: iterations=485 runtime: 1608858us
+Bounce: iterations=486 runtime: 1609132us
+Bounce: iterations=487 runtime: 1608829us
+Bounce: iterations=488 runtime: 1594743us
+Bounce: iterations=489 runtime: 1599458us
+Bounce: iterations=490 runtime: 1604711us
+Bounce: iterations=491 runtime: 1608706us
+Bounce: iterations=492 runtime: 1600112us
+Bounce: iterations=493 runtime: 1608743us
+Bounce: iterations=494 runtime: 1605020us
+Bounce: iterations=495 runtime: 1605011us
+Bounce: iterations=496 runtime: 1598352us
+Bounce: iterations=497 runtime: 1626025us
+Bounce: iterations=498 runtime: 1592635us
+Bounce: iterations=499 runtime: 1603451us
+Bounce: iterations=500 runtime: 1608850us
+Bounce: iterations=500 average: 1602493us total: 801246708us
+
+
+Total Runtime: 801246708us
+Index : Stub<new_instance_or_null(KlassPointer)Object> Activation Count : 11368
+Index : Stub<write_barrier_pre-stack-only(Object)void> Activation Count : 4096
+Index : java.lang.Enum.ordinal() Activation Count : 1852
+Index : java.lang.Class.isPrimitive() Activation Count : 4238
+Index : jdk.internal.util.StrongReferenceKey.get() Activation Count : 1342
+Index : java.lang.Class.getClassLoader() Activation Count : 782
+Index : java.lang.invoke.MethodType.returnType() Activation Count : 1058
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.index() Activation Count : 5406
+Index : java.lang.invoke.MemberName.getDeclaringClass() Activation Count : 686
+Index : java.lang.invoke.MethodType.form() Activation Count : 274
+Index : java.util.stream.FindOps$FindSink.cancellationRequested() Activation Count : 402
+Index : java.lang.Object.<init>() Activation Count : 18525
+Index : jdk.internal.module.ModuleReferenceImpl.moduleResolution() Activation Count : 204
+Index : java.lang.String.hashCode() Activation Count : 39974
+Index : java.lang.module.ModuleDescriptor$Requires.modifiers() Activation Count : 384
+Index : java.lang.module.ModuleDescriptor$Requires.name() Activation Count : 702
+Index : java.lang.module.ModuleDescriptor.requires() Activation Count : 152
+Index : java.lang.module.ModuleDescriptor.isAutomatic() Activation Count : 1198
+Index : java.util.HashMap$Node.getKey() Activation Count : 904
+Index : java.util.HashMap$Node.getValue() Activation Count : 902
+Index : java.util.ImmutableCollections$Set12.isEmpty() Activation Count : 2104
+Index : java.lang.module.ModuleDescriptor$Exports.source() Activation Count : 10990
+Index : java.lang.module.ModuleDescriptor$Exports.targets() Activation Count : 8954
+Index : java.lang.module.ModuleDescriptor.provides() Activation Count : 300
+Index : java.lang.module.ModuleDescriptor.exports() Activation Count : 390
+Index : java.util.Objects.requireNonNull(Object) Activation Count : 9356
+Index : java.util.ImmutableCollections$SetN$SetNIterator.hasNext() Activation Count : 31911
+Index : java.lang.module.ModuleDescriptor.uses() Activation Count : 68
+Index : java.util.ImmutableCollections$SetN$SetNIterator.next() Activation Count : 239855
+Index : java.util.HashMap.hash(Object) Activation Count : 20125
+Index : java.lang.module.ModuleDescriptor$Exports.isQualified() Activation Count : 12960
+Index : java.lang.module.ModuleDescriptor$Provides.service() Activation Count : 146
+Index : java.lang.Byte.toUnsignedInt(byte) Activation Count : 27404
+Index : java.util.HashMap.putVal(int, Activation Count : 56077
+Index : java.util.HashMap$Node.<init>(int, Activation Count : 355
+Index : java.lang.String.equals(Object) Activation Count : 6908
+Index : java.util.KeyValueHolder.getKey() Activation Count : 130
+Index : java.util.KeyValueHolder.getValue() Activation Count : 58
+Index : java.lang.module.ModuleDescriptor.packages() Activation Count : 296
+Index : java.lang.module.ResolvedModule.reference() Activation Count : 560
+Index : java.lang.module.ModuleDescriptor$Version.toString() Activation Count : 60
+Index : java.lang.AbstractStringBuilder.length() Activation Count : 790
+Index : java.util.HashMap.newNode(int, Activation Count : 8370
+Index : java.util.HashMap.afterNodeInsertion(boolean) Activation Count : 1674
+Index : java.lang.module.ResolvedModule.configuration() Activation Count : 94
+Index : java.lang.module.ModuleDescriptor.isOpen() Activation Count : 32
+Index : java.util.HashMap.resize() Activation Count : 11058
+Index : java.util.HashMap.size() Activation Count : 28
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.width() Activation Count : 1478
+Index : jdk.internal.classfile.impl.SplitConstantPool.size() Activation Count : 3696
+Index : java.lang.invoke.MethodType.ptypes() Activation Count : 190
+Index : java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8() Activation Count : 29
+Index : java.lang.AbstractStringBuilder.getValue() Activation Count : 254
+Index : java.lang.StringLatin1.equals(byte[], Activation Count : 6113
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.constantPool() Activation Count : 1248
+Index : jdk.internal.classfile.impl.RawBytecodeHelper.bci() Activation Count : 2626
+Index : java.lang.String.value() Activation Count : 730
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString() Activation Count : 650
+Index : Bounce$Ball.bounce() Activation Count : 217798
+Index : Bounce.benchmark() Activation Count : 89953
+Index : Bounce.benchmark()-Re-Comp Activation Count : 2014268095
+Index : java.lang.Integer.intValue() Activation Count : 13392
+Index : Bounce.verifyResult(Object) Activation Count : 41088
+Index : java.lang.String.coder() Activation Count : 13032
+Index : jdk.internal.classfile.impl.BufWriterImpl.size() Activation Count : 424
+Index : jdk.internal.util.WeakReferenceKey.hashCode() Activation Count : 104
+Index : jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool() Activation Count : 256
+Index : java.util.ArrayList.size() Activation Count : 156
+Index : Benchmark.innerBenchmarkLoop(int) Activation Count : 936529404
+Index : Benchmark.innerBenchmarkLoop(int)-Re-Comp Activation Count : 488923588979
+Index : java.nio.Buffer.position() Activation Count : 3788
+Index : java.nio.Buffer.limit() Activation Count : 2780
+Index : java.nio.Buffer.capacity() Activation Count : 752
+Index : java.nio.charset.CharsetEncoder.maxBytesPerChar() Activation Count : 752
+Index : java.lang.String.length() Activation Count : 24495
+Index : java.lang.StringLatin1.inflate(byte[], Activation Count : 16021
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[], Activation Count : 186
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp Activation Count : 4184
+Index : jdk.internal.constant.PrimitiveClassDescImpl.descriptorString() Activation Count : 192
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface() Activation Count : 65
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.hashCode() Activation Count : 160
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag() Activation Count : 60
+Index : java.lang.invoke.MethodTypeForm.erasedType() Activation Count : 30
+Index : jdk.internal.util.ArraysSupport.unsignedHashCode(int, Activation Count : 73
+Index : java.lang.constant.ClassDesc.isPrimitive() Activation Count : 1
+-- Bounce completed successfully.

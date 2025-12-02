@@ -1,0 +1,775 @@
+========================================
+Benchmark : DeltaBlue
+Timestamp : 2025-11-03T17:36:38+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -Djdk.graal.CompilationFailureAction=Diagnose   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   DeltaBlue   500   60000 
+========================================
+Starting DeltaBlue benchmark ...
+DeltaBlue: iterations=1 runtime: 2047114us
+DeltaBlue: iterations=2 runtime: 1061719us
+DeltaBlue: iterations=3 runtime: 604417us
+DeltaBlue: iterations=4 runtime: 570253us
+DeltaBlue: iterations=5 runtime: 579209us
+DeltaBlue: iterations=6 runtime: 586733us
+DeltaBlue: iterations=7 runtime: 563820us
+DeltaBlue: iterations=8 runtime: 606156us
+DeltaBlue: iterations=9 runtime: 565654us
+DeltaBlue: iterations=10 runtime: 586741us
+DeltaBlue: iterations=11 runtime: 615956us
+DeltaBlue: iterations=12 runtime: 584538us
+DeltaBlue: iterations=13 runtime: 579129us
+DeltaBlue: iterations=14 runtime: 567480us
+DeltaBlue: iterations=15 runtime: 576564us
+DeltaBlue: iterations=16 runtime: 573903us
+DeltaBlue: iterations=17 runtime: 573263us
+DeltaBlue: iterations=18 runtime: 687074us
+DeltaBlue: iterations=19 runtime: 588406us
+DeltaBlue: iterations=20 runtime: 633992us
+DeltaBlue: iterations=21 runtime: 581132us
+DeltaBlue: iterations=22 runtime: 575760us
+DeltaBlue: iterations=23 runtime: 580013us
+DeltaBlue: iterations=24 runtime: 583012us
+DeltaBlue: iterations=25 runtime: 579253us
+DeltaBlue: iterations=26 runtime: 573342us
+DeltaBlue: iterations=27 runtime: 564065us
+DeltaBlue: iterations=28 runtime: 576878us
+DeltaBlue: iterations=29 runtime: 570066us
+DeltaBlue: iterations=30 runtime: 581431us
+DeltaBlue: iterations=31 runtime: 575651us
+DeltaBlue: iterations=32 runtime: 566426us
+DeltaBlue: iterations=33 runtime: 571164us
+DeltaBlue: iterations=34 runtime: 584311us
+DeltaBlue: iterations=35 runtime: 574153us
+DeltaBlue: iterations=36 runtime: 565787us
+DeltaBlue: iterations=37 runtime: 564798us
+DeltaBlue: iterations=38 runtime: 565304us
+DeltaBlue: iterations=39 runtime: 564804us
+DeltaBlue: iterations=40 runtime: 580832us
+DeltaBlue: iterations=41 runtime: 565392us
+DeltaBlue: iterations=42 runtime: 570422us
+DeltaBlue: iterations=43 runtime: 567799us
+DeltaBlue: iterations=44 runtime: 564513us
+DeltaBlue: iterations=45 runtime: 576828us
+DeltaBlue: iterations=46 runtime: 572759us
+DeltaBlue: iterations=47 runtime: 568966us
+DeltaBlue: iterations=48 runtime: 580320us
+DeltaBlue: iterations=49 runtime: 564659us
+DeltaBlue: iterations=50 runtime: 575200us
+DeltaBlue: iterations=51 runtime: 564386us
+DeltaBlue: iterations=52 runtime: 562735us
+DeltaBlue: iterations=53 runtime: 571325us
+DeltaBlue: iterations=54 runtime: 566860us
+DeltaBlue: iterations=55 runtime: 571590us
+DeltaBlue: iterations=56 runtime: 567730us
+DeltaBlue: iterations=57 runtime: 565970us
+DeltaBlue: iterations=58 runtime: 567972us
+DeltaBlue: iterations=59 runtime: 563851us
+DeltaBlue: iterations=60 runtime: 591573us
+DeltaBlue: iterations=61 runtime: 565547us
+DeltaBlue: iterations=62 runtime: 564842us
+DeltaBlue: iterations=63 runtime: 568224us
+DeltaBlue: iterations=64 runtime: 564902us
+DeltaBlue: iterations=65 runtime: 573664us
+DeltaBlue: iterations=66 runtime: 565832us
+DeltaBlue: iterations=67 runtime: 564949us
+DeltaBlue: iterations=68 runtime: 573280us
+DeltaBlue: iterations=69 runtime: 564950us
+DeltaBlue: iterations=70 runtime: 580830us
+DeltaBlue: iterations=71 runtime: 565629us
+DeltaBlue: iterations=72 runtime: 565409us
+DeltaBlue: iterations=73 runtime: 569740us
+DeltaBlue: iterations=74 runtime: 564865us
+DeltaBlue: iterations=75 runtime: 578750us
+DeltaBlue: iterations=76 runtime: 565893us
+DeltaBlue: iterations=77 runtime: 564887us
+DeltaBlue: iterations=78 runtime: 569898us
+DeltaBlue: iterations=79 runtime: 565208us
+DeltaBlue: iterations=80 runtime: 573605us
+DeltaBlue: iterations=81 runtime: 564691us
+DeltaBlue: iterations=82 runtime: 564902us
+DeltaBlue: iterations=83 runtime: 571127us
+DeltaBlue: iterations=84 runtime: 568542us
+DeltaBlue: iterations=85 runtime: 576147us
+DeltaBlue: iterations=86 runtime: 572776us
+DeltaBlue: iterations=87 runtime: 566162us
+DeltaBlue: iterations=88 runtime: 573044us
+DeltaBlue: iterations=89 runtime: 564565us
+DeltaBlue: iterations=90 runtime: 580920us
+DeltaBlue: iterations=91 runtime: 565433us
+DeltaBlue: iterations=92 runtime: 561751us
+DeltaBlue: iterations=93 runtime: 568378us
+DeltaBlue: iterations=94 runtime: 564662us
+DeltaBlue: iterations=95 runtime: 576941us
+DeltaBlue: iterations=96 runtime: 565208us
+DeltaBlue: iterations=97 runtime: 564319us
+DeltaBlue: iterations=98 runtime: 567820us
+DeltaBlue: iterations=99 runtime: 563342us
+DeltaBlue: iterations=100 runtime: 574361us
+DeltaBlue: iterations=101 runtime: 565614us
+DeltaBlue: iterations=102 runtime: 564663us
+DeltaBlue: iterations=103 runtime: 570882us
+DeltaBlue: iterations=104 runtime: 562216us
+DeltaBlue: iterations=105 runtime: 574675us
+DeltaBlue: iterations=106 runtime: 562505us
+DeltaBlue: iterations=107 runtime: 562380us
+DeltaBlue: iterations=108 runtime: 568366us
+DeltaBlue: iterations=109 runtime: 563226us
+DeltaBlue: iterations=110 runtime: 578037us
+DeltaBlue: iterations=111 runtime: 568026us
+DeltaBlue: iterations=112 runtime: 565053us
+DeltaBlue: iterations=113 runtime: 561953us
+DeltaBlue: iterations=114 runtime: 557612us
+DeltaBlue: iterations=115 runtime: 573197us
+DeltaBlue: iterations=116 runtime: 565474us
+DeltaBlue: iterations=117 runtime: 576876us
+DeltaBlue: iterations=118 runtime: 571125us
+DeltaBlue: iterations=119 runtime: 562678us
+DeltaBlue: iterations=120 runtime: 578677us
+DeltaBlue: iterations=121 runtime: 564374us
+DeltaBlue: iterations=122 runtime: 564450us
+DeltaBlue: iterations=123 runtime: 567961us
+DeltaBlue: iterations=124 runtime: 564743us
+DeltaBlue: iterations=125 runtime: 577232us
+DeltaBlue: iterations=126 runtime: 565554us
+DeltaBlue: iterations=127 runtime: 564564us
+DeltaBlue: iterations=128 runtime: 575473us
+DeltaBlue: iterations=129 runtime: 569239us
+DeltaBlue: iterations=130 runtime: 576233us
+DeltaBlue: iterations=131 runtime: 565644us
+DeltaBlue: iterations=132 runtime: 565368us
+DeltaBlue: iterations=133 runtime: 566019us
+DeltaBlue: iterations=134 runtime: 565366us
+DeltaBlue: iterations=135 runtime: 573887us
+DeltaBlue: iterations=136 runtime: 565782us
+DeltaBlue: iterations=137 runtime: 564983us
+DeltaBlue: iterations=138 runtime: 568764us
+DeltaBlue: iterations=139 runtime: 561327us
+DeltaBlue: iterations=140 runtime: 580450us
+DeltaBlue: iterations=141 runtime: 568826us
+DeltaBlue: iterations=142 runtime: 571458us
+DeltaBlue: iterations=143 runtime: 571062us
+DeltaBlue: iterations=144 runtime: 562742us
+DeltaBlue: iterations=145 runtime: 571078us
+DeltaBlue: iterations=146 runtime: 564350us
+DeltaBlue: iterations=147 runtime: 566292us
+DeltaBlue: iterations=148 runtime: 570255us
+DeltaBlue: iterations=149 runtime: 563745us
+DeltaBlue: iterations=150 runtime: 571006us
+DeltaBlue: iterations=151 runtime: 568815us
+DeltaBlue: iterations=152 runtime: 563960us
+DeltaBlue: iterations=153 runtime: 568841us
+DeltaBlue: iterations=154 runtime: 564368us
+DeltaBlue: iterations=155 runtime: 574014us
+DeltaBlue: iterations=156 runtime: 565243us
+DeltaBlue: iterations=157 runtime: 564647us
+DeltaBlue: iterations=158 runtime: 570752us
+DeltaBlue: iterations=159 runtime: 564641us
+DeltaBlue: iterations=160 runtime: 577661us
+DeltaBlue: iterations=161 runtime: 565260us
+DeltaBlue: iterations=162 runtime: 569386us
+DeltaBlue: iterations=163 runtime: 567537us
+DeltaBlue: iterations=164 runtime: 564659us
+DeltaBlue: iterations=165 runtime: 574830us
+DeltaBlue: iterations=166 runtime: 570936us
+DeltaBlue: iterations=167 runtime: 564321us
+DeltaBlue: iterations=168 runtime: 566122us
+DeltaBlue: iterations=169 runtime: 564800us
+DeltaBlue: iterations=170 runtime: 583369us
+DeltaBlue: iterations=171 runtime: 575492us
+DeltaBlue: iterations=172 runtime: 563248us
+DeltaBlue: iterations=173 runtime: 568668us
+DeltaBlue: iterations=174 runtime: 564146us
+DeltaBlue: iterations=175 runtime: 578639us
+DeltaBlue: iterations=176 runtime: 626686us
+DeltaBlue: iterations=177 runtime: 564945us
+DeltaBlue: iterations=178 runtime: 572518us
+DeltaBlue: iterations=179 runtime: 569694us
+DeltaBlue: iterations=180 runtime: 576335us
+DeltaBlue: iterations=181 runtime: 566379us
+DeltaBlue: iterations=182 runtime: 573181us
+DeltaBlue: iterations=183 runtime: 568781us
+DeltaBlue: iterations=184 runtime: 567104us
+DeltaBlue: iterations=185 runtime: 601245us
+DeltaBlue: iterations=186 runtime: 564459us
+DeltaBlue: iterations=187 runtime: 564549us
+DeltaBlue: iterations=188 runtime: 564172us
+DeltaBlue: iterations=189 runtime: 589856us
+DeltaBlue: iterations=190 runtime: 586840us
+DeltaBlue: iterations=191 runtime: 564569us
+DeltaBlue: iterations=192 runtime: 562673us
+DeltaBlue: iterations=193 runtime: 574072us
+DeltaBlue: iterations=194 runtime: 563267us
+DeltaBlue: iterations=195 runtime: 581994us
+DeltaBlue: iterations=196 runtime: 565409us
+DeltaBlue: iterations=197 runtime: 567447us
+DeltaBlue: iterations=198 runtime: 568309us
+DeltaBlue: iterations=199 runtime: 567854us
+DeltaBlue: iterations=200 runtime: 575965us
+DeltaBlue: iterations=201 runtime: 565190us
+DeltaBlue: iterations=202 runtime: 563733us
+DeltaBlue: iterations=203 runtime: 565238us
+DeltaBlue: iterations=204 runtime: 567083us
+DeltaBlue: iterations=205 runtime: 582240us
+DeltaBlue: iterations=206 runtime: 565801us
+DeltaBlue: iterations=207 runtime: 564632us
+DeltaBlue: iterations=208 runtime: 570931us
+DeltaBlue: iterations=209 runtime: 564943us
+DeltaBlue: iterations=210 runtime: 573685us
+DeltaBlue: iterations=211 runtime: 565239us
+DeltaBlue: iterations=212 runtime: 572003us
+DeltaBlue: iterations=213 runtime: 575814us
+DeltaBlue: iterations=214 runtime: 568376us
+DeltaBlue: iterations=215 runtime: 577462us
+DeltaBlue: iterations=216 runtime: 560486us
+DeltaBlue: iterations=217 runtime: 571102us
+DeltaBlue: iterations=218 runtime: 568428us
+DeltaBlue: iterations=219 runtime: 564621us
+DeltaBlue: iterations=220 runtime: 588253us
+DeltaBlue: iterations=221 runtime: 565265us
+DeltaBlue: iterations=222 runtime: 565031us
+DeltaBlue: iterations=223 runtime: 587031us
+DeltaBlue: iterations=224 runtime: 575210us
+DeltaBlue: iterations=225 runtime: 577413us
+DeltaBlue: iterations=226 runtime: 570230us
+DeltaBlue: iterations=227 runtime: 561936us
+DeltaBlue: iterations=228 runtime: 567986us
+DeltaBlue: iterations=229 runtime: 564732us
+DeltaBlue: iterations=230 runtime: 574316us
+DeltaBlue: iterations=231 runtime: 566556us
+DeltaBlue: iterations=232 runtime: 562918us
+DeltaBlue: iterations=233 runtime: 567848us
+DeltaBlue: iterations=234 runtime: 563496us
+DeltaBlue: iterations=235 runtime: 574743us
+DeltaBlue: iterations=236 runtime: 565008us
+DeltaBlue: iterations=237 runtime: 564586us
+DeltaBlue: iterations=238 runtime: 568356us
+DeltaBlue: iterations=239 runtime: 564616us
+DeltaBlue: iterations=240 runtime: 586202us
+DeltaBlue: iterations=241 runtime: 563460us
+DeltaBlue: iterations=242 runtime: 568592us
+DeltaBlue: iterations=243 runtime: 570158us
+DeltaBlue: iterations=244 runtime: 591188us
+DeltaBlue: iterations=245 runtime: 572989us
+DeltaBlue: iterations=246 runtime: 565386us
+DeltaBlue: iterations=247 runtime: 564559us
+DeltaBlue: iterations=248 runtime: 568214us
+DeltaBlue: iterations=249 runtime: 564183us
+DeltaBlue: iterations=250 runtime: 574887us
+DeltaBlue: iterations=251 runtime: 565449us
+DeltaBlue: iterations=252 runtime: 567906us
+DeltaBlue: iterations=253 runtime: 568814us
+DeltaBlue: iterations=254 runtime: 564493us
+DeltaBlue: iterations=255 runtime: 571745us
+DeltaBlue: iterations=256 runtime: 565002us
+DeltaBlue: iterations=257 runtime: 564689us
+DeltaBlue: iterations=258 runtime: 568036us
+DeltaBlue: iterations=259 runtime: 564321us
+DeltaBlue: iterations=260 runtime: 573131us
+DeltaBlue: iterations=261 runtime: 565746us
+DeltaBlue: iterations=262 runtime: 564708us
+DeltaBlue: iterations=263 runtime: 569339us
+DeltaBlue: iterations=264 runtime: 577888us
+DeltaBlue: iterations=265 runtime: 572388us
+DeltaBlue: iterations=266 runtime: 571549us
+DeltaBlue: iterations=267 runtime: 560201us
+DeltaBlue: iterations=268 runtime: 569025us
+DeltaBlue: iterations=269 runtime: 564703us
+DeltaBlue: iterations=270 runtime: 578755us
+DeltaBlue: iterations=271 runtime: 565179us
+DeltaBlue: iterations=272 runtime: 564857us
+DeltaBlue: iterations=273 runtime: 567897us
+DeltaBlue: iterations=274 runtime: 564586us
+DeltaBlue: iterations=275 runtime: 584311us
+DeltaBlue: iterations=276 runtime: 565067us
+DeltaBlue: iterations=277 runtime: 564505us
+DeltaBlue: iterations=278 runtime: 572742us
+DeltaBlue: iterations=279 runtime: 564967us
+DeltaBlue: iterations=280 runtime: 573412us
+DeltaBlue: iterations=281 runtime: 565326us
+DeltaBlue: iterations=282 runtime: 566199us
+DeltaBlue: iterations=283 runtime: 563599us
+DeltaBlue: iterations=284 runtime: 566227us
+DeltaBlue: iterations=285 runtime: 574260us
+DeltaBlue: iterations=286 runtime: 564978us
+DeltaBlue: iterations=287 runtime: 562691us
+DeltaBlue: iterations=288 runtime: 567410us
+DeltaBlue: iterations=289 runtime: 562541us
+DeltaBlue: iterations=290 runtime: 577038us
+DeltaBlue: iterations=291 runtime: 565642us
+DeltaBlue: iterations=292 runtime: 564866us
+DeltaBlue: iterations=293 runtime: 568590us
+DeltaBlue: iterations=294 runtime: 564993us
+DeltaBlue: iterations=295 runtime: 580875us
+DeltaBlue: iterations=296 runtime: 575481us
+DeltaBlue: iterations=297 runtime: 577709us
+DeltaBlue: iterations=298 runtime: 567836us
+DeltaBlue: iterations=299 runtime: 563328us
+DeltaBlue: iterations=300 runtime: 576025us
+DeltaBlue: iterations=301 runtime: 566100us
+DeltaBlue: iterations=302 runtime: 564333us
+DeltaBlue: iterations=303 runtime: 574404us
+DeltaBlue: iterations=304 runtime: 571187us
+DeltaBlue: iterations=305 runtime: 571493us
+DeltaBlue: iterations=306 runtime: 569853us
+DeltaBlue: iterations=307 runtime: 563582us
+DeltaBlue: iterations=308 runtime: 724608us
+DeltaBlue: iterations=309 runtime: 560099us
+DeltaBlue: iterations=310 runtime: 563309us
+DeltaBlue: iterations=311 runtime: 557400us
+DeltaBlue: iterations=312 runtime: 552826us
+DeltaBlue: iterations=313 runtime: 558734us
+DeltaBlue: iterations=314 runtime: 551143us
+DeltaBlue: iterations=315 runtime: 571867us
+DeltaBlue: iterations=316 runtime: 560318us
+DeltaBlue: iterations=317 runtime: 552555us
+DeltaBlue: iterations=318 runtime: 556469us
+DeltaBlue: iterations=319 runtime: 551001us
+DeltaBlue: iterations=320 runtime: 560502us
+DeltaBlue: iterations=321 runtime: 553085us
+DeltaBlue: iterations=322 runtime: 552569us
+DeltaBlue: iterations=323 runtime: 557332us
+DeltaBlue: iterations=324 runtime: 552633us
+DeltaBlue: iterations=325 runtime: 558326us
+DeltaBlue: iterations=326 runtime: 561752us
+DeltaBlue: iterations=327 runtime: 556408us
+DeltaBlue: iterations=328 runtime: 550294us
+DeltaBlue: iterations=329 runtime: 554076us
+DeltaBlue: iterations=330 runtime: 561275us
+DeltaBlue: iterations=331 runtime: 553659us
+DeltaBlue: iterations=332 runtime: 552842us
+DeltaBlue: iterations=333 runtime: 556549us
+DeltaBlue: iterations=334 runtime: 552710us
+DeltaBlue: iterations=335 runtime: 562819us
+DeltaBlue: iterations=336 runtime: 553667us
+DeltaBlue: iterations=337 runtime: 552780us
+DeltaBlue: iterations=338 runtime: 556518us
+DeltaBlue: iterations=339 runtime: 556039us
+DeltaBlue: iterations=340 runtime: 561681us
+DeltaBlue: iterations=341 runtime: 553472us
+DeltaBlue: iterations=342 runtime: 552706us
+DeltaBlue: iterations=343 runtime: 554568us
+DeltaBlue: iterations=344 runtime: 553105us
+DeltaBlue: iterations=345 runtime: 561223us
+DeltaBlue: iterations=346 runtime: 554219us
+DeltaBlue: iterations=347 runtime: 552316us
+DeltaBlue: iterations=348 runtime: 563104us
+DeltaBlue: iterations=349 runtime: 552341us
+DeltaBlue: iterations=350 runtime: 564045us
+DeltaBlue: iterations=351 runtime: 553964us
+DeltaBlue: iterations=352 runtime: 552599us
+DeltaBlue: iterations=353 runtime: 555813us
+DeltaBlue: iterations=354 runtime: 550161us
+DeltaBlue: iterations=355 runtime: 562090us
+DeltaBlue: iterations=356 runtime: 553226us
+DeltaBlue: iterations=357 runtime: 559067us
+DeltaBlue: iterations=358 runtime: 565515us
+DeltaBlue: iterations=359 runtime: 551814us
+DeltaBlue: iterations=360 runtime: 566210us
+DeltaBlue: iterations=361 runtime: 568121us
+DeltaBlue: iterations=362 runtime: 552763us
+DeltaBlue: iterations=363 runtime: 558741us
+DeltaBlue: iterations=364 runtime: 558540us
+DeltaBlue: iterations=365 runtime: 560400us
+DeltaBlue: iterations=366 runtime: 554573us
+DeltaBlue: iterations=367 runtime: 552956us
+DeltaBlue: iterations=368 runtime: 555572us
+DeltaBlue: iterations=369 runtime: 565232us
+DeltaBlue: iterations=370 runtime: 559558us
+DeltaBlue: iterations=371 runtime: 555414us
+DeltaBlue: iterations=372 runtime: 551143us
+DeltaBlue: iterations=373 runtime: 553236us
+DeltaBlue: iterations=374 runtime: 552676us
+DeltaBlue: iterations=375 runtime: 562216us
+DeltaBlue: iterations=376 runtime: 553326us
+DeltaBlue: iterations=377 runtime: 552815us
+DeltaBlue: iterations=378 runtime: 556436us
+DeltaBlue: iterations=379 runtime: 552149us
+DeltaBlue: iterations=380 runtime: 559400us
+DeltaBlue: iterations=381 runtime: 553487us
+DeltaBlue: iterations=382 runtime: 552458us
+DeltaBlue: iterations=383 runtime: 555873us
+DeltaBlue: iterations=384 runtime: 553247us
+DeltaBlue: iterations=385 runtime: 565953us
+DeltaBlue: iterations=386 runtime: 553616us
+DeltaBlue: iterations=387 runtime: 552535us
+DeltaBlue: iterations=388 runtime: 556520us
+DeltaBlue: iterations=389 runtime: 552774us
+DeltaBlue: iterations=390 runtime: 564739us
+DeltaBlue: iterations=391 runtime: 553786us
+DeltaBlue: iterations=392 runtime: 552747us
+DeltaBlue: iterations=393 runtime: 556865us
+DeltaBlue: iterations=394 runtime: 566077us
+DeltaBlue: iterations=395 runtime: 560016us
+DeltaBlue: iterations=396 runtime: 553570us
+DeltaBlue: iterations=397 runtime: 551662us
+DeltaBlue: iterations=398 runtime: 556119us
+DeltaBlue: iterations=399 runtime: 553987us
+DeltaBlue: iterations=400 runtime: 560838us
+DeltaBlue: iterations=401 runtime: 553258us
+DeltaBlue: iterations=402 runtime: 552688us
+DeltaBlue: iterations=403 runtime: 562878us
+DeltaBlue: iterations=404 runtime: 552738us
+DeltaBlue: iterations=405 runtime: 566145us
+DeltaBlue: iterations=406 runtime: 553578us
+DeltaBlue: iterations=407 runtime: 552859us
+DeltaBlue: iterations=408 runtime: 556293us
+DeltaBlue: iterations=409 runtime: 552775us
+DeltaBlue: iterations=410 runtime: 569675us
+DeltaBlue: iterations=411 runtime: 553863us
+DeltaBlue: iterations=412 runtime: 550485us
+DeltaBlue: iterations=413 runtime: 559512us
+DeltaBlue: iterations=414 runtime: 555209us
+DeltaBlue: iterations=415 runtime: 565609us
+DeltaBlue: iterations=416 runtime: 551887us
+DeltaBlue: iterations=417 runtime: 551132us
+DeltaBlue: iterations=418 runtime: 553380us
+DeltaBlue: iterations=419 runtime: 546881us
+DeltaBlue: iterations=420 runtime: 561257us
+DeltaBlue: iterations=421 runtime: 552121us
+DeltaBlue: iterations=422 runtime: 553710us
+DeltaBlue: iterations=423 runtime: 557117us
+DeltaBlue: iterations=424 runtime: 552606us
+DeltaBlue: iterations=425 runtime: 569251us
+DeltaBlue: iterations=426 runtime: 553427us
+DeltaBlue: iterations=427 runtime: 552750us
+DeltaBlue: iterations=428 runtime: 552263us
+DeltaBlue: iterations=429 runtime: 552749us
+DeltaBlue: iterations=430 runtime: 563931us
+DeltaBlue: iterations=431 runtime: 550746us
+DeltaBlue: iterations=432 runtime: 545999us
+DeltaBlue: iterations=433 runtime: 557579us
+DeltaBlue: iterations=434 runtime: 565066us
+DeltaBlue: iterations=435 runtime: 564578us
+DeltaBlue: iterations=436 runtime: 553665us
+DeltaBlue: iterations=437 runtime: 552680us
+DeltaBlue: iterations=438 runtime: 556540us
+DeltaBlue: iterations=439 runtime: 552768us
+DeltaBlue: iterations=440 runtime: 562285us
+DeltaBlue: iterations=441 runtime: 552180us
+DeltaBlue: iterations=442 runtime: 549569us
+DeltaBlue: iterations=443 runtime: 556452us
+DeltaBlue: iterations=444 runtime: 552742us
+DeltaBlue: iterations=445 runtime: 573687us
+DeltaBlue: iterations=446 runtime: 560443us
+DeltaBlue: iterations=447 runtime: 552421us
+DeltaBlue: iterations=448 runtime: 555585us
+DeltaBlue: iterations=449 runtime: 552581us
+DeltaBlue: iterations=450 runtime: 561374us
+DeltaBlue: iterations=451 runtime: 556983us
+DeltaBlue: iterations=452 runtime: 552103us
+DeltaBlue: iterations=453 runtime: 556387us
+DeltaBlue: iterations=454 runtime: 552523us
+DeltaBlue: iterations=455 runtime: 565621us
+DeltaBlue: iterations=456 runtime: 551462us
+DeltaBlue: iterations=457 runtime: 552704us
+DeltaBlue: iterations=458 runtime: 551991us
+DeltaBlue: iterations=459 runtime: 552704us
+DeltaBlue: iterations=460 runtime: 565821us
+DeltaBlue: iterations=461 runtime: 557934us
+DeltaBlue: iterations=462 runtime: 546767us
+DeltaBlue: iterations=463 runtime: 565559us
+DeltaBlue: iterations=464 runtime: 552701us
+DeltaBlue: iterations=465 runtime: 569486us
+DeltaBlue: iterations=466 runtime: 558899us
+DeltaBlue: iterations=467 runtime: 551938us
+DeltaBlue: iterations=468 runtime: 560185us
+DeltaBlue: iterations=469 runtime: 552623us
+DeltaBlue: iterations=470 runtime: 564109us
+DeltaBlue: iterations=471 runtime: 558980us
+DeltaBlue: iterations=472 runtime: 552839us
+DeltaBlue: iterations=473 runtime: 553198us
+DeltaBlue: iterations=474 runtime: 552183us
+DeltaBlue: iterations=475 runtime: 562444us
+DeltaBlue: iterations=476 runtime: 557342us
+DeltaBlue: iterations=477 runtime: 552532us
+DeltaBlue: iterations=478 runtime: 555422us
+DeltaBlue: iterations=479 runtime: 552259us
+DeltaBlue: iterations=480 runtime: 564222us
+DeltaBlue: iterations=481 runtime: 553366us
+DeltaBlue: iterations=482 runtime: 552619us
+DeltaBlue: iterations=483 runtime: 562622us
+DeltaBlue: iterations=484 runtime: 557040us
+DeltaBlue: iterations=485 runtime: 560575us
+DeltaBlue: iterations=486 runtime: 553237us
+DeltaBlue: iterations=487 runtime: 552579us
+DeltaBlue: iterations=488 runtime: 560490us
+DeltaBlue: iterations=489 runtime: 552714us
+DeltaBlue: iterations=490 runtime: 561292us
+DeltaBlue: iterations=491 runtime: 553590us
+DeltaBlue: iterations=492 runtime: 552943us
+DeltaBlue: iterations=493 runtime: 561186us
+DeltaBlue: iterations=494 runtime: 552307us
+DeltaBlue: iterations=495 runtime: 564256us
+DeltaBlue: iterations=496 runtime: 553236us
+DeltaBlue: iterations=497 runtime: 554976us
+DeltaBlue: iterations=498 runtime: 555994us
+DeltaBlue: iterations=499 runtime: 544869us
+DeltaBlue: iterations=500 runtime: 561145us
+DeltaBlue: iterations=500 average: 569638us total: 284819063us
+
+
+Total Runtime: 284819063us
+Index : Stub<new_instance_or_null(KlassPointer)Object> Activation Count : 11368
+Index : Stub<write_barrier_pre-stack-only(Object)void> Activation Count : 4096
+Index : Stub<dynamic_new_instance_or_null(Class)Object> Activation Count : 2198
+Index : Stub<monitorexit(Object,Word)void> Activation Count : 5272
+Index : jdk.internal.util.StrongReferenceKey.get() Activation Count : 1610
+Index : java.lang.Class.getClassLoader() Activation Count : 992
+Index : java.lang.invoke.MethodType.returnType() Activation Count : 1358
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.index() Activation Count : 7426
+Index : java.lang.invoke.MemberName.getDeclaringClass() Activation Count : 886
+Index : java.lang.invoke.MethodType.form() Activation Count : 376
+Index : java.util.stream.FindOps$FindSink.cancellationRequested() Activation Count : 406
+Index : java.lang.Object.<init>() Activation Count : 87732
+Index : jdk.internal.module.ModuleReferenceImpl.moduleResolution() Activation Count : 204
+Index : java.lang.String.hashCode() Activation Count : 44299
+Index : java.lang.module.ModuleDescriptor$Requires.modifiers() Activation Count : 384
+Index : java.lang.module.ModuleDescriptor$Requires.name() Activation Count : 702
+Index : java.lang.module.ModuleDescriptor.requires() Activation Count : 152
+Index : java.lang.module.ModuleDescriptor.isAutomatic() Activation Count : 1202
+Index : java.util.HashMap$Node.getKey() Activation Count : 904
+Index : java.util.HashMap$Node.getValue() Activation Count : 902
+Index : java.util.ImmutableCollections$Set12.isEmpty() Activation Count : 2105
+Index : java.lang.module.ModuleDescriptor$Exports.source() Activation Count : 10990
+Index : java.lang.module.ModuleDescriptor$Exports.targets() Activation Count : 8954
+Index : java.lang.module.ModuleDescriptor.provides() Activation Count : 300
+Index : java.lang.module.ModuleDescriptor.exports() Activation Count : 390
+Index : java.util.Objects.requireNonNull(Object) Activation Count : 11470
+Index : java.util.ImmutableCollections$SetN$SetNIterator.hasNext() Activation Count : 31911
+Index : java.lang.module.ModuleDescriptor.uses() Activation Count : 68
+Index : java.util.ImmutableCollections$SetN$SetNIterator.next() Activation Count : 209807
+Index : java.util.HashMap.hash(Object) Activation Count : 20110
+Index : java.lang.module.ModuleDescriptor$Exports.isQualified() Activation Count : 12970
+Index : java.lang.module.ModuleDescriptor$Provides.service() Activation Count : 146
+Index : java.lang.Byte.toUnsignedInt(byte) Activation Count : 25992
+Index : java.util.HashMap.putVal(int, Activation Count : 56143
+Index : java.util.HashMap$Node.<init>(int, Activation Count : 355
+Index : java.lang.String.equals(Object) Activation Count : 6956
+Index : java.util.KeyValueHolder.getKey() Activation Count : 130
+Index : java.util.KeyValueHolder.getValue() Activation Count : 58
+Index : java.lang.module.ModuleDescriptor.packages() Activation Count : 296
+Index : java.lang.module.ResolvedModule.reference() Activation Count : 560
+Index : java.lang.module.ModuleDescriptor$Version.toString() Activation Count : 60
+Index : java.lang.AbstractStringBuilder.length() Activation Count : 1246
+Index : java.util.HashMap.newNode(int, Activation Count : 8370
+Index : java.util.HashMap.afterNodeInsertion(boolean) Activation Count : 1674
+Index : java.util.HashMap.resize() Activation Count : 14104
+Index : java.lang.module.ResolvedModule.configuration() Activation Count : 94
+Index : java.lang.module.ModuleDescriptor.isOpen() Activation Count : 36
+Index : java.util.HashMap.size() Activation Count : 28
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.width() Activation Count : 2074
+Index : jdk.internal.classfile.impl.SplitConstantPool.size() Activation Count : 5154
+Index : java.lang.invoke.MethodType.ptypes() Activation Count : 290
+Index : java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8() Activation Count : 57
+Index : java.lang.AbstractStringBuilder.getValue() Activation Count : 482
+Index : java.lang.StringLatin1.equals(byte[], Activation Count : 20669
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.constantPool() Activation Count : 1804
+Index : jdk.internal.classfile.impl.RawBytecodeHelper.bci() Activation Count : 3456
+Index : java.util.zip.Inflater$InflaterZStreamRef.address() Activation Count : 252
+Index : java.lang.String.coder() Activation Count : 16456
+Index : java.security.ProtectionDomain.getCodeSource() Activation Count : 120
+Index : jdk.internal.util.Preconditions.checkIndex(int, Activation Count : 4476
+Index : java.lang.String.value() Activation Count : 1150
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString() Activation Count : 988
+Index : som.Vector.<init>(int) Activation Count : 203791
+Index : deltablue.Planner$8.apply(int) Activation Count : 391048
+Index : deltablue.Variable.<init>() Activation Count : 94980
+Index : deltablue.Strength.absoluteWeakest() Activation Count : 6
+Index : java.util.Arrays.setAll(Object[], Activation Count : 790428
+Index : java.util.Arrays.setAll(Object[],-Re-Comp Activation Count : 1200024
+Index : jdk.internal.util.ArraysSupport.unsignedHashCode(int, Activation Count : 39420
+Index : jdk.internal.classfile.impl.BufWriterImpl.size() Activation Count : 668
+Index : jdk.internal.util.WeakReferenceKey.hashCode() Activation Count : 170
+Index : deltablue.Variable.getWalkStrength() Activation Count : 90136
+Index : deltablue.Variable.getMark() Activation Count : 214002
+Index : deltablue.Strength.getArithmeticValue() Activation Count : 26882
+Index : deltablue.Variable.getStay() Activation Count : 48644
+Index : deltablue.Variable.getDeterminedBy() Activation Count : 101908
+Index : deltablue.Variable.setMark(int) Activation Count : 139536
+Index : deltablue.Strength$Sym.customHash() Activation Count : 13312
+Index : deltablue.Variable.setDeterminedBy(AbstractConstraint) Activation Count : 54294
+Index : deltablue.Variable.setWalkStrength(Strength) Activation Count : 23826
+Index : deltablue.Variable.setStay(boolean) Activation Count : 23826
+Index : deltablue.Variable.getValue() Activation Count : 187352
+Index : deltablue.Variable.setValue(int) Activation Count : 85792
+Index : deltablue.Variable.getConstraints() Activation Count : 119044
+Index : som.Vector.append(Object) Activation Count : 123162
+Index : deltablue.BinaryConstraint.getOutput() Activation Count : 40700
+Index : som.Vector.isEmpty() Activation Count : 463916
+Index : deltablue.Variable.addConstraint(AbstractConstraint) Activation Count : 122388
+Index : deltablue.Strength.weaker(Strength) Activation Count : 27144
+Index : som.Dictionary.hash(Dictionary$CustomHash) Activation Count : 80
+Index : som.Dictionary.getBucketIdx(int) Activation Count : 64
+Index : java.lang.invoke.DirectMethodHandle.allocateInstance(Object) Activation Count : 44680
+Index : java.lang.invoke.DirectMethodHandle.constructorMethod(Object) Activation Count : 7458
+Index : som.Dictionary.at(Dictionary$CustomHash) Activation Count : 152
+Index : deltablue.Strength.of(Strength$Sym) Activation Count : 40
+Index : som.Vector.forEach(ForEachInterface) Activation Count : 29
+Index : deltablue.Planner.addPropagate(AbstractConstraint, Activation Count : 48
+Index : deltablue.EqualityConstraint.<init>(Variable, Activation Count : 1657216
+Index : deltablue.AbstractConstraint.<init>(Strength$Sym) Activation Count : 162860
+Index : deltablue.AbstractConstraint.addConstraint(Planner) Activation Count : 1
+Index : deltablue.Planner.incrementalAdd(AbstractConstraint) Activation Count : 2884964
+Index : deltablue.Planner.newMark() Activation Count : 15378
+Index : deltablue.AbstractConstraint.satisfy(int, Activation Count : 1
+Index : deltablue.BinaryConstraint.chooseMethod(int) Activation Count : 13
+Index : deltablue.Strength.stronger(Strength) Activation Count : 38427
+Index : deltablue.BinaryConstraint.isSatisfied() Activation Count : 2
+Index : java.lang.invoke.Invokers$Holder.linkToTargetMethod(int, Activation Count : 82194
+Index : java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(Object, Activation Count : 520562
+Index : deltablue.AbstractConstraint$$Lambda/0x000000008f047650.<init>(int) Activation Count : 40972
+Index : deltablue.BinaryConstraint.inputsDo(ForEachInterface) Activation Count : 5
+Index : deltablue.AbstractConstraint$$Lambda/0x000000008f047650.apply(Object) Activation Count : 64660
+Index : deltablue.Planner.chainTest(int) Activation Count : 2055048
+Index : som.Vector.with(Object) Activation Count : 165996
+Index : som.Vector.removeFirst() Activation Count : 870420
+Index : deltablue.Planner.addConstraintsConsumingTo(Variable, Activation Count : 12
+Index : deltablue.Planner$3.<init>(Planner, Activation Count : 40968
+Index : deltablue.Planner$3.apply(Object) Activation Count : 41485
+Index : deltablue.Planner$3.apply(AbstractConstraint) Activation Count : 3
+Index : deltablue.BinaryConstraint.recalculate() Activation Count : 10
+Index : deltablue.Strength.weakest(Strength) Activation Count : 270021744
+Index : deltablue.EqualityConstraint.execute() Activation Count : 6
+Index : deltablue.BinaryConstraint.getOutput()-Re-Comp Activation Count : 312165
+Index : som.Vector.forEach(ForEachInterface)-Re-Comp Activation Count : 41604
+Index : deltablue.Planner.addPropagate(AbstractConstraint,-Re-Comp Activation Count : 3731910
+Index : deltablue.AbstractConstraint.satisfy(int,-Re-Comp Activation Count : 399361
+Index : deltablue.BinaryConstraint.isSatisfied()-Re-Comp Activation Count : 38589
+Index : deltablue.Planner.incrementalAdd(AbstractConstraint)-Re-Comp Activation Count : 1651707
+Index : deltablue.Planner.incrementalAdd(AbstractConstraint)-Re-Comp Activation Count : 5
+Index : deltablue.BinaryConstraint.chooseMethod(int)-Re-Comp Activation Count : 11
+Index : deltablue.BinaryConstraint.inputsDo(ForEachInterface)-Re-Comp Activation Count : 40952
+Index : deltablue.Planner.addConstraintsConsumingTo(Variable,-Re-Comp Activation Count : 143319
+Index : deltablue.BinaryConstraint.recalculate()-Re-Comp Activation Count : 428844
+Index : deltablue.BinaryConstraint.markUnsatisfied() Activation Count : 6916
+Index : deltablue.Planner.addPropagate(AbstractConstraint,-Re-Comp Activation Count : 3457503
+Index : deltablue.AbstractConstraint.satisfy(int,-Re-Comp Activation Count : 394245
+Index : deltablue.Planner.incrementalAdd(AbstractConstraint)-Re-Comp Activation Count : 1526560
+Index : deltablue.Planner.incrementalAdd(AbstractConstraint)-Re-Comp Activation Count : 2220056
+Index : java.util.ArrayList.size() Activation Count : 338
+Index : java.lang.invoke.MethodTypeForm.erasedType() Activation Count : 84
+Index : deltablue.Planner$3.apply(Object)-Re-Comp Activation Count : 101451
+Index : som.Vector.forEach(ForEachInterface)-Re-Comp Activation Count : 2940349
+Index : deltablue.Planner.addConstraintsConsumingTo(Variable,-Re-Comp Activation Count : 358426
+Index : deltablue.AbstractConstraint.inputsKnown(int) Activation Count : 109568
+Index : deltablue.AbstractConstraint$$Lambda/0x000000008f045218.<init>(int) Activation Count : 256
+Index : deltablue.Plan.append(Object) Activation Count : 451970
+Index : java.util.Vector.add(Object) Activation Count : 168993
+Index : deltablue.Planner.makePlan(Vector) Activation Count : 2806000
+Index : deltablue.EqualityConstraint.execute()-Re-Comp Activation Count : 286680
+Index : java.util.Vector$Itr.hasNext() Activation Count : 54788
+Index : java.util.Vector$Itr.next() Activation Count : 1544858
+Index : java.util.Vector$Itr.checkForComodification() Activation Count : 4
+Index : java.util.Vector.elementData(int) Activation Count : 5
+Index : deltablue.Plan.execute() Activation Count : 1738929
+Index : deltablue.Plan.execute()-Re-Comp Activation Count : 29
+Index : java.util.Vector$Itr.hasNext()-Re-Comp Activation Count : 133205
+Index : deltablue.Plan.execute()-Re-Comp Activation Count : 2053533
+Index : deltablue.Plan.execute()-Re-Comp Activation Count : 205804679
+Index : jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool() Activation Count : 434
+Index : java.net.URL.getProtocol() Activation Count : 34
+Index : java.security.CodeSource.getLocationNoFragString() Activation Count : 22
+Index : som.Vector.forEach(ForEachInterface)-Re-Comp Activation Count : 4137342
+Index : som.Vector.append(Object)-Re-Comp Activation Count : 957720
+Index : deltablue.Planner$5.<init>(Planner, Activation Count : 87168
+Index : deltablue.Planner$6.<init>(Planner, Activation Count : 87168
+Index : deltablue.Planner.constraintsConsuming(Variable, Activation Count : 290560
+Index : deltablue.Planner$6.apply(AbstractConstraint) Activation Count : 2660762
+Index : deltablue.Planner.removePropagateFrom(Variable) Activation Count : 1383243
+Index : deltablue.Planner.removePropagateFrom(Variable)-Re-Comp Activation Count : 137
+Index : java.lang.Class.getModule() Activation Count : 4
+Index : som.Vector.forEach(ForEachInterface)-Re-Comp Activation Count : 1809563
+Index : deltablue.Planner.addPropagate(AbstractConstraint,-Re-Comp Activation Count : 3128225
+Index : som.Vector.forEach(ForEachInterface)-Re-Comp Activation Count : 2159995
+Index : deltablue.Planner.addPropagate(AbstractConstraint,-Re-Comp Activation Count : 12437282683
+Index : deltablue.BinaryConstraint.chooseMethod(int)-Re-Comp Activation Count : 122846
+Index : deltablue.UnaryConstraint.getOutput() Activation Count : 7388
+Index : deltablue.UnaryConstraint.isSatisfied() Activation Count : 12364
+Index : deltablue.AbstractConstraint.isInput() Activation Count : 30001872
+Index : deltablue.BinaryConstraint.getOutput()-Re-Comp Activation Count : 161256
+Index : deltablue.BinaryConstraint.<init>(Variable,-Re-Comp Activation Count : 156032
+Index : deltablue.BinaryConstraint.isSatisfied()-Re-Comp Activation Count : 42939
+Index : deltablue.Variable.addConstraint(AbstractConstraint)-Re-Comp Activation Count : 176234
+Index : deltablue.AbstractConstraint.addConstraint(Planner)-Re-Comp Activation Count : 435723
+Index : deltablue.Planner.incrementalAdd(AbstractConstraint)-Re-Comp Activation Count : 89892078
+Index : deltablue.AbstractConstraint.satisfy(int,-Re-Comp Activation Count : 274591
+Index : deltablue.Variable.value(int) Activation Count : 870310
+Index : deltablue.UnaryConstraint.<init>(Variable, Activation Count : 2135961
+Index : deltablue.StayConstraint.execute() Activation Count : 29995216
+Index : deltablue.StayConstraint.<init>(Variable, Activation Count : 60162
+Index : deltablue.ScaleConstraint.<init>(Variable, Activation Count : 4289089792
+Index : deltablue.ScaleConstraint.execute() Activation Count : 638734
+Index : deltablue.Planner.projectionTest(int) Activation Count : 1
+Index : deltablue.Planner.projectionTest(int)-Re-Comp Activation Count : 4440123
+Index : deltablue.Planner.projectionTest(int)-Re-Comp Activation Count : 1
+Index : deltablue.Planner.projectionTest(int)-Re-Comp Activation Count : 1827756
+Index : deltablue.BinaryConstraint.inputsHasOne(TestInterface) Activation Count : 4
+Index : deltablue.AbstractConstraint$$Lambda/0x000000008f045218.test(Object) Activation Count : 8
+Index : deltablue.AbstractConstraint.lambda$inputsKnown$0(int, Activation Count : 2
+Index : deltablue.Planner$3.apply(Object)-Re-Comp Activation Count : 4917138712
+Index : som.Vector.forEach(ForEachInterface)-Re-Comp Activation Count : 1772988
+Index : som.Vector.forEach(ForEachInterface)-Re-Comp Activation Count : 4665864000
+Index : deltablue.AbstractConstraint.inputsKnown(int)-Re-Comp Activation Count : 121856
+Index : deltablue.Plan.append(Object)-Re-Comp Activation Count : 378843
+Index : deltablue.Planner.makePlan(Vector)-Re-Comp Activation Count : 3571609
+Index : deltablue.Planner.makePlan(Vector)-Re-Comp Activation Count : 9108286319
+Index : deltablue.ScaleConstraint.execute()-Re-Comp Activation Count : 1169393014
+Index : deltablue.Plan.execute()-Re-Comp Activation Count : 2182806
+Index : deltablue.Plan.execute()-Re-Comp Activation Count : 119205232883
+Index : som.Vector.lambda$remove$0(Object, Activation Count : 30
+Index : som.Vector$$Lambda/0x000000008f045440.apply(Object) Activation Count : 1117762
+Index : deltablue.Planner$5.apply(Object) Activation Count : 288140
+Index : deltablue.Planner$6.apply(AbstractConstraint)-Re-Comp Activation Count : 159820
+Index : deltablue.Planner$4.apply(Object) Activation Count : 5936013147
+Index : deltablue.Planner.removePropagateFrom(Variable)-Re-Comp Activation Count : 2321452
+Index : deltablue.Planner.removePropagateFrom(Variable)-Re-Comp Activation Count : 6561640812
+Index : som.Vector$$Lambda/0x000000008f045440.apply(Object)-Re-Comp Activation Count : 1698712078
+Index : som.Vector.at(int) Activation Count : 196480
+Index : deltablue.Planner.projectionTest(int)-Re-Comp Activation Count : 357124
+Index : deltablue.Planner.projectionTest(int)-Re-Comp Activation Count : 357119
+Index : java.lang.String.length() Activation Count : 38655
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.hashCode() Activation Count : 292
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface() Activation Count : 116
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag() Activation Count : 119
+Index : jdk.internal.constant.PrimitiveClassDescImpl.descriptorString() Activation Count : 260
+Index : java.lang.invoke.MethodHandle.type() Activation Count : 36
+Index : deltablue.EqualityConstraint.<init>(Variable,-Re-Comp Activation Count : 1528332
+Index : deltablue.BinaryConstraint.inputsDo(ForEachInterface)-Re-Comp Activation Count : 34937
+Index : deltablue.Planner.chainTest(int)-Re-Comp Activation Count : 4835048
+Index : deltablue.Planner.chainTest(int)-Re-Comp Activation Count : 3108046386
+Index : deltablue.BinaryConstraint.markUnsatisfied()-Re-Comp Activation Count : 9732
+Index : deltablue.AbstractConstraint.satisfy(int,-Re-Comp Activation Count : 3383143222
+Index : deltablue.Planner.projectionTest(int)-Re-Comp Activation Count : 837116
+Index : deltablue.Planner.projectionTest(int)-Re-Comp Activation Count : 2689258764
+Index : java.util.Arrays.setAll(Object[],-Re-Comp Activation Count : 1968768
+Index : java.util.Arrays.setAll(Object[],-Re-Comp Activation Count : 565453392
+Index : deltablue.EditConstraint.isInput() Activation Count : 4872
+Index : java.lang.Math.min(int, Activation Count : 6048
+Index : java.nio.Buffer.position() Activation Count : 3788
+Index : java.util.Arrays.copyOf(Object[], Activation Count : 4511530
+Index : java.nio.Buffer.limit() Activation Count : 2780
+Index : java.nio.Buffer.capacity() Activation Count : 752
+Index : java.nio.charset.CharsetEncoder.maxBytesPerChar() Activation Count : 752
+Index : java.lang.Math.max(int, Activation Count : 770
+Index : jdk.internal.util.ArraysSupport.newLength(int, Activation Count : 1320
+Index : java.util.Arrays.copyOf(Object[],-Re-Comp Activation Count : 12630
+Index : java.util.Vector.grow() Activation Count : 1115350
+Index : java.util.Vector.grow(int) Activation Count : 502
+Index : deltablue.Planner.change(Variable, Activation Count : 8617621244
+Index : java.lang.StringLatin1.inflate(byte[], Activation Count : 14570
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[], Activation Count : 322
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp Activation Count : 12280
+Index : java.lang.Class.getComponentType() Activation Count : 80
+Index : java.lang.String.isLatin1() Activation Count : 894
+Index : java.lang.constant.ClassDesc.isPrimitive() Activation Count : 44
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$Utf8EntryImpl.tag() Activation Count : 10
+Index : java.lang.invoke.MethodHandles$Lookup.lookupClass() Activation Count : 14
+Index : jdk.internal.classfile.impl.AbstractDirectBuilder.setOriginal(Object) Activation Count : 46
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$NameAndTypeEntryImpl.tag() Activation Count : 19
+Index : java.lang.invoke.LambdaForm$BasicType.basicTypeKind() Activation Count : 36
+Index : jdk.internal.classfile.impl.DirectMethodBuilder.methodFlags() Activation Count : 20
+Index : java.lang.invoke.LambdaForm$Name.index() Activation Count : 28
+Index : jdk.internal.classfile.impl.UnboundAttribute.attributeMapper() Activation Count : 14
+Index : jdk.internal.classfile.impl.DirectMethodBuilder.methodType() Activation Count : 12
+-- DeltaBlue completed successfully.

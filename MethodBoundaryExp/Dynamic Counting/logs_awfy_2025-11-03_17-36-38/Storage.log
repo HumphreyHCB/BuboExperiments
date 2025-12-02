@@ -1,0 +1,603 @@
+========================================
+Benchmark : Storage
+Timestamp : 2025-11-03T19:13:31+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -Djdk.graal.CompilationFailureAction=Diagnose   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   Storage   500   1800 
+========================================
+Starting Storage benchmark ...
+Storage: iterations=1 runtime: 367028us
+Storage: iterations=2 runtime: 297230us
+Storage: iterations=3 runtime: 297456us
+Storage: iterations=4 runtime: 306731us
+Storage: iterations=5 runtime: 314876us
+Storage: iterations=6 runtime: 297135us
+Storage: iterations=7 runtime: 305350us
+Storage: iterations=8 runtime: 295082us
+Storage: iterations=9 runtime: 295424us
+Storage: iterations=10 runtime: 325814us
+Storage: iterations=11 runtime: 295395us
+Storage: iterations=12 runtime: 509612us
+Storage: iterations=13 runtime: 291765us
+Storage: iterations=14 runtime: 275492us
+Storage: iterations=15 runtime: 275517us
+Storage: iterations=16 runtime: 275719us
+Storage: iterations=17 runtime: 275298us
+Storage: iterations=18 runtime: 277635us
+Storage: iterations=19 runtime: 274903us
+Storage: iterations=20 runtime: 275257us
+Storage: iterations=21 runtime: 275267us
+Storage: iterations=22 runtime: 275235us
+Storage: iterations=23 runtime: 275535us
+Storage: iterations=24 runtime: 275277us
+Storage: iterations=25 runtime: 275532us
+Storage: iterations=26 runtime: 286614us
+Storage: iterations=27 runtime: 275787us
+Storage: iterations=28 runtime: 275062us
+Storage: iterations=29 runtime: 275696us
+Storage: iterations=30 runtime: 275425us
+Storage: iterations=31 runtime: 275139us
+Storage: iterations=32 runtime: 281127us
+Storage: iterations=33 runtime: 281405us
+Storage: iterations=34 runtime: 275643us
+Storage: iterations=35 runtime: 275119us
+Storage: iterations=36 runtime: 275417us
+Storage: iterations=37 runtime: 275021us
+Storage: iterations=38 runtime: 275739us
+Storage: iterations=39 runtime: 275155us
+Storage: iterations=40 runtime: 284251us
+Storage: iterations=41 runtime: 275620us
+Storage: iterations=42 runtime: 275060us
+Storage: iterations=43 runtime: 276303us
+Storage: iterations=44 runtime: 276030us
+Storage: iterations=45 runtime: 280023us
+Storage: iterations=46 runtime: 276629us
+Storage: iterations=47 runtime: 286518us
+Storage: iterations=48 runtime: 275401us
+Storage: iterations=49 runtime: 275170us
+Storage: iterations=50 runtime: 279091us
+Storage: iterations=51 runtime: 287114us
+Storage: iterations=52 runtime: 275249us
+Storage: iterations=53 runtime: 274840us
+Storage: iterations=54 runtime: 275361us
+Storage: iterations=55 runtime: 274930us
+Storage: iterations=56 runtime: 275235us
+Storage: iterations=57 runtime: 274922us
+Storage: iterations=58 runtime: 283618us
+Storage: iterations=59 runtime: 285574us
+Storage: iterations=60 runtime: 277487us
+Storage: iterations=61 runtime: 275493us
+Storage: iterations=62 runtime: 275968us
+Storage: iterations=63 runtime: 275869us
+Storage: iterations=64 runtime: 277370us
+Storage: iterations=65 runtime: 278679us
+Storage: iterations=66 runtime: 275031us
+Storage: iterations=67 runtime: 275517us
+Storage: iterations=68 runtime: 274901us
+Storage: iterations=69 runtime: 275329us
+Storage: iterations=70 runtime: 274932us
+Storage: iterations=71 runtime: 275481us
+Storage: iterations=72 runtime: 274968us
+Storage: iterations=73 runtime: 275276us
+Storage: iterations=74 runtime: 275260us
+Storage: iterations=75 runtime: 274778us
+Storage: iterations=76 runtime: 275502us
+Storage: iterations=77 runtime: 275101us
+Storage: iterations=78 runtime: 275401us
+Storage: iterations=79 runtime: 275305us
+Storage: iterations=80 runtime: 275478us
+Storage: iterations=81 runtime: 275177us
+Storage: iterations=82 runtime: 275608us
+Storage: iterations=83 runtime: 275257us
+Storage: iterations=84 runtime: 275491us
+Storage: iterations=85 runtime: 275555us
+Storage: iterations=86 runtime: 275015us
+Storage: iterations=87 runtime: 275318us
+Storage: iterations=88 runtime: 275133us
+Storage: iterations=89 runtime: 275327us
+Storage: iterations=90 runtime: 278402us
+Storage: iterations=91 runtime: 288386us
+Storage: iterations=92 runtime: 274935us
+Storage: iterations=93 runtime: 278663us
+Storage: iterations=94 runtime: 275111us
+Storage: iterations=95 runtime: 275471us
+Storage: iterations=96 runtime: 275289us
+Storage: iterations=97 runtime: 275053us
+Storage: iterations=98 runtime: 286452us
+Storage: iterations=99 runtime: 275246us
+Storage: iterations=100 runtime: 278438us
+Storage: iterations=101 runtime: 275571us
+Storage: iterations=102 runtime: 276269us
+Storage: iterations=103 runtime: 282426us
+Storage: iterations=104 runtime: 287830us
+Storage: iterations=105 runtime: 280956us
+Storage: iterations=106 runtime: 282076us
+Storage: iterations=107 runtime: 278674us
+Storage: iterations=108 runtime: 275187us
+Storage: iterations=109 runtime: 275612us
+Storage: iterations=110 runtime: 275331us
+Storage: iterations=111 runtime: 275742us
+Storage: iterations=112 runtime: 286186us
+Storage: iterations=113 runtime: 280251us
+Storage: iterations=114 runtime: 280584us
+Storage: iterations=115 runtime: 275549us
+Storage: iterations=116 runtime: 279691us
+Storage: iterations=117 runtime: 275291us
+Storage: iterations=118 runtime: 275325us
+Storage: iterations=119 runtime: 280309us
+Storage: iterations=120 runtime: 275594us
+Storage: iterations=121 runtime: 280383us
+Storage: iterations=122 runtime: 275547us
+Storage: iterations=123 runtime: 275082us
+Storage: iterations=124 runtime: 275386us
+Storage: iterations=125 runtime: 283470us
+Storage: iterations=126 runtime: 282776us
+Storage: iterations=127 runtime: 276980us
+Storage: iterations=128 runtime: 278542us
+Storage: iterations=129 runtime: 277717us
+Storage: iterations=130 runtime: 275061us
+Storage: iterations=131 runtime: 275338us
+Storage: iterations=132 runtime: 275138us
+Storage: iterations=133 runtime: 281961us
+Storage: iterations=134 runtime: 284277us
+Storage: iterations=135 runtime: 275534us
+Storage: iterations=136 runtime: 275247us
+Storage: iterations=137 runtime: 275636us
+Storage: iterations=138 runtime: 275308us
+Storage: iterations=139 runtime: 279991us
+Storage: iterations=140 runtime: 276676us
+Storage: iterations=141 runtime: 275203us
+Storage: iterations=142 runtime: 275389us
+Storage: iterations=143 runtime: 275320us
+Storage: iterations=144 runtime: 275675us
+Storage: iterations=145 runtime: 275277us
+Storage: iterations=146 runtime: 277885us
+Storage: iterations=147 runtime: 275180us
+Storage: iterations=148 runtime: 275413us
+Storage: iterations=149 runtime: 275116us
+Storage: iterations=150 runtime: 275415us
+Storage: iterations=151 runtime: 275371us
+Storage: iterations=152 runtime: 275159us
+Storage: iterations=153 runtime: 294291us
+Storage: iterations=154 runtime: 275159us
+Storage: iterations=155 runtime: 276174us
+Storage: iterations=156 runtime: 279689us
+Storage: iterations=157 runtime: 275529us
+Storage: iterations=158 runtime: 286539us
+Storage: iterations=159 runtime: 275557us
+Storage: iterations=160 runtime: 278802us
+Storage: iterations=161 runtime: 275448us
+Storage: iterations=162 runtime: 281398us
+Storage: iterations=163 runtime: 279629us
+Storage: iterations=164 runtime: 278915us
+Storage: iterations=165 runtime: 275149us
+Storage: iterations=166 runtime: 275453us
+Storage: iterations=167 runtime: 275391us
+Storage: iterations=168 runtime: 275743us
+Storage: iterations=169 runtime: 275236us
+Storage: iterations=170 runtime: 275565us
+Storage: iterations=171 runtime: 275696us
+Storage: iterations=172 runtime: 280546us
+Storage: iterations=173 runtime: 275615us
+Storage: iterations=174 runtime: 275078us
+Storage: iterations=175 runtime: 275370us
+Storage: iterations=176 runtime: 275104us
+Storage: iterations=177 runtime: 275727us
+Storage: iterations=178 runtime: 275357us
+Storage: iterations=179 runtime: 275578us
+Storage: iterations=180 runtime: 275319us
+Storage: iterations=181 runtime: 275623us
+Storage: iterations=182 runtime: 301611us
+Storage: iterations=183 runtime: 275134us
+Storage: iterations=184 runtime: 275376us
+Storage: iterations=185 runtime: 275150us
+Storage: iterations=186 runtime: 275484us
+Storage: iterations=187 runtime: 275334us
+Storage: iterations=188 runtime: 275706us
+Storage: iterations=189 runtime: 275288us
+Storage: iterations=190 runtime: 275432us
+Storage: iterations=191 runtime: 274975us
+Storage: iterations=192 runtime: 275397us
+Storage: iterations=193 runtime: 288473us
+Storage: iterations=194 runtime: 275186us
+Storage: iterations=195 runtime: 275664us
+Storage: iterations=196 runtime: 283362us
+Storage: iterations=197 runtime: 275505us
+Storage: iterations=198 runtime: 275074us
+Storage: iterations=199 runtime: 275611us
+Storage: iterations=200 runtime: 275147us
+Storage: iterations=201 runtime: 288536us
+Storage: iterations=202 runtime: 274979us
+Storage: iterations=203 runtime: 275221us
+Storage: iterations=204 runtime: 275362us
+Storage: iterations=205 runtime: 275062us
+Storage: iterations=206 runtime: 275614us
+Storage: iterations=207 runtime: 275014us
+Storage: iterations=208 runtime: 280066us
+Storage: iterations=209 runtime: 275544us
+Storage: iterations=210 runtime: 275460us
+Storage: iterations=211 runtime: 275044us
+Storage: iterations=212 runtime: 275475us
+Storage: iterations=213 runtime: 275168us
+Storage: iterations=214 runtime: 275608us
+Storage: iterations=215 runtime: 275658us
+Storage: iterations=216 runtime: 275279us
+Storage: iterations=217 runtime: 275612us
+Storage: iterations=218 runtime: 281906us
+Storage: iterations=219 runtime: 275366us
+Storage: iterations=220 runtime: 275083us
+Storage: iterations=221 runtime: 275471us
+Storage: iterations=222 runtime: 275216us
+Storage: iterations=223 runtime: 283163us
+Storage: iterations=224 runtime: 281516us
+Storage: iterations=225 runtime: 275606us
+Storage: iterations=226 runtime: 278852us
+Storage: iterations=227 runtime: 278104us
+Storage: iterations=228 runtime: 275331us
+Storage: iterations=229 runtime: 279420us
+Storage: iterations=230 runtime: 275224us
+Storage: iterations=231 runtime: 274888us
+Storage: iterations=232 runtime: 277679us
+Storage: iterations=233 runtime: 284016us
+Storage: iterations=234 runtime: 282099us
+Storage: iterations=235 runtime: 275433us
+Storage: iterations=236 runtime: 275667us
+Storage: iterations=237 runtime: 275762us
+Storage: iterations=238 runtime: 275391us
+Storage: iterations=239 runtime: 275714us
+Storage: iterations=240 runtime: 275400us
+Storage: iterations=241 runtime: 275683us
+Storage: iterations=242 runtime: 275256us
+Storage: iterations=243 runtime: 275665us
+Storage: iterations=244 runtime: 275507us
+Storage: iterations=245 runtime: 275657us
+Storage: iterations=246 runtime: 275397us
+Storage: iterations=247 runtime: 290850us
+Storage: iterations=248 runtime: 290565us
+Storage: iterations=249 runtime: 280707us
+Storage: iterations=250 runtime: 275549us
+Storage: iterations=251 runtime: 274984us
+Storage: iterations=252 runtime: 279044us
+Storage: iterations=253 runtime: 290738us
+Storage: iterations=254 runtime: 278352us
+Storage: iterations=255 runtime: 281902us
+Storage: iterations=256 runtime: 275284us
+Storage: iterations=257 runtime: 281455us
+Storage: iterations=258 runtime: 275082us
+Storage: iterations=259 runtime: 280484us
+Storage: iterations=260 runtime: 278281us
+Storage: iterations=261 runtime: 275235us
+Storage: iterations=262 runtime: 275021us
+Storage: iterations=263 runtime: 275353us
+Storage: iterations=264 runtime: 281472us
+Storage: iterations=265 runtime: 280581us
+Storage: iterations=266 runtime: 275254us
+Storage: iterations=267 runtime: 275443us
+Storage: iterations=268 runtime: 275041us
+Storage: iterations=269 runtime: 275270us
+Storage: iterations=270 runtime: 275475us
+Storage: iterations=271 runtime: 275107us
+Storage: iterations=272 runtime: 275500us
+Storage: iterations=273 runtime: 286957us
+Storage: iterations=274 runtime: 277431us
+Storage: iterations=275 runtime: 279164us
+Storage: iterations=276 runtime: 275561us
+Storage: iterations=277 runtime: 275057us
+Storage: iterations=278 runtime: 275255us
+Storage: iterations=279 runtime: 274922us
+Storage: iterations=280 runtime: 275232us
+Storage: iterations=281 runtime: 275502us
+Storage: iterations=282 runtime: 278819us
+Storage: iterations=283 runtime: 279262us
+Storage: iterations=284 runtime: 275156us
+Storage: iterations=285 runtime: 275302us
+Storage: iterations=286 runtime: 275084us
+Storage: iterations=287 runtime: 275636us
+Storage: iterations=288 runtime: 275174us
+Storage: iterations=289 runtime: 275512us
+Storage: iterations=290 runtime: 275269us
+Storage: iterations=291 runtime: 275374us
+Storage: iterations=292 runtime: 275501us
+Storage: iterations=293 runtime: 275241us
+Storage: iterations=294 runtime: 285407us
+Storage: iterations=295 runtime: 285225us
+Storage: iterations=296 runtime: 278220us
+Storage: iterations=297 runtime: 275718us
+Storage: iterations=298 runtime: 275510us
+Storage: iterations=299 runtime: 280057us
+Storage: iterations=300 runtime: 292332us
+Storage: iterations=301 runtime: 275607us
+Storage: iterations=302 runtime: 275048us
+Storage: iterations=303 runtime: 280852us
+Storage: iterations=304 runtime: 275062us
+Storage: iterations=305 runtime: 275449us
+Storage: iterations=306 runtime: 275064us
+Storage: iterations=307 runtime: 275352us
+Storage: iterations=308 runtime: 275211us
+Storage: iterations=309 runtime: 275460us
+Storage: iterations=310 runtime: 275151us
+Storage: iterations=311 runtime: 275628us
+Storage: iterations=312 runtime: 275270us
+Storage: iterations=313 runtime: 275039us
+Storage: iterations=314 runtime: 275415us
+Storage: iterations=315 runtime: 275083us
+Storage: iterations=316 runtime: 283430us
+Storage: iterations=317 runtime: 281073us
+Storage: iterations=318 runtime: 283065us
+Storage: iterations=319 runtime: 274877us
+Storage: iterations=320 runtime: 275504us
+Storage: iterations=321 runtime: 275130us
+Storage: iterations=322 runtime: 275619us
+Storage: iterations=323 runtime: 275385us
+Storage: iterations=324 runtime: 274997us
+Storage: iterations=325 runtime: 275553us
+Storage: iterations=326 runtime: 275302us
+Storage: iterations=327 runtime: 275514us
+Storage: iterations=328 runtime: 275086us
+Storage: iterations=329 runtime: 282083us
+Storage: iterations=330 runtime: 279861us
+Storage: iterations=331 runtime: 275492us
+Storage: iterations=332 runtime: 275046us
+Storage: iterations=333 runtime: 282804us
+Storage: iterations=334 runtime: 285071us
+Storage: iterations=335 runtime: 277653us
+Storage: iterations=336 runtime: 282919us
+Storage: iterations=337 runtime: 278036us
+Storage: iterations=338 runtime: 280621us
+Storage: iterations=339 runtime: 281481us
+Storage: iterations=340 runtime: 275665us
+Storage: iterations=341 runtime: 275353us
+Storage: iterations=342 runtime: 282435us
+Storage: iterations=343 runtime: 275055us
+Storage: iterations=344 runtime: 275329us
+Storage: iterations=345 runtime: 283854us
+Storage: iterations=346 runtime: 280499us
+Storage: iterations=347 runtime: 279118us
+Storage: iterations=348 runtime: 283007us
+Storage: iterations=349 runtime: 282532us
+Storage: iterations=350 runtime: 274972us
+Storage: iterations=351 runtime: 275123us
+Storage: iterations=352 runtime: 279344us
+Storage: iterations=353 runtime: 282627us
+Storage: iterations=354 runtime: 275085us
+Storage: iterations=355 runtime: 275475us
+Storage: iterations=356 runtime: 275404us
+Storage: iterations=357 runtime: 275560us
+Storage: iterations=358 runtime: 275657us
+Storage: iterations=359 runtime: 280107us
+Storage: iterations=360 runtime: 275668us
+Storage: iterations=361 runtime: 275127us
+Storage: iterations=362 runtime: 275537us
+Storage: iterations=363 runtime: 286401us
+Storage: iterations=364 runtime: 285360us
+Storage: iterations=365 runtime: 276656us
+Storage: iterations=366 runtime: 275426us
+Storage: iterations=367 runtime: 275315us
+Storage: iterations=368 runtime: 286861us
+Storage: iterations=369 runtime: 278327us
+Storage: iterations=370 runtime: 275019us
+Storage: iterations=371 runtime: 292185us
+Storage: iterations=372 runtime: 275062us
+Storage: iterations=373 runtime: 275446us
+Storage: iterations=374 runtime: 275110us
+Storage: iterations=375 runtime: 275417us
+Storage: iterations=376 runtime: 275152us
+Storage: iterations=377 runtime: 275442us
+Storage: iterations=378 runtime: 275604us
+Storage: iterations=379 runtime: 276832us
+Storage: iterations=380 runtime: 276974us
+Storage: iterations=381 runtime: 275193us
+Storage: iterations=382 runtime: 275555us
+Storage: iterations=383 runtime: 275236us
+Storage: iterations=384 runtime: 275537us
+Storage: iterations=385 runtime: 275102us
+Storage: iterations=386 runtime: 275456us
+Storage: iterations=387 runtime: 275338us
+Storage: iterations=388 runtime: 275584us
+Storage: iterations=389 runtime: 275258us
+Storage: iterations=390 runtime: 275083us
+Storage: iterations=391 runtime: 275426us
+Storage: iterations=392 runtime: 275231us
+Storage: iterations=393 runtime: 275592us
+Storage: iterations=394 runtime: 276962us
+Storage: iterations=395 runtime: 275342us
+Storage: iterations=396 runtime: 275018us
+Storage: iterations=397 runtime: 285146us
+Storage: iterations=398 runtime: 284122us
+Storage: iterations=399 runtime: 286025us
+Storage: iterations=400 runtime: 275330us
+Storage: iterations=401 runtime: 274981us
+Storage: iterations=402 runtime: 275334us
+Storage: iterations=403 runtime: 274911us
+Storage: iterations=404 runtime: 275501us
+Storage: iterations=405 runtime: 281060us
+Storage: iterations=406 runtime: 275463us
+Storage: iterations=407 runtime: 274925us
+Storage: iterations=408 runtime: 275234us
+Storage: iterations=409 runtime: 274987us
+Storage: iterations=410 runtime: 277302us
+Storage: iterations=411 runtime: 285370us
+Storage: iterations=412 runtime: 302634us
+Storage: iterations=413 runtime: 275523us
+Storage: iterations=414 runtime: 275095us
+Storage: iterations=415 runtime: 275375us
+Storage: iterations=416 runtime: 274886us
+Storage: iterations=417 runtime: 280444us
+Storage: iterations=418 runtime: 275289us
+Storage: iterations=419 runtime: 276082us
+Storage: iterations=420 runtime: 279313us
+Storage: iterations=421 runtime: 275282us
+Storage: iterations=422 runtime: 275522us
+Storage: iterations=423 runtime: 274990us
+Storage: iterations=424 runtime: 275990us
+Storage: iterations=425 runtime: 274951us
+Storage: iterations=426 runtime: 275537us
+Storage: iterations=427 runtime: 278508us
+Storage: iterations=428 runtime: 275338us
+Storage: iterations=429 runtime: 275230us
+Storage: iterations=430 runtime: 275304us
+Storage: iterations=431 runtime: 275352us
+Storage: iterations=432 runtime: 275031us
+Storage: iterations=433 runtime: 275354us
+Storage: iterations=434 runtime: 283084us
+Storage: iterations=435 runtime: 275582us
+Storage: iterations=436 runtime: 280513us
+Storage: iterations=437 runtime: 281363us
+Storage: iterations=438 runtime: 275222us
+Storage: iterations=439 runtime: 275631us
+Storage: iterations=440 runtime: 275819us
+Storage: iterations=441 runtime: 275565us
+Storage: iterations=442 runtime: 275431us
+Storage: iterations=443 runtime: 275270us
+Storage: iterations=444 runtime: 283015us
+Storage: iterations=445 runtime: 275464us
+Storage: iterations=446 runtime: 275542us
+Storage: iterations=447 runtime: 275092us
+Storage: iterations=448 runtime: 278266us
+Storage: iterations=449 runtime: 275367us
+Storage: iterations=450 runtime: 275319us
+Storage: iterations=451 runtime: 275001us
+Storage: iterations=452 runtime: 282452us
+Storage: iterations=453 runtime: 280248us
+Storage: iterations=454 runtime: 277440us
+Storage: iterations=455 runtime: 275613us
+Storage: iterations=456 runtime: 277824us
+Storage: iterations=457 runtime: 275311us
+Storage: iterations=458 runtime: 274916us
+Storage: iterations=459 runtime: 280334us
+Storage: iterations=460 runtime: 279608us
+Storage: iterations=461 runtime: 284842us
+Storage: iterations=462 runtime: 274938us
+Storage: iterations=463 runtime: 277772us
+Storage: iterations=464 runtime: 282828us
+Storage: iterations=465 runtime: 275201us
+Storage: iterations=466 runtime: 275640us
+Storage: iterations=467 runtime: 275069us
+Storage: iterations=468 runtime: 275516us
+Storage: iterations=469 runtime: 275094us
+Storage: iterations=470 runtime: 285453us
+Storage: iterations=471 runtime: 283935us
+Storage: iterations=472 runtime: 285869us
+Storage: iterations=473 runtime: 274956us
+Storage: iterations=474 runtime: 275356us
+Storage: iterations=475 runtime: 280319us
+Storage: iterations=476 runtime: 275163us
+Storage: iterations=477 runtime: 286803us
+Storage: iterations=478 runtime: 276059us
+Storage: iterations=479 runtime: 275417us
+Storage: iterations=480 runtime: 275180us
+Storage: iterations=481 runtime: 275483us
+Storage: iterations=482 runtime: 275251us
+Storage: iterations=483 runtime: 275612us
+Storage: iterations=484 runtime: 279064us
+Storage: iterations=485 runtime: 275432us
+Storage: iterations=486 runtime: 275150us
+Storage: iterations=487 runtime: 275018us
+Storage: iterations=488 runtime: 275363us
+Storage: iterations=489 runtime: 275211us
+Storage: iterations=490 runtime: 275509us
+Storage: iterations=491 runtime: 287603us
+Storage: iterations=492 runtime: 276021us
+Storage: iterations=493 runtime: 275151us
+Storage: iterations=494 runtime: 275541us
+Storage: iterations=495 runtime: 275017us
+Storage: iterations=496 runtime: 275877us
+Storage: iterations=497 runtime: 280195us
+Storage: iterations=498 runtime: 279870us
+Storage: iterations=499 runtime: 275794us
+Storage: iterations=500 runtime: 282241us
+Storage: iterations=500 average: 278600us total: 139300039us
+
+
+Total Runtime: 139300039us
+Index : Stub<new_instance_or_null(KlassPointer)Object> Activation Count : 11368
+Index : Stub<write_barrier_pre-stack-only(Object)void> Activation Count : 4096
+Index : java.lang.Enum.ordinal() Activation Count : 1994
+Index : java.lang.Class.isPrimitive() Activation Count : 4436
+Index : jdk.internal.util.StrongReferenceKey.get() Activation Count : 1422
+Index : java.lang.Class.getClassLoader() Activation Count : 806
+Index : java.lang.invoke.MethodType.returnType() Activation Count : 1142
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.index() Activation Count : 5996
+Index : java.lang.invoke.MemberName.getDeclaringClass() Activation Count : 728
+Index : java.lang.invoke.MethodType.form() Activation Count : 292
+Index : java.util.stream.FindOps$FindSink.cancellationRequested() Activation Count : 404
+Index : java.lang.Object.<init>() Activation Count : 33601
+Index : jdk.internal.module.ModuleReferenceImpl.moduleResolution() Activation Count : 204
+Index : java.lang.String.hashCode() Activation Count : 40378
+Index : java.lang.module.ModuleDescriptor$Requires.modifiers() Activation Count : 384
+Index : java.lang.module.ModuleDescriptor$Requires.name() Activation Count : 702
+Index : java.lang.module.ModuleDescriptor.requires() Activation Count : 152
+Index : java.lang.module.ModuleDescriptor.isAutomatic() Activation Count : 1198
+Index : java.util.HashMap$Node.getKey() Activation Count : 904
+Index : java.util.HashMap$Node.getValue() Activation Count : 902
+Index : java.util.ImmutableCollections$Set12.isEmpty() Activation Count : 2104
+Index : java.lang.module.ModuleDescriptor$Exports.source() Activation Count : 10990
+Index : java.lang.module.ModuleDescriptor$Exports.targets() Activation Count : 8954
+Index : java.lang.module.ModuleDescriptor.provides() Activation Count : 300
+Index : java.lang.module.ModuleDescriptor.exports() Activation Count : 390
+Index : java.util.Objects.requireNonNull(Object) Activation Count : 15530
+Index : java.util.ImmutableCollections$SetN$SetNIterator.hasNext() Activation Count : 31914
+Index : java.lang.module.ModuleDescriptor.uses() Activation Count : 68
+Index : java.util.ImmutableCollections$SetN$SetNIterator.next() Activation Count : 240507
+Index : java.util.HashMap.hash(Object) Activation Count : 20115
+Index : java.lang.module.ModuleDescriptor$Exports.isQualified() Activation Count : 12965
+Index : java.lang.module.ModuleDescriptor$Provides.service() Activation Count : 146
+Index : java.lang.Byte.toUnsignedInt(byte) Activation Count : 27600
+Index : java.util.HashMap.putVal(int, Activation Count : 56068
+Index : java.util.HashMap$Node.<init>(int, Activation Count : 355
+Index : java.lang.String.equals(Object) Activation Count : 6969
+Index : java.util.KeyValueHolder.getKey() Activation Count : 130
+Index : java.util.KeyValueHolder.getValue() Activation Count : 58
+Index : java.lang.module.ModuleDescriptor.packages() Activation Count : 296
+Index : java.lang.module.ResolvedModule.reference() Activation Count : 560
+Index : java.lang.module.ModuleDescriptor$Version.toString() Activation Count : 60
+Index : java.lang.AbstractStringBuilder.length() Activation Count : 834
+Index : java.util.HashMap.newNode(int, Activation Count : 8370
+Index : java.util.HashMap.afterNodeInsertion(boolean) Activation Count : 1674
+Index : java.lang.module.ResolvedModule.configuration() Activation Count : 94
+Index : java.util.HashMap.resize() Activation Count : 10838
+Index : java.lang.module.ModuleDescriptor.isOpen() Activation Count : 32
+Index : java.util.HashMap.size() Activation Count : 28
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.width() Activation Count : 1648
+Index : jdk.internal.classfile.impl.SplitConstantPool.size() Activation Count : 4118
+Index : java.lang.invoke.MethodType.ptypes() Activation Count : 234
+Index : java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8() Activation Count : 29
+Index : java.lang.AbstractStringBuilder.getValue() Activation Count : 276
+Index : java.lang.StringLatin1.equals(byte[], Activation Count : 6369
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.constantPool() Activation Count : 1416
+Index : jdk.internal.classfile.impl.RawBytecodeHelper.bci() Activation Count : 2902
+Index : java.lang.String.value() Activation Count : 836
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString() Activation Count : 768
+Index : jdk.internal.util.WeakReferenceKey.hashCode() Activation Count : 128
+Index : java.lang.String.coder() Activation Count : 13240
+Index : jdk.internal.classfile.impl.BufWriterImpl.size() Activation Count : 488
+Index : Storage.buildTreeDepth(int, Activation Count : 88149713167
+Index : Storage$$Lambda/0x000000004d042f08.apply(int) Activation Count : 40392
+Index : som.Arrays.setAll(Object[], Activation Count : 20665650053
+Index : java.lang.Integer.intValue() Activation Count : 13392
+Index : jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool() Activation Count : 308
+Index : java.util.ArrayList.size() Activation Count : 192
+Index : jdk.internal.constant.PrimitiveClassDescImpl.descriptorString() Activation Count : 232
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.hashCode() Activation Count : 200
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface() Activation Count : 79
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag() Activation Count : 76
+Index : java.lang.invoke.MethodTypeForm.erasedType() Activation Count : 42
+Index : java.lang.Integer.valueOf(int) Activation Count : 539
+Index : Storage.benchmark() Activation Count : 191744
+Index : Storage.verifyResult(Object) Activation Count : 41088
+Index : Benchmark.innerBenchmarkLoop(int) Activation Count : 224005
+Index : Benchmark.innerBenchmarkLoop(int)-Re-Comp Activation Count : 175681952
+Index : java.nio.Buffer.position() Activation Count : 3788
+Index : java.nio.Buffer.limit() Activation Count : 2780
+Index : java.nio.Buffer.capacity() Activation Count : 752
+Index : java.nio.charset.CharsetEncoder.maxBytesPerChar() Activation Count : 752
+Index : java.lang.String.length() Activation Count : 26080
+Index : java.lang.StringLatin1.inflate(byte[], Activation Count : 16021
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[], Activation Count : 194
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp Activation Count : 4184
+Index : java.lang.constant.ClassDesc.isPrimitive() Activation Count : 15
+Index : jdk.internal.util.ArraysSupport.unsignedHashCode(int, Activation Count : 187
+Index : jdk.internal.util.ArraysSupport.unsignedHashCode(int,-Re-Comp Activation Count : 2902
+Index : java.lang.Class.getComponentType() Activation Count : 14
+Index : java.lang.invoke.LambdaForm$BasicType.basicTypeKind() Activation Count : 2
+-- Storage completed successfully.

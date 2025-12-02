@@ -1,0 +1,704 @@
+========================================
+Benchmark : Havlak
+Timestamp : 2025-11-03T17:50:51+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -Djdk.graal.CompilationFailureAction=Diagnose   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   Havlak   500   15000 
+========================================
+Starting Havlak benchmark ...
+Havlak: iterations=1 runtime: 2828005us
+Havlak: iterations=2 runtime: 2096513us
+Havlak: iterations=3 runtime: 2035327us
+Havlak: iterations=4 runtime: 2059796us
+Havlak: iterations=5 runtime: 2047031us
+Havlak: iterations=6 runtime: 2028632us
+Havlak: iterations=7 runtime: 2046285us
+Havlak: iterations=8 runtime: 2020850us
+Havlak: iterations=9 runtime: 2036334us
+Havlak: iterations=10 runtime: 2014593us
+Havlak: iterations=11 runtime: 2041016us
+Havlak: iterations=12 runtime: 2012739us
+Havlak: iterations=13 runtime: 2028313us
+Havlak: iterations=14 runtime: 2100984us
+Havlak: iterations=15 runtime: 2026585us
+Havlak: iterations=16 runtime: 2029790us
+Havlak: iterations=17 runtime: 2025897us
+Havlak: iterations=18 runtime: 2030600us
+Havlak: iterations=19 runtime: 2015572us
+Havlak: iterations=20 runtime: 2026749us
+Havlak: iterations=21 runtime: 2018490us
+Havlak: iterations=22 runtime: 1961021us
+Havlak: iterations=23 runtime: 2020198us
+Havlak: iterations=24 runtime: 2030760us
+Havlak: iterations=25 runtime: 2026826us
+Havlak: iterations=26 runtime: 2014714us
+Havlak: iterations=27 runtime: 2021232us
+Havlak: iterations=28 runtime: 1998291us
+Havlak: iterations=29 runtime: 1999479us
+Havlak: iterations=30 runtime: 2029397us
+Havlak: iterations=31 runtime: 2017625us
+Havlak: iterations=32 runtime: 2015105us
+Havlak: iterations=33 runtime: 1981274us
+Havlak: iterations=34 runtime: 2333000us
+Havlak: iterations=35 runtime: 2028094us
+Havlak: iterations=36 runtime: 2000554us
+Havlak: iterations=37 runtime: 2002557us
+Havlak: iterations=38 runtime: 2023399us
+Havlak: iterations=39 runtime: 2005327us
+Havlak: iterations=40 runtime: 2028705us
+Havlak: iterations=41 runtime: 2008769us
+Havlak: iterations=42 runtime: 2020586us
+Havlak: iterations=43 runtime: 2023165us
+Havlak: iterations=44 runtime: 1996671us
+Havlak: iterations=45 runtime: 2028364us
+Havlak: iterations=46 runtime: 2019269us
+Havlak: iterations=47 runtime: 2016667us
+Havlak: iterations=48 runtime: 2027032us
+Havlak: iterations=49 runtime: 2031629us
+Havlak: iterations=50 runtime: 2015374us
+Havlak: iterations=51 runtime: 2008130us
+Havlak: iterations=52 runtime: 2012725us
+Havlak: iterations=53 runtime: 2027382us
+Havlak: iterations=54 runtime: 2023755us
+Havlak: iterations=55 runtime: 2033752us
+Havlak: iterations=56 runtime: 2013233us
+Havlak: iterations=57 runtime: 2030231us
+Havlak: iterations=58 runtime: 2020043us
+Havlak: iterations=59 runtime: 2019183us
+Havlak: iterations=60 runtime: 1997492us
+Havlak: iterations=61 runtime: 2033872us
+Havlak: iterations=62 runtime: 2027024us
+Havlak: iterations=63 runtime: 2014240us
+Havlak: iterations=64 runtime: 2021216us
+Havlak: iterations=65 runtime: 2019891us
+Havlak: iterations=66 runtime: 2025259us
+Havlak: iterations=67 runtime: 2021732us
+Havlak: iterations=68 runtime: 2002410us
+Havlak: iterations=69 runtime: 2029575us
+Havlak: iterations=70 runtime: 2030075us
+Havlak: iterations=71 runtime: 2026204us
+Havlak: iterations=72 runtime: 1986595us
+Havlak: iterations=73 runtime: 2019760us
+Havlak: iterations=74 runtime: 2015812us
+Havlak: iterations=75 runtime: 2026177us
+Havlak: iterations=76 runtime: 2030888us
+Havlak: iterations=77 runtime: 2002621us
+Havlak: iterations=78 runtime: 2015333us
+Havlak: iterations=79 runtime: 2031977us
+Havlak: iterations=80 runtime: 2006026us
+Havlak: iterations=81 runtime: 1991744us
+Havlak: iterations=82 runtime: 1993374us
+Havlak: iterations=83 runtime: 2007894us
+Havlak: iterations=84 runtime: 2023007us
+Havlak: iterations=85 runtime: 2008021us
+Havlak: iterations=86 runtime: 2023851us
+Havlak: iterations=87 runtime: 2014128us
+Havlak: iterations=88 runtime: 2017425us
+Havlak: iterations=89 runtime: 2026247us
+Havlak: iterations=90 runtime: 2022223us
+Havlak: iterations=91 runtime: 2027121us
+Havlak: iterations=92 runtime: 2028088us
+Havlak: iterations=93 runtime: 2005946us
+Havlak: iterations=94 runtime: 2016136us
+Havlak: iterations=95 runtime: 2024501us
+Havlak: iterations=96 runtime: 2029293us
+Havlak: iterations=97 runtime: 2018481us
+Havlak: iterations=98 runtime: 2022094us
+Havlak: iterations=99 runtime: 2026166us
+Havlak: iterations=100 runtime: 2020791us
+Havlak: iterations=101 runtime: 2058750us
+Havlak: iterations=102 runtime: 2027420us
+Havlak: iterations=103 runtime: 2032783us
+Havlak: iterations=104 runtime: 2019562us
+Havlak: iterations=105 runtime: 2026697us
+Havlak: iterations=106 runtime: 2017544us
+Havlak: iterations=107 runtime: 1975413us
+Havlak: iterations=108 runtime: 2022415us
+Havlak: iterations=109 runtime: 2031253us
+Havlak: iterations=110 runtime: 2015759us
+Havlak: iterations=111 runtime: 2023702us
+Havlak: iterations=112 runtime: 2020081us
+Havlak: iterations=113 runtime: 2016976us
+Havlak: iterations=114 runtime: 2013044us
+Havlak: iterations=115 runtime: 2012374us
+Havlak: iterations=116 runtime: 2025211us
+Havlak: iterations=117 runtime: 2024390us
+Havlak: iterations=118 runtime: 2021210us
+Havlak: iterations=119 runtime: 2026923us
+Havlak: iterations=120 runtime: 2032628us
+Havlak: iterations=121 runtime: 2012298us
+Havlak: iterations=122 runtime: 2026717us
+Havlak: iterations=123 runtime: 2029980us
+Havlak: iterations=124 runtime: 2030413us
+Havlak: iterations=125 runtime: 2024868us
+Havlak: iterations=126 runtime: 2007514us
+Havlak: iterations=127 runtime: 2029599us
+Havlak: iterations=128 runtime: 2018520us
+Havlak: iterations=129 runtime: 2027991us
+Havlak: iterations=130 runtime: 2029758us
+Havlak: iterations=131 runtime: 2023874us
+Havlak: iterations=132 runtime: 2028341us
+Havlak: iterations=133 runtime: 2008370us
+Havlak: iterations=134 runtime: 2026662us
+Havlak: iterations=135 runtime: 2014027us
+Havlak: iterations=136 runtime: 2029969us
+Havlak: iterations=137 runtime: 2022314us
+Havlak: iterations=138 runtime: 2021709us
+Havlak: iterations=139 runtime: 2019807us
+Havlak: iterations=140 runtime: 2022981us
+Havlak: iterations=141 runtime: 2028175us
+Havlak: iterations=142 runtime: 2030192us
+Havlak: iterations=143 runtime: 2028366us
+Havlak: iterations=144 runtime: 2020157us
+Havlak: iterations=145 runtime: 1998583us
+Havlak: iterations=146 runtime: 2020657us
+Havlak: iterations=147 runtime: 2024037us
+Havlak: iterations=148 runtime: 2017059us
+Havlak: iterations=149 runtime: 2017195us
+Havlak: iterations=150 runtime: 2019114us
+Havlak: iterations=151 runtime: 2032362us
+Havlak: iterations=152 runtime: 2017527us
+Havlak: iterations=153 runtime: 2007304us
+Havlak: iterations=154 runtime: 2029804us
+Havlak: iterations=155 runtime: 2020565us
+Havlak: iterations=156 runtime: 2014768us
+Havlak: iterations=157 runtime: 2022696us
+Havlak: iterations=158 runtime: 2018005us
+Havlak: iterations=159 runtime: 2022840us
+Havlak: iterations=160 runtime: 2031893us
+Havlak: iterations=161 runtime: 2026881us
+Havlak: iterations=162 runtime: 1998340us
+Havlak: iterations=163 runtime: 2013269us
+Havlak: iterations=164 runtime: 2026798us
+Havlak: iterations=165 runtime: 2009899us
+Havlak: iterations=166 runtime: 2030398us
+Havlak: iterations=167 runtime: 2017942us
+Havlak: iterations=168 runtime: 2005218us
+Havlak: iterations=169 runtime: 2021749us
+Havlak: iterations=170 runtime: 1992981us
+Havlak: iterations=171 runtime: 2008202us
+Havlak: iterations=172 runtime: 2021671us
+Havlak: iterations=173 runtime: 1993237us
+Havlak: iterations=174 runtime: 2018742us
+Havlak: iterations=175 runtime: 2020133us
+Havlak: iterations=176 runtime: 2020508us
+Havlak: iterations=177 runtime: 2021904us
+Havlak: iterations=178 runtime: 2030080us
+Havlak: iterations=179 runtime: 2026811us
+Havlak: iterations=180 runtime: 2030020us
+Havlak: iterations=181 runtime: 2022543us
+Havlak: iterations=182 runtime: 2020733us
+Havlak: iterations=183 runtime: 2010645us
+Havlak: iterations=184 runtime: 2011705us
+Havlak: iterations=185 runtime: 2026467us
+Havlak: iterations=186 runtime: 2025862us
+Havlak: iterations=187 runtime: 2022716us
+Havlak: iterations=188 runtime: 2022024us
+Havlak: iterations=189 runtime: 2024806us
+Havlak: iterations=190 runtime: 2002799us
+Havlak: iterations=191 runtime: 2007288us
+Havlak: iterations=192 runtime: 2019752us
+Havlak: iterations=193 runtime: 2006358us
+Havlak: iterations=194 runtime: 2023527us
+Havlak: iterations=195 runtime: 2021984us
+Havlak: iterations=196 runtime: 2015817us
+Havlak: iterations=197 runtime: 2024851us
+Havlak: iterations=198 runtime: 2016678us
+Havlak: iterations=199 runtime: 2014979us
+Havlak: iterations=200 runtime: 2015091us
+Havlak: iterations=201 runtime: 2017061us
+Havlak: iterations=202 runtime: 2006291us
+Havlak: iterations=203 runtime: 2027052us
+Havlak: iterations=204 runtime: 2015719us
+Havlak: iterations=205 runtime: 2031689us
+Havlak: iterations=206 runtime: 2023487us
+Havlak: iterations=207 runtime: 2029298us
+Havlak: iterations=208 runtime: 2008127us
+Havlak: iterations=209 runtime: 2026942us
+Havlak: iterations=210 runtime: 2028249us
+Havlak: iterations=211 runtime: 2030923us
+Havlak: iterations=212 runtime: 2015950us
+Havlak: iterations=213 runtime: 2028223us
+Havlak: iterations=214 runtime: 2025515us
+Havlak: iterations=215 runtime: 2024374us
+Havlak: iterations=216 runtime: 2018682us
+Havlak: iterations=217 runtime: 2005630us
+Havlak: iterations=218 runtime: 1998659us
+Havlak: iterations=219 runtime: 2004150us
+Havlak: iterations=220 runtime: 2030987us
+Havlak: iterations=221 runtime: 2024177us
+Havlak: iterations=222 runtime: 2003228us
+Havlak: iterations=223 runtime: 2019242us
+Havlak: iterations=224 runtime: 2017892us
+Havlak: iterations=225 runtime: 2010628us
+Havlak: iterations=226 runtime: 2023691us
+Havlak: iterations=227 runtime: 2026029us
+Havlak: iterations=228 runtime: 1995973us
+Havlak: iterations=229 runtime: 2030135us
+Havlak: iterations=230 runtime: 2012139us
+Havlak: iterations=231 runtime: 2024345us
+Havlak: iterations=232 runtime: 2015297us
+Havlak: iterations=233 runtime: 1992213us
+Havlak: iterations=234 runtime: 2008219us
+Havlak: iterations=235 runtime: 2024556us
+Havlak: iterations=236 runtime: 2025499us
+Havlak: iterations=237 runtime: 2019468us
+Havlak: iterations=238 runtime: 2021742us
+Havlak: iterations=239 runtime: 2025570us
+Havlak: iterations=240 runtime: 2022650us
+Havlak: iterations=241 runtime: 2024935us
+Havlak: iterations=242 runtime: 2030396us
+Havlak: iterations=243 runtime: 2027770us
+Havlak: iterations=244 runtime: 2028627us
+Havlak: iterations=245 runtime: 2008764us
+Havlak: iterations=246 runtime: 2028515us
+Havlak: iterations=247 runtime: 2006668us
+Havlak: iterations=248 runtime: 2023819us
+Havlak: iterations=249 runtime: 2027572us
+Havlak: iterations=250 runtime: 2021038us
+Havlak: iterations=251 runtime: 2014739us
+Havlak: iterations=252 runtime: 2020202us
+Havlak: iterations=253 runtime: 2016701us
+Havlak: iterations=254 runtime: 1986726us
+Havlak: iterations=255 runtime: 2020703us
+Havlak: iterations=256 runtime: 2003052us
+Havlak: iterations=257 runtime: 2024083us
+Havlak: iterations=258 runtime: 2029733us
+Havlak: iterations=259 runtime: 2022781us
+Havlak: iterations=260 runtime: 2019186us
+Havlak: iterations=261 runtime: 2027763us
+Havlak: iterations=262 runtime: 2030464us
+Havlak: iterations=263 runtime: 2062314us
+Havlak: iterations=264 runtime: 2022207us
+Havlak: iterations=265 runtime: 2014436us
+Havlak: iterations=266 runtime: 2010230us
+Havlak: iterations=267 runtime: 2006873us
+Havlak: iterations=268 runtime: 2027221us
+Havlak: iterations=269 runtime: 2026042us
+Havlak: iterations=270 runtime: 2027575us
+Havlak: iterations=271 runtime: 2020681us
+Havlak: iterations=272 runtime: 2025650us
+Havlak: iterations=273 runtime: 2025161us
+Havlak: iterations=274 runtime: 1996577us
+Havlak: iterations=275 runtime: 2020542us
+Havlak: iterations=276 runtime: 2018139us
+Havlak: iterations=277 runtime: 2017962us
+Havlak: iterations=278 runtime: 2027534us
+Havlak: iterations=279 runtime: 1982117us
+Havlak: iterations=280 runtime: 2015451us
+Havlak: iterations=281 runtime: 2028896us
+Havlak: iterations=282 runtime: 2059845us
+Havlak: iterations=283 runtime: 2032846us
+Havlak: iterations=284 runtime: 1983952us
+Havlak: iterations=285 runtime: 2026004us
+Havlak: iterations=286 runtime: 2011947us
+Havlak: iterations=287 runtime: 2001542us
+Havlak: iterations=288 runtime: 2015552us
+Havlak: iterations=289 runtime: 2030891us
+Havlak: iterations=290 runtime: 2007263us
+Havlak: iterations=291 runtime: 2018508us
+Havlak: iterations=292 runtime: 2026255us
+Havlak: iterations=293 runtime: 2006460us
+Havlak: iterations=294 runtime: 2021497us
+Havlak: iterations=295 runtime: 1993863us
+Havlak: iterations=296 runtime: 2011890us
+Havlak: iterations=297 runtime: 2028553us
+Havlak: iterations=298 runtime: 2029594us
+Havlak: iterations=299 runtime: 2025816us
+Havlak: iterations=300 runtime: 2027323us
+Havlak: iterations=301 runtime: 2010482us
+Havlak: iterations=302 runtime: 1993196us
+Havlak: iterations=303 runtime: 2028032us
+Havlak: iterations=304 runtime: 2029777us
+Havlak: iterations=305 runtime: 2012185us
+Havlak: iterations=306 runtime: 2022506us
+Havlak: iterations=307 runtime: 2030594us
+Havlak: iterations=308 runtime: 2016605us
+Havlak: iterations=309 runtime: 2016644us
+Havlak: iterations=310 runtime: 2019410us
+Havlak: iterations=311 runtime: 2025755us
+Havlak: iterations=312 runtime: 1988860us
+Havlak: iterations=313 runtime: 2021835us
+Havlak: iterations=314 runtime: 2004586us
+Havlak: iterations=315 runtime: 2009103us
+Havlak: iterations=316 runtime: 2023805us
+Havlak: iterations=317 runtime: 2020874us
+Havlak: iterations=318 runtime: 2016352us
+Havlak: iterations=319 runtime: 2028660us
+Havlak: iterations=320 runtime: 2026365us
+Havlak: iterations=321 runtime: 2030522us
+Havlak: iterations=322 runtime: 2027349us
+Havlak: iterations=323 runtime: 2010262us
+Havlak: iterations=324 runtime: 2021664us
+Havlak: iterations=325 runtime: 2023945us
+Havlak: iterations=326 runtime: 2012470us
+Havlak: iterations=327 runtime: 2009536us
+Havlak: iterations=328 runtime: 2016924us
+Havlak: iterations=329 runtime: 2026886us
+Havlak: iterations=330 runtime: 2017781us
+Havlak: iterations=331 runtime: 2011288us
+Havlak: iterations=332 runtime: 2026094us
+Havlak: iterations=333 runtime: 2027649us
+Havlak: iterations=334 runtime: 2011919us
+Havlak: iterations=335 runtime: 2027389us
+Havlak: iterations=336 runtime: 2024389us
+Havlak: iterations=337 runtime: 2012060us
+Havlak: iterations=338 runtime: 2028883us
+Havlak: iterations=339 runtime: 2019181us
+Havlak: iterations=340 runtime: 2028428us
+Havlak: iterations=341 runtime: 2023626us
+Havlak: iterations=342 runtime: 2000205us
+Havlak: iterations=343 runtime: 2026678us
+Havlak: iterations=344 runtime: 2025456us
+Havlak: iterations=345 runtime: 2019365us
+Havlak: iterations=346 runtime: 2008407us
+Havlak: iterations=347 runtime: 2017506us
+Havlak: iterations=348 runtime: 2009609us
+Havlak: iterations=349 runtime: 2009980us
+Havlak: iterations=350 runtime: 2027655us
+Havlak: iterations=351 runtime: 2013971us
+Havlak: iterations=352 runtime: 1994153us
+Havlak: iterations=353 runtime: 2004960us
+Havlak: iterations=354 runtime: 2024892us
+Havlak: iterations=355 runtime: 2014240us
+Havlak: iterations=356 runtime: 2026664us
+Havlak: iterations=357 runtime: 2023299us
+Havlak: iterations=358 runtime: 2023727us
+Havlak: iterations=359 runtime: 2010905us
+Havlak: iterations=360 runtime: 1988686us
+Havlak: iterations=361 runtime: 2034160us
+Havlak: iterations=362 runtime: 2014156us
+Havlak: iterations=363 runtime: 2008304us
+Havlak: iterations=364 runtime: 2023446us
+Havlak: iterations=365 runtime: 2014258us
+Havlak: iterations=366 runtime: 2012674us
+Havlak: iterations=367 runtime: 2027073us
+Havlak: iterations=368 runtime: 2010251us
+Havlak: iterations=369 runtime: 2024317us
+Havlak: iterations=370 runtime: 2019460us
+Havlak: iterations=371 runtime: 2006779us
+Havlak: iterations=372 runtime: 2014033us
+Havlak: iterations=373 runtime: 2021672us
+Havlak: iterations=374 runtime: 2005099us
+Havlak: iterations=375 runtime: 2027937us
+Havlak: iterations=376 runtime: 2005070us
+Havlak: iterations=377 runtime: 2013665us
+Havlak: iterations=378 runtime: 2028375us
+Havlak: iterations=379 runtime: 1987782us
+Havlak: iterations=380 runtime: 2025444us
+Havlak: iterations=381 runtime: 2000708us
+Havlak: iterations=382 runtime: 2028969us
+Havlak: iterations=383 runtime: 2006459us
+Havlak: iterations=384 runtime: 2029366us
+Havlak: iterations=385 runtime: 2027035us
+Havlak: iterations=386 runtime: 2020306us
+Havlak: iterations=387 runtime: 2027793us
+Havlak: iterations=388 runtime: 2014984us
+Havlak: iterations=389 runtime: 2010974us
+Havlak: iterations=390 runtime: 2020547us
+Havlak: iterations=391 runtime: 2029402us
+Havlak: iterations=392 runtime: 2024695us
+Havlak: iterations=393 runtime: 2026564us
+Havlak: iterations=394 runtime: 2015192us
+Havlak: iterations=395 runtime: 1988636us
+Havlak: iterations=396 runtime: 2027810us
+Havlak: iterations=397 runtime: 2029986us
+Havlak: iterations=398 runtime: 2013008us
+Havlak: iterations=399 runtime: 2026959us
+Havlak: iterations=400 runtime: 2024058us
+Havlak: iterations=401 runtime: 2003974us
+Havlak: iterations=402 runtime: 2028841us
+Havlak: iterations=403 runtime: 2025532us
+Havlak: iterations=404 runtime: 2025029us
+Havlak: iterations=405 runtime: 2009983us
+Havlak: iterations=406 runtime: 2021192us
+Havlak: iterations=407 runtime: 2011886us
+Havlak: iterations=408 runtime: 2027934us
+Havlak: iterations=409 runtime: 2030614us
+Havlak: iterations=410 runtime: 1803059us
+Havlak: iterations=411 runtime: 2025871us
+Havlak: iterations=412 runtime: 2030460us
+Havlak: iterations=413 runtime: 2017311us
+Havlak: iterations=414 runtime: 2026066us
+Havlak: iterations=415 runtime: 2014911us
+Havlak: iterations=416 runtime: 2024106us
+Havlak: iterations=417 runtime: 1997649us
+Havlak: iterations=418 runtime: 2031326us
+Havlak: iterations=419 runtime: 2022718us
+Havlak: iterations=420 runtime: 2023474us
+Havlak: iterations=421 runtime: 2026384us
+Havlak: iterations=422 runtime: 2023543us
+Havlak: iterations=423 runtime: 2015329us
+Havlak: iterations=424 runtime: 2023305us
+Havlak: iterations=425 runtime: 2026200us
+Havlak: iterations=426 runtime: 2029293us
+Havlak: iterations=427 runtime: 2026629us
+Havlak: iterations=428 runtime: 2025312us
+Havlak: iterations=429 runtime: 2028282us
+Havlak: iterations=430 runtime: 2001289us
+Havlak: iterations=431 runtime: 2065949us
+Havlak: iterations=432 runtime: 2025779us
+Havlak: iterations=433 runtime: 2029467us
+Havlak: iterations=434 runtime: 2016294us
+Havlak: iterations=435 runtime: 2010494us
+Havlak: iterations=436 runtime: 2035788us
+Havlak: iterations=437 runtime: 2022816us
+Havlak: iterations=438 runtime: 2023511us
+Havlak: iterations=439 runtime: 2029649us
+Havlak: iterations=440 runtime: 2026424us
+Havlak: iterations=441 runtime: 2004185us
+Havlak: iterations=442 runtime: 2016008us
+Havlak: iterations=443 runtime: 2026845us
+Havlak: iterations=444 runtime: 2027738us
+Havlak: iterations=445 runtime: 2025657us
+Havlak: iterations=446 runtime: 2028675us
+Havlak: iterations=447 runtime: 2028765us
+Havlak: iterations=448 runtime: 2026555us
+Havlak: iterations=449 runtime: 2052799us
+Havlak: iterations=450 runtime: 2022144us
+Havlak: iterations=451 runtime: 2029987us
+Havlak: iterations=452 runtime: 2025935us
+Havlak: iterations=453 runtime: 2012622us
+Havlak: iterations=454 runtime: 2018176us
+Havlak: iterations=455 runtime: 2025659us
+Havlak: iterations=456 runtime: 2029924us
+Havlak: iterations=457 runtime: 2027646us
+Havlak: iterations=458 runtime: 1989954us
+Havlak: iterations=459 runtime: 1997610us
+Havlak: iterations=460 runtime: 2064823us
+Havlak: iterations=461 runtime: 2019103us
+Havlak: iterations=462 runtime: 1997686us
+Havlak: iterations=463 runtime: 2011376us
+Havlak: iterations=464 runtime: 2021087us
+Havlak: iterations=465 runtime: 2027974us
+Havlak: iterations=466 runtime: 2016971us
+Havlak: iterations=467 runtime: 2014282us
+Havlak: iterations=468 runtime: 2005149us
+Havlak: iterations=469 runtime: 2024910us
+Havlak: iterations=470 runtime: 2026446us
+Havlak: iterations=471 runtime: 2069897us
+Havlak: iterations=472 runtime: 2034877us
+Havlak: iterations=473 runtime: 2005385us
+Havlak: iterations=474 runtime: 2030174us
+Havlak: iterations=475 runtime: 2015267us
+Havlak: iterations=476 runtime: 1986211us
+Havlak: iterations=477 runtime: 2022090us
+Havlak: iterations=478 runtime: 2028435us
+Havlak: iterations=479 runtime: 1996440us
+Havlak: iterations=480 runtime: 2025421us
+Havlak: iterations=481 runtime: 2029825us
+Havlak: iterations=482 runtime: 1971075us
+Havlak: iterations=483 runtime: 2025224us
+Havlak: iterations=484 runtime: 2030156us
+Havlak: iterations=485 runtime: 2018943us
+Havlak: iterations=486 runtime: 2028554us
+Havlak: iterations=487 runtime: 2023470us
+Havlak: iterations=488 runtime: 2007349us
+Havlak: iterations=489 runtime: 2016010us
+Havlak: iterations=490 runtime: 2021274us
+Havlak: iterations=491 runtime: 2075649us
+Havlak: iterations=492 runtime: 2023218us
+Havlak: iterations=493 runtime: 2004507us
+Havlak: iterations=494 runtime: 2016287us
+Havlak: iterations=495 runtime: 2017555us
+Havlak: iterations=496 runtime: 2024187us
+Havlak: iterations=497 runtime: 1992682us
+Havlak: iterations=498 runtime: 2019788us
+Havlak: iterations=499 runtime: 2013763us
+Havlak: iterations=500 runtime: 2028188us
+Havlak: iterations=500 average: 2021759us total: 1010879930us
+
+
+Total Runtime: 1010879930us
+Index : Stub<new_instance_or_null(KlassPointer)Object> Activation Count : 11368
+Index : Stub<write_barrier_pre-stack-only(Object)void> Activation Count : 4096
+Index : Stub<OSR_migration_end(long)void> Activation Count : 1876
+Index : java.lang.Class.isPrimitive() Activation Count : 4730
+Index : jdk.internal.util.StrongReferenceKey.get() Activation Count : 1414
+Index : java.lang.Class.getClassLoader() Activation Count : 880
+Index : java.lang.invoke.MethodType.returnType() Activation Count : 1142
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.index() Activation Count : 5950
+Index : java.lang.invoke.MemberName.getDeclaringClass() Activation Count : 768
+Index : java.lang.invoke.MethodType.form() Activation Count : 314
+Index : java.util.stream.FindOps$FindSink.cancellationRequested() Activation Count : 406
+Index : java.lang.Object.<init>() Activation Count : 157382
+Index : jdk.internal.module.ModuleReferenceImpl.moduleResolution() Activation Count : 204
+Index : java.lang.String.hashCode() Activation Count : 43012
+Index : java.lang.module.ModuleDescriptor$Requires.modifiers() Activation Count : 384
+Index : java.lang.module.ModuleDescriptor$Requires.name() Activation Count : 702
+Index : java.lang.module.ModuleDescriptor.requires() Activation Count : 152
+Index : java.lang.module.ModuleDescriptor.isAutomatic() Activation Count : 1204
+Index : java.util.HashMap$Node.getKey() Activation Count : 904
+Index : java.util.HashMap$Node.getValue() Activation Count : 902
+Index : java.util.ImmutableCollections$Set12.isEmpty() Activation Count : 2106
+Index : java.lang.module.ModuleDescriptor$Exports.source() Activation Count : 10990
+Index : java.lang.module.ModuleDescriptor$Exports.targets() Activation Count : 8954
+Index : java.lang.module.ModuleDescriptor.provides() Activation Count : 300
+Index : java.lang.module.ModuleDescriptor.exports() Activation Count : 390
+Index : java.util.Objects.requireNonNull(Object) Activation Count : 10246
+Index : java.util.ImmutableCollections$SetN$SetNIterator.hasNext() Activation Count : 31917
+Index : java.lang.module.ModuleDescriptor.uses() Activation Count : 68
+Index : java.util.ImmutableCollections$SetN$SetNIterator.next() Activation Count : 240452
+Index : java.util.HashMap.hash(Object) Activation Count : 20125
+Index : java.lang.module.ModuleDescriptor$Exports.isQualified() Activation Count : 12970
+Index : java.lang.module.ModuleDescriptor$Provides.service() Activation Count : 146
+Index : java.lang.Byte.toUnsignedInt(byte) Activation Count : 25556
+Index : java.util.HashMap.putVal(int, Activation Count : 56206
+Index : java.util.HashMap$Node.<init>(int, Activation Count : 355
+Index : java.lang.String.equals(Object) Activation Count : 6934
+Index : java.util.KeyValueHolder.getKey() Activation Count : 130
+Index : java.util.KeyValueHolder.getValue() Activation Count : 58
+Index : java.lang.module.ModuleDescriptor.packages() Activation Count : 296
+Index : java.lang.module.ResolvedModule.reference() Activation Count : 560
+Index : java.lang.module.ModuleDescriptor$Version.toString() Activation Count : 60
+Index : java.lang.AbstractStringBuilder.length() Activation Count : 1118
+Index : java.util.HashMap.newNode(int, Activation Count : 8370
+Index : java.util.HashMap.afterNodeInsertion(boolean) Activation Count : 1674
+Index : java.util.HashMap.resize() Activation Count : 13548
+Index : java.lang.module.ResolvedModule.configuration() Activation Count : 94
+Index : java.lang.module.ModuleDescriptor.isOpen() Activation Count : 38
+Index : java.util.HashMap.size() Activation Count : 28
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.width() Activation Count : 1624
+Index : jdk.internal.classfile.impl.SplitConstantPool.size() Activation Count : 4092
+Index : java.lang.invoke.MethodType.ptypes() Activation Count : 200
+Index : java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8() Activation Count : 55
+Index : java.lang.AbstractStringBuilder.getValue() Activation Count : 418
+Index : java.lang.StringLatin1.equals(byte[], Activation Count : 18423
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.constantPool() Activation Count : 1408
+Index : jdk.internal.classfile.impl.RawBytecodeHelper.bci() Activation Count : 2848
+Index : java.util.zip.Inflater$InflaterZStreamRef.address() Activation Count : 252
+Index : java.lang.String.coder() Activation Count : 15780
+Index : java.security.ProtectionDomain.getCodeSource() Activation Count : 104
+Index : jdk.internal.util.Preconditions.checkIndex(int, Activation Count : 3720
+Index : java.lang.String.value() Activation Count : 866
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString() Activation Count : 738
+Index : jdk.internal.util.ArraysSupport.unsignedHashCode(int, Activation Count : 27892
+Index : java.net.URL.getProtocol() Activation Count : 22
+Index : jdk.internal.classfile.impl.BufWriterImpl.size() Activation Count : 508
+Index : java.lang.Class.getModule() Activation Count : 6
+Index : java.lang.Integer.intValue() Activation Count : 74182
+Index : havlak.BasicBlock.customHash() Activation Count : 13312
+Index : havlak.UnionFindNode.getDfsNumber() Activation Count : 98416
+Index : havlak.UnionFindNode.getBb() Activation Count : 61804
+Index : havlak.BasicBlock.getOutEdges() Activation Count : 10752
+Index : havlak.BasicBlock.getInEdges() Activation Count : 13312
+Index : havlak.UnionFindNode.getLoop() Activation Count : 16328
+Index : havlak.UnionFindNode.union(UnionFindNode) Activation Count : 13314
+Index : havlak.SimpleLoop.setCounter(int) Activation Count : 26884
+Index : havlak.UnionFindNode.setLoop(SimpleLoop) Activation Count : 13316
+Index : havlak.ControlFlowGraph.getStartBasicBlock() Activation Count : 2394
+Index : som.Vector.append(Object) Activation Count : 2070387
+Index : som.Vector.size() Activation Count : 163134
+Index : som.Vector.<init>(int) Activation Count : 256034
+Index : som.Vector.at(int) Activation Count : 137693
+Index : som.Vector.forEach(ForEachInterface) Activation Count : 450539227
+Index : som.Dictionary.hash(Dictionary$CustomHash) Activation Count : 59525
+Index : som.Dictionary.getBucketIdx(int) Activation Count : 47620
+Index : havlak.ControlFlowGraph.getBasicBlocks() Activation Count : 1068
+Index : som.Vector.<init>() Activation Count : 3613825
+Index : java.lang.invoke.DirectMethodHandle.allocateInstance(Object) Activation Count : 168
+Index : java.lang.invoke.DirectMethodHandle.constructorMethod(Object) Activation Count : 36
+Index : java.lang.invoke.Invokers$Holder.linkToTargetMethod(Object, Activation Count : 64242
+Index : java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(Object, Activation Count : 406889
+Index : som.IdentityDictionary$IdEntry.match(int, Activation Count : 13553
+Index : java.lang.Integer.valueOf(int) Activation Count : 118349
+Index : som.Vector.hasSome(TestInterface) Activation Count : 265842
+Index : som.Dictionary.at(Dictionary$CustomHash) Activation Count : 152133
+Index : som.Vector.isEmpty() Activation Count : 101616
+Index : havlak.HavlakLoopFinder.isAncestor(int, Activation Count : 71703
+Index : som.Set.add(Object) Activation Count : 13887845
+Index : som.Set.hasSome(TestInterface) Activation Count : 176
+Index : som.Dictionary.atPut(Dictionary$CustomHash, Activation Count : 143547
+Index : som.Set.<init>() Activation Count : 112360
+Index : havlak.HavlakLoopFinder$2.apply(Object) Activation Count : 14539263560
+Index : havlak.UnionFindNode.findSet() Activation Count : 13200
+Index : havlak.UnionFindNode$$Lambda/0x00000000290456b0.<init>(UnionFindNode) Activation Count : 9984
+Index : havlak.HavlakLoopFinder.doDFS(BasicBlock, Activation Count : 18266915138
+Index : havlak.HavlakLoopFinder$4.apply(Object) Activation Count : 9708995
+Index : havlak.HavlakLoopFinder$4.apply(Integer) Activation Count : 60
+Index : havlak.UnionFindNode.<init>() Activation Count : 5700
+Index : havlak.HavlakLoopFinder$1.apply(Object) Activation Count : 15600
+Index : havlak.HavlakLoopFinder$1.apply(BasicBlock) Activation Count : 15
+Index : havlak.HavlakLoopFinder.processEdges(BasicBlock, Activation Count : 136105
+Index : havlak.HavlakLoopFinder.stepD(int, Activation Count : 141387
+Index : havlak.HavlakLoopFinder$3.<init>(HavlakLoopFinder, Activation Count : 19986
+Index : havlak.HavlakLoopFinder.findLoops() Activation Count : 844883
+Index : havlak.HavlakLoopFinder.findLoops()-Re-Comp Activation Count : 57168998
+Index : havlak.HavlakLoopFinder$5.apply(Object) Activation Count : 392144
+Index : havlak.HavlakLoopFinder.identifyEdges(int) Activation Count : 8412346672
+Index : som.IdentitySet.<init>() Activation Count : 153218
+Index : java.lang.Integer.equals(Object) Activation Count : 279761080
+Index : havlak.SimpleLoop.<init>(BasicBlock, Activation Count : 129
+Index : havlak.LoopStructureGraph.createNewLoop(BasicBlock, Activation Count : 3419830416
+Index : havlak.HavlakLoopFinder.setLoopAttributes(int, Activation Count : 6631290724
+Index : havlak.HavlakLoopFinder$5.<init>(HavlakLoopFinder, Activation Count : 8
+Index : havlak.LoopTesterApp.findLoops(LoopStructureGraph) Activation Count : 5092688
+Index : som.Vector.at(int)-Re-Comp Activation Count : 53436607
+Index : havlak.ControlFlowGraph.getNumNodes() Activation Count : 30970
+Index : havlak.ControlFlowGraph.createNode(int) Activation Count : 234274
+Index : havlak.BasicBlockEdge.<init>(ControlFlowGraph, Activation Count : 258186164
+Index : som.IdentityDictionary.newEntry(Dictionary$CustomHash, Activation Count : 1156120
+Index : havlak.HavlakLoopFinder$1.apply(Object)-Re-Comp Activation Count : 200964
+Index : som.Vector.removeFirst() Activation Count : 51770
+Index : som.Set.size() Activation Count : 25880
+Index : havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int, Activation Count : 153084
+Index : som.Set.forEach(ForEachInterface) Activation Count : 205934
+Index : som.Set.contains(Object) Activation Count : 18212
+Index : som.Set.add(Object)-Re-Comp Activation Count : 470446087783
+Index : havlak.HavlakLoopFinder$4.apply(Object)-Re-Comp Activation Count : 2994
+Index : havlak.HavlakLoopFinder$4.apply(Integer)-Re-Comp Activation Count : 30111444088
+Index : havlak.HavlakLoopFinder.findLoops()-Re-Comp Activation Count : 25859
+Index : havlak.HavlakLoopFinder.findLoops()-Re-Comp Activation Count : 84410209166
+Index : som.Dictionary.transferEntries(Dictionary$Entry[]) Activation Count : 89067
+Index : som.Dictionary.transferEntries(Dictionary$Entry[])-Re-Comp Activation Count : 134953212
+Index : java.security.CodeSource.getLocationNoFragString() Activation Count : 10
+Index : havlak.SimpleLoop.isRoot() Activation Count : 23554
+Index : havlak.SimpleLoop.getParent() Activation Count : 23550
+Index : havlak.LoopStructureGraph$1.apply(Object) Activation Count : 366313
+Index : havlak.LoopStructureGraph$1.apply(SimpleLoop) Activation Count : 4
+Index : havlak.SimpleLoop.getNestingLevel() Activation Count : 26880
+Index : havlak.SimpleLoop.setDepthLevel(int) Activation Count : 13312
+Index : havlak.SimpleLoop.getChildren() Activation Count : 13312
+Index : java.lang.Math.max(int, Activation Count : 1300
+Index : havlak.SimpleLoop.setNestingLevel(int) Activation Count : 155
+Index : havlak.LoopStructureGraph.calculateNestingLevelRec(SimpleLoop, Activation Count : 5489
+Index : havlak.LoopStructureGraph$2.apply(Object) Activation Count : 489169830
+Index : jdk.internal.util.WeakReferenceKey.hashCode() Activation Count : 114
+Index : java.util.ArrayList.size() Activation Count : 244
+Index : jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool() Activation Count : 308
+Index : jdk.internal.classfile.impl.AbstractPoolEntry.hashCode() Activation Count : 196
+Index : jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface() Activation Count : 79
+Index : java.lang.invoke.MethodHandle.type() Activation Count : 34
+Index : java.lang.String.length() Activation Count : 33900
+Index : jdk.internal.constant.PrimitiveClassDescImpl.descriptorString() Activation Count : 202
+Index : jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag() Activation Count : 77
+Index : java.lang.invoke.MethodTypeForm.erasedType() Activation Count : 42
+Index : havlak.LoopTesterApp.addDummyLoops(int) Activation Count : 1266112
+Index : havlak.LoopTesterApp.addDummyLoops(int)-Re-Comp Activation Count : 993468698
+Index : havlak.ControlFlowGraph.createNode(int)-Re-Comp Activation Count : 205553875
+Index : havlak.LoopTesterApp.buildConnect(int, Activation Count : 146532
+Index : havlak.LoopStructureGraph$1.apply(Object)-Re-Comp Activation Count : 213903473
+Index : havlak.LoopTesterApp.buildStraight(int, Activation Count : 325800
+Index : java.lang.Math.min(int, Activation Count : 5716
+Index : java.util.Arrays.copyOf(Object[], Activation Count : 91725515
+Index : havlak.LoopTesterApp.buildDiamond(int) Activation Count : 162816
+Index : som.Dictionary.splitBucket(Dictionary$Entry[], Activation Count : 8320967
+Index : havlak.LoopTesterApp.buildBaseLoop(int) Activation Count : 20959576
+Index : som.Dictionary.resize() Activation Count : 4463526134
+Index : java.nio.Buffer.position() Activation Count : 3788
+Index : havlak.LoopTesterApp.constructCFG(int, Activation Count : 1430
+Index : havlak.LoopTesterApp.constructCFG(int,-Re-Comp Activation Count : 2099330
+Index : java.nio.Buffer.limit() Activation Count : 2780
+Index : havlak.SimpleLoop.<init>(BasicBlock,-Re-Comp Activation Count : 56508
+Index : havlak.SimpleLoop.setNestingLevel(int)-Re-Comp Activation Count : 6448
+Index : java.nio.Buffer.capacity() Activation Count : 752
+Index : java.nio.charset.CharsetEncoder.maxBytesPerChar() Activation Count : 752
+Index : havlak.LoopStructureGraph.<init>() Activation Count : 1720032
+Index : havlak.LoopTesterApp.main(int, Activation Count : 563537874
+Index : havlak.LoopTesterApp.main(int,-Re-Comp Activation Count : 41940
+Index : java.lang.StringLatin1.inflate(byte[], Activation Count : 16012
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[], Activation Count : 186
+Index : java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp Activation Count : 4200
+Index : java.lang.constant.ClassDesc.isPrimitive() Activation Count : 13
+Index : java.lang.invoke.MethodHandles$Lookup.lookupClass() Activation Count : 8
+-- Havlak completed successfully.

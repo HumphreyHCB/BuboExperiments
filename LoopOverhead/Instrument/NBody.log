@@ -1,0 +1,625 @@
+========================================
+Benchmark : NBody
+Timestamp : 2025-11-17T14:30:24+00:00
+Java      : openjdk version "25" 2025-09-16 OpenJDK Runtime Environment GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06) OpenJDK 64-Bit Server VM GraalVM CE 25.1.0-dev+37.1 (build 25+37-jvmci-b06, mixed mode, sharing) 
+Cmd:
+  ./latest_graalvm_home/bin/java   -Djdk.graal.TrackNodeSourcePosition=true   -Djdk.graal.EnableProfiler=false   -Djdk.graal.BuboLIRPhase=true   -XX:+UnlockExperimentalVMOptions   -XX:+UnlockDiagnosticVMOptions   -XX:+EnableJVMCI   -XX:+UseJVMCICompiler   -XX:+UseJVMCINativeLibrary   -XX:-TieredCompilation   -XX:-BackgroundCompilation   --add-exports=jdk.graal.compiler/jdk.graal.compiler.hotspot.meta.Bubo=ALL-UNNAMED   --add-exports=jdk.graal.compiler/jdk.graal.compiler.phases.common=ALL-UNNAMED   -cp   /home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar   Harness   NBody   500   1200000 
+========================================
+Starting NBody benchmark ...
+NBody: iterations=1 runtime: 432595us
+NBody: iterations=2 runtime: 108212us
+NBody: iterations=3 runtime: 412813us
+NBody: iterations=4 runtime: 108350us
+NBody: iterations=5 runtime: 107390us
+NBody: iterations=6 runtime: 108337us
+NBody: iterations=7 runtime: 108164us
+NBody: iterations=8 runtime: 108325us
+NBody: iterations=9 runtime: 108231us
+NBody: iterations=10 runtime: 108277us
+NBody: iterations=11 runtime: 108328us
+NBody: iterations=12 runtime: 108336us
+NBody: iterations=13 runtime: 108350us
+NBody: iterations=14 runtime: 108339us
+NBody: iterations=15 runtime: 108343us
+NBody: iterations=16 runtime: 108395us
+NBody: iterations=17 runtime: 107836us
+NBody: iterations=18 runtime: 108249us
+NBody: iterations=19 runtime: 108210us
+NBody: iterations=20 runtime: 108208us
+NBody: iterations=21 runtime: 108109us
+NBody: iterations=22 runtime: 108201us
+NBody: iterations=23 runtime: 107951us
+NBody: iterations=24 runtime: 108187us
+NBody: iterations=25 runtime: 108284us
+NBody: iterations=26 runtime: 108420us
+NBody: iterations=27 runtime: 116710us
+NBody: iterations=28 runtime: 108375us
+NBody: iterations=29 runtime: 120156us
+NBody: iterations=30 runtime: 108367us
+NBody: iterations=31 runtime: 108032us
+NBody: iterations=32 runtime: 108378us
+NBody: iterations=33 runtime: 108269us
+NBody: iterations=34 runtime: 108344us
+NBody: iterations=35 runtime: 116637us
+NBody: iterations=36 runtime: 108378us
+NBody: iterations=37 runtime: 108254us
+NBody: iterations=38 runtime: 107994us
+NBody: iterations=39 runtime: 107834us
+NBody: iterations=40 runtime: 109694us
+NBody: iterations=41 runtime: 121846us
+NBody: iterations=42 runtime: 108031us
+NBody: iterations=43 runtime: 107981us
+NBody: iterations=44 runtime: 115289us
+NBody: iterations=45 runtime: 110241us
+NBody: iterations=46 runtime: 157485us
+NBody: iterations=47 runtime: 128914us
+NBody: iterations=48 runtime: 108368us
+NBody: iterations=49 runtime: 108384us
+NBody: iterations=50 runtime: 108137us
+NBody: iterations=51 runtime: 107903us
+NBody: iterations=52 runtime: 108286us
+NBody: iterations=53 runtime: 108058us
+NBody: iterations=54 runtime: 108440us
+NBody: iterations=55 runtime: 108159us
+NBody: iterations=56 runtime: 108134us
+NBody: iterations=57 runtime: 108162us
+NBody: iterations=58 runtime: 108028us
+NBody: iterations=59 runtime: 108091us
+NBody: iterations=60 runtime: 108417us
+NBody: iterations=61 runtime: 108308us
+NBody: iterations=62 runtime: 108186us
+NBody: iterations=63 runtime: 108171us
+NBody: iterations=64 runtime: 108328us
+NBody: iterations=65 runtime: 108241us
+NBody: iterations=66 runtime: 108298us
+NBody: iterations=67 runtime: 108127us
+NBody: iterations=68 runtime: 107875us
+NBody: iterations=69 runtime: 107617us
+NBody: iterations=70 runtime: 108353us
+NBody: iterations=71 runtime: 108045us
+NBody: iterations=72 runtime: 108346us
+NBody: iterations=73 runtime: 108948us
+NBody: iterations=74 runtime: 112016us
+NBody: iterations=75 runtime: 108229us
+NBody: iterations=76 runtime: 108291us
+NBody: iterations=77 runtime: 108389us
+NBody: iterations=78 runtime: 107989us
+NBody: iterations=79 runtime: 108014us
+NBody: iterations=80 runtime: 108404us
+NBody: iterations=81 runtime: 108146us
+NBody: iterations=82 runtime: 123115us
+NBody: iterations=83 runtime: 108509us
+NBody: iterations=84 runtime: 107882us
+NBody: iterations=85 runtime: 108011us
+NBody: iterations=86 runtime: 125559us
+NBody: iterations=87 runtime: 156446us
+NBody: iterations=88 runtime: 148827us
+NBody: iterations=89 runtime: 108358us
+NBody: iterations=90 runtime: 108357us
+NBody: iterations=91 runtime: 108196us
+NBody: iterations=92 runtime: 108369us
+NBody: iterations=93 runtime: 108422us
+NBody: iterations=94 runtime: 108373us
+NBody: iterations=95 runtime: 108251us
+NBody: iterations=96 runtime: 108376us
+NBody: iterations=97 runtime: 107843us
+NBody: iterations=98 runtime: 108252us
+NBody: iterations=99 runtime: 107711us
+NBody: iterations=100 runtime: 108135us
+NBody: iterations=101 runtime: 107796us
+NBody: iterations=102 runtime: 108120us
+NBody: iterations=103 runtime: 107156us
+NBody: iterations=104 runtime: 108335us
+NBody: iterations=105 runtime: 108380us
+NBody: iterations=106 runtime: 108273us
+NBody: iterations=107 runtime: 108300us
+NBody: iterations=108 runtime: 108281us
+NBody: iterations=109 runtime: 108404us
+NBody: iterations=110 runtime: 108378us
+NBody: iterations=111 runtime: 108096us
+NBody: iterations=112 runtime: 108304us
+NBody: iterations=113 runtime: 108383us
+NBody: iterations=114 runtime: 108334us
+NBody: iterations=115 runtime: 108229us
+NBody: iterations=116 runtime: 108312us
+NBody: iterations=117 runtime: 119781us
+NBody: iterations=118 runtime: 113791us
+NBody: iterations=119 runtime: 107812us
+NBody: iterations=120 runtime: 107494us
+NBody: iterations=121 runtime: 108187us
+NBody: iterations=122 runtime: 108368us
+NBody: iterations=123 runtime: 108184us
+NBody: iterations=124 runtime: 107903us
+NBody: iterations=125 runtime: 108183us
+NBody: iterations=126 runtime: 107753us
+NBody: iterations=127 runtime: 107682us
+NBody: iterations=128 runtime: 128735us
+NBody: iterations=129 runtime: 116602us
+NBody: iterations=130 runtime: 108399us
+NBody: iterations=131 runtime: 108046us
+NBody: iterations=132 runtime: 107819us
+NBody: iterations=133 runtime: 108359us
+NBody: iterations=134 runtime: 108339us
+NBody: iterations=135 runtime: 128911us
+NBody: iterations=136 runtime: 108081us
+NBody: iterations=137 runtime: 108275us
+NBody: iterations=138 runtime: 120695us
+NBody: iterations=139 runtime: 109869us
+NBody: iterations=140 runtime: 107814us
+NBody: iterations=141 runtime: 108351us
+NBody: iterations=142 runtime: 108262us
+NBody: iterations=143 runtime: 115158us
+NBody: iterations=144 runtime: 107335us
+NBody: iterations=145 runtime: 107860us
+NBody: iterations=146 runtime: 108347us
+NBody: iterations=147 runtime: 107359us
+NBody: iterations=148 runtime: 108297us
+NBody: iterations=149 runtime: 116803us
+NBody: iterations=150 runtime: 108324us
+NBody: iterations=151 runtime: 108362us
+NBody: iterations=152 runtime: 108027us
+NBody: iterations=153 runtime: 108376us
+NBody: iterations=154 runtime: 108373us
+NBody: iterations=155 runtime: 108430us
+NBody: iterations=156 runtime: 108372us
+NBody: iterations=157 runtime: 108425us
+NBody: iterations=158 runtime: 108296us
+NBody: iterations=159 runtime: 108345us
+NBody: iterations=160 runtime: 108367us
+NBody: iterations=161 runtime: 108341us
+NBody: iterations=162 runtime: 107789us
+NBody: iterations=163 runtime: 114090us
+NBody: iterations=164 runtime: 108107us
+NBody: iterations=165 runtime: 108283us
+NBody: iterations=166 runtime: 121183us
+NBody: iterations=167 runtime: 107874us
+NBody: iterations=168 runtime: 108356us
+NBody: iterations=169 runtime: 108503us
+NBody: iterations=170 runtime: 108372us
+NBody: iterations=171 runtime: 108298us
+NBody: iterations=172 runtime: 108440us
+NBody: iterations=173 runtime: 108435us
+NBody: iterations=174 runtime: 108375us
+NBody: iterations=175 runtime: 108420us
+NBody: iterations=176 runtime: 108214us
+NBody: iterations=177 runtime: 108149us
+NBody: iterations=178 runtime: 108175us
+NBody: iterations=179 runtime: 108058us
+NBody: iterations=180 runtime: 108313us
+NBody: iterations=181 runtime: 108389us
+NBody: iterations=182 runtime: 121924us
+NBody: iterations=183 runtime: 117071us
+NBody: iterations=184 runtime: 108297us
+NBody: iterations=185 runtime: 108477us
+NBody: iterations=186 runtime: 108393us
+NBody: iterations=187 runtime: 108111us
+NBody: iterations=188 runtime: 115522us
+NBody: iterations=189 runtime: 108339us
+NBody: iterations=190 runtime: 108339us
+NBody: iterations=191 runtime: 108522us
+NBody: iterations=192 runtime: 108401us
+NBody: iterations=193 runtime: 108270us
+NBody: iterations=194 runtime: 108206us
+NBody: iterations=195 runtime: 108109us
+NBody: iterations=196 runtime: 108745us
+NBody: iterations=197 runtime: 108413us
+NBody: iterations=198 runtime: 108189us
+NBody: iterations=199 runtime: 108114us
+NBody: iterations=200 runtime: 130288us
+NBody: iterations=201 runtime: 109469us
+NBody: iterations=202 runtime: 115248us
+NBody: iterations=203 runtime: 108633us
+NBody: iterations=204 runtime: 108411us
+NBody: iterations=205 runtime: 113496us
+NBody: iterations=206 runtime: 108378us
+NBody: iterations=207 runtime: 113851us
+NBody: iterations=208 runtime: 108230us
+NBody: iterations=209 runtime: 108403us
+NBody: iterations=210 runtime: 108270us
+NBody: iterations=211 runtime: 108457us
+NBody: iterations=212 runtime: 108464us
+NBody: iterations=213 runtime: 107955us
+NBody: iterations=214 runtime: 108150us
+NBody: iterations=215 runtime: 108006us
+NBody: iterations=216 runtime: 107975us
+NBody: iterations=217 runtime: 107983us
+NBody: iterations=218 runtime: 108410us
+NBody: iterations=219 runtime: 108439us
+NBody: iterations=220 runtime: 108572us
+NBody: iterations=221 runtime: 108363us
+NBody: iterations=222 runtime: 108367us
+NBody: iterations=223 runtime: 108295us
+NBody: iterations=224 runtime: 108116us
+NBody: iterations=225 runtime: 108454us
+NBody: iterations=226 runtime: 108361us
+NBody: iterations=227 runtime: 108429us
+NBody: iterations=228 runtime: 108372us
+NBody: iterations=229 runtime: 108495us
+NBody: iterations=230 runtime: 108581us
+NBody: iterations=231 runtime: 108302us
+NBody: iterations=232 runtime: 108451us
+NBody: iterations=233 runtime: 108414us
+NBody: iterations=234 runtime: 108265us
+NBody: iterations=235 runtime: 112841us
+NBody: iterations=236 runtime: 108374us
+NBody: iterations=237 runtime: 108439us
+NBody: iterations=238 runtime: 108287us
+NBody: iterations=239 runtime: 108446us
+NBody: iterations=240 runtime: 108416us
+NBody: iterations=241 runtime: 115609us
+NBody: iterations=242 runtime: 108353us
+NBody: iterations=243 runtime: 108309us
+NBody: iterations=244 runtime: 108401us
+NBody: iterations=245 runtime: 123739us
+NBody: iterations=246 runtime: 108102us
+NBody: iterations=247 runtime: 108289us
+NBody: iterations=248 runtime: 108311us
+NBody: iterations=249 runtime: 117486us
+NBody: iterations=250 runtime: 108299us
+NBody: iterations=251 runtime: 108400us
+NBody: iterations=252 runtime: 108290us
+NBody: iterations=253 runtime: 108188us
+NBody: iterations=254 runtime: 108194us
+NBody: iterations=255 runtime: 108449us
+NBody: iterations=256 runtime: 108421us
+NBody: iterations=257 runtime: 120568us
+NBody: iterations=258 runtime: 108221us
+NBody: iterations=259 runtime: 108341us
+NBody: iterations=260 runtime: 108377us
+NBody: iterations=261 runtime: 108383us
+NBody: iterations=262 runtime: 107594us
+NBody: iterations=263 runtime: 108353us
+NBody: iterations=264 runtime: 108392us
+NBody: iterations=265 runtime: 108074us
+NBody: iterations=266 runtime: 108471us
+NBody: iterations=267 runtime: 108318us
+NBody: iterations=268 runtime: 108191us
+NBody: iterations=269 runtime: 108140us
+NBody: iterations=270 runtime: 108124us
+NBody: iterations=271 runtime: 108059us
+NBody: iterations=272 runtime: 108446us
+NBody: iterations=273 runtime: 108418us
+NBody: iterations=274 runtime: 108151us
+NBody: iterations=275 runtime: 108420us
+NBody: iterations=276 runtime: 107954us
+NBody: iterations=277 runtime: 108145us
+NBody: iterations=278 runtime: 112793us
+NBody: iterations=279 runtime: 115591us
+NBody: iterations=280 runtime: 108272us
+NBody: iterations=281 runtime: 108318us
+NBody: iterations=282 runtime: 108365us
+NBody: iterations=283 runtime: 108427us
+NBody: iterations=284 runtime: 108201us
+NBody: iterations=285 runtime: 108428us
+NBody: iterations=286 runtime: 108378us
+NBody: iterations=287 runtime: 108029us
+NBody: iterations=288 runtime: 110130us
+NBody: iterations=289 runtime: 108154us
+NBody: iterations=290 runtime: 108292us
+NBody: iterations=291 runtime: 108334us
+NBody: iterations=292 runtime: 108203us
+NBody: iterations=293 runtime: 108410us
+NBody: iterations=294 runtime: 107939us
+NBody: iterations=295 runtime: 108307us
+NBody: iterations=296 runtime: 108162us
+NBody: iterations=297 runtime: 108265us
+NBody: iterations=298 runtime: 108405us
+NBody: iterations=299 runtime: 109197us
+NBody: iterations=300 runtime: 108012us
+NBody: iterations=301 runtime: 108464us
+NBody: iterations=302 runtime: 108383us
+NBody: iterations=303 runtime: 108244us
+NBody: iterations=304 runtime: 108336us
+NBody: iterations=305 runtime: 108361us
+NBody: iterations=306 runtime: 108342us
+NBody: iterations=307 runtime: 108479us
+NBody: iterations=308 runtime: 108313us
+NBody: iterations=309 runtime: 108061us
+NBody: iterations=310 runtime: 108444us
+NBody: iterations=311 runtime: 107700us
+NBody: iterations=312 runtime: 108254us
+NBody: iterations=313 runtime: 108307us
+NBody: iterations=314 runtime: 108427us
+NBody: iterations=315 runtime: 108303us
+NBody: iterations=316 runtime: 116783us
+NBody: iterations=317 runtime: 110091us
+NBody: iterations=318 runtime: 108323us
+NBody: iterations=319 runtime: 108308us
+NBody: iterations=320 runtime: 108235us
+NBody: iterations=321 runtime: 108166us
+NBody: iterations=322 runtime: 108163us
+NBody: iterations=323 runtime: 108416us
+NBody: iterations=324 runtime: 108339us
+NBody: iterations=325 runtime: 108384us
+NBody: iterations=326 runtime: 108329us
+NBody: iterations=327 runtime: 108462us
+NBody: iterations=328 runtime: 108410us
+NBody: iterations=329 runtime: 108225us
+NBody: iterations=330 runtime: 108488us
+NBody: iterations=331 runtime: 108417us
+NBody: iterations=332 runtime: 108256us
+NBody: iterations=333 runtime: 108396us
+NBody: iterations=334 runtime: 108048us
+NBody: iterations=335 runtime: 108451us
+NBody: iterations=336 runtime: 107983us
+NBody: iterations=337 runtime: 108298us
+NBody: iterations=338 runtime: 108463us
+NBody: iterations=339 runtime: 108396us
+NBody: iterations=340 runtime: 108379us
+NBody: iterations=341 runtime: 108409us
+NBody: iterations=342 runtime: 108464us
+NBody: iterations=343 runtime: 108407us
+NBody: iterations=344 runtime: 108332us
+NBody: iterations=345 runtime: 108198us
+NBody: iterations=346 runtime: 108131us
+NBody: iterations=347 runtime: 108473us
+NBody: iterations=348 runtime: 108427us
+NBody: iterations=349 runtime: 124750us
+NBody: iterations=350 runtime: 111179us
+NBody: iterations=351 runtime: 108285us
+NBody: iterations=352 runtime: 133732us
+NBody: iterations=353 runtime: 108275us
+NBody: iterations=354 runtime: 108382us
+NBody: iterations=355 runtime: 108449us
+NBody: iterations=356 runtime: 108590us
+NBody: iterations=357 runtime: 108452us
+NBody: iterations=358 runtime: 107879us
+NBody: iterations=359 runtime: 108397us
+NBody: iterations=360 runtime: 108181us
+NBody: iterations=361 runtime: 108361us
+NBody: iterations=362 runtime: 108400us
+NBody: iterations=363 runtime: 108104us
+NBody: iterations=364 runtime: 108447us
+NBody: iterations=365 runtime: 108490us
+NBody: iterations=366 runtime: 108294us
+NBody: iterations=367 runtime: 113299us
+NBody: iterations=368 runtime: 114992us
+NBody: iterations=369 runtime: 108352us
+NBody: iterations=370 runtime: 108407us
+NBody: iterations=371 runtime: 108147us
+NBody: iterations=372 runtime: 108339us
+NBody: iterations=373 runtime: 108325us
+NBody: iterations=374 runtime: 108603us
+NBody: iterations=375 runtime: 108319us
+NBody: iterations=376 runtime: 108413us
+NBody: iterations=377 runtime: 108286us
+NBody: iterations=378 runtime: 108456us
+NBody: iterations=379 runtime: 108440us
+NBody: iterations=380 runtime: 108431us
+NBody: iterations=381 runtime: 108144us
+NBody: iterations=382 runtime: 108362us
+NBody: iterations=383 runtime: 108147us
+NBody: iterations=384 runtime: 116574us
+NBody: iterations=385 runtime: 116814us
+NBody: iterations=386 runtime: 108312us
+NBody: iterations=387 runtime: 108510us
+NBody: iterations=388 runtime: 108430us
+NBody: iterations=389 runtime: 108218us
+NBody: iterations=390 runtime: 108352us
+NBody: iterations=391 runtime: 108435us
+NBody: iterations=392 runtime: 108270us
+NBody: iterations=393 runtime: 107903us
+NBody: iterations=394 runtime: 108482us
+NBody: iterations=395 runtime: 108354us
+NBody: iterations=396 runtime: 108414us
+NBody: iterations=397 runtime: 108387us
+NBody: iterations=398 runtime: 108418us
+NBody: iterations=399 runtime: 107617us
+NBody: iterations=400 runtime: 108293us
+NBody: iterations=401 runtime: 108022us
+NBody: iterations=402 runtime: 108437us
+NBody: iterations=403 runtime: 108427us
+NBody: iterations=404 runtime: 108173us
+NBody: iterations=405 runtime: 108454us
+NBody: iterations=406 runtime: 108124us
+NBody: iterations=407 runtime: 108237us
+NBody: iterations=408 runtime: 108111us
+NBody: iterations=409 runtime: 108237us
+NBody: iterations=410 runtime: 108241us
+NBody: iterations=411 runtime: 108347us
+NBody: iterations=412 runtime: 108289us
+NBody: iterations=413 runtime: 108288us
+NBody: iterations=414 runtime: 108443us
+NBody: iterations=415 runtime: 108428us
+NBody: iterations=416 runtime: 108289us
+NBody: iterations=417 runtime: 108283us
+NBody: iterations=418 runtime: 108094us
+NBody: iterations=419 runtime: 108226us
+NBody: iterations=420 runtime: 108385us
+NBody: iterations=421 runtime: 139251us
+NBody: iterations=422 runtime: 108378us
+NBody: iterations=423 runtime: 108439us
+NBody: iterations=424 runtime: 108024us
+NBody: iterations=425 runtime: 113680us
+NBody: iterations=426 runtime: 108386us
+NBody: iterations=427 runtime: 108370us
+NBody: iterations=428 runtime: 108423us
+NBody: iterations=429 runtime: 108505us
+NBody: iterations=430 runtime: 108318us
+NBody: iterations=431 runtime: 108338us
+NBody: iterations=432 runtime: 108333us
+NBody: iterations=433 runtime: 121150us
+NBody: iterations=434 runtime: 109515us
+NBody: iterations=435 runtime: 108387us
+NBody: iterations=436 runtime: 108222us
+NBody: iterations=437 runtime: 107998us
+NBody: iterations=438 runtime: 108477us
+NBody: iterations=439 runtime: 108033us
+NBody: iterations=440 runtime: 108120us
+NBody: iterations=441 runtime: 108219us
+NBody: iterations=442 runtime: 107998us
+NBody: iterations=443 runtime: 108348us
+NBody: iterations=444 runtime: 108604us
+NBody: iterations=445 runtime: 108455us
+NBody: iterations=446 runtime: 108413us
+NBody: iterations=447 runtime: 108482us
+NBody: iterations=448 runtime: 108376us
+NBody: iterations=449 runtime: 108458us
+NBody: iterations=450 runtime: 108381us
+NBody: iterations=451 runtime: 126921us
+NBody: iterations=452 runtime: 110985us
+NBody: iterations=453 runtime: 108466us
+NBody: iterations=454 runtime: 108427us
+NBody: iterations=455 runtime: 108398us
+NBody: iterations=456 runtime: 108398us
+NBody: iterations=457 runtime: 115243us
+NBody: iterations=458 runtime: 108595us
+NBody: iterations=459 runtime: 108459us
+NBody: iterations=460 runtime: 108311us
+NBody: iterations=461 runtime: 108320us
+NBody: iterations=462 runtime: 108460us
+NBody: iterations=463 runtime: 108418us
+NBody: iterations=464 runtime: 108985us
+NBody: iterations=465 runtime: 108402us
+NBody: iterations=466 runtime: 108361us
+NBody: iterations=467 runtime: 108453us
+NBody: iterations=468 runtime: 108346us
+NBody: iterations=469 runtime: 108465us
+NBody: iterations=470 runtime: 108287us
+NBody: iterations=471 runtime: 108440us
+NBody: iterations=472 runtime: 108246us
+NBody: iterations=473 runtime: 108432us
+NBody: iterations=474 runtime: 108261us
+NBody: iterations=475 runtime: 108474us
+NBody: iterations=476 runtime: 108441us
+NBody: iterations=477 runtime: 108441us
+NBody: iterations=478 runtime: 108419us
+NBody: iterations=479 runtime: 108232us
+NBody: iterations=480 runtime: 108225us
+NBody: iterations=481 runtime: 108618us
+NBody: iterations=482 runtime: 108333us
+NBody: iterations=483 runtime: 108425us
+NBody: iterations=484 runtime: 108503us
+NBody: iterations=485 runtime: 108175us
+NBody: iterations=486 runtime: 108355us
+NBody: iterations=487 runtime: 108382us
+NBody: iterations=488 runtime: 108372us
+NBody: iterations=489 runtime: 108116us
+NBody: iterations=490 runtime: 108276us
+NBody: iterations=491 runtime: 108450us
+NBody: iterations=492 runtime: 108457us
+NBody: iterations=493 runtime: 108389us
+NBody: iterations=494 runtime: 108482us
+NBody: iterations=495 runtime: 108397us
+NBody: iterations=496 runtime: 108338us
+NBody: iterations=497 runtime: 108154us
+NBody: iterations=498 runtime: 108298us
+NBody: iterations=499 runtime: 108414us
+NBody: iterations=500 runtime: 108151us
+NBody: iterations=500 average: 110849us total: 55424887us
+
+
+Total Runtime: 55424887us
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 235456 || Activation Count:4264 Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 6520 || Activation Count:172 Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 59 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3106 || Activation Count:46 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 69 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 27572 || Activation Count:14 Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 7014 || Activation Count:89 Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 9298 || Activation Count:191 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 86 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 7810 || Activation Count:46 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 109 (nbody.NBodySystem.advance(double)) loops:
+Found Encoding : 0:-1,1:0,2:-1
+├── Loop 0
+│   └── Loop 1
+└── Loop 2
+  loop 0 Cycles: 28544236 || Activation Count:35020 Source: -at nbody.NBodySystem.advance(double) [bci: 2] | -at nbody.NBodySystem.advance(double) [bci: 261]
+  loop 1 Cycles: 10194786 || Activation Count:175100 Source: -at nbody.NBodySystem.advance(double) [bci: 24] | -at nbody.NBodySystem.advance(double) [bci: 255]
+  loop 2 Cycles: 1062314 || Activation Count:35020 Source: -at nbody.NBodySystem.advance(double) [bci: 273] | -at nbody.NBodySystem.advance(double) [bci: 346]
+Comp 110 (NBody.innerBenchmarkLoop(int)) loops:
+Found Encoding : 1:-1,2:1,3:-1,0:-1,4:0,5:4,6:0
+├── Loop 1
+│   └── Loop 2
+├── Loop 3
+└── Loop 0
+    ├── Loop 4
+    │   └── Loop 5
+    └── Loop 6
+  loop 1 Cycles: 2332 || Activation Count:1 Source: -at nbody.NBodySystem.advance(double) [bci: 2]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 261]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 2 Cycles: 786 || Activation Count:5 Source: -at nbody.NBodySystem.advance(double) [bci: 24]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 255]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 3 Cycles: 268 || Activation Count:1 Source: -at nbody.NBodySystem.advance(double) [bci: 273]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 346]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 4 Cycles: 997102858 || Activation Count:1179519 Source: -at nbody.NBodySystem.advance(double) [bci: 2]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 261]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 5 Cycles: 343138468 || Activation Count:5897595 Source: -at nbody.NBodySystem.advance(double) [bci: 24]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 255]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 6 Cycles: 35821424 || Activation Count:1179519 Source: -at nbody.NBodySystem.advance(double) [bci: 273]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 346]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+Comp 124 (NBody.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 1:-1,2:1,3:-1,0:-1,10:-1,11:-1,6:-1,7:6,8:7,9:6,4:-1,5:4
+├── Loop 1
+│   └── Loop 2
+├── Loop 3
+├── Loop 0
+├── Loop 10
+├── Loop 11
+├── Loop 6
+│   ├── Loop 7
+│   │   └── Loop 8
+│   └── Loop 9
+└── Loop 4
+    └── Loop 5
+  loop 1 Cycles: 2320 || Activation Count:1 Source: -at nbody.NBodySystem.advance(double) [bci: 2]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 261]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 2 Cycles: 742 || Activation Count:5 Source: -at nbody.NBodySystem.advance(double) [bci: 24]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 255]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 3 Cycles: 1144 || Activation Count:1 Source: -at nbody.NBodySystem.advance(double) [bci: 273]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 346]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 4 Cycles: 1114 || Activation Count:1 Source: -at nbody.NBodySystem.energy() [bci: 4]
+-at NBody.innerBenchmarkLoop(int) [bci: 30] | -at nbody.NBodySystem.energy() [bci: 183]
+-at NBody.innerBenchmarkLoop(int) [bci: 30]
+  loop 5 Cycles: 492 || Activation Count:5 Source: -at nbody.NBodySystem.energy() [bci: 74]
+-at NBody.innerBenchmarkLoop(int) [bci: 30] | -at nbody.NBodySystem.energy() [bci: 177]
+-at NBody.innerBenchmarkLoop(int) [bci: 30]
+  loop 6 Cycles: 1148007136 || Activation Count:1 Source: Source Missing | -at NBody.innerBenchmarkLoop(int) [bci: 28]
+  loop 7 Cycles: 944339708 || Activation Count:1184639 Source: -at nbody.NBodySystem.advance(double) [bci: 2]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 261]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 8 Cycles: 340476060 || Activation Count:5923195 Source: -at nbody.NBodySystem.advance(double) [bci: 24]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 255]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 9 Cycles: 35855508 || Activation Count:1184639 Source: -at nbody.NBodySystem.advance(double) [bci: 273]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 346]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+Comp 125 (NBody.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 180408209520 || Activation Count:497 Source: -at NBody.innerBenchmarkLoop(int) [bci: 10] | -at NBody.innerBenchmarkLoop(int) [bci: 28]
+Comp 135 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 13418 || Activation Count:182 Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 10000 || Activation Count:182 Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 8740 || Activation Count:182 Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+-- NBody completed successfully.

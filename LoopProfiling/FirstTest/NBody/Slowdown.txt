@@ -1,0 +1,70 @@
+NBody: iterations=50 average: 218406us total: 10920328us
+
+
+Total Runtime: 10920328us
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 245526 || Activation Count:4269 Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 5330 || Activation Count:153 Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3466 || Activation Count:46 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 70 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 28104 || Activation Count:9 Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 7952 || Activation Count:59 Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 10124 || Activation Count:187 Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 93 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 5670 || Activation Count:27 Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 107 (nbody.NBodySystem.advance(double)) loops:
+Found Encoding : 0:-1,1:0,2:-1
+├── Loop 0
+│   └── Loop 1
+└── Loop 2
+  loop 0 Cycles: 16032768 || Activation Count:19660 Source: -at nbody.NBodySystem.advance(double) [bci: 2] | -at nbody.NBodySystem.advance(double) [bci: 261]
+  loop 1 Cycles: 5624878 || Activation Count:98300 Source: -at nbody.NBodySystem.advance(double) [bci: 24] | -at nbody.NBodySystem.advance(double) [bci: 255]
+  loop 2 Cycles: 580378 || Activation Count:19660 Source: -at nbody.NBodySystem.advance(double) [bci: 273] | -at nbody.NBodySystem.advance(double) [bci: 346]
+Comp 108 (NBody.innerBenchmarkLoop(int)) loops:
+Found Encoding : 1:-1,2:1,3:-1,0:-1,4:0,5:4,6:0
+├── Loop 1
+│   └── Loop 2
+├── Loop 3
+└── Loop 0
+    ├── Loop 4
+    │   └── Loop 5
+    └── Loop 6
+  loop 1 Cycles: 2818 || Activation Count:1 Source: -at nbody.NBodySystem.advance(double) [bci: 2]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 261]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 2 Cycles: 1236 || Activation Count:5 Source: -at nbody.NBodySystem.advance(double) [bci: 24]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 255]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 3 Cycles: 106 || Activation Count:1 Source: -at nbody.NBodySystem.advance(double) [bci: 273]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 346]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 4 Cycles: 983617784 || Activation Count:1179519 Source: -at nbody.NBodySystem.advance(double) [bci: 2]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 261]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 5 Cycles: 346992272 || Activation Count:5897595 Source: -at nbody.NBodySystem.advance(double) [bci: 24]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 255]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 6 Cycles: 36900650 || Activation Count:1179519 Source: -at nbody.NBodySystem.advance(double) [bci: 273]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 346]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+Comp 109 (NBody.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 34617541890 || Activation Count:49 Source: -at NBody.innerBenchmarkLoop(int) [bci: 10] | -at NBody.innerBenchmarkLoop(int) [bci: 28]
+[hb478@LIN-HB478-1 vm]$ 
