@@ -1,0 +1,16 @@
+digraph CFG_43 {
+  rankdir=LR;
+  graph [fontsize=20, ranksep=1.5, nodesep=1.0, overlap=false, splines=true];
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  label="java.util.HashMap.newNode(int, Object, Object, HashMap$Node)";
+  labelloc=top;
+  labeljust=left;
+  b0 [label="B0\nLoop: <none>\n---\nSnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}\nHotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>", fillcolor="white"];
+  b1 [label="B1\nLoop: <none>\n---\nSnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}\nHotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>", fillcolor="white"];
+  b2 [label="B2\nLoop: <none>\n---\nSnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}", fillcolor="white"];
+  b3 [label="B3\nLoop: <none>\n---\nSnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}\nHotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>", fillcolor="white"];
+  b0 -> b1;
+  b0 -> b2;
+  b1 -> b3;
+  b2 -> b3;
+}

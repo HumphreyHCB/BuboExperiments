@@ -1,0 +1,30 @@
+digraph CFG_89 {
+  rankdir=LR;
+  graph [fontsize=20, ranksep=1.5, nodesep=1.0, overlap=false, splines=true];
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  label="BuboAgentCompilerMarkers.warmupMarkers()";
+  labelloc=top;
+  labeljust=left;
+  b0 [label="B0\nLoop: <none>\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="white"];
+  b1 [label="B1\nLoop: L0\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="lightblue"];
+  b2 [label="B2\nLoop: L0\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="lightblue"];
+  b3 [label="B3\nLoop: <none>\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="white"];
+  b4 [label="B4\nLoop: L1\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="lightgreen"];
+  b5 [label="B5\nLoop: L1\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="lightgreen"];
+  b6 [label="B6\nLoop: <none>\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="white"];
+  b7 [label="B7\nLoop: L2\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="lightpink"];
+  b8 [label="B8\nLoop: L2\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="lightpink"];
+  b9 [label="B9\nLoop: <none>\n---\nHotSpotMethod<BuboAgentCompilerMarkers.warmupMarkers()>", fillcolor="white"];
+  b0 -> b1;
+  b1 -> b2;
+  b1 -> b3;
+  b2 -> b1;
+  b3 -> b4;
+  b4 -> b5;
+  b4 -> b7;
+  b5 -> b4;
+  b6 -> b7;
+  b7 -> b8;
+  b7 -> b9;
+  b8 -> b7;
+}

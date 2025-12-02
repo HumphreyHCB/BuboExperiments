@@ -1,0 +1,29 @@
+digraph CFG_14 {
+  rankdir=LR;
+  graph [fontsize=20, ranksep=1.5, nodesep=1.0, overlap=false, splines=true];
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  label="java.lang.String.hashCode()";
+  labelloc=top;
+  labeljust=left;
+  b0 [label="B0\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>", fillcolor="white"];
+  b1 [label="B1\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>", fillcolor="white"];
+  b2 [label="B2\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>\nHotSpotMethod<StringLatin1.hashCode(byte[])>", fillcolor="white"];
+  b3 [label="B3\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>\nHotSpotMethod<StringLatin1.hashCode(byte[])>", fillcolor="white"];
+  b4 [label="B4\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>", fillcolor="white"];
+  b5 [label="B5\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>", fillcolor="white"];
+  b6 [label="B6\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>\nHotSpotMethod<StringLatin1.hashCode(byte[])>", fillcolor="white"];
+  b7 [label="B7\nLoop: <none>\n---\nHotSpotMethod<StringLatin1.hashCode(byte[])>\nHotSpotMethod<String.hashCode()>", fillcolor="white"];
+  b8 [label="B8\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>", fillcolor="white"];
+  b9 [label="B9\nLoop: <none>\n---\nHotSpotMethod<String.hashCode()>", fillcolor="white"];
+  b0 -> b1;
+  b0 -> b9;
+  b1 -> b2;
+  b1 -> b9;
+  b2 -> b3;
+  b2 -> b6;
+  b3 -> b4;
+  b3 -> b5;
+  b5 -> b9;
+  b7 -> b9;
+  b8 -> b9;
+}

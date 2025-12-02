@@ -4,10 +4,10 @@ set -euo pipefail
 # ===== User-configurable settings =====
 
 # Input: text file with HumphreysDebugDataPhase output
-INPUT_TXT="BounceCFGinfo.txt"
+INPUT_TXT="Mandelbrot.txt"
 
 # Output directory: all DOT and SVG files go here
-OUT_DIR="BounceCFGGraphs"
+OUT_DIR="MandelbrotCFGGraphs"
 
 # Python script that converts text -> per-comp DOTs
 PY_SCRIPT="debug2dot.py"
