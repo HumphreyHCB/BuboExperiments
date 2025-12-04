@@ -14,7 +14,7 @@ digraph CFG_52 {
   b6 [label="B6\nLoop: <none>\n---\nHotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>", fillcolor="white"];
   b7 [label="B7\nLoop: <none>\n---\nHotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>", fillcolor="white"];
   b8 [label="B8\nLoop: <none>\n---\nHotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>", fillcolor="white"];
-  b9 [label="B9\nLoop: <none>\n---\nHotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>\nHotSpotMethod<Byte.toUnsignedInt(byte)>", fillcolor="white"];
+  b9 [label="B9\nLoop: <none>\n---\nHotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>", fillcolor="white"];
   b10 [label="B10\nLoop: L0\n---\nHotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>", fillcolor="lightblue"];
   b11 [label="B11\nLoop: L0\n---\nHotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>\nHotSpotMethod<Byte.toUnsignedInt(byte)>", fillcolor="lightblue"];
   b12 [label="B12\nLoop: <none>\n---\nHotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>", fillcolor="white"];
@@ -52,7 +52,7 @@ digraph CFG_52 {
   b14 -> b13;
   b15 -> b16;
   b16 -> b17;
-  b16 -> b22;
+  b16 -> b18;
   b17 -> b16;
   b18 -> b22;
   b19 -> b20;

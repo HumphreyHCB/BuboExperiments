@@ -4,7 +4,7 @@ set -euo pipefail
 # ===== User-configurable settings =====
 
 # Input: text file with HumphreysDebugDataPhase output
-INPUT_TXT="Mandelbrot.txt"
+INPUT_TXT="mandelBrot.txt"
 
 # Output directory: all DOT and SVG files go here
 OUT_DIR="MandelbrotCFGGraphs"
