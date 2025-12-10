@@ -1,0 +1,657 @@
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+Requesting uncached profile for bci 32 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBytecodeProfile
+Requesting uncached profile for bci 32 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBranchTakenProbability
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs b05d592371fcce917a90fc28debaf21f7e7532d4836b1c9812ac396e129c7095 != 920e12a7ee41cc3a0a3487d03bd48833bfc4e8d416bdbae7234f8ba199084b4d
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 71c7befc4bcc50903c01cb500806055811a71080bd754d077284439fcd10103c != 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf
+java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs 240f841b413bb8bd2af4877cb3753eac11d3bdc482d702e067df992e72784ebb != 2d841e5f6ff33687ba2a8e89c73735b82c892266d476f740b43f9fc2b4d21873
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 graphSignature differs f47d0b1647dabd6f0108a1c873e12c6a64939992dcc9e97f79a9e6e1f1af8649 != cda1bda6b067c21da86f5c9b00220a168b94ff95811df6ee0a57435eb4ec0473
+Starting Bounce benchmark ...
+Requesting not cached profile for Bounce$$Lambda/0x0000000033047000.<init>(som.Random)void
+Requesting uncached profile for bci 1 in Bounce$$Lambda/0x0000000033047000.<init>(som.Random)void method getBytecodeProfile
+Requesting uncached profile for bci 1 in Bounce$$Lambda/0x0000000033047000.<init>(som.Random)void method getExceptionSeen
+Requesting not cached profile for Bounce$$Lambda/0x0000000033047000.apply(int)java.lang.Object
+Bounce.benchmark()java.lang.Object -1 graphSignature differs e81acc8abb9a9fa80b5d18948063ae16b5d07c95aeb4862b3ce2fc105442bc59 != 47caeebf9655277a8eadb1c547eebc9ca90824b512e0033bd323521f2215e49e
+Bounce: iterations=1 runtime: 275963us
+Bounce: iterations=2 runtime: 240693us
+Requesting not cached profile for Bounce$$Lambda/0x0000000033047000.<init>(som.Random)void
+Requesting uncached profile for bci 1 in Bounce$$Lambda/0x0000000033047000.<init>(som.Random)void method getBytecodeProfile
+Requesting uncached profile for bci 1 in Bounce$$Lambda/0x0000000033047000.<init>(som.Random)void method getExceptionSeen
+Benchmark.innerBenchmarkLoop(int)boolean -1 graphSignature differs 1ce67b4520d621e4561bd5caafb0ab7415b06e884406b68566c024003a4c6740 != 7a271abf22a1270f391e80a5947622a55c5b80f49b8c0efec707ed8306ff89bb
+Bounce: iterations=3 runtime: 245945us
+Bounce: iterations=4 runtime: 239050us
+Bounce: iterations=5 runtime: 239039us
+Bounce: iterations=6 runtime: 237056us
+Bounce: iterations=7 runtime: 236268us
+Bounce: iterations=8 runtime: 237152us
+Bounce: iterations=9 runtime: 238770us
+Bounce: iterations=10 runtime: 235139us
+Bounce: iterations=11 runtime: 234622us
+Bounce: iterations=12 runtime: 234539us
+Bounce: iterations=13 runtime: 235959us
+Bounce: iterations=14 runtime: 235324us
+Bounce: iterations=15 runtime: 234939us
+Bounce: iterations=16 runtime: 234686us
+Bounce: iterations=17 runtime: 235860us
+Bounce: iterations=18 runtime: 236225us
+Bounce: iterations=19 runtime: 235318us
+Bounce: iterations=20 runtime: 234812us
+Bounce: iterations=21 runtime: 237996us
+Bounce: iterations=22 runtime: 238030us
+Bounce: iterations=23 runtime: 235828us
+Bounce: iterations=24 runtime: 235538us
+Bounce: iterations=25 runtime: 235117us
+Bounce: iterations=26 runtime: 237692us
+Bounce: iterations=27 runtime: 240697us
+Bounce: iterations=28 runtime: 239692us
+Bounce: iterations=29 runtime: 233630us
+Bounce: iterations=30 runtime: 237493us
+Bounce: iterations=31 runtime: 236479us
+Bounce: iterations=32 runtime: 235507us
+Bounce: iterations=33 runtime: 235159us
+Bounce: iterations=34 runtime: 236638us
+Bounce: iterations=35 runtime: 234896us
+Bounce: iterations=36 runtime: 234566us
+Bounce: iterations=37 runtime: 234258us
+Bounce: iterations=38 runtime: 236321us
+Bounce: iterations=39 runtime: 235386us
+Bounce: iterations=40 runtime: 234934us
+Bounce: iterations=41 runtime: 234658us
+Bounce: iterations=42 runtime: 236397us
+Bounce: iterations=43 runtime: 236027us
+Bounce: iterations=44 runtime: 235456us
+Bounce: iterations=45 runtime: 235253us
+Bounce: iterations=46 runtime: 236268us
+Bounce: iterations=47 runtime: 235976us
+Bounce: iterations=48 runtime: 235176us
+Bounce: iterations=49 runtime: 234720us
+Bounce: iterations=50 runtime: 234699us
+Bounce: iterations=51 runtime: 237648us
+Bounce: iterations=52 runtime: 235372us
+Bounce: iterations=53 runtime: 234878us
+Bounce: iterations=54 runtime: 234445us
+Bounce: iterations=55 runtime: 280590us
+Bounce: iterations=56 runtime: 234815us
+Bounce: iterations=57 runtime: 234216us
+Bounce: iterations=58 runtime: 233937us
+Bounce: iterations=59 runtime: 236977us
+Bounce: iterations=60 runtime: 235682us
+Bounce: iterations=61 runtime: 235165us
+Bounce: iterations=62 runtime: 234870us
+Bounce: iterations=63 runtime: 237038us
+Bounce: iterations=64 runtime: 235682us
+Bounce: iterations=65 runtime: 234732us
+Bounce: iterations=66 runtime: 234621us
+Bounce: iterations=67 runtime: 235915us
+Bounce: iterations=68 runtime: 235843us
+Bounce: iterations=69 runtime: 235266us
+Bounce: iterations=70 runtime: 235061us
+Bounce: iterations=71 runtime: 236044us
+Bounce: iterations=72 runtime: 236110us
+Bounce: iterations=73 runtime: 234862us
+Bounce: iterations=74 runtime: 234503us
+Bounce: iterations=75 runtime: 234497us
+Bounce: iterations=76 runtime: 237504us
+Bounce: iterations=77 runtime: 235396us
+Bounce: iterations=78 runtime: 235063us
+Bounce: iterations=79 runtime: 235100us
+Bounce: iterations=80 runtime: 237313us
+Bounce: iterations=81 runtime: 235809us
+Bounce: iterations=82 runtime: 235622us
+Bounce: iterations=83 runtime: 234943us
+Bounce: iterations=84 runtime: 236609us
+Bounce: iterations=85 runtime: 235276us
+Bounce: iterations=86 runtime: 234847us
+Bounce: iterations=87 runtime: 239057us
+Bounce: iterations=88 runtime: 237444us
+Bounce: iterations=89 runtime: 235917us
+Bounce: iterations=90 runtime: 235535us
+Bounce: iterations=91 runtime: 234946us
+Bounce: iterations=92 runtime: 237581us
+Bounce: iterations=93 runtime: 236109us
+Bounce: iterations=94 runtime: 234986us
+Bounce: iterations=95 runtime: 234928us
+Bounce: iterations=96 runtime: 236261us
+Bounce: iterations=97 runtime: 235868us
+Bounce: iterations=98 runtime: 235206us
+Bounce: iterations=99 runtime: 234595us
+Bounce: iterations=100 runtime: 234458us
+Bounce: iterations=101 runtime: 236814us
+Bounce: iterations=102 runtime: 234976us
+Bounce: iterations=103 runtime: 234592us
+Bounce: iterations=104 runtime: 234611us
+Bounce: iterations=105 runtime: 235492us
+Bounce: iterations=106 runtime: 234607us
+Bounce: iterations=107 runtime: 234712us
+Bounce: iterations=108 runtime: 234616us
+Bounce: iterations=109 runtime: 236178us
+Bounce: iterations=110 runtime: 234833us
+Bounce: iterations=111 runtime: 234515us
+Bounce: iterations=112 runtime: 234538us
+Bounce: iterations=113 runtime: 236543us
+Bounce: iterations=114 runtime: 234948us
+Bounce: iterations=115 runtime: 234357us
+Bounce: iterations=116 runtime: 234037us
+Bounce: iterations=117 runtime: 235927us
+Bounce: iterations=118 runtime: 235827us
+Bounce: iterations=119 runtime: 234931us
+Bounce: iterations=120 runtime: 235004us
+Bounce: iterations=121 runtime: 235736us
+Bounce: iterations=122 runtime: 235534us
+Bounce: iterations=123 runtime: 234810us
+Bounce: iterations=124 runtime: 234678us
+Bounce: iterations=125 runtime: 235107us
+Bounce: iterations=126 runtime: 234664us
+Bounce: iterations=127 runtime: 234288us
+Bounce: iterations=128 runtime: 235734us
+Bounce: iterations=129 runtime: 234482us
+Bounce: iterations=130 runtime: 261309us
+Bounce: iterations=131 runtime: 234755us
+Bounce: iterations=132 runtime: 234731us
+Bounce: iterations=133 runtime: 234501us
+Bounce: iterations=134 runtime: 236357us
+Bounce: iterations=135 runtime: 234810us
+Bounce: iterations=136 runtime: 234437us
+Bounce: iterations=137 runtime: 234110us
+Bounce: iterations=138 runtime: 237066us
+Bounce: iterations=139 runtime: 235698us
+Bounce: iterations=140 runtime: 235214us
+Bounce: iterations=141 runtime: 234815us
+Bounce: iterations=142 runtime: 236347us
+Bounce: iterations=143 runtime: 235424us
+Bounce: iterations=144 runtime: 235292us
+Bounce: iterations=145 runtime: 235328us
+Bounce: iterations=146 runtime: 236908us
+Bounce: iterations=147 runtime: 235931us
+Bounce: iterations=148 runtime: 235487us
+Bounce: iterations=149 runtime: 235090us
+Bounce: iterations=150 runtime: 236152us
+Bounce: iterations=151 runtime: 236482us
+Bounce: iterations=152 runtime: 235478us
+Bounce: iterations=153 runtime: 234789us
+Bounce: iterations=154 runtime: 234842us
+Bounce: iterations=155 runtime: 236647us
+Bounce: iterations=156 runtime: 235028us
+Bounce: iterations=157 runtime: 235063us
+Bounce: iterations=158 runtime: 234937us
+Bounce: iterations=159 runtime: 235311us
+Bounce: iterations=160 runtime: 234693us
+Bounce: iterations=161 runtime: 234621us
+Bounce: iterations=162 runtime: 234309us
+Bounce: iterations=163 runtime: 236167us
+Bounce: iterations=164 runtime: 234883us
+Bounce: iterations=165 runtime: 234857us
+Bounce: iterations=166 runtime: 234966us
+Bounce: iterations=167 runtime: 236802us
+Bounce: iterations=168 runtime: 235691us
+Bounce: iterations=169 runtime: 234868us
+Bounce: iterations=170 runtime: 234765us
+Bounce: iterations=171 runtime: 236237us
+Bounce: iterations=172 runtime: 235702us
+Bounce: iterations=173 runtime: 234977us
+Bounce: iterations=174 runtime: 234645us
+Bounce: iterations=175 runtime: 236113us
+Bounce: iterations=176 runtime: 235668us
+Bounce: iterations=177 runtime: 234822us
+Bounce: iterations=178 runtime: 234895us
+Bounce: iterations=179 runtime: 235571us
+Bounce: iterations=180 runtime: 235083us
+Bounce: iterations=181 runtime: 234259us
+Bounce: iterations=182 runtime: 233806us
+Bounce: iterations=183 runtime: 235147us
+Bounce: iterations=184 runtime: 244594us
+Bounce: iterations=185 runtime: 233995us
+Bounce: iterations=186 runtime: 233889us
+Bounce: iterations=187 runtime: 233705us
+Bounce: iterations=188 runtime: 236359us
+Bounce: iterations=189 runtime: 236033us
+Bounce: iterations=190 runtime: 234170us
+Bounce: iterations=191 runtime: 233968us
+Bounce: iterations=192 runtime: 236039us
+Bounce: iterations=193 runtime: 235949us
+Bounce: iterations=194 runtime: 234412us
+Bounce: iterations=195 runtime: 234081us
+Bounce: iterations=196 runtime: 236282us
+Bounce: iterations=197 runtime: 235015us
+Bounce: iterations=198 runtime: 234558us
+Bounce: iterations=199 runtime: 234534us
+Bounce: iterations=200 runtime: 235753us
+Bounce: iterations=201 runtime: 235153us
+Bounce: iterations=202 runtime: 233635us
+Bounce: iterations=203 runtime: 234157us
+Bounce: iterations=204 runtime: 235243us
+Bounce: iterations=205 runtime: 234489us
+Bounce: iterations=206 runtime: 233579us
+Bounce: iterations=207 runtime: 233693us
+Bounce: iterations=208 runtime: 233740us
+Bounce: iterations=209 runtime: 236180us
+Bounce: iterations=210 runtime: 234605us
+Bounce: iterations=211 runtime: 234534us
+Bounce: iterations=212 runtime: 237213us
+Bounce: iterations=213 runtime: 236494us
+Bounce: iterations=214 runtime: 235136us
+Bounce: iterations=215 runtime: 236068us
+Bounce: iterations=216 runtime: 234157us
+Bounce: iterations=217 runtime: 234992us
+Bounce: iterations=218 runtime: 233997us
+Bounce: iterations=219 runtime: 233950us
+Bounce: iterations=220 runtime: 233670us
+Bounce: iterations=221 runtime: 235255us
+Bounce: iterations=222 runtime: 234046us
+Bounce: iterations=223 runtime: 233456us
+Bounce: iterations=224 runtime: 233910us
+Bounce: iterations=225 runtime: 235371us
+Bounce: iterations=226 runtime: 235141us
+Bounce: iterations=227 runtime: 234143us
+Bounce: iterations=228 runtime: 234347us
+Bounce: iterations=229 runtime: 236062us
+Bounce: iterations=230 runtime: 234754us
+Bounce: iterations=231 runtime: 233951us
+Bounce: iterations=232 runtime: 233733us
+Bounce: iterations=233 runtime: 235326us
+Bounce: iterations=234 runtime: 235849us
+Bounce: iterations=235 runtime: 234662us
+Bounce: iterations=236 runtime: 234349us
+Bounce: iterations=237 runtime: 234686us
+Bounce: iterations=238 runtime: 236597us
+Bounce: iterations=239 runtime: 281819us
+Bounce: iterations=240 runtime: 233328us
+Bounce: iterations=241 runtime: 232862us
+Bounce: iterations=242 runtime: 236411us
+Bounce: iterations=243 runtime: 235261us
+Bounce: iterations=244 runtime: 235229us
+Bounce: iterations=245 runtime: 233947us
+Bounce: iterations=246 runtime: 234559us
+Bounce: iterations=247 runtime: 233678us
+Bounce: iterations=248 runtime: 234769us
+Bounce: iterations=249 runtime: 233625us
+Bounce: iterations=250 runtime: 235374us
+Bounce: iterations=251 runtime: 234418us
+Bounce: iterations=252 runtime: 236651us
+Bounce: iterations=253 runtime: 233290us
+Bounce: iterations=254 runtime: 233709us
+Bounce: iterations=255 runtime: 233067us
+Bounce: iterations=256 runtime: 232989us
+Bounce: iterations=257 runtime: 232945us
+Bounce: iterations=258 runtime: 234646us
+Bounce: iterations=259 runtime: 233325us
+Bounce: iterations=260 runtime: 233440us
+Bounce: iterations=261 runtime: 233430us
+Bounce: iterations=262 runtime: 233227us
+Bounce: iterations=263 runtime: 233626us
+Bounce: iterations=264 runtime: 232942us
+Bounce: iterations=265 runtime: 232902us
+Bounce: iterations=266 runtime: 232704us
+Bounce: iterations=267 runtime: 237038us
+Bounce: iterations=268 runtime: 235919us
+Bounce: iterations=269 runtime: 235590us
+Bounce: iterations=270 runtime: 236460us
+Bounce: iterations=271 runtime: 235953us
+Bounce: iterations=272 runtime: 234602us
+Bounce: iterations=273 runtime: 234764us
+Bounce: iterations=274 runtime: 234059us
+Bounce: iterations=275 runtime: 234759us
+Bounce: iterations=276 runtime: 233899us
+Bounce: iterations=277 runtime: 242370us
+Bounce: iterations=278 runtime: 237401us
+Bounce: iterations=279 runtime: 235170us
+Bounce: iterations=280 runtime: 234870us
+Bounce: iterations=281 runtime: 234622us
+Bounce: iterations=282 runtime: 234003us
+Bounce: iterations=283 runtime: 235811us
+Bounce: iterations=284 runtime: 236029us
+Bounce: iterations=285 runtime: 234897us
+Bounce: iterations=286 runtime: 234596us
+Bounce: iterations=287 runtime: 235327us
+Bounce: iterations=288 runtime: 236057us
+Bounce: iterations=289 runtime: 235545us
+Bounce: iterations=290 runtime: 235090us
+Bounce: iterations=291 runtime: 234185us
+Bounce: iterations=292 runtime: 237403us
+Bounce: iterations=293 runtime: 235768us
+Bounce: iterations=294 runtime: 235317us
+Bounce: iterations=295 runtime: 235002us
+Bounce: iterations=296 runtime: 236867us
+Bounce: iterations=297 runtime: 235765us
+Bounce: iterations=298 runtime: 235251us
+Bounce: iterations=299 runtime: 235048us
+Bounce: iterations=300 runtime: 237010us
+Bounce: iterations=301 runtime: 236018us
+Bounce: iterations=302 runtime: 235780us
+Bounce: iterations=303 runtime: 235755us
+Bounce: iterations=304 runtime: 235733us
+Bounce: iterations=305 runtime: 234540us
+Bounce: iterations=306 runtime: 234202us
+Bounce: iterations=307 runtime: 234210us
+Bounce: iterations=308 runtime: 235707us
+Bounce: iterations=309 runtime: 236075us
+Bounce: iterations=310 runtime: 234995us
+Bounce: iterations=311 runtime: 234306us
+Bounce: iterations=312 runtime: 235265us
+Bounce: iterations=313 runtime: 235631us
+Bounce: iterations=314 runtime: 234567us
+Bounce: iterations=315 runtime: 234361us
+Bounce: iterations=316 runtime: 234450us
+Bounce: iterations=317 runtime: 238170us
+Bounce: iterations=318 runtime: 234905us
+Bounce: iterations=319 runtime: 234547us
+Bounce: iterations=320 runtime: 234203us
+Bounce: iterations=321 runtime: 236280us
+Bounce: iterations=322 runtime: 234678us
+Bounce: iterations=323 runtime: 234355us
+Bounce: iterations=324 runtime: 234431us
+Bounce: iterations=325 runtime: 234669us
+Bounce: iterations=326 runtime: 234043us
+Bounce: iterations=327 runtime: 233998us
+Bounce: iterations=328 runtime: 233650us
+Bounce: iterations=329 runtime: 235705us
+Bounce: iterations=330 runtime: 235390us
+Bounce: iterations=331 runtime: 234823us
+Bounce: iterations=332 runtime: 234876us
+Bounce: iterations=333 runtime: 236324us
+Bounce: iterations=334 runtime: 235381us
+Bounce: iterations=335 runtime: 234932us
+Bounce: iterations=336 runtime: 234798us
+Bounce: iterations=337 runtime: 235915us
+Bounce: iterations=338 runtime: 235849us
+Bounce: iterations=339 runtime: 235211us
+Bounce: iterations=340 runtime: 235076us
+Bounce: iterations=341 runtime: 235892us
+Bounce: iterations=342 runtime: 240109us
+Bounce: iterations=343 runtime: 234422us
+Bounce: iterations=344 runtime: 237742us
+Bounce: iterations=345 runtime: 234841us
+Bounce: iterations=346 runtime: 234396us
+Bounce: iterations=347 runtime: 233853us
+Bounce: iterations=348 runtime: 233905us
+Bounce: iterations=349 runtime: 233751us
+Bounce: iterations=350 runtime: 235962us
+Bounce: iterations=351 runtime: 234381us
+Bounce: iterations=352 runtime: 233900us
+Bounce: iterations=353 runtime: 234088us
+Bounce: iterations=354 runtime: 236536us
+Bounce: iterations=355 runtime: 235229us
+Bounce: iterations=356 runtime: 235009us
+Bounce: iterations=357 runtime: 234747us
+Bounce: iterations=358 runtime: 236494us
+Bounce: iterations=359 runtime: 235777us
+Bounce: iterations=360 runtime: 235091us
+Bounce: iterations=361 runtime: 234942us
+Bounce: iterations=362 runtime: 235976us
+Bounce: iterations=363 runtime: 235512us
+Bounce: iterations=364 runtime: 235018us
+Bounce: iterations=365 runtime: 234445us
+Bounce: iterations=366 runtime: 235306us
+Bounce: iterations=367 runtime: 235114us
+Bounce: iterations=368 runtime: 234524us
+Bounce: iterations=369 runtime: 234333us
+Bounce: iterations=370 runtime: 234375us
+Bounce: iterations=371 runtime: 234532us
+Bounce: iterations=372 runtime: 233571us
+Bounce: iterations=373 runtime: 233697us
+Bounce: iterations=374 runtime: 233811us
+Bounce: iterations=375 runtime: 234933us
+Bounce: iterations=376 runtime: 234161us
+Bounce: iterations=377 runtime: 234055us
+Bounce: iterations=378 runtime: 234060us
+Bounce: iterations=379 runtime: 234802us
+Bounce: iterations=380 runtime: 234024us
+Bounce: iterations=381 runtime: 233706us
+Bounce: iterations=382 runtime: 233773us
+Bounce: iterations=383 runtime: 234774us
+Bounce: iterations=384 runtime: 235047us
+Bounce: iterations=385 runtime: 235761us
+Bounce: iterations=386 runtime: 234325us
+Bounce: iterations=387 runtime: 236010us
+Bounce: iterations=388 runtime: 234521us
+Bounce: iterations=389 runtime: 234253us
+Bounce: iterations=390 runtime: 234485us
+Bounce: iterations=391 runtime: 235607us
+Bounce: iterations=392 runtime: 235555us
+Bounce: iterations=393 runtime: 234964us
+Bounce: iterations=394 runtime: 234540us
+Bounce: iterations=395 runtime: 235533us
+Bounce: iterations=396 runtime: 236359us
+Bounce: iterations=397 runtime: 235457us
+Bounce: iterations=398 runtime: 234928us
+Bounce: iterations=399 runtime: 234704us
+Bounce: iterations=400 runtime: 236623us
+Bounce: iterations=401 runtime: 235413us
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
+Bounce: iterations=402 runtime: 235285us
+Bounce: iterations=403 runtime: 235221us
+Bounce: iterations=404 runtime: 235991us
+Bounce: iterations=405 runtime: 234346us
+Bounce: iterations=406 runtime: 234184us
+Bounce: iterations=407 runtime: 233930us
+Bounce: iterations=408 runtime: 235730us
+Bounce: iterations=409 runtime: 234323us
+Bounce: iterations=410 runtime: 233892us
+Bounce: iterations=411 runtime: 234019us
+Bounce: iterations=412 runtime: 236218us
+Bounce: iterations=413 runtime: 236333us
+Bounce: iterations=414 runtime: 235640us
+Bounce: iterations=415 runtime: 235229us
+Bounce: iterations=416 runtime: 235798us
+Bounce: iterations=417 runtime: 234576us
+Bounce: iterations=418 runtime: 234183us
+Bounce: iterations=419 runtime: 234104us
+Bounce: iterations=420 runtime: 235405us
+Bounce: iterations=421 runtime: 235543us
+Bounce: iterations=422 runtime: 234829us
+Bounce: iterations=423 runtime: 234619us
+Bounce: iterations=424 runtime: 237173us
+Bounce: iterations=425 runtime: 234733us
+Bounce: iterations=426 runtime: 234131us
+Bounce: iterations=427 runtime: 233657us
+Bounce: iterations=428 runtime: 233954us
+Bounce: iterations=429 runtime: 236282us
+Bounce: iterations=430 runtime: 234986us
+Bounce: iterations=431 runtime: 234312us
+Bounce: iterations=432 runtime: 234104us
+Bounce: iterations=433 runtime: 235610us
+Bounce: iterations=434 runtime: 233585us
+Bounce: iterations=435 runtime: 233108us
+Bounce: iterations=436 runtime: 233587us
+Bounce: iterations=437 runtime: 234131us
+Bounce: iterations=438 runtime: 241413us
+Bounce: iterations=439 runtime: 235006us
+Bounce: iterations=440 runtime: 233547us
+Bounce: iterations=441 runtime: 234093us
+Bounce: iterations=442 runtime: 233795us
+Bounce: iterations=443 runtime: 233269us
+Bounce: iterations=444 runtime: 232836us
+Bounce: iterations=445 runtime: 233592us
+Bounce: iterations=446 runtime: 233828us
+Bounce: iterations=447 runtime: 233287us
+Bounce: iterations=448 runtime: 233053us
+Bounce: iterations=449 runtime: 233973us
+Bounce: iterations=450 runtime: 234849us
+Bounce: iterations=451 runtime: 234898us
+Bounce: iterations=452 runtime: 233514us
+Bounce: iterations=453 runtime: 233615us
+Bounce: iterations=454 runtime: 237200us
+Bounce: iterations=455 runtime: 235884us
+Bounce: iterations=456 runtime: 234884us
+Bounce: iterations=457 runtime: 235014us
+Bounce: iterations=458 runtime: 236279us
+Bounce: iterations=459 runtime: 234254us
+Bounce: iterations=460 runtime: 234415us
+Bounce: iterations=461 runtime: 234147us
+Bounce: iterations=462 runtime: 234733us
+Bounce: iterations=463 runtime: 233919us
+Bounce: iterations=464 runtime: 237271us
+Bounce: iterations=465 runtime: 234480us
+Bounce: iterations=466 runtime: 235714us
+Bounce: iterations=467 runtime: 234978us
+Bounce: iterations=468 runtime: 234613us
+Bounce: iterations=469 runtime: 234457us
+Bounce: iterations=470 runtime: 235914us
+Bounce: iterations=471 runtime: 235560us
+Bounce: iterations=472 runtime: 235395us
+Bounce: iterations=473 runtime: 235284us
+Bounce: iterations=474 runtime: 236906us
+Bounce: iterations=475 runtime: 236208us
+Bounce: iterations=476 runtime: 235821us
+Bounce: iterations=477 runtime: 235174us
+Bounce: iterations=478 runtime: 234935us
+Bounce: iterations=479 runtime: 235366us
+Bounce: iterations=480 runtime: 234700us
+Bounce: iterations=481 runtime: 234934us
+Bounce: iterations=482 runtime: 234093us
+Bounce: iterations=483 runtime: 236720us
+Bounce: iterations=484 runtime: 235294us
+Bounce: iterations=485 runtime: 235422us
+Bounce: iterations=486 runtime: 235542us
+Bounce: iterations=487 runtime: 238091us
+Bounce: iterations=488 runtime: 233575us
+Bounce: iterations=489 runtime: 233318us
+Bounce: iterations=490 runtime: 234119us
+Bounce: iterations=491 runtime: 239149us
+Bounce: iterations=492 runtime: 235831us
+Bounce: iterations=493 runtime: 235283us
+Bounce: iterations=494 runtime: 234649us
+Bounce: iterations=495 runtime: 236010us
+Bounce: iterations=496 runtime: 235383us
+Bounce: iterations=497 runtime: 234519us
+Bounce: iterations=498 runtime: 234114us
+Bounce: iterations=499 runtime: 236395us
+Bounce: iterations=500 runtime: 236502us
+java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)int -1 graphSignature differs bc8f20c8c772d3cc0eaba9b68bcd84047d761ba16a7aeb64fe90c36d37dcccb7 != 3bdd078c3a9d60d7eff24b6603d8a355db817965321aded167eb2387bae94eb4
+Bounce: iterations=500 average: 235534us total: 117767469us
+
+
+Total Runtime: 117767469us
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 390384663696
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 242248 || Activation Count:4248| LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 5934 || Activation Count:168| LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3424 || Activation Count:49| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 71 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 30874 || Activation Count:13| LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 8022 || Activation Count:97| LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 16168 || Activation Count:245| LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 84 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 594 || Activation Count:1| LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 148 || Activation Count:1| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 86 || Activation Count:1| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 85 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 73168 || Activation Count:1713| LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 114046 || Activation Count:1713| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 99382 || Activation Count:1713| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 87 (java.lang.StringCoding.countPositives(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 436 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 88 (java.lang.StringCoding.countPositives(byte[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 11854 || Activation Count:75| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 138 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 16790 || Activation Count:123| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 140 (java.util.Properties$LineReader.readLine()) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 256514 || Activation Count:90| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 12230 || Activation Count:91| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 794 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 141 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 3714 || Activation Count:14| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 2012 || Activation Count:14| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 142 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 37998 || Activation Count:1| LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 27564 || Activation Count:131| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 15178 || Activation Count:131| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 860 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 143 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 337876 || Activation Count:6| LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 398480 || Activation Count:374| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 48026 || Activation Count:377| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 172 (Bounce.benchmark()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 85410 || Activation Count:1| LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 33] | -at Bounce.benchmark() [bci: 89]
+  loop 1 Cycles: 82336 || Activation Count:47| LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
+  loop 2 Cycles: 1048 || Activation Count:1| LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
+Comp 173 (Bounce.benchmark()-Re-Comp) loops:
+Found Encoding : 3:-1,2:-1,0:-1,1:0
+├── Loop 3
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 372123171216 || Activation Count:4999995| LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 33] | -at Bounce.benchmark() [bci: 89]
+  loop 1 Cycles: 355318119346 || Activation Count:249999750| LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
+  loop 2 Cycles: 15509686966 || Activation Count:4999995| LoopCallCount: 1 |  Source: -at java.util.Arrays.setAll(Arrays.java:5097) [bci: 7]
+-at Bounce.benchmark() [bci: 27] | -at java.util.Arrays.setAll(Arrays.java:5099) [bci: 29]
+-at Bounce.benchmark() [bci: 27]
+  loop 3 Cycles: 1106363166 || Activation Count:4991383| LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 186 (Benchmark.innerBenchmarkLoop(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 746697990 || Activation Count:1| LoopCallCount: 1 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 187 (Benchmark.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 387479817162 || Activation Count:497| LoopCallCount: 1 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 195 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 45926 || Activation Count:204| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 15928 || Activation Count:204| LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 10496 || Activation Count:204| LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+Comp 207 (java.lang.StringCoding.implEncodeAsciiArray(char[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 744 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+Comp 208 (java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 532 || Activation Count:3| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
