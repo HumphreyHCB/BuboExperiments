@@ -1,0 +1,17 @@
+tool,benchmark,method_key,baseline_samples,slowdown_samples,slowdown_pct,runtime_share_pct_slow,total_samples_baseline,total_samples_slowdown
+jfr,LoopBenchmarks,LoopBenchmarks::base64EncodeLoop,230,463,101.30434782608695,4.958766198993253,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::blurLoop,147,297,102.04081632653062,3.18089322052051,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::bubbleSortLoop,528,1130,114.01515151515152,12.102388347434937,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::crc32Loop,916,1854,102.40174672489081,19.856484952340153,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::editDistanceLoop,612,1257,105.3921568627451,13.46256827674842,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::histogramLoop,240,399,66.25,4.273321195244725,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::main,36,30,-16.666666666666664,0.3213023455071222,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::mandelbrotLoop,172,181,5.232558139534884,1.9385241512263038,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::matrixMultiplyLoop,297,680,128.95622895622895,7.2828531648281025,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::monteCarloPiLoop,473,932,97.04016913319239,9.981792867087929,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::parseJsonLoop,408,707,73.2843137254902,7.5720252757845135,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::polynomialLoop,294,291,-1.0204081632653061,3.1166327514190852,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::raySphereLoop,231,460,99.13419913419914,4.92663596444254,4923,9337
+jfr,LoopBenchmarks,LoopBenchmarks::sieveLoop,337,656,94.65875370919882,7.025811288422405,4923,9337
+jfr,LoopBenchmarks,java.util.HashMap::putVal,1,0,-100.0,0.0,4923,9337
+jfr,LoopBenchmarks,java.util.Properties$LineReader::readLine,1,0,-100.0,0.0,4923,9337

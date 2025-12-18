@@ -1,0 +1,13 @@
+digraph CFG_98 {
+  rankdir=LR;
+  graph [fontsize=20, ranksep=1.5, nodesep=1.0, overlap=false, splines=true];
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  label="146-java.lang.String.isLatin1()";
+  labelloc=top;
+  labeljust=left;
+  b0 [label="B0\nLoop: <none>\n---\nHotSpotMethod<String.isLatin1()>", fillcolor="white"];
+  b1 [label="B1\nLoop: <none>\n---\nHotSpotMethod<String.isLatin1()>", fillcolor="white"];
+  b2 [label="B2\nLoop: <none>\n---\nHotSpotMethod<String.isLatin1()>", fillcolor="white"];
+  b0 -> b1;
+  b0 -> b2;
+}

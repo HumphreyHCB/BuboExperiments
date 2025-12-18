@@ -1,0 +1,28 @@
+digraph CFG_127 {
+  rankdir=LR;
+  graph [fontsize=20, ranksep=1.5, nodesep=1.0, overlap=false, splines=true];
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  label="189-LoopBenchmarks.mandelbrotLoop(double, double, int)";
+  labelloc=top;
+  labeljust=left;
+  b0 [label="B0\nLoop: <none>\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>", fillcolor="white"];
+  b1 [label="B1\nLoop: <none>\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>", fillcolor="white"];
+  b2 [label="B2\nLoop: <none>\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>\n---\nBuboLoopMakers:\n  AMD64BuboRDTSCToSlot (LoopID=0)", fillcolor="white", penwidth=4, peripheries=2];
+  b3 [label="B3\nLoop: L0\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>", fillcolor="lightblue"];
+  b4 [label="B4\nLoop: L0\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>", fillcolor="lightblue"];
+  b5 [label="B5\nLoop: L0\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>", fillcolor="lightblue"];
+  b6 [label="B6\nLoop: <none>\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>\n---\nBuboLoopMakers:\n  AMD64BuboWriteDeltaRDTSC (LoopID=0)", fillcolor="white", penwidth=4, peripheries=2];
+  b7 [label="B7\nLoop: <none>\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>\n---\nBuboLoopMakers:\n  AMD64BuboWriteDeltaRDTSC (LoopID=0)", fillcolor="white", penwidth=4, peripheries=2];
+  b8 [label="B8\nLoop: <none>\n---\nHotSpotMethod<LoopBenchmarks.mandelbrotLoop(double, double, int)>", fillcolor="white"];
+  b0 -> b1;
+  b0 -> b2;
+  b1 -> b8;
+  b2 -> b3;
+  b3 -> b4;
+  b3 -> b7;
+  b4 -> b5;
+  b4 -> b6;
+  b5 -> b3;
+  b6 -> b8;
+  b7 -> b8;
+}

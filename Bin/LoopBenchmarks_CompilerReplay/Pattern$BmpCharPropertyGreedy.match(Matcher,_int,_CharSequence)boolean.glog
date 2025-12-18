@@ -1,0 +1,223 @@
+{
+  "identifier": "HotSpotCompilation-140[java.util.regex.Pattern$BmpCharPropertyGreedy.match(Matcher, int, CharSequence)]",
+  "method": "java.util.regex.Pattern$BmpCharPropertyGreedy.match(java.util.regex.Matcher, int, java.lang.CharSequence)boolean",
+  "entryBCI": -1,
+  "codeSignature": "3605b193a8dfd3b40e9ed44c5cb87d928e9c3fcc372c973725cad8dc6e079c42",
+  "graphSignature": "e622fa2280edae2a76354d41fdd824dee0aa27e282a9049da1de5430ffd1a862",
+  "result": true,
+  "profiles": [
+    {
+      "method": "java.util.regex.Pattern$BmpCharPropertyGreedy.match(java.util.regex.Matcher, int, java.lang.CharSequence)boolean",
+      "isMature": false,
+      "compilerIRSize": -1,
+      "data": []
+    },
+    {
+      "method": "java.util.regex.Pattern$BmpCharPropertyGreedy.match(java.util.regex.Matcher, int, java.lang.CharSequence)boolean",
+      "isMature": true,
+      "compilerIRSize": -1,
+      "data": [
+        {
+          "bci": 4,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 12,
+          "branchTakenProbability": 0.0
+        },
+        {
+          "bci": 21,
+          "exceptionSeen": "FALSE",
+          "typeProfile": {
+            "nullSeen": "FALSE",
+            "types": [
+              {
+                "type": "Ljava/lang/String;",
+                "probability": 1.0
+              }
+            ],
+            "notRecordedProbability": 0.0
+          }
+        },
+        {
+          "bci": 26,
+          "exceptionSeen": "FALSE",
+          "typeProfile": {
+            "nullSeen": "FALSE",
+            "types": [
+              {
+                "type": "Ljava/util/regex/Pattern$$Lambda.0x800000027;",
+                "probability": 1.0
+              }
+            ],
+            "notRecordedProbability": 0.0
+          }
+        },
+        {
+          "bci": 31,
+          "branchTakenProbability": 0.8753633099675158
+        },
+        {
+          "bci": 46,
+          "branchTakenProbability": 1.0
+        },
+        {
+          "bci": 60,
+          "branchTakenProbability": 0.8576171875
+        },
+        {
+          "bci": 70,
+          "exceptionSeen": "FALSE",
+          "typeProfile": {
+            "nullSeen": "FALSE",
+            "types": [
+              {
+                "type": "Ljava/util/regex/Pattern$LastNode;",
+                "probability": 1.0
+              }
+            ],
+            "notRecordedProbability": 0.0
+          }
+        },
+        {
+          "bci": 73,
+          "branchTakenProbability": 0.0
+        }
+      ]
+    },
+    {
+      "method": "java.lang.String.charAt(int)char",
+      "isMature": true,
+      "compilerIRSize": 34,
+      "data": [
+        {
+          "bci": 1,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 4,
+          "branchTakenProbability": 0.0
+        },
+        {
+          "bci": 12,
+          "exceptionSeen": "FALSE"
+        }
+      ]
+    },
+    {
+      "method": "java.lang.String.isLatin1()boolean",
+      "isMature": true,
+      "compilerIRSize": 13,
+      "data": [
+        {
+          "bci": 3,
+          "branchTakenProbability": 0.0
+        },
+        {
+          "bci": 10,
+          "branchTakenProbability": 0.0
+        }
+      ]
+    },
+    {
+      "method": "java.lang.StringLatin1.charAt(byte[], int)char",
+      "isMature": false,
+      "compilerIRSize": 16,
+      "data": [
+        {
+          "bci": 2,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 8,
+          "exceptionSeen": "FALSE"
+        }
+      ]
+    },
+    {
+      "method": "java.lang.String.checkIndex(int, int)void",
+      "isMature": false,
+      "compilerIRSize": -1,
+      "data": [
+        {
+          "bci": 5,
+          "exceptionSeen": "FALSE"
+        }
+      ]
+    },
+    {
+      "stableLambdaName": "java.util.regex.Pattern$$Lambda/0x800000027.is(int)",
+      "method": "java.util.regex.Pattern$$Lambda/0x800000027.is(int)boolean",
+      "isMature": false,
+      "compilerIRSize": 10,
+      "data": [
+        {
+          "bci": 5,
+          "exceptionSeen": "FALSE"
+        }
+      ]
+    },
+    {
+      "method": "java.util.regex.Pattern.lambda$Single$0(int, int)boolean",
+      "isMature": true,
+      "compilerIRSize": 8,
+      "data": [
+        {
+          "bci": 2,
+          "branchTakenProbability": 0.8738527631322007
+        }
+      ]
+    },
+    {
+      "method": "java.util.regex.Pattern$LastNode.match(java.util.regex.Matcher, int, java.lang.CharSequence)boolean",
+      "isMature": false,
+      "compilerIRSize": -1,
+      "data": [
+        {
+          "bci": 1,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 5,
+          "branchTakenProbability": -1.0
+        },
+        {
+          "bci": 10,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 13,
+          "branchTakenProbability": -1.0
+        },
+        {
+          "bci": 20,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 24,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 29,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 32,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 34,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 39,
+          "exceptionSeen": "FALSE"
+        },
+        {
+          "bci": 42,
+          "exceptionSeen": "FALSE"
+        }
+      ]
+    }
+  ]
+}

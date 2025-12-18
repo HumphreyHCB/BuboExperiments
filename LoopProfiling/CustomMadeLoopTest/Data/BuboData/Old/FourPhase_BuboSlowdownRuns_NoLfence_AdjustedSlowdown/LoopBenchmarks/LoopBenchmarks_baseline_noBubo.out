@@ -1,0 +1,53 @@
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+Requesting uncached profile for bci 44 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBytecodeProfile
+Requesting uncached profile for bci 44 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBranchTakenProbability
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs 920e12a7ee41cc3a0a3487d03bd48833bfc4e8d416bdbae7234f8ba199084b4d != dd493989519e7f328311cfecc7abfe1946186eaebdea7e8b59878a8ba9e25a26
+java.util.HashMap.hash(java.lang.Object)int -1 graphSignature differs 8f9cc2e3a303a464fdde7ac01112df34565d1e4517f64ae8e19d28af24388dce != 27e7a52782b6fcb645f562197decfa8fd939b11b105c1ce6adf1e163fcd89445
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf != 27ba10a12906ca5a4eaa0ddbdb8cdbd97a0a183d21916ae0dce244a079058c87
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+Starting loop benchmarks with scale factor: 12000
+
+Running Fibonacci loop... DONE (iterations: 1440000, result: -2872092127636481573) [time: 4.439 s]
+Running Mandelbrot loop... DONE (reps: 77, grid: 1500x1500, result: Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+643920970) [time: 2.226 s]
+Running JSON parsing loop... DONE (iterations: 4000, json size: 650000, result: 34213) [time: 4.147 s]
+Running matrix multiply loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 1333, matrix: 124x124, result: 627874.0) [time: 3.025 s]
+Running prime sieve loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 521, sieve size: 1700000, primes: 128141) [time: 3.436 s]
+Running histogram loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 307, data size: 2900000, histogram[0]: 11329) [time: 2.423 s]
+Running CRC32 loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 1333, data size: 245000, crc: 3395824974) [time: 9.206 s]
+Running polynomial loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 720000, coefficients: 1700, result: 5.535855291816147E305) [time: 2.974 s]
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+Running edit distance loop... DONE (iterations: 2700000, distance: 5) [time: 5.924 s]
+Running Monte Carlo pi loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 109, samples per iter: 6500000, pi: 3.141140) [time: 4.782 s]
+Running bubble sort loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 387, array size: 4400, sorted[0]: 1) [time: 5.394 s]
+Running image blur loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 1000, image: 856Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+x856, result[10][10]: 20) [time: 1.543 s]
+Running Base64 encoding loop... DONE (iterations: 6000, input size: 420000, encoded length: 560000) [time: 2.342 s]
+Running ray-sphere loop... Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+DONE (iterations: 6000, ray count: 65000, hits: 65000) [time: 2.365 s]
+
+✓ All benchmarks complete!
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 180410953528

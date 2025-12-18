@@ -1,0 +1,632 @@
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs b05d592371fcce917a90fc28debaf21f7e7532d4836b1c9812ac396e129c7095 != dd493989519e7f328311cfecc7abfe1946186eaebdea7e8b59878a8ba9e25a26
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 71c7befc4bcc50903c01cb500806055811a71080bd754d077284439fcd10103c != 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf
+java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs 240f841b413bb8bd2af4877cb3753eac11d3bdc482d702e067df992e72784ebb != 2d841e5f6ff33687ba2a8e89c73735b82c892266d476f740b43f9fc2b4d21873
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 graphSignature differs f47d0b1647dabd6f0108a1c873e12c6a64939992dcc9e97f79a9e6e1f1af8649 != cda1bda6b067c21da86f5c9b00220a168b94ff95811df6ee0a57435eb4ec0473
+Starting Permute benchmark ...
+Permute.permute(int)void -1 graphSignature differs abd2e7407c6ce0088940d6659ac59b19874135c563c791346174e1d3d2e4cbd8 != 2f4526a15e076c8b88ff827c2b0e2eca5ae0b810ae1cafa99095f518efabf429
+Permute: iterations=1 runtime: 484998us
+Permute: iterations=2 runtime: 504546us
+Permute: iterations=3 runtime: 459278us
+Permute: iterations=4 runtime: 458828us
+Permute: iterations=5 runtime: 459231us
+Benchmark.innerBenchmarkLoop(int)boolean -1 graphSignature differs 8b3ae3a1a8b823b59df7d3586c5c49b80071146e8c8340e1f700396c6378e871 != f2a1cd43368857fe4dfccc17f901764091c4976ee47ed2acb22d5bdae9c382ba
+Permute: iterations=6 runtime: 595854us
+Permute: iterations=7 runtime: 458896us
+Permute: iterations=8 runtime: 458179us
+Permute: iterations=9 runtime: 457808us
+Permute: iterations=10 runtime: 458500us
+Permute: iterations=11 runtime: 464232us
+Permute: iterations=12 runtime: 458329us
+Permute: iterations=13 runtime: 458595us
+Permute: iterations=14 runtime: 458607us
+Permute: iterations=15 runtime: 458782us
+Permute: iterations=16 runtime: 458789us
+Permute: iterations=17 runtime: 458801us
+Permute: iterations=18 runtime: 458596us
+Permute: iterations=19 runtime: 458050us
+Permute: iterations=20 runtime: 458524us
+Permute: iterations=21 runtime: 458648us
+Permute: iterations=22 runtime: 458566us
+Permute: iterations=23 runtime: 458254us
+Permute: iterations=24 runtime: 458142us
+Permute: iterations=25 runtime: 458680us
+Permute: iterations=26 runtime: 458186us
+Permute: iterations=27 runtime: 458749us
+Permute: iterations=28 runtime: 458526us
+Permute: iterations=29 runtime: 458802us
+Permute: iterations=30 runtime: 458786us
+Permute: iterations=31 runtime: 458964us
+Permute: iterations=32 runtime: 458975us
+Permute: iterations=33 runtime: 458777us
+Permute: iterations=34 runtime: 458745us
+Permute: iterations=35 runtime: 458717us
+Permute: iterations=36 runtime: 458463us
+Permute: iterations=37 runtime: 458265us
+Permute: iterations=38 runtime: 458858us
+Permute: iterations=39 runtime: 458591us
+Permute: iterations=40 runtime: 458216us
+Permute: iterations=41 runtime: 458628us
+Permute: iterations=42 runtime: 457986us
+Permute: iterations=43 runtime: 458065us
+Permute: iterations=44 runtime: 458293us
+Permute: iterations=45 runtime: 458274us
+Permute: iterations=46 runtime: 458541us
+Permute: iterations=47 runtime: 458882us
+Permute: iterations=48 runtime: 458964us
+Permute: iterations=49 runtime: 458179us
+Permute: iterations=50 runtime: 458796us
+Permute: iterations=51 runtime: 458076us
+Permute: iterations=52 runtime: 458646us
+Permute: iterations=53 runtime: 458657us
+Permute: iterations=54 runtime: 458716us
+Permute: iterations=55 runtime: 458659us
+Permute: iterations=56 runtime: 458495us
+Permute: iterations=57 runtime: 458097us
+Permute: iterations=58 runtime: 458725us
+Permute: iterations=59 runtime: 458335us
+Permute: iterations=60 runtime: 458461us
+Permute: iterations=61 runtime: 464927us
+Permute: iterations=62 runtime: 459251us
+Permute: iterations=63 runtime: 458767us
+Permute: iterations=64 runtime: 459640us
+Permute: iterations=65 runtime: 458401us
+Permute: iterations=66 runtime: 458232us
+Permute: iterations=67 runtime: 458225us
+Permute: iterations=68 runtime: 458411us
+Permute: iterations=69 runtime: 458229us
+Permute: iterations=70 runtime: 458527us
+Permute: iterations=71 runtime: 457897us
+Permute: iterations=72 runtime: 458295us
+Permute: iterations=73 runtime: 458417us
+Permute: iterations=74 runtime: 458471us
+Permute: iterations=75 runtime: 458844us
+Permute: iterations=76 runtime: 459148us
+Permute: iterations=77 runtime: 459192us
+Permute: iterations=78 runtime: 458900us
+Permute: iterations=79 runtime: 458907us
+Permute: iterations=80 runtime: 458986us
+Permute: iterations=81 runtime: 458604us
+Permute: iterations=82 runtime: 459275us
+Permute: iterations=83 runtime: 458950us
+Permute: iterations=84 runtime: 458867us
+Permute: iterations=85 runtime: 458912us
+Permute: iterations=86 runtime: 459838us
+Permute: iterations=87 runtime: 459086us
+Permute: iterations=88 runtime: 458966us
+Permute: iterations=89 runtime: 459037us
+Permute: iterations=90 runtime: 459049us
+Permute: iterations=91 runtime: 459003us
+Permute: iterations=92 runtime: 459315us
+Permute: iterations=93 runtime: 459137us
+Permute: iterations=94 runtime: 458714us
+Permute: iterations=95 runtime: 460586us
+Permute: iterations=96 runtime: 460026us
+Permute: iterations=97 runtime: 459627us
+Permute: iterations=98 runtime: 458303us
+Permute: iterations=99 runtime: 458832us
+Permute: iterations=100 runtime: 458839us
+Permute: iterations=101 runtime: 458834us
+Permute: iterations=102 runtime: 458598us
+Permute: iterations=103 runtime: 458859us
+Permute: iterations=104 runtime: 459284us
+Permute: iterations=105 runtime: 458924us
+Permute: iterations=106 runtime: 458754us
+Permute: iterations=107 runtime: 458866us
+Permute: iterations=108 runtime: 459698us
+Permute: iterations=109 runtime: 458854us
+Permute: iterations=110 runtime: 458715us
+Permute: iterations=111 runtime: 458811us
+Permute: iterations=112 runtime: 459002us
+Permute: iterations=113 runtime: 459000us
+Permute: iterations=114 runtime: 458806us
+Permute: iterations=115 runtime: 459237us
+Permute: iterations=116 runtime: 458608us
+Permute: iterations=117 runtime: 458663us
+Permute: iterations=118 runtime: 458669us
+Permute: iterations=119 runtime: 459450us
+Permute: iterations=120 runtime: 459149us
+Permute: iterations=121 runtime: 459315us
+Permute: iterations=122 runtime: 458357us
+Permute: iterations=123 runtime: 458449us
+Permute: iterations=124 runtime: 458543us
+Permute: iterations=125 runtime: 458702us
+Permute: iterations=126 runtime: 459061us
+Permute: iterations=127 runtime: 459042us
+Permute: iterations=128 runtime: 459064us
+Permute: iterations=129 runtime: 459180us
+Permute: iterations=130 runtime: 459835us
+Permute: iterations=131 runtime: 459126us
+Permute: iterations=132 runtime: 458622us
+Permute: iterations=133 runtime: 458971us
+Permute: iterations=134 runtime: 458951us
+Permute: iterations=135 runtime: 458666us
+Permute: iterations=136 runtime: 458913us
+Permute: iterations=137 runtime: 458684us
+Permute: iterations=138 runtime: 458571us
+Permute: iterations=139 runtime: 459022us
+Permute: iterations=140 runtime: 459777us
+Permute: iterations=141 runtime: 459287us
+Permute: iterations=142 runtime: 458947us
+Permute: iterations=143 runtime: 459151us
+Permute: iterations=144 runtime: 458663us
+Permute: iterations=145 runtime: 459058us
+Permute: iterations=146 runtime: 464981us
+Permute: iterations=147 runtime: 459154us
+Permute: iterations=148 runtime: 459134us
+Permute: iterations=149 runtime: 458828us
+Permute: iterations=150 runtime: 459177us
+Permute: iterations=151 runtime: 459999us
+Permute: iterations=152 runtime: 458837us
+Permute: iterations=153 runtime: 459265us
+Permute: iterations=154 runtime: 458677us
+Permute: iterations=155 runtime: 458848us
+Permute: iterations=156 runtime: 459042us
+Permute: iterations=157 runtime: 458763us
+Permute: iterations=158 runtime: 459063us
+Permute: iterations=159 runtime: 458325us
+Permute: iterations=160 runtime: 458493us
+Permute: iterations=161 runtime: 459083us
+Permute: iterations=162 runtime: 459957us
+Permute: iterations=163 runtime: 458502us
+Permute: iterations=164 runtime: 458616us
+Permute: iterations=165 runtime: 458897us
+Permute: iterations=166 runtime: 459090us
+Permute: iterations=167 runtime: 458904us
+Permute: iterations=168 runtime: 458911us
+Permute: iterations=169 runtime: 458782us
+Permute: iterations=170 runtime: 458593us
+Permute: iterations=171 runtime: 458981us
+Permute: iterations=172 runtime: 458857us
+Permute: iterations=173 runtime: 460051us
+Permute: iterations=174 runtime: 459064us
+Permute: iterations=175 runtime: 459050us
+Permute: iterations=176 runtime: 458398us
+Permute: iterations=177 runtime: 458568us
+Permute: iterations=178 runtime: 458784us
+Permute: iterations=179 runtime: 458377us
+Permute: iterations=180 runtime: 458741us
+Permute: iterations=181 runtime: 459049us
+Permute: iterations=182 runtime: 458359us
+Permute: iterations=183 runtime: 458593us
+Permute: iterations=184 runtime: 459910us
+Permute: iterations=185 runtime: 458831us
+Permute: iterations=186 runtime: 458715us
+Permute: iterations=187 runtime: 458863us
+Permute: iterations=188 runtime: 458777us
+Permute: iterations=189 runtime: 458793us
+Permute: iterations=190 runtime: 458749us
+Permute: iterations=191 runtime: 464618us
+Permute: iterations=192 runtime: 459159us
+Permute: iterations=193 runtime: 458699us
+Permute: iterations=194 runtime: 459154us
+Permute: iterations=195 runtime: 459835us
+Permute: iterations=196 runtime: 458294us
+Permute: iterations=197 runtime: 459054us
+Permute: iterations=198 runtime: 459197us
+Permute: iterations=199 runtime: 458676us
+Permute: iterations=200 runtime: 459121us
+Permute: iterations=201 runtime: 459220us
+Permute: iterations=202 runtime: 459236us
+Permute: iterations=203 runtime: 458873us
+Permute: iterations=204 runtime: 459165us
+Permute: iterations=205 runtime: 458942us
+Permute: iterations=206 runtime: 459757us
+Permute: iterations=207 runtime: 458450us
+Permute: iterations=208 runtime: 459030us
+Permute: iterations=209 runtime: 458905us
+Permute: iterations=210 runtime: 458608us
+Permute: iterations=211 runtime: 459182us
+Permute: iterations=212 runtime: 458251us
+Permute: iterations=213 runtime: 458690us
+Permute: iterations=214 runtime: 459088us
+Permute: iterations=215 runtime: 459216us
+Permute: iterations=216 runtime: 458686us
+Permute: iterations=217 runtime: 460101us
+Permute: iterations=218 runtime: 458746us
+Permute: iterations=219 runtime: 459617us
+Permute: iterations=220 runtime: 459050us
+Permute: iterations=221 runtime: 459045us
+Permute: iterations=222 runtime: 458778us
+Permute: iterations=223 runtime: 459206us
+Permute: iterations=224 runtime: 459011us
+Permute: iterations=225 runtime: 458733us
+Permute: iterations=226 runtime: 462162us
+Permute: iterations=227 runtime: 458959us
+Permute: iterations=228 runtime: 460060us
+Permute: iterations=229 runtime: 459039us
+Permute: iterations=230 runtime: 458748us
+Permute: iterations=231 runtime: 459021us
+Permute: iterations=232 runtime: 459014us
+Permute: iterations=233 runtime: 458088us
+Permute: iterations=234 runtime: 458928us
+Permute: iterations=235 runtime: 458677us
+Permute: iterations=236 runtime: 458344us
+Permute: iterations=237 runtime: 458651us
+Permute: iterations=238 runtime: 458700us
+Permute: iterations=239 runtime: 458554us
+Permute: iterations=240 runtime: 458702us
+Permute: iterations=241 runtime: 459042us
+Permute: iterations=242 runtime: 458936us
+Permute: iterations=243 runtime: 458928us
+Permute: iterations=244 runtime: 458921us
+Permute: iterations=245 runtime: 458930us
+Permute: iterations=246 runtime: 458944us
+Permute: iterations=247 runtime: 458745us
+Permute: iterations=248 runtime: 458467us
+Permute: iterations=249 runtime: 458663us
+Permute: iterations=250 runtime: 457750us
+Permute: iterations=251 runtime: 457641us
+Permute: iterations=252 runtime: 457630us
+Permute: iterations=253 runtime: 457647us
+Permute: iterations=254 runtime: 458557us
+Permute: iterations=255 runtime: 457661us
+Permute: iterations=256 runtime: 458342us
+Permute: iterations=257 runtime: 458465us
+Permute: iterations=258 runtime: 458466us
+Permute: iterations=259 runtime: 458461us
+Permute: iterations=260 runtime: 459310us
+Permute: iterations=261 runtime: 458481us
+Permute: iterations=262 runtime: 458460us
+Permute: iterations=263 runtime: 458465us
+Permute: iterations=264 runtime: 458461us
+Permute: iterations=265 runtime: 458456us
+Permute: iterations=266 runtime: 458443us
+Permute: iterations=267 runtime: 458442us
+Permute: iterations=268 runtime: 458464us
+Permute: iterations=269 runtime: 458478us
+Permute: iterations=270 runtime: 458457us
+Permute: iterations=271 runtime: 458580us
+Permute: iterations=272 runtime: 457655us
+Permute: iterations=273 runtime: 458482us
+Permute: iterations=274 runtime: 458433us
+Permute: iterations=275 runtime: 458425us
+Permute: iterations=276 runtime: 466000us
+Permute: iterations=277 runtime: 458428us
+Permute: iterations=278 runtime: 458575us
+Permute: iterations=279 runtime: 458467us
+Permute: iterations=280 runtime: 458740us
+Permute: iterations=281 runtime: 458472us
+Permute: iterations=282 runtime: 458607us
+Permute: iterations=283 runtime: 458402us
+Permute: iterations=284 runtime: 458394us
+Permute: iterations=285 runtime: 458449us
+Permute: iterations=286 runtime: 458673us
+Permute: iterations=287 runtime: 458533us
+Permute: iterations=288 runtime: 458518us
+Permute: iterations=289 runtime: 458425us
+Permute: iterations=290 runtime: 458687us
+Permute: iterations=291 runtime: 458167us
+Permute: iterations=292 runtime: 458806us
+Permute: iterations=293 runtime: 458821us
+Permute: iterations=294 runtime: 458738us
+Permute: iterations=295 runtime: 458746us
+Permute: iterations=296 runtime: 458329us
+Permute: iterations=297 runtime: 458394us
+Permute: iterations=298 runtime: 458661us
+Permute: iterations=299 runtime: 458476us
+Permute: iterations=300 runtime: 458461us
+Permute: iterations=301 runtime: 458559us
+Permute: iterations=302 runtime: 458665us
+Permute: iterations=303 runtime: 458701us
+Permute: iterations=304 runtime: 459247us
+Permute: iterations=305 runtime: 459075us
+Permute: iterations=306 runtime: 458954us
+Permute: iterations=307 runtime: 458843us
+Permute: iterations=308 runtime: 458889us
+Permute: iterations=309 runtime: 458160us
+Permute: iterations=310 runtime: 458917us
+Permute: iterations=311 runtime: 458901us
+Permute: iterations=312 runtime: 458021us
+Permute: iterations=313 runtime: 458734us
+Permute: iterations=314 runtime: 458725us
+Permute: iterations=315 runtime: 458635us
+Permute: iterations=316 runtime: 458760us
+Permute: iterations=317 runtime: 459191us
+Permute: iterations=318 runtime: 459109us
+Permute: iterations=319 runtime: 458847us
+Permute: iterations=320 runtime: 459100us
+Permute: iterations=321 runtime: 458449us
+Permute: iterations=322 runtime: 458752us
+Permute: iterations=323 runtime: 458699us
+Permute: iterations=324 runtime: 458774us
+Permute: iterations=325 runtime: 458650us
+Permute: iterations=326 runtime: 465683us
+Permute: iterations=327 runtime: 459543us
+Permute: iterations=328 runtime: 458910us
+Permute: iterations=329 runtime: 459152us
+Permute: iterations=330 runtime: 459117us
+Permute: iterations=331 runtime: 460002us
+Permute: iterations=332 runtime: 458725us
+Permute: iterations=333 runtime: 458721us
+Permute: iterations=334 runtime: 459202us
+Permute: iterations=335 runtime: 459024us
+Permute: iterations=336 runtime: 459561us
+Permute: iterations=337 runtime: 459289us
+Permute: iterations=338 runtime: 459147us
+Permute: iterations=339 runtime: 459091us
+Permute: iterations=340 runtime: 459232us
+Permute: iterations=341 runtime: 458947us
+Permute: iterations=342 runtime: 458766us
+Permute: iterations=343 runtime: 459120us
+Permute: iterations=344 runtime: 458849us
+Permute: iterations=345 runtime: 459162us
+Permute: iterations=346 runtime: 458942us
+Permute: iterations=347 runtime: 460610us
+Permute: iterations=348 runtime: 459438us
+Permute: iterations=349 runtime: 459773us
+Permute: iterations=350 runtime: 458834us
+Permute: iterations=351 runtime: 458318us
+Permute: iterations=352 runtime: 459013us
+Permute: iterations=353 runtime: 459118us
+Permute: iterations=354 runtime: 459035us
+Permute: iterations=355 runtime: 459031us
+Permute: iterations=356 runtime: 458931us
+Permute: iterations=357 runtime: 461690us
+Permute: iterations=358 runtime: 459748us
+Permute: iterations=359 runtime: 458524us
+Permute: iterations=360 runtime: 458450us
+Permute: iterations=361 runtime: 458940us
+Permute: iterations=362 runtime: 459019us
+Permute: iterations=363 runtime: 458676us
+Permute: iterations=364 runtime: 458927us
+Permute: iterations=365 runtime: 458811us
+Permute: iterations=366 runtime: 458616us
+Permute: iterations=367 runtime: 458962us
+Permute: iterations=368 runtime: 458922us
+Permute: iterations=369 runtime: 460102us
+Permute: iterations=370 runtime: 458828us
+Permute: iterations=371 runtime: 458776us
+Permute: iterations=372 runtime: 458733us
+Permute: iterations=373 runtime: 458867us
+Permute: iterations=374 runtime: 459040us
+Permute: iterations=375 runtime: 458590us
+Permute: iterations=376 runtime: 459061us
+Permute: iterations=377 runtime: 458441us
+Permute: iterations=378 runtime: 458630us
+Permute: iterations=379 runtime: 458808us
+Permute: iterations=380 runtime: 459691us
+Permute: iterations=381 runtime: 458443us
+Permute: iterations=382 runtime: 458388us
+Permute: iterations=383 runtime: 458898us
+Permute: iterations=384 runtime: 458739us
+Permute: iterations=385 runtime: 458514us
+Permute: iterations=386 runtime: 458884us
+Permute: iterations=387 runtime: 459084us
+Permute: iterations=388 runtime: 459006us
+Permute: iterations=389 runtime: 459007us
+Permute: iterations=390 runtime: 458941us
+Permute: iterations=391 runtime: 459937us
+Permute: iterations=392 runtime: 459109us
+Permute: iterations=393 runtime: 458978us
+Permute: iterations=394 runtime: 458829us
+Permute: iterations=395 runtime: 458877us
+Permute: iterations=396 runtime: 459111us
+Permute: iterations=397 runtime: 459100us
+Permute: iterations=398 runtime: 458924us
+Permute: iterations=399 runtime: 458778us
+Permute: iterations=400 runtime: 458611us
+Permute: iterations=401 runtime: 458498us
+Permute: iterations=402 runtime: 460022us
+Permute: iterations=403 runtime: 464951us
+Permute: iterations=404 runtime: 458985us
+Permute: iterations=405 runtime: 458949us
+Permute: iterations=406 runtime: 458698us
+Permute: iterations=407 runtime: 458742us
+Permute: iterations=408 runtime: 459144us
+Permute: iterations=409 runtime: 459252us
+Permute: iterations=410 runtime: 459064us
+Permute: iterations=411 runtime: 458778us
+Permute: iterations=412 runtime: 458708us
+Permute: iterations=413 runtime: 460138us
+Permute: iterations=414 runtime: 458631us
+Permute: iterations=415 runtime: 458925us
+Permute: iterations=416 runtime: 458745us
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
+Permute: iterations=417 runtime: 458781us
+Permute: iterations=418 runtime: 458791us
+Permute: iterations=419 runtime: 458384us
+Permute: iterations=420 runtime: 458635us
+Permute: iterations=421 runtime: 458587us
+Permute: iterations=422 runtime: 458535us
+Permute: iterations=423 runtime: 458230us
+Permute: iterations=424 runtime: 458662us
+Permute: iterations=425 runtime: 458450us
+Permute: iterations=426 runtime: 458640us
+Permute: iterations=427 runtime: 458351us
+Permute: iterations=428 runtime: 458234us
+Permute: iterations=429 runtime: 458995us
+Permute: iterations=430 runtime: 458778us
+Permute: iterations=431 runtime: 458476us
+Permute: iterations=432 runtime: 457999us
+Permute: iterations=433 runtime: 458537us
+Permute: iterations=434 runtime: 458875us
+Permute: iterations=435 runtime: 458485us
+Permute: iterations=436 runtime: 458079us
+Permute: iterations=437 runtime: 458540us
+Permute: iterations=438 runtime: 458588us
+Permute: iterations=439 runtime: 458573us
+Permute: iterations=440 runtime: 458636us
+Permute: iterations=441 runtime: 458681us
+Permute: iterations=442 runtime: 458696us
+Permute: iterations=443 runtime: 458248us
+Permute: iterations=444 runtime: 458416us
+Permute: iterations=445 runtime: 457986us
+Permute: iterations=446 runtime: 459319us
+Permute: iterations=447 runtime: 458868us
+Permute: iterations=448 runtime: 458492us
+Permute: iterations=449 runtime: 458839us
+Permute: iterations=450 runtime: 458871us
+Permute: iterations=451 runtime: 458322us
+Permute: iterations=452 runtime: 464688us
+Permute: iterations=453 runtime: 459623us
+Permute: iterations=454 runtime: 458527us
+Permute: iterations=455 runtime: 458949us
+Permute: iterations=456 runtime: 459804us
+Permute: iterations=457 runtime: 458884us
+Permute: iterations=458 runtime: 458851us
+Permute: iterations=459 runtime: 458733us
+Permute: iterations=460 runtime: 459252us
+Permute: iterations=461 runtime: 458551us
+Permute: iterations=462 runtime: 459012us
+Permute: iterations=463 runtime: 458929us
+Permute: iterations=464 runtime: 458864us
+Permute: iterations=465 runtime: 458960us
+Permute: iterations=466 runtime: 458848us
+Permute: iterations=467 runtime: 461619us
+Permute: iterations=468 runtime: 459105us
+Permute: iterations=469 runtime: 459178us
+Permute: iterations=470 runtime: 458970us
+Permute: iterations=471 runtime: 458754us
+Permute: iterations=472 runtime: 459128us
+Permute: iterations=473 runtime: 459015us
+Permute: iterations=474 runtime: 459062us
+Permute: iterations=475 runtime: 458881us
+Permute: iterations=476 runtime: 458621us
+Permute: iterations=477 runtime: 458968us
+Permute: iterations=478 runtime: 459640us
+Permute: iterations=479 runtime: 458706us
+Permute: iterations=480 runtime: 458960us
+Permute: iterations=481 runtime: 459182us
+Permute: iterations=482 runtime: 459180us
+Permute: iterations=483 runtime: 458530us
+Permute: iterations=484 runtime: 458649us
+Permute: iterations=485 runtime: 458407us
+Permute: iterations=486 runtime: 458989us
+Permute: iterations=487 runtime: 459092us
+Permute: iterations=488 runtime: 461527us
+Permute: iterations=489 runtime: 459992us
+java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)int -1 graphSignature differs bc8f20c8c772d3cc0eaba9b68bcd84047d761ba16a7aeb64fe90c36d37dcccb7 != 3bdd078c3a9d60d7eff24b6603d8a355db817965321aded167eb2387bae94eb4
+Permute: iterations=490 runtime: 458779us
+Permute: iterations=491 runtime: 458810us
+Permute: iterations=492 runtime: 458813us
+Permute: iterations=493 runtime: 459148us
+Permute: iterations=494 runtime: 459224us
+Permute: iterations=495 runtime: 458648us
+Permute: iterations=496 runtime: 459390us
+Permute: iterations=497 runtime: 458922us
+Permute: iterations=498 runtime: 458957us
+Permute: iterations=499 runtime: 459201us
+Permute: iterations=500 runtime: 458940us
+Permute: iterations=500 average: 459362us total: 229681231us
+
+
+Total Runtime: 229681231us
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 761060429928
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 241634 || Activation Count:4232| LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 6712 || Activation Count:167| LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3684 || Activation Count:49| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 75 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 29148 || Activation Count:9| LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 8674 || Activation Count:82| LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 12842 || Activation Count:245| LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 84 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 384 || Activation Count:1| LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 146 || Activation Count:1| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 98 || Activation Count:1| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 85 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 82576 || Activation Count:1675| LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 110720 || Activation Count:1675| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 95994 || Activation Count:1675| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 87 (java.lang.StringCoding.countPositives(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 410 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 88 (java.lang.StringCoding.countPositives(byte[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 10342 || Activation Count:66| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 138 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 16384 || Activation Count:113| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 140 (java.util.Properties$LineReader.readLine()) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 225700 || Activation Count:90| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 12102 || Activation Count:91| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 624 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 141 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 3372 || Activation Count:14| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 1760 || Activation Count:14| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 142 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 37870 || Activation Count:1| LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 27114 || Activation Count:131| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 15084 || Activation Count:131| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 716 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 143 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 322584 || Activation Count:6| LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 382224 || Activation Count:374| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 47902 || Activation Count:377| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 169 (Permute.permute(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 2231085580564 || Activation Count:6334997163| LoopCallCount: 1 |  Source: -at Permute.permute(int) [bci: 25] | -at Permute.permute(int) [bci: 52]
+Comp 184 (Benchmark.innerBenchmarkLoop(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 224952860 || Activation Count:1| LoopCallCount: 2 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 185 (Benchmark.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 750677480846 || Activation Count:494| LoopCallCount: 2 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 193 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 25380 || Activation Count:174| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 11030 || Activation Count:174| LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 8150 || Activation Count:174| LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+Comp 194 (java.lang.StringCoding.implEncodeAsciiArray(char[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 734 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+Comp 195 (java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3834 || Activation Count:14| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]

@@ -1,0 +1,1973 @@
+--- Execution profile ---
+Total samples       : 12555462
+
+--- 1160404047 ns (0.92%), 115437 samples
+  [ 0] Towers.moveDisks
+  [ 1] [break_compiled]
+
+--- 666044886 ns (0.53%), 66285 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] [unknown]
+
+--- 53304249 ns (0.04%), 5277 samples
+  [ 0] Towers.buildTowerAt
+  [ 1] Towers.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 27667509 ns (0.02%), 2738 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.buildTowerAt
+  [ 2] Towers.benchmark
+  [ 3] Benchmark.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 26110399 ns (0.02%), 2599 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] [unknown]
+  [ 4] [unknown]
+
+--- 18712482 ns (0.01%), 1852 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.buildTowerAt
+  [ 2] Towers.benchmark
+  [ 3] Benchmark.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 13975649 ns (0.01%), 1383 samples
+  [ 0] Towers.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 12181557 ns (0.01%), 1208 samples
+  [ 0] Towers.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 8677024 ns (0.01%), 859 samples
+  [ 0] Towers.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 8445375 ns (0.01%), 837 samples
+  [ 0] Towers.verifyResult
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 8409299 ns (0.01%), 833 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.benchmark
+  [ 3] Benchmark.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 8314294 ns (0.01%), 825 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.benchmark
+  [ 3] Benchmark.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 8008298 ns (0.01%), 792 samples
+  [ 0] java.lang.Integer.valueOf
+  [ 1] Towers.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 7677223 ns (0.01%), 761 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 6765936 ns (0.01%), 671 samples
+  [ 0] Benchmark.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 6671784 ns (0.01%), 661 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 6472094 ns (0.01%), 646 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 6459388 ns (0.01%), 641 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 6432013 ns (0.01%), 640 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 6402789 ns (0.01%), 639 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 6319574 ns (0.01%), 627 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.benchmark
+  [ 3] Benchmark.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 6293093 ns (0.00%), 626 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 5885558 ns (0.00%), 586 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5837143 ns (0.00%), 579 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5816614 ns (0.00%), 579 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5797524 ns (0.00%), 577 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5709506 ns (0.00%), 569 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5635782 ns (0.00%), 561 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5527646 ns (0.00%), 547 samples
+  [ 0] Towers.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 5507090 ns (0.00%), 546 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 5503126 ns (0.00%), 548 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5494657 ns (0.00%), 549 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 5463682 ns (0.00%), 544 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5375579 ns (0.00%), 535 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 5364520 ns (0.00%), 532 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.benchmark
+  [ 4] Benchmark.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 5362851 ns (0.00%), 535 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 5349631 ns (0.00%), 530 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 5348156 ns (0.00%), 527 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5308348 ns (0.00%), 528 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5253180 ns (0.00%), 523 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 5246569 ns (0.00%), 521 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5237214 ns (0.00%), 521 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5217024 ns (0.00%), 519 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 5191124 ns (0.00%), 516 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 5139069 ns (0.00%), 513 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 5137016 ns (0.00%), 509 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 5134170 ns (0.00%), 509 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 5116717 ns (0.00%), 508 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 5113320 ns (0.00%), 511 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 5087714 ns (0.00%), 508 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5066419 ns (0.00%), 504 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5046388 ns (0.00%), 504 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 5042241 ns (0.00%), 502 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 5023589 ns (0.00%), 498 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 5014065 ns (0.00%), 499 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4995958 ns (0.00%), 497 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 4967995 ns (0.00%), 494 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4960339 ns (0.00%), 489 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 4957223 ns (0.00%), 492 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4943082 ns (0.00%), 492 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 4942187 ns (0.00%), 492 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4935038 ns (0.00%), 491 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4917429 ns (0.00%), 490 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4909444 ns (0.00%), 489 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.benchmark
+  [ 9] Benchmark.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 4895694 ns (0.00%), 487 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4889718 ns (0.00%), 480 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4862313 ns (0.00%), 484 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4831279 ns (0.00%), 481 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4820484 ns (0.00%), 481 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 4817373 ns (0.00%), 480 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4813055 ns (0.00%), 477 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 4811144 ns (0.00%), 479 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 4803334 ns (0.00%), 476 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4800372 ns (0.00%), 478 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4796987 ns (0.00%), 478 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4787542 ns (0.00%), 475 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4778064 ns (0.00%), 476 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4776243 ns (0.00%), 475 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4772515 ns (0.00%), 474 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4772439 ns (0.00%), 476 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4766387 ns (0.00%), 474 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4757504 ns (0.00%), 472 samples
+  [ 0] Towers.popDiskFrom
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 4733902 ns (0.00%), 471 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4732393 ns (0.00%), 472 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4724357 ns (0.00%), 470 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4719699 ns (0.00%), 468 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4719166 ns (0.00%), 470 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4717587 ns (0.00%), 468 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.popDiskFrom
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.benchmark
+  [14] Benchmark.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 4715536 ns (0.00%), 469 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.popDiskFrom
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.benchmark
+  [14] Benchmark.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 4714426 ns (0.00%), 469 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4707752 ns (0.00%), 470 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4703105 ns (0.00%), 468 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4702892 ns (0.00%), 468 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4691164 ns (0.00%), 467 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4684004 ns (0.00%), 465 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4679155 ns (0.00%), 466 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4678178 ns (0.00%), 466 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4671973 ns (0.00%), 463 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.benchmark
+  [11] Benchmark.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 4670695 ns (0.00%), 465 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 4669440 ns (0.00%), 463 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.moveDisks
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.benchmark
+  [13] Benchmark.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 37670327294   29.85%  3748352  Towers.pushDisk
+ 29356264916   23.26%  2920884  Towers.moveDisks
+ 27432325192   21.74%  2729596  Towers.popDiskFrom
+ 14947320334   11.84%  1487264  Towers.moveTopDisk
+ 13458039107   10.66%  1339192  Towers$TowersDisk.setNext
+  2325304010    1.84%   231159  Towers$TowersDisk.getSize
+    54655595    0.04%     5410  Towers.buildTowerAt
+    46294336    0.04%     4584  Towers.benchmark
+    23517932    0.02%     2354  void com.oracle.svm.core.genscavenge.GreyToBlackObjRefVisitor::visitObjectReferences
+    14263866    0.01%     1364  do_user_addr_fault_[k]
+    13374464    0.01%     1325  Benchmark.innerBenchmarkLoop
+    12951779    0.01%     1300  void com.oracle.svm.core.genscavenge.GreyToBlackObjectVisitor::visitObject
+     9508459    0.01%      942  Towers.verifyResult
+     9217196    0.01%      922  int org.graalvm.collections.EconomicMapImpl::findLinear
+     8729516    0.01%      864  java.lang.Integer.valueOf
+     7993546    0.01%      800  java.lang.AbstractStringBuilder* java.lang.AbstractStringBuilder::append
+     7961242    0.01%      799  void com.oracle.svm.core.UnmanagedMemoryUtil::copyLongsForward
+     6349285    0.01%      633  G1ParScanThreadState::trim_queue_to_threshold
+     6213607    0.00%      454  _raw_spin_unlock_irqrestore_[k]
+     6042428    0.00%      606  void com.oracle.svm.core.graal.jdk.SubstrateArraycopySnippets::doArraycopy
+     4648938    0.00%      465  boolean org.graalvm.collections.EconomicMapImpl::compareKeys
+     4555046    0.00%      413  clear_page_erms_[k]
+     4329803    0.00%      433  java.lang.Object* org.graalvm.collections.EconomicMapImpl::put
+     4280320    0.00%      426  void java.util.ArrayList::add
+     3753876    0.00%      376  java.lang.Object* com.oracle.svm.core.graal.jdk.SubstrateObjectCloneSnippets::doClone
+     3570205    0.00%      356  boolean LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.common.CanonicalizerPhase::tryCanonicalize
+     3514739    0.00%      352  boolean java.util.RegularEnumSet::contains
+     3489213    0.00%      348  int org.graalvm.collections.EconomicMapImpl::getHashIndex
+     3387122    0.00%      338  int LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeIdAccessor::getNodeId
+     3280977    0.00%      329  java.lang.String* com.oracle.svm.core.util.Utf8::utf8ToString
+     3277100    0.00%      330  void com.oracle.svm.core.UnmanagedMemoryUtil::copyForward
+     3158373    0.00%      316  java.lang.Object* LibGraalClassLoader_4bd31064::jdk.graal.compiler.options.OptionValues::get
+     3148370    0.00%      310  __tls_get_addr
+     3146955    0.00%      314  int org.graalvm.collections.EconomicMapImpl::findHash
+     3055216    0.00%      305  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.iterators.PredicatedProxyNodeIterator::forward
+     3052295    0.00%      304  boolean LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.common.CanonicalizerPhase::processNode
+     3050551    0.00%      304  java.lang.Object* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeMap::get
+     3024001    0.00%      302  LibGraalClassLoader_4bd31064::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime* LibGraalClassLoader_4bd31064::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::runtime
+     3002825    0.00%      300  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeWorkList$QueueConsumingIterator::dropDeleted
+     2854498    0.00%      285  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.core.common.Fields::copy
+     2846561    0.00%      285  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeClass::updateEdgesInPlace
+     2805701    0.00%      281  org.graalvm.nativeimage.ObjectHandle com.oracle.svm.core.handles.ThreadLocalHandles::tryCreateNonNull
+     2736709    0.00%      275  void com.oracle.svm.core.c.function.CEntryPointSetup$LeaveEpilogue::leave
+     2702034    0.00%      272  void com.oracle.svm.core.JavaMemoryUtil::copyPrimitiveArrayForward
+     2654956    0.00%      266  java.lang.Object* java.util.ArrayList$Itr::next
+     2648080    0.00%      266  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node::clone
+     2549624    0.00%      255  java.lang.Object* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node::getNodeInfo
+     2534753    0.00%      253  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Edges::verifyUpdateValid
+     2455213    0.00%      244  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node::addUsage
+     2451155    0.00%      245  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Graph$NodeEventListener::event
+     2435850    0.00%      243  int org.graalvm.collections.EconomicMapImpl::find
+     2346037    0.00%      235  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.BasePhase::apply
+     2334444    0.00%      233  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.common.util.EconomicSetNodeEventListener::changed
+     2322578    0.00%      232  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Graph::findDuplicate
+     2320499    0.00%      233  boolean LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeClass::dataEquals
+     2205066    0.00%      221  java.lang.Object* org.graalvm.collections.EconomicMapImpl::get
+     2192126    0.00%      219  void org.graalvm.collections.EconomicMapImpl::putHashEntry
+     2187712    0.00%      155  __audit_syscall_exit_[k]
+     2168303    0.00%      156  __futex_abstimed_wait_common
+     2165365    0.00%      216  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeMap::set
+     2162459    0.00%      216  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeClass$RawEdgesIterator::getAndAdvanceInput
+     2160085    0.00%      216  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Edges::copy
+     2153051    0.00%      215  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeUsageIterator::advance
+     2152982    0.00%      215  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.TypedGraphNodeIterator::forward
+     2152820    0.00%      215  int org.graalvm.collections.EconomicMapImpl::getHashTableSize
+     2121953    0.00%      212  Run.measure
+     2099802    0.00%      193  get_mem_cgroup_from_mm_[k]
+     2097287    0.00%      210  int LibGraalClassLoader_4bd31064::jdk.vm.ci.hotspot.HotSpotResolvedObjectTypeImpl::layoutHelper
+     2083867    0.00%      208  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.lir.LIRIntrospection::visitEach
+     1982996    0.00%      184  mtree_range_walk_[k]
+     1979637    0.00%      198  java.lang.Object* java.util.concurrent.ConcurrentHashMap::get
+     1975206    0.00%      198  void java.util.ArrayDeque::addLast
+     1969592    0.00%      197  void sun.security.provider.SHA2::implCompress0
+     1968066    0.00%      196  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeClass$RawEdgesIterator::forward
+     1950314    0.00%      180  [vdso]
+     1939666    0.00%      194  int org.graalvm.collections.EconomicMapImpl::getHashArray
+     1935911    0.00%      174  __list_del_entry_valid_[k]
+     1891139    0.00%      189  LibGraalClassLoader_4bd31064::jdk.graal.compiler.core.common.type.Stamp* LibGraalClassLoader_4bd31064::jdk.graal.compiler.core.common.type.AbstractObjectStamp::join0
+     1859296    0.00%      186  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.core.common.util.CompilationAlarm::checkProgress
+     1854755    0.00%      185  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.iterators.NodeIterable* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node::inputs
+     1851007    0.00%      184  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Graph::updateNodeCaches
+     1809510    0.00%      180  java.lang.Object* java.util.ArrayList::get
+     1794655    0.00%       29  generic_exec_single_[k]
+     1767691    0.00%      176  InstanceKlass::find_method_index
+     1687190    0.00%      154  blk_cgroup_congested_[k]
+     1673414    0.00%      159  __handle_mm_fault_[k]
+     1661129    0.00%      166  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Graph::register
+     1643040    0.00%      164  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.java.BytecodeParser::iterateBytecodesForBlock
+     1632812    0.00%      163  com.oracle.svm.core.genscavenge.AbstractCollectionPolicy$SizeParameters* com.oracle.svm.core.genscavenge.AbstractCollectionPolicy::computeSizeParameters
+     1599176    0.00%      160  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.java.BytecodeParser::processBytecode
+     1583166    0.00%      158  boolean com.oracle.svm.core.code.IsolateEnterStub::JNIFunctions_ExceptionCheck_wwAepBoMjPEWDN8NR0UL5D
+     1576656    0.00%      157  java.util.List* java.util.Formatter::parse
+     1574235    0.00%      161  __memcpy_avx_unaligned_erms
+     1559936    0.00%      156  LibGraalClassLoader_4bd31064::jdk.graal.compiler.nodes.FixedNode* LibGraalClassLoader_4bd31064::jdk.graal.compiler.nodes.AbstractBeginNode$BlockNodeIterator::next
+     1547851    0.00%      156  byte[]* java.util.Arrays::copyOfRange
+     1541931    0.00%      154  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeClass::registerAtInputsAsUsage
+     1540981    0.00%      143  charge_memcg_[k]
+     1536371    0.00%      154  void java.util.Formatter$FormatSpecifier::print
+     1484034    0.00%      148  JVMCIEnv::~JVMCIEnv
+     1468260    0.00%      147  java.lang.String* LibGraalClassLoader_4bd31064::jdk.vm.ci.meta.JavaMethod::format
+     1451317    0.00%      145  char java.lang.String::charAt
+     1450482    0.00%      145  java.lang.Object[]* java.util.Arrays::copyOf
+     1426490    0.00%      143  long LibGraalClassLoader_4bd31064::jdk.vm.ci.hotspot.HotSpotResolvedJavaMethodImpl::getMethodPointer
+     1422443    0.00%      141  org.graalvm.word.PointerBase com.oracle.svm.core.jni.access.JNINativeLinkage::getOrFindEntryPoint
+     1419142    0.00%      142  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Graph* LibGraalClassLoader_4bd31064::jdk.graal.compiler.nodes.ValueNode::graph
+     1398115    0.00%      139  sun.nio.cs.UTF_8$Encoder.encodeArrayLoop
+     1382551    0.00%      139  java.util.Formatter* java.util.Formatter::format
+     1368685    0.00%      137  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeWorkList$IterativeNodeWorkList::add
+     1365201    0.00%      136  java.io.BufferedWriter.write
+     1365106    0.00%      137  com.oracle.svm.core.jni.headers.JNIObjectHandle com.oracle.svm.core.jni.JNIObjectHandles::createLocal
+     1364431    0.00%      136  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Graph::fireNodeEvent
+     1341355    0.00%      134  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeList::NodeList
+     1339887    0.00%      134  void org.graalvm.collections.EconomicMapImpl::setValue
+     1338526    0.00%      133  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.common.inlining.InliningUtil::updateSourcePosition
+     1321544    0.00%      120  syscall_enter_from_user_mode_[k]
+     1320492    0.00%      116  __clock_gettime_2
+     1319377    0.00%      131  java.lang.Object[]* java.util.ArrayList::grow
+     1292610    0.00%      130  byte[]* java.lang.AbstractStringBuilder::ensureCapacityNewCoder
+     1287600    0.00%      128  LibGraalClassLoader_4bd31064::jdk.graal.compiler.debug.DebugCloseable* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Graph::withNodeSourcePosition
+     1277621    0.00%      126  java.lang.String$$StringConcat.0x000000009d046000.concat
+     1274659    0.00%      127  LibGraalClassLoader_4bd31064::jdk.graal.compiler.nodes.FrameState::FrameState
+     1272305    0.00%      127  java.util.HashMap$Node* java.util.HashMap::getNode
+     1259460    0.00%      126  void com.oracle.svm.core.genscavenge.GreyObjectsWalker::walkGreyObjects
+     1246147    0.00%      126  java.lang.Object* jdk.graal.compiler.options.ModifiableOptionValues::get
+     1218591    0.00%      125  SymbolTable::lookup_shared
+     1214692    0.00%      121  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeSourcePosition::NodeSourcePosition
+     1194961    0.00%      119  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeClass::registerAtSuccessorsAsPredecessor
+     1188377    0.00%       93  update_sg_lb_stats_[k]
+     1182982    0.00%      104  get_page_from_freelist_[k]
+     1177071    0.00%      107  __next_zones_zonelist_[k]
+     1176686    0.00%      117  boolean LibGraalClassLoader_4bd31064::jdk.vm.ci.hotspot.HotSpotResolvedObjectTypeImpl::isArray
+     1175926    0.00%      118  JVMCIEnv::has_pending_exception
+     1169877    0.00%      116  java.lang.String.getBytes
+     1168155    0.00%      109  vma_alloc_folio_[k]
+     1166278    0.00%      117  byte java.nio.DirectByteBuffer::get
+     1164359    0.00%      117  org.graalvm.collections.UnmodifiableEconomicMap* LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.common.inlining.InliningUtil::inline
+     1161276    0.00%      117  void org.graalvm.collections.EconomicMapImpl::grow
+     1148821    0.00%      114  java.lang.Object* java.util.concurrent.ConcurrentHashMap::computeIfAbsent
+     1147246    0.00%      114  boolean java.lang.String::equals
+     1145215    0.00%      114  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeClass::applyEdges
+     1126162    0.00%      112  sun.nio.cs.StreamEncoder.implWrite
+     1122058    0.00%      112  int LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.common.CanonicalizerPhase::processWorkSet
+     1117968    0.00%      107  memchr_[k]
+     1105881    0.00%      111  char java.lang.StringLatin1::charAt
+     1099370    0.00%      109  jdk.internal.util.DecimalDigits.stringSize
+     1098960    0.00%      110  zap_pte_range_[k]
+     1095771    0.00%      109  jdk.internal.util.DecimalDigits.uncheckedGetCharsLatin1
+     1090838    0.00%      109  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.java.LocalLiveness::computeLocalLiveness
+     1084090    0.00%      108  org.graalvm.collections.EconomicMap* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeClass::addGraphDuplicate
+     1071210    0.00%      106  I2C/C2I adapters(0xb)
+     1065238    0.00%      106  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.java.BciBlockMapping::computeBlockOrder
+     1062020    0.00%      107  int java.nio.Buffer::nextGetIndex
+     1053884    0.00%      105  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.debug.GraalError::guarantee
+     1049999    0.00%      105  boolean LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeBitMap::isMarked
+     1047400    0.00%      105  readConfiguration0
+     1012484    0.00%      101  java.util.concurrent.ConcurrentHashMap.putVal
+      997220    0.00%      100  void G1ScanEvacuatedObjClosure::do_oop_work<narrowOop>
+      988694    0.00%       99  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::scheduleEarliestIterative
+      984682    0.00%       99  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.TypedGraphNodeIterator::findNext
+      977653    0.00%       98  java.util.concurrent.ConcurrentHashMap.transfer
+      974896    0.00%       94  next_uptodate_page_[k]
+      964966    0.00%       96  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.nodes.cfg.ReversePostOrder::compute
+      964111    0.00%       96  java.lang.Object* java.util.ArrayList::set
+      952790    0.00%       95  void com.oracle.svm.core.genscavenge.remset.AlignedChunkRememberedSet::walkObjects
+      951485    0.00%       95  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.core.common.CompilationListenerProfiler$1::close
+      940197    0.00%       94  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.java.LocalLiveness::computeLiveness
+      940106    0.00%       94  java.lang.String::String
+      938994    0.00%       71  mem_cgroup_handle_over_high_[k]
+      935091    0.00%       93  int LibGraalClassLoader_4bd31064::jdk.vm.ci.hotspot.HotSpotResolvedJavaMethodImpl::getCodeSize
+      929592    0.00%       93  java.lang.Object* java.util.ArrayDeque$DeqIterator::next
+      924429    0.00%       93  Dictionary::find_class
+      921842    0.00%       60  syscall_exit_work_[k]
+      919919    0.00%       91  java.io.PrintStream.writeln
+      916389    0.00%       91  LibGraalClassLoader_4bd31064::jdk.graal.compiler.nodes.FixedNode* LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.graph.FixedNodeRelativeFrequencyCache::findBegin
+      915861    0.00%       92  boolean LibGraalClassLoader_4bd31064::jdk.graal.compiler.core.common.type.AbstractObjectStamp::equals
+      914034    0.00%       91  long LibGraalClassLoader_4bd31064::jdk.vm.ci.hotspot.HotSpotResolvedJavaMethodImpl::getConstMethod
+      913420    0.00%       91  java.lang.StringCoding.implEncodeAsciiArray
+      908732    0.00%       91  boolean LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.iterators.NodePredicates$PositiveTypePredicate::apply
+      898261    0.00%       90  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.GraphNodeIterator::forward
+      896769    0.00%       91  void com.oracle.svm.core.monitor.MultiThreadedMonitorSupport::monitorEnter
+      895404    0.00%       89  c2v_notifyCompilerPhaseEvent
+      889556    0.00%       89  LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.common.inlining.policy.InliningPolicy$Decision* LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.common.inlining.policy.GreedyInliningPolicy::isWorthInlining
+      887323    0.00%       89  java.lang.StringBuilder* java.util.Formatter$FormatSpecifier::localizedMagnitude
+      883853    0.00%       88  java.util.ArrayList::ArrayList
+      870863    0.00%       87  void java.util.ArrayList$Itr::checkForComodification
+      863166    0.00%       86  boolean LibGraalClassLoader_4bd31064::jdk.graal.compiler.core.common.type.AbstractObjectStamp::isConcreteType
+      851011    0.00%       85  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.NodeBitMap::mark
+      848133    0.00%       84  LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node* LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Graph::getIterableNodeStart
+      847447    0.00%       83  Run.printResult
+      847334    0.00%       84  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::sortNodesLatestWithinBlock
+      846472    0.00%       85  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.java.BytecodeParser::build
+      845819    0.00%       85  LibGraalClassLoader_4bd31064::jdk.graal.compiler.nodes.FixedNode* LibGraalClassLoader_4bd31064::jdk.graal.compiler.java.BytecodeParser::createTarget
+      845488    0.00%       85  void com.oracle.svm.core.util.ArrayUtil::boundsCheckInSnippet
+      844690    0.00%       85  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.java.BciBlockMapping::iterateOverBytecodes
+      843160    0.00%       84  java.lang.String.getChars
+      842187    0.00%       64  ObjectSynchronizer::is_async_deflation_needed
+      839773    0.00%       84  void LibGraalClassLoader_4bd31064::jdk.graal.compiler.graph.Node::maybeNotifyInputChanged
+      836337    0.00%       84  int jdk.internal.util.ArraysSupport::hashCodeOfUnsigned
+      832945    0.00%       84  java.lang.Object* jdk.graal.compiler.options.OptionValues::get
+      831465    0.00%       78  mm_account_fault_[k]

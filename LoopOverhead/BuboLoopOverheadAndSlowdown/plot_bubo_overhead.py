@@ -13,13 +13,12 @@ os.makedirs(OUT_DIR, exist_ok=True)
 
 # Regexes to extract data
 AVG_RUNTIME_RE = re.compile(r"average:\s+(\d+)us")
-CYCLES_RE = re.compile(
-    r"Bubo\.RDTSC\.Harness\.main Total RDTSC cycles:\s+(\d+)"
-)
+CYCLES_RE = re.compile(r"Bubo\.RDTSC\.Harness\.main Total RDTSC cycles:\s+(\d+)")
 
 def parse_file(path):
     """
     Parse one .out file and return (avg_runtime_us, total_cycles) as ints or None.
+    Either may be missing; we don't fail if one is absent.
     """
     avg_us = None
     cycles = None
@@ -42,145 +41,166 @@ def parse_file(path):
 
     return avg_us, cycles
 
+def safe_pct(numer, denom):
+    """
+    (numer/denom - 1) * 100, but returns NaN if inputs are missing/invalid.
+    """
+    numer = np.asarray(numer, dtype=float)
+    denom = np.asarray(denom, dtype=float)
+    out = np.full_like(numer, np.nan, dtype=float)
+    ok = np.isfinite(numer) & np.isfinite(denom) & (denom != 0.0)
+    out[ok] = (numer[ok] / denom[ok] - 1.0) * 100.0
+    return out
+
+def plot_three_bars(benches, a, b, c, ylabel, title, outpath, labels):
+    if len(benches) == 0:
+        return
+    x = np.arange(len(benches))
+    width = 0.25
+    fig, ax = plt.subplots(figsize=(12, 6))
+    ax.bar(x - width, a, width, label=labels[0])
+    ax.bar(x,         b, width, label=labels[1])
+    ax.bar(x + width, c, width, label=labels[2])
+    ax.set_ylabel(ylabel)
+    ax.set_title(title)
+    ax.set_xticks(x)
+    ax.set_xticklabels(benches, rotation=45, ha="right")
+    ax.legend()
+    ax.grid(axis="y", linestyle="--", alpha=0.4)
+    plt.tight_layout()
+    plt.savefig(outpath)
+    plt.close(fig)
+
+def plot_two_bars(benches, a, b, ylabel, title, outpath, labels):
+    if len(benches) == 0:
+        return
+    x = np.arange(len(benches))
+    width2 = 0.35
+    fig, ax = plt.subplots(figsize=(12, 6))
+    ax.bar(x - width2/2, a, width2, label=labels[0])
+    ax.bar(x + width2/2, b, width2, label=labels[1])
+    ax.set_ylabel(ylabel)
+    ax.set_title(title)
+    ax.set_xticks(x)
+    ax.set_xticklabels(benches, rotation=45, ha="right")
+    ax.legend()
+    ax.grid(axis="y", linestyle="--", alpha=0.4)
+    plt.tight_layout()
+    plt.savefig(outpath)
+    plt.close(fig)
 
 def main():
-    # Discover benchmarks from subdirectories
     benchmarks = [
         d for d in sorted(os.listdir(BASE_DIR))
         if os.path.isdir(os.path.join(BASE_DIR, d))
     ]
 
-    # Data structure:
-    # data[bench] = {
-    #   "baseline_noBubo": {"time": ..., "cycles": ...},
-    #   "baseline_withBubo": {...},
-    #   "slowdown_noBubo": {...},
-    #   "slowdown_withBubo": {...},
-    # }
     data = OrderedDict()
 
     for bench in benchmarks:
         bench_dir = os.path.join(BASE_DIR, bench)
         paths = {
-            "baseline_noBubo":  os.path.join(bench_dir, f"{bench}_baseline_noBubo.out"),
-            "baseline_withBubo": os.path.join(bench_dir, f"{bench}_baseline_withBubo.out"),
-            "slowdown_noBubo": os.path.join(bench_dir, f"{bench}_slowdown_noBubo.out"),
-            "slowdown_withBubo": os.path.join(bench_dir, f"{bench}_slowdown_withBubo.out"),
+            "baseline_noBubo":    os.path.join(bench_dir, f"{bench}_baseline_noBubo.out"),
+            "baseline_withBubo":  os.path.join(bench_dir, f"{bench}_baseline_withBubo.out"),
+            "slowdown_noBubo":    os.path.join(bench_dir, f"{bench}_slowdown_noBubo.out"),
+            "slowdown_withBubo":  os.path.join(bench_dir, f"{bench}_slowdown_withBubo.out"),
         }
 
         bench_entry = {}
-        missing = False
+        any_metric_found = False
+
         for key, path in paths.items():
             avg_us, cycles = parse_file(path)
-            if avg_us is None:
-                print(f"[WARN] Could not find average runtime in {path}, skipping benchmark {bench}")
-                missing = True
-                break
             bench_entry[key] = {"time": avg_us, "cycles": cycles}
+            if (avg_us is not None) or (cycles is not None):
+                any_metric_found = True
 
-        if not missing:
-            data[bench] = bench_entry
+        if not any_metric_found:
+            print(f"[WARN] No time or cycle data found anywhere for {bench}, skipping.")
+            continue
+
+        data[bench] = bench_entry
 
     if not data:
-        print("No complete benchmark data found. Exiting.")
+        print("No benchmark data found. Exiting.")
         return
 
-    # Prepare arrays for plots / CSVs
-    benches = list(data.keys())
+    benches_all = list(data.keys())
 
-    # Runtime raw values
-    base_no_bubo_time      = np.array([data[b]["baseline_noBubo"]["time"] for b in benches], dtype=float)
-    base_with_bubo_time    = np.array([data[b]["baseline_withBubo"]["time"] for b in benches], dtype=float)
-    slow_no_bubo_time      = np.array([data[b]["slowdown_noBubo"]["time"] for b in benches], dtype=float)
-    slow_with_bubo_time    = np.array([data[b]["slowdown_withBubo"]["time"] for b in benches], dtype=float)
-
-    # Cycles raw values (may be None for some; treat missing as NaN)
-    def to_cycles_array(key):
+    def to_array(metric, key):
         arr = []
-        for b in benches:
-            val = data[b][key]["cycles"]
-            arr.append(float(val) if val is not None else np.nan)
+        for b in benches_all:
+            v = data[b][key][metric]
+            arr.append(float(v) if v is not None else np.nan)
         return np.array(arr, dtype=float)
 
-    base_no_bubo_cycles   = to_cycles_array("baseline_noBubo")
-    base_with_bubo_cycles = to_cycles_array("baseline_withBubo")
-    slow_no_bubo_cycles   = to_cycles_array("slowdown_noBubo")
-    slow_with_bubo_cycles = to_cycles_array("slowdown_withBubo")
+    # Raw values (NaN if missing)
+    base_no_bubo_time   = to_array("time",   "baseline_noBubo")
+    base_with_bubo_time = to_array("time",   "baseline_withBubo")
+    slow_no_bubo_time   = to_array("time",   "slowdown_noBubo")
+    slow_with_bubo_time = to_array("time",   "slowdown_withBubo")
 
-    # Percentage increases vs baseline_noBubo (time)
-    pct_slow_no_bubo_time   = (slow_no_bubo_time / base_no_bubo_time - 1.0) * 100.0
-    pct_slow_with_bubo_time = (slow_with_bubo_time / base_no_bubo_time - 1.0) * 100.0
-    pct_base_with_bubo_time = (base_with_bubo_time / base_no_bubo_time - 1.0) * 100.0
+    base_no_bubo_cycles   = to_array("cycles", "baseline_noBubo")
+    base_with_bubo_cycles = to_array("cycles", "baseline_withBubo")
+    slow_no_bubo_cycles   = to_array("cycles", "slowdown_noBubo")
+    slow_with_bubo_cycles = to_array("cycles", "slowdown_withBubo")
 
-    # Percentage increases vs baseline_noBubo (cycles)
-    pct_slow_no_bubo_cycles   = (slow_no_bubo_cycles / base_no_bubo_cycles - 1.0) * 100.0
-    pct_slow_with_bubo_cycles = (slow_with_bubo_cycles / base_no_bubo_cycles - 1.0) * 100.0
-    pct_base_with_bubo_cycles = (base_with_bubo_cycles / base_no_bubo_cycles - 1.0) * 100.0
+    # % increases vs baseline_noBubo (time/cycles)
+    pct_slow_no_bubo_time   = safe_pct(slow_no_bubo_time,   base_no_bubo_time)
+    pct_slow_with_bubo_time = safe_pct(slow_with_bubo_time, base_no_bubo_time)
+    pct_base_with_bubo_time = safe_pct(base_with_bubo_time, base_no_bubo_time)
 
-    # ---------------- Plot 1: Runtime % increase (3 bars) ----------------
-    x = np.arange(len(benches))
-    width = 0.25
+    pct_slow_no_bubo_cycles   = safe_pct(slow_no_bubo_cycles,   base_no_bubo_cycles)
+    pct_slow_with_bubo_cycles = safe_pct(slow_with_bubo_cycles, base_no_bubo_cycles)
+    pct_base_with_bubo_cycles = safe_pct(base_with_bubo_cycles, base_no_bubo_cycles)
 
-    fig, ax = plt.subplots(figsize=(12, 6))
-    ax.bar(x - width, pct_slow_no_bubo_time,   width, label="Slowdown, no Bubo")
-    ax.bar(x,         pct_slow_with_bubo_time, width, label="Slowdown, with Bubo")
-    ax.bar(x + width, pct_base_with_bubo_time, width, label="Bubo, no slowdown")
+    # Runtime plots: keep only benches where baseline_noBubo_time exists
+    time_mask = np.isfinite(base_no_bubo_time)
+    benches_time = [b for i, b in enumerate(benches_all) if time_mask[i]]
 
-    ax.set_ylabel("Runtime increase vs baseline (%)")
-    ax.set_title("Runtime overhead vs baseline (no slowdown, no Bubo)")
-    ax.set_xticks(x)
-    ax.set_xticklabels(benches, rotation=45, ha="right")
-    ax.legend()
-    ax.grid(axis="y", linestyle="--", alpha=0.4)
+    plot_three_bars(
+        benches_time,
+        pct_slow_no_bubo_time[time_mask],
+        pct_slow_with_bubo_time[time_mask],
+        pct_base_with_bubo_time[time_mask],
+        ylabel="Runtime increase vs baseline (%)",
+        title="Runtime overhead vs baseline (no slowdown, no Bubo)",
+        outpath=os.path.join(OUT_DIR, "runtime_overhead_three_bars.png"),
+        labels=("Slowdown, no Bubo", "Slowdown, with Bubo", "Bubo, no slowdown"),
+    )
 
-    plt.tight_layout()
-    plt.savefig(os.path.join(OUT_DIR, "runtime_overhead_three_bars.png"))
-    plt.close(fig)
+    # Cycles plots: keep only benches where baseline_noBubo_cycles exists
+    cycles_mask = np.isfinite(base_no_bubo_cycles)
+    benches_cycles = [b for i, b in enumerate(benches_all) if cycles_mask[i]]
 
-    # ---------------- Plot 2: Cycles % increase (3 bars) ----------------
-    fig, ax = plt.subplots(figsize=(12, 6))
-    ax.bar(x - width, pct_slow_no_bubo_cycles,   width, label="Slowdown, no Bubo")
-    ax.bar(x,         pct_slow_with_bubo_cycles, width, label="Slowdown, with Bubo")
-    ax.bar(x + width, pct_base_with_bubo_cycles, width, label="Bubo, no slowdown")
+    plot_three_bars(
+        benches_cycles,
+        pct_slow_no_bubo_cycles[cycles_mask],
+        pct_slow_with_bubo_cycles[cycles_mask],
+        pct_base_with_bubo_cycles[cycles_mask],
+        ylabel="RDTSC cycles increase vs baseline (%)",
+        title="Cycle overhead vs baseline (no slowdown, no Bubo)",
+        outpath=os.path.join(OUT_DIR, "cycles_overhead_three_bars.png"),
+        labels=("Slowdown, no Bubo", "Slowdown, with Bubo", "Bubo, no slowdown"),
+    )
 
-    ax.set_ylabel("RDTSC cycles increase vs baseline (%)")
-    ax.set_title("Cycle overhead vs baseline (no slowdown, no Bubo)")
-    ax.set_xticks(x)
-    ax.set_xticklabels(benches, rotation=45, ha="right")
-    ax.legend()
-    ax.grid(axis="y", linestyle="--", alpha=0.4)
-
-    plt.tight_layout()
-    plt.savefig(os.path.join(OUT_DIR, "cycles_overhead_three_bars.png"))
-    plt.close(fig)
-
-    # ---------------- Plot 3: Extra Bubo overhead (runtime) ------------- 
-    # Extra cost of Bubo in slowdown run (relative to baseline)
+    # Extra Bubo overhead (runtime) plot: only where both slow_* time % are finite
     extra_bubo_in_slow_time = pct_slow_with_bubo_time - pct_slow_no_bubo_time
-    # Bubo overhead with no slowdown (relative to baseline)
     bubo_no_slow_time = pct_base_with_bubo_time
+    extra_mask = np.isfinite(extra_bubo_in_slow_time) & np.isfinite(bubo_no_slow_time) & time_mask
+    benches_extra = [b for i, b in enumerate(benches_all) if extra_mask[i]]
 
-    fig, ax = plt.subplots(figsize=(12, 6))
-    width2 = 0.35
-
-    ax.bar(x - width2/2, extra_bubo_in_slow_time, width2,
-           label="Extra Bubo cost in slowdown run")
-    ax.bar(x + width2/2, bubo_no_slow_time,       width2,
-           label="Bubo overhead (no slowdown)")
-
-    ax.set_ylabel("Percentage points vs baseline (%)")
-    ax.set_title("Bubo extra overhead: slowdown vs no slowdown (runtime)")
-    ax.set_xticks(x)
-    ax.set_xticklabels(benches, rotation=45, ha="right")
-    ax.legend()
-    ax.grid(axis="y", linestyle="--", alpha=0.4)
-
-    plt.tight_layout()
-    plt.savefig(os.path.join(OUT_DIR, "bubo_extra_overhead_runtime.png"))
-    plt.close(fig)
+    plot_two_bars(
+        benches_extra,
+        extra_bubo_in_slow_time[extra_mask],
+        bubo_no_slow_time[extra_mask],
+        ylabel="Percentage points vs baseline (%)",
+        title="Bubo extra overhead: slowdown vs no slowdown (runtime)",
+        outpath=os.path.join(OUT_DIR, "bubo_extra_overhead_runtime.png"),
+        labels=("Extra Bubo cost in slowdown run", "Bubo overhead (no slowdown)"),
+    )
 
     # ---------------- CSVs ----------------
-    # CSV 1: Runtime
     runtime_csv = os.path.join(OUT_DIR, "runtime_overhead_three_bars.csv")
     with open(runtime_csv, "w", newline="") as f:
         writer = csv.writer(f)
@@ -193,24 +213,23 @@ def main():
             "pct_slowdown_noBubo_vs_baseline",
             "pct_slowdown_withBubo_vs_baseline",
             "pct_baseline_withBubo_vs_baseline",
-            "extra_Bubo_in_slowdown_vs_baseline",  # new
-            "Bubo_no_slowdown_vs_baseline"         # == pct_baseline_withBubo_vs_baseline
+            "extra_Bubo_in_slowdown_vs_baseline",
+            "Bubo_no_slowdown_vs_baseline",
         ])
-        for i, b in enumerate(benches):
+        for i, b in enumerate(benches_all):
             writer.writerow([
                 b,
-                int(base_no_bubo_time[i]),
-                int(slow_no_bubo_time[i]),
-                int(slow_with_bubo_time[i]),
-                int(base_with_bubo_time[i]),
-                float(pct_slow_no_bubo_time[i]),
-                float(pct_slow_with_bubo_time[i]),
-                float(pct_base_with_bubo_time[i]),
-                float(extra_bubo_in_slow_time[i]),
-                float(bubo_no_slow_time[i]),
+                base_no_bubo_time[i],
+                slow_no_bubo_time[i],
+                slow_with_bubo_time[i],
+                base_with_bubo_time[i],
+                pct_slow_no_bubo_time[i],
+                pct_slow_with_bubo_time[i],
+                pct_base_with_bubo_time[i],
+                (pct_slow_with_bubo_time[i] - pct_slow_no_bubo_time[i]) if (np.isfinite(pct_slow_with_bubo_time[i]) and np.isfinite(pct_slow_no_bubo_time[i])) else np.nan,
+                pct_base_with_bubo_time[i],
             ])
 
-    # CSV 2: Cycles
     cycles_csv = os.path.join(OUT_DIR, "cycles_overhead_three_bars.csv")
     with open(cycles_csv, "w", newline="") as f:
         writer = csv.writer(f)
@@ -224,7 +243,7 @@ def main():
             "pct_slowdown_withBubo_vs_baseline",
             "pct_baseline_withBubo_vs_baseline",
         ])
-        for i, b in enumerate(benches):
+        for i, b in enumerate(benches_all):
             writer.writerow([
                 b,
                 base_no_bubo_cycles[i],
@@ -237,7 +256,6 @@ def main():
             ])
 
     print(f"Plots and CSVs written to: {OUT_DIR}")
-
 
 if __name__ == "__main__":
     main()

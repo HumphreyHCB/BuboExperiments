@@ -1,0 +1,662 @@
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs b05d592371fcce917a90fc28debaf21f7e7532d4836b1c9812ac396e129c7095 != dd493989519e7f328311cfecc7abfe1946186eaebdea7e8b59878a8ba9e25a26
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 71c7befc4bcc50903c01cb500806055811a71080bd754d077284439fcd10103c != 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf
+java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs 240f841b413bb8bd2af4877cb3753eac11d3bdc482d702e067df992e72784ebb != 2d841e5f6ff33687ba2a8e89c73735b82c892266d476f740b43f9fc2b4d21873
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 graphSignature differs f47d0b1647dabd6f0108a1c873e12c6a64939992dcc9e97f79a9e6e1f1af8649 != cda1bda6b067c21da86f5c9b00220a168b94ff95811df6ee0a57435eb4ec0473
+Starting Richards benchmark ...
+richards.Scheduler.schedule()void -1 graphSignature differs e772134ac30fb56671e1f45bc8c41f9973ceb13c5d703e128a5a435dbda84164 != 510d3d5c9ef8749c1c91f26ff7689965c027086cca0308c913907e61e27c419c
+richards.Scheduler$DeviceProcessFunction.apply(richards.Packet, richards.RBObject)richards.TaskControlBlock -1 graphSignature differs 3bd11b6676c85ba70b99599ed816d290d77f37a59edb9c6f3529305e1333afcd != 7ffdb827434d020a9680c36ac2819ba1f5917adfba5ef3a49ba4b133fb1adbe2
+richards.Scheduler$HandlerProcessFunction.apply(richards.Packet, richards.RBObject)richards.TaskControlBlock -1 graphSignature differs 63f3b42a6f928b30dae7f163001ce780176381acc0c1151108eaf5a635382d11 != 879dad9a8739d29413036de15b17fec825630f36fd16d777b56f0b3139471d5f
+richards.Scheduler.queuePacket(richards.Packet)richards.TaskControlBlock -1 graphSignature differs 68641cf5f1cfb0ea49b3713cd670080c47d39b2d14a37a98e96e5ffb1c20fdb1 != 2faceeb7111a75c37c3b79109fa853a6cfd5fb38e9d873a80ea42ef02fcf481e
+richards.TaskControlBlock.addInputAndCheckPriority(richards.Packet, richards.TaskControlBlock)richards.TaskControlBlock -1 graphSignature differs 78b9b151016ef7bcb56022aa32dd870f659d06a4fdd4ca19f0f296bc51655f29 != 43658eb87c53460ef6c3e6531c5e87512fab70299ebc13ab4b82c0708ee195c7
+richards.Scheduler$WorkerProcessFunction.apply(richards.Packet, richards.RBObject)richards.TaskControlBlock -1 graphSignature differs 341bfcb47f5f11e8e21c81c62069897b38f7138c4c5c5bf2320261cac07a74cd != 0f63ae0110a5c83c076eec79b10c48d100ff0ebc9c1ddc43957597bc291c1614
+Richards: iterations=1 runtime: 274258us
+Richards: iterations=2 runtime: 165780us
+Richards: iterations=3 runtime: 164520us
+Richards: iterations=4 runtime: 164452us
+Richards: iterations=5 runtime: 165083us
+Richards: iterations=6 runtime: 164760us
+Richards: iterations=7 runtime: 164875us
+Richards: iterations=8 runtime: 163601us
+Richards: iterations=9 runtime: 170401us
+Richards: iterations=10 runtime: 163482us
+Richards: iterations=11 runtime: 204200us
+Richards: iterations=12 runtime: 169360us
+Richards: iterations=13 runtime: 163303us
+Richards: iterations=14 runtime: 163331us
+Richards: iterations=15 runtime: 163259us
+Richards: iterations=16 runtime: 163550us
+Richards: iterations=17 runtime: 163444us
+Richards: iterations=18 runtime: 163483us
+Richards: iterations=19 runtime: 164015us
+java.util.Arrays.fill(java.lang.Object[], java.lang.Object)void -1 graphSignature differs f4be4e44604cfa872d3049125dbcf828421f1cd0523e8ede44e3a9f002b8112c != ba9e59aea4752da7836f0334c7ebcea5be1705c36048130418cdc1983abf6592
+Richards: iterations=20 runtime: 175878us
+Richards: iterations=21 runtime: 163425us
+Richards: iterations=22 runtime: 163615us
+Richards: iterations=23 runtime: 168244us
+Richards: iterations=24 runtime: 163330us
+Richards: iterations=25 runtime: 163505us
+Richards: iterations=26 runtime: 163337us
+Richards: iterations=27 runtime: 163345us
+Richards: iterations=28 runtime: 163259us
+Richards: iterations=29 runtime: 163320us
+Richards: iterations=30 runtime: 163293us
+Richards: iterations=31 runtime: 163492us
+Richards: iterations=32 runtime: 163341us
+Richards: iterations=33 runtime: 163306us
+Richards: iterations=34 runtime: 187395us
+Richards: iterations=35 runtime: 163267us
+Richards: iterations=36 runtime: 163274us
+Richards: iterations=37 runtime: 163429us
+Richards: iterations=38 runtime: 163444us
+Richards: iterations=39 runtime: 163360us
+Richards: iterations=40 runtime: 163352us
+Richards: iterations=41 runtime: 163628us
+Richards: iterations=42 runtime: 163354us
+Richards: iterations=43 runtime: 163361us
+Richards: iterations=44 runtime: 163239us
+Richards: iterations=45 runtime: 163323us
+Richards: iterations=46 runtime: 171822us
+Richards: iterations=47 runtime: 163394us
+Richards: iterations=48 runtime: 163188us
+Richards: iterations=49 runtime: 163713us
+Richards: iterations=50 runtime: 163423us
+Richards: iterations=51 runtime: 163473us
+Richards: iterations=52 runtime: 163280us
+Richards: iterations=53 runtime: 170339us
+Richards: iterations=54 runtime: 163294us
+Richards: iterations=55 runtime: 163312us
+Richards: iterations=56 runtime: 163264us
+Richards: iterations=57 runtime: 163267us
+Richards: iterations=58 runtime: 163274us
+Richards: iterations=59 runtime: 163514us
+Richards: iterations=60 runtime: 163382us
+Richards: iterations=61 runtime: 163315us
+Richards: iterations=62 runtime: 163261us
+Richards: iterations=63 runtime: 163527us
+Richards: iterations=64 runtime: 163260us
+Richards: iterations=65 runtime: 163347us
+Richards: iterations=66 runtime: 163218us
+Richards: iterations=67 runtime: 163375us
+Richards: iterations=68 runtime: 236743us
+Richards: iterations=69 runtime: 163911us
+Richards: iterations=70 runtime: 163471us
+Richards: iterations=71 runtime: 163240us
+Richards: iterations=72 runtime: 163179us
+Richards: iterations=73 runtime: 163111us
+Richards: iterations=74 runtime: 163182us
+Richards: iterations=75 runtime: 163185us
+Richards: iterations=76 runtime: 163173us
+Richards: iterations=77 runtime: 163092us
+Richards: iterations=78 runtime: 163305us
+Richards: iterations=79 runtime: 163317us
+Richards: iterations=80 runtime: 164648us
+Richards: iterations=81 runtime: 163158us
+Richards: iterations=82 runtime: 163177us
+Richards: iterations=83 runtime: 163123us
+Richards: iterations=84 runtime: 163325us
+Richards: iterations=85 runtime: 163118us
+Richards: iterations=86 runtime: 163230us
+Richards: iterations=87 runtime: 163210us
+Richards: iterations=88 runtime: 163235us
+Richards: iterations=89 runtime: 163119us
+Richards: iterations=90 runtime: 163223us
+Richards: iterations=91 runtime: 163182us
+Richards: iterations=92 runtime: 163307us
+Richards: iterations=93 runtime: 163250us
+Richards: iterations=94 runtime: 163291us
+Richards: iterations=95 runtime: 163221us
+Richards: iterations=96 runtime: 163198us
+Richards: iterations=97 runtime: 163227us
+Richards: iterations=98 runtime: 163404us
+Richards: iterations=99 runtime: 163217us
+Richards: iterations=100 runtime: 163279us
+Richards: iterations=101 runtime: 163158us
+Richards: iterations=102 runtime: 163192us
+Richards: iterations=103 runtime: 163167us
+Richards: iterations=104 runtime: 163135us
+Richards: iterations=105 runtime: 163112us
+Richards: iterations=106 runtime: 170422us
+Richards: iterations=107 runtime: 163266us
+Richards: iterations=108 runtime: 163229us
+Richards: iterations=109 runtime: 163298us
+Richards: iterations=110 runtime: 163713us
+Richards: iterations=111 runtime: 163312us
+Richards: iterations=112 runtime: 163294us
+Richards: iterations=113 runtime: 163270us
+Richards: iterations=114 runtime: 163282us
+Richards: iterations=115 runtime: 163346us
+Richards: iterations=116 runtime: 163265us
+Richards: iterations=117 runtime: 163360us
+Richards: iterations=118 runtime: 163205us
+Richards: iterations=119 runtime: 163267us
+Richards: iterations=120 runtime: 163247us
+Richards: iterations=121 runtime: 163277us
+Richards: iterations=122 runtime: 163254us
+Richards: iterations=123 runtime: 163154us
+Richards: iterations=124 runtime: 163242us
+Richards: iterations=125 runtime: 163211us
+Richards: iterations=126 runtime: 163169us
+Richards: iterations=127 runtime: 163202us
+Richards: iterations=128 runtime: 163263us
+Richards: iterations=129 runtime: 163192us
+Richards: iterations=130 runtime: 163186us
+Richards: iterations=131 runtime: 163196us
+Richards: iterations=132 runtime: 163229us
+Richards: iterations=133 runtime: 163228us
+Richards: iterations=134 runtime: 163270us
+Richards: iterations=135 runtime: 163167us
+Richards: iterations=136 runtime: 163181us
+Richards: iterations=137 runtime: 163356us
+Richards: iterations=138 runtime: 163280us
+Richards: iterations=139 runtime: 163289us
+Richards: iterations=140 runtime: 163417us
+Richards: iterations=141 runtime: 163484us
+Richards: iterations=142 runtime: 163233us
+Richards: iterations=143 runtime: 163207us
+Richards: iterations=144 runtime: 163227us
+Richards: iterations=145 runtime: 163200us
+Richards: iterations=146 runtime: 163249us
+Richards: iterations=147 runtime: 163252us
+Richards: iterations=148 runtime: 163194us
+Richards: iterations=149 runtime: 163238us
+Richards: iterations=150 runtime: 163220us
+Richards: iterations=151 runtime: 163245us
+Richards: iterations=152 runtime: 163210us
+Richards: iterations=153 runtime: 163261us
+Richards: iterations=154 runtime: 163172us
+Richards: iterations=155 runtime: 163186us
+Richards: iterations=156 runtime: 163273us
+Richards: iterations=157 runtime: 163305us
+Richards: iterations=158 runtime: 163214us
+Richards: iterations=159 runtime: 163278us
+Richards: iterations=160 runtime: 163298us
+Richards: iterations=161 runtime: 163256us
+Richards: iterations=162 runtime: 163166us
+Richards: iterations=163 runtime: 163237us
+Richards: iterations=164 runtime: 163204us
+Richards: iterations=165 runtime: 163295us
+Richards: iterations=166 runtime: 163166us
+Richards: iterations=167 runtime: 163257us
+Richards: iterations=168 runtime: 163327us
+Richards: iterations=169 runtime: 163292us
+Richards: iterations=170 runtime: 163163us
+Richards: iterations=171 runtime: 163649us
+Richards: iterations=172 runtime: 163219us
+Richards: iterations=173 runtime: 163275us
+Richards: iterations=174 runtime: 163195us
+Richards: iterations=175 runtime: 163206us
+Richards: iterations=176 runtime: 163264us
+Richards: iterations=177 runtime: 163405us
+Richards: iterations=178 runtime: 163166us
+Richards: iterations=179 runtime: 163184us
+Richards: iterations=180 runtime: 163215us
+Richards: iterations=181 runtime: 163174us
+Richards: iterations=182 runtime: 163217us
+Richards: iterations=183 runtime: 163180us
+Richards: iterations=184 runtime: 163242us
+Richards: iterations=185 runtime: 163226us
+Richards: iterations=186 runtime: 163236us
+Richards: iterations=187 runtime: 163279us
+Richards: iterations=188 runtime: 163289us
+Richards: iterations=189 runtime: 163314us
+Richards: iterations=190 runtime: 163194us
+Richards: iterations=191 runtime: 164386us
+Richards: iterations=192 runtime: 163223us
+Richards: iterations=193 runtime: 163311us
+Richards: iterations=194 runtime: 163265us
+Richards: iterations=195 runtime: 163263us
+Richards: iterations=196 runtime: 163299us
+Richards: iterations=197 runtime: 163353us
+Richards: iterations=198 runtime: 163243us
+Richards: iterations=199 runtime: 163303us
+Richards: iterations=200 runtime: 163299us
+Richards: iterations=201 runtime: 163266us
+Richards: iterations=202 runtime: 163597us
+Richards: iterations=203 runtime: 163242us
+Richards: iterations=204 runtime: 163301us
+Benchmark.innerBenchmarkLoop(int)boolean -1 graphSignature differs b7a6c44ff5543cd63efc25636730584f5b694c5a4bb49979e737d7828f91dd50 != 0e282be464f565154beb509b2eaa3a67f4ea90af97ae7636409234ca5d2371c3
+Richards: iterations=205 runtime: 205343us
+Richards: iterations=206 runtime: 163193us
+Richards: iterations=207 runtime: 163168us
+Richards: iterations=208 runtime: 163188us
+Richards: iterations=209 runtime: 163136us
+Richards: iterations=210 runtime: 163231us
+Richards: iterations=211 runtime: 163177us
+Richards: iterations=212 runtime: 163220us
+Richards: iterations=213 runtime: 163216us
+Richards: iterations=214 runtime: 163246us
+Richards: iterations=215 runtime: 163157us
+Richards: iterations=216 runtime: 163384us
+Richards: iterations=217 runtime: 163142us
+Richards: iterations=218 runtime: 163221us
+Richards: iterations=219 runtime: 163144us
+Richards: iterations=220 runtime: 163248us
+Richards: iterations=221 runtime: 163098us
+Richards: iterations=222 runtime: 163206us
+Richards: iterations=223 runtime: 163129us
+Richards: iterations=224 runtime: 163196us
+Richards: iterations=225 runtime: 163116us
+Richards: iterations=226 runtime: 163234us
+Richards: iterations=227 runtime: 163188us
+Richards: iterations=228 runtime: 163165us
+Richards: iterations=229 runtime: 163209us
+Richards: iterations=230 runtime: 163172us
+Richards: iterations=231 runtime: 163138us
+Richards: iterations=232 runtime: 163576us
+Richards: iterations=233 runtime: 163257us
+Richards: iterations=234 runtime: 163220us
+Richards: iterations=235 runtime: 163168us
+Richards: iterations=236 runtime: 163380us
+Richards: iterations=237 runtime: 163178us
+Richards: iterations=238 runtime: 163267us
+Richards: iterations=239 runtime: 163162us
+Richards: iterations=240 runtime: 163212us
+Richards: iterations=241 runtime: 170240us
+Richards: iterations=242 runtime: 170597us
+Richards: iterations=243 runtime: 163151us
+Richards: iterations=244 runtime: 163258us
+Richards: iterations=245 runtime: 163122us
+Richards: iterations=246 runtime: 163318us
+Richards: iterations=247 runtime: 163232us
+Richards: iterations=248 runtime: 163262us
+Richards: iterations=249 runtime: 163188us
+Richards: iterations=250 runtime: 163191us
+Richards: iterations=251 runtime: 163178us
+Richards: iterations=252 runtime: 163220us
+Richards: iterations=253 runtime: 163136us
+Richards: iterations=254 runtime: 163179us
+Richards: iterations=255 runtime: 163229us
+Richards: iterations=256 runtime: 163333us
+Richards: iterations=257 runtime: 163085us
+Richards: iterations=258 runtime: 163127us
+Richards: iterations=259 runtime: 163173us
+Richards: iterations=260 runtime: 163220us
+Richards: iterations=261 runtime: 163162us
+Richards: iterations=262 runtime: 163324us
+Richards: iterations=263 runtime: 163475us
+Richards: iterations=264 runtime: 163190us
+Richards: iterations=265 runtime: 163217us
+Richards: iterations=266 runtime: 163198us
+Richards: iterations=267 runtime: 163230us
+Richards: iterations=268 runtime: 163215us
+Richards: iterations=269 runtime: 163207us
+Richards: iterations=270 runtime: 163213us
+Richards: iterations=271 runtime: 163245us
+Richards: iterations=272 runtime: 163175us
+Richards: iterations=273 runtime: 163224us
+Richards: iterations=274 runtime: 163304us
+Richards: iterations=275 runtime: 163184us
+Richards: iterations=276 runtime: 163475us
+Richards: iterations=277 runtime: 163226us
+Richards: iterations=278 runtime: 163139us
+Richards: iterations=279 runtime: 163215us
+Richards: iterations=280 runtime: 163236us
+Richards: iterations=281 runtime: 163101us
+Richards: iterations=282 runtime: 163198us
+Richards: iterations=283 runtime: 163191us
+Richards: iterations=284 runtime: 163169us
+Richards: iterations=285 runtime: 163153us
+Richards: iterations=286 runtime: 163248us
+Richards: iterations=287 runtime: 163202us
+Richards: iterations=288 runtime: 163213us
+Richards: iterations=289 runtime: 163249us
+Richards: iterations=290 runtime: 163199us
+Richards: iterations=291 runtime: 163241us
+Richards: iterations=292 runtime: 163198us
+Richards: iterations=293 runtime: 163439us
+Richards: iterations=294 runtime: 163360us
+Richards: iterations=295 runtime: 163147us
+Richards: iterations=296 runtime: 163349us
+Richards: iterations=297 runtime: 163101us
+Richards: iterations=298 runtime: 163275us
+Richards: iterations=299 runtime: 163297us
+Richards: iterations=300 runtime: 163227us
+Richards: iterations=301 runtime: 163246us
+Richards: iterations=302 runtime: 163268us
+Richards: iterations=303 runtime: 163200us
+Richards: iterations=304 runtime: 163299us
+Richards: iterations=305 runtime: 163275us
+Richards: iterations=306 runtime: 163099us
+Richards: iterations=307 runtime: 163146us
+Richards: iterations=308 runtime: 163084us
+Richards: iterations=309 runtime: 163135us
+Richards: iterations=310 runtime: 163136us
+Richards: iterations=311 runtime: 163013us
+Richards: iterations=312 runtime: 163101us
+Richards: iterations=313 runtime: 163092us
+Richards: iterations=314 runtime: 163126us
+Richards: iterations=315 runtime: 163111us
+Richards: iterations=316 runtime: 163204us
+Richards: iterations=317 runtime: 163050us
+Richards: iterations=318 runtime: 162993us
+Richards: iterations=319 runtime: 163063us
+Richards: iterations=320 runtime: 163047us
+Richards: iterations=321 runtime: 163110us
+Richards: iterations=322 runtime: 163015us
+Richards: iterations=323 runtime: 163018us
+Richards: iterations=324 runtime: 163454us
+Richards: iterations=325 runtime: 163032us
+Richards: iterations=326 runtime: 162993us
+Richards: iterations=327 runtime: 163062us
+Richards: iterations=328 runtime: 162976us
+Richards: iterations=329 runtime: 163050us
+Richards: iterations=330 runtime: 162975us
+Richards: iterations=331 runtime: 163081us
+Richards: iterations=332 runtime: 163053us
+Richards: iterations=333 runtime: 163116us
+Richards: iterations=334 runtime: 163073us
+Richards: iterations=335 runtime: 163185us
+Richards: iterations=336 runtime: 163040us
+Richards: iterations=337 runtime: 162962us
+Richards: iterations=338 runtime: 163089us
+Richards: iterations=339 runtime: 163071us
+Richards: iterations=340 runtime: 163084us
+Richards: iterations=341 runtime: 163103us
+Richards: iterations=342 runtime: 163048us
+Richards: iterations=343 runtime: 163011us
+Richards: iterations=344 runtime: 163007us
+Richards: iterations=345 runtime: 163069us
+Richards: iterations=346 runtime: 162987us
+Richards: iterations=347 runtime: 163117us
+Richards: iterations=348 runtime: 163049us
+Richards: iterations=349 runtime: 163026us
+Richards: iterations=350 runtime: 163069us
+Richards: iterations=351 runtime: 163069us
+Richards: iterations=352 runtime: 163110us
+Richards: iterations=353 runtime: 163115us
+Richards: iterations=354 runtime: 163172us
+Richards: iterations=355 runtime: 164903us
+Richards: iterations=356 runtime: 163192us
+Richards: iterations=357 runtime: 163121us
+Richards: iterations=358 runtime: 163125us
+Richards: iterations=359 runtime: 163195us
+Richards: iterations=360 runtime: 163174us
+Richards: iterations=361 runtime: 163151us
+Richards: iterations=362 runtime: 163204us
+Richards: iterations=363 runtime: 163168us
+Richards: iterations=364 runtime: 163083us
+Richards: iterations=365 runtime: 163127us
+Richards: iterations=366 runtime: 163084us
+Richards: iterations=367 runtime: 163110us
+Richards: iterations=368 runtime: 163174us
+Richards: iterations=369 runtime: 163131us
+Richards: iterations=370 runtime: 163062us
+Richards: iterations=371 runtime: 163111us
+Richards: iterations=372 runtime: 163078us
+Richards: iterations=373 runtime: 163047us
+Richards: iterations=374 runtime: 163119us
+Richards: iterations=375 runtime: 163249us
+Richards: iterations=376 runtime: 163099us
+Richards: iterations=377 runtime: 163154us
+Richards: iterations=378 runtime: 163162us
+Richards: iterations=379 runtime: 163166us
+Richards: iterations=380 runtime: 163193us
+Richards: iterations=381 runtime: 163150us
+Richards: iterations=382 runtime: 168128us
+Richards: iterations=383 runtime: 172772us
+Richards: iterations=384 runtime: 163226us
+Richards: iterations=385 runtime: 163548us
+Richards: iterations=386 runtime: 163099us
+Richards: iterations=387 runtime: 163069us
+Richards: iterations=388 runtime: 163035us
+Richards: iterations=389 runtime: 163064us
+Richards: iterations=390 runtime: 163102us
+Richards: iterations=391 runtime: 163074us
+Richards: iterations=392 runtime: 163082us
+Richards: iterations=393 runtime: 163123us
+Richards: iterations=394 runtime: 163038us
+Richards: iterations=395 runtime: 163170us
+Richards: iterations=396 runtime: 162961us
+Richards: iterations=397 runtime: 163090us
+Richards: iterations=398 runtime: 163031us
+Richards: iterations=399 runtime: 163046us
+Richards: iterations=400 runtime: 163069us
+Richards: iterations=401 runtime: 163053us
+Richards: iterations=402 runtime: 163049us
+Richards: iterations=403 runtime: 163146us
+Richards: iterations=404 runtime: 163086us
+Richards: iterations=405 runtime: 163137us
+Richards: iterations=406 runtime: 163154us
+Richards: iterations=407 runtime: 163079us
+Richards: iterations=408 runtime: 163045us
+Richards: iterations=409 runtime: 163119us
+Richards: iterations=410 runtime: 162998us
+Richards: iterations=411 runtime: 163033us
+Richards: iterations=412 runtime: 163026us
+Richards: iterations=413 runtime: 163083us
+Richards: iterations=414 runtime: 163084us
+Richards: iterations=415 runtime: 163211us
+Richards: iterations=416 runtime: 163331us
+Richards: iterations=417 runtime: 163111us
+Richards: iterations=418 runtime: 163089us
+Richards: iterations=419 runtime: 163125us
+Richards: iterations=420 runtime: 163077us
+Richards: iterations=421 runtime: 163135us
+Richards: iterations=422 runtime: 163051us
+Richards: iterations=423 runtime: 163001us
+Richards: iterations=424 runtime: 162989us
+Richards: iterations=425 runtime: 163083us
+Richards: iterations=426 runtime: 162973us
+Richards: iterations=427 runtime: 163126us
+Richards: iterations=428 runtime: 163168us
+Richards: iterations=429 runtime: 163058us
+Richards: iterations=430 runtime: 163099us
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
+Richards: iterations=431 runtime: 163107us
+Richards: iterations=432 runtime: 163098us
+Richards: iterations=433 runtime: 162994us
+Richards: iterations=434 runtime: 164838us
+Richards: iterations=435 runtime: 163054us
+Richards: iterations=436 runtime: 163081us
+Richards: iterations=437 runtime: 163138us
+Richards: iterations=438 runtime: 163207us
+Richards: iterations=439 runtime: 163084us
+Richards: iterations=440 runtime: 163048us
+Richards: iterations=441 runtime: 163117us
+Richards: iterations=442 runtime: 163155us
+Richards: iterations=443 runtime: 163080us
+Richards: iterations=444 runtime: 163172us
+Richards: iterations=445 runtime: 163120us
+Richards: iterations=446 runtime: 163327us
+Richards: iterations=447 runtime: 163316us
+Richards: iterations=448 runtime: 163065us
+Richards: iterations=449 runtime: 163119us
+Richards: iterations=450 runtime: 163136us
+Richards: iterations=451 runtime: 163183us
+Richards: iterations=452 runtime: 163144us
+Richards: iterations=453 runtime: 163223us
+Richards: iterations=454 runtime: 163169us
+Richards: iterations=455 runtime: 163146us
+Richards: iterations=456 runtime: 163162us
+Richards: iterations=457 runtime: 163205us
+Richards: iterations=458 runtime: 163123us
+Richards: iterations=459 runtime: 163183us
+Richards: iterations=460 runtime: 163106us
+Richards: iterations=461 runtime: 163260us
+Richards: iterations=462 runtime: 163137us
+Richards: iterations=463 runtime: 163100us
+Richards: iterations=464 runtime: 163152us
+Richards: iterations=465 runtime: 163147us
+Richards: iterations=466 runtime: 163075us
+Richards: iterations=467 runtime: 163145us
+Richards: iterations=468 runtime: 163034us
+Richards: iterations=469 runtime: 163188us
+Richards: iterations=470 runtime: 163070us
+Richards: iterations=471 runtime: 163117us
+Richards: iterations=472 runtime: 163240us
+Richards: iterations=473 runtime: 170486us
+Richards: iterations=474 runtime: 163085us
+Richards: iterations=475 runtime: 163050us
+Richards: iterations=476 runtime: 165655us
+Richards: iterations=477 runtime: 165073us
+Richards: iterations=478 runtime: 163184us
+java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)int -1 graphSignature differs bc8f20c8c772d3cc0eaba9b68bcd84047d761ba16a7aeb64fe90c36d37dcccb7 != 3bdd078c3a9d60d7eff24b6603d8a355db817965321aded167eb2387bae94eb4
+Richards: iterations=479 runtime: 163078us
+Richards: iterations=480 runtime: 163128us
+Richards: iterations=481 runtime: 163092us
+Richards: iterations=482 runtime: 163210us
+Richards: iterations=483 runtime: 163076us
+Richards: iterations=484 runtime: 163147us
+Richards: iterations=485 runtime: 163115us
+Richards: iterations=486 runtime: 163192us
+Richards: iterations=487 runtime: 163062us
+Richards: iterations=488 runtime: 163192us
+Richards: iterations=489 runtime: 163097us
+Richards: iterations=490 runtime: 163140us
+Richards: iterations=491 runtime: 163119us
+Richards: iterations=492 runtime: 163142us
+Richards: iterations=493 runtime: 163228us
+Richards: iterations=494 runtime: 163129us
+Richards: iterations=495 runtime: 163277us
+Richards: iterations=496 runtime: 163061us
+Richards: iterations=497 runtime: 163072us
+Richards: iterations=498 runtime: 163131us
+Richards: iterations=499 runtime: 163179us
+Richards: iterations=500 runtime: 163044us
+Richards: iterations=500 average: 164010us total: 82005259us
+
+
+Total Runtime: 82005259us
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 271917663976
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 240554 || Activation Count:4233| LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 5882 || Activation Count:163| LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3076 || Activation Count:49| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 75 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 27384 || Activation Count:9| LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 6702 || Activation Count:81| LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 13198 || Activation Count:246| LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 84 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 402 || Activation Count:1| LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 146 || Activation Count:1| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 90 || Activation Count:1| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 85 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 84934 || Activation Count:1780| LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 118100 || Activation Count:1780| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 101426 || Activation Count:1780| LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 87 (java.lang.StringCoding.countPositives(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 320 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 88 (java.lang.StringCoding.countPositives(byte[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 13522 || Activation Count:87| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 138 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 24130 || Activation Count:170| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 140 (java.util.Properties$LineReader.readLine()) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 246234 || Activation Count:90| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 12190 || Activation Count:91| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 690 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 141 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 3566 || Activation Count:14| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 1754 || Activation Count:14| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 142 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 38120 || Activation Count:1| LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 27674 || Activation Count:131| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 15136 || Activation Count:131| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 716 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 143 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 336810 || Activation Count:6| LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 416792 || Activation Count:374| LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 47876 || Activation Count:377| LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 202 (richards.Scheduler.schedule()-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 270550576666 || Activation Count:49999| LoopCallCount: 1 |  Source: -at richards.Scheduler.schedule() [bci: 8] | -at richards.Scheduler.schedule() [bci: 67]
+Comp 205 (richards.Scheduler$HandlerProcessFunction.apply(Packet,) loops:
+Found Encoding : 1:-1,0:-1,3:-1,2:-1
+├── Loop 1
+├── Loop 0
+├── Loop 3
+└── Loop 2
+  loop 0 Cycles: 2136745616 || Activation Count:40649741| LoopCallCount: 0 |  Source: -at richards.RBObject.append(Packet, Packet) [bci: 18]
+-at richards.HandlerTaskDataRecord.deviceInAdd(Packet) [bci: 7]
+-at richards.Scheduler$HandlerProcessFunction.apply(Packet, RBObject) [bci: 30] | -at richards.RBObject.append(Packet, Packet) [bc
+  loop 1 Cycles: 1076932278 || Activation Count:41349745| LoopCallCount: 0 |  Source: -at richards.RBObject.append(Packet, Packet) [bci: 18]
+-at richards.HandlerTaskDataRecord.workInAdd(Packet) [bci: 7]
+-at richards.Scheduler$HandlerProcessFunction.apply(Packet, RBObject) [bci: 22] | -at richards.RBObject.append(Packet, Packet) [bci:
+  loop 3 Cycles: 11235512412 || Activation Count:424347545| LoopCallCount: 0 |  Source: -at richards.RBObject.append(Packet, Packet) [bci: 18]
+-at richards.TaskControlBlock.addInputAndCheckPriority(Packet, TaskControlBlock) [bci: 40]
+-at richards.Scheduler.queuePacket(Packet) [bci: 51]
+-at richards.Scheduler$HandlerProcessFunction.appl
+Comp 234 (java.util.Arrays.fill(Object[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 343596 || Activation Count:4912| LoopCallCount: 0 |  Source: -at java.util.Arrays.fill(Arrays.java:3426) [bci: 5] | -at java.util.Arrays.fill(Arrays.java:3428) [bci: 20]
+  loop 1 Cycles: 129212 || Activation Count:4912| LoopCallCount: 0 |  Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3428) [bci: 20]
+  loop 2 Cycles: 281888 || Activation Count:4912| LoopCallCount: 0 |  Source: Source Missing | -at java.util.Arrays.fill(Arrays.java:3428) [bci: 20]
+Comp 265 (Benchmark.innerBenchmarkLoop(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 102819360 || Activation Count:1| LoopCallCount: 3 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 266 (Benchmark.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 159550216194 || Activation Count:295| LoopCallCount: 3 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 267 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 9498 || Activation Count:146| LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 7858 || Activation Count:146| LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 6352 || Activation Count:146| LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+Comp 268 (java.lang.StringCoding.implEncodeAsciiArray(char[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 600 || Activation Count:1| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+Comp 269 (java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 8142 || Activation Count:25| LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]

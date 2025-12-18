@@ -1,0 +1,20 @@
+digraph CFG_113 {
+  rankdir=LR;
+  graph [fontsize=20, ranksep=1.5, nodesep=1.0, overlap=false, splines=true];
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  label="174-java.lang.String.charAt(int)";
+  labelloc=top;
+  labeljust=left;
+  b0 [label="B0\nLoop: <none>\n---\nHotSpotMethod<String.charAt(int)>\nHotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>", fillcolor="white"];
+  b1 [label="B1\nLoop: <none>\n---\nHotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>\nHotSpotMethod<String.isLatin1()>", fillcolor="white"];
+  b2 [label="B2\nLoop: <none>\n---\nHotSpotMethod<String.isLatin1()>\nHotSpotMethod<StringLatin1.charAt(byte[], int)>\nHotSpotMethod<String.charAt(int)>", fillcolor="white"];
+  b3 [label="B3\nLoop: <none>\n---\nHotSpotMethod<String.charAt(int)>\nHotSpotMethod<StringLatin1.charAt(byte[], int)>", fillcolor="white"];
+  b4 [label="B4\nLoop: <none>\n---\nHotSpotMethod<StringLatin1.charAt(byte[], int)>", fillcolor="white"];
+  b5 [label="B5\nLoop: <none>\n---\nHotSpotMethod<StringLatin1.charAt(byte[], int)>", fillcolor="white"];
+  b0 -> b1;
+  b0 -> b4;
+  b1 -> b2;
+  b1 -> b3;
+  b3 -> b5;
+  b4 -> b5;
+}

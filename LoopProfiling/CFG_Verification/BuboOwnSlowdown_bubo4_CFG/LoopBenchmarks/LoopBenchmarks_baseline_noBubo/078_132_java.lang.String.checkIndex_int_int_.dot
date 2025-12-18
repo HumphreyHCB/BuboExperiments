@@ -1,0 +1,20 @@
+digraph CFG_78 {
+  rankdir=LR;
+  graph [fontsize=20, ranksep=1.5, nodesep=1.0, overlap=false, splines=true];
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  label="132-java.lang.String.checkIndex(int, int)";
+  labelloc=top;
+  labeljust=left;
+  b0 [label="B0\nLoop: <none>\n---\nHotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>", fillcolor="white"];
+  b1 [label="B1\nLoop: <none>\n---\nHotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>", fillcolor="white"];
+  b2 [label="B2\nLoop: <none>\n---\nHotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>", fillcolor="white"];
+  b3 [label="B3\nLoop: <none>\n---\nHotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>\nHotSpotMethod<String.checkIndex(int, int)>", fillcolor="white"];
+  b4 [label="B4\nLoop: <none>\n---\nHotSpotMethod<String.checkIndex(int, int)>\nHotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>", fillcolor="white"];
+  b5 [label="B5\nLoop: <none>\n---\nHotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>", fillcolor="white"];
+  b0 -> b5;
+  b0 -> b2;
+  b1 -> b5;
+  b2 -> b3;
+  b2 -> b5;
+  b4 -> b5;
+}

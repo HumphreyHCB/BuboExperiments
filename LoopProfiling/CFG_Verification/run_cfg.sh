@@ -4,10 +4,10 @@ set -euo pipefail
 # ===== User-configurable settings =====
 
 # Input: text file with HumphreysDebugDataPhase output
-INPUT_TXT="mandelBrot.txt"
+INPUT_TXT="/home/hb478/repos/BuboExperiments/LoopProfiling/CFG_Verification/BuboOwnSlowdown_bubo6_DevineWithProbe_cfg/LoopBenchmarks/LoopBenchmarks_baseline_withBubo.out"
 
 # Output directory: all DOT and SVG files go here
-OUT_DIR="MandelbrotCFGGraphs"
+OUT_DIR="/home/hb478/repos/BuboExperiments/LoopProfiling/CFG_Verification/BuboOwnSlowdown_bubo6_DevineWithProbe_cfg/LoopBenchmarks/LoopBenchmarks_baseline_withBubo"
 
 # Python script that converts text -> per-comp DOTs
 PY_SCRIPT="debug2dot.py"
