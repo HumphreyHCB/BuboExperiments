@@ -4,75 +4,116 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PY="${PY:-python3}"
 
-# ---- Scripts ----
+# ============================================================
+# CONFIG DEFAULTS (edit these; CLI can override)
+# ============================================================
+ITER_DEFAULT="12000"
+BENCHMARK_DEFAULT="LoopBenchmarks"
+SUITE_DEFAULT="AWFY"
+PROBE_MODE_DEFAULT="WithProbe"
+
+# Optional default
+TAG_DEFAULT="AUTO_PIPELINE"
+
+usage() {
+  cat <<'EOF'
+Usage: pipeline.sh [options]
+
+Options:
+  -i, --iter N                Iterations (default: from script config)
+  -b, --benchmark NAME        Benchmark name (default: from script config)
+  -s, --suite AWFY|Renaissance Suite (default: from script config)
+  -p, --probe WithProbe|WithoutProbe  Probe mode (default: from script config)
+  -t, --tag TAG               Tag for VTune step (default: from script config)
+  -h, --help                  Show help
+EOF
+}
+
+# ============================================================
+# Parse args (override defaults only if provided)
+# ============================================================
+ITER="" BENCHMARK="" SUITE="" PROBE_MODE="" TAG=""
+
+while (($#)); do
+  case "$1" in
+    -i|--iter)       ITER="${2:?missing value for $1}"; shift 2;;
+    -b|--benchmark)  BENCHMARK="${2:?missing value for $1}"; shift 2;;
+    -s|--suite)      SUITE="${2:?missing value for $1}"; shift 2;;
+    -p|--probe)      PROBE_MODE="${2:?missing value for $1}"; shift 2;;
+    -t|--tag)        TAG="${2:?missing value for $1}"; shift 2;;
+    -h|--help)       usage; exit 0;;
+    --)              shift; break;;
+    *)               echo "Unknown arg: $1" >&2; usage; exit 2;;
+  esac
+done
+
+# Apply defaults where args were not provided
+ITER="${ITER:-$ITER_DEFAULT}"
+BENCHMARK="${BENCHMARK:-$BENCHMARK_DEFAULT}"
+SUITE="${SUITE:-$SUITE_DEFAULT}"
+PROBE_MODE="${PROBE_MODE:-$PROBE_MODE_DEFAULT}"
+TAG="${TAG:-$TAG_DEFAULT}"
+
+# (Optional) validate to catch typos early
+case "$SUITE" in AWFY|Renaissance) ;; *) echo "Bad SUITE: $SUITE" >&2; exit 2;; esac
+case "$PROBE_MODE" in WithProbe|WithoutProbe) ;; *) echo "Bad PROBE_MODE: $PROBE_MODE" >&2; exit 2;; esac
+
+# ============================================================
+# Derived paths (now using final values)
+# ============================================================
+PROCESSED_DIR="${ROOT_DIR}/processed/${SUITE}/${BENCHMARK}/${PROBE_MODE}"
+
 BUILD_VTUNE="${ROOT_DIR}/scripts/build_total_pct_slowdown_per_loop.py"
 PLOT_SCRIPT="${ROOT_DIR}/scripts/plot_loopbenchmarks.py"
 
-# ---- Raw inputs (fixed) ----
-DEBUG_OUT="${ROOT_DIR}/rawdata/cfg/LoopBenchmarks_baseline_withBubo.out"
-SLOWDOWN_TXT="${ROOT_DIR}/rawdata/vtune/slowdown_blocks.txt"
+DEBUG_OUT="${ROOT_DIR}/rawdata/cfg/${SUITE}/${BENCHMARK}/${PROBE_MODE}/${BENCHMARK}_baseline_withBubo.out"
+SLOWDOWN_TXT="${ROOT_DIR}/rawdata/vtune/${SUITE}/${BENCHMARK}/${PROBE_MODE}/slowdown_blocks.txt"
 
-BUBO_BASELINE="${ROOT_DIR}/rawdata/bubo/LoopBenchmarks_baseline_withBubo.out"
-BUBO_SLOWDOWN="${ROOT_DIR}/rawdata/bubo/LoopBenchmarks_slowdown_withBubo.out"
+MARKERPHASE_JSON="/home/hb478/repos/GTSlowdownSchedular/FinalBuboTests/${PROBE_MODE}/${SUITE}/${BENCHMARK}/MarkerPhaseInfo.json"
+BRIDGE_SRC="/home/hb478/repos/GTSlowdownSchedular/FinalBuboTests/${PROBE_MODE}/${SUITE}/${BENCHMARK}/Final_${BENCHMARK}.json"
 
-OVERHEADS="${ROOT_DIR}/rawdata/overheads/cycles_overhead.csv"
+mkdir -p "${PROCESSED_DIR}" "${ROOT_DIR}/plots"
 
-# ---- Source-of-truth bridge JSON ----
-BRIDGE_SRC="/home/hb478/repos/GTSlowdownSchedular/FinalBuboTests/LoopBenchmarks/Final_LoopBenchmarks.json"
-
-# ---- Outputs ----
-PROCESSED_DIR="${ROOT_DIR}/processed"
-BRIDGE_DST="${PROCESSED_DIR}/vtune/Final_LoopBenchmarks.json"
-
-# echo "[INFO] Root: ${ROOT_DIR}"
-
-# # ---- Sanity checks ----
-# [[ -f "${BUILD_VTUNE}" ]] || { echo "[ERROR] Missing ${BUILD_VTUNE}"; exit 1; }
-# [[ -f "${PLOT_SCRIPT}" ]] || { echo "[ERROR] Missing ${PLOT_SCRIPT}"; exit 1; }
-
-# [[ -f "${DEBUG_OUT}" ]] || { echo "[ERROR] Missing ${DEBUG_OUT}"; exit 1; }
-# [[ -f "${SLOWDOWN_TXT}" ]] || { echo "[ERROR] Missing ${SLOWDOWN_TXT}"; exit 1; }
-
-# [[ -f "${BUBO_BASELINE}" ]] || { echo "[ERROR] Missing ${BUBO_BASELINE}"; exit 1; }
-# [[ -f "${BUBO_SLOWDOWN}" ]] || { echo "[ERROR] Missing ${BUBO_SLOWDOWN}"; exit 1; }
-
-# [[ -f "${OVERHEADS}" ]] || { echo "[ERROR] Missing ${OVERHEADS}"; exit 1; }
-
-# [[ -f "${BRIDGE_SRC}" ]] || { echo "[ERROR] Missing ${BRIDGE_SRC}"; exit 1; }
-
-# mkdir -p "${PROCESSED_DIR}/cfg" "${PROCESSED_DIR}/vtune" "${ROOT_DIR}/plots"
-
-
+echo "[CONFIG] SUITE=${SUITE} BENCHMARK=${BENCHMARK} PROBE_MODE=${PROBE_MODE} ITER=${ITER} TAG=${TAG}"
 
 echo "[STEP 0] Producing raw Bubo + CFG outputs into rawdata/"
-"${ROOT_DIR}/scripts/run_bubo_and_cfg.sh"
+BENCHMARK="${BENCHMARK}" SUITE="${SUITE}" PROBE_MODE="${PROBE_MODE}" ITER="${ITER}" \
+  "${ROOT_DIR}/scripts/run_bubo_and_cfg.sh"
 
 echo "[STEP 0.5] Producing VTune slowdown block-times file into rawdata/vtune/"
-"${ROOT_DIR}/scripts/run_vtune_slowdown_blocks.sh"
+BENCHMARK="${BENCHMARK}" SUITE="${SUITE}" PROBE_MODE="${PROBE_MODE}" ITER="${ITER}" TAG="${TAG}" \
+  "${ROOT_DIR}/scripts/run_vtune_slowdown_blocks.sh"
 
-# ---- Stage 1: Build processed VTune per-loop totals ----
-echo "[STEP 1] Copying latest bridge JSON"
-cp -f "${BRIDGE_SRC}" "${BRIDGE_DST}"
-
-MARKERPHASE_JSON="/home/hb478/repos/GTSlowdownSchedular/FinalBuboTests/LoopBenchmarks/result.json"
-
-echo "[STEP 1] Building processed/vtune/total_pct_slowdown_per_loop.csv"
+echo "[STEP 1] Building per-loop totals into: ${PROCESSED_DIR}"
 "${PY}" "${BUILD_VTUNE}" \
   --debug-out "${DEBUG_OUT}" \
   --slowdown-txt "${SLOWDOWN_TXT}" \
   --block-id-is-vtune \
-  --bridge-json "${BRIDGE_DST}" \
+  --bridge-json "${BRIDGE_SRC}" \
   --markerphase-json "${MARKERPHASE_JSON}" \
   --processed-dir "${PROCESSED_DIR}" \
   --min-normal 1e-9
 
-# ---- Stage 2: Plot ----
 echo "[STEP 2] Generating final plot into plots/"
-"${PY}" "${PLOT_SCRIPT}"
+"${PY}" "${PLOT_SCRIPT}" \
+  --benchmark "${BENCHMARK}" \
+  --suite "${SUITE}" \
+  --probe-mode "${PROBE_MODE}" \
+  --processed-dir "${PROCESSED_DIR}"
+
+CHECK_SCRIPT="${ROOT_DIR}/scripts/check_loop_ids_match.py"
+
+
+echo "[STEP 3] Checking VTune used same compilation unit as plots (master)..."
+"${PY}" "${CHECK_SCRIPT}" \
+  --benchmark "${BENCHMARK}" \
+  --plots-dir "${ROOT_DIR}/plots" \
+  --processed-dir "${PROCESSED_DIR}" \
+  --max-errors 100
 
 echo
 echo "[DONE]"
 echo "Key outputs:"
-echo "  processed/vtune/total_pct_slowdown_per_loop.csv"
-echo "  plots/LoopBenchmarks_bubo_loops.png"
-echo "  plots/LoopBenchmarks_bubo_loops.csv"
+echo "  ${PROCESSED_DIR}/vtune/total_pct_slowdown_per_loop.csv"
+echo "  plots/${BENCHMARK}_bubo_loops.png"
+echo "  plots/${BENCHMARK}_bubo_loops.csv"

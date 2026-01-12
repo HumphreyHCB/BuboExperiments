@@ -158,6 +158,97 @@ def parse_debug_output(text: str) -> List[Compilation]:
 
     return comps
 
+def choose_best_comp_per_method(
+    blocks: List["BlockRow"],
+    method_to_comps: Dict[str, List[int]],
+    node_map: Dict[Tuple[int, str, int], int],
+    slowdown_block_id_is_vtune: bool,
+    vtune_to_graal_by_method: Dict[str, Dict[int, int]],
+    vtune_to_graal_fallback_by_method: Dict[str, Dict[int, int]],
+    enable_method_fallback_match: bool,
+) -> Dict[str, int]:
+    """
+    Pick ONE compilation id per method (method_norm) that best matches the slowdown rows.
+
+    Scoring:
+      For each method, for each candidate comp_id, score = number of slowdown rows whose
+      graal_block_id exists in node_map for that comp_id.
+    Tie-break:
+      Prefer the *largest* comp_id (most recent) among tied best scores (deterministic).
+
+    Returns:
+      dict: method_norm -> best_comp_id
+    """
+
+    def method_alternatives(m: str) -> List[str]:
+        if not enable_method_fallback_match:
+            return [m]
+        alt = m.replace(".", "::") if "." in m else m.replace("::", ".")
+        alt_norm = normalise_method_name(alt)
+        if alt_norm != m:
+            return [m, alt_norm]
+        return [m]
+
+    # Collect per-method list of graal block ids observed in slowdown rows
+    method_to_graal_blocks: Dict[str, List[int]] = defaultdict(list)
+
+    for br in blocks:
+        method_norm = br.method_norm
+
+        # Map slowdown "block id" to graal block id, if needed
+        if slowdown_block_id_is_vtune:
+            vtune_bid = br.block_id
+
+            vtune_to_graal = vtune_to_graal_by_method.get(method_norm, {})
+            graal_bid = vtune_to_graal.get(vtune_bid)
+
+            if graal_bid is None:
+                fallback = vtune_to_graal_fallback_by_method.get(method_norm, {})
+                graal_bid = fallback.get(vtune_bid)
+
+            if graal_bid is None:
+                # Can't use this row for scoring; no vtune->graal mapping
+                continue
+        else:
+            graal_bid = br.block_id
+
+        method_to_graal_blocks[method_norm].append(graal_bid)
+
+    # Score candidate comps
+    best_comp_for_method: Dict[str, int] = {}
+
+    for method_norm, graal_bids in method_to_graal_blocks.items():
+        # Candidate comps come from method_to_comps. We'll also consider alt method name if enabled.
+        candidate_comps: Set[int] = set()
+        for m in method_alternatives(method_norm):
+            for cid in method_to_comps.get(m, []):
+                candidate_comps.add(cid)
+
+        if not candidate_comps:
+            continue
+
+        best_score = -1
+        best_cid = None
+
+        # Precompute graal bids as a list (keep duplicates; they should count)
+        for cid in sorted(candidate_comps):
+            score = 0
+            for m in method_alternatives(method_norm):
+                # Count how many rows map for this comp/method name
+                for gb in graal_bids:
+                    if (cid, m, gb) in node_map:
+                        score += 1
+
+            # pick highest score; tie -> larger comp id
+            if score > best_score or (score == best_score and best_cid is not None and cid > best_cid):
+                best_score = score
+                best_cid = cid
+
+        if best_cid is not None and best_score > 0:
+            best_comp_for_method[method_norm] = best_cid
+
+    return best_comp_for_method
+
 
 def gv_escape(s: str) -> str:
     s = s.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n")
@@ -263,7 +354,7 @@ def write_dots_from_debug(debug_txt_path: str, dots_outdir: str) -> List[str]:
 
 # ============================================================
 # Part 2: DOT folder -> loops.csv (node -> LoopID)
-#          + NEW: probe_nodes.csv (probe-node -> LoopID)
+#          + probe_nodes.csv (probe-node -> LoopID)
 # ============================================================
 
 GRAPH_LABEL_RE = re.compile(r'^\s*label="([^"]+)";\s*$')
@@ -394,16 +485,6 @@ def infer_probe_nodes_for_loopid(
     edges: List[Tuple[str, str]],
     looplabel_to_id: Dict[str, int],
 ) -> Dict[int, Set[str]]:
-    """
-    NEW:
-    Determine which CFG nodes are "probe nodes" for each loop_id.
-
-    Heuristic:
-      - A probe node is a node that contains the RDTSC marker (node_rdtsc_loopid).
-      - Assign it to the loop it *targets* (successor node with a loop label),
-        using looplabel_to_id.
-      - If we can't find a loop-labeled successor, fall back to the marker LoopID.
-    """
     succs: Dict[str, List[str]] = {}
     for s, d in edges:
         succs.setdefault(s, []).append(d)
@@ -465,12 +546,6 @@ def write_loops_csv_from_dots(dots_dir: str, out_csv: str) -> int:
 
 
 def write_probe_nodes_csv_from_dots(dots_dir: str, out_csv: str) -> int:
-    """
-    NEW:
-    Writes a mapping of (comp_id, method, loop_id) -> probe_node (bNNN) and probe_graal_block_id (NNN).
-
-    This is used later to add the *RDTSC segment time* for the probe blocks into each loop total.
-    """
     dot_files: List[str] = []
     for root, _, files in os.walk(dots_dir):
         for fn in files:
@@ -525,7 +600,7 @@ def write_probe_nodes_csv_from_dots(dots_dir: str, out_csv: str) -> int:
 
 # ============================================================
 # Part 3: slowdown blocks + loops.csv (+ bridge) -> totals csv
-#          + NEW: Add probe RDTSC segment times into loop totals
+#          + Add probe RDTSC segment times into loop totals (optional)
 # ============================================================
 
 LINE_RE = re.compile(
@@ -536,7 +611,6 @@ LINE_RE = re.compile(
     r"Percentage Increase:\s*(?P<pct>-?\d+(?:\.\d+)?)(?:%)?\s*$"
 )
 
-# NEW: probe-segment lines (same input file)
 RDTSC_LINE_RE = re.compile(
     r"^Method:\s*(?P<method>.*?),\s*"
     r"Block ID:\s*(?P<block>\d+),\s*"
@@ -572,14 +646,6 @@ def normalise_method_name(s: str) -> str:
 
 
 def read_slowdown_and_rdtsc_rows(path: str) -> Tuple[List[BlockRow], Dict[Tuple[str, int], RdtscRow], int, int, int]:
-    """
-    Reads ONE file (slowdown_blocks.txt) and extracts:
-      - Normal per-block lines (BlockRow)  [existing behaviour]
-      - RDTSC probe-segment lines (RdtscRow) keyed by (method_norm, vtune_block_id)  [NEW]
-
-    Returns:
-      (block_rows, rdtsc_map, matched_blocks, matched_rdtsc, total_lines)
-    """
     block_rows: List[BlockRow] = []
     rdtsc_map: Dict[Tuple[str, int], RdtscRow] = {}
 
@@ -620,7 +686,6 @@ def read_slowdown_and_rdtsc_rows(path: str) -> Tuple[List[BlockRow], Dict[Tuple[
                     rdtsc_normal=float(r.group("normal")),
                     rdtsc_slow=float(r.group("slow")),
                 )
-                # If duplicates exist, keep the last (they should be identical; last-wins is fine)
                 rdtsc_map[(method_norm, vtune_block_id)] = rr
                 matched_rdtsc += 1
                 continue
@@ -653,13 +718,6 @@ def read_bridge_vtune_to_graal(path: str) -> Dict[str, Dict[int, int]]:
 
 
 def read_markerphase_graal_to_vtune(path: str) -> Dict[str, Dict[int, int]]:
-    """
-    NEW:
-    MarkerPhaseInfo.json gives entries like:
-      { "VtuneBlock": "202", "GraalID": "79", ... }
-
-    We invert it to: method_norm -> (graal_block_id -> vtune_block_id)
-    """
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     out: Dict[str, Dict[int, int]] = {}
 
@@ -728,11 +786,6 @@ def read_dot_node_map(path: str) -> Tuple[Dict[str, List[int]], Dict[Tuple[int, 
 
 
 def read_probe_nodes_csv(path: str) -> Dict[Tuple[int, str, int], Set[int]]:
-    """
-    NEW:
-    Reads probe_nodes.csv and returns:
-      (comp_id, method_norm, loop_id) -> set(graal_probe_block_ids)
-    """
     out: Dict[Tuple[int, str, int], Set[int]] = defaultdict(set)
 
     with open(path, "r", encoding="utf-8", errors="replace", newline="") as f:
@@ -792,7 +845,6 @@ class LoopAgg:
     num_blocks: int = 0
     sum_normal: float = 0.0
     sum_slow: float = 0.0
-    # NEW: probe segment sums
     probe_sum_normal: float = 0.0
     probe_sum_slow: float = 0.0
 
@@ -802,12 +854,26 @@ def safe_pct_increase(normal: float, slow: float) -> float:
         return 0.0
     return ((slow - normal) / normal) * 100.0
 
+def invert_graal_to_vtune_map(graal_to_vtune_by_method: Dict[str, Dict[int, int]]) -> Dict[str, Dict[int, int]]:
+    """
+    Invert per-method {graal_id -> vtune_id} into {vtune_id -> graal_id}.
+    If multiple graal_ids map to the same vtune_id, keep the smallest graal_id (deterministic).
+    """
+    out: Dict[str, Dict[int, int]] = {}
+    for method_norm, g2v in graal_to_vtune_by_method.items():
+        v2g: Dict[int, int] = {}
+        for g, v in g2v.items():
+            if v not in v2g or g < v2g[v]:
+                v2g[v] = g
+        out[method_norm] = v2g
+    return out
+
 
 def build_totals_from_raw(
     slowdown_input_file: str,
     loops_csv: str,
     probe_nodes_csv: str,
-    markerphase_json: str,
+    markerphase_json: Optional[str],
     output_loop_totals_csv: str,
     output_block_map_csv: str,
     slowdown_block_id_is_vtune: bool,
@@ -815,23 +881,36 @@ def build_totals_from_raw(
     enable_method_fallback_match: bool,
     min_normal_time_per_block: float,
 ) -> None:
-    # Read ONE file for both normal lines and rdtsc lines
     blocks, rdtsc_map, matched, matched_rdtsc, total = read_slowdown_and_rdtsc_rows(slowdown_input_file)
-
     method_to_comps, node_map = read_dot_node_map(loops_csv)
 
-    # Existing vtune->graal mapping (for normal block lines)
     vtune_to_graal_by_method: Dict[str, Dict[int, int]] = {}
+
+    # We'll allow bridge_json to be missing IF markerphase_json exists,
+    # because we can fallback via inverted MarkerPhaseInfo mapping.
     if slowdown_block_id_is_vtune:
-        if not bridge_json:
-            raise SystemExit("SLOWDOWN_BLOCK_ID_IS_VTUNE is true but no bridge JSON was provided.")
-        vtune_to_graal_by_method = read_bridge_vtune_to_graal(bridge_json)
+        if bridge_json and os.path.isfile(bridge_json):
+            vtune_to_graal_by_method = read_bridge_vtune_to_graal(bridge_json)
+        else:
+            vtune_to_graal_by_method = {}
 
-    # NEW: markerphase Graal->VTune mapping (for probe lookup)
-    graal_to_vtune_by_method = read_markerphase_graal_to_vtune(markerphase_json)
+    # Probe augmentation is OPTIONAL now:
+    enable_probe_aug = False
+    graal_to_vtune_by_method: Dict[str, Dict[int, int]] = {}
+    probe_blocks_by_loop: Dict[Tuple[int, str, int], Set[int]] = {}
 
-    # NEW: probe nodes per loop (graal block ids)
-    probe_blocks_by_loop = read_probe_nodes_csv(probe_nodes_csv)
+    vtune_to_graal_fallback_by_method: Dict[str, Dict[int, int]] = {}
+
+    if markerphase_json and os.path.isfile(markerphase_json):
+        enable_probe_aug = True
+        graal_to_vtune_by_method = read_markerphase_graal_to_vtune(markerphase_json)
+        vtune_to_graal_fallback_by_method = invert_graal_to_vtune_map(graal_to_vtune_by_method)
+        probe_blocks_by_loop = read_probe_nodes_csv(probe_nodes_csv)
+    else:
+        if markerphase_json:
+            print(f"[WARN] markerphase-json does not exist, skipping probe augmentation: {markerphase_json}")
+        else:
+            print("[WARN] markerphase-json not provided, skipping probe augmentation (probe segment times not added).")
 
     grouped: Dict[Tuple[int, str, int], LoopAgg] = defaultdict(LoopAgg)
     block_rows: List[Tuple] = []
@@ -842,9 +921,6 @@ def build_totals_from_raw(
     missing_bridge = 0
     skipped_normal = 0
 
-    # --------------------------
-    # Base aggregation (UNCHANGED)
-    # --------------------------
     for br in blocks:
         # if br.normal_time <= min_normal_time_per_block:
         #     skipped_normal += 1
@@ -857,27 +933,55 @@ def build_totals_from_raw(
 
         if slowdown_block_id_is_vtune:
             vtune_block_id = br.block_id
-            vtune_to_graal = vtune_to_graal_by_method.get(method_norm)
-            if not vtune_to_graal:
-                missing_bridge += 1
-                continue
+
+            # 1) try Final_*.json (bridge)
+            vtune_to_graal = vtune_to_graal_by_method.get(method_norm, {})
             graal_block = vtune_to_graal.get(vtune_block_id)
+
+            # 2) fallback: MarkerPhaseInfo.json inverted (VTune -> Graal)
+            if graal_block is None:
+                fallback = vtune_to_graal_fallback_by_method.get(method_norm, {})
+                graal_block = fallback.get(vtune_block_id)
+
             if graal_block is None:
                 missing_bridge += 1
                 continue
+
             graal_block_id = graal_block
             block_id_for_node_map = graal_block_id
+
         else:
             graal_block_id = br.block_id
             block_id_for_node_map = graal_block_id
+        
+        if slowdown_block_id_is_vtune:
+            have_bridge = bool(vtune_to_graal_by_method)
+            have_fallback = bool(vtune_to_graal_fallback_by_method)
+            if not have_bridge and not have_fallback:
+                raise SystemExit(
+                    "--block-id-is-vtune requires either --bridge-json (Final_*.json) "
+                    "or --markerphase-json (MarkerPhaseInfo.json) to map VTune->Graal."
+                )
 
-        comp_id = find_comp_for_method_block(
-            method_norm,
-            block_id_for_node_map,
-            method_to_comps,
-            node_map,
-            enable_method_fallback_match
-        )
+        best_comp_by_method = choose_best_comp_per_method(
+        blocks=blocks,
+        method_to_comps=method_to_comps,
+        node_map=node_map,
+        slowdown_block_id_is_vtune=slowdown_block_id_is_vtune,
+        vtune_to_graal_by_method=vtune_to_graal_by_method,
+        vtune_to_graal_fallback_by_method=vtune_to_graal_fallback_by_method,
+        enable_method_fallback_match=enable_method_fallback_match,
+         )
+        comp_id = best_comp_by_method.get(method_norm)
+        if comp_id is None:
+            # fallback to old behavior if we couldn't decide
+            comp_id = find_comp_for_method_block(
+                method_norm,
+                block_id_for_node_map,
+                method_to_comps,
+                node_map,
+                enable_method_fallback_match
+            )
         if comp_id is None:
             missing_methodblock += 1
             continue
@@ -904,46 +1008,43 @@ def build_totals_from_raw(
             safe_pct_increase(br.normal_time, br.slowdown_time),
         ))
 
-    # --------------------------
-    # NEW: add probe RDTSC segment times per loop
-    # --------------------------
     probe_added_keys = 0
     probe_added_blocks = 0
     probe_missing_marker_map = 0
     probe_missing_rdtsc_line = 0
 
-    for (comp_id, method_norm, loop_id), g in grouped.items():
-        probe_graal_blocks = probe_blocks_by_loop.get((comp_id, method_norm, loop_id))
-        if not probe_graal_blocks:
-            continue
-
-        graal_to_vtune = graal_to_vtune_by_method.get(method_norm)
-        if not graal_to_vtune:
-            probe_missing_marker_map += len(probe_graal_blocks)
-            continue
-
-        any_added = False
-
-        for graal_bid in probe_graal_blocks:
-            vtune_bid = graal_to_vtune.get(graal_bid)
-            if vtune_bid is None:
-                probe_missing_marker_map += 1
+    if enable_probe_aug:
+        for (comp_id, method_norm, loop_id), g in grouped.items():
+            probe_graal_blocks = probe_blocks_by_loop.get((comp_id, method_norm, loop_id))
+            if not probe_graal_blocks:
                 continue
 
-            rr = rdtsc_map.get((method_norm, vtune_bid))
-            if rr is None:
-                probe_missing_rdtsc_line += 1
+            graal_to_vtune = graal_to_vtune_by_method.get(method_norm)
+            if not graal_to_vtune:
+                probe_missing_marker_map += len(probe_graal_blocks)
                 continue
 
-            g.probe_sum_normal += rr.rdtsc_normal
-            g.probe_sum_slow += rr.rdtsc_slow
-            probe_added_blocks += 1
-            any_added = True
+            any_added = False
 
-        if any_added:
-            probe_added_keys += 1
+            for graal_bid in probe_graal_blocks:
+                vtune_bid = graal_to_vtune.get(graal_bid)
+                if vtune_bid is None:
+                    probe_missing_marker_map += 1
+                    continue
 
-    # loop totals (now include probe sums)
+                rr = rdtsc_map.get((method_norm, vtune_bid))
+                if rr is None:
+                    probe_missing_rdtsc_line += 1
+                    continue
+
+                g.probe_sum_normal += rr.rdtsc_normal
+                g.probe_sum_slow += rr.rdtsc_slow
+                probe_added_blocks += 1
+                any_added = True
+
+            if any_added:
+                probe_added_keys += 1
+
     out_rows = []
     for (comp_id, method_norm, loop_id), g in grouped.items():
         total_n = g.sum_normal + g.probe_sum_normal
@@ -970,7 +1071,6 @@ def build_totals_from_raw(
         ])
         w.writerows(out_rows)
 
-    # block map enriched (loop totals now include probe sums)
     loop_totals: Dict[Tuple[int, str, int], Tuple[float, float, float]] = {}
     for (comp_id, method_norm, loop_id), g in grouped.items():
         tn = g.sum_normal + g.probe_sum_normal
@@ -1013,9 +1113,12 @@ def build_totals_from_raw(
         print(f"[INFO] Bridge misses:      {missing_bridge}")
     print(f"[INFO] Skipped (normal_time <= {min_normal_time_per_block}): {skipped_normal}")
 
-    print(f"[INFO] Probe augmentation: loops updated: {probe_added_keys}, probe blocks added: {probe_added_blocks}")
-    print(f"[INFO] Probe augmentation: missing MarkerPhaseInfo map entries: {probe_missing_marker_map}")
-    print(f"[INFO] Probe augmentation: missing RDTSC lines in slowdown txt: {probe_missing_rdtsc_line}")
+    if enable_probe_aug:
+        print(f"[INFO] Probe augmentation: loops updated: {probe_added_keys}, probe blocks added: {probe_added_blocks}")
+        print(f"[INFO] Probe augmentation: missing MarkerPhaseInfo map entries: {probe_missing_marker_map}")
+        print(f"[INFO] Probe augmentation: missing RDTSC lines in slowdown txt: {probe_missing_rdtsc_line}")
+    else:
+        print("[INFO] Probe augmentation: DISABLED (no markerphase-json)")
 
     print(f"[OK] Wrote loop totals: {output_loop_totals_csv}")
     print(f"[OK] Wrote block map:   {output_block_map_csv}")
@@ -1027,7 +1130,7 @@ def build_totals_from_raw(
 
 def main() -> None:
     ap = argparse.ArgumentParser(
-        description="All-in-one: debug output -> DOTs -> loops.csv -> total_pct_slowdown_per_loop.csv (plus probe RDTSC segment augmentation)"
+        description="All-in-one: debug output -> DOTs -> loops.csv -> total_pct_slowdown_per_loop.csv (probe augmentation optional)"
     )
     ap.add_argument("--debug-out", required=True, help="HumphreysDebugDataPhase console output file (baseline_withBubo.out).")
     ap.add_argument("--slowdown-txt", required=True, help="SlowdownTest output file (contains both normal block lines and RDTSC probe-segment lines).")
@@ -1036,11 +1139,11 @@ def main() -> None:
     ap.add_argument("--no-method-fallback", action="store_true", help="Disable :: <-> . method fallback matching.")
     ap.add_argument("--min-normal", type=float, default=0.0, help="Skip rows with normal_time <= this value (default: 0.0).")
 
-    # NEW but defaulted, so your bash scripts do NOT need to change.
+    # CHANGED: no hard-coded LoopBenchmarks default anymore.
     ap.add_argument(
         "--markerphase-json",
-        default="/home/hb478/repos/GTSlowdownSchedular/FinalBuboTests/LoopBenchmarks/MarkerPhaseInfo.json",
-        help="MarkerPhaseInfo.json (used to map graal probe block ids -> vtune block ids for RDTSC lookup)."
+        default=None,
+        help="MarkerPhaseInfo.json (optional). If provided, probe RDTSC segment times are added to loop totals."
     )
 
     ap.add_argument("--processed-dir", default="processed", help="Base processed output dir (default: processed).")
@@ -1049,29 +1152,23 @@ def main() -> None:
     processed_dir = args.processed_dir
     dots_dir = os.path.join(processed_dir, "cfg", "dots")
     loops_csv = os.path.join(processed_dir, "cfg", "loops.csv")
-
-    # NEW: probe nodes output
     probe_nodes_csv = os.path.join(processed_dir, "cfg", "probe_nodes.csv")
 
     out_loop_totals = os.path.join(processed_dir, "vtune", "total_pct_slowdown_per_loop.csv")
     out_block_map = os.path.join(processed_dir, "vtune", "block_times_per_loop.csv")
 
-    # 1) debug -> dots
     print(f"[STEP] Writing DOT files to: {dots_dir}")
     dot_paths = write_dots_from_debug(args.debug_out, dots_dir)
     print(f"[OK] Wrote {len(dot_paths)} DOT files.")
 
-    # 2) dots -> loops.csv
     print(f"[STEP] Writing loops CSV to: {loops_csv}")
     nrows = write_loops_csv_from_dots(dots_dir, loops_csv)
     print(f"[OK] loops.csv rows: {nrows}")
 
-    # 2.5) dots -> probe_nodes.csv (NEW)
     print(f"[STEP] Writing probe nodes CSV to: {probe_nodes_csv}")
     pn = write_probe_nodes_csv_from_dots(dots_dir, probe_nodes_csv)
     print(f"[OK] probe_nodes.csv rows: {pn}")
 
-    # 3) slowdown + loops.csv (+ bridge) -> totals
     print(f"[STEP] Building per-loop totals from slowdown blocks...")
     build_totals_from_raw(
         slowdown_input_file=args.slowdown_txt,

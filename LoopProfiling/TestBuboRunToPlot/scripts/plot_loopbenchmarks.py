@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import csv
 import os
 import re
@@ -9,7 +10,42 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import matplotlib.lines as mlines
 
-# ---------------- Legend ----------------
+# ============================================================
+# Defaults (EDIT THESE if running standalone; run_all.sh can override via args)
+# ============================================================
+
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+BENCHMARK = "LoopBenchmarks"
+BUBO_SUITE = "AWFY"
+BUBO_PROBE_MODE = "WithProbe"
+
+# Default processed dir (run_all.sh will pass a specific one)
+PROCESSED_DIR = os.path.join(ROOT_DIR, "processed", BUBO_SUITE, BENCHMARK, BUBO_PROBE_MODE)
+
+# Raw inputs (new canonical rawdata layout)
+PROGRAM_OVERHEAD_CSV = os.path.join(ROOT_DIR, "rawdata", "overheads", "cycles_overhead.csv")
+
+BUBO_DIR = os.path.join(ROOT_DIR, "rawdata", "bubo", BUBO_SUITE, BENCHMARK, BUBO_PROBE_MODE)
+BUBO_BASELINE_OUT = os.path.join(BUBO_DIR, f"{BENCHMARK}_baseline_withBubo.out")
+BUBO_SLOWDOWN_OUT = os.path.join(BUBO_DIR, f"{BENCHMARK}_slowdown_withBubo.out")
+
+# Produced by build_total_pct_slowdown_per_loop.py (now per-run processed dir)
+LOOP_MEDIANS_CSV = os.path.join(PROCESSED_DIR, "vtune", "total_pct_slowdown_per_loop.csv")
+
+# Outputs
+PLOTS_DIR = os.path.join(ROOT_DIR, "plots")
+OUT_PNG = os.path.join(PLOTS_DIR, f"{BENCHMARK}_bubo_loops.png")
+OUT_CSV = os.path.join(PLOTS_DIR, f"{BENCHMARK}_bubo_loops.csv")
+
+# Plot controls
+RUNTIME_SHARE_THRESHOLD = 2.0  # percent
+FIGSIZE = (20, 14.5)
+
+REQUIRE_BENCHMARK_PREFIX = True
+MAIN_METHOD_DOT: Optional[str] = None
+
+
 legend_handles = [
     mpatches.Patch(color="tab:blue", label="Per-loop slowdown (pure loops, LCC=0)"),
     mpatches.Patch(color="tab:orange", label="Per-loop slowdown (non-pure, LCC>0)"),
@@ -17,31 +53,7 @@ legend_handles = [
     mlines.Line2D([], [], color="black", linestyle="--", label="Program slowdown"),
 ]
 
-# ---------------- Configuration (NO ARGS) ----------------
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-BENCHMARK = "LoopBenchmarks"
-
-PROGRAM_OVERHEAD_CSV = os.path.join(ROOT_DIR, "rawdata", "overheads", "cycles_overhead.csv")
-
-BUBO_BASELINE_OUT = os.path.join(ROOT_DIR, "rawdata", "bubo", f"{BENCHMARK}_baseline_withBubo.out")
-BUBO_SLOWDOWN_OUT = os.path.join(ROOT_DIR, "rawdata", "bubo", f"{BENCHMARK}_slowdown_withBubo.out")
-
-# Produced by the earlier pipeline stage
-LOOP_MEDIANS_CSV = os.path.join(ROOT_DIR, "processed", "vtune", "total_pct_slowdown_per_loop.csv")
-
-PLOTS_DIR = os.path.join(ROOT_DIR, "plots")
-OUT_PNG = os.path.join(PLOTS_DIR, f"{BENCHMARK}_bubo_loops.png")
-OUT_CSV = os.path.join(PLOTS_DIR, f"{BENCHMARK}_bubo_loops.csv")
-
-RUNTIME_SHARE_THRESHOLD = 2.0  # percent
-FIGSIZE = (20, 14.5)
-
-# If True, only accept LoopBenchmarks.* methods from Bubo output (skip java.util.* etc)
-REQUIRE_LOOPBENCHMARKS_PREFIX = True
-
-
-# ---------------- Data structures ----------------
 @dataclass
 class LoopRecord:
     comp_id: int
@@ -60,7 +72,6 @@ class FileLoops:
     comp_names: Dict[int, str] = field(default_factory=dict)
 
 
-# ---------------- Program overhead CSV ----------------
 def detect_program_overhead_columns(fieldnames: List[str]) -> Tuple[str, str]:
     if not fieldnames:
         raise ValueError("CSV has no headers")
@@ -106,7 +117,6 @@ def load_program_overheads(csv_path: str) -> Dict[str, float]:
     return out
 
 
-# ---------------- Method name normalisation ----------------
 def normalize_method_name_dot(s: str) -> Optional[str]:
     if not s:
         return None
@@ -117,10 +127,6 @@ def normalize_method_name_dot(s: str) -> Optional[str]:
         s = s[1:-1].strip()
 
     s = s.replace("::", ".")
-
-    if REQUIRE_LOOPBENCHMARKS_PREFIX and not s.startswith("LoopBenchmarks."):
-        return None
-
     s = s.replace("-Re-Comp", "")
 
     if "(" in s:
@@ -128,8 +134,10 @@ def normalize_method_name_dot(s: str) -> Optional[str]:
 
     s = s.strip().rstrip(",")
 
-    if not s.startswith("LoopBenchmarks.") or s == "LoopBenchmarks.":
-        return None
+    if REQUIRE_BENCHMARK_PREFIX:
+        prefix = f"{BENCHMARK}."
+        if not s.startswith(prefix) or s == prefix:
+            return None
 
     return s
 
@@ -138,7 +146,6 @@ def comp_name_to_method_dot(comp_name: str) -> Optional[str]:
     return normalize_method_name_dot(comp_name)
 
 
-# ---------------- Load per-loop medians (VTune) ----------------
 def load_loop_medians(loop_medians_csv: str) -> Dict[Tuple[str, int], float]:
     if not os.path.isfile(loop_medians_csv):
         raise SystemExit(f"Cannot find loop medians CSV: {loop_medians_csv}")
@@ -162,10 +169,13 @@ def load_loop_medians(loop_medians_csv: str) -> Dict[Tuple[str, int], float]:
                 median_col = c
                 break
         if median_col is None:
-            raise SystemExit(
-                f"Could not find median column in {loop_medians_csv}.\n"
-                f"Expected something like 'median_pct_slowdown'."
-            )
+            if "median_pct_slowdown" in reader.fieldnames:
+                median_col = "median_pct_slowdown"
+            else:
+                raise SystemExit(
+                    f"Could not find median column in {loop_medians_csv}.\n"
+                    f"Expected something like 'median_pct_slowdown'."
+                )
 
         out: Dict[Tuple[str, int], float] = {}
         bad_method = 0
@@ -191,7 +201,6 @@ def load_loop_medians(loop_medians_csv: str) -> Dict[Tuple[str, int], float]:
     return out
 
 
-# ---------------- Parse Bubo output ----------------
 def parse_bubo_file(path: str) -> FileLoops:
     comp_id: Optional[int] = None
 
@@ -298,26 +307,95 @@ def parse_bubo_file(path: str) -> FileLoops:
     return FileLoops(loops=loops_final, total_cycles=total_cycles, comp_names=comp_to_name)
 
 
+def is_main_method(method_dot: Optional[str]) -> bool:
+    # If we couldn't normalise a method name, do NOT treat it as "main".
+    # Otherwise Renaissance ends up filtering out almost everything.
+    if not method_dot:
+        return False
+    main = MAIN_METHOD_DOT if MAIN_METHOD_DOT is not None else f"{BENCHMARK}.main"
+    return method_dot == main
+
+
+
+
+def parse_args():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--benchmark", default=BENCHMARK)
+    ap.add_argument("--suite", default=BUBO_SUITE)
+    ap.add_argument("--probe-mode", default=BUBO_PROBE_MODE)
+    ap.add_argument("--processed-dir", default=PROCESSED_DIR)
+    return ap.parse_args()
+
+def compute_total_cycles_fallback(base_loops: FileLoops, slow_loops: FileLoops) -> int:
+    # Fallback when "Total RDTSC cycles" is missing (e.g., Renaissance).
+    # Use sum of slowdown exclusive cycles for loops that exist in BOTH runs.
+    total = 0
+    for key, s in slow_loops.loops.items():
+        b = base_loops.loops.get(key)
+        if b is None:
+            continue
+        if s.exclusive_cycles > 0:
+            total += s.exclusive_cycles
+    return total
+
+
 def main():
+    global BENCHMARK, BUBO_SUITE, BUBO_PROBE_MODE, PROCESSED_DIR
+    global BUBO_DIR, BUBO_BASELINE_OUT, BUBO_SLOWDOWN_OUT, LOOP_MEDIANS_CSV, OUT_PNG, OUT_CSV
+
+
+    args = parse_args()
+    BENCHMARK = args.benchmark
+    BUBO_SUITE = args.suite
+    BUBO_PROBE_MODE = args.probe_mode
+    PROCESSED_DIR = args.processed_dir
+
+    global REQUIRE_BENCHMARK_PREFIX
+    REQUIRE_BENCHMARK_PREFIX = (BUBO_SUITE == "AWFY")
+
+    # Recompute derived paths using the (possibly overridden) config
+    BUBO_DIR = os.path.join(ROOT_DIR, "rawdata", "bubo", BUBO_SUITE, BENCHMARK, BUBO_PROBE_MODE)
+    BUBO_BASELINE_OUT = os.path.join(BUBO_DIR, f"{BENCHMARK}_baseline_withBubo.out")
+    BUBO_SLOWDOWN_OUT = os.path.join(BUBO_DIR, f"{BENCHMARK}_slowdown_withBubo.out")
+    LOOP_MEDIANS_CSV = os.path.join(PROCESSED_DIR, "vtune", "total_pct_slowdown_per_loop.csv")
+
+    OUT_PNG = os.path.join(PLOTS_DIR, f"{BENCHMARK}_bubo_loops.png")
+    OUT_CSV = os.path.join(PLOTS_DIR, f"{BENCHMARK}_bubo_loops.csv")
+
     os.makedirs(PLOTS_DIR, exist_ok=True)
 
-    if not os.path.isfile(PROGRAM_OVERHEAD_CSV):
-        raise SystemExit(f"Cannot find program overhead CSV: {PROGRAM_OVERHEAD_CSV}")
+    prog_slowdown_pct = -1.0
+    if os.path.isfile(PROGRAM_OVERHEAD_CSV):
+        prog_slowdown_map = load_program_overheads(PROGRAM_OVERHEAD_CSV)
+        prog_slowdown_pct = prog_slowdown_map.get(BENCHMARK, -1.0)
+    else:
+        print(f"[WARN] Program overhead CSV missing: {PROGRAM_OVERHEAD_CSV} (disabling program slowdown line)")
+
     if not os.path.isfile(BUBO_BASELINE_OUT) or not os.path.isfile(BUBO_SLOWDOWN_OUT):
         raise SystemExit(f"Missing Bubo files:\n  {BUBO_BASELINE_OUT}\n  {BUBO_SLOWDOWN_OUT}")
     if not os.path.isfile(LOOP_MEDIANS_CSV):
         raise SystemExit(f"Missing VTune per-loop totals CSV: {LOOP_MEDIANS_CSV}")
 
     loop_medians = load_loop_medians(LOOP_MEDIANS_CSV)
-    prog_slowdown_map = load_program_overheads(PROGRAM_OVERHEAD_CSV)
-    prog_slowdown_pct = prog_slowdown_map.get(BENCHMARK, 0.0)
 
     base_loops = parse_bubo_file(BUBO_BASELINE_OUT)
     slow_loops = parse_bubo_file(BUBO_SLOWDOWN_OUT)
 
     if slow_loops.total_cycles is None:
-        raise SystemExit("No total cycles found in slowdown Bubo file (expected 'Total RDTSC cycles').")
-    total_cycles_slow = slow_loops.total_cycles
+        total_cycles_slow = compute_total_cycles_fallback(base_loops, slow_loops)
+        if total_cycles_slow <= 0:
+            raise SystemExit(
+                "No total cycles found in slowdown Bubo file, and fallback total was 0.\n"
+                "Cannot compute runtime_share_pct."
+            )
+        print(
+            "[WARN] No total cycles found in slowdown Bubo file (expected 'Total RDTSC cycles').\n"
+            "       Using fallback total_cycles_slow = sum(slowdown exclusive cycles over loops).\n"
+            "       runtime_share_pct will be relative to total loop cycles (not whole-program cycles)."
+        )
+    else:
+        total_cycles_slow = slow_loops.total_cycles
+
 
     rows = []
     plot_entries = []
@@ -361,7 +439,6 @@ def main():
         if runtime_share_pct >= RUNTIME_SHARE_THRESHOLD and not is_main_method(method_dot):
             plot_entries.append(row)
 
-    # Write CSV (all rows)
     with open(OUT_CSV, "w", newline="") as f:
         fieldnames = [
             "benchmark", "comp_id", "comp_name", "method_dot", "loop_id", "loop_call_count",
@@ -414,7 +491,8 @@ def main():
     ax.set_ylabel("Slowdown (% change)")
     ax.set_title(f"{BENCHMARK}: per-loop slowdown vs per-loop VTune median")
 
-    ax.axhline(prog_slowdown_pct, linestyle="--", linewidth=1)
+    if prog_slowdown_pct >= 0.0:
+        ax.axhline(prog_slowdown_pct, linestyle="--", linewidth=1)
 
     def label_bars(bars, values):
         for rect, v in zip(bars, values):
@@ -438,10 +516,6 @@ def main():
     print(f"[OK] Wrote: {OUT_PNG}")
     print(f"[OK] Wrote: {OUT_CSV}")
 
-def is_main_method(method_dot: Optional[str]) -> bool:
-    if not method_dot:
-        return True  # treat unknown as "don't plot"
-    return method_dot == "LoopBenchmarks.main"
 
 if __name__ == "__main__":
     main()

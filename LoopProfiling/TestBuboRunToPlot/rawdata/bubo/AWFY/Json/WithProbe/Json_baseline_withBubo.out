@@ -1,0 +1,687 @@
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs cc325e064e7585e0e6736addc07d3b5b1a1e9ec52f960e7777496af159b5096f != 920e12a7ee41cc3a0a3487d03bd48833bfc4e8d416bdbae7234f8ba199084b4d
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 71c7befc4bcc50903c01cb500806055811a71080bd754d077284439fcd10103c != 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf
+java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs d736cb2a48e5e2e1b773411d7b56e351ded34b143df73f1167badb8ea4f8d9ba != 98a5118c22c3d9af130515da0cdd48a4fdd27c2643d15ea2823174f2036f7cad
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 graphSignature differs 19b74d2985bd215adc18bbf16eb571f75605eb5502bcec63b71bd357cc668d6e != ec48f9da76be66a6b56b9242fa5c79b96c5a2b790a5832893550f14895067602
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.util.Properties$LineReader.readLine()int -1 graphSignature differs 2b486d112efd309f21b56eed8c0bb9d78dd9081f799ef08ff7c803bfde611f4a != 878ec244077db65df33a3f7d09ba7cba637998f872be81e8c5729e664e547e01
+Starting Json benchmark ...
+json.JsonPureStringParser.subStringFromTo(int, int)java.lang.String -1 graphSignature differs 1dcbdf94429dd5746b94fe5ba12e9e862c4e58466f55c3d2fab5d79e53a43215 != af32baa2c436a731fcaeeb976f2b2e5bb23bf6cacc927087ce7c7c3f68fea51f
+json.JsonPureStringParser.readStringInternal()java.lang.String -1 graphSignature differs 57d176be2eeb29ada5079434fa21a3bcf32352675ff43115161da8255f72514d != 44afd95a02c51aded672241a7d6dc16ee4fb6df8dd543bfa5b9fcf7428df2df4
+json.JsonPureStringParser.readArray()json.JsonArray -1 graphSignature differs 69a832197fd1e70685979d7d3197436b3552421381077b82130b20cf5b373e8e != 99f769374468004994d68be680bf520d33fc75f5cf7091e56517b613f5070809
+json.JsonPureStringParser.endCapture()java.lang.String -1 graphSignature differs 47596b7cfa779ae9ba06f3208345060ebdef3c4cba1eeb688e63d5924bb6b92b != 6c487caf700acdc9572221bf0e53d72d74214ba7db88989a4531e948692f16d9
+json.JsonPureStringParser.readNumber()json.JsonValue -1 graphSignature differs f2ec5cbb2eb153ee41d632eea29333684caf4018da023a424b96610442237af5 != 97c8c0a1d0099e642fa8e1ed434776296c93590045c46b1f3243bf121e53a72a
+som.Vector.<init>()void -1 graphSignature differs f63187e56bcc33ec1bbaa3d28ee78ba4c628ba4964c1311ecf1487ee27fe3f6d != 96f56ff1b8ecc19be65b62920c89d90193aed743eac964f3425cfc2029a318b6
+som.Vector.<init>(int)void -1 graphSignature differs 251e8e5fd4a0530d93f7226031a210fb266b8b0b1b85c22be3870d185334512f != ac1f9746e0697ec8461d4f593d5beb30cb9dbc79267c0fab1e4421015ecfff3a
+json.JsonPureStringParser.readObject()json.JsonObject -1 graphSignature differs 4e59a405ad4c687676a2cb31e3fba12a11f9581b4679aae163f79169dbffbbbe != 41f4261d6b775d566c0a1419ffb67cfb082923d2d23d20e82534fed65c9923bd
+Json: iterations=1 runtime: 455374us
+Json: iterations=2 runtime: 97237us
+Json: iterations=3 runtime: 116668us
+Json: iterations=4 runtime: 92611us
+Json: iterations=5 runtime: 95777us
+Json: iterations=6 runtime: 92759us
+Json: iterations=7 runtime: 92733us
+Json: iterations=8 runtime: 92958us
+Json: iterations=9 runtime: 93081us
+Json: iterations=10 runtime: 92613us
+Json: iterations=11 runtime: 92679us
+Json: iterations=12 runtime: 101695us
+Json: iterations=13 runtime: 92651us
+Json: iterations=14 runtime: 92712us
+Json: iterations=15 runtime: 91584us
+Json: iterations=16 runtime: 95623us
+Json: iterations=17 runtime: 92477us
+Json: iterations=18 runtime: 92159us
+Json: iterations=19 runtime: 92232us
+Json: iterations=20 runtime: 92026us
+Json: iterations=21 runtime: 98381us
+Json: iterations=22 runtime: 92043us
+Json: iterations=23 runtime: 132830us
+Json: iterations=24 runtime: 91876us
+Json: iterations=25 runtime: 91916us
+Json: iterations=26 runtime: 91818us
+Json: iterations=27 runtime: 91981us
+Json: iterations=28 runtime: 91917us
+Json: iterations=29 runtime: 91845us
+Json: iterations=30 runtime: 91976us
+Json: iterations=31 runtime: 91947us
+java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[] -1 graphSignature differs 1f999aa20e3f220fe71672266c6f98da778490f3c44b34fcc0867f59f2ddc062 != 6d560332d9d14384d8f6d31e706381969c16650503cfbeef4da974eee42bf9f1
+Json: iterations=32 runtime: 102784us
+Json: iterations=33 runtime: 91318us
+Json: iterations=34 runtime: 91930us
+Json: iterations=35 runtime: 92018us
+Json: iterations=36 runtime: 91926us
+Json: iterations=37 runtime: 91989us
+Json: iterations=38 runtime: 92188us
+Json: iterations=39 runtime: 91962us
+Json: iterations=40 runtime: 91749us
+Json: iterations=41 runtime: 91709us
+Json: iterations=42 runtime: 91630us
+Json: iterations=43 runtime: 91835us
+Json: iterations=44 runtime: 91747us
+Json: iterations=45 runtime: 91568us
+Json: iterations=46 runtime: 91748us
+Json: iterations=47 runtime: 91611us
+Json: iterations=48 runtime: 91718us
+Json: iterations=49 runtime: 91609us
+Json: iterations=50 runtime: 91212us
+Json: iterations=51 runtime: 91709us
+Json: iterations=52 runtime: 91642us
+Json: iterations=53 runtime: 91676us
+Json: iterations=54 runtime: 91638us
+Json: iterations=55 runtime: 91670us
+Json: iterations=56 runtime: 91695us
+Json: iterations=57 runtime: 91673us
+Json: iterations=58 runtime: 91742us
+Json: iterations=59 runtime: 91643us
+Json: iterations=60 runtime: 91670us
+Json: iterations=61 runtime: 92559us
+Json: iterations=62 runtime: 91782us
+Json: iterations=63 runtime: 91812us
+Json: iterations=64 runtime: 91739us
+Json: iterations=65 runtime: 91766us
+Json: iterations=66 runtime: 91753us
+Json: iterations=67 runtime: 91808us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+Json: iterations=68 runtime: 176078us
+Json: iterations=69 runtime: 91724us
+Json: iterations=70 runtime: 91689us
+Json: iterations=71 runtime: 91579us
+Json: iterations=72 runtime: 91955us
+Json: iterations=73 runtime: 91902us
+Json: iterations=74 runtime: 91830us
+Json: iterations=75 runtime: 91893us
+Json: iterations=76 runtime: 91785us
+Json: iterations=77 runtime: 92029us
+Json: iterations=78 runtime: 91798us
+Json: iterations=79 runtime: 96680us
+Json: iterations=80 runtime: 92042us
+Json: iterations=81 runtime: 91789us
+Json: iterations=82 runtime: 91965us
+Json: iterations=83 runtime: 91796us
+Json: iterations=84 runtime: 91774us
+Json: iterations=85 runtime: 91801us
+Json: iterations=86 runtime: 90961us
+Json: iterations=87 runtime: 91903us
+Json: iterations=88 runtime: 91659us
+Json: iterations=89 runtime: 91698us
+Json: iterations=90 runtime: 91821us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+Json: iterations=91 runtime: 92213us
+Json: iterations=92 runtime: 91967us
+Json: iterations=93 runtime: 91807us
+Json: iterations=94 runtime: 91701us
+Json: iterations=95 runtime: 91892us
+Json: iterations=96 runtime: 91766us
+Json: iterations=97 runtime: 91718us
+Json: iterations=98 runtime: 92012us
+Json: iterations=99 runtime: 91897us
+Json: iterations=100 runtime: 91842us
+Json: iterations=101 runtime: 91820us
+Json: iterations=102 runtime: 91939us
+Json: iterations=103 runtime: 91032us
+Json: iterations=104 runtime: 91756us
+Json: iterations=105 runtime: 91681us
+Json: iterations=106 runtime: 91748us
+Json: iterations=107 runtime: 91651us
+Json: iterations=108 runtime: 91772us
+Json: iterations=109 runtime: 91722us
+Json: iterations=110 runtime: 91712us
+Json: iterations=111 runtime: 91696us
+Json: iterations=112 runtime: 91632us
+Json: iterations=113 runtime: 92069us
+Json: iterations=114 runtime: 91840us
+Json: iterations=115 runtime: 91955us
+Json: iterations=116 runtime: 91952us
+Json: iterations=117 runtime: 91858us
+Json: iterations=118 runtime: 91962us
+Json: iterations=119 runtime: 91846us
+Json: iterations=120 runtime: 91826us
+Json: iterations=121 runtime: 91016us
+Json: iterations=122 runtime: 91803us
+Json: iterations=123 runtime: 91773us
+Json: iterations=124 runtime: 91849us
+Json: iterations=125 runtime: 91731us
+Json: iterations=126 runtime: 91905us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+Json: iterations=127 runtime: 91814us
+Json: iterations=128 runtime: 96590us
+Json: iterations=129 runtime: 91920us
+Json: iterations=130 runtime: 91780us
+Json: iterations=131 runtime: 91811us
+Json: iterations=132 runtime: 91734us
+Json: iterations=133 runtime: 91859us
+Json: iterations=134 runtime: 91843us
+Json: iterations=135 runtime: 91761us
+Json: iterations=136 runtime: 91733us
+Json: iterations=137 runtime: 91770us
+Json: iterations=138 runtime: 92334us
+Json: iterations=139 runtime: 90991us
+Json: iterations=140 runtime: 91622us
+Json: iterations=141 runtime: 91710us
+Json: iterations=142 runtime: 91720us
+Json: iterations=143 runtime: 91704us
+Json: iterations=144 runtime: 91728us
+Json: iterations=145 runtime: 91867us
+Json: iterations=146 runtime: 91775us
+Json: iterations=147 runtime: 91638us
+Json: iterations=148 runtime: 91545us
+Json: iterations=149 runtime: 91503us
+Json: iterations=150 runtime: 91475us
+Json: iterations=151 runtime: 91496us
+Json: iterations=152 runtime: 91444us
+Json: iterations=153 runtime: 91595us
+Json: iterations=154 runtime: 91547us
+Json: iterations=155 runtime: 91421us
+Json: iterations=156 runtime: 91456us
+Json: iterations=157 runtime: 90991us
+Json: iterations=158 runtime: 91488us
+Json: iterations=159 runtime: 91644us
+Json: iterations=160 runtime: 91460us
+Json: iterations=161 runtime: 91461us
+Json: iterations=162 runtime: 91570us
+Json: iterations=163 runtime: 91619us
+Json: iterations=164 runtime: 91681us
+Json: iterations=165 runtime: 91606us
+Json: iterations=166 runtime: 91507us
+Json: iterations=167 runtime: 91567us
+Json: iterations=168 runtime: 91589us
+Json: iterations=169 runtime: 91713us
+Json: iterations=170 runtime: 91597us
+Json: iterations=171 runtime: 91961us
+Json: iterations=172 runtime: 91931us
+Json: iterations=173 runtime: 91912us
+Json: iterations=174 runtime: 91020us
+Json: iterations=175 runtime: 91801us
+Json: iterations=176 runtime: 91998us
+Json: iterations=177 runtime: 91900us
+Json: iterations=178 runtime: 91756us
+Json: iterations=179 runtime: 92065us
+Json: iterations=180 runtime: 91918us
+Json: iterations=181 runtime: 91880us
+Json: iterations=182 runtime: 91801us
+Json: iterations=183 runtime: 91752us
+Json: iterations=184 runtime: 91770us
+Json: iterations=185 runtime: 91758us
+Json: iterations=186 runtime: 91927us
+Json: iterations=187 runtime: 91907us
+Json: iterations=188 runtime: 92083us
+Json: iterations=189 runtime: 91812us
+Json: iterations=190 runtime: 91645us
+Json: iterations=191 runtime: 91830us
+Json: iterations=192 runtime: 90961us
+Json: iterations=193 runtime: 91776us
+Json: iterations=194 runtime: 91877us
+Json: iterations=195 runtime: 91834us
+Json: iterations=196 runtime: 91810us
+Json: iterations=197 runtime: 91817us
+Json: iterations=198 runtime: 91968us
+Json: iterations=199 runtime: 91796us
+Json: iterations=200 runtime: 91796us
+Json: iterations=201 runtime: 91742us
+Json: iterations=202 runtime: 91668us
+Json: iterations=203 runtime: 91609us
+Json: iterations=204 runtime: 91392us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+Benchmark.innerBenchmarkLoop(int)boolean -1 graphSignature differs fab10c92f001cce55cc6f67facbe1cf05ff0e5a8159a85235a07dc8a3da730d1 != 9bb7cbc4845736790f967e52b717e700916860f982023d21bdd73dc6323f693d
+Json: iterations=205 runtime: 196144us
+Json: iterations=206 runtime: 91642us
+Json: iterations=207 runtime: 91654us
+Json: iterations=208 runtime: 91479us
+Json: iterations=209 runtime: 91534us
+Json: iterations=210 runtime: 91029us
+Json: iterations=211 runtime: 91487us
+Json: iterations=212 runtime: 91733us
+Json: iterations=213 runtime: 91824us
+Json: iterations=214 runtime: 91893us
+Json: iterations=215 runtime: 91842us
+Json: iterations=216 runtime: 92787us
+Json: iterations=217 runtime: 92098us
+Json: iterations=218 runtime: 91912us
+Json: iterations=219 runtime: 91630us
+Json: iterations=220 runtime: 91789us
+Json: iterations=221 runtime: 91713us
+Json: iterations=222 runtime: 91949us
+Json: iterations=223 runtime: 91804us
+Json: iterations=224 runtime: 91770us
+Json: iterations=225 runtime: 91909us
+Json: iterations=226 runtime: 91894us
+Json: iterations=227 runtime: 91938us
+Json: iterations=228 runtime: 91072us
+Json: iterations=229 runtime: 91917us
+Json: iterations=230 runtime: 91938us
+Json: iterations=231 runtime: 92028us
+Json: iterations=232 runtime: 92036us
+Json: iterations=233 runtime: 91948us
+Json: iterations=234 runtime: 91761us
+Json: iterations=235 runtime: 91364us
+Json: iterations=236 runtime: 91616us
+Json: iterations=237 runtime: 91702us
+Json: iterations=238 runtime: 91863us
+Json: iterations=239 runtime: 91873us
+Json: iterations=240 runtime: 91823us
+Json: iterations=241 runtime: 92001us
+Json: iterations=242 runtime: 91886us
+Json: iterations=243 runtime: 91862us
+Json: iterations=244 runtime: 91859us
+Json: iterations=245 runtime: 91082us
+Json: iterations=246 runtime: 91514us
+Json: iterations=247 runtime: 91511us
+Json: iterations=248 runtime: 91788us
+Json: iterations=249 runtime: 91793us
+Json: iterations=250 runtime: 91758us
+Json: iterations=251 runtime: 91654us
+Json: iterations=252 runtime: 91625us
+Json: iterations=253 runtime: 91635us
+Json: iterations=254 runtime: 91895us
+Json: iterations=255 runtime: 91506us
+Json: iterations=256 runtime: 91598us
+Json: iterations=257 runtime: 91582us
+Json: iterations=258 runtime: 91494us
+Json: iterations=259 runtime: 91520us
+Json: iterations=260 runtime: 91619us
+Json: iterations=261 runtime: 91678us
+Json: iterations=262 runtime: 91648us
+Json: iterations=263 runtime: 91037us
+Json: iterations=264 runtime: 91597us
+Json: iterations=265 runtime: 91607us
+Json: iterations=266 runtime: 91591us
+Json: iterations=267 runtime: 91728us
+Json: iterations=268 runtime: 91570us
+Json: iterations=269 runtime: 91664us
+Json: iterations=270 runtime: 91650us
+Json: iterations=271 runtime: 91635us
+Json: iterations=272 runtime: 91664us
+Json: iterations=273 runtime: 91555us
+Json: iterations=274 runtime: 91689us
+Json: iterations=275 runtime: 91421us
+Json: iterations=276 runtime: 91447us
+Json: iterations=277 runtime: 91568us
+Json: iterations=278 runtime: 91651us
+Json: iterations=279 runtime: 91622us
+Json: iterations=280 runtime: 91501us
+Json: iterations=281 runtime: 91063us
+Json: iterations=282 runtime: 91536us
+Json: iterations=283 runtime: 91595us
+Json: iterations=284 runtime: 91576us
+Json: iterations=285 runtime: 91471us
+Json: iterations=286 runtime: 91557us
+Json: iterations=287 runtime: 91525us
+Json: iterations=288 runtime: 91572us
+Json: iterations=289 runtime: 91677us
+Json: iterations=290 runtime: 91626us
+Json: iterations=291 runtime: 91575us
+Json: iterations=292 runtime: 91456us
+Json: iterations=293 runtime: 91635us
+Json: iterations=294 runtime: 91639us
+Json: iterations=295 runtime: 91480us
+Json: iterations=296 runtime: 91539us
+Json: iterations=297 runtime: 91515us
+Json: iterations=298 runtime: 90974us
+Json: iterations=299 runtime: 91457us
+Json: iterations=300 runtime: 91591us
+Json: iterations=301 runtime: 91553us
+Json: iterations=302 runtime: 91562us
+Json: iterations=303 runtime: 91427us
+Json: iterations=304 runtime: 91499us
+Json: iterations=305 runtime: 91611us
+Json: iterations=306 runtime: 91417us
+Json: iterations=307 runtime: 91472us
+Json: iterations=308 runtime: 91648us
+Json: iterations=309 runtime: 91489us
+Json: iterations=310 runtime: 91360us
+Json: iterations=311 runtime: 91637us
+Json: iterations=312 runtime: 91678us
+Json: iterations=313 runtime: 91628us
+Json: iterations=314 runtime: 91687us
+Json: iterations=315 runtime: 91544us
+Json: iterations=316 runtime: 91040us
+Json: iterations=317 runtime: 91665us
+Json: iterations=318 runtime: 91675us
+Json: iterations=319 runtime: 91696us
+Json: iterations=320 runtime: 91769us
+Json: iterations=321 runtime: 91767us
+Json: iterations=322 runtime: 91646us
+Json: iterations=323 runtime: 91575us
+Json: iterations=324 runtime: 91669us
+Json: iterations=325 runtime: 91466us
+Json: iterations=326 runtime: 91652us
+Json: iterations=327 runtime: 91672us
+Json: iterations=328 runtime: 91497us
+Json: iterations=329 runtime: 93530us
+Json: iterations=330 runtime: 96998us
+Json: iterations=331 runtime: 92287us
+Json: iterations=332 runtime: 91668us
+Json: iterations=333 runtime: 91659us
+Json: iterations=334 runtime: 91008us
+Json: iterations=335 runtime: 91650us
+Json: iterations=336 runtime: 91636us
+Json: iterations=337 runtime: 91674us
+Json: iterations=338 runtime: 91524us
+Json: iterations=339 runtime: 91599us
+Json: iterations=340 runtime: 91468us
+Json: iterations=341 runtime: 91464us
+Json: iterations=342 runtime: 91547us
+Json: iterations=343 runtime: 91575us
+Json: iterations=344 runtime: 91554us
+Json: iterations=345 runtime: 91646us
+Json: iterations=346 runtime: 91586us
+Json: iterations=347 runtime: 91638us
+Json: iterations=348 runtime: 91535us
+Json: iterations=349 runtime: 91507us
+Json: iterations=350 runtime: 91477us
+Json: iterations=351 runtime: 91494us
+Json: iterations=352 runtime: 91028us
+Json: iterations=353 runtime: 91546us
+Json: iterations=354 runtime: 91626us
+Json: iterations=355 runtime: 91389us
+Json: iterations=356 runtime: 91513us
+Json: iterations=357 runtime: 91588us
+Json: iterations=358 runtime: 91484us
+Json: iterations=359 runtime: 91710us
+Json: iterations=360 runtime: 91478us
+Json: iterations=361 runtime: 91908us
+Json: iterations=362 runtime: 91860us
+Json: iterations=363 runtime: 92121us
+Json: iterations=364 runtime: 91783us
+Json: iterations=365 runtime: 91576us
+Json: iterations=366 runtime: 91635us
+Json: iterations=367 runtime: 91534us
+Json: iterations=368 runtime: 91719us
+Json: iterations=369 runtime: 91000us
+Json: iterations=370 runtime: 91543us
+Json: iterations=371 runtime: 91667us
+Json: iterations=372 runtime: 91699us
+Json: iterations=373 runtime: 92517us
+Json: iterations=374 runtime: 91527us
+Json: iterations=375 runtime: 91557us
+Json: iterations=376 runtime: 91593us
+Json: iterations=377 runtime: 91894us
+Json: iterations=378 runtime: 91825us
+Json: iterations=379 runtime: 92147us
+Json: iterations=380 runtime: 91953us
+Json: iterations=381 runtime: 91872us
+Json: iterations=382 runtime: 91740us
+Json: iterations=383 runtime: 91847us
+Json: iterations=384 runtime: 91745us
+Json: iterations=385 runtime: 92013us
+Json: iterations=386 runtime: 91861us
+Json: iterations=387 runtime: 91033us
+Json: iterations=388 runtime: 91798us
+Json: iterations=389 runtime: 91943us
+Json: iterations=390 runtime: 92067us
+Json: iterations=391 runtime: 91915us
+Json: iterations=392 runtime: 92014us
+Json: iterations=393 runtime: 91758us
+Json: iterations=394 runtime: 91496us
+Json: iterations=395 runtime: 91479us
+Json: iterations=396 runtime: 91589us
+Json: iterations=397 runtime: 91538us
+Json: iterations=398 runtime: 91755us
+Json: iterations=399 runtime: 91889us
+Json: iterations=400 runtime: 91782us
+Json: iterations=401 runtime: 91944us
+Json: iterations=402 runtime: 91871us
+Json: iterations=403 runtime: 91976us
+Json: iterations=404 runtime: 91885us
+Json: iterations=405 runtime: 91010us
+Json: iterations=406 runtime: 91798us
+Json: iterations=407 runtime: 91768us
+Json: iterations=408 runtime: 91862us
+Json: iterations=409 runtime: 91841us
+Json: iterations=410 runtime: 91863us
+Json: iterations=411 runtime: 91866us
+Json: iterations=412 runtime: 91818us
+Json: iterations=413 runtime: 92018us
+Json: iterations=414 runtime: 91968us
+Json: iterations=415 runtime: 91901us
+Json: iterations=416 runtime: 92020us
+Json: iterations=417 runtime: 92111us
+Json: iterations=418 runtime: 91737us
+Json: iterations=419 runtime: 91567us
+Json: iterations=420 runtime: 91589us
+Json: iterations=421 runtime: 91512us
+Json: iterations=422 runtime: 91647us
+Json: iterations=423 runtime: 91033us
+Json: iterations=424 runtime: 91529us
+Json: iterations=425 runtime: 91707us
+Json: iterations=426 runtime: 91577us
+Json: iterations=427 runtime: 91602us
+Json: iterations=428 runtime: 91589us
+Json: iterations=429 runtime: 91482us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
+Json: iterations=430 runtime: 91505us
+Json: iterations=431 runtime: 93964us
+Json: iterations=432 runtime: 91597us
+Json: iterations=433 runtime: 91643us
+Json: iterations=434 runtime: 91678us
+Json: iterations=435 runtime: 91518us
+Json: iterations=436 runtime: 91432us
+Json: iterations=437 runtime: 91711us
+Json: iterations=438 runtime: 91432us
+Json: iterations=439 runtime: 91499us
+Json: iterations=440 runtime: 90994us
+Json: iterations=441 runtime: 91858us
+Json: iterations=442 runtime: 91732us
+Json: iterations=443 runtime: 91548us
+Json: iterations=444 runtime: 91624us
+Json: iterations=445 runtime: 91506us
+Json: iterations=446 runtime: 91462us
+Json: iterations=447 runtime: 91699us
+Json: iterations=448 runtime: 91582us
+Json: iterations=449 runtime: 91368us
+Json: iterations=450 runtime: 91557us
+Json: iterations=451 runtime: 91507us
+Json: iterations=452 runtime: 91373us
+Json: iterations=453 runtime: 91454us
+Json: iterations=454 runtime: 91409us
+Json: iterations=455 runtime: 91356us
+Json: iterations=456 runtime: 91622us
+Json: iterations=457 runtime: 91614us
+Json: iterations=458 runtime: 91052us
+Json: iterations=459 runtime: 91362us
+Json: iterations=460 runtime: 91880us
+Json: iterations=461 runtime: 91531us
+Json: iterations=462 runtime: 91509us
+Json: iterations=463 runtime: 91498us
+Json: iterations=464 runtime: 91573us
+Json: iterations=465 runtime: 91499us
+Json: iterations=466 runtime: 91607us
+Json: iterations=467 runtime: 91523us
+Json: iterations=468 runtime: 91611us
+Json: iterations=469 runtime: 91766us
+Json: iterations=470 runtime: 91693us
+Json: iterations=471 runtime: 91831us
+Json: iterations=472 runtime: 91892us
+Json: iterations=473 runtime: 91542us
+Json: iterations=474 runtime: 91507us
+Json: iterations=475 runtime: 91669us
+Json: iterations=476 runtime: 91021us
+Json: iterations=477 runtime: 91539us
+Json: iterations=478 runtime: 91559us
+Json: iterations=479 runtime: 91485us
+Json: iterations=480 runtime: 91655us
+Json: iterations=481 runtime: 91413us
+Json: iterations=482 runtime: 91498us
+Json: iterations=483 runtime: 91571us
+Json: iterations=484 runtime: 91583us
+Json: iterations=485 runtime: 91592us
+Json: iterations=486 runtime: 91499us
+Json: iterations=487 runtime: 91594us
+Json: iterations=488 runtime: 91434us
+Json: iterations=489 runtime: 91489us
+Json: iterations=490 runtime: 91565us
+Json: iterations=491 runtime: 91518us
+Json: iterations=492 runtime: 94470us
+Json: iterations=493 runtime: 91045us
+Json: iterations=494 runtime: 91752us
+Json: iterations=495 runtime: 92023us
+Json: iterations=496 runtime: 91989us
+Json: iterations=497 runtime: 92039us
+Json: iterations=498 runtime: 91865us
+Json: iterations=499 runtime: 91796us
+Json: iterations=500 runtime: 91557us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+Json: iterations=500 average: 93065us total: 46532940us
+
+
+Total Runtime: 46532940us
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 154536002560
+shutdown : 2500000
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 386266 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 56 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 9178 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 57 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 7380780 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 70 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 23766 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 6966 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 16532 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 84 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 80 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 198 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 116 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 85 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 90438 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 189120 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 163058 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 87 (java.lang.StringCoding.countPositives(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 174 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 88 (java.lang.StringCoding.countPositives(byte[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 11474 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 141 (java.util.Properties$LineReader.readLine()) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 271252 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 15130 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 196 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 142 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 539184 || Activation Count:0 | LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 502408 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 128006 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 185 (json.JsonPureStringParser.subStringFromTo(int,) loops:
+Found Encoding : 1:-1,0:-1
+├── Loop 1
+└── Loop 0
+  loop 0 Cycles: 280260 || Activation Count:0 | LoopCallCount: 0 |  Source: -at json.JsonPureStringParser.subStringFromTo(int, int) [bci: 16] | -at json.JsonPureStringParser.subStringFromTo(int, int) [bci: 42]
+  loop 1 Cycles: 235132 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 186 (json.JsonPureStringParser.readStringInternal()) loops:
+Found Encoding : 0:-1,3:-1,2:-1,1:-1
+├── Loop 0
+├── Loop 3
+├── Loop 2
+└── Loop 1
+  loop 0 Cycles: 27492679302 || Activation Count:0 | LoopCallCount: 2 |  Source: -at json.JsonPureStringParser.readStringInternal() [bci: 8] | -at json.JsonPureStringParser.readStringInternal() [bci: 54]
+  loop 1 Cycles: 6540469390 || Activation Count:0 | LoopCallCount: 0 |  Source: -at json.JsonPureStringParser.subStringFromTo(int, int) [bci: 16]
+-at json.JsonPureStringParser.endCapture() [bci: 39]
+-at json.JsonPureStringParser.readStringInternal() [bci: 55] | -at json.JsonPureStringParser.subStringFromTo(int, int) [bci: 42]
+-
+  loop 3 Cycles: 5493780388 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 195 (json.JsonPureStringParser.readArray()) loops:
+Found Encoding : 3:-1,2:-1,0:-1,1:-1
+├── Loop 3
+├── Loop 2
+├── Loop 0
+└── Loop 1
+  loop 0 Cycles: 375337834974 || Activation Count:0 | LoopCallCount: 6 |  Source: -at json.JsonPureStringParser.readArray() [bci: 27] | -at json.JsonPureStringParser.readChar(String) [bci: 11]
+-at json.JsonPureStringParser.readArray() [bci: 47]
+  loop 1 Cycles: 48069688 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 2 Cycles: 2107910268 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 3 Cycles: 4348064 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 197 (json.JsonPureStringParser.endCapture()) loops:
+Found Encoding : 1:-1,0:-1
+├── Loop 1
+└── Loop 0
+  loop 0 Cycles: 1952373172 || Activation Count:0 | LoopCallCount: 0 |  Source: -at json.JsonPureStringParser.subStringFromTo(int, int) [bci: 16]
+-at json.JsonPureStringParser.endCapture() [bci: 39] | -at json.JsonPureStringParser.subStringFromTo(int, int) [bci: 42]
+-at json.JsonPureStringParser.endCapture() [bci: 39]
+  loop 1 Cycles: 1947199680 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 198 (json.JsonPureStringParser.readNumber()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 6784071458 || Activation Count:0 | LoopCallCount: 3 |  Source: -at json.JsonPureStringParser.readNumber() [bci: 39] | -at json.JsonPureStringParser.readDigit() [bci: 7]
+-at json.JsonPureStringParser.readNumber() [bci: 40]
+Comp 206 (som.Vector.<init>()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 243540 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 208 (json.JsonPureStringParser.readObject()) loops:
+Found Encoding : 1:-1,4:-1,5:-1,0:-1,2:-1,3:-1
+├── Loop 1
+├── Loop 4
+├── Loop 5
+├── Loop 0
+├── Loop 2
+└── Loop 3
+  loop 0 Cycles: 257718381760 || Activation Count:0 | LoopCallCount: 10 |  Source: -at json.JsonPureStringParser.readObject() [bci: 27] | -at json.JsonPureStringParser.readChar(String) [bci: 11]
+-at json.JsonPureStringParser.readObject() [bci: 77]
+  loop 1 Cycles: 531793034 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 2 Cycles: 68694992 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 3 Cycles: 68435012 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 4 Cycles: 539659886 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 5 Cycles: 578650936 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 231 (java.util.Arrays.copyOf(Object[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 26820234 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 244 (Benchmark.innerBenchmarkLoop(int)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 54334790 || Activation Count:0 | LoopCallCount: 2 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 245 (Benchmark.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 88671687954 || Activation Count:0 | LoopCallCount: 2 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 246 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 10852 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 16200 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 11394 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
