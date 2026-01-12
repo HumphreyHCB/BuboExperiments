@@ -135,11 +135,16 @@ def normalize_method_name_dot(s: str) -> Optional[str]:
     s = s.strip().rstrip(",")
 
     if REQUIRE_BENCHMARK_PREFIX:
-        prefix = f"{BENCHMARK}."
-        if not s.startswith(prefix) or s == prefix:
+        # AWFY often uses "Benchmark.<method>" rather than "<BenchmarkName>.<method>"
+        allowed_prefixes = (f"{BENCHMARK}.", "Benchmark.")
+        if not s.startswith(allowed_prefixes):
+            return None
+        # reject the bare prefix with no method name
+        if s in allowed_prefixes:
             return None
 
     return s
+
 
 
 def comp_name_to_method_dot(comp_name: str) -> Optional[str]:
@@ -209,7 +214,7 @@ def parse_bubo_file(path: str) -> FileLoops:
     comp_to_loops: Dict[int, Dict[int, LoopRecord]] = {}
     total_cycles: Optional[int] = None
 
-    re_comp = re.compile(r"^Comp\s+(\d+)\s*\((.*)\)\s*loops:\s*$")
+    re_comp = re.compile(r"^Comp\s+(\d+)\s*\((.*?)\)\s*loops:\s*$")
     re_encoding = re.compile(r"^Found Encoding\s*:\s*(.*)")
     re_loop = re.compile(
         r"loop\s+(\d+)\s+Cycles:\s*([0-9]+)\s*\|\|\s*"
@@ -229,7 +234,8 @@ def parse_bubo_file(path: str) -> FileLoops:
             m_comp = re_comp.match(line)
             if m_comp:
                 comp_id = int(m_comp.group(1))
-                comp_name = m_comp.group(2).strip()
+                raw_name = m_comp.group(2).strip()
+                comp_name = normalize_comp_name(raw_name)
                 comp_to_name[comp_id] = comp_name
                 comp_to_parents.setdefault(comp_id, {})
                 comp_to_loops.setdefault(comp_id, {})
@@ -306,6 +312,17 @@ def parse_bubo_file(path: str) -> FileLoops:
 
     return FileLoops(loops=loops_final, total_cycles=total_cycles, comp_names=comp_to_name)
 
+def normalize_comp_name(raw: str) -> str:
+    s = raw.strip()
+
+    # Remove any trailing compilation suffix like "-Re-Comp", "-OSR", "-X", etc.
+    # (only if it appears after the signature/identifier)
+    s = re.sub(r"-[^()]*$", "", s).strip()
+
+    # Remove argument list if present: "Foo.bar(int, long)" -> "Foo.bar"
+    s = re.sub(r"\(.*\)$", "", s).strip()
+
+    return s
 
 def is_main_method(method_dot: Optional[str]) -> bool:
     # If we couldn't normalise a method name, do NOT treat it as "main".
