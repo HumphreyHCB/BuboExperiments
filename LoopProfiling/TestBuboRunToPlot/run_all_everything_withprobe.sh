@@ -32,7 +32,7 @@ for BENCH in "${AWFY_BENCHES[@]}"; do
   bash "${RUN_ALL}" --benchmark "${BENCH}" --suite AWFY --probe WithProbe --iter 500
 done
 
-# LoopBenchmarks is special
+LoopBenchmarks is special
 echo
 echo "---- AWFY / LoopBenchmarks (ITER=1) ----"
 bash "${RUN_ALL}" --benchmark LoopBenchmarks --suite AWFY --probe WithProbe --iter 12000

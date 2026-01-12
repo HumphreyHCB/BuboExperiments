@@ -7,8 +7,8 @@ PY="${PY:-python3}"
 # ============================================================
 # CONFIG DEFAULTS (edit these; CLI can override)
 # ============================================================
-ITER_DEFAULT="12000"
-BENCHMARK_DEFAULT="LoopBenchmarks"
+ITER_DEFAULT="500"
+BENCHMARK_DEFAULT="Sieve"
 SUITE_DEFAULT="AWFY"
 PROBE_MODE_DEFAULT="WithProbe"
 
