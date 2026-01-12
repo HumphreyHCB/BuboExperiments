@@ -76,13 +76,13 @@ mkdir -p "${PROCESSED_DIR}" "${ROOT_DIR}/plots"
 
 echo "[CONFIG] SUITE=${SUITE} BENCHMARK=${BENCHMARK} PROBE_MODE=${PROBE_MODE} ITER=${ITER} TAG=${TAG}"
 
-echo "[STEP 0] Producing raw Bubo + CFG outputs into rawdata/"
-BENCHMARK="${BENCHMARK}" SUITE="${SUITE}" PROBE_MODE="${PROBE_MODE}" ITER="${ITER}" \
-  "${ROOT_DIR}/scripts/run_bubo_and_cfg.sh"
+# echo "[STEP 0] Producing raw Bubo + CFG outputs into rawdata/"
+# BENCHMARK="${BENCHMARK}" SUITE="${SUITE}" PROBE_MODE="${PROBE_MODE}" ITER="${ITER}" \
+#   "${ROOT_DIR}/scripts/run_bubo_and_cfg.sh"
 
-echo "[STEP 0.5] Producing VTune slowdown block-times file into rawdata/vtune/"
-BENCHMARK="${BENCHMARK}" SUITE="${SUITE}" PROBE_MODE="${PROBE_MODE}" ITER="${ITER}" TAG="${TAG}" \
-  "${ROOT_DIR}/scripts/run_vtune_slowdown_blocks.sh"
+# echo "[STEP 0.5] Producing VTune slowdown block-times file into rawdata/vtune/"
+# BENCHMARK="${BENCHMARK}" SUITE="${SUITE}" PROBE_MODE="${PROBE_MODE}" ITER="${ITER}" TAG="${TAG}" \
+#   "${ROOT_DIR}/scripts/run_vtune_slowdown_blocks.sh"
 
 echo "[STEP 1] Building per-loop totals into: ${PROCESSED_DIR}"
 "${PY}" "${BUILD_VTUNE}" \
