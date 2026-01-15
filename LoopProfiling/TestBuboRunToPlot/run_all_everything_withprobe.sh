@@ -10,21 +10,19 @@ echo "=============================="
 echo "Running AWFY benchmarks (WithProbe)"
 echo "=============================="
 
+# AWFY_BENCHES=(
+#   CD
+#   Json
+# )
+
 AWFY_BENCHES=(
   Bounce
+  CD
+  Json
   Mandelbrot
   NBody
   Sieve
 )
-
-# AWFY_BENCHES=(
-#   Bounce
-#   CD
-#   Json
-#   Mandelbrot
-#   NBody
-#   Sieve
-# )
 
 for BENCH in "${AWFY_BENCHES[@]}"; do
   echo

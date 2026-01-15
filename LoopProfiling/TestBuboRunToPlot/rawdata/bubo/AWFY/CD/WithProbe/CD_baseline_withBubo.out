@@ -4,600 +4,601 @@ Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
 Requesting uncached profile for bci 44 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBytecodeProfile
 Requesting uncached profile for bci 44 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBranchTakenProbability
 java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs cc325e064e7585e0e6736addc07d3b5b1a1e9ec52f960e7777496af159b5096f != dd493989519e7f328311cfecc7abfe1946186eaebdea7e8b59878a8ba9e25a26
-java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs ee09f2c8e8aef299f145f669ac6d290ab921c200bee62674b2ab14a5f207c19a != 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 71c7befc4bcc50903c01cb500806055811a71080bd754d077284439fcd10103c != 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf
 java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs 240f841b413bb8bd2af4877cb3753eac11d3bdc482d702e067df992e72784ebb != 2d841e5f6ff33687ba2a8e89c73735b82c892266d476f740b43f9fc2b4d21873
 java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
 jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 graphSignature differs 19b74d2985bd215adc18bbf16eb571f75605eb5502bcec63b71bd357cc668d6e != ec48f9da76be66a6b56b9242fa5c79b96c5a2b790a5832893550f14895067602
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
-java.util.Properties$LineReader.readLine()int -1 graphSignature differs 2b486d112efd309f21b56eed8c0bb9d78dd9081f799ef08ff7c803bfde611f4a != 878ec244077db65df33a3f7d09ba7cba637998f872be81e8c5729e664e547e01
 java.lang.StringLatin1.equals(byte[], byte[])boolean -1 graphSignature differs f47d0b1647dabd6f0108a1c873e12c6a64939992dcc9e97f79a9e6e1f1af8649 != cda1bda6b067c21da86f5c9b00220a168b94ff95811df6ee0a57435eb4ec0473
+java.util.Properties$LineReader.readLine()int -1 graphSignature differs 2b486d112efd309f21b56eed8c0bb9d78dd9081f799ef08ff7c803bfde611f4a != 878ec244077db65df33a3f7d09ba7cba637998f872be81e8c5729e664e547e01
 Starting CD benchmark ...
-cd.RedBlackTree.treeInsert(java.lang.Comparable, java.lang.Object)cd.RedBlackTree$InsertResult -1 graphSignature differs 9e4ac49000e59dd3b5275ee633e82a5404ef3c211164f5eea388f7eea0934d65 != e8cdf4e16a3df313ffd16074f6d5c4dd662fe0e68637622319d77fb79df292a8
-cd.RedBlackTree.findNode(java.lang.Comparable)cd.RedBlackTree$Node -1 graphSignature differs 4e6f9470078c460ea5e10f4c867ea0fe1370f14b32e8c2f6a9aed000dccf6c30 != bce9022fb26bb560ee551cd4da4f770f7d6a6698b6340c104a3918eff60d5ffa
+cd.RedBlackTree.treeInsert(java.lang.Comparable, java.lang.Object)cd.RedBlackTree$InsertResult -1 graphSignature differs ac7fd8d05e3f8dddee2e8a817eb6dcef0b2da09f278d2f12d4e831285e132796 != e8cdf4e16a3df313ffd16074f6d5c4dd662fe0e68637622319d77fb79df292a8
+cd.RedBlackTree.findNode(java.lang.Comparable)cd.RedBlackTree$Node -1 graphSignature differs 2cb437476799ff296ab3a77ff88bc16273ccc0cff30764d4c336070cd21f6af1 != bce9022fb26bb560ee551cd4da4f770f7d6a6698b6340c104a3918eff60d5ffa
 cd.CollisionDetector.recurse(cd.RedBlackTree, cd.RedBlackTree, cd.Vector2D, cd.Motion)void -1 graphSignature differs 74a735173b31023db2e1a8bac33a506347f09e8f72477bfb92e3b51d5bdfdb7a != 74cc8574ad5393ca4651f98e544552e2e5c112697d8938c6a92274a40a7e8a86
 cd.CollisionDetector.isInVoxel(cd.Vector2D, cd.Motion)boolean -1 graphSignature differs dc56d1f1075d187e8a6c7a40623981ec77d5427baf5e0322150c6adba4aa5b4b != b4b76765bfe3bedb2def2e17f9020b500fd9eb4b9c7683bf804467fc2d8fee2d
 cd.RedBlackTree.put(java.lang.Comparable, java.lang.Object)java.lang.Object -1 graphSignature differs 037d860eff396c3223fbcc93cda75302425a7f0ca5c7829073e2ed1dc2e0957b != fb9c1555df0605ed492afde40a21f2dd939d99f9cf9c1b2a2f06a39381adb954
-som.Vector.append(java.lang.Object)void -1 graphSignature differs a11f92cafd93c43bed03ba0cd50681df62f7df0583a3a940639f7992fcc87161 != 110defb74f19a69b99cfa19de20a0e7b1ae13c1121750bac638e59b5fce015cd
 cd.RedBlackTree$Node.successor()cd.RedBlackTree$Node -1 graphSignature differs 194a448d7c26bbadf3e0df819d3dbbb57fa5ce2d412900325016b1bd2b88953d != dcd2b43f1941d6e5dfed92890aa26f90526c5885dcd3e7de0a4578f5531de4f9
-cd.CollisionDetector$RemoveAbsentAircraft.apply(java.lang.Object)void -1 graphSignature differs d6a298870cff2da42fb4199bbe5d23b5c57e081b5f49b288ed84eda036f3cc2c != 64d2774c1ab94d7aa1644ba979a6ca5c6263a21e21d0486ad8b654987eb028ea
-cd.CollisionDetector$RemoveAbsentAircraft.apply(cd.RedBlackTree$Entry)void -1 graphSignature differs 86d07451178a399dcf59950de476e4ced08e601c7b32db9319acb0c6c4ac915e != 8d5168936f17bc6f38467d60c820357c3cf66b69ddb046abff5c32292a0c159e
-cd.CollisionDetector.handleNewFrame(som.Vector)som.Vector -1 graphSignature differs 79b304827f95e62cecb627a9c1beb35cdd0ea9eade5f317f31333e79cabb35b4 != 82da39854491faf13214836d0fea28070a264ea8dfe0126099cbc3ce9a3e0f6b
-cd.CollisionDetector.putIntoMap(cd.RedBlackTree, cd.Vector2D, cd.Motion)void -1 graphSignature differs 05ad3a8b821150f6ae105e5c1505e769a4ccbc8ad5b39096d328dc34e66ce86c != a201206e6ff14ba60c58fb2be15b334ebce6557143d69ac975a7fab19552a804
-cd.RedBlackTree.forEach(som.ForEachInterface)void -1 graphSignature differs fc8c7aabfb2a2e29e7b495fc8fa2541095195a2b798c9b515a2253bff6e06a56 != 80c28ef7b8913d126bfb7f5bd5d3ae95686615561f217b9d564d42f3b8c0674c
-cd.CollisionDetector$CollectCollisions.apply(java.lang.Object)void -1 graphSignature differs 5f15573133aa1d77bcbd4187ce267798c6b1b816c5c9c916d3ac448d7e49c284 != 748a75dff4a2608ab15af891500b142807a956f6e0c6d8febcbeab3595f526c0
-cd.CollisionDetector$CollectCollisions.apply(cd.RedBlackTree$Entry)void -1 graphSignature differs 8c4cad386f84cf1ea28e3fde8145f3c8d086119e06212d7761d20a15712cbe4b != 733c51949657565f3165ba90948649cd1ffc2f40d12c0d44bc012c7e6d1a8175
-cd.CollisionDetector.reduceCollisionSet(som.Vector)som.Vector -1 graphSignature differs ca0a11f282af22a332c1010dbd47914df0edb198d98369af69a245215ce2561e != 318d4e3ecb1c65a10b758209be10a6bf270f9efd4130661b866b2189ce744e0b
-cd.Simulator.simulate(double)som.Vector -1 graphSignature differs 7bf4cf8495e71cdd60e7472665e0472580865b1253bb2cd540dd950a6313836c != f597b2fdf2931f6161b184ee0428e84e5cc5003751797f4a6e11d79029bd5455
-CD: iterations=1 runtime: 557009us
-CD: iterations=2 runtime: 202078us
-java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[] -1 graphSignature differs 631d4f60fd30f2d8bd7f87f4e5ef123e56ca54e8f4bcf4b64078575ca2d500c5 != 93813dceaac1b720fe1c2a6be459e2809b36f179462af16dd7d40620c2acc4df
-CD: iterations=3 runtime: 208857us
-CD: iterations=4 runtime: 194233us
-CD: iterations=5 runtime: 194973us
-CD: iterations=6 runtime: 194585us
-CD: iterations=7 runtime: 202952us
-CD: iterations=8 runtime: 193584us
-CD: iterations=9 runtime: 194220us
-CD: iterations=10 runtime: 194226us
-CD: iterations=11 runtime: 193839us
-CD: iterations=12 runtime: 194050us
-CD: iterations=13 runtime: 193439us
-CD: iterations=14 runtime: 194023us
-CD: iterations=15 runtime: 194564us
-CD: iterations=16 runtime: 193371us
-CD: iterations=17 runtime: 193686us
-CD: iterations=18 runtime: 193537us
-CD: iterations=19 runtime: 193714us
+cd.CollisionDetector$RemoveAbsentAircraft.apply(java.lang.Object)void -1 graphSignature differs 21c0fc185db4f8fed8385570cf5db6dd585b6e64dcf8b0f537cef8109c2d5ff8 != 64d2774c1ab94d7aa1644ba979a6ca5c6263a21e21d0486ad8b654987eb028ea
+cd.CollisionDetector$RemoveAbsentAircraft.apply(cd.RedBlackTree$Entry)void -1 graphSignature differs 467c06b3d642996f5986a9a9e5dba589b35b2f6645b88f2e47336f12224d97de != 8d5168936f17bc6f38467d60c820357c3cf66b69ddb046abff5c32292a0c159e
+cd.CollisionDetector.handleNewFrame(som.Vector)som.Vector -1 graphSignature differs a68e6eb43aa4a5008f435f3b41b1d256ff8e95d11981cdf8f784381688839782 != 82da39854491faf13214836d0fea28070a264ea8dfe0126099cbc3ce9a3e0f6b
+cd.CollisionDetector.putIntoMap(cd.RedBlackTree, cd.Vector2D, cd.Motion)void -1 graphSignature differs 71411e8675cd7e63f7981c9f731c02474cb32cb938985e2f29f6ef3f344f5977 != a201206e6ff14ba60c58fb2be15b334ebce6557143d69ac975a7fab19552a804
+cd.RedBlackTree.forEach(som.ForEachInterface)void -1 graphSignature differs ce36c6941508c0e1ec54a04ea94e697168950f74549370345e8030471d1db177 != 80c28ef7b8913d126bfb7f5bd5d3ae95686615561f217b9d564d42f3b8c0674c
+cd.CollisionDetector.reduceCollisionSet(som.Vector)som.Vector -1 graphSignature differs c0cf6a276063454ad198e1bc038ae5f609631c036a80a7e3ae7a83a17f58af49 != 318d4e3ecb1c65a10b758209be10a6bf270f9efd4130661b866b2189ce744e0b
+cd.Simulator.simulate(double)som.Vector -1 graphSignature differs 7d7b70dd0352d8abfbf7c64fab2490f199cf67ebe6914471e983f79396e49874 != f597b2fdf2931f6161b184ee0428e84e5cc5003751797f4a6e11d79029bd5455
+CD: iterations=1 runtime: 651255us
+CD: iterations=2 runtime: 238508us
+java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[] -1 graphSignature differs 9d3152a12f349c14f190e78c2a842afd95b07d37fdf61e1e72b0da5ca14722c6 != 93813dceaac1b720fe1c2a6be459e2809b36f179462af16dd7d40620c2acc4df
+CD: iterations=3 runtime: 246095us
+CD: iterations=4 runtime: 226137us
+CD: iterations=5 runtime: 257153us
+CD: iterations=6 runtime: 204935us
+CD: iterations=7 runtime: 261365us
+CD: iterations=8 runtime: 204477us
+CD: iterations=9 runtime: 252567us
+CD: iterations=10 runtime: 204201us
+CD: iterations=11 runtime: 251731us
+CD: iterations=12 runtime: 202425us
+CD: iterations=13 runtime: 234476us
+CD: iterations=14 runtime: 227840us
+CD: iterations=15 runtime: 300194us
+CD: iterations=16 runtime: 207099us
+CD: iterations=17 runtime: 208182us
+CD: iterations=18 runtime: 205670us
+CD: iterations=19 runtime: 301144us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
-CD: iterations=20 runtime: 193770us
-cd.Simulator.<init>(int)void -1 graphSignature differs aa9e39dd49d1baea541b6cdc237fa96cfb37cc826c0e44337329ebf70865cc9c != dbbc65ae198dfceb5662d8b4ccb1dde865d4108c57b912bf4503c6d393d869f6
-CD: iterations=21 runtime: 240554us
-CD: iterations=22 runtime: 193669us
-CD: iterations=23 runtime: 194370us
-CD: iterations=24 runtime: 193450us
-CD: iterations=25 runtime: 193506us
-CD: iterations=26 runtime: 193383us
-CD: iterations=27 runtime: 194046us
-CD: iterations=28 runtime: 194182us
-CD: iterations=29 runtime: 193996us
-CD: iterations=30 runtime: 193566us
-CD: iterations=31 runtime: 197171us
-CD: iterations=32 runtime: 194465us
-CD: iterations=33 runtime: 194409us
-CD: iterations=34 runtime: 193943us
-CD: iterations=35 runtime: 194047us
-CD: iterations=36 runtime: 193941us
-CD: iterations=37 runtime: 194457us
-CD: iterations=38 runtime: 194688us
-CD: iterations=39 runtime: 193516us
-CD: iterations=40 runtime: 193487us
-CD: iterations=41 runtime: 194342us
-CD: iterations=42 runtime: 193678us
-CD: iterations=43 runtime: 193751us
-CD: iterations=44 runtime: 193608us
-CD: iterations=45 runtime: 193174us
-CD: iterations=46 runtime: 193505us
-CD: iterations=47 runtime: 192972us
-CD: iterations=48 runtime: 194250us
-CD: iterations=49 runtime: 194037us
-CD: iterations=50 runtime: 194091us
-CD: iterations=51 runtime: 194264us
-CD: iterations=52 runtime: 194190us
-CD: iterations=53 runtime: 193672us
-CD: iterations=54 runtime: 193574us
-CD: iterations=55 runtime: 193555us
-CD: iterations=56 runtime: 194391us
-CD: iterations=57 runtime: 193764us
-CD: iterations=58 runtime: 193407us
-CD: iterations=59 runtime: 192657us
-CD: iterations=60 runtime: 193386us
-CD: iterations=61 runtime: 192893us
-CD: iterations=62 runtime: 192536us
-CD: iterations=63 runtime: 193688us
-CD: iterations=64 runtime: 194011us
-CD: iterations=65 runtime: 193108us
-CD: iterations=66 runtime: 193170us
-CD: iterations=67 runtime: 194379us
-CD: iterations=68 runtime: 193777us
-CD: iterations=69 runtime: 199062us
-CD: iterations=70 runtime: 193563us
-CD: iterations=71 runtime: 193254us
-CD: iterations=72 runtime: 192909us
-CD: iterations=73 runtime: 192946us
-CD: iterations=74 runtime: 193007us
-CD: iterations=75 runtime: 192696us
-CD: iterations=76 runtime: 192822us
-CD: iterations=77 runtime: 193252us
-CD: iterations=78 runtime: 192680us
-CD: iterations=79 runtime: 193631us
-CD: iterations=80 runtime: 193195us
-CD: iterations=81 runtime: 193425us
-CD: iterations=82 runtime: 193662us
-CD: iterations=83 runtime: 193187us
-CD: iterations=84 runtime: 193034us
-CD: iterations=85 runtime: 192934us
-CD: iterations=86 runtime: 192827us
-CD: iterations=87 runtime: 192829us
-CD: iterations=88 runtime: 192540us
-CD: iterations=89 runtime: 192327us
-CD: iterations=90 runtime: 193804us
+CD: iterations=20 runtime: 204504us
+cd.Simulator.<init>(int)void -1 graphSignature differs a28ba8342fd43680e6821472783034a3982dccab282d403a9ab9f3ff394ff010 != dbbc65ae198dfceb5662d8b4ccb1dde865d4108c57b912bf4503c6d393d869f6
+CD: iterations=21 runtime: 237401us
+CD: iterations=22 runtime: 205546us
+CD: iterations=23 runtime: 299410us
+CD: iterations=24 runtime: 204588us
+CD: iterations=25 runtime: 205943us
+CD: iterations=26 runtime: 301347us
+CD: iterations=27 runtime: 232841us
+CD: iterations=28 runtime: 238346us
+CD: iterations=29 runtime: 235478us
+CD: iterations=30 runtime: 211391us
+CD: iterations=31 runtime: 205302us
+CD: iterations=32 runtime: 349546us
+CD: iterations=33 runtime: 209484us
+CD: iterations=34 runtime: 209173us
+CD: iterations=35 runtime: 209235us
+CD: iterations=36 runtime: 206632us
+CD: iterations=37 runtime: 205567us
+CD: iterations=38 runtime: 350762us
+CD: iterations=39 runtime: 209519us
+CD: iterations=40 runtime: 209980us
+CD: iterations=41 runtime: 206499us
+CD: iterations=42 runtime: 204960us
+CD: iterations=43 runtime: 206085us
+CD: iterations=44 runtime: 350591us
+CD: iterations=45 runtime: 210447us
+CD: iterations=46 runtime: 209332us
+CD: iterations=47 runtime: 208263us
+CD: iterations=48 runtime: 207496us
+CD: iterations=49 runtime: 209064us
+CD: iterations=50 runtime: 373668us
+CD: iterations=51 runtime: 232490us
+CD: iterations=52 runtime: 207242us
+CD: iterations=53 runtime: 207294us
+CD: iterations=54 runtime: 207293us
+CD: iterations=55 runtime: 205551us
+CD: iterations=56 runtime: 205071us
+CD: iterations=57 runtime: 376897us
+CD: iterations=58 runtime: 209316us
+CD: iterations=59 runtime: 209359us
+CD: iterations=60 runtime: 209358us
+CD: iterations=61 runtime: 209604us
+CD: iterations=62 runtime: 208382us
+CD: iterations=63 runtime: 205053us
+CD: iterations=64 runtime: 376677us
+CD: iterations=65 runtime: 209372us
+CD: iterations=66 runtime: 209361us
+CD: iterations=67 runtime: 209358us
+CD: iterations=68 runtime: 209194us
+CD: iterations=69 runtime: 207957us
+CD: iterations=70 runtime: 375254us
+CD: iterations=71 runtime: 207368us
+CD: iterations=72 runtime: 206871us
+CD: iterations=73 runtime: 207133us
+CD: iterations=74 runtime: 207278us
+CD: iterations=75 runtime: 206847us
+CD: iterations=76 runtime: 205089us
+CD: iterations=77 runtime: 377223us
+CD: iterations=78 runtime: 234317us
+CD: iterations=79 runtime: 209564us
+CD: iterations=80 runtime: 207066us
+CD: iterations=81 runtime: 207138us
+CD: iterations=82 runtime: 206976us
+CD: iterations=83 runtime: 207680us
+CD: iterations=84 runtime: 205438us
+CD: iterations=85 runtime: 390526us
+CD: iterations=86 runtime: 207416us
+CD: iterations=87 runtime: 207347us
+CD: iterations=88 runtime: 206635us
+CD: iterations=89 runtime: 207228us
+CD: iterations=90 runtime: 207150us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
-CD: iterations=91 runtime: 193060us
-CD: iterations=92 runtime: 201676us
-CD: iterations=93 runtime: 193795us
-CD: iterations=94 runtime: 194238us
-CD: iterations=95 runtime: 193348us
-CD: iterations=96 runtime: 193663us
-CD: iterations=97 runtime: 195242us
-CD: iterations=98 runtime: 195166us
-CD: iterations=99 runtime: 193078us
-CD: iterations=100 runtime: 193403us
-CD: iterations=101 runtime: 192966us
-CD: iterations=102 runtime: 193256us
+CD: iterations=91 runtime: 206402us
+CD: iterations=92 runtime: 207300us
+CD: iterations=93 runtime: 394131us
+CD: iterations=94 runtime: 210188us
+CD: iterations=95 runtime: 209613us
+CD: iterations=96 runtime: 209494us
+CD: iterations=97 runtime: 209308us
+CD: iterations=98 runtime: 209328us
+CD: iterations=99 runtime: 208457us
+CD: iterations=100 runtime: 391919us
+CD: iterations=101 runtime: 210728us
+CD: iterations=102 runtime: 210246us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
-CD.benchmark(int)int -1 graphSignature differs d6bc8c1f293a101e4acc0882bfbb38b524072edd216ddc9ad12dce9658f0e6ce != cbde9ca1e3c03c015f641ca8b6b2d2e1a1e096a5927ae4234cd14569d8139d94
-CD: iterations=103 runtime: 319600us
-CD: iterations=104 runtime: 197142us
-CD: iterations=105 runtime: 193617us
-CD: iterations=106 runtime: 193567us
-CD: iterations=107 runtime: 194130us
-CD: iterations=108 runtime: 192899us
-CD: iterations=109 runtime: 194226us
-CD: iterations=110 runtime: 193712us
-CD: iterations=111 runtime: 194543us
-CD: iterations=112 runtime: 193286us
-CD: iterations=113 runtime: 193416us
-CD: iterations=114 runtime: 195466us
-CD: iterations=115 runtime: 193124us
-CD: iterations=116 runtime: 193671us
-CD: iterations=117 runtime: 193223us
-CD: iterations=118 runtime: 193036us
-CD: iterations=119 runtime: 193085us
-CD: iterations=120 runtime: 192851us
-CD: iterations=121 runtime: 193530us
-CD: iterations=122 runtime: 193430us
-CD: iterations=123 runtime: 193509us
-CD: iterations=124 runtime: 193240us
-CD: iterations=125 runtime: 193223us
-CD: iterations=126 runtime: 194933us
+CD.benchmark(int)int -1 graphSignature differs a00d9da9deba041a2861e01273c733e30eb6ed20e224e55b6731c6b74da0749f != cbde9ca1e3c03c015f641ca8b6b2d2e1a1e096a5927ae4234cd14569d8139d94
+CD: iterations=103 runtime: 319599us
+CD: iterations=104 runtime: 208060us
+CD: iterations=105 runtime: 206378us
+CD: iterations=106 runtime: 206398us
+CD: iterations=107 runtime: 204805us
+CD: iterations=108 runtime: 407268us
+CD: iterations=109 runtime: 216291us
+CD: iterations=110 runtime: 209311us
+CD: iterations=111 runtime: 208817us
+CD: iterations=112 runtime: 209182us
+CD: iterations=113 runtime: 207671us
+CD: iterations=114 runtime: 206340us
+CD: iterations=115 runtime: 205898us
+CD: iterations=116 runtime: 403072us
+CD: iterations=117 runtime: 209914us
+CD: iterations=118 runtime: 209652us
+CD: iterations=119 runtime: 209304us
+CD: iterations=120 runtime: 208903us
+CD: iterations=121 runtime: 208498us
+CD: iterations=122 runtime: 206653us
+CD: iterations=123 runtime: 205978us
+CD: iterations=124 runtime: 402316us
+CD: iterations=125 runtime: 211632us
+CD: iterations=126 runtime: 211821us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
-CD: iterations=127 runtime: 193392us
-CD: iterations=128 runtime: 203171us
-CD: iterations=129 runtime: 193047us
-CD: iterations=130 runtime: 193387us
-CD: iterations=131 runtime: 193136us
-CD: iterations=132 runtime: 193276us
-CD: iterations=133 runtime: 193676us
-CD: iterations=134 runtime: 193313us
-CD: iterations=135 runtime: 192974us
-CD: iterations=136 runtime: 193364us
-CD: iterations=137 runtime: 192783us
-CD: iterations=138 runtime: 193630us
-CD: iterations=139 runtime: 193819us
-CD: iterations=140 runtime: 193580us
-CD: iterations=141 runtime: 194727us
-CD: iterations=142 runtime: 194815us
-CD: iterations=143 runtime: 194809us
-CD: iterations=144 runtime: 193095us
-CD: iterations=145 runtime: 193335us
-CD: iterations=146 runtime: 193230us
-CD: iterations=147 runtime: 193387us
-CD: iterations=148 runtime: 193238us
-CD: iterations=149 runtime: 193214us
-CD: iterations=150 runtime: 193266us
-CD: iterations=151 runtime: 193649us
-CD: iterations=152 runtime: 193549us
-CD: iterations=153 runtime: 193496us
-CD: iterations=154 runtime: 194112us
-CD: iterations=155 runtime: 193095us
-CD: iterations=156 runtime: 193268us
-CD: iterations=157 runtime: 194790us
-CD: iterations=158 runtime: 193415us
-CD: iterations=159 runtime: 195178us
-CD: iterations=160 runtime: 193667us
-CD: iterations=161 runtime: 194227us
-CD: iterations=162 runtime: 193351us
-CD: iterations=163 runtime: 193445us
-CD: iterations=164 runtime: 193320us
-CD: iterations=165 runtime: 193476us
-CD: iterations=166 runtime: 193206us
-CD: iterations=167 runtime: 193040us
-CD: iterations=168 runtime: 192469us
-CD: iterations=169 runtime: 192825us
-CD: iterations=170 runtime: 193521us
-CD: iterations=171 runtime: 193027us
-CD: iterations=172 runtime: 193622us
-CD: iterations=173 runtime: 194138us
-CD: iterations=174 runtime: 194005us
-CD: iterations=175 runtime: 193569us
-CD: iterations=176 runtime: 194118us
-CD: iterations=177 runtime: 193457us
-CD: iterations=178 runtime: 193552us
-CD: iterations=179 runtime: 197782us
-CD: iterations=180 runtime: 193225us
-CD: iterations=181 runtime: 192951us
-CD: iterations=182 runtime: 192937us
-CD: iterations=183 runtime: 192904us
-CD: iterations=184 runtime: 193194us
-CD: iterations=185 runtime: 193683us
-CD: iterations=186 runtime: 192608us
-CD: iterations=187 runtime: 193521us
-CD: iterations=188 runtime: 193497us
-CD: iterations=189 runtime: 193727us
-CD: iterations=190 runtime: 193525us
-CD: iterations=191 runtime: 193482us
-CD: iterations=192 runtime: 193410us
-CD: iterations=193 runtime: 193529us
-CD: iterations=194 runtime: 193179us
-CD: iterations=195 runtime: 193457us
-CD: iterations=196 runtime: 193210us
-CD: iterations=197 runtime: 192931us
-CD: iterations=198 runtime: 192950us
-CD: iterations=199 runtime: 192759us
-CD: iterations=200 runtime: 192794us
-CD: iterations=201 runtime: 192621us
-CD: iterations=202 runtime: 193513us
-CD: iterations=203 runtime: 193795us
-CD: iterations=204 runtime: 194619us
-CD: iterations=205 runtime: 193475us
-CD: iterations=206 runtime: 193910us
-CD: iterations=207 runtime: 193603us
-CD: iterations=208 runtime: 193015us
-CD: iterations=209 runtime: 193469us
-CD: iterations=210 runtime: 194132us
-CD: iterations=211 runtime: 193437us
-CD: iterations=212 runtime: 193057us
-CD: iterations=213 runtime: 192888us
-CD: iterations=214 runtime: 192895us
-CD: iterations=215 runtime: 193501us
-CD: iterations=216 runtime: 192575us
-CD: iterations=217 runtime: 193184us
-CD: iterations=218 runtime: 193923us
-CD: iterations=219 runtime: 193740us
-CD: iterations=220 runtime: 193679us
-CD: iterations=221 runtime: 193557us
-CD: iterations=222 runtime: 193593us
-CD: iterations=223 runtime: 194807us
-CD: iterations=224 runtime: 193453us
-CD: iterations=225 runtime: 193459us
-CD: iterations=226 runtime: 193402us
-CD: iterations=227 runtime: 193507us
-CD: iterations=228 runtime: 193265us
-CD: iterations=229 runtime: 193180us
-CD: iterations=230 runtime: 193418us
-CD: iterations=231 runtime: 192738us
-CD: iterations=232 runtime: 192896us
-CD: iterations=233 runtime: 193764us
-CD: iterations=234 runtime: 193772us
-CD: iterations=235 runtime: 193945us
-CD: iterations=236 runtime: 194152us
-CD: iterations=237 runtime: 193902us
-CD: iterations=238 runtime: 196049us
-CD: iterations=239 runtime: 193183us
-CD: iterations=240 runtime: 193044us
-CD: iterations=241 runtime: 193187us
-CD: iterations=242 runtime: 194978us
-CD: iterations=243 runtime: 192611us
-CD: iterations=244 runtime: 193102us
-CD: iterations=245 runtime: 193489us
-CD: iterations=246 runtime: 192777us
-CD: iterations=247 runtime: 192457us
-CD: iterations=248 runtime: 192356us
-CD: iterations=249 runtime: 193401us
-CD: iterations=250 runtime: 193522us
-CD: iterations=251 runtime: 193357us
-CD: iterations=252 runtime: 193157us
-CD: iterations=253 runtime: 195752us
-CD: iterations=254 runtime: 193110us
-CD: iterations=255 runtime: 193446us
-CD: iterations=256 runtime: 193559us
-CD: iterations=257 runtime: 193014us
-CD: iterations=258 runtime: 192770us
-CD: iterations=259 runtime: 192662us
-CD: iterations=260 runtime: 192896us
-CD: iterations=261 runtime: 193123us
-CD: iterations=262 runtime: 193183us
-CD: iterations=263 runtime: 192312us
-CD: iterations=264 runtime: 195909us
-CD: iterations=265 runtime: 194418us
-CD: iterations=266 runtime: 193389us
-CD: iterations=267 runtime: 193275us
-CD: iterations=268 runtime: 193487us
-CD: iterations=269 runtime: 193016us
-CD: iterations=270 runtime: 193622us
-CD: iterations=271 runtime: 193116us
-CD: iterations=272 runtime: 192989us
-CD: iterations=273 runtime: 192966us
-CD: iterations=274 runtime: 192712us
-CD: iterations=275 runtime: 192531us
-CD: iterations=276 runtime: 192812us
-CD: iterations=277 runtime: 192396us
-CD: iterations=278 runtime: 192603us
-CD: iterations=279 runtime: 192398us
-CD: iterations=280 runtime: 196684us
-CD: iterations=281 runtime: 195426us
-CD: iterations=282 runtime: 193494us
-CD: iterations=283 runtime: 193292us
-CD: iterations=284 runtime: 193475us
-CD: iterations=285 runtime: 193099us
-CD: iterations=286 runtime: 193418us
-CD: iterations=287 runtime: 194659us
-CD: iterations=288 runtime: 195767us
-CD: iterations=289 runtime: 193823us
-CD: iterations=290 runtime: 193648us
-CD: iterations=291 runtime: 192791us
-CD: iterations=292 runtime: 192543us
-CD: iterations=293 runtime: 192887us
-CD: iterations=294 runtime: 193233us
-CD: iterations=295 runtime: 193889us
-CD: iterations=296 runtime: 193797us
-CD: iterations=297 runtime: 193688us
-CD: iterations=298 runtime: 195830us
-CD: iterations=299 runtime: 202323us
-CD: iterations=300 runtime: 194901us
-CD: iterations=301 runtime: 193581us
-CD: iterations=302 runtime: 195821us
-CD: iterations=303 runtime: 193643us
-CD: iterations=304 runtime: 193241us
-CD: iterations=305 runtime: 192914us
-CD: iterations=306 runtime: 193383us
-CD: iterations=307 runtime: 193544us
-CD: iterations=308 runtime: 193637us
-CD: iterations=309 runtime: 192762us
-CD: iterations=310 runtime: 193502us
-CD: iterations=311 runtime: 195325us
-CD: iterations=312 runtime: 193624us
-CD: iterations=313 runtime: 193861us
-CD: iterations=314 runtime: 194508us
-CD: iterations=315 runtime: 193378us
-CD: iterations=316 runtime: 193603us
-CD: iterations=317 runtime: 193498us
-CD: iterations=318 runtime: 196807us
-CD: iterations=319 runtime: 194695us
-CD: iterations=320 runtime: 193756us
-CD: iterations=321 runtime: 193425us
-CD: iterations=322 runtime: 193279us
-CD: iterations=323 runtime: 193855us
-CD: iterations=324 runtime: 194401us
-CD: iterations=325 runtime: 193028us
-CD: iterations=326 runtime: 193783us
-CD: iterations=327 runtime: 193410us
-CD: iterations=328 runtime: 193350us
-CD: iterations=329 runtime: 194069us
-CD: iterations=330 runtime: 193637us
-CD: iterations=331 runtime: 193889us
-CD: iterations=332 runtime: 195322us
-CD: iterations=333 runtime: 193528us
-CD: iterations=334 runtime: 193101us
-CD: iterations=335 runtime: 192900us
-CD: iterations=336 runtime: 193360us
-CD: iterations=337 runtime: 193383us
-CD: iterations=338 runtime: 193594us
-CD: iterations=339 runtime: 193458us
-CD: iterations=340 runtime: 195534us
-CD: iterations=341 runtime: 195307us
-CD: iterations=342 runtime: 194992us
-CD: iterations=343 runtime: 193657us
-CD: iterations=344 runtime: 193617us
-CD: iterations=345 runtime: 193687us
-CD: iterations=346 runtime: 193592us
-CD: iterations=347 runtime: 193461us
-CD: iterations=348 runtime: 193396us
-CD: iterations=349 runtime: 193306us
-CD: iterations=350 runtime: 193632us
-CD: iterations=351 runtime: 194755us
-CD: iterations=352 runtime: 193504us
-CD: iterations=353 runtime: 192940us
-CD: iterations=354 runtime: 193325us
-CD: iterations=355 runtime: 193560us
-CD: iterations=356 runtime: 193764us
-CD: iterations=357 runtime: 197277us
-CD: iterations=358 runtime: 193618us
-CD: iterations=359 runtime: 193305us
-CD: iterations=360 runtime: 193597us
-CD: iterations=361 runtime: 193772us
-CD: iterations=362 runtime: 193464us
-CD: iterations=363 runtime: 193154us
-CD: iterations=364 runtime: 193763us
-CD: iterations=365 runtime: 194485us
-CD: iterations=366 runtime: 193610us
-CD: iterations=367 runtime: 192950us
-CD: iterations=368 runtime: 192951us
-CD: iterations=369 runtime: 192366us
-CD: iterations=370 runtime: 192711us
-CD: iterations=371 runtime: 192732us
-CD: iterations=372 runtime: 193907us
-CD: iterations=373 runtime: 193166us
-CD: iterations=374 runtime: 193528us
-CD: iterations=375 runtime: 193713us
-CD: iterations=376 runtime: 197751us
-CD: iterations=377 runtime: 193187us
-CD: iterations=378 runtime: 193386us
-CD: iterations=379 runtime: 192814us
-CD: iterations=380 runtime: 192857us
-CD: iterations=381 runtime: 193256us
-CD: iterations=382 runtime: 192882us
-CD: iterations=383 runtime: 193174us
-CD: iterations=384 runtime: 193177us
-CD: iterations=385 runtime: 192808us
-CD: iterations=386 runtime: 194859us
-CD: iterations=387 runtime: 192570us
-CD: iterations=388 runtime: 193693us
-CD: iterations=389 runtime: 193189us
-CD: iterations=390 runtime: 192947us
-CD: iterations=391 runtime: 193613us
-CD: iterations=392 runtime: 193508us
-CD: iterations=393 runtime: 193407us
-CD: iterations=394 runtime: 193553us
-CD: iterations=395 runtime: 193314us
-CD: iterations=396 runtime: 193224us
-CD: iterations=397 runtime: 193189us
-CD: iterations=398 runtime: 193896us
-CD: iterations=399 runtime: 193057us
-CD: iterations=400 runtime: 192809us
-CD: iterations=401 runtime: 192869us
-CD: iterations=402 runtime: 192557us
-CD: iterations=403 runtime: 193702us
-CD: iterations=404 runtime: 193917us
-CD: iterations=405 runtime: 193338us
-CD: iterations=406 runtime: 193456us
-CD: iterations=407 runtime: 193340us
-CD: iterations=408 runtime: 193344us
-CD: iterations=409 runtime: 194124us
-CD: iterations=410 runtime: 194532us
-CD: iterations=411 runtime: 193486us
-CD: iterations=412 runtime: 193327us
-CD: iterations=413 runtime: 193287us
-CD: iterations=414 runtime: 192955us
-CD: iterations=415 runtime: 192782us
-CD: iterations=416 runtime: 193120us
-CD: iterations=417 runtime: 193779us
+CD: iterations=127 runtime: 210708us
+CD: iterations=128 runtime: 208788us
+CD: iterations=129 runtime: 207576us
+CD: iterations=130 runtime: 206557us
+CD: iterations=131 runtime: 206306us
+CD: iterations=132 runtime: 402317us
+CD: iterations=133 runtime: 209809us
+CD: iterations=134 runtime: 209748us
+CD: iterations=135 runtime: 209130us
+CD: iterations=136 runtime: 209031us
+CD: iterations=137 runtime: 209200us
+CD: iterations=138 runtime: 208555us
+CD: iterations=139 runtime: 206552us
+CD: iterations=140 runtime: 204794us
+CD: iterations=141 runtime: 426786us
+CD: iterations=142 runtime: 220554us
+CD: iterations=143 runtime: 208931us
+CD: iterations=144 runtime: 209545us
+CD: iterations=145 runtime: 209964us
+CD: iterations=146 runtime: 208655us
+CD: iterations=147 runtime: 210411us
+CD: iterations=148 runtime: 206250us
+CD: iterations=149 runtime: 406302us
+CD: iterations=150 runtime: 208099us
+CD: iterations=151 runtime: 207163us
+CD: iterations=152 runtime: 206526us
+CD: iterations=153 runtime: 206475us
+CD: iterations=154 runtime: 206345us
+CD: iterations=155 runtime: 206565us
+CD: iterations=156 runtime: 206654us
+CD: iterations=157 runtime: 405710us
+CD: iterations=158 runtime: 209694us
+CD: iterations=159 runtime: 208973us
+CD: iterations=160 runtime: 209426us
+CD: iterations=161 runtime: 209211us
+CD: iterations=162 runtime: 209087us
+CD: iterations=163 runtime: 209241us
+CD: iterations=164 runtime: 209007us
+CD: iterations=165 runtime: 407007us
+CD: iterations=166 runtime: 210167us
+CD: iterations=167 runtime: 209677us
+CD: iterations=168 runtime: 210523us
+CD: iterations=169 runtime: 207153us
+CD: iterations=170 runtime: 206621us
+CD: iterations=171 runtime: 206813us
+CD: iterations=172 runtime: 206724us
+CD: iterations=173 runtime: 206897us
+CD: iterations=174 runtime: 403561us
+CD: iterations=175 runtime: 209259us
+CD: iterations=176 runtime: 209259us
+CD: iterations=177 runtime: 209674us
+CD: iterations=178 runtime: 208898us
+CD: iterations=179 runtime: 208611us
+CD: iterations=180 runtime: 206772us
+CD: iterations=181 runtime: 206916us
+CD: iterations=182 runtime: 405720us
+CD: iterations=183 runtime: 209363us
+CD: iterations=184 runtime: 209517us
+CD: iterations=185 runtime: 209542us
+CD: iterations=186 runtime: 209610us
+CD: iterations=187 runtime: 209502us
+CD: iterations=188 runtime: 209483us
+CD: iterations=189 runtime: 207463us
+CD: iterations=190 runtime: 411683us
+CD: iterations=191 runtime: 206244us
+CD: iterations=192 runtime: 207394us
+CD: iterations=193 runtime: 207610us
+CD: iterations=194 runtime: 206964us
+CD: iterations=195 runtime: 207171us
+CD: iterations=196 runtime: 207102us
+CD: iterations=197 runtime: 207446us
+CD: iterations=198 runtime: 404755us
+CD: iterations=199 runtime: 206749us
+CD: iterations=200 runtime: 207396us
+CD: iterations=201 runtime: 207189us
+CD: iterations=202 runtime: 207602us
+CD: iterations=203 runtime: 207218us
+CD: iterations=204 runtime: 207328us
+CD: iterations=205 runtime: 208858us
+CD: iterations=206 runtime: 407634us
+CD: iterations=207 runtime: 223135us
+CD: iterations=208 runtime: 206262us
+CD: iterations=209 runtime: 207444us
+CD: iterations=210 runtime: 207157us
+CD: iterations=211 runtime: 208236us
+CD: iterations=212 runtime: 208306us
+CD: iterations=213 runtime: 207853us
+CD: iterations=214 runtime: 207937us
+CD: iterations=215 runtime: 408442us
+CD: iterations=216 runtime: 205590us
+CD: iterations=217 runtime: 207011us
+CD: iterations=218 runtime: 206906us
+CD: iterations=219 runtime: 207071us
+CD: iterations=220 runtime: 206944us
+CD: iterations=221 runtime: 207691us
+CD: iterations=222 runtime: 206837us
+CD: iterations=223 runtime: 404356us
+CD: iterations=224 runtime: 205898us
+CD: iterations=225 runtime: 207338us
+CD: iterations=226 runtime: 206811us
+CD: iterations=227 runtime: 207204us
+CD: iterations=228 runtime: 206815us
+CD: iterations=229 runtime: 207481us
+CD: iterations=230 runtime: 207364us
+CD: iterations=231 runtime: 405364us
+CD: iterations=232 runtime: 206202us
+CD: iterations=233 runtime: 208967us
+CD: iterations=234 runtime: 207511us
+CD: iterations=235 runtime: 207084us
+CD: iterations=236 runtime: 207170us
+CD: iterations=237 runtime: 207846us
+CD: iterations=238 runtime: 206930us
+CD: iterations=239 runtime: 411996us
+CD: iterations=240 runtime: 217764us
+CD: iterations=241 runtime: 206089us
+CD: iterations=242 runtime: 207026us
+CD: iterations=243 runtime: 207232us
+CD: iterations=244 runtime: 206979us
+CD: iterations=245 runtime: 207567us
+CD: iterations=246 runtime: 207643us
+CD: iterations=247 runtime: 406143us
+CD: iterations=248 runtime: 207398us
+CD: iterations=249 runtime: 206290us
+CD: iterations=250 runtime: 206743us
+CD: iterations=251 runtime: 207053us
+CD: iterations=252 runtime: 207245us
+CD: iterations=253 runtime: 206943us
+CD: iterations=254 runtime: 207129us
+CD: iterations=255 runtime: 208132us
+CD: iterations=256 runtime: 408003us
+CD: iterations=257 runtime: 207071us
+CD: iterations=258 runtime: 205868us
+CD: iterations=259 runtime: 207430us
+CD: iterations=260 runtime: 207158us
+CD: iterations=261 runtime: 207461us
+CD: iterations=262 runtime: 207613us
+CD: iterations=263 runtime: 207480us
+CD: iterations=264 runtime: 407709us
+CD: iterations=265 runtime: 207035us
+CD: iterations=266 runtime: 206182us
+CD: iterations=267 runtime: 206873us
+CD: iterations=268 runtime: 206954us
+CD: iterations=269 runtime: 207708us
+CD: iterations=270 runtime: 206871us
+CD: iterations=271 runtime: 206576us
+CD: iterations=272 runtime: 413897us
+CD: iterations=273 runtime: 215439us
+CD: iterations=274 runtime: 206293us
+CD: iterations=275 runtime: 206093us
+CD: iterations=276 runtime: 208772us
+CD: iterations=277 runtime: 207431us
+CD: iterations=278 runtime: 207556us
+CD: iterations=279 runtime: 207243us
+CD: iterations=280 runtime: 405940us
+CD: iterations=281 runtime: 207223us
+CD: iterations=282 runtime: 208490us
+CD: iterations=283 runtime: 211505us
+CD: iterations=284 runtime: 207090us
+CD: iterations=285 runtime: 207974us
+CD: iterations=286 runtime: 207026us
+CD: iterations=287 runtime: 208639us
+CD: iterations=288 runtime: 213046us
+CD: iterations=289 runtime: 406343us
+CD: iterations=290 runtime: 207230us
+CD: iterations=291 runtime: 205909us
+CD: iterations=292 runtime: 207160us
+CD: iterations=293 runtime: 207614us
+CD: iterations=294 runtime: 207604us
+CD: iterations=295 runtime: 206826us
+CD: iterations=296 runtime: 206412us
+CD: iterations=297 runtime: 408963us
+CD: iterations=298 runtime: 207461us
+CD: iterations=299 runtime: 206388us
+CD: iterations=300 runtime: 206654us
+CD: iterations=301 runtime: 207711us
+CD: iterations=302 runtime: 207124us
+CD: iterations=303 runtime: 206743us
+CD: iterations=304 runtime: 206682us
+CD: iterations=305 runtime: 415353us
+CD: iterations=306 runtime: 214495us
+CD: iterations=307 runtime: 207486us
+CD: iterations=308 runtime: 206172us
+CD: iterations=309 runtime: 206509us
+CD: iterations=310 runtime: 207760us
+CD: iterations=311 runtime: 207082us
+CD: iterations=312 runtime: 206940us
+CD: iterations=313 runtime: 406637us
+CD: iterations=314 runtime: 207705us
+CD: iterations=315 runtime: 207306us
+CD: iterations=316 runtime: 206635us
+CD: iterations=317 runtime: 206305us
+CD: iterations=318 runtime: 207178us
+CD: iterations=319 runtime: 207955us
+CD: iterations=320 runtime: 207624us
+CD: iterations=321 runtime: 207151us
+CD: iterations=322 runtime: 408057us
+CD: iterations=323 runtime: 207238us
+CD: iterations=324 runtime: 207241us
+CD: iterations=325 runtime: 205589us
+CD: iterations=326 runtime: 207779us
+CD: iterations=327 runtime: 207404us
+CD: iterations=328 runtime: 206811us
+CD: iterations=329 runtime: 206769us
+CD: iterations=330 runtime: 406969us
+CD: iterations=331 runtime: 207728us
+CD: iterations=332 runtime: 207393us
+CD: iterations=333 runtime: 206232us
+CD: iterations=334 runtime: 206945us
+CD: iterations=335 runtime: 206713us
+CD: iterations=336 runtime: 207142us
+CD: iterations=337 runtime: 207003us
+CD: iterations=338 runtime: 413213us
+CD: iterations=339 runtime: 215306us
+CD: iterations=340 runtime: 208323us
+CD: iterations=341 runtime: 208601us
+CD: iterations=342 runtime: 205852us
+CD: iterations=343 runtime: 207419us
+CD: iterations=344 runtime: 207007us
+CD: iterations=345 runtime: 206970us
+CD: iterations=346 runtime: 207091us
+CD: iterations=347 runtime: 407465us
+CD: iterations=348 runtime: 207578us
+CD: iterations=349 runtime: 207912us
+CD: iterations=350 runtime: 206017us
+CD: iterations=351 runtime: 206713us
+CD: iterations=352 runtime: 206952us
+CD: iterations=353 runtime: 206902us
+CD: iterations=354 runtime: 206917us
+CD: iterations=355 runtime: 407904us
+CD: iterations=356 runtime: 207617us
+CD: iterations=357 runtime: 207826us
+CD: iterations=358 runtime: 206587us
+CD: iterations=359 runtime: 206503us
+CD: iterations=360 runtime: 206954us
+CD: iterations=361 runtime: 206942us
+CD: iterations=362 runtime: 207276us
+CD: iterations=363 runtime: 408212us
+CD: iterations=364 runtime: 207478us
+CD: iterations=365 runtime: 208345us
+CD: iterations=366 runtime: 206991us
+CD: iterations=367 runtime: 205960us
+CD: iterations=368 runtime: 207023us
+CD: iterations=369 runtime: 206914us
+CD: iterations=370 runtime: 207049us
+CD: iterations=371 runtime: 412712us
+CD: iterations=372 runtime: 214936us
+CD: iterations=373 runtime: 207476us
+CD: iterations=374 runtime: 207653us
+CD: iterations=375 runtime: 206547us
+CD: iterations=376 runtime: 206110us
+CD: iterations=377 runtime: 206395us
+CD: iterations=378 runtime: 206644us
+CD: iterations=379 runtime: 206791us
+CD: iterations=380 runtime: 414269us
+CD: iterations=381 runtime: 208360us
+CD: iterations=382 runtime: 207061us
+CD: iterations=383 runtime: 206206us
+CD: iterations=384 runtime: 207234us
+CD: iterations=385 runtime: 206812us
+CD: iterations=386 runtime: 206510us
+CD: iterations=387 runtime: 206922us
+CD: iterations=388 runtime: 408124us
+CD: iterations=389 runtime: 210814us
+CD: iterations=390 runtime: 210034us
+CD: iterations=391 runtime: 209704us
+CD: iterations=392 runtime: 208209us
+CD: iterations=393 runtime: 209558us
+CD: iterations=394 runtime: 209422us
+CD: iterations=395 runtime: 209194us
+CD: iterations=396 runtime: 408833us
+CD: iterations=397 runtime: 208317us
+CD: iterations=398 runtime: 207449us
+CD: iterations=399 runtime: 206747us
+CD: iterations=400 runtime: 205785us
+CD: iterations=401 runtime: 207255us
+CD: iterations=402 runtime: 206631us
+CD: iterations=403 runtime: 206912us
+CD: iterations=404 runtime: 411625us
+CD: iterations=405 runtime: 218559us
+CD: iterations=406 runtime: 208301us
+CD: iterations=407 runtime: 207464us
+CD: iterations=408 runtime: 207119us
+CD: iterations=409 runtime: 205473us
+CD: iterations=410 runtime: 207756us
+CD: iterations=411 runtime: 206839us
+CD: iterations=412 runtime: 206897us
+CD: iterations=413 runtime: 408226us
+CD: iterations=414 runtime: 208220us
+CD: iterations=415 runtime: 206858us
+CD: iterations=416 runtime: 207380us
+CD: iterations=417 runtime: 205795us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
 java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
-CD: iterations=418 runtime: 202833us
-CD: iterations=419 runtime: 212747us
-CD: iterations=420 runtime: 193926us
-CD: iterations=421 runtime: 193621us
-CD: iterations=422 runtime: 193259us
-CD: iterations=423 runtime: 195467us
-CD: iterations=424 runtime: 193210us
-CD: iterations=425 runtime: 193692us
-CD: iterations=426 runtime: 193152us
-CD: iterations=427 runtime: 193559us
-CD: iterations=428 runtime: 194123us
-CD: iterations=429 runtime: 193110us
-CD: iterations=430 runtime: 192904us
-CD: iterations=431 runtime: 192801us
-CD: iterations=432 runtime: 192488us
-CD: iterations=433 runtime: 192998us
-CD: iterations=434 runtime: 193802us
-CD: iterations=435 runtime: 193586us
-CD: iterations=436 runtime: 193681us
-CD: iterations=437 runtime: 193233us
-CD: iterations=438 runtime: 193189us
-CD: iterations=439 runtime: 193117us
-CD: iterations=440 runtime: 192939us
-CD: iterations=441 runtime: 192929us
-CD: iterations=442 runtime: 192990us
-CD: iterations=443 runtime: 193123us
-CD: iterations=444 runtime: 192716us
-CD: iterations=445 runtime: 192724us
-CD: iterations=446 runtime: 192673us
-CD: iterations=447 runtime: 192832us
-CD: iterations=448 runtime: 193114us
-CD: iterations=449 runtime: 193087us
-CD: iterations=450 runtime: 194336us
-CD: iterations=451 runtime: 193340us
-CD: iterations=452 runtime: 193637us
-CD: iterations=453 runtime: 193425us
-CD: iterations=454 runtime: 193104us
-CD: iterations=455 runtime: 193018us
-CD: iterations=456 runtime: 192289us
-CD: iterations=457 runtime: 194170us
-CD: iterations=458 runtime: 193064us
-CD: iterations=459 runtime: 193170us
-CD: iterations=460 runtime: 192565us
-CD: iterations=461 runtime: 192601us
-CD: iterations=462 runtime: 192504us
-CD: iterations=463 runtime: 196444us
-CD: iterations=464 runtime: 192197us
-CD: iterations=465 runtime: 194165us
-CD: iterations=466 runtime: 193950us
-CD: iterations=467 runtime: 193333us
-CD: iterations=468 runtime: 193687us
-CD: iterations=469 runtime: 193574us
-CD: iterations=470 runtime: 192961us
-CD: iterations=471 runtime: 193196us
-CD: iterations=472 runtime: 192908us
-CD: iterations=473 runtime: 192848us
-CD: iterations=474 runtime: 193028us
-CD: iterations=475 runtime: 192723us
-CD: iterations=476 runtime: 192769us
-CD: iterations=477 runtime: 192382us
-CD: iterations=478 runtime: 192466us
-CD: iterations=479 runtime: 192932us
-CD: iterations=480 runtime: 192142us
-CD: iterations=481 runtime: 193095us
-CD: iterations=482 runtime: 193246us
-CD: iterations=483 runtime: 193923us
-CD: iterations=484 runtime: 192890us
-CD: iterations=485 runtime: 192813us
-CD: iterations=486 runtime: 192785us
-CD: iterations=487 runtime: 192885us
-CD: iterations=488 runtime: 192917us
-CD: iterations=489 runtime: 197293us
-CD: iterations=490 runtime: 192943us
-CD: iterations=491 runtime: 192575us
-CD: iterations=492 runtime: 192795us
-CD: iterations=493 runtime: 192449us
-CD: iterations=494 runtime: 193005us
-CD: iterations=495 runtime: 192735us
-CD: iterations=496 runtime: 193245us
-CD: iterations=497 runtime: 193558us
-CD: iterations=498 runtime: 193148us
-CD: iterations=499 runtime: 193010us
-CD: iterations=500 runtime: 192911us
+CD: iterations=418 runtime: 206984us
+CD: iterations=419 runtime: 225890us
+CD: iterations=420 runtime: 209386us
+CD: iterations=421 runtime: 415020us
+CD: iterations=422 runtime: 210500us
+CD: iterations=423 runtime: 209871us
+CD: iterations=424 runtime: 209415us
+CD: iterations=425 runtime: 208744us
+CD: iterations=426 runtime: 209514us
+CD: iterations=427 runtime: 209978us
+CD: iterations=428 runtime: 206961us
+CD: iterations=429 runtime: 407028us
+CD: iterations=430 runtime: 207438us
+CD: iterations=431 runtime: 207173us
+CD: iterations=432 runtime: 207206us
+CD: iterations=433 runtime: 206966us
+CD: iterations=434 runtime: 205932us
+CD: iterations=435 runtime: 207199us
+CD: iterations=436 runtime: 206713us
+CD: iterations=437 runtime: 413279us
+CD: iterations=438 runtime: 215812us
+CD: iterations=439 runtime: 207870us
+CD: iterations=440 runtime: 206973us
+CD: iterations=441 runtime: 207185us
+CD: iterations=442 runtime: 206270us
+CD: iterations=443 runtime: 206208us
+CD: iterations=444 runtime: 206948us
+CD: iterations=445 runtime: 207932us
+CD: iterations=446 runtime: 408189us
+CD: iterations=447 runtime: 210044us
+CD: iterations=448 runtime: 210288us
+CD: iterations=449 runtime: 207621us
+CD: iterations=450 runtime: 206415us
+CD: iterations=451 runtime: 206094us
+CD: iterations=452 runtime: 207134us
+CD: iterations=453 runtime: 207259us
+CD: iterations=454 runtime: 407436us
+CD: iterations=455 runtime: 210421us
+CD: iterations=456 runtime: 210386us
+CD: iterations=457 runtime: 209881us
+CD: iterations=458 runtime: 209732us
+CD: iterations=459 runtime: 208955us
+CD: iterations=460 runtime: 209611us
+CD: iterations=461 runtime: 209961us
+CD: iterations=462 runtime: 409086us
+CD: iterations=463 runtime: 209743us
+CD: iterations=464 runtime: 210217us
+CD: iterations=465 runtime: 208822us
+CD: iterations=466 runtime: 206970us
+CD: iterations=467 runtime: 205869us
+CD: iterations=468 runtime: 206844us
+CD: iterations=469 runtime: 207344us
+CD: iterations=470 runtime: 413165us
+CD: iterations=471 runtime: 216435us
+CD: iterations=472 runtime: 208819us
+CD: iterations=473 runtime: 207153us
+CD: iterations=474 runtime: 215537us
+CD: iterations=475 runtime: 210616us
+CD: iterations=476 runtime: 205628us
+CD: iterations=477 runtime: 208003us
+CD: iterations=478 runtime: 206943us
+CD: iterations=479 runtime: 408781us
+CD: iterations=480 runtime: 210309us
+CD: iterations=481 runtime: 210149us
+CD: iterations=482 runtime: 208916us
+CD: iterations=483 runtime: 207432us
+CD: iterations=484 runtime: 206073us
+CD: iterations=485 runtime: 207369us
+CD: iterations=486 runtime: 207390us
+CD: iterations=487 runtime: 408224us
+CD: iterations=488 runtime: 210288us
+CD: iterations=489 runtime: 210232us
+CD: iterations=490 runtime: 210117us
+CD: iterations=491 runtime: 211276us
+CD: iterations=492 runtime: 206221us
+CD: iterations=493 runtime: 206420us
+CD: iterations=494 runtime: 206870us
+CD: iterations=495 runtime: 406360us
+CD: iterations=496 runtime: 207649us
+CD: iterations=497 runtime: 208144us
+CD: iterations=498 runtime: 207386us
+CD: iterations=499 runtime: 207487us
+CD: iterations=500 runtime: 206664us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
-CD: iterations=500 average: 194802us total: 97401234us
+CD: iterations=500 average: 233699us total: 116849866us
 
 
-Total Runtime: 97401234us
-Bubo.RDTSC.Harness.main Total RDTSC cycles: 323137591692
+Total Runtime: 116849866us
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 387651309850
 shutdown : 2500000
 Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 367552 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
-Comp 56 (java.util.HashMap.putVal(int,) loops:
+  loop 0 Cycles: 383892 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 9352 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
-Comp 57 (java.lang.String.equals(Object)) loops:
+  loop 0 Cycles: 10470 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 8738 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+  loop 0 Cycles: 4998 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
 -at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
 -at java.lang.String.equals(String.java:1926) [bci: 44]
-Comp 70 (java.util.HashMap.resize()) loops:
+Comp 69 (java.util.HashMap.resize()) loops:
 Found Encoding : 2:-1,0:-1,1:0
 ├── Loop 2
 └── Loop 0
     └── Loop 1
-  loop 0 Cycles: 41882 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
-  loop 1 Cycles: 15610 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
-  loop 2 Cycles: 16598 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+  loop 0 Cycles: 28872 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 8540 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 17204 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
 Comp 84 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
 Found Encoding : 0:-1,1:-1,2:-1
 ├── Loop 0
 ├── Loop 1
 └── Loop 2
-  loop 0 Cycles: 78 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-  loop 1 Cycles: 178 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-  loop 2 Cycles: 114 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 0 Cycles: 54 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 52 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 48 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
 Comp 85 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,-Re-Comp) loops:
 Found Encoding : 0:-1,1:-1,2:-1
 ├── Loop 0
 ├── Loop 1
 └── Loop 2
-  loop 0 Cycles: 101066 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-  loop 1 Cycles: 203798 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-  loop 2 Cycles: 160442 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 0 Cycles: 102930 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 204570 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 163450 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
 Comp 87 (java.lang.StringCoding.countPositives(byte[],) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 164 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+  loop 0 Cycles: 352 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
 Comp 88 (java.lang.StringCoding.countPositives(byte[],-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 13138 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
-Comp 141 (java.util.Properties$LineReader.readLine()) loops:
+  loop 0 Cycles: 15000 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 138 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 31144 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 142 (java.util.Properties$LineReader.readLine()) loops:
 Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
 ├── Loop 5
 ├── Loop 3
@@ -605,45 +606,41 @@ Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
 └── Loop 0
     └── Loop 1
         └── Loop 2
-  loop 1 Cycles: 296092 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
-  loop 2 Cycles: 15160 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
-  loop 5 Cycles: 188 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
-Comp 142 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+  loop 1 Cycles: 383190 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 16544 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 246 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 143 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
 Found Encoding : 0:-1,1:0,2:1
 └── Loop 0
     └── Loop 1
         └── Loop 2
-  loop 0 Cycles: 533698 || Activation Count:0 | LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
-  loop 1 Cycles: 474684 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
-  loop 2 Cycles: 126956 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
-Comp 162 (java.lang.StringLatin1.equals(byte[],) loops:
-Found Encoding : 0:-1
-└── Loop 0
-  loop 0 Cycles: 14650 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+  loop 0 Cycles: 656040 || Activation Count:0 | LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 568940 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 142466 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
 Comp 173 (cd.RedBlackTree.treeInsert(Comparable,) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 78728418550 || Activation Count:0 | LoopCallCount: 1 |  Source: -at cd.RedBlackTree.treeInsert(Comparable, Object) [bci: 8] | -at cd.RedBlackTree.treeInsert(Comparable, Object) [bci: 90]
+  loop 0 Cycles: 71254424376 || Activation Count:0 | LoopCallCount: 1 |  Source: -at cd.RedBlackTree.treeInsert(Comparable, Object) [bci: 8] | -at cd.RedBlackTree.treeInsert(Comparable, Object) [bci: 90]
 Comp 176 (cd.RedBlackTree.findNode(Comparable)) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 20068683596 || Activation Count:0 | LoopCallCount: 1 |  Source: -at cd.RedBlackTree.findNode(Comparable) [bci: 5] | -at cd.RedBlackTree.findNode(Comparable) [bci: 49]
+  loop 0 Cycles: 19755531014 || Activation Count:0 | LoopCallCount: 1 |  Source: -at cd.RedBlackTree.findNode(Comparable) [bci: 5] | -at cd.RedBlackTree.findNode(Comparable) [bci: 49]
 Comp 180 (cd.RedBlackTree.put(Comparable,) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 19390648842 || Activation Count:0 | LoopCallCount: 1 |  Source: -at cd.RedBlackTree.put(Comparable, Object) [bci: 25] | -at cd.RedBlackTree.put(Comparable, Object) [bci: 353]
+  loop 0 Cycles: 19254836148 || Activation Count:0 | LoopCallCount: 1 |  Source: -at cd.RedBlackTree.put(Comparable, Object) [bci: 25] | -at cd.RedBlackTree.put(Comparable, Object) [bci: 353]
 Comp 187 (cd.RedBlackTree$Node.successor()) loops:
 Found Encoding : 0:-1,1:-1
 ├── Loop 0
 └── Loop 1
-  loop 0 Cycles: 306608 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22] | -at cd.RedBlackTree$Node.successor() [bci: 44]
-  loop 1 Cycles: 566266 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
+  loop 0 Cycles: 301386 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22] | -at cd.RedBlackTree$Node.successor() [bci: 44]
+  loop 1 Cycles: 571628 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
 -at cd.RedBlackTree$Node.successor() [bci: 13] | -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 17]
 -at cd.RedBlackTree$Node.successor() [bci: 13]
 Comp 192 (cd.CollisionDetector$RemoveAbsentAircraft.apply(Object)) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 21341142282 || Activation Count:0 | LoopCallCount: 1 |  Source: -at cd.RedBlackTree.findNode(Comparable) [bci: 5]
+  loop 0 Cycles: 20819342558 || Activation Count:0 | LoopCallCount: 1 |  Source: -at cd.RedBlackTree.findNode(Comparable) [bci: 5]
 -at cd.RedBlackTree.get(Comparable) [bci: 2]
 -at cd.CollisionDetector$RemoveAbsentAircraft.apply(RedBlackTree$Entry) [bci: 11]
 -at cd.CollisionDetector$RemoveAbsentAircraft.apply(Object) [bci: 5] | -
@@ -655,12 +652,12 @@ Found Encoding : 0:-1,4:-1,5:-1,1:-1,2:1,3:2
 └── Loop 1
     └── Loop 2
         └── Loop 3
-  loop 0 Cycles: 696158 || Activation Count:0 | LoopCallCount: 4 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 19] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 117]
-  loop 1 Cycles: 641046 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 198] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 329]
-  loop 2 Cycles: 622744 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 223] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 323]
-  loop 3 Cycles: 583012 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 251] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 317]
-  loop 4 Cycles: 156 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
-  loop 5 Cycles: 146 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 0 Cycles: 738574 || Activation Count:0 | LoopCallCount: 4 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 19] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 117]
+  loop 1 Cycles: 739670 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 198] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 329]
+  loop 2 Cycles: 721858 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 223] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 323]
+  loop 3 Cycles: 682962 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 251] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 317]
+  loop 4 Cycles: 176 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 5 Cycles: 184 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 199 (cd.CollisionDetector.handleNewFrame(Vector)-Re-Comp) loops:
 Found Encoding : 4:-1,5:-1,0:-1,6:-1,7:-1,1:-1,2:1,3:2
 ├── Loop 4
@@ -671,17 +668,17 @@ Found Encoding : 4:-1,5:-1,0:-1,6:-1,7:-1,1:-1,2:1,3:2
 └── Loop 1
     └── Loop 2
         └── Loop 3
-  loop 0 Cycles: 102805313332 || Activation Count:0 | LoopCallCount: 4 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 19] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 117]
-  loop 1 Cycles: 10292330234 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 198] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 329]
-  loop 2 Cycles: 8445844016 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 223] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 323]
-  loop 3 Cycles: 4404205594 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 251] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 317]
-  loop 5 Cycles: 10385052 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
-  loop 6 Cycles: 8534682 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
-  loop 7 Cycles: 10362480 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 0 Cycles: 109082634066 || Activation Count:0 | LoopCallCount: 4 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 19] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 117]
+  loop 1 Cycles: 11315964294 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 198] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 329]
+  loop 2 Cycles: 9376081110 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 223] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 323]
+  loop 3 Cycles: 5403598506 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 251] | -at cd.CollisionDetector.handleNewFrame(Vector) [bci: 317]
+  loop 5 Cycles: 8681624 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 6 Cycles: 10460840 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 7 Cycles: 8577670 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 200 (cd.CollisionDetector.putIntoMap(RedBlackTree,) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 5479991630 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 0 Cycles: 5542020860 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 202 (cd.RedBlackTree.forEach(ForEachInterface)) loops:
 Found Encoding : 1:-1,2:-1,0:-1,3:0,4:0,5:-1,6:5,7:5
 ├── Loop 1
@@ -692,11 +689,11 @@ Found Encoding : 1:-1,2:-1,0:-1,3:0,4:0,5:-1,6:5,7:5
 └── Loop 5
     ├── Loop 6
     └── Loop 7
-  loop 5 Cycles: 230700 || Activation Count:0 | LoopCallCount: 2 |  Source: Source Missing | -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 52]
-  loop 6 Cycles: 7812 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22]
+  loop 5 Cycles: 334508 || Activation Count:0 | LoopCallCount: 2 |  Source: Source Missing | -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 52]
+  loop 6 Cycles: 9472 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45] | -at cd.RedBlackTree$Node.successor() [bci: 44]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45]
-  loop 7 Cycles: 55012 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
+  loop 7 Cycles: 61776 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
 -at cd.RedBlackTree$Node.successor() [bci: 13]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45] | -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 17]
 -at cd.RedBlackTree$Nod
@@ -706,14 +703,14 @@ Found Encoding : 1:-1,0:-1,2:0,3:0
 └── Loop 0
     ├── Loop 2
     └── Loop 3
-  loop 0 Cycles: 43523325566 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 16] | -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 52]
-  loop 1 Cycles: 29634650 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
+  loop 0 Cycles: 46478569102 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 16] | -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 52]
+  loop 1 Cycles: 40778242 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 12] | -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 17]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 12]
-  loop 2 Cycles: 1899971938 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22]
+  loop 2 Cycles: 1844082656 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45] | -at cd.RedBlackTree$Node.successor() [bci: 44]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45]
-  loop 3 Cycles: 2363190868 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
+  loop 3 Cycles: 2391671138 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
 -at cd.RedBlackTree$Node.successor() [bci: 13]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45] | -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 17]
 -at cd.RedBlackTree$Nod
@@ -725,23 +722,23 @@ Found Encoding : 0:-1,2:-1,5:-1,1:-1,3:1,4:1
 └── Loop 1
     ├── Loop 3
     └── Loop 4
-  loop 0 Cycles: 54252 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 10] | -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 36]
-  loop 1 Cycles: 418256 || Activation Count:0 | LoopCallCount: 2 |  Source: -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 16]
+  loop 0 Cycles: 87560 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 10] | -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 36]
+  loop 1 Cycles: 440314 || Activation Count:0 | LoopCallCount: 2 |  Source: -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 16]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53] | -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 52]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53]
-  loop 2 Cycles: 2820 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
+  loop 2 Cycles: 2872 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 12]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53] | -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 17]
 -at cd.R
-  loop 3 Cycles: 28536 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22]
+  loop 3 Cycles: 27894 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53] | -at cd.RedBlackTree$Node.successor() [bci: 44]
 -at cd.RedBlackTree.forEach(ForEach
-  loop 4 Cycles: 134422 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
+  loop 4 Cycles: 138432 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
 -at cd.RedBlackTree$Node.successor() [bci: 13]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53] | -at cd.RedBlackTree.tr
-  loop 5 Cycles: 134 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 5 Cycles: 144 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 209 (cd.CollisionDetector.reduceCollisionSet(Vector)-Re-Comp) loops:
 Found Encoding : 0:-1,2:-1,5:-1,1:-1,3:1,4:1
 ├── Loop 0
@@ -750,50 +747,50 @@ Found Encoding : 0:-1,2:-1,5:-1,1:-1,3:1,4:1
 └── Loop 1
     ├── Loop 3
     └── Loop 4
-  loop 0 Cycles: 148266192350 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 10] | -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 36]
-  loop 1 Cycles: 12197228400 || Activation Count:0 | LoopCallCount: 2 |  Source: -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 16]
+  loop 0 Cycles: 197711460780 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 10] | -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 36]
+  loop 1 Cycles: 9877880570 || Activation Count:0 | LoopCallCount: 2 |  Source: -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 16]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53] | -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 52]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53]
-  loop 2 Cycles: 49358018 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
+  loop 2 Cycles: 46721514 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 12]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53] | -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 17]
 -at cd.R
-  loop 3 Cycles: 1409382300 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22]
+  loop 3 Cycles: 1406447574 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree$Node.successor() [bci: 22]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53] | -at cd.RedBlackTree$Node.successor() [bci: 44]
 -at cd.RedBlackTree.forEach(ForEach
-  loop 4 Cycles: 2514675640 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
+  loop 4 Cycles: 2107780842 || Activation Count:0 | LoopCallCount: 0 |  Source: -at cd.RedBlackTree.treeMinimum(RedBlackTree$Node) [bci: 2]
 -at cd.RedBlackTree$Node.successor() [bci: 13]
 -at cd.RedBlackTree.forEach(ForEachInterface) [bci: 45]
 -at cd.CollisionDetector.reduceCollisionSet(Vector) [bci: 53] | -at cd.RedBlackTree.tr
-  loop 5 Cycles: 9450910 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 5 Cycles: 13738644 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 213 (cd.Simulator.simulate(double)) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 2692 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11] | -at cd.Simulator.simulate(double) [bci: 127]
+  loop 0 Cycles: 2122 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11] | -at cd.Simulator.simulate(double) [bci: 127]
 Comp 214 (cd.Simulator.simulate(double)-Re-Comp) loops:
 Found Encoding : 1:-1,2:-1,0:-1
 ├── Loop 1
 ├── Loop 2
 └── Loop 0
-  loop 0 Cycles: 664671764 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11] | -at cd.Simulator.simulate(double) [bci: 127]
-  loop 2 Cycles: 1933926 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 0 Cycles: 2459964102 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11] | -at cd.Simulator.simulate(double) [bci: 127]
+  loop 2 Cycles: 2248326 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 227 (java.util.Arrays.copyOf(Object[],) loops:
 Found Encoding : 0:-1,1:-1
 ├── Loop 0
 └── Loop 1
-  loop 0 Cycles: 161242530 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
-  loop 1 Cycles: 3000 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArrayDynamic(Class, Class, int, AllocationSnippets$FillContent, boolean, JavaKind, int, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData
+  loop 0 Cycles: 156691744 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 1 Cycles: 3040 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArrayDynamic(Class, Class, int, AllocationSnippets$FillContent, boolean, JavaKind, int, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData
 Comp 231 (cd.Simulator.<init>(int)) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 44032 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.Simulator.<init>(int) [bci: 17] | -at cd.Simulator.<init>(int) [bci: 43]
+  loop 0 Cycles: 75546 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.Simulator.<init>(int) [bci: 17] | -at cd.Simulator.<init>(int) [bci: 43]
 Comp 232 (cd.Simulator.<init>(int)-Re-Comp) loops:
 Found Encoding : 1:-1,0:-1
 ├── Loop 1
 └── Loop 0
-  loop 0 Cycles: 1561460 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.Simulator.<init>(int) [bci: 17] | -at cd.Simulator.<init>(int) [bci: 43]
-  loop 1 Cycles: 12524 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 0 Cycles: 1648158 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.Simulator.<init>(int) [bci: 17] | -at cd.Simulator.<init>(int) [bci: 43]
+  loop 1 Cycles: 11254 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 235 (CD.benchmark(int)) loops:
 Found Encoding : 3:-1,4:-1,1:-1,0:-1,5:0,2:0
 ├── Loop 3
@@ -802,15 +799,15 @@ Found Encoding : 3:-1,4:-1,1:-1,0:-1,5:0,2:0
 └── Loop 0
     ├── Loop 5
     └── Loop 2
-  loop 0 Cycles: 399925398 || Activation Count:0 | LoopCallCount: 11 |  Source: -at CD.benchmark(int) [bci: 28] | -at CD.benchmark(int) [bci: 72]
-  loop 1 Cycles: 74974 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11]
+  loop 0 Cycles: 412968662 || Activation Count:0 | LoopCallCount: 11 |  Source: -at CD.benchmark(int) [bci: 28] | -at CD.benchmark(int) [bci: 72]
+  loop 1 Cycles: 147966 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11]
 -at CD.benchmark(int) [bci: 48] | -at cd.Simulator.simulate(double) [bci: 127]
 -at CD.benchmark(int) [bci: 48]
-  loop 2 Cycles: 3740424 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11]
+  loop 2 Cycles: 6461218 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11]
 -at CD.benchmark(int) [bci: 48] | -at cd.Simulator.simulate(double) [bci: 127]
 -at CD.benchmark(int) [bci: 48]
-  loop 4 Cycles: 152 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
-  loop 5 Cycles: 11750 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 4 Cycles: 148 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 5 Cycles: 11608 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 236 (CD.benchmark(int)-Re-Comp) loops:
 Found Encoding : 3:-1,1:-1,0:-1,4:0,2:0
 ├── Loop 3
@@ -818,20 +815,20 @@ Found Encoding : 3:-1,1:-1,0:-1,4:0,2:0
 └── Loop 0
     ├── Loop 4
     └── Loop 2
-  loop 0 Cycles: 254580762296 || Activation Count:0 | LoopCallCount: 11 |  Source: -at CD.benchmark(int) [bci: 28] | -at CD.benchmark(int) [bci: 72]
-  loop 1 Cycles: 5655584 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.Simulator.<init>(int) [bci: 17]
+  loop 0 Cycles: 305444138424 || Activation Count:0 | LoopCallCount: 11 |  Source: -at CD.benchmark(int) [bci: 28] | -at CD.benchmark(int) [bci: 72]
+  loop 1 Cycles: 6330152 || Activation Count:0 | LoopCallCount: 3 |  Source: -at cd.Simulator.<init>(int) [bci: 17]
 -at CD.benchmark(int) [bci: 9] | -at cd.Simulator.<init>(int) [bci: 43]
 -at CD.benchmark(int) [bci: 9]
-  loop 2 Cycles: 2457446688 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11]
+  loop 2 Cycles: 7492516452 || Activation Count:0 | LoopCallCount: 6 |  Source: -at cd.Simulator.simulate(double) [bci: 11]
 -at CD.benchmark(int) [bci: 48] | -at cd.Simulator.simulate(double) [bci: 127]
 -at CD.benchmark(int) [bci: 48]
-  loop 3 Cycles: 64898 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
-  loop 4 Cycles: 7407168 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 3 Cycles: 63522 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 4 Cycles: 11557886 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
 Comp 240 (java.lang.StringLatin1.inflate(byte[],) loops:
 Found Encoding : 0:-1,1:-1,2:-1
 ├── Loop 0
 ├── Loop 1
 └── Loop 2
-  loop 0 Cycles: 12382 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
-  loop 1 Cycles: 18314 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
-  loop 2 Cycles: 13796 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 0 Cycles: 11212 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 32582 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 12882 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
