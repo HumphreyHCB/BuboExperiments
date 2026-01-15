@@ -42,7 +42,7 @@ OUT_CSV = os.path.join(PLOTS_DIR, f"{BENCHMARK}_bubo_loops.csv")
 RUNTIME_SHARE_THRESHOLD = 2.0  # percent
 FIGSIZE = (20, 14.5)
 
-REQUIRE_BENCHMARK_PREFIX = True
+REQUIRE_BENCHMARK_PREFIX = False
 MAIN_METHOD_DOT: Optional[str] = None
 
 
@@ -133,15 +133,6 @@ def normalize_method_name_dot(s: str) -> Optional[str]:
         s = s.split("(", 1)[0]
 
     s = s.strip().rstrip(",")
-
-    if REQUIRE_BENCHMARK_PREFIX:
-        # AWFY often uses "Benchmark.<method>" rather than "<BenchmarkName>.<method>"
-        allowed_prefixes = (f"{BENCHMARK}.", "Benchmark.")
-        if not s.startswith(allowed_prefixes):
-            return None
-        # reject the bare prefix with no method name
-        if s in allowed_prefixes:
-            return None
 
     return s
 
