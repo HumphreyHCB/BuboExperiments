@@ -462,9 +462,6 @@ Block 0
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
-[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
-Requesting uncached profile for bci 32 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBytecodeProfile
-Requesting uncached profile for bci 32 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBranchTakenProbability
 === HumphreysDebugDataPhase ===
 Compilation: 52-java.util.ImmutableCollections$SetN$SetNIterator.next()
 Number of loops: 1
@@ -472,7 +469,7 @@ Number of loops: 1
 Block 0
   Successors:
     -> 1
-    -> 12
+    -> 2
   Predecessors:
   In loop: <none>
   Source positions in block:
@@ -481,8 +478,6 @@ Block 0
 
 Block 1
   Successors:
-    -> 2
-    -> 3
   Predecessors:
     <- 0
   In loop: <none>
@@ -492,9 +487,10 @@ Block 1
 
 Block 2
   Successors:
-    -> 13
+    -> 3
+    -> 4
   Predecessors:
-    <- 1
+    <- 0
   In loop: <none>
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
@@ -502,10 +498,9 @@ Block 2
 
 Block 3
   Successors:
-    -> 4
-    -> 10
+    -> 5
   Predecessors:
-    <- 1
+    <- 2
   In loop: <none>
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
@@ -515,21 +510,20 @@ Block 4
   Successors:
     -> 5
   Predecessors:
-    <- 3
+    <- 2
   In loop: <none>
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
- Found in this block : class jdk.graal.compiler.lir.amd64.Bubo.AMD64BuboRDTSCToSlot
- LoopID: 0
+
 Block 5
   Successors:
     -> 6
-    -> 9
+    -> 18
   Predecessors:
     <- 4
-    <- 7
-  In loop: L0
+    <- 3
+  In loop: <none>
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
@@ -537,40 +531,43 @@ Block 5
 Block 6
   Successors:
     -> 7
-    -> 8
+    -> 16
   Predecessors:
     <- 5
-  In loop: L0
+  In loop: <none>
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
 
 Block 7
   Successors:
-    -> 5
+    -> 8
   Predecessors:
     <- 6
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+ Found in this block : class jdk.graal.compiler.lir.amd64.Bubo.AMD64BuboRDTSCToSlot
+ LoopID: 0
+Block 8
+  Successors:
+    -> 9
+    -> 10
+  Predecessors:
+    <- 7
+    <- 13
   In loop: L0
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
 
-Block 8
+Block 9
   Successors:
     -> 11
   Predecessors:
-    <- 6
-  In loop: <none>
-  Source positions in block:
-    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
- BuboLoopMakers: 
- Found in this block : class jdk.graal.compiler.lir.amd64.Bubo.AMD64BuboWriteDeltaRDTSC
- LoopID: 0
-Block 9
-  Successors:
-  Predecessors:
-    <- 5
-  In loop: <none>
+    <- 8
+  In loop: L0
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
@@ -579,18 +576,20 @@ Block 10
   Successors:
     -> 11
   Predecessors:
-    <- 3
-  In loop: <none>
+    <- 8
+  In loop: L0
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
 
 Block 11
   Successors:
+    -> 12
+    -> 15
   Predecessors:
-    <- 8
     <- 10
-  In loop: <none>
+    <- 9
+  In loop: L0
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
@@ -598,25 +597,76 @@ Block 11
 Block 12
   Successors:
     -> 13
+    -> 14
   Predecessors:
-    <- 0
-  In loop: <none>
+    <- 11
+  In loop: L0
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
 
 Block 13
   Successors:
+    -> 8
   Predecessors:
-    <- 2
     <- 12
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 17
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+ Found in this block : class jdk.graal.compiler.lir.amd64.Bubo.AMD64BuboWriteDeltaRDTSC
+ LoopID: 0
+Block 15
+  Successors:
+  Predecessors:
+    <- 11
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 17
+  Predecessors:
+    <- 6
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+  Predecessors:
+    <- 14
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+  Predecessors:
+    <- 5
   In loop: <none>
   Source positions in block:
     HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
-java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs b05d592371fcce917a90fc28debaf21f7e7532d4836b1c9812ac396e129c7095 != 920e12a7ee41cc3a0a3487d03bd48833bfc4e8d416bdbae7234f8ba199084b4d
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs cc325e064e7585e0e6736addc07d3b5b1a1e9ec52f960e7777496af159b5096f != 920e12a7ee41cc3a0a3487d03bd48833bfc4e8d416bdbae7234f8ba199084b4d
 === HumphreysDebugDataPhase ===
 Compilation: 53-java.util.HashMap.hash(Object)
 Number of loops: 0
@@ -2019,20 +2069,7 @@ Block 0
 
 === End HumphreysDebugDataPhase ===
 === HumphreysDebugDataPhase ===
-Compilation: 70-java.lang.module.ResolvedModule.configuration()
-Number of loops: 0
-
-Block 0
-  Successors:
-  Predecessors:
-  In loop: <none>
-  Source positions in block:
-    HotSpotMethod<ResolvedModule.configuration()>
- BuboLoopMakers: 
-
-=== End HumphreysDebugDataPhase ===
-=== HumphreysDebugDataPhase ===
-Compilation: 73-java.util.HashMap.resize()
+Compilation: 69-java.util.HashMap.resize()
 Number of loops: 3
 
 Block 0
@@ -2300,7 +2337,7 @@ Block 24
   Predecessors:
     <- 23
     <- 25
-  In loop: L0
+  In loop: L2
   Source positions in block:
     SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
  BuboLoopMakers: 
@@ -2310,7 +2347,7 @@ Block 25
     -> 24
   Predecessors:
     <- 24
-  In loop: L0
+  In loop: L2
   Source positions in block:
     SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
     HotSpotMethod<HashMap.resize()>
@@ -2574,7 +2611,7 @@ Block 49
     <- 77
     <- 76
     <- 54
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2585,7 +2622,7 @@ Block 50
     -> 52
   Predecessors:
     <- 49
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2595,7 +2632,7 @@ Block 51
     -> 49
   Predecessors:
     <- 50
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2606,7 +2643,7 @@ Block 52
     -> 56
   Predecessors:
     <- 50
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2617,7 +2654,7 @@ Block 53
     -> 55
   Predecessors:
     <- 52
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2627,7 +2664,7 @@ Block 54
     -> 49
   Predecessors:
     <- 53
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2648,7 +2685,7 @@ Block 56
     -> 59
   Predecessors:
     <- 52
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2679,7 +2716,7 @@ Block 59
     -> 61
   Predecessors:
     <- 56
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2689,7 +2726,7 @@ Block 60
     -> 62
   Predecessors:
     <- 59
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2699,7 +2736,7 @@ Block 61
     -> 62
   Predecessors:
     <- 59
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2710,7 +2747,7 @@ Block 62
   Predecessors:
     <- 60
     <- 61
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2723,7 +2760,7 @@ Block 63
   Predecessors:
     <- 62
     <- 71
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2734,7 +2771,7 @@ Block 64
     -> 66
   Predecessors:
     <- 63
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2744,7 +2781,7 @@ Block 65
     -> 70
   Predecessors:
     <- 64
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2754,7 +2791,7 @@ Block 66
     -> 70
   Predecessors:
     <- 64
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2765,7 +2802,7 @@ Block 67
     -> 69
   Predecessors:
     <- 63
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2775,7 +2812,7 @@ Block 68
     -> 70
   Predecessors:
     <- 67
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2785,7 +2822,7 @@ Block 69
     -> 70
   Predecessors:
     <- 67
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2799,7 +2836,7 @@ Block 70
     <- 68
     <- 66
     <- 69
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2809,7 +2846,7 @@ Block 71
     -> 63
   Predecessors:
     <- 70
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2820,7 +2857,7 @@ Block 72
     -> 74
   Predecessors:
     <- 70
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2831,7 +2868,7 @@ Block 73
     -> 75
   Predecessors:
     <- 72
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2841,7 +2878,7 @@ Block 74
     -> 75
   Predecessors:
     <- 72
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2853,7 +2890,7 @@ Block 75
   Predecessors:
     <- 72
     <- 74
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2863,7 +2900,7 @@ Block 76
     -> 49
   Predecessors:
     <- 75
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2873,7 +2910,7 @@ Block 77
     -> 49
   Predecessors:
     <- 75
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<HashMap.resize()>
  BuboLoopMakers: 
@@ -2986,6 +3023,19 @@ Block 87
 
 === End HumphreysDebugDataPhase ===
 java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+=== HumphreysDebugDataPhase ===
+Compilation: 72-java.lang.module.ResolvedModule.configuration()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ResolvedModule.configuration()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
 === HumphreysDebugDataPhase ===
 Compilation: 74-java.lang.module.ModuleDescriptor.isOpen()
 Number of loops: 0
@@ -5686,7 +5736,7 @@ Block 39
   Predecessors:
     <- 38
     <- 43
-  In loop: L0
+  In loop: L5
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5697,7 +5747,7 @@ Block 40
     -> 43
   Predecessors:
     <- 39
-  In loop: L0
+  In loop: L5
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5727,7 +5777,7 @@ Block 43
     -> 39
   Predecessors:
     <- 40
-  In loop: L0
+  In loop: L5
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5845,7 +5895,7 @@ Block 54
   Predecessors:
     <- 53
     <- 72
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5855,7 +5905,7 @@ Block 55
     -> 60
   Predecessors:
     <- 54
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5866,7 +5916,7 @@ Block 56
     -> 145
   Predecessors:
     <- 54
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5877,7 +5927,7 @@ Block 57
     -> 60
   Predecessors:
     <- 56
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5897,7 +5947,7 @@ Block 59
     -> 60
   Predecessors:
     <- 57
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5909,7 +5959,7 @@ Block 60
   Predecessors:
     <- 54
     <- 57
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5929,7 +5979,7 @@ Block 62
     -> 63
   Predecessors:
     <- 60
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5942,7 +5992,7 @@ Block 63
   Predecessors:
     <- 62
     <- 67
-  In loop: L2
+  In loop: L4
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5953,7 +6003,7 @@ Block 64
     -> 67
   Predecessors:
     <- 63
-  In loop: L2
+  In loop: L4
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5983,7 +6033,7 @@ Block 67
     -> 63
   Predecessors:
     <- 64
-  In loop: L2
+  In loop: L4
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -5994,7 +6044,7 @@ Block 68
     -> 144
   Predecessors:
     <- 63
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6017,7 +6067,7 @@ Block 70
     -> 72
   Predecessors:
     <- 68
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6036,7 +6086,7 @@ Block 72
     -> 54
   Predecessors:
     <- 70
-  In loop: L1
+  In loop: L3
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6075,7 +6125,7 @@ Block 75
     <- 89
     <- 115
     <- 136
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6086,7 +6136,7 @@ Block 76
     -> 141
   Predecessors:
     <- 75
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6097,7 +6147,7 @@ Block 77
     -> 79
   Predecessors:
     <- 76
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6118,7 +6168,7 @@ Block 79
     -> 81
   Predecessors:
     <- 77
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6128,7 +6178,7 @@ Block 80
     -> 93
   Predecessors:
     <- 79
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6139,7 +6189,7 @@ Block 81
     -> 83
   Predecessors:
     <- 79
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6160,7 +6210,7 @@ Block 83
     -> 85
   Predecessors:
     <- 81
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6181,7 +6231,7 @@ Block 85
     -> 87
   Predecessors:
     <- 83
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6202,7 +6252,7 @@ Block 87
     -> 140
   Predecessors:
     <- 85
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6213,7 +6263,7 @@ Block 88
     -> 90
   Predecessors:
     <- 87
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6223,7 +6273,7 @@ Block 89
     -> 75
   Predecessors:
     <- 88
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6234,7 +6284,7 @@ Block 90
     -> 92
   Predecessors:
     <- 88
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6254,7 +6304,7 @@ Block 92
     -> 93
   Predecessors:
     <- 90
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6266,7 +6316,7 @@ Block 93
   Predecessors:
     <- 79
     <- 92
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6277,7 +6327,7 @@ Block 94
     -> 117
   Predecessors:
     <- 93
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6287,7 +6337,7 @@ Block 95
     -> 96
   Predecessors:
     <- 94
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6300,7 +6350,7 @@ Block 96
   Predecessors:
     <- 95
     <- 114
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6311,7 +6361,7 @@ Block 97
     -> 102
   Predecessors:
     <- 96
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6322,7 +6372,7 @@ Block 98
     -> 102
   Predecessors:
     <- 97
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6332,7 +6382,7 @@ Block 99
     -> 104
   Predecessors:
     <- 98
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6372,7 +6422,7 @@ Block 103
     -> 104
   Predecessors:
     <- 96
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6383,7 +6433,7 @@ Block 104
   Predecessors:
     <- 96
     <- 98
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6396,7 +6446,7 @@ Block 105
   Predecessors:
     <- 104
     <- 109
-  In loop: L5
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6407,7 +6457,7 @@ Block 106
     -> 109
   Predecessors:
     <- 105
-  In loop: L5
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6418,7 +6468,7 @@ Block 107
     -> 108
   Predecessors:
     <- 106
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6437,7 +6487,7 @@ Block 109
     -> 105
   Predecessors:
     <- 106
-  In loop: L5
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6448,7 +6498,7 @@ Block 110
     -> 116
   Predecessors:
     <- 105
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6459,7 +6509,7 @@ Block 111
     -> 115
   Predecessors:
     <- 107
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6471,7 +6521,7 @@ Block 112
     -> 114
   Predecessors:
     <- 110
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6490,7 +6540,7 @@ Block 114
     -> 96
   Predecessors:
     <- 112
-  In loop: L4
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6500,7 +6550,7 @@ Block 115
     -> 75
   Predecessors:
     <- 111
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6521,7 +6571,7 @@ Block 117
     -> 119
   Predecessors:
     <- 94
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6540,7 +6590,7 @@ Block 119
     -> 121
   Predecessors:
     <- 117
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6550,7 +6600,7 @@ Block 120
     -> 121
   Predecessors:
     <- 93
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6562,7 +6612,7 @@ Block 121
   Predecessors:
     <- 93
     <- 119
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6636,7 +6686,7 @@ Block 128
     -> 138
   Predecessors:
     <- 121
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6647,7 +6697,7 @@ Block 129
     -> 131
   Predecessors:
     <- 128
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6668,7 +6718,7 @@ Block 131
     -> 133
   Predecessors:
     <- 129
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6689,7 +6739,7 @@ Block 133
     -> 136
   Predecessors:
     <- 131
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -6719,7 +6769,7 @@ Block 136
     -> 75
   Predecessors:
     <- 133
-  In loop: L3
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Properties$LineReader.readLine()>
  BuboLoopMakers: 
@@ -7685,33 +7735,7 @@ Block 72
 === End HumphreysDebugDataPhase ===
 java.util.Properties$LineReader.readLine()int -1 graphSignature differs 2b486d112efd309f21b56eed8c0bb9d78dd9081f799ef08ff7c803bfde611f4a != 878ec244077db65df33a3f7d09ba7cba637998f872be81e8c5729e664e547e01
 === HumphreysDebugDataPhase ===
-Compilation: 144-java.lang.Enum.name()
-Number of loops: 0
-
-Block 0
-  Successors:
-  Predecessors:
-  In loop: <none>
-  Source positions in block:
-    HotSpotMethod<Enum.name()>
- BuboLoopMakers: 
-
-=== End HumphreysDebugDataPhase ===
-=== HumphreysDebugDataPhase ===
-Compilation: 146-sun.util.locale.BaseLocale.getLanguage()
-Number of loops: 0
-
-Block 0
-  Successors:
-  Predecessors:
-  In loop: <none>
-  Source positions in block:
-    HotSpotMethod<BaseLocale.getLanguage()>
- BuboLoopMakers: 
-
-=== End HumphreysDebugDataPhase ===
-=== HumphreysDebugDataPhase ===
-Compilation: 147-java.lang.String.isLatin1()
+Compilation: 144-java.lang.String.isLatin1()
 Number of loops: 0
 
 Block 0
@@ -7740,6 +7764,32 @@ Block 2
   In loop: <none>
   Source positions in block:
     HotSpotMethod<String.isLatin1()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 145-java.lang.Enum.name()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Enum.name()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 147-sun.util.locale.BaseLocale.getLanguage()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<BaseLocale.getLanguage()>
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
@@ -8600,7 +8650,7 @@ Block 43
     <- 55
     <- 57
     <- 54
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -8611,7 +8661,7 @@ Block 44
     -> 46
   Predecessors:
     <- 43
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
     HotSpotMethod<Bounce$Ball.bounce()>
@@ -8622,7 +8672,7 @@ Block 45
     -> 47
   Predecessors:
     <- 44
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8632,7 +8682,7 @@ Block 46
     -> 47
   Predecessors:
     <- 44
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -8645,7 +8695,7 @@ Block 47
   Predecessors:
     <- 45
     <- 46
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8655,7 +8705,7 @@ Block 48
     -> 50
   Predecessors:
     <- 47
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -8666,7 +8716,7 @@ Block 49
     -> 50
   Predecessors:
     <- 47
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8678,7 +8728,7 @@ Block 50
   Predecessors:
     <- 47
     <- 48
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8688,7 +8738,7 @@ Block 51
     -> 53
   Predecessors:
     <- 50
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8698,7 +8748,7 @@ Block 52
     -> 53
   Predecessors:
     <- 50
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -8711,7 +8761,7 @@ Block 53
   Predecessors:
     <- 50
     <- 52
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Bounce.benchmark()>
@@ -8722,7 +8772,7 @@ Block 54
     -> 43
   Predecessors:
     <- 53
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -8734,7 +8784,7 @@ Block 55
     -> 57
   Predecessors:
     <- 53
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Bounce.benchmark()>
@@ -8745,7 +8795,7 @@ Block 56
     -> 43
   Predecessors:
     <- 55
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -8755,7 +8805,7 @@ Block 57
     -> 43
   Predecessors:
     <- 55
-  In loop: L0
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -8830,7 +8880,7 @@ Block 64
   Predecessors:
     <- 63
     <- 81
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -8840,7 +8890,7 @@ Block 65
     -> 66
   Predecessors:
     <- 64
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -8855,7 +8905,7 @@ Block 66
     <- 78
     <- 80
     <- 77
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -8866,7 +8916,7 @@ Block 67
     -> 69
   Predecessors:
     <- 66
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
     HotSpotMethod<Bounce$Ball.bounce()>
@@ -8877,7 +8927,7 @@ Block 68
     -> 70
   Predecessors:
     <- 67
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8887,7 +8937,7 @@ Block 69
     -> 70
   Predecessors:
     <- 67
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -8900,7 +8950,7 @@ Block 70
   Predecessors:
     <- 68
     <- 69
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8910,7 +8960,7 @@ Block 71
     -> 73
   Predecessors:
     <- 70
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -8921,7 +8971,7 @@ Block 72
     -> 73
   Predecessors:
     <- 70
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8933,7 +8983,7 @@ Block 73
   Predecessors:
     <- 70
     <- 71
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8943,7 +8993,7 @@ Block 74
     -> 76
   Predecessors:
     <- 73
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -8953,7 +9003,7 @@ Block 75
     -> 76
   Predecessors:
     <- 73
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -8966,7 +9016,7 @@ Block 76
   Predecessors:
     <- 73
     <- 75
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Bounce.benchmark()>
@@ -8977,7 +9027,7 @@ Block 77
     -> 66
   Predecessors:
     <- 76
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -8989,7 +9039,7 @@ Block 78
     -> 80
   Predecessors:
     <- 76
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Bounce.benchmark()>
@@ -9000,7 +9050,7 @@ Block 79
     -> 66
   Predecessors:
     <- 78
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9010,7 +9060,7 @@ Block 80
     -> 66
   Predecessors:
     <- 78
-  In loop: L2
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9020,7 +9070,7 @@ Block 81
     -> 64
   Predecessors:
     <- 66
-  In loop: L1
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9206,7 +9256,7 @@ Block 5
   Predecessors:
     <- 4
     <- 6
-  In loop: L0
+  In loop: L3
   Source positions in block:
     SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
  BuboLoopMakers: 
@@ -9216,7 +9266,7 @@ Block 6
     -> 5
   Predecessors:
     <- 5
-  In loop: L0
+  In loop: L3
   Source positions in block:
     SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
     HotSpotMethod<Bounce.benchmark()>
@@ -9289,7 +9339,7 @@ Block 12
   Predecessors:
     <- 11
     <- 17
-  In loop: L1
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Arrays.setAll(Object[], IntFunction)>
  BuboLoopMakers: 
@@ -9300,7 +9350,7 @@ Block 13
     -> 44
   Predecessors:
     <- 12
-  In loop: L1
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Arrays.setAll(Object[], IntFunction)>
  BuboLoopMakers: 
@@ -9311,7 +9361,7 @@ Block 14
     -> 16
   Predecessors:
     <- 13
-  In loop: L1
+  In loop: L2
   Source positions in block:
     HotSpotMethod<Arrays.setAll(Object[], IntFunction)>
     SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
@@ -9323,7 +9373,7 @@ Block 15
     -> 17
   Predecessors:
     <- 14
-  In loop: L1
+  In loop: L2
   Source positions in block:
     SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
  BuboLoopMakers: 
@@ -9333,7 +9383,7 @@ Block 16
     -> 17
   Predecessors:
     <- 14
-  In loop: L1
+  In loop: L2
   Source positions in block:
     SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
  BuboLoopMakers: 
@@ -9344,7 +9394,7 @@ Block 17
   Predecessors:
     <- 15
     <- 16
-  In loop: L1
+  In loop: L2
   Source positions in block:
     SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
     HotSpotMethod<Random.next()>
@@ -9373,7 +9423,7 @@ Block 19
   Predecessors:
     <- 18
     <- 36
-  In loop: L2
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9383,7 +9433,7 @@ Block 20
     -> 21
   Predecessors:
     <- 19
-  In loop: L2
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9398,7 +9448,7 @@ Block 21
     <- 33
     <- 35
     <- 32
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9409,7 +9459,7 @@ Block 22
     -> 24
   Predecessors:
     <- 21
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
     HotSpotMethod<Bounce$Ball.bounce()>
@@ -9420,7 +9470,7 @@ Block 23
     -> 25
   Predecessors:
     <- 22
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -9430,7 +9480,7 @@ Block 24
     -> 25
   Predecessors:
     <- 22
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -9443,7 +9493,7 @@ Block 25
   Predecessors:
     <- 23
     <- 24
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -9453,7 +9503,7 @@ Block 26
     -> 28
   Predecessors:
     <- 25
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -9464,7 +9514,7 @@ Block 27
     -> 28
   Predecessors:
     <- 25
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -9476,7 +9526,7 @@ Block 28
   Predecessors:
     <- 25
     <- 26
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -9486,7 +9536,7 @@ Block 29
     -> 31
   Predecessors:
     <- 28
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
  BuboLoopMakers: 
@@ -9496,7 +9546,7 @@ Block 30
     -> 31
   Predecessors:
     <- 28
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -9509,7 +9559,7 @@ Block 31
   Predecessors:
     <- 28
     <- 30
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Bounce.benchmark()>
@@ -9520,7 +9570,7 @@ Block 32
     -> 21
   Predecessors:
     <- 31
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Math.abs(int)>
@@ -9532,7 +9582,7 @@ Block 33
     -> 35
   Predecessors:
     <- 31
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce$Ball.bounce()>
     HotSpotMethod<Bounce.benchmark()>
@@ -9543,7 +9593,7 @@ Block 34
     -> 21
   Predecessors:
     <- 33
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9553,7 +9603,7 @@ Block 35
     -> 21
   Predecessors:
     <- 33
-  In loop: L3
+  In loop: L1
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9563,7 +9613,7 @@ Block 36
     -> 19
   Predecessors:
     <- 21
-  In loop: L2
+  In loop: L0
   Source positions in block:
     HotSpotMethod<Bounce.benchmark()>
  BuboLoopMakers: 
@@ -9876,8 +9926,8 @@ Block 0
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
-Bounce: iterations=1 runtime: 187619us
-Bounce: iterations=2 runtime: 153653us
+Bounce: iterations=1 runtime: 185216us
+Bounce: iterations=2 runtime: 154187us
 === HumphreysDebugDataPhase ===
 Compilation: 186-Benchmark.innerBenchmarkLoop(int)
 Number of loops: 1
@@ -10727,23 +10777,23 @@ Block 30
 
 === End HumphreysDebugDataPhase ===
 Benchmark.innerBenchmarkLoop(int)boolean -1 graphSignature differs 1ce67b4520d621e4561bd5caafb0ab7415b06e884406b68566c024003a4c6740 != 7a271abf22a1270f391e80a5947622a55c5b80f49b8c0efec707ed8306ff89bb
-Bounce: iterations=3 runtime: 155716us
-Bounce: iterations=4 runtime: 154855us
-Bounce: iterations=5 runtime: 139526us
-Bounce: iterations=6 runtime: 138526us
-Bounce: iterations=7 runtime: 138424us
-Bounce: iterations=8 runtime: 165357us
-Bounce: iterations=9 runtime: 139509us
-Bounce: iterations=10 runtime: 138974us
-Bounce: iterations=11 runtime: 138621us
-Bounce: iterations=12 runtime: 165413us
-Bounce: iterations=13 runtime: 140643us
-Bounce: iterations=14 runtime: 139812us
-Bounce: iterations=15 runtime: 139283us
-Bounce: iterations=16 runtime: 164664us
-Bounce: iterations=17 runtime: 137966us
-Bounce: iterations=18 runtime: 137330us
-Bounce: iterations=19 runtime: 137974us
+Bounce: iterations=3 runtime: 168195us
+Bounce: iterations=4 runtime: 139807us
+Bounce: iterations=5 runtime: 138338us
+Bounce: iterations=6 runtime: 137353us
+Bounce: iterations=7 runtime: 163406us
+Bounce: iterations=8 runtime: 139475us
+Bounce: iterations=9 runtime: 139407us
+Bounce: iterations=10 runtime: 139122us
+Bounce: iterations=11 runtime: 164139us
+Bounce: iterations=12 runtime: 139792us
+Bounce: iterations=13 runtime: 139209us
+Bounce: iterations=14 runtime: 138535us
+Bounce: iterations=15 runtime: 138594us
+Bounce: iterations=16 runtime: 164268us
+Bounce: iterations=17 runtime: 137734us
+Bounce: iterations=18 runtime: 137827us
+Bounce: iterations=19 runtime: 138580us
 === HumphreysDebugDataPhase ===
 Compilation: 189-java.nio.Buffer.position()
 Number of loops: 0
@@ -10757,77 +10807,77 @@ Block 0
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
-Bounce: iterations=20 runtime: 137857us
-Bounce: iterations=21 runtime: 140451us
-Bounce: iterations=22 runtime: 174243us
-Bounce: iterations=23 runtime: 139644us
-Bounce: iterations=24 runtime: 138776us
-Bounce: iterations=25 runtime: 138296us
-Bounce: iterations=26 runtime: 137513us
-Bounce: iterations=27 runtime: 171085us
-Bounce: iterations=28 runtime: 139687us
-Bounce: iterations=29 runtime: 138538us
-Bounce: iterations=30 runtime: 138377us
-Bounce: iterations=31 runtime: 137951us
-Bounce: iterations=32 runtime: 137767us
-Bounce: iterations=33 runtime: 172545us
-Bounce: iterations=34 runtime: 139825us
-Bounce: iterations=35 runtime: 138668us
-Bounce: iterations=36 runtime: 138653us
-Bounce: iterations=37 runtime: 139401us
-Bounce: iterations=38 runtime: 170535us
-Bounce: iterations=39 runtime: 138582us
-Bounce: iterations=40 runtime: 137801us
-Bounce: iterations=41 runtime: 137263us
-Bounce: iterations=42 runtime: 138065us
-Bounce: iterations=43 runtime: 137984us
-Bounce: iterations=44 runtime: 137335us
-Bounce: iterations=45 runtime: 136848us
-Bounce: iterations=46 runtime: 183369us
-Bounce: iterations=47 runtime: 139332us
-Bounce: iterations=48 runtime: 138700us
-Bounce: iterations=49 runtime: 138874us
-Bounce: iterations=50 runtime: 138082us
-Bounce: iterations=51 runtime: 138290us
-Bounce: iterations=52 runtime: 138458us
-Bounce: iterations=53 runtime: 137763us
-Bounce: iterations=54 runtime: 186084us
-Bounce: iterations=55 runtime: 140048us
-Bounce: iterations=56 runtime: 138384us
-Bounce: iterations=57 runtime: 138259us
-Bounce: iterations=58 runtime: 143067us
-Bounce: iterations=59 runtime: 146680us
-Bounce: iterations=60 runtime: 138753us
-Bounce: iterations=61 runtime: 182843us
-Bounce: iterations=62 runtime: 138607us
-Bounce: iterations=63 runtime: 137883us
-Bounce: iterations=64 runtime: 137360us
-Bounce: iterations=65 runtime: 137150us
-Bounce: iterations=66 runtime: 137090us
-Bounce: iterations=67 runtime: 136812us
-Bounce: iterations=68 runtime: 137124us
-Bounce: iterations=69 runtime: 184613us
-Bounce: iterations=70 runtime: 138759us
-Bounce: iterations=71 runtime: 139471us
-Bounce: iterations=72 runtime: 137101us
-Bounce: iterations=73 runtime: 138022us
-Bounce: iterations=74 runtime: 137797us
-Bounce: iterations=75 runtime: 137807us
-Bounce: iterations=76 runtime: 137792us
-Bounce: iterations=77 runtime: 138014us
-Bounce: iterations=78 runtime: 137915us
-Bounce: iterations=79 runtime: 197555us
-Bounce: iterations=80 runtime: 139969us
-Bounce: iterations=81 runtime: 139689us
-Bounce: iterations=82 runtime: 138754us
-Bounce: iterations=83 runtime: 138613us
-Bounce: iterations=84 runtime: 138124us
-Bounce: iterations=85 runtime: 137844us
-Bounce: iterations=86 runtime: 137841us
-Bounce: iterations=87 runtime: 137734us
-Bounce: iterations=88 runtime: 137663us
-Bounce: iterations=89 runtime: 198094us
-Bounce: iterations=90 runtime: 139250us
+Bounce: iterations=20 runtime: 138152us
+Bounce: iterations=21 runtime: 174212us
+Bounce: iterations=22 runtime: 140337us
+Bounce: iterations=23 runtime: 139091us
+Bounce: iterations=24 runtime: 138401us
+Bounce: iterations=25 runtime: 138591us
+Bounce: iterations=26 runtime: 138404us
+Bounce: iterations=27 runtime: 174624us
+Bounce: iterations=28 runtime: 141567us
+Bounce: iterations=29 runtime: 148907us
+Bounce: iterations=30 runtime: 136903us
+Bounce: iterations=31 runtime: 136891us
+Bounce: iterations=32 runtime: 136577us
+Bounce: iterations=33 runtime: 173737us
+Bounce: iterations=34 runtime: 140259us
+Bounce: iterations=35 runtime: 139748us
+Bounce: iterations=36 runtime: 139637us
+Bounce: iterations=37 runtime: 139434us
+Bounce: iterations=38 runtime: 173243us
+Bounce: iterations=39 runtime: 139334us
+Bounce: iterations=40 runtime: 137964us
+Bounce: iterations=41 runtime: 137430us
+Bounce: iterations=42 runtime: 137903us
+Bounce: iterations=43 runtime: 138002us
+Bounce: iterations=44 runtime: 137457us
+Bounce: iterations=45 runtime: 137941us
+Bounce: iterations=46 runtime: 183833us
+Bounce: iterations=47 runtime: 139034us
+Bounce: iterations=48 runtime: 138259us
+Bounce: iterations=49 runtime: 137873us
+Bounce: iterations=50 runtime: 137858us
+Bounce: iterations=51 runtime: 137787us
+Bounce: iterations=52 runtime: 137637us
+Bounce: iterations=53 runtime: 144301us
+Bounce: iterations=54 runtime: 184767us
+Bounce: iterations=55 runtime: 139676us
+Bounce: iterations=56 runtime: 138951us
+Bounce: iterations=57 runtime: 138961us
+Bounce: iterations=58 runtime: 138834us
+Bounce: iterations=59 runtime: 138606us
+Bounce: iterations=60 runtime: 138486us
+Bounce: iterations=61 runtime: 139407us
+Bounce: iterations=62 runtime: 185703us
+Bounce: iterations=63 runtime: 146944us
+Bounce: iterations=64 runtime: 135837us
+Bounce: iterations=65 runtime: 135669us
+Bounce: iterations=66 runtime: 135614us
+Bounce: iterations=67 runtime: 135682us
+Bounce: iterations=68 runtime: 136145us
+Bounce: iterations=69 runtime: 181399us
+Bounce: iterations=70 runtime: 138334us
+Bounce: iterations=71 runtime: 137749us
+Bounce: iterations=72 runtime: 137913us
+Bounce: iterations=73 runtime: 137607us
+Bounce: iterations=74 runtime: 137840us
+Bounce: iterations=75 runtime: 137992us
+Bounce: iterations=76 runtime: 138018us
+Bounce: iterations=77 runtime: 138251us
+Bounce: iterations=78 runtime: 138262us
+Bounce: iterations=79 runtime: 194979us
+Bounce: iterations=80 runtime: 140043us
+Bounce: iterations=81 runtime: 138558us
+Bounce: iterations=82 runtime: 138060us
+Bounce: iterations=83 runtime: 137920us
+Bounce: iterations=84 runtime: 137937us
+Bounce: iterations=85 runtime: 137692us
+Bounce: iterations=86 runtime: 137708us
+Bounce: iterations=87 runtime: 137627us
+Bounce: iterations=88 runtime: 137324us
+Bounce: iterations=89 runtime: 194514us
+Bounce: iterations=90 runtime: 140340us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
 === HumphreysDebugDataPhase ===
@@ -10843,42 +10893,42 @@ Block 0
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
-Bounce: iterations=91 runtime: 137949us
-Bounce: iterations=92 runtime: 141112us
-Bounce: iterations=93 runtime: 139571us
-Bounce: iterations=94 runtime: 138759us
-Bounce: iterations=95 runtime: 138512us
-Bounce: iterations=96 runtime: 138295us
-Bounce: iterations=97 runtime: 138239us
-Bounce: iterations=98 runtime: 196871us
-Bounce: iterations=99 runtime: 140019us
-Bounce: iterations=100 runtime: 138705us
-Bounce: iterations=101 runtime: 138244us
-Bounce: iterations=102 runtime: 137886us
-Bounce: iterations=103 runtime: 138146us
-Bounce: iterations=104 runtime: 137686us
-Bounce: iterations=105 runtime: 137593us
-Bounce: iterations=106 runtime: 138824us
-Bounce: iterations=107 runtime: 137488us
-Bounce: iterations=108 runtime: 191816us
-Bounce: iterations=109 runtime: 137827us
-Bounce: iterations=110 runtime: 137671us
-Bounce: iterations=111 runtime: 137144us
-Bounce: iterations=112 runtime: 137460us
-Bounce: iterations=113 runtime: 138178us
-Bounce: iterations=114 runtime: 137858us
-Bounce: iterations=115 runtime: 137564us
-Bounce: iterations=116 runtime: 137791us
-Bounce: iterations=117 runtime: 137742us
-Bounce: iterations=118 runtime: 137594us
-Bounce: iterations=119 runtime: 137662us
-Bounce: iterations=120 runtime: 204601us
-Bounce: iterations=121 runtime: 139200us
-Bounce: iterations=122 runtime: 138407us
-Bounce: iterations=123 runtime: 137732us
-Bounce: iterations=124 runtime: 137410us
-Bounce: iterations=125 runtime: 138506us
-Bounce: iterations=126 runtime: 137751us
+Bounce: iterations=91 runtime: 139367us
+Bounce: iterations=92 runtime: 139916us
+Bounce: iterations=93 runtime: 138083us
+Bounce: iterations=94 runtime: 137866us
+Bounce: iterations=95 runtime: 137894us
+Bounce: iterations=96 runtime: 137767us
+Bounce: iterations=97 runtime: 138725us
+Bounce: iterations=98 runtime: 138966us
+Bounce: iterations=99 runtime: 196934us
+Bounce: iterations=100 runtime: 141498us
+Bounce: iterations=101 runtime: 139214us
+Bounce: iterations=102 runtime: 137964us
+Bounce: iterations=103 runtime: 137500us
+Bounce: iterations=104 runtime: 137529us
+Bounce: iterations=105 runtime: 137787us
+Bounce: iterations=106 runtime: 137562us
+Bounce: iterations=107 runtime: 137247us
+Bounce: iterations=108 runtime: 137080us
+Bounce: iterations=109 runtime: 192648us
+Bounce: iterations=110 runtime: 139499us
+Bounce: iterations=111 runtime: 138034us
+Bounce: iterations=112 runtime: 137801us
+Bounce: iterations=113 runtime: 138191us
+Bounce: iterations=114 runtime: 138301us
+Bounce: iterations=115 runtime: 137994us
+Bounce: iterations=116 runtime: 138101us
+Bounce: iterations=117 runtime: 138219us
+Bounce: iterations=118 runtime: 137893us
+Bounce: iterations=119 runtime: 137844us
+Bounce: iterations=120 runtime: 137626us
+Bounce: iterations=121 runtime: 137850us
+Bounce: iterations=122 runtime: 206433us
+Bounce: iterations=123 runtime: 138908us
+Bounce: iterations=124 runtime: 138401us
+Bounce: iterations=125 runtime: 138123us
+Bounce: iterations=126 runtime: 140521us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
 === HumphreysDebugDataPhase ===
@@ -10894,281 +10944,281 @@ Block 0
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
-Bounce: iterations=127 runtime: 137196us
-Bounce: iterations=128 runtime: 140111us
-Bounce: iterations=129 runtime: 138687us
-Bounce: iterations=130 runtime: 138315us
-Bounce: iterations=131 runtime: 138396us
-Bounce: iterations=132 runtime: 204605us
-Bounce: iterations=133 runtime: 140804us
-Bounce: iterations=134 runtime: 139718us
-Bounce: iterations=135 runtime: 139324us
-Bounce: iterations=136 runtime: 138911us
-Bounce: iterations=137 runtime: 138826us
-Bounce: iterations=138 runtime: 138850us
-Bounce: iterations=139 runtime: 138038us
-Bounce: iterations=140 runtime: 138137us
-Bounce: iterations=141 runtime: 138864us
-Bounce: iterations=142 runtime: 137675us
-Bounce: iterations=143 runtime: 137565us
-Bounce: iterations=144 runtime: 137311us
-Bounce: iterations=145 runtime: 205997us
-Bounce: iterations=146 runtime: 138894us
-Bounce: iterations=147 runtime: 138308us
-Bounce: iterations=148 runtime: 138220us
-Bounce: iterations=149 runtime: 138094us
-Bounce: iterations=150 runtime: 137874us
-Bounce: iterations=151 runtime: 138094us
-Bounce: iterations=152 runtime: 137795us
-Bounce: iterations=153 runtime: 137717us
-Bounce: iterations=154 runtime: 137699us
-Bounce: iterations=155 runtime: 137702us
-Bounce: iterations=156 runtime: 137699us
-Bounce: iterations=157 runtime: 205490us
-Bounce: iterations=158 runtime: 138219us
-Bounce: iterations=159 runtime: 137988us
-Bounce: iterations=160 runtime: 137117us
-Bounce: iterations=161 runtime: 137590us
-Bounce: iterations=162 runtime: 137316us
-Bounce: iterations=163 runtime: 137309us
-Bounce: iterations=164 runtime: 137227us
-Bounce: iterations=165 runtime: 137048us
-Bounce: iterations=166 runtime: 137308us
-Bounce: iterations=167 runtime: 137271us
-Bounce: iterations=168 runtime: 137203us
-Bounce: iterations=169 runtime: 137233us
-Bounce: iterations=170 runtime: 137136us
-Bounce: iterations=171 runtime: 216758us
-Bounce: iterations=172 runtime: 139729us
-Bounce: iterations=173 runtime: 138082us
-Bounce: iterations=174 runtime: 138638us
-Bounce: iterations=175 runtime: 139811us
-Bounce: iterations=176 runtime: 137369us
-Bounce: iterations=177 runtime: 137523us
-Bounce: iterations=178 runtime: 137643us
-Bounce: iterations=179 runtime: 137724us
-Bounce: iterations=180 runtime: 137237us
-Bounce: iterations=181 runtime: 137335us
-Bounce: iterations=182 runtime: 137208us
-Bounce: iterations=183 runtime: 137629us
-Bounce: iterations=184 runtime: 137578us
-Bounce: iterations=185 runtime: 215851us
-Bounce: iterations=186 runtime: 140578us
-Bounce: iterations=187 runtime: 139217us
-Bounce: iterations=188 runtime: 138792us
-Bounce: iterations=189 runtime: 138635us
-Bounce: iterations=190 runtime: 145681us
-Bounce: iterations=191 runtime: 139465us
-Bounce: iterations=192 runtime: 138915us
-Bounce: iterations=193 runtime: 138672us
-Bounce: iterations=194 runtime: 138446us
-Bounce: iterations=195 runtime: 137774us
-Bounce: iterations=196 runtime: 138053us
-Bounce: iterations=197 runtime: 137828us
-Bounce: iterations=198 runtime: 137485us
-Bounce: iterations=199 runtime: 137466us
-Bounce: iterations=200 runtime: 217803us
-Bounce: iterations=201 runtime: 139308us
-Bounce: iterations=202 runtime: 139221us
-Bounce: iterations=203 runtime: 138854us
-Bounce: iterations=204 runtime: 138021us
-Bounce: iterations=205 runtime: 137792us
-Bounce: iterations=206 runtime: 137849us
-Bounce: iterations=207 runtime: 137652us
-Bounce: iterations=208 runtime: 137281us
-Bounce: iterations=209 runtime: 137154us
-Bounce: iterations=210 runtime: 136765us
-Bounce: iterations=211 runtime: 136806us
-Bounce: iterations=212 runtime: 136720us
-Bounce: iterations=213 runtime: 136768us
-Bounce: iterations=214 runtime: 216763us
-Bounce: iterations=215 runtime: 150358us
-Bounce: iterations=216 runtime: 136987us
-Bounce: iterations=217 runtime: 136997us
-Bounce: iterations=218 runtime: 138293us
-Bounce: iterations=219 runtime: 138169us
-Bounce: iterations=220 runtime: 154940us
-Bounce: iterations=221 runtime: 140688us
-Bounce: iterations=222 runtime: 139502us
-Bounce: iterations=223 runtime: 138813us
-Bounce: iterations=224 runtime: 137899us
-Bounce: iterations=225 runtime: 138450us
-Bounce: iterations=226 runtime: 138077us
-Bounce: iterations=227 runtime: 138280us
-Bounce: iterations=228 runtime: 137828us
-Bounce: iterations=229 runtime: 138436us
-Bounce: iterations=230 runtime: 137186us
-Bounce: iterations=231 runtime: 229579us
-Bounce: iterations=232 runtime: 139384us
-Bounce: iterations=233 runtime: 138690us
-Bounce: iterations=234 runtime: 138221us
-Bounce: iterations=235 runtime: 138233us
-Bounce: iterations=236 runtime: 137917us
-Bounce: iterations=237 runtime: 138151us
-Bounce: iterations=238 runtime: 138134us
-Bounce: iterations=239 runtime: 137647us
-Bounce: iterations=240 runtime: 137804us
-Bounce: iterations=241 runtime: 137842us
-Bounce: iterations=242 runtime: 137839us
-Bounce: iterations=243 runtime: 137668us
-Bounce: iterations=244 runtime: 137608us
-Bounce: iterations=245 runtime: 137309us
-Bounce: iterations=246 runtime: 137776us
-Bounce: iterations=247 runtime: 227484us
-Bounce: iterations=248 runtime: 138712us
-Bounce: iterations=249 runtime: 138436us
-Bounce: iterations=250 runtime: 138354us
-Bounce: iterations=251 runtime: 137979us
-Bounce: iterations=252 runtime: 137811us
-Bounce: iterations=253 runtime: 137817us
-Bounce: iterations=254 runtime: 137555us
-Bounce: iterations=255 runtime: 137537us
-Bounce: iterations=256 runtime: 137831us
-Bounce: iterations=257 runtime: 137631us
-Bounce: iterations=258 runtime: 137869us
-Bounce: iterations=259 runtime: 137898us
-Bounce: iterations=260 runtime: 137340us
-Bounce: iterations=261 runtime: 137495us
-Bounce: iterations=262 runtime: 137429us
-Bounce: iterations=263 runtime: 231715us
-Bounce: iterations=264 runtime: 140758us
-Bounce: iterations=265 runtime: 139351us
-Bounce: iterations=266 runtime: 138649us
-Bounce: iterations=267 runtime: 138823us
-Bounce: iterations=268 runtime: 138652us
-Bounce: iterations=269 runtime: 138240us
-Bounce: iterations=270 runtime: 138356us
-Bounce: iterations=271 runtime: 138498us
-Bounce: iterations=272 runtime: 138033us
-Bounce: iterations=273 runtime: 138029us
-Bounce: iterations=274 runtime: 138227us
-Bounce: iterations=275 runtime: 138073us
-Bounce: iterations=276 runtime: 138069us
-Bounce: iterations=277 runtime: 138690us
-Bounce: iterations=278 runtime: 137769us
-Bounce: iterations=279 runtime: 137943us
-Bounce: iterations=280 runtime: 228165us
-Bounce: iterations=281 runtime: 139432us
-Bounce: iterations=282 runtime: 139405us
-Bounce: iterations=283 runtime: 139112us
-Bounce: iterations=284 runtime: 138574us
-Bounce: iterations=285 runtime: 138152us
-Bounce: iterations=286 runtime: 138154us
-Bounce: iterations=287 runtime: 138239us
-Bounce: iterations=288 runtime: 138227us
-Bounce: iterations=289 runtime: 137953us
-Bounce: iterations=290 runtime: 147702us
-Bounce: iterations=291 runtime: 140527us
-Bounce: iterations=292 runtime: 139189us
-Bounce: iterations=293 runtime: 138921us
-Bounce: iterations=294 runtime: 138671us
-Bounce: iterations=295 runtime: 138469us
-Bounce: iterations=296 runtime: 227460us
-Bounce: iterations=297 runtime: 139935us
-Bounce: iterations=298 runtime: 138836us
-Bounce: iterations=299 runtime: 138009us
-Bounce: iterations=300 runtime: 137749us
-Bounce: iterations=301 runtime: 137372us
-Bounce: iterations=302 runtime: 137337us
-Bounce: iterations=303 runtime: 137364us
-Bounce: iterations=304 runtime: 137230us
-Bounce: iterations=305 runtime: 137106us
-Bounce: iterations=306 runtime: 136961us
-Bounce: iterations=307 runtime: 137221us
-Bounce: iterations=308 runtime: 137181us
-Bounce: iterations=309 runtime: 137113us
-Bounce: iterations=310 runtime: 136786us
-Bounce: iterations=311 runtime: 136962us
-Bounce: iterations=312 runtime: 137352us
-Bounce: iterations=313 runtime: 228450us
-Bounce: iterations=314 runtime: 140266us
-Bounce: iterations=315 runtime: 138806us
-Bounce: iterations=316 runtime: 144493us
-Bounce: iterations=317 runtime: 138887us
-Bounce: iterations=318 runtime: 137879us
-Bounce: iterations=319 runtime: 137404us
-Bounce: iterations=320 runtime: 137484us
-Bounce: iterations=321 runtime: 137392us
-Bounce: iterations=322 runtime: 137362us
-Bounce: iterations=323 runtime: 137275us
-Bounce: iterations=324 runtime: 137385us
-Bounce: iterations=325 runtime: 137444us
-Bounce: iterations=326 runtime: 137418us
-Bounce: iterations=327 runtime: 137568us
-Bounce: iterations=328 runtime: 137269us
-Bounce: iterations=329 runtime: 227287us
-Bounce: iterations=330 runtime: 139929us
-Bounce: iterations=331 runtime: 138836us
-Bounce: iterations=332 runtime: 138955us
-Bounce: iterations=333 runtime: 139289us
-Bounce: iterations=334 runtime: 147314us
-Bounce: iterations=335 runtime: 138781us
-Bounce: iterations=336 runtime: 138346us
-Bounce: iterations=337 runtime: 138012us
-Bounce: iterations=338 runtime: 138092us
-Bounce: iterations=339 runtime: 137658us
-Bounce: iterations=340 runtime: 137164us
-Bounce: iterations=341 runtime: 137218us
-Bounce: iterations=342 runtime: 137578us
-Bounce: iterations=343 runtime: 137381us
-Bounce: iterations=344 runtime: 137602us
-Bounce: iterations=345 runtime: 137422us
-Bounce: iterations=346 runtime: 229637us
-Bounce: iterations=347 runtime: 139652us
-Bounce: iterations=348 runtime: 139523us
-Bounce: iterations=349 runtime: 138632us
-Bounce: iterations=350 runtime: 138651us
-Bounce: iterations=351 runtime: 138553us
-Bounce: iterations=352 runtime: 138227us
-Bounce: iterations=353 runtime: 138505us
-Bounce: iterations=354 runtime: 138553us
-Bounce: iterations=355 runtime: 138156us
-Bounce: iterations=356 runtime: 138050us
-Bounce: iterations=357 runtime: 137664us
-Bounce: iterations=358 runtime: 137545us
-Bounce: iterations=359 runtime: 137715us
-Bounce: iterations=360 runtime: 137715us
-Bounce: iterations=361 runtime: 137866us
-Bounce: iterations=362 runtime: 228233us
-Bounce: iterations=363 runtime: 140094us
-Bounce: iterations=364 runtime: 139309us
-Bounce: iterations=365 runtime: 138764us
-Bounce: iterations=366 runtime: 138621us
-Bounce: iterations=367 runtime: 138463us
-Bounce: iterations=368 runtime: 138003us
-Bounce: iterations=369 runtime: 137988us
-Bounce: iterations=370 runtime: 137898us
-Bounce: iterations=371 runtime: 137806us
-Bounce: iterations=372 runtime: 137757us
-Bounce: iterations=373 runtime: 137820us
-Bounce: iterations=374 runtime: 137658us
-Bounce: iterations=375 runtime: 137524us
-Bounce: iterations=376 runtime: 137474us
-Bounce: iterations=377 runtime: 137308us
-Bounce: iterations=378 runtime: 137170us
-Bounce: iterations=379 runtime: 258873us
-Bounce: iterations=380 runtime: 155581us
-Bounce: iterations=381 runtime: 149811us
-Bounce: iterations=382 runtime: 137697us
-Bounce: iterations=383 runtime: 137590us
-Bounce: iterations=384 runtime: 137625us
-Bounce: iterations=385 runtime: 137480us
-Bounce: iterations=386 runtime: 137614us
-Bounce: iterations=387 runtime: 137196us
-Bounce: iterations=388 runtime: 137291us
-Bounce: iterations=389 runtime: 136974us
-Bounce: iterations=390 runtime: 137028us
-Bounce: iterations=391 runtime: 137118us
-Bounce: iterations=392 runtime: 137360us
-Bounce: iterations=393 runtime: 136923us
-Bounce: iterations=394 runtime: 136753us
-Bounce: iterations=395 runtime: 227413us
-Bounce: iterations=396 runtime: 140263us
-Bounce: iterations=397 runtime: 140340us
-Bounce: iterations=398 runtime: 139970us
-Bounce: iterations=399 runtime: 140047us
-Bounce: iterations=400 runtime: 139423us
-Bounce: iterations=401 runtime: 139379us
+Bounce: iterations=127 runtime: 137117us
+Bounce: iterations=128 runtime: 139833us
+Bounce: iterations=129 runtime: 138643us
+Bounce: iterations=130 runtime: 138454us
+Bounce: iterations=131 runtime: 138441us
+Bounce: iterations=132 runtime: 138741us
+Bounce: iterations=133 runtime: 148555us
+Bounce: iterations=134 runtime: 206964us
+Bounce: iterations=135 runtime: 139522us
+Bounce: iterations=136 runtime: 138970us
+Bounce: iterations=137 runtime: 138551us
+Bounce: iterations=138 runtime: 138465us
+Bounce: iterations=139 runtime: 137728us
+Bounce: iterations=140 runtime: 137633us
+Bounce: iterations=141 runtime: 137444us
+Bounce: iterations=142 runtime: 137153us
+Bounce: iterations=143 runtime: 137116us
+Bounce: iterations=144 runtime: 136587us
+Bounce: iterations=145 runtime: 136543us
+Bounce: iterations=146 runtime: 204765us
+Bounce: iterations=147 runtime: 138474us
+Bounce: iterations=148 runtime: 138483us
+Bounce: iterations=149 runtime: 137863us
+Bounce: iterations=150 runtime: 137739us
+Bounce: iterations=151 runtime: 137696us
+Bounce: iterations=152 runtime: 137340us
+Bounce: iterations=153 runtime: 136997us
+Bounce: iterations=154 runtime: 136953us
+Bounce: iterations=155 runtime: 137033us
+Bounce: iterations=156 runtime: 136823us
+Bounce: iterations=157 runtime: 136869us
+Bounce: iterations=158 runtime: 205203us
+Bounce: iterations=159 runtime: 139641us
+Bounce: iterations=160 runtime: 138428us
+Bounce: iterations=161 runtime: 138360us
+Bounce: iterations=162 runtime: 138137us
+Bounce: iterations=163 runtime: 138032us
+Bounce: iterations=164 runtime: 137528us
+Bounce: iterations=165 runtime: 137146us
+Bounce: iterations=166 runtime: 137186us
+Bounce: iterations=167 runtime: 137851us
+Bounce: iterations=168 runtime: 137360us
+Bounce: iterations=169 runtime: 136936us
+Bounce: iterations=170 runtime: 137115us
+Bounce: iterations=171 runtime: 137183us
+Bounce: iterations=172 runtime: 216351us
+Bounce: iterations=173 runtime: 139879us
+Bounce: iterations=174 runtime: 139091us
+Bounce: iterations=175 runtime: 138845us
+Bounce: iterations=176 runtime: 138433us
+Bounce: iterations=177 runtime: 137912us
+Bounce: iterations=178 runtime: 137772us
+Bounce: iterations=179 runtime: 137799us
+Bounce: iterations=180 runtime: 137558us
+Bounce: iterations=181 runtime: 137778us
+Bounce: iterations=182 runtime: 137771us
+Bounce: iterations=183 runtime: 146485us
+Bounce: iterations=184 runtime: 140122us
+Bounce: iterations=185 runtime: 139636us
+Bounce: iterations=186 runtime: 139326us
+Bounce: iterations=187 runtime: 219089us
+Bounce: iterations=188 runtime: 139697us
+Bounce: iterations=189 runtime: 139063us
+Bounce: iterations=190 runtime: 138822us
+Bounce: iterations=191 runtime: 138649us
+Bounce: iterations=192 runtime: 138518us
+Bounce: iterations=193 runtime: 138599us
+Bounce: iterations=194 runtime: 138579us
+Bounce: iterations=195 runtime: 138294us
+Bounce: iterations=196 runtime: 138408us
+Bounce: iterations=197 runtime: 138568us
+Bounce: iterations=198 runtime: 138325us
+Bounce: iterations=199 runtime: 138322us
+Bounce: iterations=200 runtime: 138623us
+Bounce: iterations=201 runtime: 217662us
+Bounce: iterations=202 runtime: 139877us
+Bounce: iterations=203 runtime: 138456us
+Bounce: iterations=204 runtime: 138351us
+Bounce: iterations=205 runtime: 138340us
+Bounce: iterations=206 runtime: 138412us
+Bounce: iterations=207 runtime: 137922us
+Bounce: iterations=208 runtime: 137982us
+Bounce: iterations=209 runtime: 138321us
+Bounce: iterations=210 runtime: 137995us
+Bounce: iterations=211 runtime: 138305us
+Bounce: iterations=212 runtime: 138301us
+Bounce: iterations=213 runtime: 138069us
+Bounce: iterations=214 runtime: 145707us
+Bounce: iterations=215 runtime: 221407us
+Bounce: iterations=216 runtime: 140084us
+Bounce: iterations=217 runtime: 139037us
+Bounce: iterations=218 runtime: 138212us
+Bounce: iterations=219 runtime: 138524us
+Bounce: iterations=220 runtime: 138706us
+Bounce: iterations=221 runtime: 138472us
+Bounce: iterations=222 runtime: 138411us
+Bounce: iterations=223 runtime: 138290us
+Bounce: iterations=224 runtime: 137998us
+Bounce: iterations=225 runtime: 138245us
+Bounce: iterations=226 runtime: 138158us
+Bounce: iterations=227 runtime: 137793us
+Bounce: iterations=228 runtime: 138004us
+Bounce: iterations=229 runtime: 137947us
+Bounce: iterations=230 runtime: 137693us
+Bounce: iterations=231 runtime: 138063us
+Bounce: iterations=232 runtime: 228247us
+Bounce: iterations=233 runtime: 139862us
+Bounce: iterations=234 runtime: 139406us
+Bounce: iterations=235 runtime: 138995us
+Bounce: iterations=236 runtime: 139210us
+Bounce: iterations=237 runtime: 152886us
+Bounce: iterations=238 runtime: 135728us
+Bounce: iterations=239 runtime: 135526us
+Bounce: iterations=240 runtime: 135622us
+Bounce: iterations=241 runtime: 135694us
+Bounce: iterations=242 runtime: 135818us
+Bounce: iterations=243 runtime: 135860us
+Bounce: iterations=244 runtime: 135878us
+Bounce: iterations=245 runtime: 135685us
+Bounce: iterations=246 runtime: 135860us
+Bounce: iterations=247 runtime: 135673us
+Bounce: iterations=248 runtime: 135665us
+Bounce: iterations=249 runtime: 230410us
+Bounce: iterations=250 runtime: 140646us
+Bounce: iterations=251 runtime: 139302us
+Bounce: iterations=252 runtime: 138958us
+Bounce: iterations=253 runtime: 138955us
+Bounce: iterations=254 runtime: 138422us
+Bounce: iterations=255 runtime: 138549us
+Bounce: iterations=256 runtime: 138712us
+Bounce: iterations=257 runtime: 138176us
+Bounce: iterations=258 runtime: 138412us
+Bounce: iterations=259 runtime: 138455us
+Bounce: iterations=260 runtime: 138313us
+Bounce: iterations=261 runtime: 138326us
+Bounce: iterations=262 runtime: 138314us
+Bounce: iterations=263 runtime: 138191us
+Bounce: iterations=264 runtime: 138088us
+Bounce: iterations=265 runtime: 228857us
+Bounce: iterations=266 runtime: 140391us
+Bounce: iterations=267 runtime: 139952us
+Bounce: iterations=268 runtime: 139420us
+Bounce: iterations=269 runtime: 139254us
+Bounce: iterations=270 runtime: 138713us
+Bounce: iterations=271 runtime: 151955us
+Bounce: iterations=272 runtime: 140867us
+Bounce: iterations=273 runtime: 139389us
+Bounce: iterations=274 runtime: 138370us
+Bounce: iterations=275 runtime: 137731us
+Bounce: iterations=276 runtime: 137534us
+Bounce: iterations=277 runtime: 137534us
+Bounce: iterations=278 runtime: 137347us
+Bounce: iterations=279 runtime: 137359us
+Bounce: iterations=280 runtime: 137375us
+Bounce: iterations=281 runtime: 137286us
+Bounce: iterations=282 runtime: 230253us
+Bounce: iterations=283 runtime: 139387us
+Bounce: iterations=284 runtime: 138964us
+Bounce: iterations=285 runtime: 138837us
+Bounce: iterations=286 runtime: 138521us
+Bounce: iterations=287 runtime: 138261us
+Bounce: iterations=288 runtime: 138511us
+Bounce: iterations=289 runtime: 138639us
+Bounce: iterations=290 runtime: 138360us
+Bounce: iterations=291 runtime: 138404us
+Bounce: iterations=292 runtime: 138246us
+Bounce: iterations=293 runtime: 138410us
+Bounce: iterations=294 runtime: 138402us
+Bounce: iterations=295 runtime: 138132us
+Bounce: iterations=296 runtime: 138325us
+Bounce: iterations=297 runtime: 138413us
+Bounce: iterations=298 runtime: 228776us
+Bounce: iterations=299 runtime: 139521us
+Bounce: iterations=300 runtime: 138629us
+Bounce: iterations=301 runtime: 137776us
+Bounce: iterations=302 runtime: 138008us
+Bounce: iterations=303 runtime: 137717us
+Bounce: iterations=304 runtime: 137580us
+Bounce: iterations=305 runtime: 137791us
+Bounce: iterations=306 runtime: 153529us
+Bounce: iterations=307 runtime: 136467us
+Bounce: iterations=308 runtime: 136571us
+Bounce: iterations=309 runtime: 136441us
+Bounce: iterations=310 runtime: 136220us
+Bounce: iterations=311 runtime: 136414us
+Bounce: iterations=312 runtime: 136032us
+Bounce: iterations=313 runtime: 135710us
+Bounce: iterations=314 runtime: 135814us
+Bounce: iterations=315 runtime: 230527us
+Bounce: iterations=316 runtime: 139756us
+Bounce: iterations=317 runtime: 138991us
+Bounce: iterations=318 runtime: 138656us
+Bounce: iterations=319 runtime: 138625us
+Bounce: iterations=320 runtime: 138841us
+Bounce: iterations=321 runtime: 138604us
+Bounce: iterations=322 runtime: 138325us
+Bounce: iterations=323 runtime: 138139us
+Bounce: iterations=324 runtime: 138123us
+Bounce: iterations=325 runtime: 137990us
+Bounce: iterations=326 runtime: 137970us
+Bounce: iterations=327 runtime: 137841us
+Bounce: iterations=328 runtime: 138127us
+Bounce: iterations=329 runtime: 138153us
+Bounce: iterations=330 runtime: 137952us
+Bounce: iterations=331 runtime: 229020us
+Bounce: iterations=332 runtime: 140202us
+Bounce: iterations=333 runtime: 139381us
+Bounce: iterations=334 runtime: 138398us
+Bounce: iterations=335 runtime: 138371us
+Bounce: iterations=336 runtime: 138227us
+Bounce: iterations=337 runtime: 137982us
+Bounce: iterations=338 runtime: 137917us
+Bounce: iterations=339 runtime: 138125us
+Bounce: iterations=340 runtime: 138234us
+Bounce: iterations=341 runtime: 139165us
+Bounce: iterations=342 runtime: 137602us
+Bounce: iterations=343 runtime: 137273us
+Bounce: iterations=344 runtime: 137465us
+Bounce: iterations=345 runtime: 137680us
+Bounce: iterations=346 runtime: 137532us
+Bounce: iterations=347 runtime: 137672us
+Bounce: iterations=348 runtime: 232031us
+Bounce: iterations=349 runtime: 141060us
+Bounce: iterations=350 runtime: 140888us
+Bounce: iterations=351 runtime: 140219us
+Bounce: iterations=352 runtime: 139893us
+Bounce: iterations=353 runtime: 139781us
+Bounce: iterations=354 runtime: 139481us
+Bounce: iterations=355 runtime: 139380us
+Bounce: iterations=356 runtime: 139380us
+Bounce: iterations=357 runtime: 138774us
+Bounce: iterations=358 runtime: 138390us
+Bounce: iterations=359 runtime: 138600us
+Bounce: iterations=360 runtime: 138400us
+Bounce: iterations=361 runtime: 137909us
+Bounce: iterations=362 runtime: 138073us
+Bounce: iterations=363 runtime: 138001us
+Bounce: iterations=364 runtime: 228917us
+Bounce: iterations=365 runtime: 140265us
+Bounce: iterations=366 runtime: 139204us
+Bounce: iterations=367 runtime: 139200us
+Bounce: iterations=368 runtime: 139119us
+Bounce: iterations=369 runtime: 138730us
+Bounce: iterations=370 runtime: 138364us
+Bounce: iterations=371 runtime: 138116us
+Bounce: iterations=372 runtime: 137949us
+Bounce: iterations=373 runtime: 137670us
+Bounce: iterations=374 runtime: 148699us
+Bounce: iterations=375 runtime: 138116us
+Bounce: iterations=376 runtime: 153907us
+Bounce: iterations=377 runtime: 136160us
+Bounce: iterations=378 runtime: 135720us
+Bounce: iterations=379 runtime: 135987us
+Bounce: iterations=380 runtime: 135957us
+Bounce: iterations=381 runtime: 231418us
+Bounce: iterations=382 runtime: 139632us
+Bounce: iterations=383 runtime: 139117us
+Bounce: iterations=384 runtime: 138624us
+Bounce: iterations=385 runtime: 138751us
+Bounce: iterations=386 runtime: 138755us
+Bounce: iterations=387 runtime: 138398us
+Bounce: iterations=388 runtime: 138516us
+Bounce: iterations=389 runtime: 138725us
+Bounce: iterations=390 runtime: 138551us
+Bounce: iterations=391 runtime: 138426us
+Bounce: iterations=392 runtime: 138599us
+Bounce: iterations=393 runtime: 138073us
+Bounce: iterations=394 runtime: 138016us
+Bounce: iterations=395 runtime: 138025us
+Bounce: iterations=396 runtime: 137656us
+Bounce: iterations=397 runtime: 229259us
+Bounce: iterations=398 runtime: 140601us
+Bounce: iterations=399 runtime: 139374us
+Bounce: iterations=400 runtime: 139013us
+Bounce: iterations=401 runtime: 138958us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
 === HumphreysDebugDataPhase ===
@@ -11523,105 +11573,105 @@ Block 31
 
 === End HumphreysDebugDataPhase ===
 java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
-Bounce: iterations=402 runtime: 139469us
-Bounce: iterations=403 runtime: 140893us
-Bounce: iterations=404 runtime: 140680us
-Bounce: iterations=405 runtime: 139443us
-Bounce: iterations=406 runtime: 139710us
-Bounce: iterations=407 runtime: 139215us
-Bounce: iterations=408 runtime: 138829us
-Bounce: iterations=409 runtime: 138920us
-Bounce: iterations=410 runtime: 138557us
-Bounce: iterations=411 runtime: 227015us
-Bounce: iterations=412 runtime: 141656us
-Bounce: iterations=413 runtime: 140647us
-Bounce: iterations=414 runtime: 139848us
-Bounce: iterations=415 runtime: 140413us
-Bounce: iterations=416 runtime: 139659us
-Bounce: iterations=417 runtime: 139327us
-Bounce: iterations=418 runtime: 139437us
-Bounce: iterations=419 runtime: 139581us
-Bounce: iterations=420 runtime: 138837us
-Bounce: iterations=421 runtime: 138953us
-Bounce: iterations=422 runtime: 139024us
-Bounce: iterations=423 runtime: 138343us
-Bounce: iterations=424 runtime: 138225us
-Bounce: iterations=425 runtime: 138286us
-Bounce: iterations=426 runtime: 138115us
-Bounce: iterations=427 runtime: 138088us
-Bounce: iterations=428 runtime: 228627us
-Bounce: iterations=429 runtime: 140202us
-Bounce: iterations=430 runtime: 139971us
-Bounce: iterations=431 runtime: 140179us
-Bounce: iterations=432 runtime: 139633us
-Bounce: iterations=433 runtime: 139381us
-Bounce: iterations=434 runtime: 138929us
-Bounce: iterations=435 runtime: 138713us
-Bounce: iterations=436 runtime: 138954us
-Bounce: iterations=437 runtime: 138532us
-Bounce: iterations=438 runtime: 138386us
-Bounce: iterations=439 runtime: 138258us
-Bounce: iterations=440 runtime: 138129us
-Bounce: iterations=441 runtime: 138277us
-Bounce: iterations=442 runtime: 138553us
-Bounce: iterations=443 runtime: 138143us
-Bounce: iterations=444 runtime: 228025us
-Bounce: iterations=445 runtime: 141706us
-Bounce: iterations=446 runtime: 140129us
-Bounce: iterations=447 runtime: 140034us
-Bounce: iterations=448 runtime: 139469us
-Bounce: iterations=449 runtime: 139664us
-Bounce: iterations=450 runtime: 139488us
-Bounce: iterations=451 runtime: 138924us
-Bounce: iterations=452 runtime: 138818us
-Bounce: iterations=453 runtime: 138680us
-Bounce: iterations=454 runtime: 138933us
-Bounce: iterations=455 runtime: 138832us
-Bounce: iterations=456 runtime: 138895us
-Bounce: iterations=457 runtime: 138996us
-Bounce: iterations=458 runtime: 138451us
-Bounce: iterations=459 runtime: 138677us
-Bounce: iterations=460 runtime: 138776us
-Bounce: iterations=461 runtime: 228431us
-Bounce: iterations=462 runtime: 139993us
-Bounce: iterations=463 runtime: 139590us
-Bounce: iterations=464 runtime: 138947us
-Bounce: iterations=465 runtime: 139133us
-Bounce: iterations=466 runtime: 139217us
-Bounce: iterations=467 runtime: 138906us
-Bounce: iterations=468 runtime: 139081us
-Bounce: iterations=469 runtime: 138690us
-Bounce: iterations=470 runtime: 138276us
-Bounce: iterations=471 runtime: 138629us
-Bounce: iterations=472 runtime: 138323us
-Bounce: iterations=473 runtime: 138012us
-Bounce: iterations=474 runtime: 138035us
-Bounce: iterations=475 runtime: 138336us
-Bounce: iterations=476 runtime: 138021us
-Bounce: iterations=477 runtime: 231626us
-Bounce: iterations=478 runtime: 141384us
-Bounce: iterations=479 runtime: 138826us
-Bounce: iterations=480 runtime: 138703us
-Bounce: iterations=481 runtime: 138569us
-Bounce: iterations=482 runtime: 138397us
-Bounce: iterations=483 runtime: 138463us
-Bounce: iterations=484 runtime: 138925us
-Bounce: iterations=485 runtime: 138337us
-Bounce: iterations=486 runtime: 138433us
-Bounce: iterations=487 runtime: 138058us
-Bounce: iterations=488 runtime: 137937us
-Bounce: iterations=489 runtime: 138098us
-Bounce: iterations=490 runtime: 137960us
-Bounce: iterations=491 runtime: 137796us
-Bounce: iterations=492 runtime: 137644us
-Bounce: iterations=493 runtime: 137746us
-Bounce: iterations=494 runtime: 227892us
-Bounce: iterations=495 runtime: 139233us
-Bounce: iterations=496 runtime: 173203us
-Bounce: iterations=497 runtime: 212007us
-Bounce: iterations=498 runtime: 140959us
-Bounce: iterations=499 runtime: 139426us
-Bounce: iterations=500 runtime: 166772us
+Bounce: iterations=402 runtime: 139842us
+Bounce: iterations=403 runtime: 140826us
+Bounce: iterations=404 runtime: 139089us
+Bounce: iterations=405 runtime: 138510us
+Bounce: iterations=406 runtime: 138707us
+Bounce: iterations=407 runtime: 138654us
+Bounce: iterations=408 runtime: 138446us
+Bounce: iterations=409 runtime: 138213us
+Bounce: iterations=410 runtime: 139778us
+Bounce: iterations=411 runtime: 137545us
+Bounce: iterations=412 runtime: 137666us
+Bounce: iterations=413 runtime: 137385us
+Bounce: iterations=414 runtime: 231912us
+Bounce: iterations=415 runtime: 141220us
+Bounce: iterations=416 runtime: 140041us
+Bounce: iterations=417 runtime: 139516us
+Bounce: iterations=418 runtime: 139595us
+Bounce: iterations=419 runtime: 139488us
+Bounce: iterations=420 runtime: 139027us
+Bounce: iterations=421 runtime: 139254us
+Bounce: iterations=422 runtime: 139247us
+Bounce: iterations=423 runtime: 138997us
+Bounce: iterations=424 runtime: 139401us
+Bounce: iterations=425 runtime: 139527us
+Bounce: iterations=426 runtime: 139128us
+Bounce: iterations=427 runtime: 139416us
+Bounce: iterations=428 runtime: 138904us
+Bounce: iterations=429 runtime: 138684us
+Bounce: iterations=430 runtime: 230072us
+Bounce: iterations=431 runtime: 141743us
+Bounce: iterations=432 runtime: 140650us
+Bounce: iterations=433 runtime: 140305us
+Bounce: iterations=434 runtime: 139844us
+Bounce: iterations=435 runtime: 139619us
+Bounce: iterations=436 runtime: 139467us
+Bounce: iterations=437 runtime: 138931us
+Bounce: iterations=438 runtime: 138957us
+Bounce: iterations=439 runtime: 139035us
+Bounce: iterations=440 runtime: 138711us
+Bounce: iterations=441 runtime: 138900us
+Bounce: iterations=442 runtime: 138718us
+Bounce: iterations=443 runtime: 138787us
+Bounce: iterations=444 runtime: 139424us
+Bounce: iterations=445 runtime: 139275us
+Bounce: iterations=446 runtime: 138078us
+Bounce: iterations=447 runtime: 231186us
+Bounce: iterations=448 runtime: 140304us
+Bounce: iterations=449 runtime: 139364us
+Bounce: iterations=450 runtime: 139413us
+Bounce: iterations=451 runtime: 139237us
+Bounce: iterations=452 runtime: 138719us
+Bounce: iterations=453 runtime: 138442us
+Bounce: iterations=454 runtime: 138496us
+Bounce: iterations=455 runtime: 138216us
+Bounce: iterations=456 runtime: 138101us
+Bounce: iterations=457 runtime: 138307us
+Bounce: iterations=458 runtime: 138093us
+Bounce: iterations=459 runtime: 138121us
+Bounce: iterations=460 runtime: 137924us
+Bounce: iterations=461 runtime: 137667us
+Bounce: iterations=462 runtime: 137636us
+Bounce: iterations=463 runtime: 228789us
+Bounce: iterations=464 runtime: 139953us
+Bounce: iterations=465 runtime: 139550us
+Bounce: iterations=466 runtime: 139249us
+Bounce: iterations=467 runtime: 139100us
+Bounce: iterations=468 runtime: 144453us
+Bounce: iterations=469 runtime: 138476us
+Bounce: iterations=470 runtime: 143237us
+Bounce: iterations=471 runtime: 145191us
+Bounce: iterations=472 runtime: 141375us
+Bounce: iterations=473 runtime: 140436us
+Bounce: iterations=474 runtime: 139940us
+Bounce: iterations=475 runtime: 139719us
+Bounce: iterations=476 runtime: 139028us
+Bounce: iterations=477 runtime: 138796us
+Bounce: iterations=478 runtime: 138601us
+Bounce: iterations=479 runtime: 154755us
+Bounce: iterations=480 runtime: 229885us
+Bounce: iterations=481 runtime: 140039us
+Bounce: iterations=482 runtime: 139337us
+Bounce: iterations=483 runtime: 138825us
+Bounce: iterations=484 runtime: 138814us
+Bounce: iterations=485 runtime: 138658us
+Bounce: iterations=486 runtime: 138454us
+Bounce: iterations=487 runtime: 138236us
+Bounce: iterations=488 runtime: 138095us
+Bounce: iterations=489 runtime: 137803us
+Bounce: iterations=490 runtime: 137799us
+Bounce: iterations=491 runtime: 137774us
+Bounce: iterations=492 runtime: 138158us
+Bounce: iterations=493 runtime: 137779us
+Bounce: iterations=494 runtime: 137815us
+Bounce: iterations=495 runtime: 137699us
+Bounce: iterations=496 runtime: 229219us
+Bounce: iterations=497 runtime: 140472us
+Bounce: iterations=498 runtime: 139996us
+Bounce: iterations=499 runtime: 139430us
+Bounce: iterations=500 runtime: 139214us
 Could not locate BlockSlowdown.json
 Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
 === HumphreysDebugDataPhase ===
@@ -12634,7 +12684,7 @@ Block 29
 
 === End HumphreysDebugDataPhase ===
 java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)int -1 graphSignature differs bc8f20c8c772d3cc0eaba9b68bcd84047d761ba16a7aeb64fe90c36d37dcccb7 != 3bdd078c3a9d60d7eff24b6603d8a355db817965321aded167eb2387bae94eb4
-Bounce: iterations=500 average: 144577us total: 72288662us
+Bounce: iterations=500 average: 144435us total: 72217647us
 
 
 === HumphreysDebugDataPhase ===
@@ -12650,7 +12700,7 @@ Block 0
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
-Total Runtime: 72288662us
+Total Runtime: 72217647us
 === HumphreysDebugDataPhase ===
 Compilation: 215-java.lang.invoke.MethodHandles$Lookup.lookupClass()
 Number of loops: 0
@@ -12664,59 +12714,59 @@ Block 0
  BuboLoopMakers: 
 
 === End HumphreysDebugDataPhase ===
-Bubo.RDTSC.Harness.main Total RDTSC cycles: 239927644720
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 239678017746
 shutdown : 2500000
-Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 375614 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
-Comp 57 (java.util.HashMap.putVal(int,) loops:
+  loop 0 Cycles: 375590 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 57 (java.util.HashMap.putVal(int,-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 10498 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
-Comp 58 (java.lang.String.equals(Object)) loops:
+  loop 0 Cycles: 11112 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 5980 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+  loop 0 Cycles: 5536 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
 -at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
 -at java.lang.String.equals(String.java:1926) [bci: 44]
-Comp 73 (java.util.HashMap.resize()) loops:
+Comp 69 (java.util.HashMap.resize()-Re-Comp) loops:
 Found Encoding : 2:-1,0:-1,1:0
 ├── Loop 2
 └── Loop 0
     └── Loop 1
-  loop 0 Cycles: 36010 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
-  loop 1 Cycles: 11356 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
-  loop 2 Cycles: 16656 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
-Comp 84 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+  loop 0 Cycles: 29462 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 8940 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 17194 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 84 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,-Re-Comp) loops:
 Found Encoding : 0:-1,1:-1,2:-1
 ├── Loop 0
 ├── Loop 1
 └── Loop 2
-  loop 0 Cycles: 80 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-  loop 1 Cycles: 130 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-  loop 2 Cycles: 170 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 0 Cycles: 82 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 126 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 174 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
 Comp 85 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,-Re-Comp) loops:
 Found Encoding : 0:-1,1:-1,2:-1
 ├── Loop 0
 ├── Loop 1
 └── Loop 2
-  loop 0 Cycles: 97812 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-  loop 1 Cycles: 195862 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-  loop 2 Cycles: 156444 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
-Comp 87 (java.lang.StringCoding.countPositives(byte[],) loops:
+  loop 0 Cycles: 96442 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 193564 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 155780 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 87 (java.lang.StringCoding.countPositives(byte[],-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 352 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+  loop 0 Cycles: 160 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
 Comp 88 (java.lang.StringCoding.countPositives(byte[],-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 12262 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
-Comp 138 (java.lang.StringLatin1.equals(byte[],) loops:
+  loop 0 Cycles: 12122 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.countPositives(StringCoding.java:92) [bci: 7] | -at java.lang.StringCoding.countPositives(StringCoding.java:97) [bci: 31]
+Comp 138 (java.lang.StringLatin1.equals(byte[],-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 22868 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
-Comp 142 (java.util.Properties$LineReader.readLine()) loops:
+  loop 0 Cycles: 23670 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 142 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
 Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
 ├── Loop 5
 ├── Loop 3
@@ -12724,58 +12774,58 @@ Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
 └── Loop 0
     └── Loop 1
         └── Loop 2
-  loop 1 Cycles: 351152 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
-  loop 2 Cycles: 16394 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
-  loop 5 Cycles: 238 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 1 Cycles: 358502 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 18960 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 250 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
 Comp 143 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
 Found Encoding : 0:-1,1:0,2:1
 └── Loop 0
     └── Loop 1
         └── Loop 2
-  loop 0 Cycles: 658722 || Activation Count:0 | LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
-  loop 1 Cycles: 573244 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
-  loop 2 Cycles: 142052 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
-Comp 173 (Bounce.benchmark()) loops:
+  loop 0 Cycles: 809752 || Activation Count:0 | LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 661022 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 151646 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 173 (Bounce.benchmark()-Re-Comp) loops:
 Found Encoding : 2:-1,0:-1,1:0
 ├── Loop 2
 └── Loop 0
     └── Loop 1
-  loop 0 Cycles: 87582 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 33] | -at Bounce.benchmark() [bci: 89]
-  loop 1 Cycles: 83656 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
-  loop 2 Cycles: 580 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
+  loop 0 Cycles: 86856 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 33] | -at Bounce.benchmark() [bci: 89]
+  loop 1 Cycles: 83326 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
+  loop 2 Cycles: 626 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
 Comp 174 (Bounce.benchmark()-Re-Comp) loops:
 Found Encoding : 3:-1,2:-1,0:-1,1:0
 ├── Loop 3
 ├── Loop 2
 └── Loop 0
     └── Loop 1
-  loop 0 Cycles: 209014667522 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 33] | -at Bounce.benchmark() [bci: 89]
-  loop 1 Cycles: 191774736394 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
-  loop 2 Cycles: 15738474408 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Arrays.setAll(Arrays.java:5097) [bci: 7]
+  loop 0 Cycles: 208695953212 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 33] | -at Bounce.benchmark() [bci: 89]
+  loop 1 Cycles: 191463040440 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Bounce.benchmark() [bci: 52] | -at Bounce.benchmark() [bci: 83]
+  loop 2 Cycles: 25040348128 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Arrays.setAll(Arrays.java:5097) [bci: 7]
 -at Bounce.benchmark() [bci: 27] | -at java.util.Arrays.setAll(Arrays.java:5099) [bci: 29]
 -at Bounce.benchmark() [bci: 27]
-  loop 3 Cycles: 604988826 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
-Comp 186 (Benchmark.innerBenchmarkLoop(int)) loops:
+  loop 3 Cycles: 603204980 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 186 (Benchmark.innerBenchmarkLoop(int)-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 440633826 || Activation Count:0 | LoopCallCount: 1 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+  loop 0 Cycles: 486789640 || Activation Count:0 | LoopCallCount: 1 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
 Comp 187 (Benchmark.innerBenchmarkLoop(int)-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 237747220108 || Activation Count:0 | LoopCallCount: 1 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
-Comp 195 (java.lang.StringLatin1.inflate(byte[],) loops:
+  loop 0 Cycles: 237475805398 || Activation Count:0 | LoopCallCount: 1 |  Source: -at Benchmark.innerBenchmarkLoop(int) [bci: 2] | -at Benchmark.innerBenchmarkLoop(int) [bci: 26]
+Comp 195 (java.lang.StringLatin1.inflate(byte[],-Re-Comp) loops:
 Found Encoding : 0:-1,1:-1,2:-1
 ├── Loop 0
 ├── Loop 1
 └── Loop 2
-  loop 0 Cycles: 13370 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
-  loop 1 Cycles: 19468 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
-  loop 2 Cycles: 15274 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
-Comp 208 (java.lang.StringCoding.implEncodeAsciiArray(char[],) loops:
+  loop 0 Cycles: 12300 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 21546 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 14998 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+Comp 208 (java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 222 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+  loop 0 Cycles: 284 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
 Comp 209 (java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp) loops:
 Found Encoding : 0:-1
 └── Loop 0
-  loop 0 Cycles: 814 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+  loop 0 Cycles: 882 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
