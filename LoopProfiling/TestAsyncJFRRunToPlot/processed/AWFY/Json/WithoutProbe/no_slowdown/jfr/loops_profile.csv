@@ -1,0 +1,64 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.equals(Object),,,725,2844,25.492264,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,574,0,562,2844,19.760900,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.StringLatin1.toBytes(char) line: 753,,,179,2844,6.293952,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.read(),,,131,2844,4.606188,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,598,0,123,2844,4.324895,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.valueOf(char) line: 4627,,,119,2844,4.184248,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,584,0,109,2844,3.832630,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.endCapture(),,,78,2844,2.742616,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readStringInternal(),,,66,2844,2.320675,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,573,0,58,2844,2.039381,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readValue(),,,57,2844,2.004219,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.AbstractStringBuilder.<init>(int) line: 101,,,49,2844,1.722925,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.isDigit(),,,40,2844,1.406470,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.Object.clone(),,,37,2844,1.300985,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.internal.util.Preconditions.checkIndex(int, int, BiFunction)",,,37,2844,1.300985,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readArray(),,,37,2844,1.300985,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,587,0,34,2844,1.195499,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.isLatin1() line: 4893,,,27,2844,0.949367,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.StringLatin1.hashCode(byte[]) line: 195,,,24,2844,0.843882,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readDigit(),,,24,2844,0.843882,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.StringBuilder.toString() line: 478,,,23,2844,0.808720,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,584,2,22,2844,0.773558,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.isWhiteSpace(),,,22,2844,0.773558,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"json.JsonPureStringParser.subStringFromTo(int, int)",,,22,2844,0.773558,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,som.Vector.<init>(int),,,22,2844,0.773558,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readChar(String),,,15,2844,0.527426,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.hashCode() line: 2440,,,14,2844,0.492264,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.skipWhiteSpace(),,,14,2844,0.492264,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.internal.util.ArraysSupport.hashCodeOfUnsigned(byte[], int, int, int) line: 273",,,12,2844,0.421941,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,598,5,11,2844,0.386779,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.startCapture(),,,11,2844,0.386779,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.lang.StringLatin1.charAt(byte[], int) line: 46",,,10,2844,0.351617,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonArray.<init>(),,,10,2844,0.351617,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,598,4,9,2844,0.316456,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.internal.util.ArraysSupport.hashCodeOfUnsigned(byte[], int, int, int) line: 275",,,9,2844,0.316456,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readString(),,,9,2844,0.316456,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.hashCode() line: 2431,,,8,2844,0.281294,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,573,1,7,2844,0.246132,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.hashCode() line: 2437,,,7,2844,0.246132,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonObject.<init>(),,,7,2844,0.246132,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readObject(),,,7,2844,0.246132,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.AbstractStringBuilder.append(char) line: 901,,,6,2844,0.210970,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.coder() line: 4885,,,6,2844,0.210970,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.StringBuilder.toString() line: 474,,,5,2844,0.175809,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readNull(),,,5,2844,0.175809,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.hashCode() line: 2432,,,4,2844,0.140647,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonObject$HashIndexTable.<init>(),,,4,2844,0.140647,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readName(),,,4,2844,0.140647,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.lang.AbstractStringBuilder.needsNewBuffer(byte[], byte, int, byte) line: 250",,,3,2844,0.105485,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.String.length() line: 1583,,,3,2844,0.105485,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.util.Arrays.copyOf(Object[], int) line: 3478",,,3,2844,0.105485,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,598,2,2,2844,0.070323,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readNumber(),,,2,2844,0.070323,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,584,1,1,2844,0.035162,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,598,1,1,2844,0.035162,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,598,3,1,2844,0.035162,
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.io.FileOutputStream.writeBytes(byte[], int, int, boolean)",,,1,2844,0.035162,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.jfr.internal.JVM.emitEvent(long, long, long)",,,1,2844,0.035162,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonObject$HashIndexTable.stringHash(String),,,1,2844,0.035162,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readRequiredChar(String),,,1,2844,0.035162,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,json.JsonPureStringParser.readTrue(),,,1,2844,0.035162,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,som.Vector.append(Object),,,1,2844,0.035162,no_marker
+Json,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"sun.nio.cs.UTF_8$Encoder.encodeLoop(CharBuffer, ByteBuffer) line: 562",,,1,2844,0.035162,no_marker

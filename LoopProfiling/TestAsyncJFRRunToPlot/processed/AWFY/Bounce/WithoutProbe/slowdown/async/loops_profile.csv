@@ -1,0 +1,17 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Benchmark.innerBenchmarkLoop,126,1,10081,13848,72.797516,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,SpaceMangler::mangle_region,,,2474,13848,17.865396,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Benchmark.innerBenchmarkLoop,126,2,646,13848,4.664934,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Bounce.benchmark,,,221,13848,1.595898,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,MemAllocator::mem_allocate_inside_tlab_slow,,,206,13848,1.487579,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Benchmark.innerBenchmarkLoop,126,0,170,13848,1.227614,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Benchmark.innerBenchmarkLoop,126,3,20,13848,0.144425,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.util.Arrays.setAll,,,8,13848,0.057770,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,clear_page_erms_[k],,,5,13848,0.036106,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Bounce.lambda$benchmark$0,,,4,13848,0.028885,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,G1FromCardCache::clear,,,3,13848,0.021664,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,G1HeapRegionManager::at,,,2,13848,0.014443,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,G1HeapRegionSetBase::verify_region,,,2,13848,0.014443,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,G1ParScanThreadState::do_copy_to_survivor_space,,,2,13848,0.014443,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,G1SurvRateGroup::record_surviving_words,,,2,13848,0.014443,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.StringLatin1.inflate,,,2,13848,0.014443,no_marker

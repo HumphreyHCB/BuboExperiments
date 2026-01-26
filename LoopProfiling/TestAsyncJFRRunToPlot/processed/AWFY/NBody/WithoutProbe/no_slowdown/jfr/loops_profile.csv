@@ -1,0 +1,10 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,574,0,5295,5373,98.548297,
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,nbody.Body.setZ(double),,,35,5373,0.651405,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,NBody.innerBenchmarkLoop(int),,,15,5373,0.279174,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,nbody.Body.setVZ(double),,,13,5373,0.241950,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,573,5,9,5373,0.167504,
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,573,6,3,5373,0.055835,
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.io.PrintStream.writeln(String) line: 685,,,1,5373,0.018612,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.internal.classfile.impl.SplitConstantPool.tryFindClassOrInterface(int, ClassDesc) line: 404",,,1,5373,0.018612,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.internal.misc.Unsafe.makeInt(byte, byte, byte, byte) line: 3772",,,1,5373,0.018612,no_marker

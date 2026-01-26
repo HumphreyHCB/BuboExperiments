@@ -1,0 +1,537 @@
+============================================================
+Benchmark: LoopBenchmarks
+BuboLIRPhase: true
+RUNS: 500
+extra_args: 12000
+Timestamp: Thu 22 Jan 14:16:42 GMT 2026
+
+[WARN] Unknown argument: output
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+java.lang.module.ModuleDescriptor.name()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.module.ModuleReference.descriptor()java.lang.module.ModuleDescriptor -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.Enum.ordinal()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.lang.Class.isPrimitive()boolean -1 codeSignature differs 98ab40cf2ebcc843a57e4548f9a42e2e9f3f439b3cfc72b2a9affe72c8d06a5f != 5b9fc3b01b5ff747850254186cdcc08e50c4f85fb4d4d68bc0989fcb181794f8
+jdk.internal.util.StrongReferenceKey.get()java.lang.Object -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.Class.getClassLoader()java.lang.ClassLoader -1 codeSignature differs 1ec746d9657abb2124f404e47924197593986fc62346c6cd76072c08e29afddf != 454facf798c6644faed5619d9e1dae25408778409730f09c41b1c0c95518fd46
+java.lang.invoke.MethodType.returnType()java.lang.Class -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+jdk.internal.classfile.impl.AbstractPoolEntry.index()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.lang.invoke.MemberName.getDeclaringClass()java.lang.Class -1 codeSignature differs b46e439bc51650ff335d2a7124f0b0154f260fe1af8ba145c6fd3cf5008c9e4e != de7d2501b6c4ceaef40260482daf6e5ea615f5f43bc71d4e0a42f41866056e09
+java.lang.invoke.MethodType.form()java.lang.invoke.MethodTypeForm -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.util.stream.FindOps$FindSink.cancellationRequested()boolean -1 codeSignature differs 55af0dc4b7688c78180d5f5b00584e4bf66cf93bd60716f9aab49e7a6fd64ac4 != d201d3c970d1bea0e5266b3abd2e0b5e37d50f57628f0f6798d16338d8e21f6a
+java.lang.Object.<init>()void -1 codeSignature differs fe534d3aac0502b22527b54e744892c09d7496fd765947a3ee3ec9a070d56f92 != b5ee38686824d688fb238521bf027287d22a9235c6ea851247456595ee3c4ca5
+java.lang.String.hashCode()int -1 codeSignature differs cd869c87835ef8242ee90410caccd8a61a63cd99231e11f83fcdc76366e70264 != aa1e9c2f9ea239d2fb15b2f7ff9a60f790f0544470df5bee9a657461c7ae39f8
+jdk.internal.module.ModuleReferenceImpl.moduleResolution()jdk.internal.module.ModuleResolution -1 codeSignature differs b76db95b8fd3a055b26c3a6c15023743ea3cd488646d474319964a2e9e13b73e != c90e5cf05b5ed15b2ee4632b0f01daf8e8a827ca7e4e1d9f528d5eb553edbcfd
+java.lang.module.ModuleDescriptor$Requires.modifiers()java.util.Set -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.module.ModuleDescriptor$Requires.name()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor.requires()java.util.Set -1 codeSignature differs 50021c78154f047ad8f88f0733084203e726ca2f3911eed3f4e2615369ae39b2 != a12f6d231bab91ade119f5f7e87b83e28ce01e2d62fff01cc7676b635a92f884
+java.lang.module.ModuleDescriptor.isAutomatic()boolean -1 codeSignature differs 2c5d9434fa6cbff1c0177053ad01774247e7a98383a3d0ee5c4dccbf56bf9e86 != 08dea6d6ec137b950a0343efb1bd030f87565d8e5b95eb64f025bd8e338928e2
+java.util.HashMap$Node.getKey()java.lang.Object -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.util.HashMap$Node.getValue()java.lang.Object -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.util.ImmutableCollections$Set12.isEmpty()boolean -1 codeSignature differs d890ffc04cd03ec866061096d7d13d2670cacc5a2328b692374e3523d40574bd != 6120e833de16ceab3ef754d1b00c19883b3f73962ba2cdf17c59c3710ba02d36
+java.lang.module.ModuleDescriptor$Exports.source()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor$Exports.targets()java.util.Set -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.module.ModuleDescriptor.provides()java.util.Set -1 codeSignature differs 309d9291f2d3c2a63becdec49b2c74b25af9d7fdc62dad05faf86a64889608fc != f5d85dfdf7fef12d65d210d402c44bf26eeb0fb3f9225e78ee6443caec31b619
+java.lang.module.ModuleDescriptor.exports()java.util.Set -1 codeSignature differs 948d21eddb9ad191efbc24290e4e840a30aebb134151b75def9175ab54c0a48c != c3334e7c488922d9ee7281afad5b7ca4db54a4ab2b49cf0e755dc0a6c55854b4
+java.lang.module.ModuleDescriptor.uses()java.util.Set -1 codeSignature differs e3ce51591a4fee3aaff0c687fbb639bc8c1569c92e84d989cdc906a081a3aa6f != 69f900c261d900c3a12e3d84961667caa75caf8ed42490b80edd3cdf23db4832
+java.util.Objects.requireNonNull(java.lang.Object)java.lang.Object -1 codeSignature differs fab3390bacdc1c06ac727172609d32d56c9697db51c25bc06ba90803d6336aa7 != 5f34d305ad8c459e05cc78e8e67ce712079a25140f4444aee0bca43f73c4de02
+java.util.ImmutableCollections$SetN$SetNIterator.hasNext()boolean -1 codeSignature differs 014069b9d29ae67f97f8d652b8d7a77d9057cdb393e4e32597c925d7a30bdc82 != 60575b8cd4d2a8242a8aab77fb607844ec4f52bcc97ca89e8880d7f6422024af
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 codeSignature differs f6a7d58bb4b33e7926d50e691b8e75ec1724faf98af5ebdf7ab9e188633b194c != 829478485a428303739a297a306f34a5f6d0fd7d0f8daa29efba1f814b054675
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs b05d592371fcce917a90fc28debaf21f7e7532d4836b1c9812ac396e129c7095 != dd493989519e7f328311cfecc7abfe1946186eaebdea7e8b59878a8ba9e25a26
+java.util.HashMap.hash(java.lang.Object)int -1 codeSignature differs 10a1635fe51f39715557d1556d78e0b00f3fb3900fc78cabb37379f981182414 != 334b0dad1a23145f64b9851a93f5d34818d1b8a4f56bbf58f638a531555321d8
+java.util.HashMap.hash(java.lang.Object)int -1 graphSignature differs 8f9cc2e3a303a464fdde7ac01112df34565d1e4517f64ae8e19d28af24388dce != 27e7a52782b6fcb645f562197decfa8fd939b11b105c1ce6adf1e163fcd89445
+java.lang.module.ModuleDescriptor$Provides.service()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.module.ModuleDescriptor$Exports.isQualified()boolean -1 codeSignature differs a309253e80992174c236677bc5d80849c9ea00381c7a4762dd96e91bcfd6f8e8 != 020b2e2539c6021acd37d306f2411f134c66581e1236e19a240b486ab1df9cce
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 codeSignature differs 3401978008dd3fc9c76faf4fa207fcd874c738433764122071d38ec8b86b593e != 4c8ddd2d6c8e31a2f0ed158283666f68026872e36108ba6ed4b418509b4b1fdb
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 71c7befc4bcc50903c01cb500806055811a71080bd754d077284439fcd10103c != 27ba10a12906ca5a4eaa0ddbdb8cdbd97a0a183d21916ae0dce244a079058c87
+java.util.HashMap$Node.<init>(int, java.lang.Object, java.lang.Object, java.util.HashMap$Node)void -1 codeSignature differs fbcd690594519bd844198f2a2916d9b74df7789f72645ffa82ed48f324701383 != 0b7e3fef4c3a6adbb06576d475449b4698bafd6edf27bc867603a052760b7c67
+java.lang.String.equals(java.lang.Object)boolean -1 codeSignature differs 1b81cb89f6505a5995dbabe425a69a03531cfa5e9b0bad05edda29235b5071d3 != 9d4deb1417e3dc3304e6e48d0050681b843c1c29f58a963fe6d7cb88c5948543
+java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs 240f841b413bb8bd2af4877cb3753eac11d3bdc482d702e067df992e72784ebb != 2d841e5f6ff33687ba2a8e89c73735b82c892266d476f740b43f9fc2b4d21873
+java.lang.Byte.toUnsignedInt(byte)int -1 codeSignature differs ef53887b8aa24310d9482f8fff2e03d6f5088235fdd6794c9711e90d2fb316a1 != 13d5f6657504f424775e099bdc463c00fbb2dd5e93459aa3373cba81212b5a0d
+java.util.KeyValueHolder.getKey()java.lang.Object -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.util.KeyValueHolder.getValue()java.lang.Object -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor.packages()java.util.Set -1 codeSignature differs 1ec746d9657abb2124f404e47924197593986fc62346c6cd76072c08e29afddf != 454facf798c6644faed5619d9e1dae25408778409730f09c41b1c0c95518fd46
+java.lang.module.ResolvedModule.reference()java.lang.module.ModuleReference -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor$Version.toString()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.AbstractStringBuilder.length()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.util.HashMap.newNode(int, java.lang.Object, java.lang.Object, java.util.HashMap$Node)java.util.HashMap$Node -1 codeSignature differs 0b57ad3d0ea1b0de0d3ae4d1256f2a3bf2dacceb94022bee4e70d75bf1848358 != df85b2b14fb5de70af8f6a1aa6efa050fdaf0546a0197d26ebd4113543cc599e
+java.util.HashMap.afterNodeInsertion(boolean)void -1 codeSignature differs fe534d3aac0502b22527b54e744892c09d7496fd765947a3ee3ec9a070d56f92 != b5ee38686824d688fb238521bf027287d22a9235c6ea851247456595ee3c4ca5
+java.lang.module.ResolvedModule.configuration()java.lang.module.Configuration -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 codeSignature differs f384886c1523cf7873f5e6052b409c7e1f760e69e84ecb955bae965d94fc1e41 != 7f570416ff358e4b3f2e507aa324fb2a5e516b4d3b877957d491849e1ec847d1
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+java.lang.module.ModuleDescriptor.isOpen()boolean -1 codeSignature differs 7251ebfc69511ba11260ce3e5fe8de41e1ee424c1c84ef382507a4b520f46599 != c4f3939346c24cd7625b42361349cb6733a9291eeffd7507e7bf858c000192f4
+java.util.HashMap.size()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+Profiling started
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8()boolean -1 codeSignature differs 6e3a14458a0fca90e6a63285514a933585cea592cb622e79b33ddc5df6e0fb66 != 6fdd5e023f8b36c06ccfc437f07740607e2fd6af8789c2b6573b1f8e5aec4921
+java.lang.invoke.MethodType.ptypes()java.lang.Class[] -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+jdk.internal.util.Preconditions.checkIndex(int, int, java.util.function.BiFunction)int -1 codeSignature differs 0537b0c8dc5fe868ee44de1817c0b047b24d886158549ad641b2b99126c678bb != 097cdde476e7d7a11441cfa0c37471ca0a888d4c4166d67eed1a7e5c4df66c77
+java.nio.Buffer.limit()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+jdk.internal.classfile.impl.AbstractPoolEntry.width()int -1 codeSignature differs 6e3a14458a0fca90e6a63285514a933585cea592cb622e79b33ddc5df6e0fb66 != 6fdd5e023f8b36c06ccfc437f07740607e2fd6af8789c2b6573b1f8e5aec4921
+jdk.internal.classfile.impl.SplitConstantPool.size()int -1 codeSignature differs 1e851f5b2cbf37c0cd46831368dd889b60dff01d7b16161259960e24b264ceb1 != d37b0c203163b479a20ad6e2dad4e21eac1f1ad9b1ebc37e97f7861914a001ed
+java.util.Properties$LineReader.readLine()int -1 codeSignature differs dcc7cd9c2f0ddf11074c051e8afb59f862ed303e922c9b76c143ff5089c172ec != 43961d71b71ba232ed2694d540aa571e36bd52adf8e4b027613a65dc317ee3ed
+java.util.Properties$LineReader.readLine()int -1 graphSignature differs 2b486d112efd309f21b56eed8c0bb9d78dd9081f799ef08ff7c803bfde611f4a != 878ec244077db65df33a3f7d09ba7cba637998f872be81e8c5729e664e547e01
+java.lang.AbstractStringBuilder.getValue()byte[] -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.Enum.name()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 codeSignature differs 6cf4fb7fd874e15c16cb0f5b0e5aea3b0fd58bc8fcf38c48c000e5c66e2ad6a8 != 4dd8a0d23b54449c010a38548a4ec34726658ad72759db6c8d42ad0645f343a2
+jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 graphSignature differs 19b74d2985bd215adc18bbf16eb571f75605eb5502bcec63b71bd357cc668d6e != ec48f9da76be66a6b56b9242fa5c79b96c5a2b790a5832893550f14895067602
+sun.util.locale.BaseLocale.getLanguage()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.util.LinkedHashMap.removeEldestEntry(java.util.Map$Entry)boolean -1 codeSignature differs d890ffc04cd03ec866061096d7d13d2670cacc5a2328b692374e3523d40574bd != 6120e833de16ceab3ef754d1b00c19883b3f73962ba2cdf17c59c3710ba02d36
+java.util.concurrent.ConcurrentHashMap.tabAt(java.util.concurrent.ConcurrentHashMap$Node[], int)java.util.concurrent.ConcurrentHashMap$Node -1 codeSignature differs 71d647ba8c6a0b4ea5a8b561fe43e8bed960c9cb04034a7aef626c5d8360de6d != 822749e9eab55cf0ab08d112d11f644faf7767e7d7f602f22b2982e4341c74e7
+jdk.internal.misc.Unsafe.getReferenceAcquire(java.lang.Object, long)java.lang.Object -1 codeSignature differs 0be5c2bda59735ac5470d27796a18d252d59667b906c14721265d97be8abdd5a != a748a0c1fa3d1b22da119249a3931a9411370dff9604e49b3d7ef522719454b3
+java.lang.String.coder()byte -1 codeSignature differs f3a73f0f7ffcffdf8962f6b17b32b9d22dceb70a6321ad4e83f092ac924fb640 != 957313288ef4bdda0b4cd025d583dcf3b718c3f3a50464b737eb27e80ce0139f
+java.security.Provider$Service.getType()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.security.Provider$Service.getAlgorithm()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.security.Provider$Service.getAliases()java.util.List -1 codeSignature differs ec9959256dfdc1e5d707b10920cbff0d77d6151df3608588ba4900964b3e0488 != 48d94502b891e4704180e00ca37d65d0a704038e75c0e2368237a34efba54df3
+jdk.internal.classfile.impl.RawBytecodeHelper.bci()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+jdk.internal.classfile.impl.AbstractPoolEntry.constantPool()java.lang.classfile.constantpool.ConstantPool -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+jdk.internal.util.WeakReferenceKey.hashCode()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+java.lang.String.value()byte[] -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+Starting loop benchmarks with scale factor: 500
+
+Running Fibonacci loop... LoopBenchmarks.fibonacciLoop(int)long -1 codeSignature differs 0276bd27e9702da25f8b299601116691e5dea9e134e2b0826094adb6dec90348 != fba9dec35e6faba60572ba253491d9a8da90d573b1e6d10a99578635c6774a61
+LoopBenchmarks.fibonacciLoop(int)long -1 graphSignature differs 3a11f5fac734da091eca6f710c67a326fa93ea27a31d1fa0a7470b8b86524e94 != 1a1b024380af210341c53e061fce33b89fabaf5391c37a838142ade0932b1269
+DONE (iterations: java.lang.String.isLatin1()boolean -1 codeSignature differs 7fbdb74539501cf2e6eb2a3c4a15d0e6598aaf73df2e1a5e20fd95a35a58b24e != 3176213e3be72bb5e1b482eae8a1c07901556750cdd7d42ef0cea4727e1ff083
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 codeSignature differs df3b672c4faf9b8e9c81d37ba53892d5bb76d91b2605d923dadb481f79796d8a != 625a83ff75952a5d0a805a4c58b62ea8ac6fa4c2e347559de275b3de58e5cde6
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 graphSignature differs f47d0b1647dabd6f0108a1c873e12c6a64939992dcc9e97f79a9e6e1f1af8649 != cda1bda6b067c21da86f5c9b00220a168b94ff95811df6ee0a57435eb4ec0473
+java.lang.invoke.MethodTypeForm.erasedType()java.lang.invoke.MethodType -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.invoke.MethodHandle.type()java.lang.invoke.MethodType -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.String.checkIndex(int, int)void -1 codeSignature differs 385ed941f0ffb6ec913dbe21e2b6e06be3e6eb9ee90a0f5ab66e6d492d366927 != b1f7427504076049fa0a25e2e2b9220678e779f692b84ee79e051d4d2ab82a5c
+java.lang.String.charAt(int)char -1 codeSignature differs b98399ac996c9b8e72310c5c1df0c198f3068d7f9b0ca726daf2c74e94dd6400 != 166a359a67807cc166f2d58779fc2743a97bdbb3f816140507a9a3a92e270eb8
+java.lang.StringLatin1.charAt(byte[], int)char -1 codeSignature differs 1cf48904ac3a640d9f3a2f467aa93f6340686542a2bea1b174914224836b97b7 != e855f5d619915ae479f963ddbfcac66194db858bf465c755cccae16d9d945902
+java.util.regex.Pattern$$Lambda/0x800000027.is(int)boolean -1 codeSignature differs 0354641c2a2b774c4091d3291ed00d8619497cbb8d7c773ec59cd0b1242d4c2b != c2ddfaee167115e40521555f0294213862b741e6bf02ffe1ab703bf75a8131ec
+java.util.regex.Pattern.lambda$Single$0(int, int)boolean -1 codeSignature differs ecf229b358f022376f296a397bce16ebeddcd61336e9856bceef5138b5fd9385 != 610e81479d09e85d9df3ce6cc1c71086e6befb4bedcc149e9f2f7964c282d16e
+java.util.regex.Pattern$BmpCharPropertyGreedy.match(java.util.regex.Matcher, int, java.lang.CharSequence)boolean -1 codeSignature differs 3451ef992917e9e577ccba899787afa812e1aaabbe6392c37af2c795826a1434 != ce822ea0e3af49dfae809124e9b9c1cb62c0e39c0a11574dc51a31b093f6a9b9
+java.util.regex.Pattern$BmpCharPropertyGreedy.match(java.util.regex.Matcher, int, java.lang.CharSequence)boolean -1 graphSignature differs 59e4818ceb384e2dcb752ab53f0fb1d31ab154e5dd8881529815883e9206aec0 != e622fa2280edae2a76354d41fdd824dee0aa27e282a9049da1de5430ffd1a862
+jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.Class.getModule()java.lang.Module -1 codeSignature differs 309d9291f2d3c2a63becdec49b2c74b25af9d7fdc62dad05faf86a64889608fc != f5d85dfdf7fef12d65d210d402c44bf26eeb0fb3f9225e78ee6443caec31b619
+java.lang.String.length()int -1 codeSignature differs 5f2a9f3bb1f4f800ea4f2ad278553dedcfc789fe27a155b26df986828b30ede3 != c429f09bde0922a4e93c787fa5a5cdbca277237619ab7dc7eb3cc60d99b0f3aa
+java.lang.StringUTF16.getChar(byte[], int)char -1 codeSignature differs 72a99c9d055d9e59069f039ab3c717b2aeaf1688b44df608093ac1644a259cc9 != 1698020568351afd14777da671cf9324e25e3c3bf06045dab5bbc3b30010318d
+60000, result: -2872092127636481573) [time: 0.501 s]
+Running Mandelbrot loop... LoopBenchmarks.mandelbrotLoop(double, double, int)int -1 codeSignature differs 68d21b22fe16caa747d4ec37c457f379abd0af21c75b9593392a2e67db86d479 != 014dd7dec81309415bc46824ad5955383c3a0b766dbd6e089d7246244cae22cd
+LoopBenchmarks.mandelbrotLoop(double, double, int)int -1 graphSignature differs e4e5f8ad43be964aa9b72ea3fe8eaf10c6604e9aa1fe893c7612bdb02bb77c5d != b21428ef355f618cc3b331fab320d73f375800c18a7274bc988ebfe43a21c8f6
+DONE (reps: 3, grid: 350x350, result: java.nio.Buffer.position()int -1 codeSignature differs 3f64cd4fafea8a3cef87601314961681d43f2aa75c3a358c1b0ce8d9a1c4731a != a754d4fbb14cb674813e5d56933661602e017cf332100c6f35524287a66eeea9
+8888322) [time: 0.494 s]
+Running JSON parsing loop... LoopBenchmarks.parseJsonLoop(char[])int -1 codeSignature differs 2f28cffb743df8789f6c49ddf61e333296dba7c2c9234d4550c05ae569d7310e != ac93f599ee0cf32590738921c182b5bb08f5ac56c1a4045b2b6486a30049b1fe
+LoopBenchmarks.parseJsonLoop(char[])int -1 graphSignature differs 26d13963b4618f3693eaf91803f3de21b48fc0da6787a0276269844342d134d8 != 605b4034d50088dd9c0d5da9a6446548fada5d712248aa52f3f762c60d6411f7
+DONE (iterations: 166, json size: 75000, result: 3949) [time: 0.058 s]
+Running matrix multiply loop... LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int)void -1 codeSignature differs ee5eeae2c61045927aead1ab50595b5e9826fe3aa867f7c36f934557b69837e3 != 4635462c764dc68f781b32354bf7829b96d2c3b550463843df116432067935cb
+LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int)void -1 graphSignature differs 51199f32a2a34ee1ca83b0d773b398a4514885aba34e8931103d1909baf36882 != c6534fde04b3237f1ba6c678e34721fa885179ed52d0316bcc796cee36870d01
+DONE (iterations: 55, matrix: 101x101, result: 338350.0) [time: 0.212 s]
+Running prime sieve loop... LoopBenchmarks.sieveLoop(boolean[], int)int -1 codeSignature differs 4790a0b35d5f6abe92ffc6b960bb59bae15735a8e1326de56999f4157732c043 != 22ebf09921c4f74ca5db960b21ee2de18761b46c42809066f8af2e5eaf1dde64
+LoopBenchmarks.sieveLoop(boolean[], int)int -1 graphSignature differs 5310134c94725db8232a1bfd446b4427bb0a66a02122915a3cdaf5f896e221c7 != 030c26d5dc9410f37c92004b4bae271f54e91ae9f9a41b2896184569ecc83c5b
+DONE (iterations: 21, sieve size: 550000, primes: 45322) [time: 0.161 s]
+Running histogram loop... LoopBenchmarks.histogramLoop(int[], int[], int)void -1 codeSignature differs 71c40bfc27769594b479554cfbfb68922d39924cd78900a892a20b33cbd9fb14 != 3606f4eed82bec467c708a786c8f159fe84cc9afbebc2f0a892b9e6d3c156f76
+LoopBenchmarks.histogramLoop(int[], int[], int)void -1 graphSignature differs 838da163bfa661333bb89af8c906280bc5cb2add36c82f08122249cec6f91ff5 != 3fe48ed9b45e4c4c49d57b2c2cbb74d5116b1778b21e8e4bfa505dd0003b1876
+DONE (iterations: 12, data size: 600000, histogram[0]: 2344) [time: 0.076 s]
+Running CRC32 loop... LoopBenchmarks.crc32Loop(byte[])long -1 codeSignature differs d3873c4886d7486622e0f0f8ea384103e31a66179502029dada5cf9237a38056 != 715150d7c355631017fb2e301c5fcc686cbb2f2cb090662d971e28e1c9540741
+LoopBenchmarks.crc32Loop(byte[])long -1 graphSignature differs a4c6c0d0a7c567f8a327eda5cca03f9a4be5960f7fdebab4873d39b5aab4196e != 34aab2177522a4ed163a31ef080f89d80f60e54663be54dec421a91193fb3282
+DONE (iterations: 55, data size: 15000, crc: 3892400447) [time: 0.071 s]
+Running polynomial loop... LoopBenchmarks.polynomialLoop(double[], double)double -1 codeSignature differs 2082b898772bfe1578832cedbdefe8f1edf0fe822e5b57efa2e544dd92fc6a9c != 88fabd13e69f39dcda549a4c0aaff2b89333d41fcae6c040d9c2e2337aba2466
+LoopBenchmarks.polynomialLoop(double[], double)double -1 graphSignature differs 3b21935b1e7a879bc13a5ca25dfdc8bf7c833cfba2730f1d3332db5c1e32bfd6 != aa2c5c872448baa5178d535d83a062b10e849ab3550e791fedceaaa22c99e92a
+DONE (iterations: 30000, coefficients: 550, result: 2.3245080650704383E101) [time: 0.131 s]
+java.nio.Buffer.capacity()int -1 codeSignature differs 138bc711c3bed648b8548df225303894eec321dce856bde9fbb2267d74239e89 != 8366e168458356e9e2795362a66f19336b0e55f9e34ac8b5d6d37702a481c8da
+Running edit distance loop... LoopBenchmarks.editDistanceLoop(char[], char[])int -1 codeSignature differs b8b7b4e2bb1e076e6ceafcf699251d97de53261f7c5af141699c4099dd798479 != 1d2d5e9f5049c2299e60407e40a032969996899cfab472ea13c29879ddb1df9c
+LoopBenchmarks.editDistanceLoop(char[], char[])int -1 graphSignature differs 1e822eb6b7380b249af90a93435513fc3efdc0b2aade2c16def3ecb91b1c2164 != 20b4f9d3a8e8cf1ce2fad3c09d954ac975bd962c8510bee56d8700a96ac5a21a
+DONE (iterations: 112500, distance: 5) [time: 0.813 s]
+Running Monte Carlo pi loop... LoopBenchmarks.monteCarloPiLoop(long, int)double -1 codeSignature differs 9b0e93e8176d1d26b08dbc0ee206dc37d238e6f1efa3d2dd1202c875117ee88f != c5e7a829f770b15d5f83a31ac6e44f2086ff9ea927e2ea63a3a385d926369c2b
+LoopBenchmarks.monteCarloPiLoop(long, int)double -1 graphSignature differs 491c962be499807cb537cc64848bdce64409e1a6d2244aff6270788c7f1ce437 != 64dda7bf78394e7b6fb402f6d1747b51859ad9304aec84fd9f662c118dc5a61c
+DONE (iterations: 4, samples per iter: 750000, pi: 3.143643) [time: 0.053 s]
+Running bubble sort loop... LoopBenchmarks.bubbleSortLoop(int[])void -1 codeSignature differs 5d5cba37913109832aa6f834ab11126ce6dbea822943f9f03266073b5e6c43e6 != f83f6141222832a62bff1acb267a12ef023ff95168ffd908014b20cd312bc3eb
+LoopBenchmarks.bubbleSortLoop(int[])void -1 graphSignature differs ec01242afffb768283a312caf6137d40966157a21df12d3c620c5d38c6b31d0b != 3ca92b357bd3e2c94d2166efebd7d2583eb4dd95fe4dda4c128c9d031a4fb0df
+DONE (iterations: 16, array size: 2100, sorted[0]: 1) [time: 0.151 s]
+Running image blur loop... LoopBenchmarks.blurLoop(int[][], int[][], int, int)void -1 codeSignature differs fc4415bd41e055dbf3ebc5e9bd69f0c52856dbca606348e75cfc21f0938c17e6 != a71b28ed5d82d0483c576843d6410b4b6ea30c4a7e34da86a7543ff080353d77
+LoopBenchmarks.blurLoop(int[][], int[][], int, int)void -1 graphSignature differs fe73b8eb47721150b8a54a5880c7a8d41a721b82cf1234c0f8d88a305baf68ea != 25747baea8f9c3d6d14addca47d85df2664c22d0b993c827e45e09cc8e86e094
+DONE (iterations: 41, image: 281java.nio.charset.CharsetEncoder.maxBytesPerChar()float -1 codeSignature differs d0dc63dd2361c2989cb14e4cf77bfb3442e0a43d3c92bbd78638646fefb8363f != fecc7851573229b2c1300c739298992122dcb58fa032d82e9692f06a80e3cdc4
+x281, result[10][10]: 20) [time: 0.112 s]
+Running Base64 encoding loop... LoopBenchmarks.base64EncodeLoop(byte[], char[])int -1 codeSignature differs cb1b6a2b022994518e6e02893bbbb8a44b3b8dbe63c9c707004af4927089ac34 != 5bdb4e4372a81c891bd9d7deed302bf6b6b61c08d7482d0f566c04bbc22d1577
+LoopBenchmarks.base64EncodeLoop(byte[], char[])int -1 graphSignature differs a9b9213e773c4c6bbd2b354dc79b632d1d2dffb63d6acfa4a366c956477d2894 != ab6e45d13348ab2b86bb0e8c7d51f9a26f0cf8911851a77d843b33059b7282a4
+DONE (iterations: 250, input size: 75000, encoded length: 100000) [time: 0.087 s]
+Running ray-sphere loop... LoopBenchmarks.raySphereLoop(double[], double[], double[], double[], int)int -1 codeSignature differs 3f3e75f74a2d57ef05811936a261e432a89b0e995c7d620516a89fe9267c89eb != 18e798ae1fff010ef417da4691e25ab4a7390356b8514e3deb58246b961c55a4
+LoopBenchmarks.raySphereLoop(double[], double[], double[], double[], int)int -1 graphSignature differs ef7937828f3c1f6275b33db1cfdb1b2ba779eee837a14f077a1b100fc35134e3 != d51c377ae237f1f188a7a1734b9d18f06a0db6bf6aa1956fa26f5f3c7132626f
+DONE (iterations: 250, ray count: 7500, hits: 7500) [time: 0.066 s]
+
+✓ All benchmarks complete!
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 10851247096
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 375322 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 56 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 9164 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 9392 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 73 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 27930 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 8482 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 17188 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 88 (java.util.Properties$LineReader.readLine()) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 676610 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 111740 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 252 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 89 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 1344138 || Activation Count:0 | LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 1253660 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 318032 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 92 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 217798 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 408686 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 397920 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 122 (LoopBenchmarks.fibonacciLoop(int)) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 94 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.fibonacciLoop(int) [bci: 7] | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+  loop 1 Cycles: 9628 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+  loop 2 Cycles: 136 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+Comp 123 (LoopBenchmarks.fibonacciLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 2069820 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.fibonacciLoop(int) [bci: 7] | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+  loop 1 Cycles: 341267146 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+  loop 2 Cycles: 2757934 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+Comp 124 (LoopBenchmarks.main(String[])) loops:
+Found Encoding : 1:-1,3:-1,4:-1,0:-1,2:0,5:0,6:0
+├── Loop 1
+├── Loop 3
+├── Loop 4
+└── Loop 0
+    ├── Loop 2
+    ├── Loop 5
+    └── Loop 6
+  loop 1 Cycles: 86 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.fibonacciLoop(int) [bci: 7]
+-at LoopBenchmarks.main(String[]) [bci: 62] | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+-at LoopBenchmarks.main(String[]) [bci: 62]
+  loop 2 Cycles: 3472182 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.fibonacciLoop(int) [bci: 7]
+-at LoopBenchmarks.main(String[]) [bci: 62] | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+-at LoopBenchmarks.main(String[]) [bci: 62]
+  loop 3 Cycles: 31294 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+-at LoopBenchmarks.main(String[]) [bci: 62]
+  loop 4 Cycles: 144 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+-at LoopBenchmarks.main(String[]) [bci: 62]
+  loop 5 Cycles: 654688678 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+-at LoopBenchmarks.main(String[]) [bci: 62]
+  loop 6 Cycles: 5693924 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.fibonacciLoop(int) [bci: 29]
+-at LoopBenchmarks.main(String[]) [bci: 62]
+Comp 127 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 46902 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 137 (java.util.regex.Pattern$BmpCharPropertyGreedy.match(Matcher,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 40928 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.regex.Pattern$BmpCharPropertyGreedy.match(Pattern.java:4502) [bci: 9] | -at java.util.regex.Pattern$BmpCharPropertyGreedy.match(Pattern.java:4505) [bci: 43]
+Comp 142 (LoopBenchmarks.mandelbrotLoop(double,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 11301644 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+Comp 143 (LoopBenchmarks.main(String[])-Re-Comp) loops:
+Found Encoding : 3:-1,2:-1,4:2,0:-1,1:0,5:1
+├── Loop 3
+├── Loop 2
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 5
+  loop 1 Cycles: 9616072 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 185] | -at LoopBenchmarks.main(String[]) [bci: 230]
+  loop 2 Cycles: 43040 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 185] | -at LoopBenchmarks.main(String[]) [bci: 230]
+  loop 3 Cycles: 162 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+  loop 4 Cycles: 12580 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+  loop 5 Cycles: 5874028 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+Comp 145 (LoopBenchmarks.main(String[])-Re-Comp) loops:
+Found Encoding : 3:-1,2:-1,4:2,0:-1,1:0,5:1
+├── Loop 3
+├── Loop 2
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 5
+  loop 1 Cycles: 63977616 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 185] | -at LoopBenchmarks.main(String[]) [bci: 230]
+  loop 2 Cycles: 205854 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 185] | -at LoopBenchmarks.main(String[]) [bci: 230]
+  loop 3 Cycles: 308 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+  loop 4 Cycles: 199446 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+  loop 5 Cycles: 57240946 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+Comp 146 (LoopBenchmarks.main(String[])-Re-Comp) loops:
+Found Encoding : 6:-1,5:-1,7:5,3:-1,4:3,8:4,0:-1,1:0,2:1,9:2
+├── Loop 6
+├── Loop 5
+│   └── Loop 7
+├── Loop 3
+│   └── Loop 4
+│       └── Loop 8
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+            └── Loop 9
+  loop 1 Cycles: 87187754 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 175] | -at LoopBenchmarks.main(String[]) [bci: 236]
+  loop 2 Cycles: 87144828 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 185] | -at LoopBenchmarks.main(String[]) [bci: 230]
+  loop 3 Cycles: 83474988 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 175] | -at LoopBenchmarks.main(String[]) [bci: 236]
+  loop 4 Cycles: 83452334 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 185] | -at LoopBenchmarks.main(String[]) [bci: 230]
+  loop 5 Cycles: 34864 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 185] | -at LoopBenchmarks.main(String[]) [bci: 230]
+  loop 6 Cycles: 138 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+  loop 7 Cycles: 8368 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+  loop 8 Cycles: 71087626 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+  loop 9 Cycles: 72934714 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 9]
+-at LoopBenchmarks.main(String[]) [bci: 218] | -at LoopBenchmarks.mandelbrotLoop(double, double, int) [bci: 72]
+-at LoopBenchmarks.main(String[]) [bci: 218]
+Comp 150 (LoopBenchmarks.parseJsonLoop(char[])-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 119853778 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.parseJsonLoop(char[]) [bci: 12] | -at LoopBenchmarks.parseJsonLoop(char[]) [bci: 123]
+Comp 151 (LoopBenchmarks.matrixMultiplyLoop(double[][],) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 10879434 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 12] | -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 71]
+  loop 2 Cycles: 9395612 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 24] | -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 56]
+  loop 3 Cycles: 5508 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 12] | -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 71]
+  loop 4 Cycles: 4756 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 24] | -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 56]
+  loop 5 Cycles: 1114 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 24] | -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 56]
+Comp 152 (LoopBenchmarks.matrixMultiplyLoop(double[][],-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 528417198 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 3] | -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 77]
+  loop 1 Cycles: 527492272 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 12] | -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 71]
+  loop 2 Cycles: 458926414 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 24] | -at LoopBenchmarks.matrixMultiplyLoop(double[][], double[][], double[][], int) [bci: 56]
+Comp 154 (LoopBenchmarks.sieveLoop(boolean[],-Re-Comp) loops:
+Found Encoding : 0:-1,4:-1,5:-1,1:-1,2:1,3:-1
+├── Loop 0
+├── Loop 4
+├── Loop 5
+├── Loop 1
+│   └── Loop 2
+└── Loop 3
+  loop 0 Cycles: 1346 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 4] | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 19]
+  loop 1 Cycles: 124639506 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 21] | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 65]
+  loop 2 Cycles: 122716304 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 39] | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 59]
+  loop 3 Cycles: 86898416 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 67] | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 87]
+  loop 4 Cycles: 20861568 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 19]
+  loop 5 Cycles: 21672 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 19]
+Comp 156 (LoopBenchmarks.sieveLoop(boolean[],-Re-Comp) loops:
+Found Encoding : 1:-1,0:-1,2:0
+├── Loop 1
+└── Loop 0
+    └── Loop 2
+  loop 1 Cycles: 660172 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 59]
+Comp 157 (LoopBenchmarks.sieveLoop(boolean[],-Re-Comp) loops:
+Found Encoding : 1:-1,0:-1,2:0
+├── Loop 1
+└── Loop 0
+    └── Loop 2
+  loop 1 Cycles: 340942 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 59]
+  loop 2 Cycles: 4085174 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.sieveLoop(boolean[], int) [bci: 59]
+Comp 162 (LoopBenchmarks.histogramLoop(int[],-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1
+├── Loop 0
+└── Loop 1
+  loop 0 Cycles: 6774 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.histogramLoop(int[], int[], int) [bci: 2] | -at LoopBenchmarks.histogramLoop(int[], int[], int) [bci: 18]
+  loop 1 Cycles: 107612288 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.histogramLoop(int[], int[], int) [bci: 20] | -at LoopBenchmarks.histogramLoop(int[], int[], int) [bci: 58]
+Comp 164 (LoopBenchmarks.crc32Loop(byte[])) loops:
+Found Encoding : 1:-1,0:-1
+├── Loop 1
+└── Loop 0
+  loop 1 Cycles: 94 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.crc32Loop(byte[]) [bci: 26] | -at LoopBenchmarks.crc32Loop(byte[]) [bci: 62]
+Comp 165 (LoopBenchmarks.crc32Loop(byte[])-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 129523046 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.crc32Loop(byte[]) [bci: 6] | -at LoopBenchmarks.crc32Loop(byte[]) [bci: 68]
+Comp 167 (LoopBenchmarks.polynomialLoop(double[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 72 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 8] | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+  loop 1 Cycles: 3334 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+  loop 2 Cycles: 216 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+Comp 168 (LoopBenchmarks.polynomialLoop(double[],-Re-Comp) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 1655032 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 8] | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+  loop 1 Cycles: 113258368 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+  loop 2 Cycles: 1661172 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+Comp 169 (LoopBenchmarks.main(String[])-Re-Comp) loops:
+Found Encoding : 1:-1,3:-1,4:-1,0:-1,2:0
+├── Loop 1
+├── Loop 3
+├── Loop 4
+└── Loop 0
+    └── Loop 2
+  loop 1 Cycles: 302 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 8]
+-at LoopBenchmarks.main(String[]) [bci: 1224] | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+-at LoopBenchmarks.main(String[]) [bci: 1224]
+  loop 2 Cycles: 107974674 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 8]
+-at LoopBenchmarks.main(String[]) [bci: 1224] | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+-at LoopBenchmarks.main(String[]) [bci: 1224]
+  loop 3 Cycles: 4594 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+-at LoopBenchmarks.main(String[]) [bci: 1224]
+  loop 4 Cycles: 140 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.polynomialLoop(double[], double) [bci: 28]
+-at LoopBenchmarks.main(String[]) [bci: 1224]
+Comp 171 (LoopBenchmarks.editDistanceLoop(char[],) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 10578 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 45] | -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 187]
+  loop 1 Cycles: 8264 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 60] | -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 169]
+  loop 2 Cycles: 566 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 60] | -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 169]
+Comp 172 (LoopBenchmarks.editDistanceLoop(char[],-Re-Comp) loops:
+Found Encoding : 5:-1,6:-1,0:-1,3:-1,4:-1,1:-1,2:1
+├── Loop 5
+├── Loop 6
+├── Loop 0
+├── Loop 3
+├── Loop 4
+└── Loop 1
+    └── Loop 2
+  loop 0 Cycles: 10391508 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 23] | -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 42]
+  loop 1 Cycles: 2271296862 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 45] | -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 187]
+  loop 2 Cycles: 1775569078 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 60] | -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 169]
+  loop 3 Cycles: 12471106 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 42]
+  loop 4 Cycles: 12870928 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.editDistanceLoop(char[], char[]) [bci: 42]
+  loop 5 Cycles: 14210468 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+  loop 6 Cycles: 13018608 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 175 (LoopBenchmarks.monteCarloPiLoop(long,-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 81686186 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.monteCarloPiLoop(long, int) [bci: 8] | -at LoopBenchmarks.monteCarloPiLoop(long, int) [bci: 89]
+Comp 176 (LoopBenchmarks.bubbleSortLoop(int[])) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 1 Cycles: 14886156 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 14] | -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 60]
+  loop 2 Cycles: 2336 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 14] | -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 60]
+Comp 177 (LoopBenchmarks.bubbleSortLoop(int[])-Re-Comp) loops:
+Found Encoding : 0:-1,1:0
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 246075910 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 5] | -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 66]
+  loop 1 Cycles: 242349924 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 14] | -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 60]
+Comp 178 (LoopBenchmarks.main(String[])-Re-Comp) loops:
+Found Encoding : 2:-1,5:-1,6:-1,3:-1,4:3,0:-1,1:0
+├── Loop 2
+├── Loop 5
+├── Loop 6
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+  loop 1 Cycles: 30546 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 1583] | -at LoopBenchmarks.main(String[]) [bci: 1608]
+  loop 2 Cycles: 72 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 1583] | -at LoopBenchmarks.main(String[]) [bci: 1608]
+  loop 3 Cycles: 17668044 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 5]
+-at LoopBenchmarks.main(String[]) [bci: 1610] | -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 66]
+-at LoopBenchmarks.main(String[]) [bci: 1610]
+  loop 4 Cycles: 17382704 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 14]
+-at LoopBenchmarks.main(String[]) [bci: 1610] | -at LoopBenchmarks.bubbleSortLoop(int[]) [bci: 60]
+-at LoopBenchmarks.main(String[]) [bci: 1610]
+  loop 5 Cycles: 1686 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.main(String[]) [bci: 1608]
+  loop 6 Cycles: 122 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.main(String[]) [bci: 1608]
+Comp 179 (LoopBenchmarks.main(String[])-Re-Comp) loops:
+Found Encoding : 2:-1,3:-1,4:-1,0:-1,1:0
+├── Loop 2
+├── Loop 3
+├── Loop 4
+└── Loop 0
+    └── Loop 1
+  loop 1 Cycles: 493228 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 1733] | -at LoopBenchmarks.main(String[]) [bci: 1763]
+  loop 2 Cycles: 72 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.main(String[]) [bci: 1733] | -at LoopBenchmarks.main(String[]) [bci: 1763]
+  loop 3 Cycles: 490 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.main(String[]) [bci: 1763]
+  loop 4 Cycles: 70 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.main(String[]) [bci: 1763]
+Comp 180 (LoopBenchmarks.blurLoop(int[][],) loops:
+Found Encoding : 2:-1,3:-1,4:-1,0:-1,1:0
+├── Loop 2
+├── Loop 3
+├── Loop 4
+└── Loop 0
+    └── Loop 1
+  loop 1 Cycles: 2360704 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 14] | -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 91]
+  loop 2 Cycles: 106 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 14] | -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 91]
+  loop 3 Cycles: 978 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 91]
+  loop 4 Cycles: 108 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 91]
+Comp 181 (LoopBenchmarks.blurLoop(int[][],-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:0,3:0
+└── Loop 0
+    ├── Loop 1
+    ├── Loop 2
+    └── Loop 3
+  loop 0 Cycles: 45234434 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 3] | -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 97]
+  loop 1 Cycles: 1364176 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 14] | -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 91]
+  loop 2 Cycles: 37269452 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 91]
+  loop 3 Cycles: 1754532 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.blurLoop(int[][], int[][], int, int) [bci: 91]
+Comp 187 (LoopBenchmarks.base64EncodeLoop(byte[],-Re-Comp) loops:
+Found Encoding : 3:-1,0:-1,1:-1,2:-1
+├── Loop 3
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 34882 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.base64EncodeLoop(byte[], char[]) [bci: 15] | -at LoopBenchmarks.base64EncodeLoop(byte[], char[]) [bci: 132]
+  loop 1 Cycles: 97002482 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.base64EncodeLoop(byte[], char[]) [bci: 132]
+  loop 2 Cycles: 20250 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at LoopBenchmarks.base64EncodeLoop(byte[], char[]) [bci: 132]
+  loop 3 Cycles: 36416 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boole
+Comp 188 (LoopBenchmarks.raySphereLoop(double[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 147364 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.raySphereLoop(double[], double[], double[], double[], int) [bci: 6] | -at LoopBenchmarks.raySphereLoop(double[], double[], double[], double[], int) [bci: 259]
+Comp 189 (LoopBenchmarks.raySphereLoop(double[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 68221878 || Activation Count:0 | LoopCallCount: 0 |  Source: -at LoopBenchmarks.raySphereLoop(double[], double[], double[], double[], int) [bci: 6] | -at LoopBenchmarks.raySphereLoop(double[], double[], double[], double[], int) [bci: 259]
+
+Finished LoopBenchmarks BuboOn at Thu 22 Jan 14:16:46 GMT 2026
+============================================================

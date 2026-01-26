@@ -1,0 +1,9 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,574,0,10677,10742,99.394899,
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,nbody.Body.setZ(double),,,33,10742,0.307205,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,NBody.innerBenchmarkLoop(int),,,14,10742,0.130330,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,573,5,11,10742,0.102402,
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,nbody.Body.setVZ(double),,,4,10742,0.037237,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,573,4,1,10742,0.009309,
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.internal.classfile.impl.BufWriterImpl.bytecodeView() line: 373,,,1,10742,0.009309,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,nbody.NBodySystem.advance(double),,,1,10742,0.009309,no_marker

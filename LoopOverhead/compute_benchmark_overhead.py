@@ -1,51 +1,53 @@
 #!/usr/bin/env python3
 """
 compute_benchmark_overhead.py
-
-Reads logs from:
-  ./Instrument
-  ./NoInstrument
-
-Each log file is expected to contain lines like:
-  BenchmarkName: iterations=500 average: 120383us total: 60191668us
-
-We:
-  - Parse the *average* time (in microseconds) per benchmark from each folder.
-  - Use NoInstrument as the baseline.
-  - Compute overhead:
-        factor  = Instrument / NoInstrument
-        percent = (Instrument - NoInstrument) / NoInstrument * 100
-  - Write:
-        benchmark_overhead.csv
-  - Plot:
-        benchmark_overhead.png
-    as a bar chart of percentage overhead per benchmark (sorted by highest overhead).
 """
 
 import csv
 import re
 from pathlib import Path
+import statistics
+
 import matplotlib.pyplot as plt
+
+# =========================================================
+# GLOBAL FONT SIZE (ALL TEXT = 8)
+# =========================================================
+plt.rcParams.update({
+    "font.size": 8,
+    "axes.titlesize": 8,
+    "axes.labelsize": 8,
+    "xtick.labelsize": 8,
+    "ytick.labelsize": 8,
+    "legend.fontsize": 8,
+})
+
+def median(values):
+    return statistics.median(values) if values else float("nan")
+
 
 BASE_DIR = Path(__file__).resolve().parent
 INSTRUMENT_DIR = BASE_DIR / "Instrument"
 NOINSTRUMENT_DIR = BASE_DIR / "NoInstrument"
 
-OUT_CSV = BASE_DIR / "benchmark_overhead.csv"
-OUT_PNG = BASE_DIR / "benchmark_overhead.png"
+OUT_CSV = BASE_DIR / "BuboL_Overhead.csv"
+OUT_PNG = BASE_DIR / "BuboL_Overhead.pdf"
 
-# Example line:
-#   DeltaBlue: iterations=500 average: 120383us total: 60191668us
 LINE_RE = re.compile(
     r"^\s*(?P<name>[^:]+):\s*iterations=\d+\s+average:\s*(?P<avg>\d+)us\b"
 )
 
+HIGHLIGHT = {
+    "LoopsBench",
+    "Sieve",
+    "NBody",
+    "Mandelbrot",
+    "Json",
+    "Bounce",
+}
+
 
 def parse_folder(folder: Path) -> dict[str, int]:
-    """
-    Parse all log files in a folder and return:
-        { benchmark_name: average_us }
-    """
     if not folder.exists():
         raise FileNotFoundError(f"Missing folder: {folder}")
 
@@ -57,10 +59,7 @@ def parse_folder(folder: Path) -> dict[str, int]:
                 m = LINE_RE.match(line)
                 if not m:
                     continue
-                name = m.group("name").strip()
-                avg_us = int(m.group("avg"))
-                # If multiple lines per file/benchmark, last one wins.
-                result[name] = avg_us
+                result[m.group("name").strip()] = int(m.group("avg"))
 
     return result
 
@@ -69,7 +68,6 @@ def main():
     noinst = parse_folder(NOINSTRUMENT_DIR)
     inst = parse_folder(INSTRUMENT_DIR)
 
-    # Only compare benchmarks present in both.
     common_benchmarks = sorted(set(noinst) & set(inst))
     if not common_benchmarks:
         raise RuntimeError("No common benchmarks found between Instrument and NoInstrument.")
@@ -79,18 +77,14 @@ def main():
         base_us = noinst[b]
         inst_us = inst[b]
         if base_us <= 0:
-            # Avoid division by zero; skip or mark specially.
-            factor = float("nan")
-            percent = float("nan")
+            factor = percent = float("nan")
         else:
             factor = inst_us / base_us
             percent = (inst_us - base_us) / base_us * 100.0
         rows.append((b, base_us, inst_us, factor, percent))
 
-    # Sort by descending percentage overhead (NaNs last).
     rows.sort(key=lambda r: (float("-inf") if r[4] != r[4] else -r[4]))
 
-    # Write CSV
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     with OUT_CSV.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
@@ -99,33 +93,62 @@ def main():
             "NoInstrument_avg_us",
             "Instrument_avg_us",
             "Overhead_factor",
-            "Overhead_percent"
+            "Overhead_percent",
         ])
-        for b, base_us, inst_us, factor, percent in rows:
-            w.writerow([b, base_us, inst_us, factor, percent])
+        for row in rows:
+            w.writerow(row)
 
-    # Build data for plotting
-    benchmarks = [r[0] for r in rows if r[4] == r[4]]  # filter out NaN
+    benchmarks = [r[0] for r in rows if r[4] == r[4]]
     overhead_percent = [r[4] for r in rows if r[4] == r[4]]
 
-    x = range(len(benchmarks))
-    fig, ax = plt.subplots(figsize=(12, 6))
+    colors = ["red" if b in HIGHLIGHT else "C0" for b in benchmarks]
 
-    ax.bar(x, overhead_percent)
-    ax.set_xticks(x)
+    # Square canvas, and let Matplotlib manage padding for labels
+    fig, ax = plt.subplots(figsize=(6, 6), layout="constrained")
+
+    ax.bar(range(len(benchmarks)), overhead_percent, color=colors)
+    ax.set_xticks(range(len(benchmarks)))
     ax.set_xticklabels(benchmarks, rotation=45, ha="right")
 
-    ax.set_ylabel("Overhead vs NoInstrument (%)")
+    ax.set_ylabel("Overhead (%)")
     ax.set_xlabel("Benchmark")
-    ax.set_title("Instrumentation Overhead per Benchmark (NoInstrument baseline)")
-
+    ax.set_title("BuboL's Overhead per Benchmark")
     ax.grid(True, axis="y", linestyle="--", alpha=0.3)
 
-    fig.tight_layout()
-    plt.savefig(OUT_PNG, dpi=200)
+    # Make the *axes box* square, and keep it centred in the figure
+    ax.set_box_aspect(1)
+    ax.set_anchor("C")
+
+    # IMPORTANT: do not use bbox_inches="tight" if you want a square PDF canvas
+    fig.savefig(OUT_PNG, dpi=200, pad_inches=0.25)
+
+
 
     print(f"Wrote overhead CSV: {OUT_CSV}")
     print(f"Wrote overhead plot: {OUT_PNG}")
+
+    # =========================================================
+    # Console statistics
+    # =========================================================
+
+    per_benchmark = {b: pct for (b, _, _, _, pct) in rows if pct == pct}
+
+    highlighted_overheads = [
+        pct for b, pct in per_benchmark.items() if b in HIGHLIGHT
+    ]
+
+    all_overheads = list(per_benchmark.values())
+
+    print()
+    print("===== Overhead Summary =====")
+    print(f"Median overhead (highlighted benchmarks): {median(highlighted_overheads):.2f}%")
+    print(f"Median overhead (all benchmarks):        {median(all_overheads):.2f}%")
+    print()
+
+    print("Per-benchmark overheads:")
+    for b, pct in sorted(per_benchmark.items(), key=lambda x: -x[1]):
+        tag = " [HIGHLIGHTED]" if b in HIGHLIGHT else ""
+        print(f"  {b}: {pct:.2f}%{tag}")
 
 
 if __name__ == "__main__":

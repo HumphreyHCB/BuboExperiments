@@ -1,0 +1,750 @@
+============================================================
+Benchmark: NBody
+BuboLIRPhase: true
+RUNS: 500
+extra_args: 1200000
+Timestamp: Thu 22 Jan 13:59:52 GMT 2026
+
+[WARN] Unknown argument: output
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+java.lang.module.ModuleDescriptor.name()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.module.ModuleReference.descriptor()java.lang.module.ModuleDescriptor -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.Enum.ordinal()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.lang.Class.isPrimitive()boolean -1 codeSignature differs 98ab40cf2ebcc843a57e4548f9a42e2e9f3f439b3cfc72b2a9affe72c8d06a5f != 5b9fc3b01b5ff747850254186cdcc08e50c4f85fb4d4d68bc0989fcb181794f8
+jdk.internal.util.StrongReferenceKey.get()java.lang.Object -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.Class.getClassLoader()java.lang.ClassLoader -1 codeSignature differs 1ec746d9657abb2124f404e47924197593986fc62346c6cd76072c08e29afddf != 454facf798c6644faed5619d9e1dae25408778409730f09c41b1c0c95518fd46
+java.lang.invoke.MethodType.returnType()java.lang.Class -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+jdk.internal.classfile.impl.AbstractPoolEntry.index()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.lang.invoke.MemberName.getDeclaringClass()java.lang.Class -1 codeSignature differs b46e439bc51650ff335d2a7124f0b0154f260fe1af8ba145c6fd3cf5008c9e4e != de7d2501b6c4ceaef40260482daf6e5ea615f5f43bc71d4e0a42f41866056e09
+java.lang.invoke.MethodType.form()java.lang.invoke.MethodTypeForm -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.util.stream.FindOps$FindSink.cancellationRequested()boolean -1 codeSignature differs 55af0dc4b7688c78180d5f5b00584e4bf66cf93bd60716f9aab49e7a6fd64ac4 != d201d3c970d1bea0e5266b3abd2e0b5e37d50f57628f0f6798d16338d8e21f6a
+java.lang.Object.<init>()void -1 codeSignature differs fe534d3aac0502b22527b54e744892c09d7496fd765947a3ee3ec9a070d56f92 != b5ee38686824d688fb238521bf027287d22a9235c6ea851247456595ee3c4ca5
+java.lang.String.hashCode()int -1 codeSignature differs cd869c87835ef8242ee90410caccd8a61a63cd99231e11f83fcdc76366e70264 != aa1e9c2f9ea239d2fb15b2f7ff9a60f790f0544470df5bee9a657461c7ae39f8
+jdk.internal.module.ModuleReferenceImpl.moduleResolution()jdk.internal.module.ModuleResolution -1 codeSignature differs b76db95b8fd3a055b26c3a6c15023743ea3cd488646d474319964a2e9e13b73e != c90e5cf05b5ed15b2ee4632b0f01daf8e8a827ca7e4e1d9f528d5eb553edbcfd
+java.lang.module.ModuleDescriptor$Requires.modifiers()java.util.Set -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.module.ModuleDescriptor$Requires.name()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor.requires()java.util.Set -1 codeSignature differs 50021c78154f047ad8f88f0733084203e726ca2f3911eed3f4e2615369ae39b2 != a12f6d231bab91ade119f5f7e87b83e28ce01e2d62fff01cc7676b635a92f884
+java.lang.module.ModuleDescriptor.isAutomatic()boolean -1 codeSignature differs 2c5d9434fa6cbff1c0177053ad01774247e7a98383a3d0ee5c4dccbf56bf9e86 != 08dea6d6ec137b950a0343efb1bd030f87565d8e5b95eb64f025bd8e338928e2
+java.util.HashMap$Node.getKey()java.lang.Object -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.util.HashMap$Node.getValue()java.lang.Object -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.util.ImmutableCollections$Set12.isEmpty()boolean -1 codeSignature differs d890ffc04cd03ec866061096d7d13d2670cacc5a2328b692374e3523d40574bd != 6120e833de16ceab3ef754d1b00c19883b3f73962ba2cdf17c59c3710ba02d36
+java.lang.module.ModuleDescriptor$Exports.source()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor$Exports.targets()java.util.Set -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.module.ModuleDescriptor.provides()java.util.Set -1 codeSignature differs 309d9291f2d3c2a63becdec49b2c74b25af9d7fdc62dad05faf86a64889608fc != f5d85dfdf7fef12d65d210d402c44bf26eeb0fb3f9225e78ee6443caec31b619
+java.lang.module.ModuleDescriptor.exports()java.util.Set -1 codeSignature differs 948d21eddb9ad191efbc24290e4e840a30aebb134151b75def9175ab54c0a48c != c3334e7c488922d9ee7281afad5b7ca4db54a4ab2b49cf0e755dc0a6c55854b4
+java.lang.module.ModuleDescriptor.uses()java.util.Set -1 codeSignature differs e3ce51591a4fee3aaff0c687fbb639bc8c1569c92e84d989cdc906a081a3aa6f != 69f900c261d900c3a12e3d84961667caa75caf8ed42490b80edd3cdf23db4832
+java.util.Objects.requireNonNull(java.lang.Object)java.lang.Object -1 codeSignature differs fab3390bacdc1c06ac727172609d32d56c9697db51c25bc06ba90803d6336aa7 != 5f34d305ad8c459e05cc78e8e67ce712079a25140f4444aee0bca43f73c4de02
+java.util.ImmutableCollections$SetN$SetNIterator.hasNext()boolean -1 codeSignature differs 014069b9d29ae67f97f8d652b8d7a77d9057cdb393e4e32597c925d7a30bdc82 != 60575b8cd4d2a8242a8aab77fb607844ec4f52bcc97ca89e8880d7f6422024af
+Requesting uncached profile for bci 44 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBytecodeProfile
+Requesting uncached profile for bci 44 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBranchTakenProbability
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 codeSignature differs 1cd7ec404b399886be917d4acb08e03556fd7c60be9bbc5d21c5aa5961bdaded != 829478485a428303739a297a306f34a5f6d0fd7d0f8daa29efba1f814b054675
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs cc325e064e7585e0e6736addc07d3b5b1a1e9ec52f960e7777496af159b5096f != dd493989519e7f328311cfecc7abfe1946186eaebdea7e8b59878a8ba9e25a26
+java.util.HashMap.hash(java.lang.Object)int -1 codeSignature differs 93330bc513a7287259a81bc99bcadb178bfb174efa5c634b8fb77359e9591452 != 7531c7531a2a3f673eeee94d94b35ac2f000e523136e7baf10f4023b14bdba90
+java.lang.module.ModuleDescriptor$Provides.service()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.module.ModuleDescriptor$Exports.isQualified()boolean -1 codeSignature differs 880f8367e9420afa88e78245dfb35d3f5b43f711b90b48fa2c65afac7627a9ff != 2b7cf6af3632f48f27929d4224dd12c283b763ab620ddfd119e461aef28308cf
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 codeSignature differs 50749f95d84162f22ea584f6210307eb54143a15177f40b63bbd0865a8dff937 != be110c6539ea6d86d7b9d48a842b2f8358ad00269cfe03623c7d77f301e5839d
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs ee09f2c8e8aef299f145f669ac6d290ab921c200bee62674b2ab14a5f207c19a != 27ba10a12906ca5a4eaa0ddbdb8cdbd97a0a183d21916ae0dce244a079058c87
+java.util.HashMap$Node.<init>(int, java.lang.Object, java.lang.Object, java.util.HashMap$Node)void -1 codeSignature differs 3215379039e1e4bc9f236c802e981acb6a67540d7c413c2bc6b9413211b6d26a != 57930d9faefe74b83eed0d16e9149365f5513872b906ab839e1607f264ca232f
+java.lang.String.equals(java.lang.Object)boolean -1 codeSignature differs 1b81cb89f6505a5995dbabe425a69a03531cfa5e9b0bad05edda29235b5071d3 != 9d4deb1417e3dc3304e6e48d0050681b843c1c29f58a963fe6d7cb88c5948543
+java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs 240f841b413bb8bd2af4877cb3753eac11d3bdc482d702e067df992e72784ebb != 2d841e5f6ff33687ba2a8e89c73735b82c892266d476f740b43f9fc2b4d21873
+java.lang.Byte.toUnsignedInt(byte)int -1 codeSignature differs ef53887b8aa24310d9482f8fff2e03d6f5088235fdd6794c9711e90d2fb316a1 != 13d5f6657504f424775e099bdc463c00fbb2dd5e93459aa3373cba81212b5a0d
+java.util.KeyValueHolder.getKey()java.lang.Object -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.util.KeyValueHolder.getValue()java.lang.Object -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor.packages()java.util.Set -1 codeSignature differs 1ec746d9657abb2124f404e47924197593986fc62346c6cd76072c08e29afddf != 454facf798c6644faed5619d9e1dae25408778409730f09c41b1c0c95518fd46
+java.lang.module.ResolvedModule.reference()java.lang.module.ModuleReference -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor$Version.toString()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.AbstractStringBuilder.length()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.util.HashMap.newNode(int, java.lang.Object, java.lang.Object, java.util.HashMap$Node)java.util.HashMap$Node -1 codeSignature differs 0b57ad3d0ea1b0de0d3ae4d1256f2a3bf2dacceb94022bee4e70d75bf1848358 != df85b2b14fb5de70af8f6a1aa6efa050fdaf0546a0197d26ebd4113543cc599e
+java.util.HashMap.afterNodeInsertion(boolean)void -1 codeSignature differs fe534d3aac0502b22527b54e744892c09d7496fd765947a3ee3ec9a070d56f92 != b5ee38686824d688fb238521bf027287d22a9235c6ea851247456595ee3c4ca5
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 codeSignature differs 30905683e5d5f8d4a8e7f0ef7ffc38a2cb30cfa6ba6a428a6134c97ee4382b7e != 71b5806f1ea233aa827fa5d038ba674d81e612e1d8e7876139112be5c3c8fa36
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+java.lang.module.ResolvedModule.configuration()java.lang.module.Configuration -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.module.ModuleDescriptor.isOpen()boolean -1 codeSignature differs 7251ebfc69511ba11260ce3e5fe8de41e1ee424c1c84ef382507a4b520f46599 != c4f3939346c24cd7625b42361349cb6733a9291eeffd7507e7bf858c000192f4
+java.util.HashMap.size()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+Profiling started
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8()boolean -1 codeSignature differs 6e3a14458a0fca90e6a63285514a933585cea592cb622e79b33ddc5df6e0fb66 != 6fdd5e023f8b36c06ccfc437f07740607e2fd6af8789c2b6573b1f8e5aec4921
+java.lang.invoke.MethodType.ptypes()java.lang.Class[] -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+jdk.internal.util.Preconditions.checkIndex(int, int, java.util.function.BiFunction)int -1 codeSignature differs 0537b0c8dc5fe868ee44de1817c0b047b24d886158549ad641b2b99126c678bb != 097cdde476e7d7a11441cfa0c37471ca0a888d4c4166d67eed1a7e5c4df66c77
+java.nio.Buffer.limit()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+jdk.internal.classfile.impl.AbstractPoolEntry.width()int -1 codeSignature differs 6e3a14458a0fca90e6a63285514a933585cea592cb622e79b33ddc5df6e0fb66 != 6fdd5e023f8b36c06ccfc437f07740607e2fd6af8789c2b6573b1f8e5aec4921
+jdk.internal.classfile.impl.SplitConstantPool.size()int -1 codeSignature differs 1e851f5b2cbf37c0cd46831368dd889b60dff01d7b16161259960e24b264ceb1 != d37b0c203163b479a20ad6e2dad4e21eac1f1ad9b1ebc37e97f7861914a001ed
+java.util.Properties$LineReader.readLine()int -1 codeSignature differs dcc7cd9c2f0ddf11074c051e8afb59f862ed303e922c9b76c143ff5089c172ec != 43961d71b71ba232ed2694d540aa571e36bd52adf8e4b027613a65dc317ee3ed
+java.util.Properties$LineReader.readLine()int -1 graphSignature differs 2b486d112efd309f21b56eed8c0bb9d78dd9081f799ef08ff7c803bfde611f4a != 878ec244077db65df33a3f7d09ba7cba637998f872be81e8c5729e664e547e01
+java.lang.AbstractStringBuilder.getValue()byte[] -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.Enum.name()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 codeSignature differs 6cf4fb7fd874e15c16cb0f5b0e5aea3b0fd58bc8fcf38c48c000e5c66e2ad6a8 != 4dd8a0d23b54449c010a38548a4ec34726658ad72759db6c8d42ad0645f343a2
+jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 graphSignature differs 19b74d2985bd215adc18bbf16eb571f75605eb5502bcec63b71bd357cc668d6e != ec48f9da76be66a6b56b9242fa5c79b96c5a2b790a5832893550f14895067602
+sun.util.locale.BaseLocale.getLanguage()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.util.LinkedHashMap.removeEldestEntry(java.util.Map$Entry)boolean -1 codeSignature differs d890ffc04cd03ec866061096d7d13d2670cacc5a2328b692374e3523d40574bd != 6120e833de16ceab3ef754d1b00c19883b3f73962ba2cdf17c59c3710ba02d36
+java.util.concurrent.ConcurrentHashMap.tabAt(java.util.concurrent.ConcurrentHashMap$Node[], int)java.util.concurrent.ConcurrentHashMap$Node -1 codeSignature differs 71d647ba8c6a0b4ea5a8b561fe43e8bed960c9cb04034a7aef626c5d8360de6d != 822749e9eab55cf0ab08d112d11f644faf7767e7d7f602f22b2982e4341c74e7
+jdk.internal.misc.Unsafe.getReferenceAcquire(java.lang.Object, long)java.lang.Object -1 codeSignature differs 0be5c2bda59735ac5470d27796a18d252d59667b906c14721265d97be8abdd5a != a748a0c1fa3d1b22da119249a3931a9411370dff9604e49b3d7ef522719454b3
+java.lang.String.coder()byte -1 codeSignature differs f3a73f0f7ffcffdf8962f6b17b32b9d22dceb70a6321ad4e83f092ac924fb640 != 957313288ef4bdda0b4cd025d583dcf3b718c3f3a50464b737eb27e80ce0139f
+java.security.Provider$Service.getType()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.security.Provider$Service.getAlgorithm()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.security.Provider$Service.getAliases()java.util.List -1 codeSignature differs ec9959256dfdc1e5d707b10920cbff0d77d6151df3608588ba4900964b3e0488 != 48d94502b891e4704180e00ca37d65d0a704038e75c0e2368237a34efba54df3
+jdk.internal.classfile.impl.RawBytecodeHelper.bci()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+jdk.internal.classfile.impl.AbstractPoolEntry.constantPool()java.lang.classfile.constantpool.ConstantPool -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+jdk.internal.util.WeakReferenceKey.hashCode()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+java.lang.String.value()byte[] -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.String.isLatin1()boolean -1 codeSignature differs 7fbdb74539501cf2e6eb2a3c4a15d0e6598aaf73df2e1a5e20fd95a35a58b24e != 3176213e3be72bb5e1b482eae8a1c07901556750cdd7d42ef0cea4727e1ff083
+Starting NBody benchmark ...
+java.util.zip.Inflater$InflaterZStreamRef.address()long -1 codeSignature differs 6775e09a923d4a8abe8298f2b15f8be238b37428c67c56453b241b1ba16d6df1 != f3c65f65796504e8d1b5bcd4c700f1dfdf1da81415a7566e44557138e77310c4
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 codeSignature differs df3b672c4faf9b8e9c81d37ba53892d5bb76d91b2605d923dadb481f79796d8a != 625a83ff75952a5d0a805a4c58b62ea8ac6fa4c2e347559de275b3de58e5cde6
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 graphSignature differs f47d0b1647dabd6f0108a1c873e12c6a64939992dcc9e97f79a9e6e1f1af8649 != cda1bda6b067c21da86f5c9b00220a168b94ff95811df6ee0a57435eb4ec0473
+nbody.Body.getMass()double -1 codeSignature differs 11d7aec45f3b76fccac0c8ba3e9c4552451afb66a410eba160a9f7c145a18caf != c693083bbc91758ac4578c7ed55e2742fbbf3e732f9ca7307dc5e6e0610ab74c
+nbody.Body.getVX()double -1 codeSignature differs b844dba0495e6492a8475d6098eacd3070ef4241e487661ff5238af21501f249 != 22d45e2d518554ce78be2a6dbe5ef5f67c22f2718bcc5343478b47ff5b6f6ed8
+nbody.Body.getVY()double -1 codeSignature differs 75fc2cb2e214b7bcbb773f93dc20a70ec1bf3626c8a90894ed51a7389fdb6e12 != 482c68e24ffc33e1fc4235dc999451c313dd75697b7c818c1f8df1c52ec9dfd4
+nbody.Body.getVZ()double -1 codeSignature differs 7eaec3d9c2875c7d714e7f2ff678cf836ce5d64914d0d480267c584d1ab97fc9 != 1418ce66eada5c369cbde10a174a47dfce9ed8ab24a5d40327644011ce0677e2
+nbody.Body.getX()double -1 codeSignature differs c4baf2047fc54bd1b4d426ac8a6f1898101c58609dd3b537373f4f4ff3dd5dce != f86d49a0db1cd357ccbe7e8a721d58ccb7749f950682b132603cd1b3c1dac1da
+nbody.Body.getY()double -1 codeSignature differs 111840b3e101579860404a7d7395f3d6cda4cb41afd49d54c502338431942a94 != 26c751222ebec75b49575c04838c39ec0320eaedd6265fd0d5a201dad53e8ade
+nbody.Body.getZ()double -1 codeSignature differs b029c34d7ee1d0a92eed854b97d7b4757f1e95c25757dfb33c27f5b1cc0a2e04 != ef75f00436ee06ef88563e07f3783ab10358e1df6d678ffdc031c60f81cf1768
+nbody.Body.setVX(double)void -1 codeSignature differs 965b0848bfad1d15bb1c4f53da8bfbf30addd710a9539eacc3cf1f151909d82f != 921f46e66c457bbecd1f38bb6e98eb2a4e524c45397eeb57710942825488bbea
+nbody.Body.setVY(double)void -1 codeSignature differs 34430793e1d83e685b9d2db9f37b91408baeada335531e96f613ed7b990540af != bde80aa85b2dbc47bdd194fb2ab19485a504c34a4b22923706b73ec08cfa8957
+nbody.Body.setVZ(double)void -1 codeSignature differs 483655b738418d9d8a79641bdccd3eadc9581df8c66ac5a8f008feb46dc0bb3a != 56002884ebc779aa63fcb4e78125d6200f3e250ab9f0175d76cc8ad3fb8e6069
+nbody.Body.setX(double)void -1 codeSignature differs ff834e6a2b010e04cca0dde57aae9f2ef4364f30aa7b3f7d33a016e931d42274 != 10198cdc002ad24df087307e9a90921566ac63ad0391e3ec97a07a234db8a31d
+nbody.Body.setY(double)void -1 codeSignature differs fc7f74f51b45b458af54db501f4f755db9df191fb473aa0a0c4fbd4338788f4d != 98cd1fa94688a8817e9f9bf0702824cfaef836e2e44200fdac908203aef20586
+nbody.Body.setZ(double)void -1 codeSignature differs 5a84361dbcbfafea209371505d89f52aeabcebfbac76009743b8d0b9718f3c37 != a524357852c0b1169b3c2d33676977e4cefbd6b71882c69f12362bee97ef7138
+nbody.NBodySystem.advance(double)void -1 codeSignature differs 74cbe93848adeadc1e6c07064c2f94265e6031887a88bb5548e8df5314b59b26 != cd70037eb8d2d55337ee99e83a0a6941cdcf0c34d987025d24233452c74d2221
+nbody.NBodySystem.advance(double)void -1 graphSignature differs 09c493677e6787a2cb943a6e4220f805b8bb62a87d2ec5e571c269509cf86752 != 2cadd4478756346b768c2da67985ee7dce3ba4a7311f21ac4132ee266283d0e6
+NBody.innerBenchmarkLoop(int)boolean -1 codeSignature differs 7e36b2545159819b66d52e051a41b042bed0644da7019435af3001878995f11d != be8be4fb1c4e40e4e37bfaf29f724d985381a42ae38a21e0bd649dcb92617c1a
+NBody.innerBenchmarkLoop(int)boolean -1 graphSignature differs efb9b3855afae44f59615deee136d7123180dad91f73891d18a1d290ce6da21e != c0b664254d29cfad092a243144fe2c0729f96ec34c614de42dfc076dbd6c1f9f
+jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+jdk.internal.classfile.impl.BufWriterImpl.size()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+java.lang.invoke.MethodTypeForm.erasedType()java.lang.invoke.MethodType -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool()jdk.internal.classfile.impl.SplitConstantPool -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.invoke.MethodHandle.type()java.lang.invoke.MethodType -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.util.ArrayList.size()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+java.lang.String.length()int -1 codeSignature differs 5f2a9f3bb1f4f800ea4f2ad278553dedcfc789fe27a155b26df986828b30ede3 != c429f09bde0922a4e93c787fa5a5cdbca277237619ab7dc7eb3cc60d99b0f3aa
+NBody: iterations=1 runtime: 1203280us
+NBody: iterations=2 runtime: 179504us
+NBody: iterations=3 runtime: 179933us
+NBody: iterations=4 runtime: 182257us
+NBody: iterations=5 runtime: 182013us
+NBody: iterations=6 runtime: 182071us
+NBody: iterations=7 runtime: 181323us
+NBody: iterations=8 runtime: 182122us
+NBody: iterations=9 runtime: 181470us
+NBody: iterations=10 runtime: 179784us
+NBody: iterations=11 runtime: 179342us
+NBody: iterations=12 runtime: 181433us
+NBody: iterations=13 runtime: 178991us
+NBody: iterations=14 runtime: 180212us
+NBody: iterations=15 runtime: 182282us
+NBody: iterations=16 runtime: 181423us
+NBody: iterations=17 runtime: 182288us
+NBody: iterations=18 runtime: 181781us
+NBody: iterations=19 runtime: 181489us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.nio.Buffer.position()int -1 codeSignature differs 3f64cd4fafea8a3cef87601314961681d43f2aa75c3a358c1b0ce8d9a1c4731a != a754d4fbb14cb674813e5d56933661602e017cf332100c6f35524287a66eeea9
+NBody: iterations=20 runtime: 177994us
+NBody: iterations=21 runtime: 224322us
+NBody: iterations=22 runtime: 182129us
+NBody: iterations=23 runtime: 181785us
+NBody: iterations=24 runtime: 183036us
+NBody: iterations=25 runtime: 221960us
+NBody: iterations=26 runtime: 300823us
+NBody: iterations=27 runtime: 215073us
+NBody: iterations=28 runtime: 180519us
+NBody: iterations=29 runtime: 180293us
+NBody: iterations=30 runtime: 181585us
+NBody: iterations=31 runtime: 322694us
+NBody: iterations=32 runtime: 238165us
+NBody: iterations=33 runtime: 182352us
+NBody: iterations=34 runtime: 181879us
+NBody: iterations=35 runtime: 182334us
+NBody: iterations=36 runtime: 181200us
+NBody: iterations=37 runtime: 181006us
+NBody: iterations=38 runtime: 181328us
+NBody: iterations=39 runtime: 181654us
+NBody: iterations=40 runtime: 181210us
+NBody: iterations=41 runtime: 181751us
+NBody: iterations=42 runtime: 181180us
+NBody: iterations=43 runtime: 181282us
+NBody: iterations=44 runtime: 181287us
+NBody: iterations=45 runtime: 181169us
+NBody: iterations=46 runtime: 180959us
+NBody: iterations=47 runtime: 181569us
+NBody: iterations=48 runtime: 180529us
+NBody: iterations=49 runtime: 182890us
+NBody: iterations=50 runtime: 181529us
+NBody: iterations=51 runtime: 181139us
+NBody: iterations=52 runtime: 181228us
+NBody: iterations=53 runtime: 181563us
+NBody: iterations=54 runtime: 181402us
+NBody: iterations=55 runtime: 181506us
+NBody: iterations=56 runtime: 181256us
+NBody: iterations=57 runtime: 181507us
+NBody: iterations=58 runtime: 180976us
+NBody: iterations=59 runtime: 180807us
+NBody: iterations=60 runtime: 181291us
+NBody: iterations=61 runtime: 181519us
+NBody: iterations=62 runtime: 180764us
+NBody: iterations=63 runtime: 180609us
+NBody: iterations=64 runtime: 180897us
+NBody: iterations=65 runtime: 180882us
+NBody: iterations=66 runtime: 180999us
+NBody: iterations=67 runtime: 181155us
+NBody: iterations=68 runtime: 181828us
+NBody: iterations=69 runtime: 181181us
+NBody: iterations=70 runtime: 181166us
+NBody: iterations=71 runtime: 181936us
+NBody: iterations=72 runtime: 181886us
+NBody: iterations=73 runtime: 181720us
+NBody: iterations=74 runtime: 181603us
+NBody: iterations=75 runtime: 181423us
+NBody: iterations=76 runtime: 181239us
+NBody: iterations=77 runtime: 180033us
+NBody: iterations=78 runtime: 178415us
+NBody: iterations=79 runtime: 181000us
+NBody: iterations=80 runtime: 181368us
+NBody: iterations=81 runtime: 181588us
+NBody: iterations=82 runtime: 181385us
+NBody: iterations=83 runtime: 182263us
+NBody: iterations=84 runtime: 181660us
+NBody: iterations=85 runtime: 181966us
+NBody: iterations=86 runtime: 181225us
+NBody: iterations=87 runtime: 180705us
+NBody: iterations=88 runtime: 180855us
+NBody: iterations=89 runtime: 180753us
+NBody: iterations=90 runtime: 181698us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.nio.Buffer.capacity()int -1 codeSignature differs 138bc711c3bed648b8548df225303894eec321dce856bde9fbb2267d74239e89 != 8366e168458356e9e2795362a66f19336b0e55f9e34ac8b5d6d37702a481c8da
+NBody: iterations=91 runtime: 180898us
+NBody: iterations=92 runtime: 199406us
+NBody: iterations=93 runtime: 179027us
+NBody: iterations=94 runtime: 177610us
+NBody: iterations=95 runtime: 177574us
+NBody: iterations=96 runtime: 177632us
+NBody: iterations=97 runtime: 180381us
+NBody: iterations=98 runtime: 180837us
+NBody: iterations=99 runtime: 178007us
+NBody: iterations=100 runtime: 178803us
+NBody: iterations=101 runtime: 180801us
+NBody: iterations=102 runtime: 181501us
+NBody: iterations=103 runtime: 181385us
+NBody: iterations=104 runtime: 182855us
+NBody: iterations=105 runtime: 180798us
+NBody: iterations=106 runtime: 180919us
+NBody: iterations=107 runtime: 181065us
+NBody: iterations=108 runtime: 181421us
+NBody: iterations=109 runtime: 181072us
+NBody: iterations=110 runtime: 180988us
+NBody: iterations=111 runtime: 181273us
+NBody: iterations=112 runtime: 181918us
+NBody: iterations=113 runtime: 180863us
+NBody: iterations=114 runtime: 177639us
+NBody: iterations=115 runtime: 180357us
+NBody: iterations=116 runtime: 181150us
+NBody: iterations=117 runtime: 180597us
+NBody: iterations=118 runtime: 180782us
+NBody: iterations=119 runtime: 180847us
+NBody: iterations=120 runtime: 180972us
+NBody: iterations=121 runtime: 180986us
+NBody: iterations=122 runtime: 181062us
+NBody: iterations=123 runtime: 181580us
+NBody: iterations=124 runtime: 179687us
+NBody: iterations=125 runtime: 177592us
+NBody: iterations=126 runtime: 180427us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.nio.charset.CharsetEncoder.maxBytesPerChar()float -1 codeSignature differs d0dc63dd2361c2989cb14e4cf77bfb3442e0a43d3c92bbd78638646fefb8363f != fecc7851573229b2c1300c739298992122dcb58fa032d82e9692f06a80e3cdc4
+NBody: iterations=127 runtime: 181129us
+NBody: iterations=128 runtime: 198333us
+NBody: iterations=129 runtime: 182585us
+NBody: iterations=130 runtime: 181830us
+NBody: iterations=131 runtime: 183254us
+NBody: iterations=132 runtime: 182264us
+NBody: iterations=133 runtime: 181915us
+NBody: iterations=134 runtime: 180903us
+NBody: iterations=135 runtime: 181841us
+NBody: iterations=136 runtime: 181399us
+NBody: iterations=137 runtime: 182323us
+NBody: iterations=138 runtime: 180788us
+NBody: iterations=139 runtime: 180701us
+NBody: iterations=140 runtime: 180540us
+NBody: iterations=141 runtime: 181094us
+NBody: iterations=142 runtime: 181166us
+NBody: iterations=143 runtime: 181008us
+NBody: iterations=144 runtime: 179564us
+NBody: iterations=145 runtime: 177659us
+NBody: iterations=146 runtime: 180045us
+NBody: iterations=147 runtime: 180928us
+NBody: iterations=148 runtime: 203906us
+NBody: iterations=149 runtime: 181284us
+NBody: iterations=150 runtime: 181178us
+NBody: iterations=151 runtime: 180739us
+NBody: iterations=152 runtime: 180870us
+NBody: iterations=153 runtime: 181571us
+NBody: iterations=154 runtime: 181396us
+NBody: iterations=155 runtime: 181075us
+NBody: iterations=156 runtime: 182133us
+NBody: iterations=157 runtime: 180754us
+NBody: iterations=158 runtime: 181157us
+NBody: iterations=159 runtime: 182986us
+NBody: iterations=160 runtime: 181382us
+NBody: iterations=161 runtime: 181536us
+NBody: iterations=162 runtime: 181634us
+NBody: iterations=163 runtime: 181645us
+NBody: iterations=164 runtime: 181309us
+NBody: iterations=165 runtime: 180583us
+NBody: iterations=166 runtime: 181040us
+NBody: iterations=167 runtime: 181367us
+NBody: iterations=168 runtime: 181420us
+NBody: iterations=169 runtime: 181119us
+NBody: iterations=170 runtime: 181676us
+NBody: iterations=171 runtime: 180956us
+NBody: iterations=172 runtime: 181289us
+NBody: iterations=173 runtime: 181100us
+NBody: iterations=174 runtime: 180656us
+NBody: iterations=175 runtime: 181139us
+NBody: iterations=176 runtime: 181273us
+NBody: iterations=177 runtime: 180209us
+NBody: iterations=178 runtime: 177878us
+NBody: iterations=179 runtime: 177789us
+NBody: iterations=180 runtime: 177625us
+NBody: iterations=181 runtime: 181062us
+NBody: iterations=182 runtime: 180815us
+NBody: iterations=183 runtime: 181362us
+NBody: iterations=184 runtime: 181698us
+NBody: iterations=185 runtime: 180960us
+NBody: iterations=186 runtime: 182522us
+NBody: iterations=187 runtime: 182802us
+NBody: iterations=188 runtime: 181808us
+NBody: iterations=189 runtime: 181693us
+NBody: iterations=190 runtime: 181512us
+NBody: iterations=191 runtime: 181694us
+NBody: iterations=192 runtime: 181676us
+NBody: iterations=193 runtime: 181207us
+NBody: iterations=194 runtime: 180894us
+NBody: iterations=195 runtime: 180874us
+NBody: iterations=196 runtime: 180903us
+NBody: iterations=197 runtime: 181246us
+NBody: iterations=198 runtime: 181167us
+NBody: iterations=199 runtime: 181666us
+NBody: iterations=200 runtime: 181921us
+NBody: iterations=201 runtime: 181366us
+NBody: iterations=202 runtime: 181371us
+NBody: iterations=203 runtime: 181255us
+NBody: iterations=204 runtime: 181008us
+NBody: iterations=205 runtime: 180584us
+NBody: iterations=206 runtime: 180940us
+NBody: iterations=207 runtime: 180815us
+NBody: iterations=208 runtime: 180990us
+NBody: iterations=209 runtime: 180673us
+NBody: iterations=210 runtime: 181165us
+NBody: iterations=211 runtime: 181125us
+NBody: iterations=212 runtime: 181401us
+NBody: iterations=213 runtime: 181164us
+NBody: iterations=214 runtime: 183407us
+NBody: iterations=215 runtime: 181309us
+NBody: iterations=216 runtime: 180845us
+NBody: iterations=217 runtime: 181421us
+NBody: iterations=218 runtime: 179945us
+NBody: iterations=219 runtime: 179142us
+NBody: iterations=220 runtime: 180711us
+NBody: iterations=221 runtime: 181694us
+NBody: iterations=222 runtime: 181044us
+NBody: iterations=223 runtime: 181051us
+NBody: iterations=224 runtime: 180912us
+NBody: iterations=225 runtime: 181597us
+NBody: iterations=226 runtime: 181892us
+NBody: iterations=227 runtime: 181056us
+NBody: iterations=228 runtime: 180935us
+NBody: iterations=229 runtime: 181212us
+NBody: iterations=230 runtime: 180919us
+NBody: iterations=231 runtime: 180758us
+NBody: iterations=232 runtime: 181286us
+NBody: iterations=233 runtime: 181664us
+NBody: iterations=234 runtime: 181283us
+NBody: iterations=235 runtime: 180876us
+NBody: iterations=236 runtime: 181249us
+NBody: iterations=237 runtime: 180849us
+NBody: iterations=238 runtime: 181208us
+NBody: iterations=239 runtime: 181282us
+NBody: iterations=240 runtime: 180830us
+NBody: iterations=241 runtime: 181894us
+NBody: iterations=242 runtime: 182081us
+NBody: iterations=243 runtime: 180783us
+NBody: iterations=244 runtime: 182066us
+NBody: iterations=245 runtime: 181005us
+NBody: iterations=246 runtime: 182291us
+NBody: iterations=247 runtime: 181515us
+NBody: iterations=248 runtime: 180692us
+NBody: iterations=249 runtime: 180842us
+NBody: iterations=250 runtime: 180751us
+NBody: iterations=251 runtime: 180991us
+NBody: iterations=252 runtime: 181407us
+NBody: iterations=253 runtime: 181426us
+NBody: iterations=254 runtime: 180913us
+NBody: iterations=255 runtime: 179425us
+NBody: iterations=256 runtime: 179378us
+NBody: iterations=257 runtime: 180778us
+NBody: iterations=258 runtime: 181814us
+NBody: iterations=259 runtime: 181429us
+NBody: iterations=260 runtime: 181106us
+NBody: iterations=261 runtime: 181923us
+NBody: iterations=262 runtime: 181249us
+NBody: iterations=263 runtime: 180876us
+NBody: iterations=264 runtime: 177781us
+NBody: iterations=265 runtime: 181375us
+NBody: iterations=266 runtime: 181053us
+NBody: iterations=267 runtime: 180826us
+NBody: iterations=268 runtime: 180695us
+NBody: iterations=269 runtime: 182931us
+NBody: iterations=270 runtime: 180731us
+NBody: iterations=271 runtime: 180943us
+NBody: iterations=272 runtime: 180811us
+NBody: iterations=273 runtime: 180604us
+NBody: iterations=274 runtime: 178131us
+NBody: iterations=275 runtime: 204002us
+NBody: iterations=276 runtime: 180855us
+NBody: iterations=277 runtime: 180961us
+NBody: iterations=278 runtime: 181409us
+NBody: iterations=279 runtime: 181220us
+NBody: iterations=280 runtime: 181119us
+NBody: iterations=281 runtime: 180877us
+NBody: iterations=282 runtime: 180561us
+NBody: iterations=283 runtime: 181132us
+NBody: iterations=284 runtime: 181218us
+NBody: iterations=285 runtime: 181268us
+NBody: iterations=286 runtime: 181354us
+NBody: iterations=287 runtime: 180791us
+NBody: iterations=288 runtime: 181929us
+NBody: iterations=289 runtime: 180977us
+NBody: iterations=290 runtime: 180886us
+NBody: iterations=291 runtime: 181584us
+NBody: iterations=292 runtime: 180756us
+NBody: iterations=293 runtime: 180865us
+NBody: iterations=294 runtime: 181690us
+NBody: iterations=295 runtime: 180921us
+NBody: iterations=296 runtime: 181801us
+NBody: iterations=297 runtime: 183077us
+NBody: iterations=298 runtime: 181558us
+NBody: iterations=299 runtime: 181756us
+NBody: iterations=300 runtime: 181804us
+NBody: iterations=301 runtime: 182535us
+NBody: iterations=302 runtime: 181602us
+NBody: iterations=303 runtime: 180485us
+NBody: iterations=304 runtime: 180675us
+NBody: iterations=305 runtime: 181279us
+NBody: iterations=306 runtime: 180723us
+NBody: iterations=307 runtime: 181216us
+NBody: iterations=308 runtime: 180973us
+NBody: iterations=309 runtime: 180930us
+NBody: iterations=310 runtime: 182442us
+NBody: iterations=311 runtime: 181876us
+NBody: iterations=312 runtime: 181187us
+NBody: iterations=313 runtime: 182107us
+NBody: iterations=314 runtime: 181462us
+NBody: iterations=315 runtime: 181681us
+NBody: iterations=316 runtime: 181212us
+NBody: iterations=317 runtime: 181482us
+NBody: iterations=318 runtime: 181746us
+NBody: iterations=319 runtime: 182164us
+NBody: iterations=320 runtime: 181467us
+NBody: iterations=321 runtime: 179169us
+NBody: iterations=322 runtime: 182175us
+NBody: iterations=323 runtime: 180793us
+NBody: iterations=324 runtime: 182697us
+NBody: iterations=325 runtime: 180837us
+NBody: iterations=326 runtime: 181074us
+NBody: iterations=327 runtime: 181043us
+NBody: iterations=328 runtime: 181453us
+NBody: iterations=329 runtime: 182189us
+NBody: iterations=330 runtime: 181674us
+NBody: iterations=331 runtime: 181384us
+NBody: iterations=332 runtime: 179138us
+NBody: iterations=333 runtime: 178073us
+NBody: iterations=334 runtime: 177873us
+NBody: iterations=335 runtime: 179707us
+NBody: iterations=336 runtime: 181031us
+NBody: iterations=337 runtime: 181189us
+NBody: iterations=338 runtime: 181468us
+NBody: iterations=339 runtime: 180722us
+NBody: iterations=340 runtime: 180561us
+NBody: iterations=341 runtime: 181704us
+NBody: iterations=342 runtime: 180928us
+NBody: iterations=343 runtime: 181619us
+NBody: iterations=344 runtime: 181174us
+NBody: iterations=345 runtime: 181118us
+NBody: iterations=346 runtime: 181337us
+NBody: iterations=347 runtime: 181100us
+NBody: iterations=348 runtime: 180700us
+NBody: iterations=349 runtime: 180479us
+NBody: iterations=350 runtime: 182126us
+NBody: iterations=351 runtime: 181651us
+NBody: iterations=352 runtime: 182943us
+NBody: iterations=353 runtime: 181509us
+NBody: iterations=354 runtime: 182161us
+NBody: iterations=355 runtime: 181849us
+NBody: iterations=356 runtime: 179837us
+NBody: iterations=357 runtime: 186996us
+NBody: iterations=358 runtime: 185494us
+NBody: iterations=359 runtime: 181306us
+NBody: iterations=360 runtime: 181296us
+NBody: iterations=361 runtime: 180824us
+NBody: iterations=362 runtime: 180890us
+NBody: iterations=363 runtime: 182316us
+NBody: iterations=364 runtime: 181983us
+NBody: iterations=365 runtime: 179422us
+NBody: iterations=366 runtime: 179566us
+NBody: iterations=367 runtime: 181116us
+NBody: iterations=368 runtime: 182117us
+NBody: iterations=369 runtime: 181307us
+NBody: iterations=370 runtime: 181519us
+NBody: iterations=371 runtime: 181616us
+NBody: iterations=372 runtime: 181590us
+NBody: iterations=373 runtime: 181038us
+NBody: iterations=374 runtime: 182059us
+NBody: iterations=375 runtime: 181221us
+NBody: iterations=376 runtime: 182877us
+NBody: iterations=377 runtime: 181540us
+NBody: iterations=378 runtime: 180859us
+NBody: iterations=379 runtime: 182738us
+NBody: iterations=380 runtime: 181118us
+NBody: iterations=381 runtime: 180805us
+NBody: iterations=382 runtime: 181588us
+NBody: iterations=383 runtime: 180847us
+NBody: iterations=384 runtime: 180758us
+NBody: iterations=385 runtime: 181784us
+NBody: iterations=386 runtime: 181643us
+NBody: iterations=387 runtime: 179114us
+NBody: iterations=388 runtime: 181375us
+NBody: iterations=389 runtime: 181186us
+NBody: iterations=390 runtime: 180147us
+NBody: iterations=391 runtime: 177810us
+NBody: iterations=392 runtime: 178225us
+NBody: iterations=393 runtime: 177677us
+NBody: iterations=394 runtime: 177510us
+NBody: iterations=395 runtime: 177765us
+NBody: iterations=396 runtime: 178829us
+NBody: iterations=397 runtime: 178357us
+NBody: iterations=398 runtime: 180712us
+NBody: iterations=399 runtime: 181955us
+NBody: iterations=400 runtime: 181107us
+NBody: iterations=401 runtime: 180392us
+NBody: iterations=402 runtime: 180957us
+NBody: iterations=403 runtime: 181619us
+NBody: iterations=404 runtime: 181394us
+NBody: iterations=405 runtime: 182192us
+NBody: iterations=406 runtime: 181593us
+NBody: iterations=407 runtime: 183235us
+NBody: iterations=408 runtime: 181120us
+NBody: iterations=409 runtime: 181861us
+NBody: iterations=410 runtime: 181015us
+NBody: iterations=411 runtime: 181417us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 codeSignature differs db8012b016ca99189c62cfb7b913b1f5bdbe35a6c740579c3f7d75f8facc27c6 != 17fc64c9586f0ecf27e1468b2eeb1b40eb8569e6db2faf747d95dee3bfb3e1f0
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
+NBody: iterations=412 runtime: 181700us
+NBody: iterations=413 runtime: 182597us
+NBody: iterations=414 runtime: 182685us
+NBody: iterations=415 runtime: 181387us
+NBody: iterations=416 runtime: 181090us
+NBody: iterations=417 runtime: 181316us
+NBody: iterations=418 runtime: 179495us
+NBody: iterations=419 runtime: 177959us
+NBody: iterations=420 runtime: 180967us
+NBody: iterations=421 runtime: 180967us
+NBody: iterations=422 runtime: 181445us
+NBody: iterations=423 runtime: 181251us
+NBody: iterations=424 runtime: 182051us
+NBody: iterations=425 runtime: 181483us
+NBody: iterations=426 runtime: 181242us
+NBody: iterations=427 runtime: 180792us
+NBody: iterations=428 runtime: 181069us
+NBody: iterations=429 runtime: 181165us
+NBody: iterations=430 runtime: 180931us
+NBody: iterations=431 runtime: 182518us
+NBody: iterations=432 runtime: 181030us
+NBody: iterations=433 runtime: 178209us
+NBody: iterations=434 runtime: 181971us
+NBody: iterations=435 runtime: 181127us
+NBody: iterations=436 runtime: 181203us
+NBody: iterations=437 runtime: 180982us
+NBody: iterations=438 runtime: 181116us
+NBody: iterations=439 runtime: 181097us
+NBody: iterations=440 runtime: 178634us
+NBody: iterations=441 runtime: 178400us
+NBody: iterations=442 runtime: 181584us
+NBody: iterations=443 runtime: 181690us
+NBody: iterations=444 runtime: 181420us
+NBody: iterations=445 runtime: 180612us
+NBody: iterations=446 runtime: 177446us
+NBody: iterations=447 runtime: 177399us
+NBody: iterations=448 runtime: 177834us
+NBody: iterations=449 runtime: 177727us
+NBody: iterations=450 runtime: 177714us
+NBody: iterations=451 runtime: 178580us
+NBody: iterations=452 runtime: 177772us
+NBody: iterations=453 runtime: 181231us
+NBody: iterations=454 runtime: 182340us
+NBody: iterations=455 runtime: 181682us
+NBody: iterations=456 runtime: 181306us
+NBody: iterations=457 runtime: 181265us
+NBody: iterations=458 runtime: 181046us
+NBody: iterations=459 runtime: 181199us
+NBody: iterations=460 runtime: 182145us
+NBody: iterations=461 runtime: 181106us
+NBody: iterations=462 runtime: 182821us
+NBody: iterations=463 runtime: 181518us
+NBody: iterations=464 runtime: 182129us
+NBody: iterations=465 runtime: 181168us
+NBody: iterations=466 runtime: 181715us
+NBody: iterations=467 runtime: 182018us
+NBody: iterations=468 runtime: 181983us
+NBody: iterations=469 runtime: 181114us
+NBody: iterations=470 runtime: 182148us
+NBody: iterations=471 runtime: 181856us
+NBody: iterations=472 runtime: 181984us
+NBody: iterations=473 runtime: 181977us
+NBody: iterations=474 runtime: 182183us
+NBody: iterations=475 runtime: 182018us
+NBody: iterations=476 runtime: 181713us
+NBody: iterations=477 runtime: 181276us
+NBody: iterations=478 runtime: 181520us
+NBody: iterations=479 runtime: 181946us
+NBody: iterations=480 runtime: 182221us
+NBody: iterations=481 runtime: 180803us
+NBody: iterations=482 runtime: 182231us
+NBody: iterations=483 runtime: 187852us
+NBody: iterations=484 runtime: 198587us
+NBody: iterations=485 runtime: 181847us
+NBody: iterations=486 runtime: 181961us
+NBody: iterations=487 runtime: 181709us
+NBody: iterations=488 runtime: 181410us
+NBody: iterations=489 runtime: 183020us
+NBody: iterations=490 runtime: 181012us
+NBody: iterations=491 runtime: 182104us
+NBody: iterations=492 runtime: 181404us
+NBody: iterations=493 runtime: 181573us
+NBody: iterations=494 runtime: 181417us
+NBody: iterations=495 runtime: 180868us
+NBody: iterations=496 runtime: 181542us
+NBody: iterations=497 runtime: 181864us
+NBody: iterations=498 runtime: 182036us
+NBody: iterations=499 runtime: 182179us
+NBody: iterations=500 runtime: 181983us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface()boolean -1 codeSignature differs 6e3a14458a0fca90e6a63285514a933585cea592cb622e79b33ddc5df6e0fb66 != 6fdd5e023f8b36c06ccfc437f07740607e2fd6af8789c2b6573b1f8e5aec4921
+jdk.internal.classfile.impl.AbstractPoolEntry.hashCode()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+jdk.internal.constant.PrimitiveClassDescImpl.descriptorString()java.lang.String -1 codeSignature differs 7722674ec43cccc19227bd0fe31433696da3716816c65b03f1730e1c0254917a != d487d8a2503fc353385b06f3b95e8ab10a6fe5294aa12ef213c2f0b58f53bb2d
+jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag()int -1 codeSignature differs 5404769be9f3dbc3cb72c5db1a8ad8dd44853cedba352c69c6db32de21c4dbb9 != 1c5cefc40a914f135a319bd8d405841fbf0f0e92dfa85c790bd1c66c2edacece
+java.lang.Class.getComponentType()java.lang.Class -1 codeSignature differs b319d91a6485f244b602f37bbb015c7b083103cb0168540c8f7172a6f77fcdb4 != ca3e2776cb0744dcbd5af9f18a41221cfb7ea6616e2c92fa3282d7012b2bb32a
+NBody: iterations=500 average: 184210us total: 92105351us
+
+
+java.lang.invoke.MethodTypeForm.parameterSlotCount()int -1 codeSignature differs ad156c9aebe2f06c30e3b5dbbec2e173bc1370acb4ba42d2464dda8cd03d5b04 != 631f1ee6b294c0668302aaa578afb6c4bc9eb79e5bdf6a7916a36c576b1ba42d
+Total Runtime: 92105351us
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 306200809024
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 370796 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 56 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 9400 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 8908 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 71 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 37894 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 12482 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 17444 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 88 (java.util.Properties$LineReader.readLine()) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 675940 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 16960 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 224 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 89 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 1262474 || Activation Count:0 | LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 1143192 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 265218 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 92 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 56130 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 295244 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 289654 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 120 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 4232 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 134 (nbody.NBodySystem.advance(double)) loops:
+Found Encoding : 0:-1,1:0,2:-1
+├── Loop 0
+│   └── Loop 1
+└── Loop 2
+  loop 0 Cycles: 36889192 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 2] | -at nbody.NBodySystem.advance(double) [bci: 261]
+  loop 1 Cycles: 23609938 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 24] | -at nbody.NBodySystem.advance(double) [bci: 255]
+  loop 2 Cycles: 2806770 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 273] | -at nbody.NBodySystem.advance(double) [bci: 346]
+Comp 135 (NBody.innerBenchmarkLoop(int)) loops:
+Found Encoding : 1:-1,2:1,3:-1,0:-1,4:0,5:4,6:0
+├── Loop 1
+│   └── Loop 2
+├── Loop 3
+└── Loop 0
+    ├── Loop 4
+    │   └── Loop 5
+    └── Loop 6
+  loop 1 Cycles: 25400 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 2]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 261]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 2 Cycles: 1014 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 24]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 255]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 3 Cycles: 136 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 273]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 346]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 4 Cycles: 2611033974 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 2]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 261]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 5 Cycles: 1707335454 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 24]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 255]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+  loop 6 Cycles: 219333930 || Activation Count:0 | LoopCallCount: 0 |  Source: -at nbody.NBodySystem.advance(double) [bci: 273]
+-at NBody.innerBenchmarkLoop(int) [bci: 19] | -at nbody.NBodySystem.advance(double) [bci: 346]
+-at NBody.innerBenchmarkLoop(int) [bci: 19]
+Comp 136 (NBody.innerBenchmarkLoop(int)-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 301066973206 || Activation Count:0 | LoopCallCount: 0 |  Source: -at NBody.innerBenchmarkLoop(int) [bci: 10] | -at NBody.innerBenchmarkLoop(int) [bci: 28]
+Comp 157 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 9752 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 41952 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 34732 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+
+Finished NBody BuboOn at Thu 22 Jan 14:01:26 GMT 2026
+============================================================

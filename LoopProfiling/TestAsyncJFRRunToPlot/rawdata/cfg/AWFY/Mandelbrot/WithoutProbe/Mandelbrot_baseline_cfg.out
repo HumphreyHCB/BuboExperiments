@@ -1,0 +1,9123 @@
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+=== HumphreysDebugDataPhase ===
+Compilation: 2-java.lang.module.ModuleDescriptor.name()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor.name()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 4-java.lang.module.ModuleReference.descriptor()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleReference.descriptor()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 8-java.lang.Enum.ordinal()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Enum.ordinal()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 10-java.lang.Class.isPrimitive()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Class.isPrimitive()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 16-jdk.internal.util.StrongReferenceKey.get()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StrongReferenceKey.get()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 22-java.lang.Class.getClassLoader()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Class.getClassLoader()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 23-java.lang.invoke.MethodType.returnType()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<MethodType.returnType()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 25-jdk.internal.classfile.impl.AbstractPoolEntry.index()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<AbstractPoolEntry.index()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 29-java.lang.invoke.MemberName.getDeclaringClass()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<MemberName.getDeclaringClass()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 32-java.lang.invoke.MethodType.form()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<MethodType.form()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 34-java.util.stream.FindOps$FindSink.cancellationRequested()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<FindOps$FindSink.cancellationRequested()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 35-java.lang.Object.<init>()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Object.<init>()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 36-java.lang.String.hashCode()
+Number of loops: 0
+
+Block 0
+  Successors:
+    -> 1
+    -> 9
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 2
+    -> 9
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+    -> 6
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+    HotSpotMethod<StringLatin1.hashCode(byte[])>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 5
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+    HotSpotMethod<StringLatin1.hashCode(byte[])>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 9
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+    HotSpotMethod<StringLatin1.hashCode(byte[])>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 9
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.hashCode(byte[])>
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 9
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+  Predecessors:
+    <- 0
+    <- 1
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 37-jdk.internal.module.ModuleReferenceImpl.moduleResolution()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleReferenceImpl.moduleResolution()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 38-java.lang.module.ModuleDescriptor$Requires.modifiers()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Requires.modifiers()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 39-java.lang.module.ModuleDescriptor$Requires.name()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Requires.name()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 40-java.lang.module.ModuleDescriptor.requires()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor.requires()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 41-java.lang.module.ModuleDescriptor.isAutomatic()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor.isAutomatic()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 42-java.util.HashMap$Node.getKey()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap$Node.getKey()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 43-java.util.HashMap$Node.getValue()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap$Node.getValue()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 44-java.util.ImmutableCollections$Set12.isEmpty()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$Set12.isEmpty()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 45-java.lang.module.ModuleDescriptor$Exports.source()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Exports.source()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 46-java.lang.module.ModuleDescriptor$Exports.targets()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Exports.targets()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 47-java.lang.module.ModuleDescriptor.provides()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor.provides()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 48-java.lang.module.ModuleDescriptor.exports()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor.exports()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 49-java.util.Objects.requireNonNull(Object)
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Objects.requireNonNull(Object)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 50-java.lang.module.ModuleDescriptor.uses()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor.uses()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 51-java.util.ImmutableCollections$SetN$SetNIterator.hasNext()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.hasNext()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+Requesting uncached profile for bci 32 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBytecodeProfile
+Requesting uncached profile for bci 32 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBranchTakenProbability
+=== HumphreysDebugDataPhase ===
+Compilation: 52-java.util.ImmutableCollections$SetN$SetNIterator.next()
+Number of loops: 1
+
+Block 0
+  Successors:
+    -> 1
+    -> 12
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 2
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 13
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 10
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 6
+    -> 9
+  Predecessors:
+    <- 4
+    <- 7
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+    -> 8
+  Predecessors:
+    <- 5
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 5
+  Predecessors:
+    <- 6
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 11
+  Predecessors:
+    <- 6
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 11
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+  Predecessors:
+    <- 8
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 13
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+  Predecessors:
+    <- 2
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN$SetNIterator.next()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs b05d592371fcce917a90fc28debaf21f7e7532d4836b1c9812ac396e129c7095 != 920e12a7ee41cc3a0a3487d03bd48833bfc4e8d416bdbae7234f8ba199084b4d
+=== HumphreysDebugDataPhase ===
+Compilation: 53-java.util.HashMap.hash(Object)
+Number of loops: 0
+
+Block 0
+  Successors:
+    -> 1
+    -> 10
+    -> 18
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    <none>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 2
+    -> 17
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+    -> 17
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 7
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+    HotSpotMethod<StringLatin1.hashCode(byte[])>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+    -> 6
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+    HotSpotMethod<StringLatin1.hashCode(byte[])>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 17
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 19
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+    HotSpotMethod<HashMap.hash(Object)>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 17
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.hash(Object)>
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 17
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.hashCode()>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 14
+    -> 12
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ResolvedModule.hashCode()>
+    HotSpotMethod<Object.hashCode()>
+    SnippetResolvedJavaMethod{name='identityHashCodeSnippet', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.replacements.IdentityHashCodeSnippets}}
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 14
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='identityHashCodeSnippet', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.replacements.IdentityHashCodeSnippets}}
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 14
+    -> 15
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='identityHashCodeSnippet', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.replacements.IdentityHashCodeSnippets}}
+    HotSpotMethod<Object.hashCode()>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='identityHashCodeSnippet', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.replacements.IdentityHashCodeSnippets}}
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 16
+  Predecessors:
+    <- 10
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='identityHashCodeSnippet', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.replacements.IdentityHashCodeSnippets}}
+    HotSpotMethod<ResolvedModule.hashCode()>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 16
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='identityHashCodeSnippet', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.replacements.IdentityHashCodeSnippets}}
+    HotSpotMethod<Object.hashCode()>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 17
+  Predecessors:
+    <- 15
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Object.hashCode()>
+    HotSpotMethod<ResolvedModule.hashCode()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+  Predecessors:
+    <- 1
+    <- 16
+    <- 6
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.hash(Object)>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 19
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.hash(Object)>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+  Predecessors:
+    <- 18
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.hash(Object)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 54-java.lang.module.ModuleDescriptor$Exports.isQualified()
+Number of loops: 0
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+    -> 4
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Exports.isQualified()>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ImmutableCollections$SetN.isEmpty()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    <none>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+  Predecessors:
+    <- 1
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Exports.isQualified()>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Exports.isQualified()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 55-java.lang.module.ModuleDescriptor$Provides.service()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Provides.service()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 56-java.lang.Byte.toUnsignedInt(byte)
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Byte.toUnsignedInt(byte)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 57-java.util.HashMap.putVal(int, Object, Object, boolean, boolean)
+Number of loops: 1
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 5
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+    -> 4
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 6
+    -> 61
+  Predecessors:
+    <- 4
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+    -> 30
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+    HotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 8
+    -> 29
+  Predecessors:
+    <- 6
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 9
+    -> 10
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 11
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 11
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 12
+    -> 23
+  Predecessors:
+    <- 9
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 13
+    -> 14
+  Predecessors:
+    <- 11
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 28
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 15
+    -> 16
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 28
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 17
+    -> 26
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 18
+    -> 19
+  Predecessors:
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 28
+  Predecessors:
+    <- 17
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 26
+    -> 21
+  Predecessors:
+    <- 17
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 26
+  Predecessors:
+    <- 19
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 24
+  Predecessors:
+    <- 19
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+    -> 26
+  Predecessors:
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 23
+  Successors:
+    -> 24
+  Predecessors:
+    <- 11
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 24
+  Successors:
+    -> 25
+    -> 27
+  Predecessors:
+    <- 23
+    <- 21
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+ BuboLoopMakers: 
+
+Block 25
+  Successors:
+    -> 26
+  Predecessors:
+    <- 24
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='instanceofDynamic', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.InstanceOfSnippets}}
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 26
+  Successors:
+  Predecessors:
+    <- 25
+    <- 19
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 27
+  Successors:
+    -> 28
+  Predecessors:
+    <- 24
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 28
+  Successors:
+    -> 51
+  Predecessors:
+    <- 27
+    <- 15
+    <- 18
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 29
+  Successors:
+    -> 62
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 30
+  Successors:
+    -> 31
+    -> 32
+  Predecessors:
+    <- 6
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 31
+  Successors:
+    -> 62
+  Predecessors:
+    <- 30
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 32
+  Successors:
+    -> 33
+    -> 34
+  Predecessors:
+    <- 30
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 33
+  Successors:
+    -> 62
+  Predecessors:
+    <- 32
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 34
+  Successors:
+    -> 35
+    -> 36
+  Predecessors:
+    <- 32
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 35
+  Successors:
+    -> 44
+  Predecessors:
+    <- 34
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 36
+  Successors:
+    -> 37
+    -> 38
+  Predecessors:
+    <- 34
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 37
+  Successors:
+    -> 62
+  Predecessors:
+    <- 36
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 38
+  Successors:
+    -> 39
+  Predecessors:
+    <- 36
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 39
+  Successors:
+    -> 43
+    -> 40
+  Predecessors:
+    <- 38
+    <- 42
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 40
+  Successors:
+    -> 41
+    -> 42
+  Predecessors:
+    <- 39
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 41
+  Successors:
+  Predecessors:
+    <- 40
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 42
+  Successors:
+    -> 39
+  Predecessors:
+    <- 40
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 43
+  Successors:
+    -> 44
+  Predecessors:
+    <- 39
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 44
+  Successors:
+    -> 45
+    -> 60
+  Predecessors:
+    <- 43
+    <- 35
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 45
+  Successors:
+    -> 46
+    -> 47
+  Predecessors:
+    <- 44
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>
+ BuboLoopMakers: 
+
+Block 46
+  Successors:
+    -> 48
+  Predecessors:
+    <- 45
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 47
+  Successors:
+    -> 48
+  Predecessors:
+    <- 45
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 48
+  Successors:
+    -> 49
+    -> 58
+  Predecessors:
+    <- 46
+    <- 47
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 49
+  Successors:
+    -> 50
+    -> 57
+  Predecessors:
+    <- 48
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 50
+  Successors:
+    -> 51
+  Predecessors:
+    <- 49
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 51
+  Successors:
+    -> 52
+    -> 56
+  Predecessors:
+    <- 28
+    <- 50
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 52
+  Successors:
+    -> 53
+    -> 55
+  Predecessors:
+    <- 51
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 53
+  Successors:
+    -> 55
+  Predecessors:
+    <- 52
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 54
+  Successors:
+    -> 55
+  Predecessors:
+    <- 52
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 55
+  Successors:
+  Predecessors:
+    <- 52
+    <- 53
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 56
+  Successors:
+  Predecessors:
+    <- 51
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 57
+  Successors:
+    -> 59
+  Predecessors:
+    <- 49
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 58
+  Successors:
+    -> 59
+  Predecessors:
+    <- 48
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 59
+  Successors:
+  Predecessors:
+    <- 58
+    <- 57
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 60
+  Successors:
+  Predecessors:
+    <- 44
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 61
+  Successors:
+    -> 62
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+Block 62
+  Successors:
+  Predecessors:
+    <- 61
+    <- 31
+    <- 29
+    <- 33
+    <- 37
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.putVal(int, Object, Object, boolean, boolean)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 71c7befc4bcc50903c01cb500806055811a71080bd754d077284439fcd10103c != 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf
+=== HumphreysDebugDataPhase ===
+Compilation: 58-java.util.HashMap$Node.<init>(int, Object, Object, HashMap$Node)
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap$Node.<init>(int, Object, Object, HashMap$Node)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 59-java.lang.String.equals(Object)
+Number of loops: 1
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.equals(Object)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.equals(Object)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+    -> 21
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.equals(Object)>
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 20
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.equals(Object)>
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+    -> 18
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.equals(Object)>
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 11
+    -> 7
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 11
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 8
+    -> 17
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 9
+    -> 11
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 22
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 11
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 12
+  Predecessors:
+    <- 5
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 13
+    -> 16
+  Predecessors:
+    <- 11
+    <- 14
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+    -> 15
+  Predecessors:
+    <- 12
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 12
+  Predecessors:
+    <- 13
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 19
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 19
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    <none>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 22
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 19
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+  Predecessors:
+    <- 15
+    <- 16
+    <- 18
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.equals(Object)>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 22
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.equals(Object)>
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 22
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+  Predecessors:
+    <- 21
+    <- 20
+    <- 17
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs 240f841b413bb8bd2af4877cb3753eac11d3bdc482d702e067df992e72784ebb != 2d841e5f6ff33687ba2a8e89c73735b82c892266d476f740b43f9fc2b4d21873
+=== HumphreysDebugDataPhase ===
+Compilation: 60-java.util.KeyValueHolder.getKey()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<KeyValueHolder.getKey()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 61-java.util.KeyValueHolder.getValue()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<KeyValueHolder.getValue()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 62-java.lang.module.ModuleDescriptor.packages()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor.packages()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 63-java.lang.module.ResolvedModule.reference()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ResolvedModule.reference()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 64-java.lang.module.ModuleDescriptor$Version.toString()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor$Version.toString()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 65-java.lang.AbstractStringBuilder.length()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<AbstractStringBuilder.length()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 66-java.util.HashMap.newNode(int, Object, Object, HashMap$Node)
+Number of loops: 0
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+  Predecessors:
+    <- 1
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateInstance', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.newNode(int, Object, Object, HashMap$Node)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 67-java.util.HashMap.afterNodeInsertion(boolean)
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.afterNodeInsertion(boolean)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 70-java.lang.module.ResolvedModule.configuration()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ResolvedModule.configuration()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 73-java.util.HashMap.resize()
+Number of loops: 3
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 7
+  Predecessors:
+    <- 1
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+    -> 6
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 12
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 12
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 8
+    -> 86
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 9
+    -> 85
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+    -> 11
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 87
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 12
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 13
+    -> 19
+  Predecessors:
+    <- 11
+    <- 6
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+    -> 18
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 15
+    -> 18
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 20
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 18
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 18
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+  Predecessors:
+    <- 13
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 20
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 21
+    -> 22
+  Predecessors:
+    <- 19
+    <- 15
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+    SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 29
+  Predecessors:
+    <- 20
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+    -> 23
+    -> 27
+  Predecessors:
+    <- 20
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 23
+  Successors:
+    -> 24
+  Predecessors:
+    <- 22
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 24
+  Successors:
+    -> 25
+    -> 26
+  Predecessors:
+    <- 23
+    <- 25
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 25
+  Successors:
+    -> 24
+  Predecessors:
+    <- 24
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 26
+  Successors:
+    -> 28
+  Predecessors:
+    <- 24
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 27
+  Successors:
+    -> 28
+  Predecessors:
+    <- 22
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 28
+  Successors:
+    -> 29
+  Predecessors:
+    <- 27
+    <- 26
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+ BuboLoopMakers: 
+
+Block 29
+  Successors:
+    -> 79
+    -> 31
+  Predecessors:
+    <- 21
+    <- 28
+  In loop: <none>
+  Source positions in block:
+    SnippetResolvedJavaMethod{name='allocateArray', type=SnippetResolvedJavaType{javaClass=class jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets}}
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 30
+  Successors:
+    -> 79
+  Predecessors:
+    <- 29
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 31
+  Successors:
+    -> 37
+    -> 33
+  Predecessors:
+    <- 29
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 32
+  Successors:
+    -> 37
+  Predecessors:
+    <- 31
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 33
+  Successors:
+    -> 34
+    -> 84
+  Predecessors:
+    <- 31
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 34
+  Successors:
+    -> 84
+    -> 37
+  Predecessors:
+    <- 33
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 35
+  Successors:
+    -> 84
+  Predecessors:
+    <- 34
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 36
+  Successors:
+    -> 37
+  Predecessors:
+    <- 34
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 37
+  Successors:
+    -> 42
+    -> 39
+  Predecessors:
+    <- 31
+    <- 34
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 38
+  Successors:
+    -> 42
+  Predecessors:
+    <- 37
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 39
+  Successors:
+    -> 40
+    -> 84
+  Predecessors:
+    <- 37
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 40
+  Successors:
+    -> 42
+    -> 84
+  Predecessors:
+    <- 39
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 41
+  Successors:
+    -> 42
+  Predecessors:
+    <- 40
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 42
+  Successors:
+    -> 48
+    -> 44
+  Predecessors:
+    <- 37
+    <- 40
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 43
+  Successors:
+    -> 48
+  Predecessors:
+    <- 42
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 44
+  Successors:
+    -> 45
+    -> 84
+  Predecessors:
+    <- 42
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 45
+  Successors:
+    -> 84
+    -> 48
+  Predecessors:
+    <- 44
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 46
+  Successors:
+    -> 84
+  Predecessors:
+    <- 45
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 47
+  Successors:
+    -> 48
+  Predecessors:
+    <- 45
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 48
+  Successors:
+    -> 49
+  Predecessors:
+    <- 42
+    <- 45
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 49
+  Successors:
+    -> 50
+    -> 78
+  Predecessors:
+    <- 48
+    <- 51
+    <- 77
+    <- 76
+    <- 54
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 50
+  Successors:
+    -> 51
+    -> 52
+  Predecessors:
+    <- 49
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 51
+  Successors:
+    -> 49
+  Predecessors:
+    <- 50
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 52
+  Successors:
+    -> 53
+    -> 56
+  Predecessors:
+    <- 50
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 53
+  Successors:
+    -> 54
+    -> 55
+  Predecessors:
+    <- 52
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 54
+  Successors:
+    -> 49
+  Predecessors:
+    <- 53
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 55
+  Successors:
+    -> 58
+  Predecessors:
+    <- 53
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 56
+  Successors:
+    -> 57
+    -> 59
+  Predecessors:
+    <- 52
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 57
+  Successors:
+    -> 58
+  Predecessors:
+    <- 56
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 58
+  Successors:
+  Predecessors:
+    <- 57
+    <- 55
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 59
+  Successors:
+    -> 60
+    -> 61
+  Predecessors:
+    <- 56
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 60
+  Successors:
+    -> 62
+  Predecessors:
+    <- 59
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 61
+  Successors:
+    -> 62
+  Predecessors:
+    <- 59
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 62
+  Successors:
+    -> 63
+  Predecessors:
+    <- 60
+    <- 61
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 63
+  Successors:
+    -> 64
+    -> 67
+  Predecessors:
+    <- 62
+    <- 71
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 64
+  Successors:
+    -> 65
+    -> 66
+  Predecessors:
+    <- 63
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 65
+  Successors:
+    -> 70
+  Predecessors:
+    <- 64
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 66
+  Successors:
+    -> 70
+  Predecessors:
+    <- 64
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 67
+  Successors:
+    -> 68
+    -> 69
+  Predecessors:
+    <- 63
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 68
+  Successors:
+    -> 70
+  Predecessors:
+    <- 67
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 69
+  Successors:
+    -> 70
+  Predecessors:
+    <- 67
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 70
+  Successors:
+    -> 72
+    -> 71
+  Predecessors:
+    <- 65
+    <- 68
+    <- 66
+    <- 69
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 71
+  Successors:
+    -> 63
+  Predecessors:
+    <- 70
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 72
+  Successors:
+    -> 75
+    -> 74
+  Predecessors:
+    <- 70
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 73
+  Successors:
+    -> 75
+  Predecessors:
+    <- 72
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 74
+  Successors:
+    -> 75
+  Predecessors:
+    <- 72
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 75
+  Successors:
+    -> 76
+    -> 77
+  Predecessors:
+    <- 72
+    <- 74
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 76
+  Successors:
+    -> 49
+  Predecessors:
+    <- 75
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 77
+  Successors:
+    -> 49
+  Predecessors:
+    <- 75
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 78
+  Successors:
+    -> 79
+  Predecessors:
+    <- 49
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 79
+  Successors:
+  Predecessors:
+    <- 29
+    <- 78
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 80
+  Successors:
+    -> 84
+  Predecessors:
+    <- 44
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 81
+  Successors:
+    -> 84
+  Predecessors:
+    <- 40
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 82
+  Successors:
+    -> 84
+  Predecessors:
+    <- 39
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 83
+  Successors:
+    -> 84
+  Predecessors:
+    <- 33
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 84
+  Successors:
+  Predecessors:
+    <- 33
+    <- 39
+    <- 44
+    <- 34
+    <- 40
+    <- 45
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 85
+  Successors:
+    -> 87
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 86
+  Successors:
+    -> 87
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+Block 87
+  Successors:
+  Predecessors:
+    <- 10
+    <- 86
+    <- 85
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.resize()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+=== HumphreysDebugDataPhase ===
+Compilation: 74-java.lang.module.ModuleDescriptor.isOpen()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ModuleDescriptor.isOpen()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 75-java.util.HashMap.size()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<HashMap.size()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+=== HumphreysDebugDataPhase ===
+Compilation: 80-java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ZipCoder$UTF8ZipCoder.isUTF8()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 82-java.lang.invoke.MethodType.ptypes()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<MethodType.ptypes()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 83-jdk.internal.util.Preconditions.checkIndex(int, int, BiFunction)
+Number of loops: 0
+
+Block 0
+  Successors:
+    -> 5
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 5
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+    -> 5
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+  Predecessors:
+    <- 0
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Preconditions.checkIndex(int, int, BiFunction)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 85-java.nio.Buffer.limit()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Buffer.limit()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 86-jdk.internal.classfile.impl.AbstractPoolEntry.width()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<AbstractPoolEntry.width()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 87-jdk.internal.classfile.impl.SplitConstantPool.size()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<SplitConstantPool.size()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 88-java.util.Properties$LineReader.readLine()
+Number of loops: 6
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 7
+    -> 5
+  Predecessors:
+    <- 1
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 7
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 7
+    -> 151
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 11
+    -> 9
+  Predecessors:
+    <- 3
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 11
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 11
+    -> 150
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 11
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 12
+    -> 13
+  Predecessors:
+    <- 7
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 14
+  Predecessors:
+    <- 11
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+  Predecessors:
+    <- 11
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 18
+    -> 16
+  Predecessors:
+    <- 12
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 18
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 18
+    -> 149
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 18
+  Predecessors:
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 19
+    -> 148
+  Predecessors:
+    <- 14
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 20
+    -> 50
+  Predecessors:
+    <- 18
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 21
+    -> 48
+  Predecessors:
+    <- 19
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 22
+    -> 25
+  Predecessors:
+    <- 20
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+    -> 23
+    -> 24
+  Predecessors:
+    <- 21
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 23
+  Successors:
+    -> 74
+  Predecessors:
+    <- 22
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 24
+  Successors:
+    -> 152
+  Predecessors:
+    <- 22
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 25
+  Successors:
+    -> 26
+    -> 47
+  Predecessors:
+    <- 21
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 26
+  Successors:
+    -> 27
+    -> 46
+  Predecessors:
+    <- 25
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 27
+  Successors:
+    -> 28
+    -> 31
+  Predecessors:
+    <- 26
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 28
+  Successors:
+    -> 29
+    -> 30
+  Predecessors:
+    <- 27
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 29
+  Successors:
+    -> 74
+  Predecessors:
+    <- 28
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 30
+  Successors:
+    -> 152
+  Predecessors:
+    <- 28
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 31
+  Successors:
+    -> 32
+    -> 38
+  Predecessors:
+    <- 27
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 32
+  Successors:
+    -> 33
+    -> 36
+  Predecessors:
+    <- 31
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 33
+  Successors:
+    -> 38
+    -> 35
+  Predecessors:
+    <- 32
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 34
+  Successors:
+    -> 38
+  Predecessors:
+    <- 33
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 35
+  Successors:
+    -> 152
+  Predecessors:
+    <- 33
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 36
+  Successors:
+    -> 152
+  Predecessors:
+    <- 32
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 37
+  Successors:
+    -> 38
+  Predecessors:
+    <- 31
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 38
+  Successors:
+    -> 39
+  Predecessors:
+    <- 31
+    <- 33
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 39
+  Successors:
+    -> 40
+    -> 44
+  Predecessors:
+    <- 38
+    <- 43
+  In loop: L5
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker5()>
+ BuboLoopMakers: 
+
+Block 40
+  Successors:
+    -> 41
+    -> 43
+  Predecessors:
+    <- 39
+  In loop: L5
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker5()>
+ BuboLoopMakers: 
+
+Block 41
+  Successors:
+    -> 45
+    -> 42
+  Predecessors:
+    <- 40
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 42
+  Successors:
+  Predecessors:
+    <- 41
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 43
+  Successors:
+    -> 39
+  Predecessors:
+    <- 40
+  In loop: L5
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker5()>
+ BuboLoopMakers: 
+
+Block 44
+  Successors:
+    -> 50
+  Predecessors:
+    <- 39
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 45
+  Successors:
+    -> 74
+  Predecessors:
+    <- 41
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 46
+  Successors:
+    -> 152
+  Predecessors:
+    <- 26
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 47
+  Successors:
+    -> 50
+  Predecessors:
+    <- 25
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 48
+  Successors:
+    -> 152
+  Predecessors:
+    <- 20
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 49
+  Successors:
+    -> 50
+  Predecessors:
+    <- 19
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 50
+  Successors:
+    -> 51
+    -> 147
+  Predecessors:
+    <- 44
+    <- 19
+    <- 47
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 51
+  Successors:
+    -> 52
+    -> 53
+  Predecessors:
+    <- 50
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 52
+  Successors:
+  Predecessors:
+    <- 51
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 53
+  Successors:
+    -> 54
+  Predecessors:
+    <- 51
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 54
+  Successors:
+    -> 60
+    -> 56
+  Predecessors:
+    <- 53
+    <- 70
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 55
+  Successors:
+    -> 60
+  Predecessors:
+    <- 54
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 56
+  Successors:
+    -> 57
+    -> 145
+  Predecessors:
+    <- 54
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 57
+  Successors:
+    -> 58
+    -> 60
+  Predecessors:
+    <- 56
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 58
+  Successors:
+    -> 146
+  Predecessors:
+    <- 57
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 59
+  Successors:
+    -> 60
+  Predecessors:
+    <- 57
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 60
+  Successors:
+    -> 61
+    -> 62
+  Predecessors:
+    <- 54
+    <- 57
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 61
+  Successors:
+    -> 146
+  Predecessors:
+    <- 60
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 62
+  Successors:
+    -> 63
+  Predecessors:
+    <- 60
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 63
+  Successors:
+    -> 64
+    -> 68
+  Predecessors:
+    <- 62
+    <- 67
+  In loop: L4
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker4()>
+ BuboLoopMakers: 
+
+Block 64
+  Successors:
+    -> 65
+    -> 67
+  Predecessors:
+    <- 63
+  In loop: L4
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker4()>
+ BuboLoopMakers: 
+
+Block 65
+  Successors:
+    -> 69
+    -> 66
+  Predecessors:
+    <- 64
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 66
+  Successors:
+  Predecessors:
+    <- 65
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 67
+  Successors:
+    -> 63
+  Predecessors:
+    <- 64
+  In loop: L4
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker4()>
+ BuboLoopMakers: 
+
+Block 68
+  Successors:
+    -> 70
+    -> 144
+  Predecessors:
+    <- 63
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 69
+  Successors:
+    -> 73
+  Predecessors:
+    <- 65
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 70
+  Successors:
+    -> 71
+    -> 54
+  Predecessors:
+    <- 68
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 71
+  Successors:
+  Predecessors:
+    <- 70
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 72
+  Successors:
+    -> 54
+  Predecessors:
+    <- 70
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 73
+  Successors:
+    -> 74
+  Predecessors:
+    <- 69
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 74
+  Successors:
+    -> 75
+  Predecessors:
+    <- 73
+    <- 45
+    <- 23
+    <- 29
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 75
+  Successors:
+    -> 76
+    -> 142
+  Predecessors:
+    <- 74
+    <- 89
+    <- 115
+    <- 136
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 76
+  Successors:
+    -> 77
+    -> 141
+  Predecessors:
+    <- 75
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 77
+  Successors:
+    -> 78
+    -> 79
+  Predecessors:
+    <- 76
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 78
+  Successors:
+    -> 143
+  Predecessors:
+    <- 77
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 79
+  Successors:
+    -> 93
+    -> 81
+  Predecessors:
+    <- 77
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 80
+  Successors:
+    -> 93
+  Predecessors:
+    <- 79
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 81
+  Successors:
+    -> 82
+    -> 83
+  Predecessors:
+    <- 79
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 82
+  Successors:
+    -> 143
+  Predecessors:
+    <- 81
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 83
+  Successors:
+    -> 84
+    -> 85
+  Predecessors:
+    <- 81
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 84
+  Successors:
+    -> 143
+  Predecessors:
+    <- 83
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 85
+  Successors:
+    -> 86
+    -> 87
+  Predecessors:
+    <- 83
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 86
+  Successors:
+    -> 143
+  Predecessors:
+    <- 85
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 87
+  Successors:
+    -> 88
+    -> 140
+  Predecessors:
+    <- 85
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 88
+  Successors:
+    -> 89
+    -> 90
+  Predecessors:
+    <- 87
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 89
+  Successors:
+    -> 75
+  Predecessors:
+    <- 88
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 90
+  Successors:
+    -> 91
+    -> 92
+  Predecessors:
+    <- 88
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 91
+  Successors:
+    -> 143
+  Predecessors:
+    <- 90
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 92
+  Successors:
+    -> 93
+  Predecessors:
+    <- 90
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 93
+  Successors:
+    -> 94
+    -> 121
+  Predecessors:
+    <- 79
+    <- 92
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 94
+  Successors:
+    -> 95
+    -> 117
+  Predecessors:
+    <- 93
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 95
+  Successors:
+    -> 96
+  Predecessors:
+    <- 94
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 96
+  Successors:
+    -> 97
+    -> 104
+  Predecessors:
+    <- 95
+    <- 114
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 97
+  Successors:
+    -> 98
+    -> 102
+  Predecessors:
+    <- 96
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 98
+  Successors:
+    -> 104
+    -> 102
+  Predecessors:
+    <- 97
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 99
+  Successors:
+    -> 104
+  Predecessors:
+    <- 98
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 100
+  Successors:
+    -> 102
+  Predecessors:
+    <- 98
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 101
+  Successors:
+    -> 102
+  Predecessors:
+    <- 97
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 102
+  Successors:
+  Predecessors:
+    <- 97
+    <- 98
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 103
+  Successors:
+    -> 104
+  Predecessors:
+    <- 96
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 104
+  Successors:
+    -> 105
+  Predecessors:
+    <- 96
+    <- 98
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 105
+  Successors:
+    -> 106
+    -> 110
+  Predecessors:
+    <- 104
+    <- 109
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 106
+  Successors:
+    -> 107
+    -> 109
+  Predecessors:
+    <- 105
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 107
+  Successors:
+    -> 111
+    -> 108
+  Predecessors:
+    <- 106
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 108
+  Successors:
+  Predecessors:
+    <- 107
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 109
+  Successors:
+    -> 105
+  Predecessors:
+    <- 106
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 110
+  Successors:
+    -> 112
+    -> 116
+  Predecessors:
+    <- 105
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 111
+  Successors:
+    -> 115
+  Predecessors:
+    <- 107
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 112
+  Successors:
+    -> 113
+    -> 114
+  Predecessors:
+    <- 110
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 113
+  Successors:
+  Predecessors:
+    <- 112
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 114
+  Successors:
+    -> 96
+  Predecessors:
+    <- 112
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 115
+  Successors:
+    -> 75
+  Predecessors:
+    <- 111
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 116
+  Successors:
+  Predecessors:
+    <- 110
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 117
+  Successors:
+    -> 118
+    -> 119
+  Predecessors:
+    <- 94
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 118
+  Successors:
+  Predecessors:
+    <- 117
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 119
+  Successors:
+    -> 121
+  Predecessors:
+    <- 117
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 120
+  Successors:
+    -> 121
+  Predecessors:
+    <- 93
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 121
+  Successors:
+    -> 122
+    -> 128
+  Predecessors:
+    <- 93
+    <- 119
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 122
+  Successors:
+    -> 123
+    -> 124
+  Predecessors:
+    <- 121
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 123
+  Successors:
+    -> 139
+  Predecessors:
+    <- 122
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 124
+  Successors:
+    -> 125
+    -> 127
+  Predecessors:
+    <- 122
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 125
+  Successors:
+    -> 137
+    -> 126
+  Predecessors:
+    <- 124
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 126
+  Successors:
+    -> 139
+  Predecessors:
+    <- 125
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 127
+  Successors:
+    -> 139
+  Predecessors:
+    <- 124
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 128
+  Successors:
+    -> 129
+    -> 138
+  Predecessors:
+    <- 121
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 129
+  Successors:
+    -> 130
+    -> 131
+  Predecessors:
+    <- 128
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 130
+  Successors:
+    -> 139
+  Predecessors:
+    <- 129
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 131
+  Successors:
+    -> 132
+    -> 133
+  Predecessors:
+    <- 129
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 132
+  Successors:
+    -> 135
+  Predecessors:
+    <- 131
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 133
+  Successors:
+    -> 134
+    -> 136
+  Predecessors:
+    <- 131
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 134
+  Successors:
+    -> 135
+  Predecessors:
+    <- 133
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 135
+  Successors:
+  Predecessors:
+    <- 132
+    <- 134
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 136
+  Successors:
+    -> 75
+  Predecessors:
+    <- 133
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 137
+  Successors:
+  Predecessors:
+    <- 125
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 138
+  Successors:
+    -> 139
+  Predecessors:
+    <- 128
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 139
+  Successors:
+  Predecessors:
+    <- 123
+    <- 130
+    <- 138
+    <- 127
+    <- 126
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 140
+  Successors:
+    -> 143
+  Predecessors:
+    <- 87
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 141
+  Successors:
+    -> 143
+  Predecessors:
+    <- 76
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 142
+  Successors:
+    -> 143
+  Predecessors:
+    <- 75
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 143
+  Successors:
+  Predecessors:
+    <- 78
+    <- 142
+    <- 141
+    <- 82
+    <- 84
+    <- 86
+    <- 91
+    <- 140
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 144
+  Successors:
+  Predecessors:
+    <- 68
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 145
+  Successors:
+    -> 146
+  Predecessors:
+    <- 56
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 146
+  Successors:
+  Predecessors:
+    <- 61
+    <- 145
+    <- 58
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 147
+  Successors:
+  Predecessors:
+    <- 50
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 148
+  Successors:
+    -> 152
+  Predecessors:
+    <- 18
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 149
+  Successors:
+    -> 152
+  Predecessors:
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 150
+  Successors:
+    -> 152
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 151
+  Successors:
+    -> 152
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 152
+  Successors:
+  Predecessors:
+    <- 151
+    <- 150
+    <- 149
+    <- 148
+    <- 24
+    <- 48
+    <- 30
+    <- 46
+    <- 36
+    <- 35
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 89-java.util.Properties$LineReader.readLine()
+Number of loops: 3
+
+Block 0
+  Successors:
+    -> 1
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 6
+    -> 3
+  Predecessors:
+    <- 0
+    <- 10
+    <- 17
+    <- 45
+    <- 64
+    <- 55
+    <- 67
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 6
+  Predecessors:
+    <- 1
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 5
+  Predecessors:
+    <- 1
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 6
+  Predecessors:
+    <- 3
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+    -> 71
+  Predecessors:
+    <- 1
+    <- 5
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 22
+    -> 9
+  Predecessors:
+    <- 6
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 22
+  Predecessors:
+    <- 7
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+    -> 11
+  Predecessors:
+    <- 7
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 1
+  Predecessors:
+    <- 9
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 12
+    -> 13
+  Predecessors:
+    <- 9
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 72
+  Predecessors:
+    <- 11
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+    -> 15
+  Predecessors:
+    <- 11
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 72
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 16
+    -> 21
+  Predecessors:
+    <- 13
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 17
+    -> 18
+  Predecessors:
+    <- 15
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 1
+  Predecessors:
+    <- 16
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 19
+    -> 20
+  Predecessors:
+    <- 16
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 72
+  Predecessors:
+    <- 18
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 22
+  Predecessors:
+    <- 18
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 22
+  Predecessors:
+    <- 15
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+    -> 23
+    -> 50
+  Predecessors:
+    <- 7
+    <- 21
+    <- 20
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 23
+  Successors:
+    -> 24
+    -> 46
+  Predecessors:
+    <- 22
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 24
+  Successors:
+    -> 25
+  Predecessors:
+    <- 23
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 25
+  Successors:
+    -> 26
+    -> 33
+  Predecessors:
+    <- 24
+    <- 43
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 26
+  Successors:
+    -> 27
+    -> 31
+  Predecessors:
+    <- 25
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 27
+  Successors:
+    -> 33
+    -> 31
+  Predecessors:
+    <- 26
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 28
+  Successors:
+    -> 33
+  Predecessors:
+    <- 27
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 29
+  Successors:
+    -> 31
+  Predecessors:
+    <- 27
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 30
+  Successors:
+    -> 31
+  Predecessors:
+    <- 26
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 31
+  Successors:
+  Predecessors:
+    <- 26
+    <- 27
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 32
+  Successors:
+    -> 33
+  Predecessors:
+    <- 25
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 33
+  Successors:
+    -> 34
+  Predecessors:
+    <- 25
+    <- 27
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 34
+  Successors:
+    -> 35
+    -> 40
+  Predecessors:
+    <- 33
+    <- 35
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 35
+  Successors:
+    -> 36
+    -> 34
+  Predecessors:
+    <- 34
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 36
+  Successors:
+    -> 39
+    -> 37
+  Predecessors:
+    <- 35
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 37
+  Successors:
+  Predecessors:
+    <- 36
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 38
+  Successors:
+    -> 34
+  Predecessors:
+    <- 35
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 39
+  Successors:
+    -> 45
+  Predecessors:
+    <- 36
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 40
+  Successors:
+    -> 41
+    -> 44
+  Predecessors:
+    <- 34
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 41
+  Successors:
+    -> 42
+    -> 43
+  Predecessors:
+    <- 40
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 42
+  Successors:
+  Predecessors:
+    <- 41
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 43
+  Successors:
+    -> 25
+  Predecessors:
+    <- 41
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 44
+  Successors:
+  Predecessors:
+    <- 40
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 45
+  Successors:
+    -> 1
+  Predecessors:
+    <- 39
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 46
+  Successors:
+    -> 47
+    -> 48
+  Predecessors:
+    <- 23
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 47
+  Successors:
+  Predecessors:
+    <- 46
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 48
+  Successors:
+    -> 50
+  Predecessors:
+    <- 46
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 49
+  Successors:
+    -> 50
+  Predecessors:
+    <- 22
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 50
+  Successors:
+    -> 51
+    -> 57
+  Predecessors:
+    <- 22
+    <- 48
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 51
+  Successors:
+    -> 52
+    -> 53
+  Predecessors:
+    <- 50
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 52
+  Successors:
+    -> 70
+  Predecessors:
+    <- 51
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 53
+  Successors:
+    -> 54
+    -> 56
+  Predecessors:
+    <- 51
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 54
+  Successors:
+    -> 68
+    -> 55
+  Predecessors:
+    <- 53
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 55
+  Successors:
+    -> 1
+  Predecessors:
+    <- 54
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 56
+  Successors:
+    -> 70
+  Predecessors:
+    <- 53
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 57
+  Successors:
+    -> 58
+    -> 69
+  Predecessors:
+    <- 50
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 58
+  Successors:
+    -> 59
+    -> 60
+  Predecessors:
+    <- 57
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 59
+  Successors:
+    -> 70
+  Predecessors:
+    <- 58
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 60
+  Successors:
+    -> 61
+    -> 62
+  Predecessors:
+    <- 58
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 61
+  Successors:
+    -> 66
+  Predecessors:
+    <- 60
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 62
+  Successors:
+    -> 63
+    -> 67
+  Predecessors:
+    <- 60
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 63
+  Successors:
+    -> 64
+    -> 65
+  Predecessors:
+    <- 62
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 64
+  Successors:
+    -> 1
+  Predecessors:
+    <- 63
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 65
+  Successors:
+    -> 66
+  Predecessors:
+    <- 63
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 66
+  Successors:
+  Predecessors:
+    <- 61
+    <- 65
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 67
+  Successors:
+    -> 1
+  Predecessors:
+    <- 62
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 68
+  Successors:
+  Predecessors:
+    <- 54
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 69
+  Successors:
+    -> 70
+  Predecessors:
+    <- 57
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 70
+  Successors:
+  Predecessors:
+    <- 52
+    <- 59
+    <- 69
+    <- 56
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 71
+  Successors:
+    -> 72
+  Predecessors:
+    <- 6
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+Block 72
+  Successors:
+  Predecessors:
+    <- 71
+    <- 12
+    <- 14
+    <- 19
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Properties$LineReader.readLine()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+java.util.Properties$LineReader.readLine()int -1 graphSignature differs 2b486d112efd309f21b56eed8c0bb9d78dd9081f799ef08ff7c803bfde611f4a != 878ec244077db65df33a3f7d09ba7cba637998f872be81e8c5729e664e547e01
+=== HumphreysDebugDataPhase ===
+Compilation: 90-java.lang.AbstractStringBuilder.getValue()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<AbstractStringBuilder.getValue()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 91-java.lang.Enum.name()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Enum.name()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 92-jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)
+Number of loops: 3
+
+Block 0
+  Successors:
+    -> 1
+    -> 21
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 2
+    -> 8
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+    -> 6
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 8
+    -> 5
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 8
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 20
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 20
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 8
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 9
+    -> 19
+  Predecessors:
+    <- 1
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 11
+    -> 12
+  Predecessors:
+    <- 9
+    <- 11
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 10
+  Predecessors:
+    <- 10
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 13
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+    -> 15
+  Predecessors:
+    <- 12
+    <- 14
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 13
+  Predecessors:
+    <- 13
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 16
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 17
+    -> 18
+  Predecessors:
+    <- 15
+    <- 17
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 16
+  Predecessors:
+    <- 16
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 22
+  Predecessors:
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 20
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+  Predecessors:
+    <- 6
+    <- 19
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 22
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+  Predecessors:
+    <- 18
+    <- 21
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArraysSupport.unsignedHashCode(int, byte[], int, int)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 graphSignature differs 19b74d2985bd215adc18bbf16eb571f75605eb5502bcec63b71bd357cc668d6e != ec48f9da76be66a6b56b9242fa5c79b96c5a2b790a5832893550f14895067602
+=== HumphreysDebugDataPhase ===
+Compilation: 94-sun.util.locale.BaseLocale.getLanguage()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<BaseLocale.getLanguage()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 95-java.util.LinkedHashMap.removeEldestEntry(Map$Entry)
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<LinkedHashMap.removeEldestEntry(Map$Entry)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 96-java.util.concurrent.ConcurrentHashMap.tabAt(ConcurrentHashMap$Node[], int)
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ConcurrentHashMap.tabAt(ConcurrentHashMap$Node[], int)>
+    HotSpotMethod<Unsafe.getReferenceAcquire(Object, long)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 97-jdk.internal.misc.Unsafe.getReferenceAcquire(Object, long)
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Unsafe.getReferenceVolatile(Object, long)>
+    HotSpotMethod<Unsafe.getReferenceAcquire(Object, long)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 98-java.lang.String.coder()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.coder()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 100-java.security.Provider$Service.getType()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Provider$Service.getType()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 101-java.security.Provider$Service.getAlgorithm()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Provider$Service.getAlgorithm()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 102-java.security.Provider$Service.getAliases()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Provider$Service.getAliases()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 107-jdk.internal.classfile.impl.RawBytecodeHelper.bci()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<RawBytecodeHelper.bci()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 108-jdk.internal.classfile.impl.AbstractPoolEntry.constantPool()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<AbstractPoolEntry.constantPool()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 109-java.lang.StringLatin1.equals(byte[], byte[])
+Number of loops: 1
+
+Block 0
+  Successors:
+    -> 1
+    -> 15
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 7
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 7
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 14
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 14
+    -> 7
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 14
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 8
+  Predecessors:
+    <- 1
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 9
+    -> 12
+  Predecessors:
+    <- 7
+    <- 10
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+    -> 11
+  Predecessors:
+    <- 8
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 8
+  Predecessors:
+    <- 9
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+  Predecessors:
+    <- 3
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.equals(byte[], byte[])>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 graphSignature differs f47d0b1647dabd6f0108a1c873e12c6a64939992dcc9e97f79a9e6e1f1af8649 != cda1bda6b067c21da86f5c9b00220a168b94ff95811df6ee0a57435eb4ec0473
+=== HumphreysDebugDataPhase ===
+Compilation: 112-jdk.internal.util.WeakReferenceKey.hashCode()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<WeakReferenceKey.hashCode()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 114-java.lang.String.value()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.value()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 115-java.lang.String.isLatin1()
+Number of loops: 0
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.isLatin1()>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.isLatin1()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.isLatin1()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Starting Mandelbrot benchmark ...
+=== HumphreysDebugDataPhase ===
+Compilation: 120-Mandelbrot.mandelbrot(int)
+Number of loops: 6
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 22
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+    -> 21
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 6
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 6
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 6
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+    -> 8
+  Predecessors:
+    <- 3
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 22
+  Predecessors:
+    <- 6
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 9
+    -> 20
+  Predecessors:
+    <- 6
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+    -> 12
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 12
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 12
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 13
+  Predecessors:
+    <- 9
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 19
+    -> 14
+  Predecessors:
+    <- 12
+    <- 17
+    <- 16
+  In loop: L5
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker5()>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 15
+    -> 18
+  Predecessors:
+    <- 13
+  In loop: L5
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker5()>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 16
+    -> 17
+  Predecessors:
+    <- 14
+  In loop: L5
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker5()>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 13
+  Predecessors:
+    <- 15
+  In loop: L5
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker5()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 13
+  Predecessors:
+    <- 15
+  In loop: L5
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker5()>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 22
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 22
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 22
+  Predecessors:
+    <- 8
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 22
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+    -> 23
+    -> 24
+  Predecessors:
+    <- 19
+    <- 18
+    <- 21
+    <- 1
+    <- 20
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 23
+  Successors:
+    -> 27
+  Predecessors:
+    <- 22
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 24
+  Successors:
+    -> 25
+    -> 26
+  Predecessors:
+    <- 22
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 25
+  Successors:
+    -> 27
+  Predecessors:
+    <- 24
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 26
+  Successors:
+    -> 27
+  Predecessors:
+    <- 24
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 27
+  Successors:
+    -> 28
+  Predecessors:
+    <- 23
+    <- 26
+    <- 25
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 28
+  Successors:
+    -> 29
+    -> 45
+  Predecessors:
+    <- 27
+    <- 41
+    <- 43
+    <- 44
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 29
+  Successors:
+    -> 30
+    -> 31
+  Predecessors:
+    <- 28
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 30
+  Successors:
+    -> 32
+  Predecessors:
+    <- 29
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 31
+  Successors:
+    -> 32
+  Predecessors:
+    <- 29
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 32
+  Successors:
+    -> 33
+  Predecessors:
+    <- 31
+    <- 30
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 33
+  Successors:
+    -> 38
+    -> 34
+  Predecessors:
+    <- 32
+    <- 37
+    <- 36
+  In loop: L4
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker4()>
+ BuboLoopMakers: 
+
+Block 34
+  Successors:
+    -> 35
+    -> 39
+  Predecessors:
+    <- 33
+  In loop: L4
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker4()>
+ BuboLoopMakers: 
+
+Block 35
+  Successors:
+    -> 36
+    -> 37
+  Predecessors:
+    <- 34
+  In loop: L4
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker4()>
+ BuboLoopMakers: 
+
+Block 36
+  Successors:
+    -> 33
+  Predecessors:
+    <- 35
+  In loop: L4
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker4()>
+ BuboLoopMakers: 
+
+Block 37
+  Successors:
+    -> 33
+  Predecessors:
+    <- 35
+  In loop: L4
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker4()>
+ BuboLoopMakers: 
+
+Block 38
+  Successors:
+    -> 40
+  Predecessors:
+    <- 33
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 39
+  Successors:
+    -> 40
+  Predecessors:
+    <- 34
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 40
+  Successors:
+    -> 41
+    -> 42
+  Predecessors:
+    <- 38
+    <- 39
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 41
+  Successors:
+    -> 28
+  Predecessors:
+    <- 40
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 42
+  Successors:
+    -> 43
+    -> 44
+  Predecessors:
+    <- 40
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 43
+  Successors:
+    -> 28
+  Predecessors:
+    <- 42
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 44
+  Successors:
+    -> 28
+  Predecessors:
+    <- 42
+  In loop: L3
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker3()>
+ BuboLoopMakers: 
+
+Block 45
+  Successors:
+    -> 46
+  Predecessors:
+    <- 28
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 46
+  Successors:
+    -> 47
+    -> 66
+  Predecessors:
+    <- 45
+    <- 65
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 47
+  Successors:
+    -> 48
+  Predecessors:
+    <- 46
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 48
+  Successors:
+    -> 49
+    -> 65
+  Predecessors:
+    <- 47
+    <- 61
+    <- 63
+    <- 64
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 49
+  Successors:
+    -> 50
+    -> 51
+  Predecessors:
+    <- 48
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 50
+  Successors:
+    -> 52
+  Predecessors:
+    <- 49
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 51
+  Successors:
+    -> 52
+  Predecessors:
+    <- 49
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 52
+  Successors:
+    -> 53
+  Predecessors:
+    <- 51
+    <- 50
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 53
+  Successors:
+    -> 58
+    -> 54
+  Predecessors:
+    <- 52
+    <- 57
+    <- 56
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 54
+  Successors:
+    -> 55
+    -> 59
+  Predecessors:
+    <- 53
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 55
+  Successors:
+    -> 56
+    -> 57
+  Predecessors:
+    <- 54
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 56
+  Successors:
+    -> 53
+  Predecessors:
+    <- 55
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 57
+  Successors:
+    -> 53
+  Predecessors:
+    <- 55
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 58
+  Successors:
+    -> 60
+  Predecessors:
+    <- 53
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 59
+  Successors:
+    -> 60
+  Predecessors:
+    <- 54
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 60
+  Successors:
+    -> 61
+    -> 62
+  Predecessors:
+    <- 58
+    <- 59
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 61
+  Successors:
+    -> 48
+  Predecessors:
+    <- 60
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 62
+  Successors:
+    -> 63
+    -> 64
+  Predecessors:
+    <- 60
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 63
+  Successors:
+    -> 48
+  Predecessors:
+    <- 62
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 64
+  Successors:
+    -> 48
+  Predecessors:
+    <- 62
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 65
+  Successors:
+    -> 46
+  Predecessors:
+    <- 48
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 66
+  Successors:
+  Predecessors:
+    <- 46
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 121-Mandelbrot.mandelbrot(int)
+Number of loops: 3
+
+Block 0
+  Successors:
+    -> 1
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 2
+    -> 21
+  Predecessors:
+    <- 0
+    <- 20
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+  Predecessors:
+    <- 1
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 4
+    -> 20
+  Predecessors:
+    <- 2
+    <- 16
+    <- 18
+    <- 19
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+    -> 6
+  Predecessors:
+    <- 3
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 7
+  Predecessors:
+    <- 4
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+  Predecessors:
+    <- 4
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 8
+  Predecessors:
+    <- 6
+    <- 5
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 14
+    -> 9
+  Predecessors:
+    <- 7
+    <- 10
+    <- 11
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+    -> 13
+  Predecessors:
+    <- 8
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 11
+    -> 8
+  Predecessors:
+    <- 9
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 8
+  Predecessors:
+    <- 10
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 8
+  Predecessors:
+    <- 10
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 15
+  Predecessors:
+    <- 9
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 15
+  Predecessors:
+    <- 8
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 16
+    -> 17
+  Predecessors:
+    <- 14
+    <- 13
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 3
+  Predecessors:
+    <- 15
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 18
+    -> 19
+  Predecessors:
+    <- 15
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 3
+  Predecessors:
+    <- 17
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 3
+  Predecessors:
+    <- 17
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 1
+  Predecessors:
+    <- 3
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+  Predecessors:
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Mandelbrot.mandelbrot(int)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Mandelbrot.mandelbrot(int)int -1 graphSignature differs 785ef6dcc05bfa1a35c56c269f228db0690cf5443ec5e8228f574410d609c860 != d08a2498a581a633df78f829c672fc52b57422a8f016a5434601de1179763422
+=== HumphreysDebugDataPhase ===
+Compilation: 122-jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ClassOrInterfaceDescImpl.descriptorString()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 126-jdk.internal.classfile.impl.BufWriterImpl.size()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<BufWriterImpl.size()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 129-java.lang.invoke.MethodTypeForm.erasedType()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<MethodTypeForm.erasedType()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 130-jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<AbstractDirectBuilder.constantPool()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 131-java.lang.invoke.MethodHandle.type()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<MethodHandle.type()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 133-java.util.ArrayList.size()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ArrayList.size()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Mandelbrot: iterations=1 runtime: 148575us
+Mandelbrot: iterations=2 runtime: 128744us
+Mandelbrot: iterations=3 runtime: 128742us
+Mandelbrot: iterations=4 runtime: 128723us
+Mandelbrot: iterations=5 runtime: 128721us
+Mandelbrot: iterations=6 runtime: 128712us
+Mandelbrot: iterations=7 runtime: 128719us
+Mandelbrot: iterations=8 runtime: 128718us
+=== HumphreysDebugDataPhase ===
+Compilation: 134-java.lang.String.length()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<String.length()>
+    HotSpotMethod<String.coder()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Mandelbrot: iterations=9 runtime: 128279us
+Mandelbrot: iterations=10 runtime: 128765us
+Mandelbrot: iterations=11 runtime: 128357us
+Mandelbrot: iterations=12 runtime: 128267us
+Mandelbrot: iterations=13 runtime: 128269us
+Mandelbrot: iterations=14 runtime: 128267us
+Mandelbrot: iterations=15 runtime: 127959us
+Mandelbrot: iterations=16 runtime: 128332us
+Mandelbrot: iterations=17 runtime: 128309us
+Mandelbrot: iterations=18 runtime: 128288us
+Mandelbrot: iterations=19 runtime: 128303us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+=== HumphreysDebugDataPhase ===
+Compilation: 136-java.nio.Buffer.position()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Buffer.position()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Mandelbrot: iterations=20 runtime: 128277us
+Mandelbrot: iterations=21 runtime: 127487us
+Mandelbrot: iterations=22 runtime: 127458us
+Mandelbrot: iterations=23 runtime: 127463us
+Mandelbrot: iterations=24 runtime: 127453us
+Mandelbrot: iterations=25 runtime: 127460us
+Mandelbrot: iterations=26 runtime: 127456us
+Mandelbrot: iterations=27 runtime: 128255us
+Mandelbrot: iterations=28 runtime: 129203us
+Mandelbrot: iterations=29 runtime: 128291us
+Mandelbrot: iterations=30 runtime: 128290us
+Mandelbrot: iterations=31 runtime: 128280us
+Mandelbrot: iterations=32 runtime: 128288us
+Mandelbrot: iterations=33 runtime: 128278us
+Mandelbrot: iterations=34 runtime: 128287us
+Mandelbrot: iterations=35 runtime: 127969us
+Mandelbrot: iterations=36 runtime: 128266us
+Mandelbrot: iterations=37 runtime: 128279us
+Mandelbrot: iterations=38 runtime: 128278us
+Mandelbrot: iterations=39 runtime: 128277us
+Mandelbrot: iterations=40 runtime: 128278us
+Mandelbrot: iterations=41 runtime: 128282us
+Mandelbrot: iterations=42 runtime: 128278us
+Mandelbrot: iterations=43 runtime: 128295us
+Mandelbrot: iterations=44 runtime: 128277us
+Mandelbrot: iterations=45 runtime: 128281us
+Mandelbrot: iterations=46 runtime: 128281us
+Mandelbrot: iterations=47 runtime: 128295us
+Mandelbrot: iterations=48 runtime: 128287us
+Mandelbrot: iterations=49 runtime: 128287us
+Mandelbrot: iterations=50 runtime: 128314us
+Mandelbrot: iterations=51 runtime: 128290us
+Mandelbrot: iterations=52 runtime: 128285us
+Mandelbrot: iterations=53 runtime: 128293us
+Mandelbrot: iterations=54 runtime: 127970us
+Mandelbrot: iterations=55 runtime: 128289us
+Mandelbrot: iterations=56 runtime: 127973us
+Mandelbrot: iterations=57 runtime: 128288us
+Mandelbrot: iterations=58 runtime: 128287us
+Mandelbrot: iterations=59 runtime: 128271us
+Mandelbrot: iterations=60 runtime: 127949us
+Mandelbrot: iterations=61 runtime: 128347us
+Mandelbrot: iterations=62 runtime: 128283us
+Mandelbrot: iterations=63 runtime: 127969us
+Mandelbrot: iterations=64 runtime: 128291us
+Mandelbrot: iterations=65 runtime: 128287us
+Mandelbrot: iterations=66 runtime: 128297us
+Mandelbrot: iterations=67 runtime: 127965us
+Mandelbrot: iterations=68 runtime: 128290us
+Mandelbrot: iterations=69 runtime: 128283us
+Mandelbrot: iterations=70 runtime: 128290us
+Mandelbrot: iterations=71 runtime: 128310us
+Mandelbrot: iterations=72 runtime: 128282us
+Mandelbrot: iterations=73 runtime: 128281us
+Mandelbrot: iterations=74 runtime: 128293us
+Mandelbrot: iterations=75 runtime: 128287us
+Mandelbrot: iterations=76 runtime: 128284us
+Mandelbrot: iterations=77 runtime: 128283us
+Mandelbrot: iterations=78 runtime: 128286us
+Mandelbrot: iterations=79 runtime: 128281us
+Mandelbrot: iterations=80 runtime: 128302us
+Mandelbrot: iterations=81 runtime: 128249us
+Mandelbrot: iterations=82 runtime: 128247us
+Mandelbrot: iterations=83 runtime: 128236us
+Mandelbrot: iterations=84 runtime: 128249us
+Mandelbrot: iterations=85 runtime: 128236us
+Mandelbrot: iterations=86 runtime: 128243us
+Mandelbrot: iterations=87 runtime: 128256us
+Mandelbrot: iterations=88 runtime: 128238us
+Mandelbrot: iterations=89 runtime: 128252us
+Mandelbrot: iterations=90 runtime: 128253us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+=== HumphreysDebugDataPhase ===
+Compilation: 138-java.nio.Buffer.capacity()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Buffer.capacity()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Mandelbrot: iterations=91 runtime: 128255us
+Mandelbrot: iterations=92 runtime: 127490us
+Mandelbrot: iterations=93 runtime: 127471us
+Mandelbrot: iterations=94 runtime: 127469us
+Mandelbrot: iterations=95 runtime: 127463us
+Mandelbrot: iterations=96 runtime: 127465us
+Mandelbrot: iterations=97 runtime: 127454us
+Mandelbrot: iterations=98 runtime: 127592us
+Mandelbrot: iterations=99 runtime: 128281us
+Mandelbrot: iterations=100 runtime: 128280us
+Mandelbrot: iterations=101 runtime: 128289us
+Mandelbrot: iterations=102 runtime: 128293us
+Mandelbrot: iterations=103 runtime: 128282us
+Mandelbrot: iterations=104 runtime: 128283us
+Mandelbrot: iterations=105 runtime: 128278us
+Mandelbrot: iterations=106 runtime: 128296us
+Mandelbrot: iterations=107 runtime: 128274us
+Mandelbrot: iterations=108 runtime: 130220us
+Mandelbrot: iterations=109 runtime: 130136us
+Mandelbrot: iterations=110 runtime: 128298us
+Mandelbrot: iterations=111 runtime: 128289us
+Mandelbrot: iterations=112 runtime: 128293us
+Mandelbrot: iterations=113 runtime: 127970us
+Mandelbrot: iterations=114 runtime: 128275us
+Mandelbrot: iterations=115 runtime: 128291us
+Mandelbrot: iterations=116 runtime: 128288us
+Mandelbrot: iterations=117 runtime: 128280us
+Mandelbrot: iterations=118 runtime: 128292us
+Mandelbrot: iterations=119 runtime: 128286us
+Mandelbrot: iterations=120 runtime: 128284us
+Mandelbrot: iterations=121 runtime: 128285us
+Mandelbrot: iterations=122 runtime: 127960us
+Mandelbrot: iterations=123 runtime: 127961us
+Mandelbrot: iterations=124 runtime: 128279us
+Mandelbrot: iterations=125 runtime: 128289us
+Mandelbrot: iterations=126 runtime: 128283us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+=== HumphreysDebugDataPhase ===
+Compilation: 141-java.nio.charset.CharsetEncoder.maxBytesPerChar()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<CharsetEncoder.maxBytesPerChar()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Mandelbrot: iterations=127 runtime: 127970us
+Mandelbrot: iterations=128 runtime: 128389us
+Mandelbrot: iterations=129 runtime: 128750us
+Mandelbrot: iterations=130 runtime: 128362us
+Mandelbrot: iterations=131 runtime: 128729us
+Mandelbrot: iterations=132 runtime: 128745us
+Mandelbrot: iterations=133 runtime: 128750us
+Mandelbrot: iterations=134 runtime: 128744us
+Mandelbrot: iterations=135 runtime: 128746us
+Mandelbrot: iterations=136 runtime: 128748us
+Mandelbrot: iterations=137 runtime: 128733us
+Mandelbrot: iterations=138 runtime: 128732us
+Mandelbrot: iterations=139 runtime: 128729us
+Mandelbrot: iterations=140 runtime: 128726us
+Mandelbrot: iterations=141 runtime: 128738us
+Mandelbrot: iterations=142 runtime: 128360us
+Mandelbrot: iterations=143 runtime: 128491us
+Mandelbrot: iterations=144 runtime: 128286us
+Mandelbrot: iterations=145 runtime: 128282us
+Mandelbrot: iterations=146 runtime: 128283us
+Mandelbrot: iterations=147 runtime: 127957us
+Mandelbrot: iterations=148 runtime: 127971us
+Mandelbrot: iterations=149 runtime: 128294us
+Mandelbrot: iterations=150 runtime: 128282us
+Mandelbrot: iterations=151 runtime: 128275us
+Mandelbrot: iterations=152 runtime: 128285us
+Mandelbrot: iterations=153 runtime: 128282us
+Mandelbrot: iterations=154 runtime: 128188us
+Mandelbrot: iterations=155 runtime: 128284us
+Mandelbrot: iterations=156 runtime: 128274us
+Mandelbrot: iterations=157 runtime: 128280us
+Mandelbrot: iterations=158 runtime: 128278us
+Mandelbrot: iterations=159 runtime: 128275us
+Mandelbrot: iterations=160 runtime: 127963us
+Mandelbrot: iterations=161 runtime: 128281us
+Mandelbrot: iterations=162 runtime: 127961us
+Mandelbrot: iterations=163 runtime: 127963us
+Mandelbrot: iterations=164 runtime: 128286us
+Mandelbrot: iterations=165 runtime: 128282us
+Mandelbrot: iterations=166 runtime: 128283us
+Mandelbrot: iterations=167 runtime: 128288us
+Mandelbrot: iterations=168 runtime: 128290us
+Mandelbrot: iterations=169 runtime: 128288us
+Mandelbrot: iterations=170 runtime: 127966us
+Mandelbrot: iterations=171 runtime: 127967us
+Mandelbrot: iterations=172 runtime: 128284us
+Mandelbrot: iterations=173 runtime: 128277us
+Mandelbrot: iterations=174 runtime: 128280us
+Mandelbrot: iterations=175 runtime: 128277us
+Mandelbrot: iterations=176 runtime: 127950us
+Mandelbrot: iterations=177 runtime: 128287us
+Mandelbrot: iterations=178 runtime: 128275us
+Mandelbrot: iterations=179 runtime: 128277us
+Mandelbrot: iterations=180 runtime: 128276us
+Mandelbrot: iterations=181 runtime: 128273us
+Mandelbrot: iterations=182 runtime: 128281us
+Mandelbrot: iterations=183 runtime: 128286us
+Mandelbrot: iterations=184 runtime: 128284us
+Mandelbrot: iterations=185 runtime: 128287us
+Mandelbrot: iterations=186 runtime: 128287us
+Mandelbrot: iterations=187 runtime: 128286us
+Mandelbrot: iterations=188 runtime: 128299us
+Mandelbrot: iterations=189 runtime: 128289us
+Mandelbrot: iterations=190 runtime: 128282us
+Mandelbrot: iterations=191 runtime: 128281us
+Mandelbrot: iterations=192 runtime: 128305us
+Mandelbrot: iterations=193 runtime: 127962us
+Mandelbrot: iterations=194 runtime: 127954us
+Mandelbrot: iterations=195 runtime: 128283us
+Mandelbrot: iterations=196 runtime: 128278us
+Mandelbrot: iterations=197 runtime: 127957us
+Mandelbrot: iterations=198 runtime: 128274us
+Mandelbrot: iterations=199 runtime: 128275us
+Mandelbrot: iterations=200 runtime: 128281us
+Mandelbrot: iterations=201 runtime: 128276us
+Mandelbrot: iterations=202 runtime: 128272us
+Mandelbrot: iterations=203 runtime: 128273us
+Mandelbrot: iterations=204 runtime: 128272us
+Mandelbrot: iterations=205 runtime: 128277us
+Mandelbrot: iterations=206 runtime: 127964us
+Mandelbrot: iterations=207 runtime: 128277us
+Mandelbrot: iterations=208 runtime: 128283us
+Mandelbrot: iterations=209 runtime: 127957us
+Mandelbrot: iterations=210 runtime: 128020us
+Mandelbrot: iterations=211 runtime: 128284us
+Mandelbrot: iterations=212 runtime: 127963us
+Mandelbrot: iterations=213 runtime: 128278us
+Mandelbrot: iterations=214 runtime: 128286us
+Mandelbrot: iterations=215 runtime: 128275us
+Mandelbrot: iterations=216 runtime: 128287us
+Mandelbrot: iterations=217 runtime: 128280us
+Mandelbrot: iterations=218 runtime: 128280us
+Mandelbrot: iterations=219 runtime: 128273us
+Mandelbrot: iterations=220 runtime: 128271us
+Mandelbrot: iterations=221 runtime: 128272us
+Mandelbrot: iterations=222 runtime: 128269us
+Mandelbrot: iterations=223 runtime: 128272us
+Mandelbrot: iterations=224 runtime: 129113us
+Mandelbrot: iterations=225 runtime: 128294us
+Mandelbrot: iterations=226 runtime: 128296us
+Mandelbrot: iterations=227 runtime: 128294us
+Mandelbrot: iterations=228 runtime: 128295us
+Mandelbrot: iterations=229 runtime: 128297us
+Mandelbrot: iterations=230 runtime: 128288us
+Mandelbrot: iterations=231 runtime: 127963us
+Mandelbrot: iterations=232 runtime: 128286us
+Mandelbrot: iterations=233 runtime: 127954us
+Mandelbrot: iterations=234 runtime: 128300us
+Mandelbrot: iterations=235 runtime: 128280us
+Mandelbrot: iterations=236 runtime: 128291us
+Mandelbrot: iterations=237 runtime: 128284us
+Mandelbrot: iterations=238 runtime: 128284us
+Mandelbrot: iterations=239 runtime: 127967us
+Mandelbrot: iterations=240 runtime: 128293us
+Mandelbrot: iterations=241 runtime: 128285us
+Mandelbrot: iterations=242 runtime: 128295us
+Mandelbrot: iterations=243 runtime: 127948us
+Mandelbrot: iterations=244 runtime: 128275us
+Mandelbrot: iterations=245 runtime: 128278us
+Mandelbrot: iterations=246 runtime: 128275us
+Mandelbrot: iterations=247 runtime: 128270us
+Mandelbrot: iterations=248 runtime: 128267us
+Mandelbrot: iterations=249 runtime: 128277us
+Mandelbrot: iterations=250 runtime: 128290us
+Mandelbrot: iterations=251 runtime: 128281us
+Mandelbrot: iterations=252 runtime: 128275us
+Mandelbrot: iterations=253 runtime: 128276us
+Mandelbrot: iterations=254 runtime: 128282us
+Mandelbrot: iterations=255 runtime: 128297us
+Mandelbrot: iterations=256 runtime: 127953us
+Mandelbrot: iterations=257 runtime: 128278us
+Mandelbrot: iterations=258 runtime: 128280us
+Mandelbrot: iterations=259 runtime: 127955us
+Mandelbrot: iterations=260 runtime: 128272us
+Mandelbrot: iterations=261 runtime: 128286us
+Mandelbrot: iterations=262 runtime: 128271us
+Mandelbrot: iterations=263 runtime: 128277us
+Mandelbrot: iterations=264 runtime: 128278us
+Mandelbrot: iterations=265 runtime: 128290us
+Mandelbrot: iterations=266 runtime: 127952us
+Mandelbrot: iterations=267 runtime: 128290us
+Mandelbrot: iterations=268 runtime: 128057us
+Mandelbrot: iterations=269 runtime: 128277us
+Mandelbrot: iterations=270 runtime: 128274us
+Mandelbrot: iterations=271 runtime: 127969us
+Mandelbrot: iterations=272 runtime: 128288us
+Mandelbrot: iterations=273 runtime: 128282us
+Mandelbrot: iterations=274 runtime: 128291us
+Mandelbrot: iterations=275 runtime: 128291us
+Mandelbrot: iterations=276 runtime: 128291us
+Mandelbrot: iterations=277 runtime: 128283us
+Mandelbrot: iterations=278 runtime: 128286us
+Mandelbrot: iterations=279 runtime: 128290us
+Mandelbrot: iterations=280 runtime: 128285us
+Mandelbrot: iterations=281 runtime: 128288us
+Mandelbrot: iterations=282 runtime: 128285us
+Mandelbrot: iterations=283 runtime: 128275us
+Mandelbrot: iterations=284 runtime: 128279us
+Mandelbrot: iterations=285 runtime: 128275us
+Mandelbrot: iterations=286 runtime: 128283us
+Mandelbrot: iterations=287 runtime: 128278us
+Mandelbrot: iterations=288 runtime: 128279us
+Mandelbrot: iterations=289 runtime: 128288us
+Mandelbrot: iterations=290 runtime: 128282us
+Mandelbrot: iterations=291 runtime: 128287us
+Mandelbrot: iterations=292 runtime: 128294us
+Mandelbrot: iterations=293 runtime: 127968us
+Mandelbrot: iterations=294 runtime: 127973us
+Mandelbrot: iterations=295 runtime: 128280us
+Mandelbrot: iterations=296 runtime: 128281us
+Mandelbrot: iterations=297 runtime: 127966us
+Mandelbrot: iterations=298 runtime: 128279us
+Mandelbrot: iterations=299 runtime: 128289us
+Mandelbrot: iterations=300 runtime: 128279us
+Mandelbrot: iterations=301 runtime: 128270us
+Mandelbrot: iterations=302 runtime: 128285us
+Mandelbrot: iterations=303 runtime: 128280us
+Mandelbrot: iterations=304 runtime: 128295us
+Mandelbrot: iterations=305 runtime: 128255us
+Mandelbrot: iterations=306 runtime: 128245us
+Mandelbrot: iterations=307 runtime: 128249us
+Mandelbrot: iterations=308 runtime: 128249us
+Mandelbrot: iterations=309 runtime: 127929us
+Mandelbrot: iterations=310 runtime: 127926us
+Mandelbrot: iterations=311 runtime: 128238us
+Mandelbrot: iterations=312 runtime: 128130us
+Mandelbrot: iterations=313 runtime: 128247us
+Mandelbrot: iterations=314 runtime: 127919us
+Mandelbrot: iterations=315 runtime: 128249us
+Mandelbrot: iterations=316 runtime: 128258us
+Mandelbrot: iterations=317 runtime: 127926us
+Mandelbrot: iterations=318 runtime: 127925us
+Mandelbrot: iterations=319 runtime: 128244us
+Mandelbrot: iterations=320 runtime: 127941us
+Mandelbrot: iterations=321 runtime: 127921us
+Mandelbrot: iterations=322 runtime: 128254us
+Mandelbrot: iterations=323 runtime: 128243us
+Mandelbrot: iterations=324 runtime: 128231us
+Mandelbrot: iterations=325 runtime: 127924us
+Mandelbrot: iterations=326 runtime: 128234us
+Mandelbrot: iterations=327 runtime: 128243us
+Mandelbrot: iterations=328 runtime: 128247us
+Mandelbrot: iterations=329 runtime: 128226us
+Mandelbrot: iterations=330 runtime: 128241us
+Mandelbrot: iterations=331 runtime: 128245us
+Mandelbrot: iterations=332 runtime: 128247us
+Mandelbrot: iterations=333 runtime: 128255us
+Mandelbrot: iterations=334 runtime: 128253us
+Mandelbrot: iterations=335 runtime: 128255us
+Mandelbrot: iterations=336 runtime: 128257us
+Mandelbrot: iterations=337 runtime: 128249us
+Mandelbrot: iterations=338 runtime: 128249us
+Mandelbrot: iterations=339 runtime: 128247us
+Mandelbrot: iterations=340 runtime: 128245us
+Mandelbrot: iterations=341 runtime: 128247us
+Mandelbrot: iterations=342 runtime: 128237us
+Mandelbrot: iterations=343 runtime: 128248us
+Mandelbrot: iterations=344 runtime: 128259us
+Mandelbrot: iterations=345 runtime: 127927us
+Mandelbrot: iterations=346 runtime: 128242us
+Mandelbrot: iterations=347 runtime: 128245us
+Mandelbrot: iterations=348 runtime: 127937us
+Mandelbrot: iterations=349 runtime: 128250us
+Mandelbrot: iterations=350 runtime: 128250us
+Mandelbrot: iterations=351 runtime: 127936us
+Mandelbrot: iterations=352 runtime: 128240us
+Mandelbrot: iterations=353 runtime: 128242us
+Mandelbrot: iterations=354 runtime: 128254us
+Mandelbrot: iterations=355 runtime: 127940us
+Mandelbrot: iterations=356 runtime: 128255us
+Mandelbrot: iterations=357 runtime: 128248us
+Mandelbrot: iterations=358 runtime: 128256us
+Mandelbrot: iterations=359 runtime: 128248us
+Mandelbrot: iterations=360 runtime: 127923us
+Mandelbrot: iterations=361 runtime: 128248us
+Mandelbrot: iterations=362 runtime: 128242us
+Mandelbrot: iterations=363 runtime: 128255us
+Mandelbrot: iterations=364 runtime: 128264us
+Mandelbrot: iterations=365 runtime: 128237us
+Mandelbrot: iterations=366 runtime: 128252us
+Mandelbrot: iterations=367 runtime: 128234us
+Mandelbrot: iterations=368 runtime: 128178us
+Mandelbrot: iterations=369 runtime: 128258us
+Mandelbrot: iterations=370 runtime: 127914us
+Mandelbrot: iterations=371 runtime: 128238us
+Mandelbrot: iterations=372 runtime: 128242us
+Mandelbrot: iterations=373 runtime: 128248us
+Mandelbrot: iterations=374 runtime: 128250us
+Mandelbrot: iterations=375 runtime: 128271us
+Mandelbrot: iterations=376 runtime: 128247us
+Mandelbrot: iterations=377 runtime: 127927us
+Mandelbrot: iterations=378 runtime: 128276us
+Mandelbrot: iterations=379 runtime: 128241us
+Mandelbrot: iterations=380 runtime: 128243us
+Mandelbrot: iterations=381 runtime: 128240us
+Mandelbrot: iterations=382 runtime: 128252us
+Mandelbrot: iterations=383 runtime: 128241us
+Mandelbrot: iterations=384 runtime: 128240us
+Mandelbrot: iterations=385 runtime: 128237us
+Mandelbrot: iterations=386 runtime: 128248us
+Mandelbrot: iterations=387 runtime: 128246us
+Mandelbrot: iterations=388 runtime: 128247us
+Mandelbrot: iterations=389 runtime: 127930us
+Mandelbrot: iterations=390 runtime: 128247us
+Mandelbrot: iterations=391 runtime: 127906us
+Mandelbrot: iterations=392 runtime: 128263us
+Mandelbrot: iterations=393 runtime: 127923us
+Mandelbrot: iterations=394 runtime: 128242us
+Mandelbrot: iterations=395 runtime: 128263us
+Mandelbrot: iterations=396 runtime: 127921us
+Mandelbrot: iterations=397 runtime: 127923us
+Mandelbrot: iterations=398 runtime: 127925us
+Mandelbrot: iterations=399 runtime: 127924us
+Mandelbrot: iterations=400 runtime: 128248us
+Mandelbrot: iterations=401 runtime: 128249us
+Mandelbrot: iterations=402 runtime: 128241us
+Mandelbrot: iterations=403 runtime: 128241us
+Mandelbrot: iterations=404 runtime: 129681us
+Mandelbrot: iterations=405 runtime: 128647us
+Mandelbrot: iterations=406 runtime: 127920us
+Mandelbrot: iterations=407 runtime: 128242us
+Mandelbrot: iterations=408 runtime: 127929us
+Mandelbrot: iterations=409 runtime: 128246us
+Mandelbrot: iterations=410 runtime: 128251us
+Mandelbrot: iterations=411 runtime: 127917us
+Mandelbrot: iterations=412 runtime: 127926us
+Mandelbrot: iterations=413 runtime: 128242us
+Mandelbrot: iterations=414 runtime: 128254us
+Mandelbrot: iterations=415 runtime: 128228us
+Mandelbrot: iterations=416 runtime: 128244us
+Mandelbrot: iterations=417 runtime: 128235us
+Mandelbrot: iterations=418 runtime: 127919us
+Mandelbrot: iterations=419 runtime: 128239us
+Mandelbrot: iterations=420 runtime: 128237us
+Mandelbrot: iterations=421 runtime: 128242us
+Mandelbrot: iterations=422 runtime: 128238us
+Mandelbrot: iterations=423 runtime: 128244us
+Mandelbrot: iterations=424 runtime: 128224us
+Mandelbrot: iterations=425 runtime: 128237us
+Mandelbrot: iterations=426 runtime: 128237us
+Mandelbrot: iterations=427 runtime: 128250us
+Mandelbrot: iterations=428 runtime: 128262us
+Mandelbrot: iterations=429 runtime: 128262us
+Mandelbrot: iterations=430 runtime: 128263us
+Mandelbrot: iterations=431 runtime: 128245us
+Mandelbrot: iterations=432 runtime: 128254us
+Mandelbrot: iterations=433 runtime: 128259us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+=== HumphreysDebugDataPhase ===
+Compilation: 142-java.lang.StringLatin1.inflate(byte[], int, char[], int, int)
+Number of loops: 3
+
+Block 0
+  Successors:
+    -> 24
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 24
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 7
+    -> 4
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 7
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+    -> 30
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 7
+    -> 29
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 12
+    -> 9
+  Predecessors:
+    <- 2
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 12
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+    -> 28
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 12
+    -> 27
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 12
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 13
+    -> 26
+  Predecessors:
+    <- 7
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+    -> 25
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 15
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 16
+    -> 17
+  Predecessors:
+    <- 14
+    <- 16
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 15
+  Predecessors:
+    <- 15
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 18
+  Predecessors:
+    <- 15
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 19
+    -> 20
+  Predecessors:
+    <- 17
+    <- 19
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 18
+  Predecessors:
+    <- 18
+  In loop: L1
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker1()>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 21
+  Predecessors:
+    <- 18
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 22
+    -> 23
+  Predecessors:
+    <- 20
+    <- 22
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+    -> 21
+  Predecessors:
+    <- 21
+  In loop: L2
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker2()>
+ BuboLoopMakers: 
+
+Block 23
+  Successors:
+    -> 24
+  Predecessors:
+    <- 21
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 24
+  Successors:
+  Predecessors:
+    <- 23
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 25
+  Successors:
+    -> 31
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 26
+  Successors:
+    -> 31
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 27
+  Successors:
+    -> 31
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 28
+  Successors:
+    -> 31
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 29
+  Successors:
+    -> 31
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 30
+  Successors:
+    -> 31
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+Block 31
+  Successors:
+  Predecessors:
+    <- 30
+    <- 28
+    <- 26
+    <- 25
+    <- 29
+    <- 27
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringLatin1.inflate(byte[], int, char[], int, int)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
+Mandelbrot: iterations=434 runtime: 128250us
+Mandelbrot: iterations=435 runtime: 127124us
+Mandelbrot: iterations=436 runtime: 127093us
+Mandelbrot: iterations=437 runtime: 127473us
+Mandelbrot: iterations=438 runtime: 127463us
+Mandelbrot: iterations=439 runtime: 127452us
+Mandelbrot: iterations=440 runtime: 127461us
+Mandelbrot: iterations=441 runtime: 127463us
+Mandelbrot: iterations=442 runtime: 127104us
+Mandelbrot: iterations=443 runtime: 127466us
+Mandelbrot: iterations=444 runtime: 127464us
+Mandelbrot: iterations=445 runtime: 127472us
+Mandelbrot: iterations=446 runtime: 127104us
+Mandelbrot: iterations=447 runtime: 127463us
+Mandelbrot: iterations=448 runtime: 127475us
+Mandelbrot: iterations=449 runtime: 127466us
+Mandelbrot: iterations=450 runtime: 127105us
+Mandelbrot: iterations=451 runtime: 127464us
+Mandelbrot: iterations=452 runtime: 127457us
+Mandelbrot: iterations=453 runtime: 127468us
+Mandelbrot: iterations=454 runtime: 127460us
+Mandelbrot: iterations=455 runtime: 128026us
+Mandelbrot: iterations=456 runtime: 128290us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+=== HumphreysDebugDataPhase ===
+Compilation: 143-java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)
+Number of loops: 1
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 3
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 7
+    -> 5
+  Predecessors:
+    <- 1
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 7
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 7
+    -> 53
+  Predecessors:
+    <- 3
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 8
+    -> 9
+  Predecessors:
+    <- 3
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 10
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 14
+    -> 12
+  Predecessors:
+    <- 8
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 14
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 14
+    -> 52
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 15
+    -> 51
+  Predecessors:
+    <- 10
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 16
+    -> 49
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 17
+    -> 48
+  Predecessors:
+    <- 15
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 18
+    -> 47
+  Predecessors:
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 19
+    -> 46
+  Predecessors:
+    <- 17
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 20
+    -> 25
+  Predecessors:
+    <- 18
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+    -> 21
+    -> 24
+  Predecessors:
+    <- 19
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+    -> 26
+    -> 23
+  Predecessors:
+    <- 20
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+    -> 26
+  Predecessors:
+    <- 21
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 23
+  Successors:
+    -> 45
+  Predecessors:
+    <- 21
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 24
+  Successors:
+    -> 45
+  Predecessors:
+    <- 20
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 25
+  Successors:
+    -> 26
+  Predecessors:
+    <- 19
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 26
+  Successors:
+    -> 27
+    -> 33
+  Predecessors:
+    <- 25
+    <- 21
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 27
+  Successors:
+    -> 28
+    -> 31
+  Predecessors:
+    <- 26
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 28
+  Successors:
+    -> 33
+    -> 30
+  Predecessors:
+    <- 27
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 29
+  Successors:
+    -> 33
+  Predecessors:
+    <- 28
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 30
+  Successors:
+    -> 45
+  Predecessors:
+    <- 28
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 31
+  Successors:
+    -> 45
+  Predecessors:
+    <- 27
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 32
+  Successors:
+    -> 33
+  Predecessors:
+    <- 26
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 33
+  Successors:
+    -> 34
+    -> 44
+  Predecessors:
+    <- 26
+    <- 28
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 34
+  Successors:
+    -> 35
+    -> 43
+  Predecessors:
+    <- 33
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 35
+  Successors:
+    -> 36
+    -> 42
+  Predecessors:
+    <- 34
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 36
+  Successors:
+    -> 37
+  Predecessors:
+    <- 35
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 37
+  Successors:
+    -> 38
+    -> 40
+  Predecessors:
+    <- 36
+    <- 39
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 38
+  Successors:
+    -> 39
+    -> 41
+  Predecessors:
+    <- 37
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 39
+  Successors:
+    -> 37
+  Predecessors:
+    <- 38
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 40
+  Successors:
+    -> 51
+  Predecessors:
+    <- 37
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 41
+  Successors:
+  Predecessors:
+    <- 38
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 42
+  Successors:
+    -> 45
+  Predecessors:
+    <- 35
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 43
+  Successors:
+    -> 45
+  Predecessors:
+    <- 34
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 44
+  Successors:
+    -> 45
+  Predecessors:
+    <- 33
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 45
+  Successors:
+  Predecessors:
+    <- 24
+    <- 31
+    <- 44
+    <- 43
+    <- 42
+    <- 23
+    <- 30
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 46
+  Successors:
+    -> 51
+  Predecessors:
+    <- 18
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 47
+  Successors:
+    -> 54
+  Predecessors:
+    <- 17
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 48
+  Successors:
+    -> 54
+  Predecessors:
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 49
+  Successors:
+    -> 54
+  Predecessors:
+    <- 15
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 50
+  Successors:
+    -> 51
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 51
+  Successors:
+  Predecessors:
+    <- 40
+    <- 14
+    <- 46
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 52
+  Successors:
+    -> 54
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 53
+  Successors:
+    -> 54
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 54
+  Successors:
+  Predecessors:
+    <- 53
+    <- 52
+    <- 49
+    <- 48
+    <- 47
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 144-java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)
+Number of loops: 1
+
+Block 0
+  Successors:
+    -> 1
+    -> 2
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 1
+  Successors:
+    -> 20
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 2
+  Successors:
+    -> 7
+    -> 4
+  Predecessors:
+    <- 0
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 3
+  Successors:
+    -> 7
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 4
+  Successors:
+    -> 5
+    -> 28
+  Predecessors:
+    <- 2
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 5
+  Successors:
+    -> 7
+    -> 27
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 6
+  Successors:
+    -> 7
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 7
+  Successors:
+    -> 12
+    -> 9
+  Predecessors:
+    <- 2
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 8
+  Successors:
+    -> 12
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 9
+  Successors:
+    -> 10
+    -> 26
+  Predecessors:
+    <- 7
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 10
+  Successors:
+    -> 12
+    -> 25
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 11
+  Successors:
+    -> 12
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 12
+  Successors:
+    -> 13
+    -> 24
+  Predecessors:
+    <- 7
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 13
+  Successors:
+    -> 14
+    -> 23
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 14
+  Successors:
+    -> 15
+    -> 22
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 15
+  Successors:
+    -> 16
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 16
+  Successors:
+    -> 17
+    -> 19
+  Predecessors:
+    <- 15
+    <- 18
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 17
+  Successors:
+    -> 18
+    -> 21
+  Predecessors:
+    <- 16
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 18
+  Successors:
+    -> 16
+  Predecessors:
+    <- 17
+  In loop: L0
+  Source positions in block:
+    HotSpotMethod<BuboAgentCompilerMarkers.Marker0()>
+ BuboLoopMakers: 
+
+Block 19
+  Successors:
+    -> 20
+  Predecessors:
+    <- 16
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 20
+  Successors:
+  Predecessors:
+    <- 19
+    <- 1
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 21
+  Successors:
+  Predecessors:
+    <- 17
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 22
+  Successors:
+    -> 29
+  Predecessors:
+    <- 14
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 23
+  Successors:
+    -> 29
+  Predecessors:
+    <- 13
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 24
+  Successors:
+    -> 29
+  Predecessors:
+    <- 12
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 25
+  Successors:
+    -> 29
+  Predecessors:
+    <- 10
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 26
+  Successors:
+    -> 29
+  Predecessors:
+    <- 9
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 27
+  Successors:
+    -> 29
+  Predecessors:
+    <- 5
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 28
+  Successors:
+    -> 29
+  Predecessors:
+    <- 4
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+Block 29
+  Successors:
+  Predecessors:
+    <- 28
+    <- 26
+    <- 24
+    <- 23
+    <- 22
+    <- 27
+    <- 25
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)int -1 graphSignature differs bc8f20c8c772d3cc0eaba9b68bcd84047d761ba16a7aeb64fe90c36d37dcccb7 != 3bdd078c3a9d60d7eff24b6603d8a355db817965321aded167eb2387bae94eb4
+Mandelbrot: iterations=457 runtime: 128295us
+Mandelbrot: iterations=458 runtime: 127130us
+Mandelbrot: iterations=459 runtime: 127478us
+Mandelbrot: iterations=460 runtime: 127477us
+Mandelbrot: iterations=461 runtime: 127479us
+Mandelbrot: iterations=462 runtime: 127469us
+Mandelbrot: iterations=463 runtime: 127469us
+Mandelbrot: iterations=464 runtime: 127458us
+Mandelbrot: iterations=465 runtime: 127389us
+Mandelbrot: iterations=466 runtime: 127470us
+Mandelbrot: iterations=467 runtime: 127473us
+Mandelbrot: iterations=468 runtime: 127308us
+Mandelbrot: iterations=469 runtime: 127467us
+Mandelbrot: iterations=470 runtime: 127458us
+Mandelbrot: iterations=471 runtime: 127463us
+Mandelbrot: iterations=472 runtime: 127096us
+Mandelbrot: iterations=473 runtime: 127460us
+Mandelbrot: iterations=474 runtime: 127470us
+Mandelbrot: iterations=475 runtime: 127459us
+Mandelbrot: iterations=476 runtime: 127468us
+Mandelbrot: iterations=477 runtime: 127089us
+Mandelbrot: iterations=478 runtime: 127467us
+Mandelbrot: iterations=479 runtime: 127473us
+Mandelbrot: iterations=480 runtime: 127467us
+Mandelbrot: iterations=481 runtime: 127472us
+Mandelbrot: iterations=482 runtime: 127462us
+Mandelbrot: iterations=483 runtime: 127460us
+Mandelbrot: iterations=484 runtime: 127108us
+Mandelbrot: iterations=485 runtime: 127471us
+Mandelbrot: iterations=486 runtime: 127846us
+Mandelbrot: iterations=487 runtime: 128293us
+Mandelbrot: iterations=488 runtime: 128295us
+Mandelbrot: iterations=489 runtime: 128280us
+Mandelbrot: iterations=490 runtime: 128288us
+Mandelbrot: iterations=491 runtime: 128280us
+Mandelbrot: iterations=492 runtime: 128291us
+Mandelbrot: iterations=493 runtime: 128287us
+Mandelbrot: iterations=494 runtime: 128283us
+Mandelbrot: iterations=495 runtime: 128282us
+Mandelbrot: iterations=496 runtime: 128275us
+Mandelbrot: iterations=497 runtime: 128282us
+Mandelbrot: iterations=498 runtime: 128282us
+Mandelbrot: iterations=499 runtime: 127972us
+Mandelbrot: iterations=500 runtime: 128275us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+=== HumphreysDebugDataPhase ===
+Compilation: 145-jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<ClassOrInterfaceDescImpl.isClassOrInterface()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 146-jdk.internal.classfile.impl.AbstractPoolEntry.hashCode()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<AbstractPoolEntry.hashCode()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 147-jdk.internal.constant.PrimitiveClassDescImpl.descriptorString()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<PrimitiveClassDescImpl.descriptorString()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 148-jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<AbstractPoolEntry$ClassEntryImpl.tag()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+=== HumphreysDebugDataPhase ===
+Compilation: 153-java.lang.Class.getComponentType()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<Class.getComponentType()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Mandelbrot: iterations=500 average: 128197us total: 64098731us
+
+
+=== HumphreysDebugDataPhase ===
+Compilation: 155-java.lang.invoke.MethodTypeForm.parameterSlotCount()
+Number of loops: 0
+
+Block 0
+  Successors:
+  Predecessors:
+  In loop: <none>
+  Source positions in block:
+    HotSpotMethod<MethodTypeForm.parameterSlotCount()>
+ BuboLoopMakers: 
+
+=== End HumphreysDebugDataPhase ===
+Total Runtime: 64098731us
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 212711580818

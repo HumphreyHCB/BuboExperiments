@@ -1,0 +1,14 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Benchmark.innerBenchmarkLoop,126,1,4804,8263,58.138691,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,SpaceMangler::mangle_region,,,2432,8263,29.432410,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Benchmark.innerBenchmarkLoop,126,2,349,8263,4.223648,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,MemAllocator::mem_allocate_inside_tlab_slow,,,238,8263,2.880310,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Bounce.benchmark,,,207,8263,2.505143,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Benchmark.innerBenchmarkLoop,126,0,198,8263,2.396224,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.util.Arrays.setAll,,,15,8263,0.181532,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,clear_page_erms_[k],,,8,8263,0.096817,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,MarkBitMap::get_next_marked_addr,,,4,8263,0.048409,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,Benchmark.innerBenchmarkLoop,126,3,2,8263,0.024204,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,G1FromCardCache::clear,,,2,8263,0.024204,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,G1ParScanThreadState::do_copy_to_survivor_space,,,2,8263,0.024204,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,async,__memset_avx2_unaligned_erms,,,2,8263,0.024204,no_marker

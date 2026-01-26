@@ -1,0 +1,17 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,562,1,9958,11024,90.330189,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,562,2,632,11024,5.732946,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Bounce.benchmark(),,,204,11024,1.850508,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,562,0,184,11024,1.669086,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,562,3,27,11024,0.244920,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.util.Arrays.setAll(Object[], IntFunction) line: 5097",,,7,11024,0.063498,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,575,0,2,11024,0.018142,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.Integer.valueOf(int),,,2,11024,0.018142,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.io.FileOutputStream.writeBytes(byte[], int, int, boolean)",,,1,11024,0.009071,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.util.Collections$SetFromMap.remove(Object) line: 6044,,,1,11024,0.009071,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.util.Properties$LineReader.readLine() line: 526,,,1,11024,0.009071,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int) line: 570",,,1,11024,0.009071,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock() line: 226,,,1,11024,0.009071,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.jfr.internal.event.EventWriter.putStringValue(String) line: 158,,,1,11024,0.009071,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.jfr.internal.periodic.PeriodicEvents.doPeriodic() line: 100,,,1,11024,0.009071,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,sun.nio.cs.StreamEncoder.implWrite(CharBuffer) line: 277,,,1,11024,0.009071,no_marker

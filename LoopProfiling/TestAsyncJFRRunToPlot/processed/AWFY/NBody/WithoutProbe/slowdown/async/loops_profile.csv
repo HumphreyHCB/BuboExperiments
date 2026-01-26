@@ -1,0 +1,6 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,async,Run.measure,136,0,10761,10822,99.436333,
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,async,nbody.Body.setZ,,,28,10822,0.258732,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,async,NBody.innerBenchmarkLoop,,,16,10822,0.147847,no_marker
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,async,Run.measure,135,5,11,10822,0.101645,
+NBody,AWFY,WithoutProbe,AUTO_PIPELINE,async,nbody.Body.setVZ,,,6,10822,0.055443,no_marker

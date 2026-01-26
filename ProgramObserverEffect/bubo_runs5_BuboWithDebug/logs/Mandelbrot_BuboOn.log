@@ -1,0 +1,728 @@
+============================================================
+Benchmark: Mandelbrot
+BuboLIRPhase: true
+RUNS: 500
+extra_args: 750
+Timestamp: Thu 22 Jan 14:48:30 GMT 2026
+
+[WARN] Unknown argument: output
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+[Use -Djdk.graal.LogFile=<path> to redirect Graal log output to a file.]
+java.lang.module.ModuleDescriptor.name()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.module.ModuleReference.descriptor()java.lang.module.ModuleDescriptor -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.Enum.ordinal()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.lang.Class.isPrimitive()boolean -1 codeSignature differs 98ab40cf2ebcc843a57e4548f9a42e2e9f3f439b3cfc72b2a9affe72c8d06a5f != 5b9fc3b01b5ff747850254186cdcc08e50c4f85fb4d4d68bc0989fcb181794f8
+jdk.internal.util.StrongReferenceKey.get()java.lang.Object -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.Class.getClassLoader()java.lang.ClassLoader -1 codeSignature differs 1ec746d9657abb2124f404e47924197593986fc62346c6cd76072c08e29afddf != 454facf798c6644faed5619d9e1dae25408778409730f09c41b1c0c95518fd46
+java.lang.invoke.MethodType.returnType()java.lang.Class -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+jdk.internal.classfile.impl.AbstractPoolEntry.index()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.lang.invoke.MemberName.getDeclaringClass()java.lang.Class -1 codeSignature differs b46e439bc51650ff335d2a7124f0b0154f260fe1af8ba145c6fd3cf5008c9e4e != de7d2501b6c4ceaef40260482daf6e5ea615f5f43bc71d4e0a42f41866056e09
+java.lang.invoke.MethodType.form()java.lang.invoke.MethodTypeForm -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.util.stream.FindOps$FindSink.cancellationRequested()boolean -1 codeSignature differs 55af0dc4b7688c78180d5f5b00584e4bf66cf93bd60716f9aab49e7a6fd64ac4 != d201d3c970d1bea0e5266b3abd2e0b5e37d50f57628f0f6798d16338d8e21f6a
+java.lang.Object.<init>()void -1 codeSignature differs fe534d3aac0502b22527b54e744892c09d7496fd765947a3ee3ec9a070d56f92 != b5ee38686824d688fb238521bf027287d22a9235c6ea851247456595ee3c4ca5
+java.lang.String.hashCode()int -1 codeSignature differs cd869c87835ef8242ee90410caccd8a61a63cd99231e11f83fcdc76366e70264 != aa1e9c2f9ea239d2fb15b2f7ff9a60f790f0544470df5bee9a657461c7ae39f8
+jdk.internal.module.ModuleReferenceImpl.moduleResolution()jdk.internal.module.ModuleResolution -1 codeSignature differs b76db95b8fd3a055b26c3a6c15023743ea3cd488646d474319964a2e9e13b73e != c90e5cf05b5ed15b2ee4632b0f01daf8e8a827ca7e4e1d9f528d5eb553edbcfd
+java.lang.module.ModuleDescriptor$Requires.modifiers()java.util.Set -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.module.ModuleDescriptor$Requires.name()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor.requires()java.util.Set -1 codeSignature differs 50021c78154f047ad8f88f0733084203e726ca2f3911eed3f4e2615369ae39b2 != a12f6d231bab91ade119f5f7e87b83e28ce01e2d62fff01cc7676b635a92f884
+java.lang.module.ModuleDescriptor.isAutomatic()boolean -1 codeSignature differs 2c5d9434fa6cbff1c0177053ad01774247e7a98383a3d0ee5c4dccbf56bf9e86 != 08dea6d6ec137b950a0343efb1bd030f87565d8e5b95eb64f025bd8e338928e2
+java.util.HashMap$Node.getKey()java.lang.Object -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.util.HashMap$Node.getValue()java.lang.Object -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.util.ImmutableCollections$Set12.isEmpty()boolean -1 codeSignature differs d890ffc04cd03ec866061096d7d13d2670cacc5a2328b692374e3523d40574bd != 6120e833de16ceab3ef754d1b00c19883b3f73962ba2cdf17c59c3710ba02d36
+java.lang.module.ModuleDescriptor$Exports.source()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor$Exports.targets()java.util.Set -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.module.ModuleDescriptor.provides()java.util.Set -1 codeSignature differs 309d9291f2d3c2a63becdec49b2c74b25af9d7fdc62dad05faf86a64889608fc != f5d85dfdf7fef12d65d210d402c44bf26eeb0fb3f9225e78ee6443caec31b619
+java.lang.module.ModuleDescriptor.exports()java.util.Set -1 codeSignature differs 948d21eddb9ad191efbc24290e4e840a30aebb134151b75def9175ab54c0a48c != c3334e7c488922d9ee7281afad5b7ca4db54a4ab2b49cf0e755dc0a6c55854b4
+java.lang.module.ModuleDescriptor.uses()java.util.Set -1 codeSignature differs e3ce51591a4fee3aaff0c687fbb639bc8c1569c92e84d989cdc906a081a3aa6f != 69f900c261d900c3a12e3d84961667caa75caf8ed42490b80edd3cdf23db4832
+java.util.Objects.requireNonNull(java.lang.Object)java.lang.Object -1 codeSignature differs fab3390bacdc1c06ac727172609d32d56c9697db51c25bc06ba90803d6336aa7 != 5f34d305ad8c459e05cc78e8e67ce712079a25140f4444aee0bca43f73c4de02
+java.util.ImmutableCollections$SetN$SetNIterator.hasNext()boolean -1 codeSignature differs 014069b9d29ae67f97f8d652b8d7a77d9057cdb393e4e32597c925d7a30bdc82 != 60575b8cd4d2a8242a8aab77fb607844ec4f52bcc97ca89e8880d7f6422024af
+Requesting uncached profile for bci 32 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBytecodeProfile
+Requesting uncached profile for bci 32 in java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object method getBranchTakenProbability
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 codeSignature differs f6a7d58bb4b33e7926d50e691b8e75ec1724faf98af5ebdf7ab9e188633b194c != 3ebd7591a8a487390491b17f6bf1893dd8d3d0cbebb3582e4492c3d36ffe7e42
+java.util.ImmutableCollections$SetN$SetNIterator.next()java.lang.Object -1 graphSignature differs b05d592371fcce917a90fc28debaf21f7e7532d4836b1c9812ac396e129c7095 != 920e12a7ee41cc3a0a3487d03bd48833bfc4e8d416bdbae7234f8ba199084b4d
+java.util.HashMap.hash(java.lang.Object)int -1 codeSignature differs 99fe6e7e200db61b2671bbfcd04d3e0f84332b7ecbcb7be24903778282326ca8 != 5b0761ed052bc7366fe2729a6d91da427a97a7093b869a0384f167d660650728
+java.lang.module.ModuleDescriptor$Provides.service()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.module.ModuleDescriptor$Exports.isQualified()boolean -1 codeSignature differs 5ec93bf3ca11a8cd678ebacd92d086bd0a3b82b3837debde646d81053b029203 != 4564378fbc7dfc488db24814632e10c5c8678e8258ab69d4607911e3043b9e12
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 codeSignature differs 3f003b300645ba6520c2b19d5b36f81a204467198766c0044ea48c192a243412 != a8d7ee9d1fce84fc0519cae53e64f66affc01f025ae5d78b8e427fdfbe592f04
+java.util.HashMap.putVal(int, java.lang.Object, java.lang.Object, boolean, boolean)java.lang.Object -1 graphSignature differs 71c7befc4bcc50903c01cb500806055811a71080bd754d077284439fcd10103c != 5a74e12f320f5360d51b0bb3946f087ce2dce5afa144b15d312a3acc1621c4cf
+java.util.HashMap$Node.<init>(int, java.lang.Object, java.lang.Object, java.util.HashMap$Node)void -1 codeSignature differs 26e98d022441be725081a511c8fb16cc7ca30b6e1f8b01e3f4483ab2ff42fd9f != b69860c9d4b5471418086111ae0809e0c31340d5dd85e417b69437d56d9e74d9
+java.lang.String.equals(java.lang.Object)boolean -1 codeSignature differs 1b81cb89f6505a5995dbabe425a69a03531cfa5e9b0bad05edda29235b5071d3 != 9d4deb1417e3dc3304e6e48d0050681b843c1c29f58a963fe6d7cb88c5948543
+java.lang.String.equals(java.lang.Object)boolean -1 graphSignature differs 240f841b413bb8bd2af4877cb3753eac11d3bdc482d702e067df992e72784ebb != 2d841e5f6ff33687ba2a8e89c73735b82c892266d476f740b43f9fc2b4d21873
+java.lang.Byte.toUnsignedInt(byte)int -1 codeSignature differs ef53887b8aa24310d9482f8fff2e03d6f5088235fdd6794c9711e90d2fb316a1 != 13d5f6657504f424775e099bdc463c00fbb2dd5e93459aa3373cba81212b5a0d
+java.util.KeyValueHolder.getKey()java.lang.Object -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.util.KeyValueHolder.getValue()java.lang.Object -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor.packages()java.util.Set -1 codeSignature differs 1ec746d9657abb2124f404e47924197593986fc62346c6cd76072c08e29afddf != 454facf798c6644faed5619d9e1dae25408778409730f09c41b1c0c95518fd46
+java.lang.module.ResolvedModule.reference()java.lang.module.ModuleReference -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.lang.module.ModuleDescriptor$Version.toString()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.AbstractStringBuilder.length()int -1 codeSignature differs d4ce072063a0e5d7b77fa03ca89aafb8f3e3ecf13c518dc1905e344d1e62c58a != e88b1ad01cee91360e4f1ac151ade0525982fae29bddccb8434060766b83fd62
+java.util.HashMap.newNode(int, java.lang.Object, java.lang.Object, java.util.HashMap$Node)java.util.HashMap$Node -1 codeSignature differs 0b57ad3d0ea1b0de0d3ae4d1256f2a3bf2dacceb94022bee4e70d75bf1848358 != df85b2b14fb5de70af8f6a1aa6efa050fdaf0546a0197d26ebd4113543cc599e
+java.util.HashMap.afterNodeInsertion(boolean)void -1 codeSignature differs fe534d3aac0502b22527b54e744892c09d7496fd765947a3ee3ec9a070d56f92 != b5ee38686824d688fb238521bf027287d22a9235c6ea851247456595ee3c4ca5
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 codeSignature differs 2c3aea7f8e3e921b891e6734e9c04d05d0359ee986fbe3254c57ffc6d379c3b4 != 432daa38377321451325e8b1df744549fbc59ce1da32f6a4055dc486b26e98e9
+java.util.HashMap.resize()java.util.HashMap$Node[] -1 graphSignature differs 8621339e67ed630b148c0b60d4ece2a8f5e4dc640c7e625f721a8babedbc3813 != 907f32e8439d3100299993dcad76560e08b0f705baa3a6e36f739c5640084aa9
+java.lang.module.ResolvedModule.configuration()java.lang.module.Configuration -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.module.ModuleDescriptor.isOpen()boolean -1 codeSignature differs 7251ebfc69511ba11260ce3e5fe8de41e1ee424c1c84ef382507a4b520f46599 != c4f3939346c24cd7625b42361349cb6733a9291eeffd7507e7bf858c000192f4
+java.util.HashMap.size()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+Profiling started
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8()boolean -1 codeSignature differs 6e3a14458a0fca90e6a63285514a933585cea592cb622e79b33ddc5df6e0fb66 != 6fdd5e023f8b36c06ccfc437f07740607e2fd6af8789c2b6573b1f8e5aec4921
+java.lang.invoke.MethodType.ptypes()java.lang.Class[] -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+jdk.internal.util.Preconditions.checkIndex(int, int, java.util.function.BiFunction)int -1 codeSignature differs 0537b0c8dc5fe868ee44de1817c0b047b24d886158549ad641b2b99126c678bb != 097cdde476e7d7a11441cfa0c37471ca0a888d4c4166d67eed1a7e5c4df66c77
+java.nio.Buffer.limit()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+jdk.internal.classfile.impl.AbstractPoolEntry.width()int -1 codeSignature differs 6e3a14458a0fca90e6a63285514a933585cea592cb622e79b33ddc5df6e0fb66 != 6fdd5e023f8b36c06ccfc437f07740607e2fd6af8789c2b6573b1f8e5aec4921
+jdk.internal.classfile.impl.SplitConstantPool.size()int -1 codeSignature differs 1e851f5b2cbf37c0cd46831368dd889b60dff01d7b16161259960e24b264ceb1 != d37b0c203163b479a20ad6e2dad4e21eac1f1ad9b1ebc37e97f7861914a001ed
+java.util.Properties$LineReader.readLine()int -1 codeSignature differs dcc7cd9c2f0ddf11074c051e8afb59f862ed303e922c9b76c143ff5089c172ec != 43961d71b71ba232ed2694d540aa571e36bd52adf8e4b027613a65dc317ee3ed
+java.util.Properties$LineReader.readLine()int -1 graphSignature differs 2b486d112efd309f21b56eed8c0bb9d78dd9081f799ef08ff7c803bfde611f4a != 878ec244077db65df33a3f7d09ba7cba637998f872be81e8c5729e664e547e01
+java.lang.AbstractStringBuilder.getValue()byte[] -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.Enum.name()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 codeSignature differs 6cf4fb7fd874e15c16cb0f5b0e5aea3b0fd58bc8fcf38c48c000e5c66e2ad6a8 != 4dd8a0d23b54449c010a38548a4ec34726658ad72759db6c8d42ad0645f343a2
+jdk.internal.util.ArraysSupport.unsignedHashCode(int, byte[], int, int)int -1 graphSignature differs 19b74d2985bd215adc18bbf16eb571f75605eb5502bcec63b71bd357cc668d6e != ec48f9da76be66a6b56b9242fa5c79b96c5a2b790a5832893550f14895067602
+sun.util.locale.BaseLocale.getLanguage()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.util.LinkedHashMap.removeEldestEntry(java.util.Map$Entry)boolean -1 codeSignature differs d890ffc04cd03ec866061096d7d13d2670cacc5a2328b692374e3523d40574bd != 6120e833de16ceab3ef754d1b00c19883b3f73962ba2cdf17c59c3710ba02d36
+java.util.concurrent.ConcurrentHashMap.tabAt(java.util.concurrent.ConcurrentHashMap$Node[], int)java.util.concurrent.ConcurrentHashMap$Node -1 codeSignature differs 71d647ba8c6a0b4ea5a8b561fe43e8bed960c9cb04034a7aef626c5d8360de6d != 822749e9eab55cf0ab08d112d11f644faf7767e7d7f602f22b2982e4341c74e7
+jdk.internal.misc.Unsafe.getReferenceAcquire(java.lang.Object, long)java.lang.Object -1 codeSignature differs 0be5c2bda59735ac5470d27796a18d252d59667b906c14721265d97be8abdd5a != a748a0c1fa3d1b22da119249a3931a9411370dff9604e49b3d7ef522719454b3
+java.lang.String.coder()byte -1 codeSignature differs f3a73f0f7ffcffdf8962f6b17b32b9d22dceb70a6321ad4e83f092ac924fb640 != 957313288ef4bdda0b4cd025d583dcf3b718c3f3a50464b737eb27e80ce0139f
+java.security.Provider$Service.getType()java.lang.String -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.security.Provider$Service.getAlgorithm()java.lang.String -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.security.Provider$Service.getAliases()java.util.List -1 codeSignature differs ec9959256dfdc1e5d707b10920cbff0d77d6151df3608588ba4900964b3e0488 != 48d94502b891e4704180e00ca37d65d0a704038e75c0e2368237a34efba54df3
+jdk.internal.classfile.impl.RawBytecodeHelper.bci()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+jdk.internal.classfile.impl.AbstractPoolEntry.constantPool()java.lang.classfile.constantpool.ConstantPool -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+jdk.internal.util.WeakReferenceKey.hashCode()int -1 codeSignature differs 55d12884885f16e44e8204f924f64617688caf405b709d32e1e72896f6c27c3d != 9a030125c16a396ec668abdad74e59397cb88f5e4ba93604e8c6b48c6233e93d
+java.lang.String.value()byte[] -1 codeSignature differs 5be282a10c496d4000571a6844c9c0bc109901813a12d3aea5364efad6a66c85 != 56a4ef2702ccb7a079a36c5f0ed4055a5908c2e7a9296eac6b3ffe2db37f4a2d
+java.lang.String.isLatin1()boolean -1 codeSignature differs 7fbdb74539501cf2e6eb2a3c4a15d0e6598aaf73df2e1a5e20fd95a35a58b24e != 3176213e3be72bb5e1b482eae8a1c07901556750cdd7d42ef0cea4727e1ff083
+Starting Mandelbrot benchmark ...
+Mandelbrot.mandelbrot(int)int -1 codeSignature differs 83721d7035dabe96fae8e0391c0ce614516674df0c5299716e8ff41fc557b9e7 != 7017040bae67abdb9360ae2c0459a5f7444b546e7bbddb3c2343a514eb62cf8e
+Mandelbrot.mandelbrot(int)int -1 graphSignature differs 785ef6dcc05bfa1a35c56c269f228db0690cf5443ec5e8228f574410d609c860 != d08a2498a581a633df78f829c672fc52b57422a8f016a5434601de1179763422
+jdk.internal.constant.ClassOrInterfaceDescImpl.descriptorString()java.lang.String -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+jdk.internal.classfile.impl.BufWriterImpl.size()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+java.lang.invoke.MethodTypeForm.erasedType()java.lang.invoke.MethodType -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+jdk.internal.classfile.impl.AbstractDirectBuilder.constantPool()jdk.internal.classfile.impl.SplitConstantPool -1 codeSignature differs 14be906eafbcd0e98db8607fd01b12de837039bcd06c460d0cf8f6394c8cff6d != da5cf171143f5513c1e4cdf5bb02fc95a3ea90774fedf9fb851ec26a1218a12f
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 codeSignature differs df3b672c4faf9b8e9c81d37ba53892d5bb76d91b2605d923dadb481f79796d8a != 625a83ff75952a5d0a805a4c58b62ea8ac6fa4c2e347559de275b3de58e5cde6
+java.lang.StringLatin1.equals(byte[], byte[])boolean -1 graphSignature differs f47d0b1647dabd6f0108a1c873e12c6a64939992dcc9e97f79a9e6e1f1af8649 != cda1bda6b067c21da86f5c9b00220a168b94ff95811df6ee0a57435eb4ec0473
+java.lang.invoke.MethodHandle.type()java.lang.invoke.MethodType -1 codeSignature differs 90f01eeb46d88d53d0e4e48ef19445eb3bdf8101a00c7dc3f717a337df9fb41f != c4651eecda0d588acaac43a9ae165ea6a40380899e75b0e7578d22406e0c012a
+java.util.ArrayList.size()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+Mandelbrot: iterations=1 runtime: 311502us
+Mandelbrot: iterations=2 runtime: 277155us
+Mandelbrot: iterations=3 runtime: 275998us
+Mandelbrot: iterations=4 runtime: 275818us
+Mandelbrot: iterations=5 runtime: 275339us
+Mandelbrot: iterations=6 runtime: 277415us
+Mandelbrot: iterations=7 runtime: 276490us
+Mandelbrot: iterations=8 runtime: 275772us
+Mandelbrot: iterations=9 runtime: 277144us
+Mandelbrot: iterations=10 runtime: 275904us
+Mandelbrot: iterations=11 runtime: 277247us
+java.lang.String.length()int -1 codeSignature differs 5f2a9f3bb1f4f800ea4f2ad278553dedcfc789fe27a155b26df986828b30ede3 != c429f09bde0922a4e93c787fa5a5cdbca277237619ab7dc7eb3cc60d99b0f3aa
+Mandelbrot: iterations=12 runtime: 277992us
+Mandelbrot: iterations=13 runtime: 276886us
+Mandelbrot: iterations=14 runtime: 274907us
+Mandelbrot: iterations=15 runtime: 274719us
+Mandelbrot: iterations=16 runtime: 275492us
+Mandelbrot: iterations=17 runtime: 274733us
+Mandelbrot: iterations=18 runtime: 276197us
+Mandelbrot: iterations=19 runtime: 274706us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.nio.Buffer.position()int -1 codeSignature differs 3f64cd4fafea8a3cef87601314961681d43f2aa75c3a358c1b0ce8d9a1c4731a != a754d4fbb14cb674813e5d56933661602e017cf332100c6f35524287a66eeea9
+Mandelbrot: iterations=20 runtime: 274499us
+Mandelbrot: iterations=21 runtime: 279255us
+Mandelbrot: iterations=22 runtime: 276045us
+Mandelbrot: iterations=23 runtime: 275824us
+Mandelbrot: iterations=24 runtime: 275333us
+Mandelbrot: iterations=25 runtime: 276287us
+Mandelbrot: iterations=26 runtime: 274682us
+Mandelbrot: iterations=27 runtime: 275668us
+Mandelbrot: iterations=28 runtime: 275876us
+Mandelbrot: iterations=29 runtime: 275813us
+Mandelbrot: iterations=30 runtime: 276866us
+Mandelbrot: iterations=31 runtime: 278113us
+Mandelbrot: iterations=32 runtime: 276101us
+Mandelbrot: iterations=33 runtime: 275319us
+Mandelbrot: iterations=34 runtime: 275256us
+Mandelbrot: iterations=35 runtime: 274967us
+Mandelbrot: iterations=36 runtime: 275406us
+Mandelbrot: iterations=37 runtime: 275017us
+Mandelbrot: iterations=38 runtime: 276112us
+Mandelbrot: iterations=39 runtime: 275443us
+Mandelbrot: iterations=40 runtime: 274892us
+Mandelbrot: iterations=41 runtime: 274549us
+Mandelbrot: iterations=42 runtime: 274290us
+Mandelbrot: iterations=43 runtime: 274853us
+Mandelbrot: iterations=44 runtime: 274907us
+Mandelbrot: iterations=45 runtime: 274589us
+Mandelbrot: iterations=46 runtime: 274786us
+Mandelbrot: iterations=47 runtime: 274673us
+Mandelbrot: iterations=48 runtime: 277301us
+Mandelbrot: iterations=49 runtime: 275799us
+Mandelbrot: iterations=50 runtime: 275100us
+Mandelbrot: iterations=51 runtime: 274986us
+Mandelbrot: iterations=52 runtime: 274450us
+Mandelbrot: iterations=53 runtime: 278012us
+Mandelbrot: iterations=54 runtime: 279001us
+Mandelbrot: iterations=55 runtime: 276191us
+Mandelbrot: iterations=56 runtime: 275377us
+Mandelbrot: iterations=57 runtime: 276245us
+Mandelbrot: iterations=58 runtime: 275813us
+Mandelbrot: iterations=59 runtime: 275316us
+Mandelbrot: iterations=60 runtime: 275479us
+Mandelbrot: iterations=61 runtime: 275166us
+Mandelbrot: iterations=62 runtime: 275149us
+Mandelbrot: iterations=63 runtime: 274824us
+Mandelbrot: iterations=64 runtime: 274489us
+Mandelbrot: iterations=65 runtime: 274129us
+Mandelbrot: iterations=66 runtime: 275129us
+Mandelbrot: iterations=67 runtime: 276704us
+Mandelbrot: iterations=68 runtime: 275171us
+Mandelbrot: iterations=69 runtime: 275234us
+Mandelbrot: iterations=70 runtime: 275545us
+Mandelbrot: iterations=71 runtime: 275803us
+Mandelbrot: iterations=72 runtime: 274772us
+Mandelbrot: iterations=73 runtime: 274635us
+Mandelbrot: iterations=74 runtime: 275736us
+Mandelbrot: iterations=75 runtime: 275216us
+Mandelbrot: iterations=76 runtime: 276342us
+Mandelbrot: iterations=77 runtime: 274961us
+Mandelbrot: iterations=78 runtime: 274429us
+Mandelbrot: iterations=79 runtime: 274459us
+Mandelbrot: iterations=80 runtime: 275342us
+Mandelbrot: iterations=81 runtime: 274941us
+Mandelbrot: iterations=82 runtime: 275160us
+Mandelbrot: iterations=83 runtime: 275110us
+Mandelbrot: iterations=84 runtime: 274989us
+Mandelbrot: iterations=85 runtime: 277712us
+Mandelbrot: iterations=86 runtime: 274762us
+Mandelbrot: iterations=87 runtime: 275557us
+Mandelbrot: iterations=88 runtime: 275053us
+Mandelbrot: iterations=89 runtime: 275357us
+Mandelbrot: iterations=90 runtime: 274550us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.nio.Buffer.capacity()int -1 codeSignature differs 138bc711c3bed648b8548df225303894eec321dce856bde9fbb2267d74239e89 != 8366e168458356e9e2795362a66f19336b0e55f9e34ac8b5d6d37702a481c8da
+Mandelbrot: iterations=91 runtime: 274388us
+Mandelbrot: iterations=92 runtime: 277728us
+Mandelbrot: iterations=93 runtime: 275596us
+Mandelbrot: iterations=94 runtime: 275312us
+Mandelbrot: iterations=95 runtime: 274780us
+Mandelbrot: iterations=96 runtime: 276108us
+Mandelbrot: iterations=97 runtime: 276580us
+Mandelbrot: iterations=98 runtime: 276291us
+Mandelbrot: iterations=99 runtime: 275941us
+Mandelbrot: iterations=100 runtime: 275304us
+Mandelbrot: iterations=101 runtime: 275081us
+Mandelbrot: iterations=102 runtime: 275119us
+Mandelbrot: iterations=103 runtime: 277685us
+Mandelbrot: iterations=104 runtime: 275039us
+Mandelbrot: iterations=105 runtime: 274743us
+Mandelbrot: iterations=106 runtime: 278113us
+Mandelbrot: iterations=107 runtime: 276716us
+Mandelbrot: iterations=108 runtime: 276898us
+Mandelbrot: iterations=109 runtime: 276616us
+Mandelbrot: iterations=110 runtime: 276338us
+Mandelbrot: iterations=111 runtime: 276431us
+Mandelbrot: iterations=112 runtime: 277007us
+Mandelbrot: iterations=113 runtime: 277081us
+Mandelbrot: iterations=114 runtime: 277212us
+Mandelbrot: iterations=115 runtime: 276802us
+Mandelbrot: iterations=116 runtime: 276708us
+Mandelbrot: iterations=117 runtime: 276935us
+Mandelbrot: iterations=118 runtime: 277670us
+Mandelbrot: iterations=119 runtime: 277916us
+Mandelbrot: iterations=120 runtime: 277916us
+Mandelbrot: iterations=121 runtime: 277784us
+Mandelbrot: iterations=122 runtime: 276711us
+Mandelbrot: iterations=123 runtime: 277785us
+Mandelbrot: iterations=124 runtime: 276751us
+Mandelbrot: iterations=125 runtime: 277089us
+Mandelbrot: iterations=126 runtime: 277572us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.nio.charset.CharsetEncoder.maxBytesPerChar()float -1 codeSignature differs d0dc63dd2361c2989cb14e4cf77bfb3442e0a43d3c92bbd78638646fefb8363f != fecc7851573229b2c1300c739298992122dcb58fa032d82e9692f06a80e3cdc4
+Mandelbrot: iterations=127 runtime: 277221us
+Mandelbrot: iterations=128 runtime: 280530us
+Mandelbrot: iterations=129 runtime: 276182us
+Mandelbrot: iterations=130 runtime: 276647us
+Mandelbrot: iterations=131 runtime: 276546us
+Mandelbrot: iterations=132 runtime: 276955us
+Mandelbrot: iterations=133 runtime: 275939us
+Mandelbrot: iterations=134 runtime: 276456us
+Mandelbrot: iterations=135 runtime: 276500us
+Mandelbrot: iterations=136 runtime: 276790us
+Mandelbrot: iterations=137 runtime: 278099us
+Mandelbrot: iterations=138 runtime: 277488us
+Mandelbrot: iterations=139 runtime: 278141us
+Mandelbrot: iterations=140 runtime: 277382us
+Mandelbrot: iterations=141 runtime: 276514us
+Mandelbrot: iterations=142 runtime: 276580us
+Mandelbrot: iterations=143 runtime: 276843us
+Mandelbrot: iterations=144 runtime: 277448us
+Mandelbrot: iterations=145 runtime: 277610us
+Mandelbrot: iterations=146 runtime: 277379us
+Mandelbrot: iterations=147 runtime: 278035us
+Mandelbrot: iterations=148 runtime: 275611us
+Mandelbrot: iterations=149 runtime: 275983us
+Mandelbrot: iterations=150 runtime: 275877us
+Mandelbrot: iterations=151 runtime: 275912us
+Mandelbrot: iterations=152 runtime: 276535us
+Mandelbrot: iterations=153 runtime: 276402us
+Mandelbrot: iterations=154 runtime: 277798us
+Mandelbrot: iterations=155 runtime: 277681us
+Mandelbrot: iterations=156 runtime: 278121us
+Mandelbrot: iterations=157 runtime: 279575us
+Mandelbrot: iterations=158 runtime: 276555us
+Mandelbrot: iterations=159 runtime: 276883us
+Mandelbrot: iterations=160 runtime: 277439us
+Mandelbrot: iterations=161 runtime: 276471us
+Mandelbrot: iterations=162 runtime: 276506us
+Mandelbrot: iterations=163 runtime: 276711us
+Mandelbrot: iterations=164 runtime: 276665us
+Mandelbrot: iterations=165 runtime: 276900us
+Mandelbrot: iterations=166 runtime: 275639us
+Mandelbrot: iterations=167 runtime: 275604us
+Mandelbrot: iterations=168 runtime: 275615us
+Mandelbrot: iterations=169 runtime: 276633us
+Mandelbrot: iterations=170 runtime: 277407us
+Mandelbrot: iterations=171 runtime: 276721us
+Mandelbrot: iterations=172 runtime: 277163us
+Mandelbrot: iterations=173 runtime: 277419us
+Mandelbrot: iterations=174 runtime: 277335us
+Mandelbrot: iterations=175 runtime: 278398us
+Mandelbrot: iterations=176 runtime: 277068us
+Mandelbrot: iterations=177 runtime: 276694us
+Mandelbrot: iterations=178 runtime: 275847us
+Mandelbrot: iterations=179 runtime: 276403us
+Mandelbrot: iterations=180 runtime: 276439us
+Mandelbrot: iterations=181 runtime: 276163us
+Mandelbrot: iterations=182 runtime: 277207us
+Mandelbrot: iterations=183 runtime: 281861us
+Mandelbrot: iterations=184 runtime: 277292us
+Mandelbrot: iterations=185 runtime: 275581us
+Mandelbrot: iterations=186 runtime: 276416us
+Mandelbrot: iterations=187 runtime: 276561us
+Mandelbrot: iterations=188 runtime: 276485us
+Mandelbrot: iterations=189 runtime: 276875us
+Mandelbrot: iterations=190 runtime: 276238us
+Mandelbrot: iterations=191 runtime: 275920us
+Mandelbrot: iterations=192 runtime: 277582us
+Mandelbrot: iterations=193 runtime: 278262us
+Mandelbrot: iterations=194 runtime: 275933us
+Mandelbrot: iterations=195 runtime: 275838us
+Mandelbrot: iterations=196 runtime: 275647us
+Mandelbrot: iterations=197 runtime: 276782us
+Mandelbrot: iterations=198 runtime: 276516us
+Mandelbrot: iterations=199 runtime: 277180us
+Mandelbrot: iterations=200 runtime: 276788us
+Mandelbrot: iterations=201 runtime: 276576us
+Mandelbrot: iterations=202 runtime: 276882us
+Mandelbrot: iterations=203 runtime: 276590us
+Mandelbrot: iterations=204 runtime: 275744us
+Mandelbrot: iterations=205 runtime: 277584us
+Mandelbrot: iterations=206 runtime: 277204us
+Mandelbrot: iterations=207 runtime: 276757us
+Mandelbrot: iterations=208 runtime: 276738us
+Mandelbrot: iterations=209 runtime: 276777us
+Mandelbrot: iterations=210 runtime: 276176us
+Mandelbrot: iterations=211 runtime: 277840us
+Mandelbrot: iterations=212 runtime: 278398us
+Mandelbrot: iterations=213 runtime: 277181us
+Mandelbrot: iterations=214 runtime: 277666us
+Mandelbrot: iterations=215 runtime: 276044us
+Mandelbrot: iterations=216 runtime: 277189us
+Mandelbrot: iterations=217 runtime: 277473us
+Mandelbrot: iterations=218 runtime: 277521us
+Mandelbrot: iterations=219 runtime: 278396us
+Mandelbrot: iterations=220 runtime: 277179us
+Mandelbrot: iterations=221 runtime: 278124us
+Mandelbrot: iterations=222 runtime: 276993us
+Mandelbrot: iterations=223 runtime: 277024us
+Mandelbrot: iterations=224 runtime: 277486us
+Mandelbrot: iterations=225 runtime: 276989us
+Mandelbrot: iterations=226 runtime: 277129us
+Mandelbrot: iterations=227 runtime: 277659us
+Mandelbrot: iterations=228 runtime: 277971us
+Mandelbrot: iterations=229 runtime: 278867us
+Mandelbrot: iterations=230 runtime: 278044us
+Mandelbrot: iterations=231 runtime: 276857us
+Mandelbrot: iterations=232 runtime: 276704us
+Mandelbrot: iterations=233 runtime: 277021us
+Mandelbrot: iterations=234 runtime: 277376us
+Mandelbrot: iterations=235 runtime: 277136us
+Mandelbrot: iterations=236 runtime: 277666us
+Mandelbrot: iterations=237 runtime: 277367us
+Mandelbrot: iterations=238 runtime: 277026us
+Mandelbrot: iterations=239 runtime: 278053us
+Mandelbrot: iterations=240 runtime: 277345us
+Mandelbrot: iterations=241 runtime: 278012us
+Mandelbrot: iterations=242 runtime: 277464us
+Mandelbrot: iterations=243 runtime: 277899us
+Mandelbrot: iterations=244 runtime: 278642us
+Mandelbrot: iterations=245 runtime: 277224us
+Mandelbrot: iterations=246 runtime: 277472us
+Mandelbrot: iterations=247 runtime: 278415us
+Mandelbrot: iterations=248 runtime: 278093us
+Mandelbrot: iterations=249 runtime: 277436us
+Mandelbrot: iterations=250 runtime: 277594us
+Mandelbrot: iterations=251 runtime: 277715us
+Mandelbrot: iterations=252 runtime: 277364us
+Mandelbrot: iterations=253 runtime: 276477us
+Mandelbrot: iterations=254 runtime: 276611us
+Mandelbrot: iterations=255 runtime: 277085us
+Mandelbrot: iterations=256 runtime: 277614us
+Mandelbrot: iterations=257 runtime: 277731us
+Mandelbrot: iterations=258 runtime: 276556us
+Mandelbrot: iterations=259 runtime: 276827us
+Mandelbrot: iterations=260 runtime: 275928us
+Mandelbrot: iterations=261 runtime: 276639us
+Mandelbrot: iterations=262 runtime: 276711us
+Mandelbrot: iterations=263 runtime: 276920us
+Mandelbrot: iterations=264 runtime: 277408us
+Mandelbrot: iterations=265 runtime: 277799us
+Mandelbrot: iterations=266 runtime: 281609us
+Mandelbrot: iterations=267 runtime: 276347us
+Mandelbrot: iterations=268 runtime: 276962us
+Mandelbrot: iterations=269 runtime: 277746us
+Mandelbrot: iterations=270 runtime: 276392us
+Mandelbrot: iterations=271 runtime: 276545us
+Mandelbrot: iterations=272 runtime: 276023us
+Mandelbrot: iterations=273 runtime: 276868us
+Mandelbrot: iterations=274 runtime: 277199us
+Mandelbrot: iterations=275 runtime: 276794us
+Mandelbrot: iterations=276 runtime: 276787us
+Mandelbrot: iterations=277 runtime: 277712us
+Mandelbrot: iterations=278 runtime: 275751us
+Mandelbrot: iterations=279 runtime: 276323us
+Mandelbrot: iterations=280 runtime: 276461us
+Mandelbrot: iterations=281 runtime: 276698us
+Mandelbrot: iterations=282 runtime: 277028us
+Mandelbrot: iterations=283 runtime: 279164us
+Mandelbrot: iterations=284 runtime: 277242us
+Mandelbrot: iterations=285 runtime: 278013us
+Mandelbrot: iterations=286 runtime: 276417us
+Mandelbrot: iterations=287 runtime: 276080us
+Mandelbrot: iterations=288 runtime: 277254us
+Mandelbrot: iterations=289 runtime: 276309us
+Mandelbrot: iterations=290 runtime: 277036us
+Mandelbrot: iterations=291 runtime: 276712us
+Mandelbrot: iterations=292 runtime: 276772us
+Mandelbrot: iterations=293 runtime: 277099us
+Mandelbrot: iterations=294 runtime: 277294us
+Mandelbrot: iterations=295 runtime: 276387us
+Mandelbrot: iterations=296 runtime: 276336us
+Mandelbrot: iterations=297 runtime: 276597us
+Mandelbrot: iterations=298 runtime: 276587us
+Mandelbrot: iterations=299 runtime: 276187us
+Mandelbrot: iterations=300 runtime: 277109us
+Mandelbrot: iterations=301 runtime: 278244us
+Mandelbrot: iterations=302 runtime: 276357us
+Mandelbrot: iterations=303 runtime: 278161us
+Mandelbrot: iterations=304 runtime: 277926us
+Mandelbrot: iterations=305 runtime: 278146us
+Mandelbrot: iterations=306 runtime: 276786us
+Mandelbrot: iterations=307 runtime: 276802us
+Mandelbrot: iterations=308 runtime: 277220us
+Mandelbrot: iterations=309 runtime: 276696us
+Mandelbrot: iterations=310 runtime: 277435us
+Mandelbrot: iterations=311 runtime: 277359us
+Mandelbrot: iterations=312 runtime: 277726us
+Mandelbrot: iterations=313 runtime: 278810us
+Mandelbrot: iterations=314 runtime: 276922us
+Mandelbrot: iterations=315 runtime: 276777us
+Mandelbrot: iterations=316 runtime: 276856us
+Mandelbrot: iterations=317 runtime: 277272us
+Mandelbrot: iterations=318 runtime: 277250us
+Mandelbrot: iterations=319 runtime: 278710us
+Mandelbrot: iterations=320 runtime: 277640us
+Mandelbrot: iterations=321 runtime: 277546us
+Mandelbrot: iterations=322 runtime: 279523us
+Mandelbrot: iterations=323 runtime: 276636us
+Mandelbrot: iterations=324 runtime: 277333us
+Mandelbrot: iterations=325 runtime: 277391us
+Mandelbrot: iterations=326 runtime: 277281us
+Mandelbrot: iterations=327 runtime: 277869us
+Mandelbrot: iterations=328 runtime: 277217us
+Mandelbrot: iterations=329 runtime: 277376us
+Mandelbrot: iterations=330 runtime: 277881us
+Mandelbrot: iterations=331 runtime: 277218us
+Mandelbrot: iterations=332 runtime: 275838us
+Mandelbrot: iterations=333 runtime: 276606us
+Mandelbrot: iterations=334 runtime: 276582us
+Mandelbrot: iterations=335 runtime: 277347us
+Mandelbrot: iterations=336 runtime: 277908us
+Mandelbrot: iterations=337 runtime: 278109us
+Mandelbrot: iterations=338 runtime: 277272us
+Mandelbrot: iterations=339 runtime: 276866us
+Mandelbrot: iterations=340 runtime: 277271us
+Mandelbrot: iterations=341 runtime: 276737us
+Mandelbrot: iterations=342 runtime: 275916us
+Mandelbrot: iterations=343 runtime: 276638us
+Mandelbrot: iterations=344 runtime: 277798us
+Mandelbrot: iterations=345 runtime: 276496us
+Mandelbrot: iterations=346 runtime: 276778us
+Mandelbrot: iterations=347 runtime: 277366us
+Mandelbrot: iterations=348 runtime: 275889us
+Mandelbrot: iterations=349 runtime: 278455us
+Mandelbrot: iterations=350 runtime: 276570us
+Mandelbrot: iterations=351 runtime: 276607us
+Mandelbrot: iterations=352 runtime: 277130us
+Mandelbrot: iterations=353 runtime: 276210us
+Mandelbrot: iterations=354 runtime: 276636us
+Mandelbrot: iterations=355 runtime: 278212us
+Mandelbrot: iterations=356 runtime: 276622us
+Mandelbrot: iterations=357 runtime: 276643us
+Mandelbrot: iterations=358 runtime: 277145us
+Mandelbrot: iterations=359 runtime: 277120us
+Mandelbrot: iterations=360 runtime: 277048us
+Mandelbrot: iterations=361 runtime: 276617us
+Mandelbrot: iterations=362 runtime: 276820us
+Mandelbrot: iterations=363 runtime: 277555us
+Mandelbrot: iterations=364 runtime: 277248us
+Mandelbrot: iterations=365 runtime: 277233us
+Mandelbrot: iterations=366 runtime: 276809us
+Mandelbrot: iterations=367 runtime: 277590us
+Mandelbrot: iterations=368 runtime: 277342us
+Mandelbrot: iterations=369 runtime: 276447us
+Mandelbrot: iterations=370 runtime: 276659us
+Mandelbrot: iterations=371 runtime: 276477us
+Mandelbrot: iterations=372 runtime: 276854us
+Mandelbrot: iterations=373 runtime: 277668us
+Mandelbrot: iterations=374 runtime: 277224us
+Mandelbrot: iterations=375 runtime: 278547us
+Mandelbrot: iterations=376 runtime: 277698us
+Mandelbrot: iterations=377 runtime: 277877us
+Mandelbrot: iterations=378 runtime: 276987us
+Mandelbrot: iterations=379 runtime: 277092us
+Mandelbrot: iterations=380 runtime: 277067us
+Mandelbrot: iterations=381 runtime: 276433us
+Mandelbrot: iterations=382 runtime: 277056us
+Mandelbrot: iterations=383 runtime: 276896us
+Mandelbrot: iterations=384 runtime: 277008us
+Mandelbrot: iterations=385 runtime: 277771us
+Mandelbrot: iterations=386 runtime: 276916us
+Mandelbrot: iterations=387 runtime: 276438us
+Mandelbrot: iterations=388 runtime: 276211us
+Mandelbrot: iterations=389 runtime: 276050us
+Mandelbrot: iterations=390 runtime: 276460us
+Mandelbrot: iterations=391 runtime: 277857us
+Mandelbrot: iterations=392 runtime: 277038us
+Mandelbrot: iterations=393 runtime: 277105us
+Mandelbrot: iterations=394 runtime: 276453us
+Mandelbrot: iterations=395 runtime: 276731us
+Mandelbrot: iterations=396 runtime: 275862us
+Mandelbrot: iterations=397 runtime: 277859us
+Mandelbrot: iterations=398 runtime: 275674us
+Mandelbrot: iterations=399 runtime: 280362us
+Mandelbrot: iterations=400 runtime: 276322us
+Mandelbrot: iterations=401 runtime: 275357us
+Mandelbrot: iterations=402 runtime: 275128us
+Mandelbrot: iterations=403 runtime: 275533us
+Mandelbrot: iterations=404 runtime: 275309us
+Mandelbrot: iterations=405 runtime: 274785us
+Mandelbrot: iterations=406 runtime: 274493us
+Mandelbrot: iterations=407 runtime: 275838us
+Mandelbrot: iterations=408 runtime: 275084us
+Mandelbrot: iterations=409 runtime: 276170us
+Mandelbrot: iterations=410 runtime: 277256us
+Mandelbrot: iterations=411 runtime: 275319us
+Mandelbrot: iterations=412 runtime: 274873us
+Mandelbrot: iterations=413 runtime: 275129us
+Mandelbrot: iterations=414 runtime: 275391us
+Mandelbrot: iterations=415 runtime: 276648us
+Mandelbrot: iterations=416 runtime: 276922us
+Mandelbrot: iterations=417 runtime: 276523us
+Mandelbrot: iterations=418 runtime: 275746us
+Mandelbrot: iterations=419 runtime: 276019us
+Mandelbrot: iterations=420 runtime: 275969us
+Mandelbrot: iterations=421 runtime: 276389us
+Mandelbrot: iterations=422 runtime: 275422us
+Mandelbrot: iterations=423 runtime: 275508us
+Mandelbrot: iterations=424 runtime: 275886us
+Mandelbrot: iterations=425 runtime: 275650us
+Mandelbrot: iterations=426 runtime: 275469us
+Mandelbrot: iterations=427 runtime: 276992us
+Mandelbrot: iterations=428 runtime: 276838us
+Mandelbrot: iterations=429 runtime: 275167us
+Mandelbrot: iterations=430 runtime: 274710us
+Mandelbrot: iterations=431 runtime: 274875us
+Mandelbrot: iterations=432 runtime: 275272us
+Mandelbrot: iterations=433 runtime: 274644us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 codeSignature differs db8012b016ca99189c62cfb7b913b1f5bdbe35a6c740579c3f7d75f8facc27c6 != 17fc64c9586f0ecf27e1468b2eeb1b40eb8569e6db2faf747d95dee3bfb3e1f0
+java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void -1 graphSignature differs 17e6f3ed6596e5d6840a8a77065c9470c41838c2630b4535538ec163efd33e69 != e838eb1809aadd841c1ff5fe2e7a1043b73670d291c51dcf64d0aae8eaa2b7e0
+Mandelbrot: iterations=434 runtime: 274481us
+Mandelbrot: iterations=435 runtime: 277777us
+Mandelbrot: iterations=436 runtime: 275657us
+Mandelbrot: iterations=437 runtime: 275293us
+Mandelbrot: iterations=438 runtime: 275363us
+Mandelbrot: iterations=439 runtime: 275533us
+Mandelbrot: iterations=440 runtime: 275991us
+Mandelbrot: iterations=441 runtime: 274983us
+Mandelbrot: iterations=442 runtime: 275169us
+Mandelbrot: iterations=443 runtime: 275305us
+Mandelbrot: iterations=444 runtime: 277356us
+Mandelbrot: iterations=445 runtime: 277186us
+Mandelbrot: iterations=446 runtime: 276533us
+Mandelbrot: iterations=447 runtime: 275058us
+Mandelbrot: iterations=448 runtime: 274739us
+Mandelbrot: iterations=449 runtime: 274699us
+Mandelbrot: iterations=450 runtime: 275426us
+Mandelbrot: iterations=451 runtime: 275085us
+Mandelbrot: iterations=452 runtime: 275138us
+Mandelbrot: iterations=453 runtime: 275277us
+Mandelbrot: iterations=454 runtime: 275260us
+Mandelbrot: iterations=455 runtime: 276069us
+Mandelbrot: iterations=456 runtime: 275186us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)int -1 codeSignature differs 50fc2ab147a0d1f774dbb7a40d02e9f4cb01533c3b2eb372b428b493e4359be7 != 726c589bc3028695e1ab333a2ffc6cdaf3378a0846f06129cd80bec52bf52833
+java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)int -1 graphSignature differs bc8f20c8c772d3cc0eaba9b68bcd84047d761ba16a7aeb64fe90c36d37dcccb7 != 3bdd078c3a9d60d7eff24b6603d8a355db817965321aded167eb2387bae94eb4
+Mandelbrot: iterations=457 runtime: 275334us
+Mandelbrot: iterations=458 runtime: 277777us
+Mandelbrot: iterations=459 runtime: 276022us
+Mandelbrot: iterations=460 runtime: 275535us
+Mandelbrot: iterations=461 runtime: 276059us
+Mandelbrot: iterations=462 runtime: 274981us
+Mandelbrot: iterations=463 runtime: 275492us
+Mandelbrot: iterations=464 runtime: 278031us
+Mandelbrot: iterations=465 runtime: 276549us
+Mandelbrot: iterations=466 runtime: 275169us
+Mandelbrot: iterations=467 runtime: 275344us
+Mandelbrot: iterations=468 runtime: 275179us
+Mandelbrot: iterations=469 runtime: 275575us
+Mandelbrot: iterations=470 runtime: 275486us
+Mandelbrot: iterations=471 runtime: 275322us
+Mandelbrot: iterations=472 runtime: 275461us
+Mandelbrot: iterations=473 runtime: 275670us
+Mandelbrot: iterations=474 runtime: 274920us
+Mandelbrot: iterations=475 runtime: 274624us
+Mandelbrot: iterations=476 runtime: 274858us
+Mandelbrot: iterations=477 runtime: 276165us
+Mandelbrot: iterations=478 runtime: 275313us
+Mandelbrot: iterations=479 runtime: 275288us
+Mandelbrot: iterations=480 runtime: 274525us
+Mandelbrot: iterations=481 runtime: 274602us
+Mandelbrot: iterations=482 runtime: 279393us
+Mandelbrot: iterations=483 runtime: 277868us
+Mandelbrot: iterations=484 runtime: 275306us
+Mandelbrot: iterations=485 runtime: 275662us
+Mandelbrot: iterations=486 runtime: 276458us
+Mandelbrot: iterations=487 runtime: 275849us
+Mandelbrot: iterations=488 runtime: 275384us
+Mandelbrot: iterations=489 runtime: 275413us
+Mandelbrot: iterations=490 runtime: 275140us
+Mandelbrot: iterations=491 runtime: 275603us
+Mandelbrot: iterations=492 runtime: 282173us
+Mandelbrot: iterations=493 runtime: 278037us
+Mandelbrot: iterations=494 runtime: 277047us
+Mandelbrot: iterations=495 runtime: 276356us
+Mandelbrot: iterations=496 runtime: 276089us
+Mandelbrot: iterations=497 runtime: 277026us
+Mandelbrot: iterations=498 runtime: 275876us
+Mandelbrot: iterations=499 runtime: 276060us
+Mandelbrot: iterations=500 runtime: 278196us
+Could not locate BlockSlowdown.json
+Skipping Loading (this might cause a fatal crash if GTSlowdown is on)
+jdk.internal.constant.ClassOrInterfaceDescImpl.isClassOrInterface()boolean -1 codeSignature differs 6e3a14458a0fca90e6a63285514a933585cea592cb622e79b33ddc5df6e0fb66 != 6fdd5e023f8b36c06ccfc437f07740607e2fd6af8789c2b6573b1f8e5aec4921
+jdk.internal.classfile.impl.AbstractPoolEntry.hashCode()int -1 codeSignature differs fe46e3fea17c2bcac25676024acf43715946ed13832c36004058f315d01e6ed3 != e2795d501a46b0bfb6e8c56434b112c0ea54a81c9e313ecde41f1f8b0f3deb09
+jdk.internal.constant.PrimitiveClassDescImpl.descriptorString()java.lang.String -1 codeSignature differs 7722674ec43cccc19227bd0fe31433696da3716816c65b03f1730e1c0254917a != d487d8a2503fc353385b06f3b95e8ab10a6fe5294aa12ef213c2f0b58f53bb2d
+jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl.tag()int -1 codeSignature differs 5404769be9f3dbc3cb72c5db1a8ad8dd44853cedba352c69c6db32de21c4dbb9 != 1c5cefc40a914f135a319bd8d405841fbf0f0e92dfa85c790bd1c66c2edacece
+java.lang.Class.getComponentType()java.lang.Class -1 codeSignature differs b319d91a6485f244b602f37bbb015c7b083103cb0168540c8f7172a6f77fcdb4 != ca3e2776cb0744dcbd5af9f18a41221cfb7ea6616e2c92fa3282d7012b2bb32a
+Mandelbrot: iterations=500 average: 276616us total: 138308318us
+
+
+java.lang.invoke.MethodTypeForm.parameterSlotCount()int -1 codeSignature differs ad156c9aebe2f06c30e3b5dbbec2e173bc1370acb4ba42d2464dda8cd03d5b04 != 631f1ee6b294c0668302aaa578afb6c4bc9eb79e5bdf6a7916a36c576b1ba42d
+Total Runtime: 138308318us
+Bubo.RDTSC.Harness.main Total RDTSC cycles: 458969990072
+Comp 52 (java.util.ImmutableCollections$SetN$SetNIterator.next()) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 364512 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1213) [bci: 21] | -at java.util.ImmutableCollections$SetN$SetNIterator.next(ImmutableCollections.java:1223) [bci: 65]
+Comp 56 (java.util.HashMap.putVal(int,) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 10728 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.putVal(HashMap.java:648) [bci: 134] | -at java.util.HashMap.putVal(HashMap.java:649) [bci: 145]
+Comp 58 (java.lang.String.equals(Object)) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 9168 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9]
+-at java.lang.String.equals(String.java:1926) [bci: 44] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+-at java.lang.String.equals(String.java:1926) [bci: 44]
+Comp 69 (java.util.HashMap.resize()) loops:
+Found Encoding : 2:-1,0:-1,1:0
+├── Loop 2
+└── Loop 0
+    └── Loop 1
+  loop 0 Cycles: 37256 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:714) [bci: 151] | -at java.util.HashMap.resize(HashMap.java:755) [bci: 353]
+  loop 1 Cycles: 11068 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.HashMap.resize(HashMap.java:727) [bci: 235] | -at java.util.HashMap.resize(HashMap.java:743) [bci: 309]
+  loop 2 Cycles: 16674 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.graal.compiler.hotspot.replacements.HotSpotAllocationSnippets.allocateArray(KlassPointer, int, int, int, AllocationSnippets$FillContent, int, boolean, boolean, boolean, boolean, HotSpotAllocationSnippets$HotSpotAllocationProfilingData, boolea
+Comp 88 (java.util.Properties$LineReader.readLine()) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 657734 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 46044 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 5 Cycles: 500 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+Comp 89 (java.util.Properties$LineReader.readLine()-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 1423376 || Activation Count:0 | LoopCallCount: 2 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:504) [bci: 53] | -at java.util.Properties$LineReader.readLine(Properties.java:615) [bci: 577]
+  loop 1 Cycles: 1171200 || Activation Count:0 | LoopCallCount: 1 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:538) [bci: 219] | -at java.util.Properties$LineReader.readLine(Properties.java:543) [bci: 259]
+  loop 2 Cycles: 218628 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.util.Properties$LineReader.readLine(Properties.java:540) [bci: 224] | -at java.util.Properties$LineReader.readLine(Properties.java:545) [bci: 262]
+Comp 92 (jdk.internal.util.ArraysSupport.unsignedHashCode(int,) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 115414 || Activation Count:0 | LoopCallCount: 0 |  Source: -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:378) [bci: 8] | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 1 Cycles: 171372 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+  loop 2 Cycles: 176226 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at jdk.internal.util.ArraysSupport.unsignedHashCode(ArraysSupport.java:381) [bci: 34]
+Comp 119 (Mandelbrot.mandelbrot(int)) loops:
+Found Encoding : 5:-1,3:-1,4:3,0:-1,1:0,2:1
+├── Loop 5
+├── Loop 3
+│   └── Loop 4
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 1 Cycles: 924688238 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Mandelbrot.mandelbrot(int) [bci: 33] | -at Mandelbrot.mandelbrot(int) [bci: 207]
+  loop 2 Cycles: 820620598 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Mandelbrot.mandelbrot(int) [bci: 73] | -at Mandelbrot.mandelbrot(int) [bci: 147]
+  loop 3 Cycles: 132456 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Mandelbrot.mandelbrot(int) [bci: 33] | -at Mandelbrot.mandelbrot(int) [bci: 207]
+  loop 4 Cycles: 112270 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Mandelbrot.mandelbrot(int) [bci: 73] | -at Mandelbrot.mandelbrot(int) [bci: 147]
+  loop 5 Cycles: 390 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Mandelbrot.mandelbrot(int) [bci: 73] | -at Mandelbrot.mandelbrot(int) [bci: 147]
+Comp 120 (Mandelbrot.mandelbrot(int)-Re-Comp) loops:
+Found Encoding : 0:-1,1:0,2:1
+└── Loop 0
+    └── Loop 1
+        └── Loop 2
+  loop 0 Cycles: 457043335546 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Mandelbrot.mandelbrot(int) [bci: 10] | -at Mandelbrot.mandelbrot(int) [bci: 213]
+  loop 1 Cycles: 456992420730 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Mandelbrot.mandelbrot(int) [bci: 33] | -at Mandelbrot.mandelbrot(int) [bci: 207]
+  loop 2 Cycles: 405239849558 || Activation Count:0 | LoopCallCount: 0 |  Source: -at Mandelbrot.mandelbrot(int) [bci: 73] | -at Mandelbrot.mandelbrot(int) [bci: 147]
+Comp 130 (java.lang.StringLatin1.equals(byte[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 3040 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.equals(StringLatin1.java:100) [bci: 9] | -at java.lang.StringLatin1.equals(StringLatin1.java:105) [bci: 32]
+Comp 142 (java.lang.StringLatin1.inflate(byte[],) loops:
+Found Encoding : 0:-1,1:-1,2:-1
+├── Loop 0
+├── Loop 1
+└── Loop 2
+  loop 0 Cycles: 7702 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringLatin1.inflate(StringLatin1.java:767) [bci: 3] | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 1 Cycles: 37258 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+  loop 2 Cycles: 9204 || Activation Count:0 | LoopCallCount: 0 |  Source: Source Missing | -at java.lang.StringLatin1.inflate(StringLatin1.java:770) [bci: 33]
+Comp 143 (java.lang.StringCoding.implEncodeAsciiArray(char[],) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 148 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+Comp 144 (java.lang.StringCoding.implEncodeAsciiArray(char[],-Re-Comp) loops:
+Found Encoding : 0:-1
+└── Loop 0
+  loop 0 Cycles: 13638 || Activation Count:0 | LoopCallCount: 0 |  Source: -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:118) [bci: 3] | -at java.lang.StringCoding.implEncodeAsciiArray(StringCoding.java:124) [bci: 44]
+
+Finished Mandelbrot BuboOn at Thu 22 Jan 14:50:49 GMT 2026
+============================================================

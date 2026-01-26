@@ -1,0 +1,286 @@
+benchmark,median_total_samples_bubo_off,median_total_samples_bubo_on
+Mandelbrot,8446398,10823012
+
+method,n_runs_off,median_samples_bubo_off,n_runs_on,median_samples_bubo_on,diff_on_minus_off,pct_change_vs_off
+Mandelbrot.mandelbrot,3,8415405,3,10237602,1822197,21.65311116933766
+java.lang.AbstractStringBuilder* java.lang.AbstractStringBuilder::append,3,353,3,405,52,14.730878186968837
+syscall_enter_from_user_mode_[k],3,80,3,131,51,63.74999999999999
+int org.graalvm.collections.EconomicMapImpl::findLinear,3,203,3,239,36,17.733990147783253
+exit_to_user_mode_loop_[k],3,29,3,64,35,120.6896551724138
+java.util.HashMap$Node* java.util.HashMap::getNode,3,61,3,94,33,54.09836065573771
+java.lang.String* com.oracle.svm.core.util.Utf8::utf8ToString,3,238,3,269,31,13.025210084033615
+void com.oracle.svm.core.c.function.CEntryPointSetup$LeaveEpilogue::leave,3,157,3,188,31,19.745222929936308
+InstanceKlass::find_method_index,3,156,3,185,29,18.58974358974359
+void com.oracle.svm.core.UnmanagedMemoryUtil::copyLongsForward,3,124,3,151,27,21.774193548387096
+__strcmp_avx2,1,32,1,58,26,81.25
+void com.oracle.svm.core.genscavenge.GreyToBlackObjRefVisitor::visitObjectReferences,3,192,3,218,26,13.541666666666666
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.lir.LIRIntrospection::visitEach,3,102,3,127,25,24.509803921568626
+__futex_abstimed_wait_common,3,73,3,97,24,32.87671232876712
+__list_del_entry_valid_[k],3,97,3,120,23,23.711340206185564
+char java.lang.String::charAt,3,65,3,88,23,35.38461538461539
+int jdk.internal.util.ArraysSupport::hashCodeOfUnsigned,3,47,3,70,23,48.93617021276596
+java.lang.Object* com.oracle.svm.core.graal.jdk.SubstrateObjectCloneSnippets::doClone,3,135,3,158,23,17.037037037037038
+jdk.internal.util.DecimalDigits.uncheckedGetCharsLatin1,3,70,3,93,23,32.857142857142854
+void com.oracle.svm.core.JavaMemoryUtil::copyPrimitiveArrayForward,3,87,3,109,22,25.287356321839084
+get_mem_cgroup_from_mm_[k],3,79,3,100,21,26.582278481012654
+java.lang.String.getBytes,3,98,3,80,-18,-18.367346938775512
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.core.common.CompilationListenerProfiler$1::close,1,29,1,47,18,62.06896551724138
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeMap::set,3,62,3,80,18,29.03225806451613
+__audit_syscall_exit_[k],3,65,3,48,-17,-26.153846153846157
+char java.lang.StringLatin1::charAt,3,58,3,75,17,29.310344827586203
+void com.oracle.svm.core.graal.jdk.SubstrateArraycopySnippets::doArraycopy,3,184,3,201,17,9.239130434782608
+void sun.security.provider.SHA2::implCompress0,3,82,3,98,16,19.51219512195122
+__tls_get_addr,3,95,3,110,15,15.789473684210526
+java.lang.Object* java.util.ArrayList::get,3,36,3,51,15,41.66666666666667
+jdk.internal.util.DecimalDigits.stringSize,3,75,3,60,-15,-20.0
+org.graalvm.word.Pointer com.oracle.svm.core.genscavenge.TlabSupport::allocateRawMemoryInTlabSlow,2,37,3,52,15,40.54054054054054
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.iterators.PredicatedProxyNodeIterator::forward,3,186,3,201,15,8.064516129032258
+LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.iterators.NodeIterable* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.Node::inputs,3,61,3,75,14,22.950819672131146
+byte[]* java.util.Arrays::copyOfRange,3,61,3,75,14,22.950819672131146
+com.oracle.svm.core.jni.headers.JNIObjectHandle com.oracle.svm.core.jni.JNIObjectHandles::createLocal,3,31,2,45,14,45.16129032258064
+int java.nio.Buffer::nextGetIndex,3,75,3,89,14,18.666666666666668
+jdk.internal.classfile.impl.SplitConstantPool.internalAdd,3,33,3,47,14,42.42424242424242
+resource_allocate_bytes,1,29,1,43,14,48.275862068965516
+void com.oracle.svm.core.monitor.MultiThreadedMonitorSupport::monitorEnter,3,34,3,48,14,41.17647058823529
+__mod_node_page_state_[k],1,28,2,41,13,46.42857142857143
+_raw_spin_unlock_irqrestore_[k],3,187,3,200,13,6.951871657754011
+c2v_ticksNow,1,33,1,46,13,39.39393939393939
+java.util.concurrent.ConcurrentHashMap.putVal,3,78,3,91,13,16.666666666666664
+void com.oracle.svm.core.UnmanagedMemoryUtil::copyForward,3,131,3,144,13,9.923664122137405
+InterpreterRuntime::resolve_get_put,2,31,1,43,12,38.70967741935484
+boolean LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.iterators.NodePredicates$PositiveTypePredicate::apply,3,58,3,70,12,20.689655172413794
+charge_memcg_[k],3,54,3,66,12,22.22222222222222
+int java.lang.String::length,1,29,2,41,12,41.37931034482759
+java.lang.String* java.lang.StringLatin1::replace,2,34,2,46,12,35.294117647058826
+java.lang.StringConcatHelper.stringSize,1,42,2,30,-12,-28.57142857142857
+mm_account_fault_[k],2,31,3,43,12,38.70967741935484
+sun.nio.cs.StreamEncoder.writeBytes,3,44,3,56,12,27.27272727272727
+LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.Node* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeClass$RawEdgesIterator::getAndAdvanceInput,3,67,3,78,11,16.417910447761194
+clear_page_erms_[k],3,168,3,179,11,6.547619047619048
+sun.nio.cs.StreamEncoder.implWrite,3,57,3,68,11,19.298245614035086
+sun.nio.cs.UTF_8$Encoder.encodeArrayLoop,3,73,3,62,-11,-15.068493150684931
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.core.common.util.CompilationAlarm::checkProgress,3,62,3,51,-11,-17.741935483870968
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::scheduleEarliestIterative,3,66,3,55,-11,-16.666666666666664
+ThreadInVMfromNative::ThreadInVMfromNative,1,42,1,32,-10,-23.809523809523807
+boolean java.lang.String::startsWith,3,60,3,50,-10,-16.666666666666664
+java.lang.StringConcatHelper.prepend,3,56,3,46,-10,-17.857142857142858
+java.util.Properties$LineReader.readLine,3,50,3,60,10,20.0
+void com.oracle.svm.core.genscavenge.GreyToBlackObjectVisitor::visitObject,3,138,3,148,10,7.246376811594203
+void java.util.ArrayDeque::addLast,3,47,3,37,-10,-21.27659574468085
+Dictionary::find_class,3,72,3,63,-9,-12.5
+LibGraalClassLoader_6d026701::jdk.graal.compiler.core.common.cfg.BlockMap* LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::calcLatestBlocks,1,31,1,40,9,29.03225806451613
+SymbolTable::do_lookup,3,36,3,45,9,25.0
+__clock_gettime_2,3,35,3,44,9,25.71428571428571
+__memset_avx2_unaligned_erms,3,61,3,52,-9,-14.754098360655737
+java.lang.Object* org.graalvm.collections.EconomicMapImpl::get,3,49,3,58,9,18.367346938775512
+java.lang.Object[]* java.util.ArrayList::grow,3,36,3,45,9,25.0
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.loop.LoopFragment::markFloating,3,41,3,50,9,21.951219512195124
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::sortNodesLatestWithinBlock,3,40,3,49,9,22.5
+void org.graalvm.collections.EconomicMapImpl::putHashEntry,3,45,3,36,-9,-20.0
+LibGraalClassLoader_6d026701::jdk.vm.ci.code.CallingConvention* LibGraalClassLoader_6d026701::jdk.vm.ci.hotspot.amd64.AMD64HotSpotRegisterConfig::callingConvention,3,46,3,54,8,17.391304347826086
+Run.printResult,2,43,2,35,-8,-18.6046511627907
+SymbolTable::lookup_shared,3,128,3,136,8,6.25
+boolean com.oracle.svm.graal.stubs.SVMIntrinsicStubsGen::arrayRegionEqualsS1S1,3,41,3,49,8,19.51219512195122
+c2v_notifyCompilerPhaseEvent,2,32,2,40,8,25.0
+java.lang.Object* org.graalvm.collections.EconomicMapImpl::put,3,66,3,74,8,12.121212121212121
+java.lang.String.length,2,37,3,45,8,21.62162162162162
+jdk.internal.classfile.impl.SplitConstantPool.utf8Entry,3,35,2,43,8,22.857142857142858
+jdk.internal.util.DecimalDigits.uncheckedPutCharLatin1,2,34,2,42,8,23.52941176470588
+methodHandle::~methodHandle,3,37,3,45,8,21.62162162162162
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeBitMap::mark,3,35,2,43,8,22.857142857142858
+CodeCache::find_blob,2,38,2,31,-7,-18.421052631578945
+LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.Node* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.Graph::findDuplicate,3,56,3,49,-7,-12.5
+LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.FixedNode* LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.AbstractBeginNode$BlockNodeIterator::next,3,70,3,77,7,10.0
+boolean LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.common.CanonicalizerPhase::processNode,3,44,3,51,7,15.909090909090908
+byte[]* java.lang.AbstractStringBuilder::ensureCapacityNewCoder,3,50,3,57,7,14.000000000000002
+filemap_map_pages_[k],3,38,2,45,7,18.421052631578945
+int LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.cfg.HIRBlock$ModifiableBlock::getPredecessorCount,1,31,1,38,7,22.58064516129032
+java.util.concurrent.ConcurrentHashMap.tabAt,3,40,3,33,-7,-17.5
+java.util.concurrent.ConcurrentHashMap.transfer,3,84,3,91,7,8.333333333333332
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeWorkList$QueueConsumingIterator::dropDeleted,3,51,3,44,-7,-13.725490196078432
+void java.util.ArrayList::add,3,123,3,130,7,5.691056910569105
+ConstantPool::klass_at_impl,3,36,3,42,6,16.666666666666664
+__GI___pthread_mutex_unlock_usercnt,3,41,3,47,6,14.634146341463413
+boolean LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeBitMap::isMarked,3,78,3,72,-6,-7.6923076923076925
+boolean LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.common.CanonicalizerPhase::tryCanonicalize,3,56,3,62,6,10.714285714285714
+handle_mm_fault_[k],2,35,2,41,6,17.142857142857142
+int org.graalvm.collections.EconomicMapImpl::findHash,3,64,3,58,-6,-9.375
+int org.graalvm.collections.EconomicMapImpl::getHashIndex,3,71,3,65,-6,-8.450704225352112
+int org.graalvm.collections.EconomicMapImpl::getHashTableSize,3,42,2,36,-6,-14.285714285714285
+java.io.BufferedOutputStream.write,3,39,2,45,6,15.384615384615385
+java.lang.Object[]* java.util.Arrays::copyOf,3,44,3,50,6,13.636363636363635
+java.lang.StringCoding.implEncodeAsciiArray,3,68,3,74,6,8.823529411764707
+java.lang.StringLatin1.inflate,3,62,3,56,-6,-9.67741935483871
+jdk.internal.util.DecimalDigits.uncheckedPutPairLatin1,3,33,2,39,6,18.181818181818183
+org.graalvm.nativeimage.ObjectHandle com.oracle.svm.core.handles.ThreadLocalHandles::tryCreateNonNull,3,79,3,85,6,7.59493670886076
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.BasePhase::apply,3,54,3,60,6,11.11111111111111
+void com.oracle.svm.core.util.ArrayUtil::boundsCheckInSnippet,3,39,3,45,6,15.384615384615385
+zap_pte_range_[k],3,49,3,55,6,12.244897959183673
+HandleMark::~HandleMark,3,41,3,46,5,12.195121951219512
+Run.measure,3,63,3,68,5,7.936507936507936
+[vdso],3,81,3,86,5,6.172839506172839
+blk_cgroup_congested_[k],3,51,3,46,-5,-9.803921568627452
+boolean com.oracle.svm.core.code.IsolateEnterStub::JNIFunctions_ExceptionCheck_wwAepBoMjPEWDN8NR0UL5D,3,96,3,101,5,5.208333333333334
+boolean java.lang.String::equals,3,59,3,54,-5,-8.47457627118644
+com.oracle.svm.core.jni.headers.JNIObjectHandle com.oracle.svm.core.code.IsolateEnterStub::JNIFunctions_NewStringUTF_DjdZcV8DUjC9PGRgwwR996,2,33,1,38,5,15.151515151515152
+java.io.PrintStream.write,1,36,1,31,-5,-13.88888888888889
+java.lang.Math.round,3,40,2,35,-5,-12.5
+java.lang.Object* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.Node::getNodeInfo,3,37,3,32,-5,-13.513513513513514
+java.lang.Object* com.oracle.svm.core.genscavenge.ThreadLocalAllocation::slowPathNewInstance,2,37,3,32,-5,-13.513513513513514
+java.lang.Object* java.util.ArrayList$Itr::next,3,77,3,82,5,6.493506493506493
+java.lang.String::String,3,36,3,41,5,13.88888888888889
+long LibGraalClassLoader_6d026701::jdk.graal.compiler.core.common.type.IntegerStamp::setOptionalBits,1,36,1,31,-5,-13.88888888888889
+pthread_mutex_lock@@GLIBC_2.2.5,2,39,3,44,5,12.82051282051282
+sun.nio.cs.StreamEncoder.write,3,40,1,35,-5,-12.5
+vma_alloc_folio_[k],3,34,3,39,5,14.705882352941178
+CodeHeap::find_blob,3,42,2,38,-4,-9.523809523809524
+LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.Node* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeClass$RawEdgesIterator::forward,3,58,3,62,4,6.896551724137931
+__GI___pthread_cond_timedwait,1,23,2,27,4,17.391304347826086
+boolean java.util.RegularEnumSet::contains,3,54,3,50,-4,-7.4074074074074066
+int org.graalvm.collections.EconomicMapImpl::find,3,48,3,44,-4,-8.333333333333332
+java.lang.Object* com.oracle.svm.core.genscavenge.ThreadLocalAllocation::allocateArraySlow,2,33,3,37,4,12.121212121212121
+java.lang.String.getChars,3,48,3,52,4,8.333333333333332
+java.nio.Buffer.<init>,3,40,3,36,-4,-10.0
+jdk.internal.util.ArraysSupport.unsignedHashCode,3,59,3,63,4,6.779661016949152
+mtree_range_walk_[k],3,62,3,66,4,6.451612903225806
+readConfiguration0,3,114,3,118,4,3.508771929824561
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.cfg.ReversePostOrder::compute,2,40,2,44,4,10.0
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::processStack,3,47,3,43,-4,-8.51063829787234
+HandleMark::initialize,1,32,2,35,3,9.375
+Rewriter::scan_method,2,36,2,39,3,8.333333333333332
+__get_user_8_[k],2,26,3,29,3,11.538461538461538
+__handle_mm_fault_[k],3,53,3,56,3,5.660377358490567
+__memcpy_avx_unaligned_erms,3,112,3,115,3,2.6785714285714284
+__next_zones_zonelist_[k],3,31,2,34,3,9.67741935483871
+_raw_spin_lock_[k],2,29,3,32,3,10.344827586206897
+boolean org.graalvm.collections.EconomicMapImpl::compareKeys,3,103,3,106,3,2.912621359223301
+int LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeIdAccessor::getNodeId,3,141,3,138,-3,-2.127659574468085
+java.io.BufferedWriter.write,3,79,3,82,3,3.79746835443038
+java.lang.Object* java.util.concurrent.ConcurrentHashMap::computeIfAbsent,3,40,3,43,3,7.5
+java.nio.charset.CharsetEncoder.encode,3,41,3,38,-3,-7.317073170731707
+java.util.concurrent.ConcurrentHashMap.get,2,38,1,35,-3,-7.894736842105263
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeUsageIterator::advance,3,117,3,120,3,2.564102564102564
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.loop.LoopFragment::computeNodes,3,49,3,46,-3,-6.122448979591836
+I2C/C2I adapters(0xb),3,48,3,50,2,4.166666666666666
+JVMCIEnv::create_string,2,33,2,35,2,6.0606060606060606
+LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.ValueNode* LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.PhiNode::valueAt,3,43,3,45,2,4.651162790697675
+LibGraalClassLoader_6d026701::jdk.vm.ci.meta.ResolvedJavaMethod* LibGraalClassLoader_6d026701::jdk.graal.compiler.replacements.SnippetTemplate$AbstractTemplates::findMethod,3,79,3,81,2,2.5316455696202533
+SymbolTable::lookup_only,3,32,1,30,-2,-6.25
+__vfprintf_internal,3,41,3,43,2,4.878048780487805
+blkcg_maybe_throttle_current_[k],2,24,1,26,2,8.333333333333332
+copy_mc_enhanced_fast_string_[k],3,51,3,53,2,3.9215686274509802
+do_user_addr_fault_[k],3,622,3,620,-2,-0.3215434083601286
+futex_wake_[k],1,38,1,40,2,5.263157894736842
+int java.lang.String::hashCode,2,30,3,32,2,6.666666666666667
+java.io.FileOutputStream.write,2,38,1,36,-2,-5.263157894736842
+java.lang.AbstractStringBuilder.append,3,77,3,75,-2,-2.5974025974025974
+java.lang.Object* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeMap::get,3,67,3,65,-2,-2.9850746268656714
+java.lang.Object* LibGraalClassLoader_6d026701::jdk.graal.compiler.options.OptionValues::get,3,62,3,60,-2,-3.225806451612903
+mem_cgroup_handle_over_high_[k],2,60,3,58,-2,-3.3333333333333335
+memchr_[k],3,81,3,83,2,2.4691358024691357
+next_uptodate_page_[k],3,220,3,218,-2,-0.9090909090909091
+sun.nio.cs.StreamEncoder.growByteBufferIfNeeded,3,40,2,42,2,5.0
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.debug.GraalError::guarantee,2,35,2,37,2,5.714285714285714
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.cfg.ControlFlowGraph::perBasicBlockFrequencyAction,1,31,1,33,2,6.451612903225806
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.common.util.EconomicSetNodeEventListener::changed,1,33,1,35,2,6.0606060606060606
+void com.oracle.svm.core.genscavenge.remset.AlignedChunkRememberedSet::walkObjects,3,36,3,38,2,5.555555555555555
+/usr/lib64/libz.so.1.2.11,3,37,3,36,-1,-2.7027027027027026
+JNIAccessMark::JNIAccessMark,2,41,3,42,1,2.4390243902439024
+JVMCIEnv::has_pending_exception,3,59,3,60,1,1.694915254237288
+LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.Node* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeUsageIterator::next,3,38,2,37,-1,-2.631578947368421
+LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance$MicroBlock* LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::processInputs,3,50,3,49,-1,-2.0
+__GI___libc_malloc,3,48,3,49,1,2.083333333333333
+__strlen_avx2,1,35,3,36,1,2.857142857142857
+_int_malloc,3,37,2,36,-1,-2.7027027027027026
+boolean java.util.regex.Pattern$CharPropertyGreedy::match,1,36,1,37,1,2.7777777777777777
+filldir64_[k],3,61,3,60,-1,-1.639344262295082
+java.io.PrintStream.println,2,35,1,34,-1,-2.857142857142857
+java.io.PrintStream.writeln,3,50,3,49,-1,-2.0
+java.lang.Object* java.lang.ClassValue::get,2,33,2,32,-1,-3.0303030303030303
+java.lang.String.<init>,3,45,3,44,-1,-2.2222222222222223
+java.lang.StringLatin1.toUpperCase,3,64,3,65,1,1.5625
+java.util.concurrent.ConcurrentHashMap.addCount,2,35,2,34,-1,-2.857142857142857
+sun.nio.cs.UTF_8.updatePositions,1,31,1,30,-1,-3.225806451612903
+syscall_exit_work_[k],2,35,1,34,-1,-2.857142857142857
+FieldInfoComparator::compare_to,2,33,2,33,0,0.0
+FieldInfoReader::read_field_info,3,34,2,34,0,0.0
+LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.iterators.FilteredNodeIterable* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.iterators.FilteredNodeIterable::and,2,35,1,35,0,0.0
+LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.extended.AnchoringNode* LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.common.LoweringPhase::process,2,35,2,35,0,0.0
+LibGraalClassLoader_6d026701::jdk.vm.ci.hotspot.HotSpotResolvedJavaType* LibGraalClassLoader_6d026701::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::fromClass0,2,34,3,34,0,0.0
+Symbol::as_C_string,2,37,3,37,0,0.0
+int org.graalvm.collections.EconomicMapImpl::getHashArray,2,38,3,38,0,0.0
+java.lang.Object* java.util.concurrent.ConcurrentHashMap::get,3,65,3,65,0,0.0
+java.lang.String.charAt,3,33,3,33,0,0.0
+kmem_cache_alloc_[k],2,27,3,27,0,0.0
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.TypedGraphNodeIterator::forward,3,48,3,48,0,0.0
+InstanceKlass::find_local_field,0,,1,32,,
+JavaFrameAnchor::make_walkable,1,29,0,,,
+Mutex::lock_without_safepoint_check,2,38,0,,,
+_IO_default_xsputn,1,31,0,,,
+___pthread_mutex_trylock,2,33,0,,,
+__alloc_pages_[k],2,29,0,,,
+__fpu_restore_sig_[k],1,45,0,,,
+__hrtimer_init_[k],1,20,0,,,
+__x64_sys_futex_[k],0,,1,21,,
+__x64_sys_rt_sigreturn_[k],1,10,0,,,
+_raw_spin_unlock_irq_[k],2,25,0,,,
+boolean LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeClass$RawEdgesIterator::hasNext,0,,1,30,,
+boolean LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.NodeClass::dataEquals,1,29,0,,,
+boolean com.oracle.svm.core.heap.ReferenceInternals::refersTo,1,34,0,,,
+boolean com.oracle.svm.core.monitor.JavaMonitor::tryRelease,0,,1,45,,
+copy_user_enhanced_fast_string_[k],1,26,0,,,
+do_futex_[k],1,25,0,,,
+do_set_pte_[k],1,27,0,,,
+do_syscall_64_[k],1,21,0,,,
+folio_add_lru_[k],2,36,0,,,
+generic_exec_single_[k],2,39,0,,,
+get_page_from_freelist_[k],0,,2,34,,
+int LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.cfg.HIRBlock$ModifiableBlock::getSuccessorCount,0,,1,31,,
+int LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.common.CanonicalizerPhase::processWorkSet,0,,1,32,,
+int LibGraalClassLoader_6d026701::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::pushUnprocessedInputs,1,39,0,,,
+int LibGraalClassLoader_6d026701::jdk.graal.compiler.util.json.JsonParser::next,1,32,0,,,
+int LibGraalClassLoader_6d026701::jdk.vm.ci.hotspot.HotSpotSignature::parseSignature,0,,1,41,,
+int com.oracle.svm.core.handles.ThreadLocalHandles::popFramesIncluding,0,,1,58,,
+java.io.BufferedOutputStream.flushBuffer,1,29,0,,,
+java.lang.Object* com.oracle.svm.core.jni.JNIObjectHandles::getObject,0,,2,42,,
+java.lang.Object* java.util.HashMap::putVal,0,,1,61,,
+java.lang.String$$StringConcat.0x000000000c044000.concat,1,58,0,,,
+java.lang.String$$StringConcat.0x000000003e044000.concat,0,,1,46,,
+java.lang.String$$StringConcat.0x000000006e044000.concat,0,,1,56,,
+java.lang.String$$StringConcat.0x0000000075044000.concat,0,,1,59,,
+java.lang.String$$StringConcat.0x0000000076044000.concat,1,89,0,,,
+java.lang.String$$StringConcat.0x000000009f044000.concat,1,62,0,,,
+java.lang.String* LibGraalClassLoader_6d026701::jdk.vm.ci.meta.JavaMethod::format,0,,2,49,,
+java.lang.String.checkBoundsBeginEnd,1,42,0,,,
+java.lang.String.hashCode,0,,3,552814,,
+java.lang.String.isLatin1,0,,2,30,,
+java.lang.System$Out.write,2,35,0,,,
+java.lang.invoke.LambdaForm$DMH.0x000000003e044400.invokeSpecial,0,,1,31,,
+java.lang.invoke.LambdaForm$DMH.0x000000006e044400.invokeSpecial,0,,1,32,,
+java.lang.invoke.LambdaForm$MH.0x000000003e045000.invoke,0,,1,31,,
+java.lang.invoke.LambdaForm$MH.0x0000000076045000.invoke,1,36,0,,,
+java.lang.invoke.LambdaForm$MH.0x0000000076045400.linkToTargetMethod,1,31,0,,,
+java.nio.Buffer::Buffer,0,,1,43,,
+java.nio.HeapCharBuffer.<init>,1,32,0,,,
+java.security.Provider.putPropertyStrings,1,31,0,,,
+java.util.Arrays.copyOf,0,,2,30,,
+java.util.Iterator* LibGraalClassLoader_6d026701::jdk.graal.compiler.graph.iterators.FilteredNodeIterable::iterator,1,32,0,,,
+jdk.internal.misc.Unsafe.getReferenceAcquire,1,32,0,,,
+jdk.internal.util.ArraysSupport.vectorizedHashCode,0,,1,32,,
+long LibGraalClassLoader_6d026701::jdk.graal.compiler.hotspot.meta.Bubo.BuboNativeBuffers::readCyclesAt,0,,3,73,,
+long LibGraalClassLoader_6d026701::jdk.graal.compiler.serviceprovider.GlobalAtomicLong::getAddress,0,,3,81,,
+mt_find_[k],1,29,0,,,
+page_add_file_rmap_[k],1,28,0,,,
+prepare_alloc_pages.constprop.0_[k],1,29,0,,,
+restore_fpregs_from_user_[k],1,58,0,,,
+update_sd_lb_stats.constprop.0_[k],0,,1,26,,
+update_sg_lb_stats_[k],2,30,0,,,
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.hotspot.meta.Bubo.BuboNativeBuffers::ensureInitialized,0,,3,43,,
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.hotspot.meta.Bubo.BuboPrinter::BuboLIRPrint,0,,1,40,,
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.lir.LIRIntrospection::forEach,0,,1,31,,
+void LibGraalClassLoader_6d026701::jdk.graal.compiler.nodes.cfg.HIRBlock::assignPredecessorsAndSuccessors,0,,1,37,,
+void com.oracle.svm.core.code.IsolateEnterStub::JNIFunctions_SetObjectArrayElement_HwUmnOxcMMAwrQfMQzBSK4,0,,1,39,,
+void com.oracle.svm.core.monitor.MultiThreadedMonitorSupport::monitorExit,0,,1,39,,
+void java.lang.String::getBytes,0,,1,40,,
+void org.graalvm.collections.EconomicMapImpl::setValue,0,,1,36,,
+xfs_dir2_leaf_getdents?[xfs]_[k],0,,1,50,,

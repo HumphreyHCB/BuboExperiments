@@ -1,0 +1,17 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,562,1,4749,5543,85.675627,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,562,2,349,5543,6.296229,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Bounce.benchmark(),,,218,5543,3.932888,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,562,0,200,5543,3.608154,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.util.Arrays.setAll(Object[], IntFunction) line: 5097",,,14,5543,0.252571,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,575,0,2,5543,0.036082,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.Integer.valueOf(int),,,2,5543,0.036082,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,562,3,1,5543,0.018041,
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Benchmark.innerBenchmarkLoop(int),,,1,5543,0.018041,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"Run.printResult(long, int)",,,1,5543,0.018041,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.nio.DirectByteBuffer.get(int) line: 342,,,1,5543,0.018041,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.internal.loader.URLClassPath$JarLoader.getResource(String) line: 766,,,1,5543,0.018041,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.internal.misc.Unsafe.allocateInstance(Class),,,1,5543,0.018041,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,sun.net.www.protocol.jar.JarFileFactory.urlKey(URL) line: 231,,,1,5543,0.018041,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"sun.nio.cs.StreamEncoder.implWrite(char[], int, int) line: 266",,,1,5543,0.018041,no_marker
+Bounce,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"sun.security.provider.SunEntries.addWithAlias(Provider, String, String, String, HashMap) line: 337",,,1,5543,0.018041,no_marker

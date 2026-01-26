@@ -1,0 +1,9 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,2,5724,6347,90.184339,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,1,362,6347,5.703482,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Mandelbrot.mandelbrot(int),,,244,6347,3.844336,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,2,11,6347,0.173310,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,0,3,6347,0.047266,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,1,1,6347,0.015755,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"Run.printResult(long, int)",,,1,6347,0.015755,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.jfr.internal.JVM.emitEvent(long, long, long)",,,1,6347,0.015755,no_marker

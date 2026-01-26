@@ -1,0 +1,9 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,2,12334,12972,95.081714,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,1,618,12972,4.764107,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,2,13,12972,0.100216,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Mandelbrot.mandelbrot(int),,,3,12972,0.023127,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,0,1,12972,0.007709,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.lang.String.<init>(char[], int, int) line: 314",,,1,12972,0.007709,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.nio.CharBuffer.position(int) line: 1561,,,1,12972,0.007709,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.jfr.internal.PlatformRecorder.takeNap(long) line: 537,,,1,12972,0.007709,no_marker

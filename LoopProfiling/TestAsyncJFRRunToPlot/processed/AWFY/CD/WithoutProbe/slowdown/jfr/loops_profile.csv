@@ -1,0 +1,60 @@
+benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,565,0,2713,11597,23.393981,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"cd.CollisionDetector.isInVoxel(Vector2D, Motion)",,,1355,11597,11.684056,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"cd.RedBlackTree.treeInsert(Comparable, Object)",,,1192,11597,10.278520,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,568,0,846,11597,7.294990,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"cd.RedBlackTree.put(Comparable, Object)",,,713,11597,6.148142,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,585,0,695,11597,5.992929,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,573,0,607,11597,5.234112,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,596,0,392,11597,3.380185,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,602,0,385,11597,3.319824,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,592,0,311,11597,2.681728,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.RedBlackTree.findNode(Comparable),,,283,11597,2.440286,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"cd.CollisionDetector.recurse(RedBlackTree, RedBlackTree, Vector2D, Motion)",,,258,11597,2.224713,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,602,1,185,11597,1.595240,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,593,0,177,11597,1.526257,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Vector2D.plus(Vector2D),,,151,11597,1.302061,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Vector2D.minus(Vector2D),,,137,11597,1.181340,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.RedBlackTree.leftRotate(RedBlackTree$Node),,,124,11597,1.069242,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,som.Vector.append(Object),,,122,11597,1.051996,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,596,3,103,11597,0.888161,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"cd.CollisionDetector.putIntoMap(RedBlackTree, Vector2D, Motion)",,,103,11597,0.888161,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.RedBlackTree.get(Comparable),,,76,11597,0.655342,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"cd.Vector2D.compareNumbers(double, double)",,,75,11597,0.646719,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Vector2D.compareTo(Object),,,52,11597,0.448392,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.CollisionDetector$RemoveAbsentAircraft.apply(Object),,,51,11597,0.439769,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,602,4,47,11597,0.405277,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.CallSign.compareTo(Object),,,44,11597,0.379408,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.CollisionDetector$RemoveAbsentAircraft.apply(RedBlackTree$Entry),,,44,11597,0.379408,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,631,2,43,11597,0.370786,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Vector2D.compareTo(Vector2D),,,41,11597,0.353540,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,som.Vector.<init>(int),,,30,11597,0.258688,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,596,2,24,11597,0.206950,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.RedBlackTree.rightRotate(RedBlackTree$Node),,,23,11597,0.198327,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.util.Arrays.copyOf(Object[], int) line: 3478",,,21,11597,0.181081,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.CallSign.compareTo(CallSign),,,20,11597,0.172458,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,607,0,15,11597,0.129344,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.CollisionDetector.handleNewFrame(Vector),,,15,11597,0.129344,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Motion.findIntersection(Motion),,,15,11597,0.129344,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,592,3,14,11597,0.120721,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,592,2,13,11597,0.112098,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.Math.sqrt(double),,,10,11597,0.086229,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,602,3,9,11597,0.077606,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.RedBlackTree.forEach(ForEachInterface),,,9,11597,0.077606,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Vector3D.minus(Vector3D),,,9,11597,0.077606,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,592,1,8,11597,0.068983,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.util.Arrays.copyOf(Object[], int, Class) line: 3509",,,7,11597,0.060360,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.CollisionDetector.reduceCollisionSet(Vector),,,6,11597,0.051738,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,602,2,3,11597,0.025869,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.RedBlackTree.treeMinimum(RedBlackTree$Node),,,3,11597,0.025869,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.Boolean.booleanValue(),,,3,11597,0.025869,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,570,0,2,11597,0.017246,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,596,1,2,11597,0.017246,
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Vector3D.dot(Vector3D),,,2,11597,0.017246,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Vector3D.times(double),,,2,11597,0.017246,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.jfr.internal.JVM.emitEvent(long, long, long)",,,2,11597,0.017246,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,CD.benchmark(int),,,1,11597,0.008623,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"cd.CollisionDetector.drawMotionOnVoxelMap(RedBlackTree, Motion)",,,1,11597,0.008623,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,cd.Simulator.simulate(double),,,1,11597,0.008623,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.lang.Math.min(int, int) line: 2120",,,1,11597,0.008623,no_marker
+CD,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.StringConcatHelper.stringOf(Object) line: 466,,,1,11597,0.008623,no_marker

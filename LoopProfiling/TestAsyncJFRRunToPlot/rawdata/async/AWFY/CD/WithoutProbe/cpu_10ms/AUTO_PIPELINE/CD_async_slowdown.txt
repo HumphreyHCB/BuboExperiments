@@ -1,0 +1,1762 @@
+--- Execution profile ---
+Total samples       : 24328
+
+--- 114019927368 ns (46.87%), 11401 samples
+  [ 0] SpaceMangler::mangle_region
+  [ 1] G1CollectedHeap::free_region
+  [ 2] FreeCSetClosure::do_heap_region
+  [ 3] G1CollectedHeap::par_iterate_regions_array
+  [ 4] G1PostEvacuateCollectionSetCleanupTask2::FreeCollectionSetTask::do_work
+  [ 5] G1BatchedTask::work
+  [ 6] WorkerThread::run
+  [ 7] Thread::call_run
+  [ 8] thread_native_entry
+  [ 9] start_thread
+  [10] clone3
+
+--- 8540056222 ns (3.51%), 854 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 6300101385 ns (2.59%), 630 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 5970174430 ns (2.45%), 597 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.forEach
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 3290011829 ns (1.35%), 329 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker6
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 2960036347 ns (1.22%), 296 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 2750123462 ns (1.13%), 275 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 2519976704 ns (1.04%), 252 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] CD.benchmark
+  [ 6] CD.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 2389963162 ns (0.98%), 239 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 9] cd.CollisionDetector.reduceCollisionSet
+  [10] cd.CollisionDetector.handleNewFrame
+  [11] CD.benchmark
+  [12] CD.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 2090060435 ns (0.86%), 209 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1820100781 ns (0.75%), 182 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 9] cd.CollisionDetector.reduceCollisionSet
+  [10] cd.CollisionDetector.handleNewFrame
+  [11] CD.benchmark
+  [12] CD.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 1700007588 ns (0.70%), 170 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1609971953 ns (0.66%), 161 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.forEach
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1450077626 ns (0.60%), 145 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker6
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 849939843 ns (0.35%), 85 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 760000853 ns (0.31%), 76 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 750009787 ns (0.31%), 75 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker6
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 730124849 ns (0.30%), 73 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 719977488 ns (0.30%), 72 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 690037178 ns (0.28%), 69 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 680033508 ns (0.28%), 68 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 9] cd.CollisionDetector.reduceCollisionSet
+  [10] cd.CollisionDetector.handleNewFrame
+  [11] CD.benchmark
+  [12] CD.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 679959970 ns (0.28%), 68 samples
+  [ 0] cd.CollisionDetector.recurse
+  [ 1] [break_compiled]
+
+--- 620002910 ns (0.25%), 62 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 589986879 ns (0.24%), 59 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] CD.benchmark
+  [ 6] CD.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 589961917 ns (0.24%), 59 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 530001313 ns (0.22%), 53 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 519952900 ns (0.21%), 52 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker9
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] CD.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 510049657 ns (0.21%), 51 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_objArray
+  [ 4] oopFactory::new_objArray
+  [ 5] JVMCIRuntime::new_array_or_null
+  [ 6] Stub<new_array_or_null(KlassPointer,int)Object>
+  [ 7] cd.CollisionDetector.putIntoMap
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 490038797 ns (0.20%), 49 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] cd.CollisionDetector.voxelHash
+  [ 7] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 8] cd.CollisionDetector.reduceCollisionSet
+  [ 9] cd.CollisionDetector.handleNewFrame
+  [10] CD.benchmark
+  [11] CD.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 470006049 ns (0.19%), 47 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 470002825 ns (0.19%), 47 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 460036001 ns (0.19%), 46 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker6
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 430027980 ns (0.18%), 43 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 9] cd.CollisionDetector.reduceCollisionSet
+  [10] cd.CollisionDetector.handleNewFrame
+  [11] CD.benchmark
+  [12] CD.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 420017928 ns (0.17%), 42 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.putIntoMap
+  [ 6] cd.CollisionDetector.recurse
+  [ 7] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 8] cd.CollisionDetector.reduceCollisionSet
+  [ 9] cd.CollisionDetector.handleNewFrame
+  [10] CD.benchmark
+  [11] CD.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 410017664 ns (0.17%), 41 samples
+  [ 0] itable stub
+  [ 1] cd.RedBlackTree.forEach
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 410006858 ns (0.17%), 41 samples
+  [ 0] cd.RedBlackTree.put
+  [ 1] [break_compiled]
+
+--- 400036179 ns (0.16%), 40 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.recurse
+  [ 6] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 7] cd.CollisionDetector.reduceCollisionSet
+  [ 8] cd.CollisionDetector.handleNewFrame
+  [ 9] CD.benchmark
+  [10] CD.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 399986175 ns (0.16%), 40 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 389951069 ns (0.16%), 39 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker6
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 380014018 ns (0.16%), 38 samples
+  [ 0] cd.RedBlackTree.put
+  [ 1] cd.CollisionDetector.handleNewFrame
+  [ 2] CD.benchmark
+  [ 3] CD.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 370123101 ns (0.15%), 37 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 369982620 ns (0.15%), 37 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 359978759 ns (0.15%), 36 samples
+  [ 0] som.Vector.append
+  [ 1] cd.CollisionDetector.putIntoMap
+  [ 2] cd.CollisionDetector.recurse
+  [ 3] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 4] cd.CollisionDetector.reduceCollisionSet
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 350030860 ns (0.14%), 35 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.drawMotionOnVoxelMap
+  [11] cd.CollisionDetector.reduceCollisionSet
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 350010145 ns (0.14%), 35 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 339989144 ns (0.14%), 34 samples
+  [ 0] cd.RedBlackTree.findNode
+  [ 1] cd.RedBlackTree.get
+  [ 2] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 3] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 4] cd.RedBlackTree.forEach
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 309997690 ns (0.13%), 31 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 309985853 ns (0.13%), 31 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 309912918 ns (0.13%), 31 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.recurse
+  [11] cd.CollisionDetector.drawMotionOnVoxelMap
+  [12] cd.CollisionDetector.reduceCollisionSet
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 300009374 ns (0.12%), 30 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.recurse
+  [11] cd.CollisionDetector.drawMotionOnVoxelMap
+  [12] cd.CollisionDetector.reduceCollisionSet
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 299977598 ns (0.12%), 30 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] [break_compiled]
+
+--- 289990654 ns (0.12%), 29 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.recurse
+  [11] cd.CollisionDetector.drawMotionOnVoxelMap
+  [12] cd.CollisionDetector.reduceCollisionSet
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 280009497 ns (0.12%), 28 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.drawMotionOnVoxelMap
+  [11] cd.CollisionDetector.reduceCollisionSet
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 279990911 ns (0.12%), 28 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.recurse
+  [11] cd.CollisionDetector.drawMotionOnVoxelMap
+  [12] cd.CollisionDetector.reduceCollisionSet
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 270030170 ns (0.11%), 27 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] som.Vector.append
+  [ 7] cd.Simulator.simulate
+  [ 8] CD.benchmark
+  [ 9] CD.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 270022487 ns (0.11%), 27 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] cd.RedBlackTree.treeInsert
+  [ 7] cd.RedBlackTree.put
+  [ 8] cd.CollisionDetector.handleNewFrame
+  [ 9] CD.benchmark
+  [10] CD.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 270007337 ns (0.11%), 27 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.drawMotionOnVoxelMap
+  [11] cd.CollisionDetector.reduceCollisionSet
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 269995853 ns (0.11%), 27 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 259987036 ns (0.11%), 26 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.drawMotionOnVoxelMap
+  [11] cd.CollisionDetector.reduceCollisionSet
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 250035354 ns (0.10%), 25 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] som.Vector.append
+  [ 7] cd.Simulator.simulate
+  [ 8] CD.benchmark
+  [ 9] CD.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 250033367 ns (0.10%), 25 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 250019530 ns (0.10%), 25 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 250010353 ns (0.10%), 25 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.putIntoMap
+  [ 6] cd.CollisionDetector.recurse
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 9] cd.CollisionDetector.reduceCollisionSet
+  [10] cd.CollisionDetector.handleNewFrame
+  [11] CD.benchmark
+  [12] CD.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 250004726 ns (0.10%), 25 samples
+  [ 0] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 1] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 2] cd.RedBlackTree.forEach
+  [ 3] cd.CollisionDetector.handleNewFrame
+  [ 4] CD.benchmark
+  [ 5] CD.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 240027201 ns (0.10%), 24 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 230073920 ns (0.09%), 23 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 230021709 ns (0.09%), 23 samples
+  [ 0] cd.RedBlackTree.get
+  [ 1] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 2] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 3] cd.RedBlackTree.forEach
+  [ 4] cd.CollisionDetector.handleNewFrame
+  [ 5] CD.benchmark
+  [ 6] CD.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 229994418 ns (0.09%), 23 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.drawMotionOnVoxelMap
+  [11] cd.CollisionDetector.reduceCollisionSet
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 220026605 ns (0.09%), 22 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] cd.RedBlackTree.treeInsert
+  [ 7] cd.RedBlackTree.put
+  [ 8] cd.CollisionDetector.handleNewFrame
+  [ 9] CD.benchmark
+  [10] CD.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 220009983 ns (0.09%), 22 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 219998771 ns (0.09%), 22 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker7
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.get
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.recurse
+  [11] cd.CollisionDetector.drawMotionOnVoxelMap
+  [12] cd.CollisionDetector.reduceCollisionSet
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 210002111 ns (0.09%), 21 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 200051247 ns (0.08%), 20 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] som.Vector.append
+  [ 7] cd.CollisionDetector.handleNewFrame
+  [ 8] CD.benchmark
+  [ 9] CD.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 200016118 ns (0.08%), 20 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] cd.CollisionDetector.recurse
+  [ 7] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 8] cd.CollisionDetector.reduceCollisionSet
+  [ 9] cd.CollisionDetector.handleNewFrame
+  [10] CD.benchmark
+  [11] CD.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 200004274 ns (0.08%), 20 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] cd.RedBlackTree.treeInsert
+  [ 7] cd.RedBlackTree.put
+  [ 8] cd.CollisionDetector.handleNewFrame
+  [ 9] CD.benchmark
+  [10] CD.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 200002001 ns (0.08%), 20 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 199983685 ns (0.08%), 20 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.putIntoMap
+  [ 3] cd.CollisionDetector.recurse
+  [ 4] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 5] cd.CollisionDetector.reduceCollisionSet
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 199976044 ns (0.08%), 20 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] cd.RedBlackTree.forEach
+  [ 7] cd.CollisionDetector.handleNewFrame
+  [ 8] CD.benchmark
+  [ 9] CD.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 190018162 ns (0.08%), 19 samples
+  [ 0] cd.RedBlackTree.get
+  [ 1] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 2] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 3] cd.RedBlackTree.forEach
+  [ 4] cd.CollisionDetector.handleNewFrame
+  [ 5] CD.benchmark
+  [ 6] CD.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 190016978 ns (0.08%), 19 samples
+  [ 0] cd.CollisionDetector$RemoveAbsentAircraft.apply
+  [ 1] cd.RedBlackTree.forEach
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 190007763 ns (0.08%), 19 samples
+  [ 0] cd.RedBlackTree.findNode
+  [ 1] cd.RedBlackTree.get
+  [ 2] cd.CollisionDetector.putIntoMap
+  [ 3] cd.CollisionDetector.recurse
+  [ 4] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 5] cd.CollisionDetector.reduceCollisionSet
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 189996444 ns (0.08%), 19 samples
+  [ 0] som.Vector.append
+  [ 1] cd.CollisionDetector.putIntoMap
+  [ 2] cd.CollisionDetector.recurse
+  [ 3] cd.CollisionDetector.recurse
+  [ 4] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 5] cd.CollisionDetector.reduceCollisionSet
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 180019643 ns (0.07%), 18 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 180006012 ns (0.07%), 18 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.recurse
+  [11] cd.CollisionDetector.drawMotionOnVoxelMap
+  [12] cd.CollisionDetector.reduceCollisionSet
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 180002097 ns (0.07%), 18 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 180000925 ns (0.07%), 18 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 179991953 ns (0.07%), 18 samples
+  [ 0] cd.RedBlackTree.put
+  [ 1] cd.CollisionDetector.handleNewFrame
+  [ 2] CD.benchmark
+  [ 3] CD.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 170013563 ns (0.07%), 17 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.drawMotionOnVoxelMap
+  [11] cd.CollisionDetector.reduceCollisionSet
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 170012404 ns (0.07%), 17 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_objArray
+  [ 4] oopFactory::new_objArray
+  [ 5] JVMCIRuntime::new_array_or_null
+  [ 6] Stub<new_array_or_null(KlassPointer,int)Object>
+  [ 7] cd.CollisionDetector.putIntoMap
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.drawMotionOnVoxelMap
+  [11] cd.CollisionDetector.reduceCollisionSet
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 170010888 ns (0.07%), 17 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] CD.benchmark
+  [ 6] CD.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 170009758 ns (0.07%), 17 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.drawMotionOnVoxelMap
+  [11] cd.CollisionDetector.reduceCollisionSet
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 170007651 ns (0.07%), 17 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.drawMotionOnVoxelMap
+  [10] cd.CollisionDetector.reduceCollisionSet
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 169998620 ns (0.07%), 17 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 169997257 ns (0.07%), 17 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker5
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] CD.benchmark
+  [ 6] CD.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 169994437 ns (0.07%), 17 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker4
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.RedBlackTree.put
+  [ 6] cd.CollisionDetector.putIntoMap
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.recurse
+  [ 9] cd.CollisionDetector.recurse
+  [10] cd.CollisionDetector.recurse
+  [11] cd.CollisionDetector.drawMotionOnVoxelMap
+  [12] cd.CollisionDetector.reduceCollisionSet
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 169985270 ns (0.07%), 17 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.putIntoMap
+  [ 6] cd.CollisionDetector.recurse
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 9] cd.CollisionDetector.reduceCollisionSet
+  [10] cd.CollisionDetector.handleNewFrame
+  [11] CD.benchmark
+  [12] CD.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 160011668 ns (0.07%), 16 samples
+  [ 0] MemAllocator::mem_allocate_inside_tlab_slow
+  [ 1] MemAllocator::mem_allocate
+  [ 2] MemAllocator::allocate
+  [ 3] InstanceKlass::allocate_instance
+  [ 4] JVMCIRuntime::new_instance_or_null
+  [ 5] Stub<new_instance_or_null(KlassPointer)Object>
+  [ 6] cd.CollisionDetector.recurse
+  [ 7] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 8] cd.CollisionDetector.reduceCollisionSet
+  [ 9] cd.CollisionDetector.handleNewFrame
+  [10] CD.benchmark
+  [11] CD.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 160007647 ns (0.07%), 16 samples
+  [ 0] cd.CollisionDetector.putIntoMap
+  [ 1] [break_compiled]
+
+--- 160002233 ns (0.07%), 16 samples
+  [ 0] cd.RedBlackTree.leftRotate
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 160001971 ns (0.07%), 16 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker3
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] cd.CollisionDetector.putIntoMap
+  [ 6] cd.CollisionDetector.recurse
+  [ 7] cd.CollisionDetector.recurse
+  [ 8] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 9] cd.CollisionDetector.reduceCollisionSet
+  [10] cd.CollisionDetector.handleNewFrame
+  [11] CD.benchmark
+  [12] CD.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+114019927368   46.87%    11401  SpaceMangler::mangle_region
+ 60800812474   24.99%     6080  my.custom.BuboAgentCompilerMarkers.Marker0
+ 13120099183    5.39%     1312  cd.CollisionDetector.isInVoxel
+ 12979831543    5.34%     1298  cd.RedBlackTree.treeInsert
+  9790703290    4.02%      979  MemAllocator::mem_allocate_inside_tlab_slow
+  6689991425    2.75%      669  cd.RedBlackTree.put
+  3070052232    1.26%      307  cd.CollisionDetector.recurse
+  2080054924    0.85%      208  cd.RedBlackTree.findNode
+  1890028338    0.78%      189  my.custom.BuboAgentCompilerMarkers.Marker1
+  1570032595    0.65%      157  cd.Vector2D.plus
+  1509974950    0.62%      151  som.Vector.append
+  1509946856    0.62%      151  cd.Vector2D.minus
+  1300163822    0.53%      130  my.custom.BuboAgentCompilerMarkers.Marker3
+  1119974870    0.46%      112  cd.RedBlackTree.leftRotate
+  1049988523    0.43%      105  my.custom.BuboAgentCompilerMarkers.Marker2
+   959995410    0.39%       96  cd.Vector2D.compareTo
+   950019216    0.39%       95  cd.CollisionDetector$RemoveAbsentAircraft.apply
+   830019952    0.34%       83  cd.CollisionDetector.putIntoMap
+   729968764    0.30%       73  cd.Vector2D.compareNumbers
+   720042094    0.30%       72  cd.RedBlackTree.get
+   600011802    0.25%       60  my.custom.BuboAgentCompilerMarkers.Marker4
+   580025339    0.24%       58  cd.CallSign.compareTo
+   440017690    0.18%       44  itable stub
+   329984101    0.14%       33  cd.Motion.findIntersection
+   290157052    0.12%       29  clear_page_erms_[k]
+   269989568    0.11%       27  som.Vector.<init>
+   250034456    0.10%       25  cd.RedBlackTree.rightRotate
+   170027286    0.07%       17  G1HeapRegionSetBase::verify_region
+   170021908    0.07%       17  G1FreeRegionList::verify_list
+   149874991    0.06%       15  oop::on_construction
+   140000251    0.06%       14  oop_disjoint_arraycopy
+   129955517    0.05%       13  MarkBitMap::get_next_marked_addr
+   110012395    0.05%       11  cd.CollisionDetector.reduceCollisionSet
+   109891373    0.05%       11  G1ParScanThreadState::do_copy_to_survivor_space
+   100012126    0.04%       10  cd.CollisionDetector.handleNewFrame
+    89995811    0.04%        9  java.util.Arrays.copyOf
+    79990933    0.03%        8  cd.Vector3D.minus
+    79934211    0.03%        8  G1CollectedHeap::is_in
+    60024479    0.02%        6  G1HeapRegionType::is_valid
+    59999067    0.02%        6  cd.Vector3D.dot
+    59998501    0.02%        6  FreeCSetClosure::do_heap_region
+    59993613    0.02%        6  cd.RedBlackTree.forEach
+    49986897    0.02%        5  __tls_get_addr
+    40007493    0.02%        4  G1MasterFreeRegionListChecker::is_correct_type
+    40002127    0.02%        4  java.lang.Boolean.booleanValue
+    39984727    0.02%        4  G1HeapRegionManager::at
+    39984427    0.02%        4  G1HeapRegionClaimer::claim_region
+    39964561    0.02%        4  CompressedOops::decode_not_null
+    39952455    0.02%        4  CompressedOops::encode_not_null
+    30018557    0.01%        3  java.lang.Math.sqrt
+    30002500    0.01%        3  void com.oracle.svm.core.genscavenge.GreyToBlackObjRefVisitor::visitObjectReferences
+    30002337    0.01%        3  G1CollectedHeap* CollectedHeap::named_heap<G1CollectedHeap>
+    29999888    0.01%        3  cd.RedBlackTree.treeMinimum
+    29997707    0.01%        3  cd.RedBlackTree$Node.successor
+    29996154    0.01%        3  G1SurvRateGroup::record_surviving_words
+    29993455    0.01%        3  G1BarrierSet::write_region
+    29985227    0.01%        3  BitMap::verify_limit
+    29966890    0.01%        3  G1CollectedHeap::addr_to_region
+    20003998    0.01%        2  G1CollectedHeap::free_region
+    20002086    0.01%        2  MemAllocator::finish
+    20001919    0.01%        2  ThreadInVMfromJava::~ThreadInVMfromJava
+    20001316    0.01%        2  java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeMap::get
+    20001138    0.01%        2  void com.oracle.svm.core.JavaMemoryUtil::copyPrimitiveArrayForward
+    20001024    0.01%        2  void sun.security.provider.SHA2::implCompress0
+    20000653    0.01%        2  void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeUsageIterator::advance
+    20000486    0.01%        2  G1FromCardCache::clear
+    20000187    0.01%        2  cd.Vector3D.plus
+    20000150    0.01%        2  java.lang.Object* java.util.ArrayList$Itr::next
+    20000023    0.01%        2  unsigned long align_up<unsigned long, int, 0>
+    19999391    0.01%        2  InstanceKlass::check_valid_for_instantiation
+    19997422    0.01%        2  __memcpy_avx_unaligned_erms
+    19995521    0.01%        2  oopDesc::klass
+    19993424    0.01%        2  void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::sortIntoList
+    19985874    0.01%        2  void G1ScanEvacuatedObjClosure::do_oop_work<narrowOop>
+    19985673    0.01%        2  G1CodeRootSet::nmethods_do
+    19982399    0.01%        2  CompressedKlassPointers::decode_not_null
+    19975773    0.01%        2  G1HeapRegionType::get
+    19970840    0.01%        2  G1BiasedMappedArrayBase::verify_biased_index
+    19968518    0.01%        2  void G1ParScanThreadState::do_oop_evac<narrowOop>
+    10242529    0.00%        1  __futex_abstimed_wait_common
+    10037675    0.00%        1  G1YoungCollector::process_discovered_references
+    10027111    0.00%        1  G1HeapRegionManager::iterate
+    10026339    0.00%        1  pthread_testcancel@@GLIBC_2.34
+    10024164    0.00%        1  BitMap::verify_index
+    10014262    0.00%        1  release_pages_[k]
+    10011834    0.00%        1  frame::interpreter_frame_method
+    10010970    0.00%        1  _raw_spin_unlock_irqrestore_[k]
+    10010613    0.00%        1  JVMCIEnv::get_jobject
+    10010029    0.00%        1  bool AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<18112614ul, G1BarrierSet>, (AccessInternal::BarrierType)8, 18112614ul>::oop_access_barrier<HeapWordImpl*>
+    10010004    0.00%        1  java.lang.StringConcatHelper.stringOf
+    10009692    0.00%        1  void com.oracle.svm.core.genscavenge.GreyToBlackObjectVisitor::visitObject
+    10008389    0.00%        1  JavaThread::is_Java_thread
+    10007643    0.00%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply
+    10007525    0.00%        1  CodeHeap::next_used
+    10007448    0.00%        1  sun.nio.fs.UnixPath* sun.nio.fs.UnixPath::resolve
+    10007429    0.00%        1  memchr_[k]
+    10007278    0.00%        1  int LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.CanonicalizerPhase::processWorkSet
+    10006538    0.00%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeMap::checkAndGrow
+    10004367    0.00%        1  dsin
+    10004267    0.00%        1  frame::oops_interpreted_do
+    10003954    0.00%        1  G1PrepareEvacuationTask::G1PrepareRegionsClosure::do_heap_region
+    10003845    0.00%        1  G1GCPhaseTimes::phase_name
+    10003831    0.00%        1  java.util.Set* LibGraalClassLoader_30c8681::jdk.vm.ci.services.SystemProperties::entrySet
+    10003742    0.00%        1  java.lang.invoke.InvokerBytecodeGenerator.classData
+    10003654    0.00%        1  __rcu_read_lock_[k]
+    10003600    0.00%        1  java.lang.Object* com.oracle.svm.core.genscavenge.ThreadLocalAllocation::slowPathNewInstance
+    10003338    0.00%        1  java.util.ArrayList::ArrayList
+    10003244    0.00%        1  jdk.internal.constant.MethodTypeDescImpl.<init>
+    10003117    0.00%        1  LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.Invokable* LibGraalClassLoader_30c8681::jdk.graal.compiler.java.BytecodeParser::appendInvoke
+    10002939    0.00%        1  int org.graalvm.collections.EconomicMapImpl::getHashIndex
+    10002815    0.00%        1  JNIHandleBlock::oops_do
+    10002447    0.00%        1  LibGraalClassLoader_30c8681::jdk.graal.compiler.core.match.MatchPattern$Result* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.match.MatchPattern::matchShape
+    10002081    0.00%        1  G1CodeRootSet::reset_table_scanner
+    10002025    0.00%        1  Klass::subklass
+    10001939    0.00%        1  __clock_gettime_2
+    10001809    0.00%        1  int LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotResolvedObjectTypeImpl::layoutHelper
+    10001798    0.00%        1  MacroAssembler::object_move
+    10001736    0.00%        1  __GI___libc_malloc
+    10001713    0.00%        1  boolean LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.CanonicalizerPhase::gvn
+    10001573    0.00%        1  Klass::next_sibling
+    10001520    0.00%        1  [vdso]
+    10001475    0.00%        1  double jdk.internal.math.FloatingDecimal$ASCIIToBinaryBuffer::doubleValue
+    10001449    0.00%        1  LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Node* LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.spi.Canonicalizable$Binary::canonical
+    10001266    0.00%        1  int LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeIdAccessor::getNodeId
+    10001161    0.00%        1  JNIAccessMark::JNIAccessMark
+    10001151    0.00%        1  CD.benchmark
+    10001150    0.00%        1  java.lang.String::String
+    10001104    0.00%        1  char java.nio.HeapCharBuffer::get
+    10001039    0.00%        1  java.lang.StringCoding.implEncodeAsciiArray
+    10001033    0.00%        1  GCId::current
+    10001032    0.00%        1  CompLevel CompilationPolicy::common<CallPredicate>
+    10000866    0.00%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.java.BciBlockMapping::computeBlockOrder
+    10000819    0.00%        1  MemAllocator::mem_allocate
+    10000775    0.00%        1  CodeHeap::next_block
+    10000727    0.00%        1  LibGraalClassLoader_30c8681::jdk.graal.compiler.core.common.type.Stamp* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.common.type.IntegerStamp$3::foldStampImpl
+    10000671    0.00%        1  G1HeapRegionManager::is_free
+    10000628    0.00%        1  MemAllocator::Allocation::notify_allocation_jfr_sampler
+    10000614    0.00%        1  Copy::conjoint_memory_atomic
+    10000562    0.00%        1  java.util.zip.ZipCoder$UTF8ZipCoder.compare
+    10000543    0.00%        1  JfrAllocationTracer::JfrAllocationTracer
+    10000518    0.00%        1  LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.FixedNode* LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.AbstractBeginNode$BlockNodeIterator::next
+    10000515    0.00%        1  boolean LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.ConditionalEliminationUtil::tryProveGuardCondition
+    10000482    0.00%        1  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<598116ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 598116ul>::oop_access_barrier
+    10000473    0.00%        1  G1AllocRegion::retire_internal
+    10000439    0.00%        1  ArrayKlass::is_array_klass_slow
+    10000417    0.00%        1  frame::interpreter_frame_bcp
+    10000417    0.00%        1  CollectedHeap::is_oop
+    10000415    0.00%        1  c2v_resolveFieldInPool
+    10000292    0.00%        1  java.lang.StringLatin1.toUpperCase
+    10000289    0.00%        1  Stub<AMD64MathStub.cos>
+    10000258    0.00%        1  methodHandle::methodHandle
+    10000239    0.00%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Edges::verifyUpdateValid
+    10000223    0.00%        1  Mutex::owned_by_self
+    10000192    0.00%        1  int LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.alloc.lsra.Interval::intersectsAt
+    10000171    0.00%        1  HandleMark::initialize
+    10000142    0.00%        1  Handle::Handle
+    10000133    0.00%        1  ThreadStateTransition::ThreadStateTransition
+    10000124    0.00%        1  cd.Simulator.simulate
+    10000094    0.00%        1  G1AllocRegion::trace
+    10000066    0.00%        1  LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Node* LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeClass$RawEdgesIterator::next
+    10000050    0.00%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.RedundantMoveElimination$Optimization::clearValuesOfKindObject
+    10000022    0.00%        1  c2v_getResolvedJavaType0
+    10000019    0.00%        1  java_lang_String::length
+     9999948    0.00%        1  CollectedHeap::fill_with_array
+     9999889    0.00%        1  double[]* LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.ControlSplitNode::successorProbabilities
+     9999871    0.00%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.debug.GraalError::guarantee
+     9999815    0.00%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.ConditionalEliminationPhase$Instance::registerNewStamp
+     9999738    0.00%        1  HandleArea::allocate_handle
+     9999724    0.00%        1  cd.CollisionDetector$CollectCollisions.apply
+     9999474    0.00%        1  SymbolTable::do_lookup
+     9999401    0.00%        1  Rdtsc::elapsed_counter
+     9999376    0.00%        1  LockStack::verify
+     9999321    0.00%        1  int LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotSignature::getParameterCount
+     9999009    0.00%        1  void UNSIGNED5::write_uint_grow<unsigned char*, int, CompressedWriteStream::write_int(unsigned int)::{lambda(int)#1}, UNSIGNED5::ArrayGetSet<unsigned char*, int> >
+     9998445    0.00%        1  LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Node* LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeList::set
+     9998424    0.00%        1  oopDesc::forwardee
+     9998309    0.00%        1  Dependencies::DepStream::argument
+     9998157    0.00%        1  void com.oracle.svm.core.c.function.CEntryPointSetup$LeaveEpilogue::leave
+     9998055    0.00%        1  LibGraalClassLoader_30c8681::jdk.vm.ci.code.site.Site[]* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotCompiledCodeBuilder::getSortedSites
+     9997940    0.00%        1  G1PLABAllocator::G1PLABAllocator
+     9997771    0.00%        1  nmethod::oops_do
+     9997485    0.00%        1  TruncatedSeq::add
+     9995928    0.00%        1  G1ParScanThreadState::trim_queue_to_threshold
+     9995536    0.00%        1  G1HeapRegionRemSet::clear
+     9995331    0.00%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.alloc.lsra.Interval::addUsePos
+     9994124    0.00%        1  G1RootProcessor::process_vm_roots
+     9992885    0.00%        1  Klass::is_instance_klass
+     9992627    0.00%        1  void java.util.PriorityQueue::siftUpUsingComparator
+     9992314    0.00%        1  CodeCache::next_blob
+     9992284    0.00%        1  G1CollectedHeap::set_region_short_lived_locked
+     9991867    0.00%        1  G1HeapRegionType::get_trace_type
+     9991738    0.00%        1  G1PLABAllocator::waste
+     9991368    0.00%        1  LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Node* LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeClass$RawEdgesIterator::getAndAdvanceInput
+     9991327    0.00%        1  cd.Vector3D.times
+     9990945    0.00%        1  JavaThread::oops_do_no_frames
+     9989417    0.00%        1  java.lang.String* com.oracle.svm.core.util.Utf8::utf8ToString
+     9989389    0.00%        1  oopDesc::size_given_klass
+     9989082    0.00%        1  void objArrayOopDesc::oop_iterate_range<G1ScanEvacuatedObjClosure>
+     9988806    0.00%        1  G1ParScanThreadState::verify_task
+     9987990    0.00%        1  OverflowTaskQueue<ScannerTask, (MemTag)5, 131072u>::push
