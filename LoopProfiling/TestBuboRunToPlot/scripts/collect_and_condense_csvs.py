@@ -2,24 +2,24 @@
 """
 collect_and_condense_csvs.py
 
-1) Reads (does NOT modify) every .csv under:
-   /home/hb478/repos/BuboExperiments/LoopProfiling/TestBuboRunToPlot/plots
+A) Collect + condense:
+   - Scan every *.csv under:
+       /home/hb478/repos/BuboExperiments/LoopProfiling/TestBuboRunToPlot/plots
+   - Keep only rows where:
+       * loop_median_pct present (non-empty)
+       * runtime_share_pct > 2.0
+       * loop_call_count == 0
+   - De-duplicate identical rows
+   - Write:
+       condensed_loops_runtimeShareGT2_callCount0_withMedian.csv
 
-2) Writes ONE combined CSV containing only rows that meet ALL conditions:
-   - loop_median_pct is present (non-empty)
-   - runtime_share_pct > 2.0
-   - loop_call_count == 0
+B) Plot:
+   - For each loop compute:
+         abs_diff = |slowdown_pct - loop_median_pct|
+   - For each benchmark, draw a BOX PLOT over all its loop diffs
 
-3) Produces a plot:
-   For each benchmark:
-     - For every comp in that benchmark (from the kept rows), compute:
-         diff = slowdown_pct - loop_median_pct
-     - Take the median of diffs across comps for that benchmark
-     - Add error bars showing the range (min to max) of diffs across comps
-
-Outputs (in the plots directory):
-  - condensed_loops_runtimeShareGT2_callCount0_withMedian.csv
-  - median_diff_slowdownPct_minus_loopMedianPct_per_benchmark.pdf
+Output plot:
+   median_absdiff_boxplot_per_benchmark.pdf
 """
 
 from __future__ import annotations
@@ -32,10 +32,26 @@ from typing import Dict, List, Optional, Tuple
 import matplotlib.pyplot as plt
 
 
+# =========================================================
+# GLOBAL FONT SIZE (ALL TEXT = 8)
+# =========================================================
+plt.rcParams.update(
+    {
+        "font.size": 8,
+        "axes.titlesize": 8,
+        "axes.labelsize": 8,
+        "xtick.labelsize": 8,
+        "ytick.labelsize": 8,
+        "legend.fontsize": 8,
+    }
+)
+
 PLOTS_DIR = Path("/home/hb478/repos/BuboExperiments/LoopProfiling/TestBuboRunToPlot/plots")
 
-OUT_CSV = PLOTS_DIR / "condensed_loops_runtimeShareGT2_callCount0_withMedian.csv"
-OUT_PDF = PLOTS_DIR / "median_diff_slowdownPct_minus_loopMedianPct_per_benchmark.pdf"
+CONDENSED_CSV = PLOTS_DIR / "condensed_loops_runtimeShareGT2_callCount0_withMedian.csv"
+PLOT_PDF = PLOTS_DIR / "median_absdiff_boxplot_per_benchmark.pdf"
+
+YLIM = 25.0  # fixed axis
 
 EXPECTED_HEADER = [
     "benchmark",
@@ -56,7 +72,7 @@ EXPECTED_HEADER = [
 
 def safe_int(s: str) -> Optional[int]:
     s = (s or "").strip()
-    if s == "":
+    if not s:
         return None
     try:
         return int(s)
@@ -66,7 +82,7 @@ def safe_int(s: str) -> Optional[int]:
 
 def safe_float(s: str) -> Optional[float]:
     s = (s or "").strip()
-    if s == "":
+    if not s:
         return None
     try:
         return float(s)
@@ -83,8 +99,7 @@ def normalise_row(row: Dict[str, str]) -> Dict[str, str]:
 
 
 def should_keep(row: Dict[str, str]) -> bool:
-    loop_median_raw = (row.get("loop_median_pct") or "").strip()
-    if loop_median_raw == "":
+    if not (row.get("loop_median_pct") or "").strip():
         return False
 
     runtime_share = safe_float(row.get("runtime_share_pct", ""))
@@ -92,157 +107,158 @@ def should_keep(row: Dict[str, str]) -> bool:
         return False
 
     loop_call_count = safe_int(row.get("loop_call_count", ""))
-    if loop_call_count is None or loop_call_count != 0:
-        return False
-
-    return True
+    return loop_call_count == 0
 
 
-def read_csv_rows(path: Path) -> Tuple[int, int, List[Dict[str, str]]]:
-    """
-    Returns: (rows_seen, rows_kept, kept_rows)
-    """
-    rows_seen = 0
-    rows_kept = 0
+def read_one_csv_lenient(path: Path) -> List[Dict[str, str]]:
     kept: List[Dict[str, str]] = []
 
     with path.open("r", encoding="utf-8", errors="replace", newline="") as f:
         reader = csv.reader(f)
 
-        header: Optional[List[str]] = None
+        header = None
         for raw in reader:
-            if not raw or all((c or "").strip() == "" for c in raw):
-                continue
-            header = [c.strip() for c in raw]
-            break
+            if raw and any(c.strip() for c in raw):
+                header = [c.strip() for c in raw]
+                break
 
         if header is None:
-            return (0, 0, [])
+            return []
 
         dict_reader = csv.DictReader(f, fieldnames=header)
 
         for row in dict_reader:
-            if row is None or all(((v or "").strip() == "") for v in row.values()):
+            if not row or all(not (v or "").strip() for v in row.values()):
                 continue
             if is_repeated_header_row(row):
                 continue
 
-            rows_seen += 1
-
             nr = normalise_row(row)
             if should_keep(nr):
                 kept.append(nr)
-                rows_kept += 1
 
-    return (rows_seen, rows_kept, kept)
+    return kept
 
 
-def build_plot(rows: List[Dict[str, str]]) -> None:
-    """
-    For each benchmark, compute per-comp diff = slowdown_pct - loop_median_pct,
-    then benchmark-level median and range error bars.
-    """
-    # Collect diffs per (benchmark, comp_id)
-    diffs_by_bench_comp: Dict[Tuple[str, int], List[float]] = {}
+def collect_and_condense_csvs(plots_dir: Path, out_csv: Path) -> List[Dict[str, str]]:
+    seen = set()
+    rows: List[Dict[str, str]] = []
+
+    for p in plots_dir.rglob("*.csv"):
+        if p.resolve() == out_csv.resolve():
+            continue
+        for r in read_one_csv_lenient(p):
+            key = tuple(r[k] for k in EXPECTED_HEADER)
+            if key not in seen:
+                seen.add(key)
+                rows.append(r)
+
+    with out_csv.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=EXPECTED_HEADER)
+        w.writeheader()
+        w.writerows(rows)
+
+    print(f"[OK] Wrote condensed CSV: {out_csv} ({len(rows)} rows)")
+    return rows
+
+
+def compute_absdiffs_by_benchmark(rows: List[Dict[str, str]]) -> Dict[str, List[float]]:
+    out: Dict[str, List[float]] = {}
 
     for r in rows:
-        bench = (r.get("benchmark") or "").strip()
-        comp_id = safe_int(r.get("comp_id", ""))
-        slowdown_pct = safe_float(r.get("slowdown_pct", ""))
-        loop_median_pct = safe_float(r.get("loop_median_pct", ""))
-
-        if not bench or comp_id is None or slowdown_pct is None or loop_median_pct is None:
+        b = (r.get("benchmark") or "").strip()
+        s = safe_float(r.get("slowdown_pct", ""))
+        m = safe_float(r.get("loop_median_pct", ""))
+        if not b or s is None or m is None:
             continue
+        out.setdefault(b, []).append(abs(s - m))
 
-        diff = slowdown_pct - loop_median_pct
-        diffs_by_bench_comp.setdefault((bench, comp_id), []).append(diff)
+    return out
 
-    # Reduce to a single diff per comp per benchmark (median across rows for that comp)
-    diffs_by_bench: Dict[str, List[float]] = {}
-    for (bench, _comp_id), diffs in diffs_by_bench_comp.items():
-        if not diffs:
+
+def print_summary(diffs: Dict[str, List[float]]) -> None:
+    print("\n=== ABS(BuboL − VTune) summary ===")
+    all_vals: List[float] = []
+
+    for b in sorted(diffs):
+        vals = diffs[b]
+        if not vals:
             continue
-        comp_median = statistics.median(diffs)
-        diffs_by_bench.setdefault(bench, []).append(comp_median)
+        all_vals.extend(vals)
+        print(
+            f"{b}: n={len(vals)} "
+            f"min={min(vals):.2f}% "
+            f"median={statistics.median(vals):.2f}% "
+            f"max={max(vals):.2f}%"
+        )
 
-    # Now benchmark-level stats
-    benches = sorted(diffs_by_bench.keys())
-    if not benches:
-        print("[WARN] No data to plot after grouping, check filters and input CSVs.")
-        return
+    if all_vals:
+        print(f"OVERALL median: {statistics.median(all_vals):.2f}%")
+    else:
+        print("OVERALL: no data")
 
-    medians: List[float] = []
-    err_low: List[float] = []
-    err_high: List[float] = []
 
-    # Only keep benchmarks that have at least 2 comps, since you said "benchmarks that have multiple comps"
-    benches_filtered: List[str] = []
-    for b in benches:
-        vals = diffs_by_bench[b]
-        if len(vals) < 2:
-            continue
-        m = statistics.median(vals)
-        vmin = min(vals)
-        vmax = max(vals)
-        benches_filtered.append(b)
-        medians.append(m)
-        err_low.append(m - vmin)
-        err_high.append(vmax - m)
+def plot_boxplot_absdiffs(diffs: Dict[str, List[float]], out_pdf: Path) -> None:
+    benches = [b for b in sorted(diffs) if diffs[b]]
+    data = [diffs[b] for b in benches]
 
-    if not benches_filtered:
-        print("[WARN] No benchmarks with multiple comps to plot.")
-        return
+    medians = [statistics.median(v) for v in data]
+    has_high = [max(v) > YLIM for v in data]
 
-    x = list(range(len(benches_filtered)))
-    yerr = [err_low, err_high]  # asymmetric
+    fig, ax = plt.subplots(figsize=(8, 4))
 
-    plt.figure(figsize=(10, 4))
-    plt.errorbar(x, medians, yerr=yerr, fmt="o", capsize=3)
-    plt.axhline(0.0, linewidth=1)
-    plt.xticks(x, benches_filtered, rotation=45, ha="right")
-    plt.ylabel("Median(diff) where diff = slowdown_pct - loop_median_pct")
-    plt.title("Per benchmark median difference across comps, with range error bars")
-    plt.tight_layout()
-    plt.savefig(OUT_PDF)
-    plt.close()
+    # Horizontal boxplot
+    bp = ax.boxplot(
+        data,
+        labels=benches,
+        patch_artist=True,
+        showfliers=True,
+        vert=False,   # <<< KEY CHANGE
+    )
+
+    colors = plt.rcParams["axes.prop_cycle"].by_key()["color"]
+    for i, box in enumerate(bp["boxes"]):
+        box.set_facecolor(colors[i % len(colors)])
+        box.set_alpha(0.6)
+
+    # X-axis is now the scale
+    ax.set_xlim(0, YLIM)
+    ax.set_xlabel("Difference from baseline (%)")
+    ax.set_title("BuboL")
+
+    # Benchmarks on the left
+    ax.set_yticklabels(benches)
+
+    # Median labels: slightly ABOVE each box
+    y_positions = range(1, len(benches) + 1)
+    y_offset = 0.25  # vertical offset above the box
+
+    for y, md in zip(y_positions, medians):
+        ax.text(
+            min(md, YLIM),      # keep x at the median
+            y + y_offset,       # move label ABOVE the box
+            f"{md:.1f}%",
+            ha="center",
+            va="bottom",
+        )
+
+    # Out-of-range indicators (right edge)
+    for y, high in zip(y_positions, has_high):
+        if high:
+            ax.plot(YLIM, y, marker=">", markersize=6)
+
+    fig.tight_layout()
+    fig.savefig(out_pdf)
+    plt.close(fig)
+
+    print(f"[OK] Wrote plot: {out_pdf}")
 
 
 def main() -> None:
-    if not PLOTS_DIR.is_dir():
-        raise SystemExit(f"[ERROR] Directory not found: {PLOTS_DIR}")
-
-    csv_files = sorted(p for p in PLOTS_DIR.rglob("*.csv") if p.is_file())
-
-    total_seen = 0
-    total_kept = 0
-    all_kept: List[Dict[str, str]] = []
-
-    for p in csv_files:
-        try:
-            seen, kept, rows = read_csv_rows(p)
-        except Exception as e:
-            print(f"[WARN] Failed to read {p}: {e}")
-            continue
-
-        total_seen += seen
-        total_kept += kept
-        all_kept.extend(rows)
-
-    OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
-    with OUT_CSV.open("w", encoding="utf-8", newline="") as out:
-        w = csv.DictWriter(out, fieldnames=EXPECTED_HEADER, extrasaction="ignore")
-        w.writeheader()
-        for r in all_kept:
-            w.writerow(r)
-
-    print(f"[OK] Found CSV files: {len(csv_files)}")
-    print(f"[OK] Rows seen (non-empty, non-header): {total_seen}")
-    print(f"[OK] Rows kept (filtered): {total_kept}")
-    print(f"[OK] Wrote condensed CSV: {OUT_CSV}")
-
-    build_plot(all_kept)
-    if OUT_PDF.exists():
-        print(f"[OK] Wrote plot: {OUT_PDF}")
+    rows = collect_and_condense_csvs(PLOTS_DIR, CONDENSED_CSV)
+    diffs = compute_absdiffs_by_benchmark(rows)
+    print_summary(diffs)
+    plot_boxplot_absdiffs(diffs, PLOT_PDF)
 
 
 if __name__ == "__main__":
