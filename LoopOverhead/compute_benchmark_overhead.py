@@ -73,6 +73,13 @@ def main():
         raise RuntimeError("No common benchmarks found between Instrument and NoInstrument.")
 
     rows = []
+    common_benchmarks_copy = common_benchmarks.copy()
+    for b in common_benchmarks:
+        if b == "Permute":
+            common_benchmarks_copy.remove(b)
+        # if b not in HIGHLIGHT:
+        #     common_benchmarks_copy.remove(b)
+    common_benchmarks = common_benchmarks_copy
     for b in common_benchmarks:
         base_us = noinst[b]
         inst_us = inst[b]
@@ -104,7 +111,7 @@ def main():
     colors = ["red" if b in HIGHLIGHT else "C0" for b in benchmarks]
 
     # Square canvas, and let Matplotlib manage padding for labels
-    fig, ax = plt.subplots(figsize=(6, 6), layout="constrained")
+    fig, ax = plt.subplots(figsize=(6, 4), )
 
     ax.bar(range(len(benchmarks)), overhead_percent, color=colors)
     ax.set_xticks(range(len(benchmarks)))
@@ -115,9 +122,14 @@ def main():
     ax.set_title("BuboL's Overhead per Benchmark")
     ax.grid(True, axis="y", linestyle="--", alpha=0.3)
 
+    fig.subplots_adjust(
+    bottom=0.25
+    )
+
+
     # Make the *axes box* square, and keep it centred in the figure
-    ax.set_box_aspect(1)
-    ax.set_anchor("C")
+    #ax.set_box_aspect(1)
+    #ax.set_anchor("C")
 
     # IMPORTANT: do not use bbox_inches="tight" if you want a square PDF canvas
     fig.savefig(OUT_PNG, dpi=200, pad_inches=0.25)

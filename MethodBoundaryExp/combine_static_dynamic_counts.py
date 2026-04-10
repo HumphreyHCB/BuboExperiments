@@ -1,23 +1,13 @@
 #!/usr/bin/env python3
-"""
-combine_static_dynamic_counts_dualaxis.py
-
-Reads:
-  ./Static Counting/awfy_benchmark_totals.csv
-  ./Dynamic Counting/awfy_benchmark_totals.csv
-
-Produces:
-  combined_benchmark_counts.csv
-  combined_benchmark_counts_dualaxis.png
-
-Plots dynamic counts (left Y) and static counts (right Y) on a shared X axis,
-both using log scales.
-"""
-
 import csv
 from pathlib import Path
+
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
+import numpy as np
+
+SHOW_VALUE_LABELS = True
+LABEL_FONT_SIZE = 8
 
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "Static Counting"
@@ -27,12 +17,11 @@ STATIC_CSV = STATIC_DIR / "awfy_benchmark_totals.csv"
 DYNAMIC_CSV = DYNAMIC_DIR / "awfy_benchmark_totals.csv"
 
 OUT_CSV = BASE_DIR / "combined_benchmark_counts.csv"
-OUT_PNG = BASE_DIR / "combined_benchmark_counts_dualaxis.png"
+OUT_PDF = BASE_DIR / "combined_benchmark_counts_stackedbars.pdf"
 
 
 def read_totals(path: Path) -> dict[str, int]:
-    """Read a 2-column CSV: Benchmark, Total …"""
-    totals = {}
+    totals: dict[str, int] = {}
     with path.open(newline="", encoding="utf-8") as f:
         r = csv.reader(f)
         _ = next(r, None)
@@ -49,7 +38,58 @@ def read_totals(path: Path) -> dict[str, int]:
     return totals
 
 
-def main():
+def add_value_labels(ax, values: np.ndarray) -> None:
+    for i, v in enumerate(values):
+        if not np.isfinite(v) or v <= 0:
+            continue
+
+        if v >= 1e6:
+            exp = int(np.floor(np.log10(v)))
+            mantissa = v / (10 ** exp)
+
+            if mantissa >= 9.5:
+                label = rf"$10^{{{exp + 1}}}$"
+            else:
+                label = rf"${mantissa:.1f}\times 10^{{{exp}}}$"
+        else:
+            label = f"{int(v)}"
+
+        ax.text(
+            i,
+            v,
+            label,
+            ha="center",
+            va="bottom",
+            fontsize=LABEL_FONT_SIZE,
+            rotation=0,
+            clip_on=True,
+        )
+
+
+
+
+def set_three_log_ticks(ax, values: np.ndarray, formatter) -> None:
+    vals = np.array(values, dtype=float)
+    vals = vals[np.isfinite(vals)]
+    if vals.size == 0:
+        return
+    vmin = float(np.min(vals))
+    vmax = float(np.max(vals))
+    if vmin <= 0 or vmax <= 0:
+        return
+
+    lo = int(np.floor(np.log10(vmin)))
+    hi = int(np.ceil(np.log10(vmax)))
+    mid = int(np.round((lo + hi) / 2))
+
+    ticks = [10**lo, 10**mid, 10**hi]
+    ticks = sorted(set(ticks))
+
+    ax.yaxis.set_major_locator(mticker.FixedLocator(ticks))
+    ax.yaxis.set_major_formatter(formatter)
+
+
+def main() -> None:
     if not STATIC_CSV.exists():
         raise FileNotFoundError(f"Missing static CSV: {STATIC_CSV}")
     if not DYNAMIC_CSV.exists():
@@ -58,12 +98,8 @@ def main():
     static_totals = read_totals(STATIC_CSV)
     dynamic_totals = read_totals(DYNAMIC_CSV)
 
-    # union of benchmark names
     all_benchmarks = sorted(set(static_totals) | set(dynamic_totals))
-    # order by descending dynamic total
-    all_benchmarks.sort(key=lambda b: dynamic_totals.get(b, 0), reverse=True)
 
-    # write combined CSV
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     with OUT_CSV.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
@@ -71,44 +107,55 @@ def main():
         for b in all_benchmarks:
             w.writerow([b, static_totals.get(b, 0), dynamic_totals.get(b, 0)])
 
-    # build values
-    x = range(len(all_benchmarks))
-    dynamic_vals = [dynamic_totals.get(b, 0) for b in all_benchmarks]
-    static_vals = [static_totals.get(b, 0) for b in all_benchmarks]
+    x = np.arange(len(all_benchmarks))
+    dynamic_vals = np.array([dynamic_totals.get(b, 0) for b in all_benchmarks], dtype=float)
+    static_vals = np.array([static_totals.get(b, 0) for b in all_benchmarks], dtype=float)
+    # Clamp Mandelbrot to 0
+    if "Mandelbrot" in all_benchmarks:
+        idx = all_benchmarks.index("Mandelbrot")
+        dynamic_vals[idx] = 0.0
+        static_vals[idx] = 0.0
 
-    fig, ax1 = plt.subplots(figsize=(12, 6))
-    ax2 = ax1.twinx()  # second y-axis
+    dynamic_vals[dynamic_vals <= 0] = np.nan
+    static_vals[static_vals <= 0] = np.nan
 
-    # dynamic (left)
-    ax1.bar(x, dynamic_vals, color="tab:blue", alpha=0.6, label="Dynamic (activation count)")
-    ax1.set_yscale("log")
-    ax1.set_ylabel("Dynamic Count (log scale)", color="tab:blue")
-    ax1.tick_params(axis="y", labelcolor="tab:blue")
+    cmap = plt.get_cmap("tab20")
+    colors = [cmap(i % cmap.N) for i in range(len(all_benchmarks))]
 
-    # static (right)
-    ax2.plot(x, static_vals, color="tab:orange", marker="o", label="Static (method transitions)")
-    ax2.set_yscale("log")
-    ax2.set_ylabel("Static Count (log scale)", color="tab:orange")
-    ax2.tick_params(axis="y", labelcolor="tab:orange")
+    fig, (ax_top, ax_bottom) = plt.subplots(2, 1, figsize=(10, 6), sharex=True)
 
-    # format x-axis
-    plt.xticks(x, all_benchmarks, rotation=45, ha="right")
+    ax_top.bar(x, dynamic_vals, color=colors)
+    ax_top.set_yscale("log")
+    ax_top.set_ylabel("Method Boundary Activations", rotation=90)
+    ax_top.grid(True, which="both", axis="y", linestyle="--", alpha=0.3)
 
-    # tidy tick formatting
-    for axis in (ax1.yaxis, ax2.yaxis):
-        fmt = mticker.ScalarFormatter(useOffset=False)
-        fmt.set_scientific(False)
-        fmt.set_powerlimits((-3, 6))
-        axis.set_major_formatter(fmt)
-        axis.set_major_locator(mticker.MaxNLocator(8))
+    dyn_fmt = mticker.LogFormatterSciNotation(base=10)
+    set_three_log_ticks(ax_top, dynamic_vals, dyn_fmt)
 
-    ax1.grid(True, which="both", axis="y", linestyle="--", alpha=0.3)
-    plt.title("Static vs Dynamic Counts per Benchmark (dual log scale)")
+    if SHOW_VALUE_LABELS:
+        add_value_labels(ax_top, dynamic_vals)
+
+    ax_bottom.bar(x, static_vals, color=colors)
+    ax_bottom.set_yscale("log")
+    ax_bottom.set_ylabel("Method Boundary Sites", rotation=90)
+    ax_bottom.grid(True, which="both", axis="y", linestyle="--", alpha=0.3)
+
+    stat_fmt = mticker.ScalarFormatter()
+    stat_fmt.set_scientific(False)
+    set_three_log_ticks(ax_bottom, static_vals, stat_fmt)
+
+    if SHOW_VALUE_LABELS:
+        add_value_labels(ax_bottom, static_vals)
+
+    ax_bottom.set_xticks(x)
+    ax_bottom.set_xticklabels(all_benchmarks, rotation=45, ha="right")
+
     fig.tight_layout()
-    plt.savefig(OUT_PNG, dpi=200)
+    plt.savefig(OUT_PDF)
+    plt.close(fig)
 
     print(f"Wrote combined CSV: {OUT_CSV}")
-    print(f"Wrote dual-axis plot: {OUT_PNG}")
+    print(f"Wrote stacked bar plot: {OUT_PDF}")
 
 
 if __name__ == "__main__":

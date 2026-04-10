@@ -399,6 +399,10 @@ def build_compare_rows(
         if k not in nonested_map:
             continue
         new = nonested_map[k]
+        # Exclude LoopBenchmarks.main
+        if "LoopBenchmarks.main" in base.comp_name:
+            continue
+
 
         bench, comp_id, loop_id = k
         bench_total_key = (bench, "Nested")
@@ -522,11 +526,15 @@ def plot_boxplot_weighted_abs_change(compare_rows: List[dict], out_dir: Path) ->
         data.append(expanded)
 
     # Square canvas, constrained layout
-    fig, ax = plt.subplots(figsize=(6, 6), layout="constrained")
+    fig, ax = plt.subplots(figsize=(6, 4))
+    positions = [i * 0.4 for i in range(1, len(data) + 1)]
+    ax.set_ylim(positions[0] - 0.3, positions[-1] + 0.3)
 
     # Horizontal box plot (benchmarks on the left)
     bp = ax.boxplot(
         data,
+        widths=0.2,
+        positions=positions,
         vert=False,
         labels=benchmarks,
         showfliers=False,
@@ -552,10 +560,12 @@ def plot_boxplot_weighted_abs_change(compare_rows: List[dict], out_dir: Path) ->
     ax.grid(True, axis="x", linestyle="--", alpha=0.3)
 
     # Keep axes box square and centred
-    ax.set_box_aspect(1)
-    ax.set_anchor("C")
+    #ax.set_box_aspect(1)
+    #ax.set_anchor("C")
+    fig.subplots_adjust(right=0.88,left=0.23)
 
-    fig.savefig(out_path, dpi=200, pad_inches=0.2, bbox_inches="tight")
+
+    fig.savefig(out_path, dpi=200, pad_inches=0.2)
     plt.close(fig)
 
     print(f"[OK] Wrote plot: {out_path}")

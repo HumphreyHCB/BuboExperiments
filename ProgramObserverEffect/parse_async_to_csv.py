@@ -1,51 +1,7 @@
 #!/usr/bin/env python3
 """
 parse_async_to_csv.py
-
-Scans:
-  /home/hb478/repos/BuboExperiments/ProgramObserverEffect
-for:
-  bubo_runs*_BuboWithDebug/async/*.txt
-
-For each Async-Profiler text file:
-  - Extracts total samples from the "--- Execution profile ---" section
-  - Extracts the final summary table rows:
-        ns  percent  samples  top
-  - Writes one CSV per input file, next to it:
-        <input>.txt.csv
-
-Additionally, builds per-benchmark aggregate CSVs:
-  - Aggregates "samples" per (benchmark, method, mode) across all runs
-  - Computes median samples for BuboOff and BuboOn
-  - Writes:
-        <root>/async_aggregate/<benchmark>_aggregate.csv
-
-Plots:
-  1) Per benchmark bar plot of pct_change_vs_off per method
-     - Excludes java.lang.String.hashCode always
-     - Starts with methods whose BuboOff median share is >= 2%
-     - If coverage is below 85%, keeps adding methods by descending BuboOff share
-       until coverage reaches 85% or there are no more eligible methods
-     - Each x label includes the method's BuboOff share in brackets
-
-  2) Final box plot across benchmarks
-     - One box per benchmark
-     - Box data points are "weighted absolute percent changes" per method in that benchmark:
-           w_i = p_i * abs(pct_change_i)
-       where p_i is the BuboOff median share: p_i = off_med / total_off_med
-
-Important change:
-  - The per benchmark summary statistic printed is the mean of w_i values, not a sum.
-    This matches your request to use a mean rather than a sum.
-
-Outputs:
-  - Per file CSVs next to each input .txt
-  - Per benchmark aggregate CSVs in:
-        <root>/async_aggregate/
-  - Per benchmark plots in:
-        <root>/async_aggregate/plots/
-  - Final box plot:
-        <root>/async_aggregate/plots/ALL_benchmarks_weighted_abs_pct_change_boxplot.pdf
+(… docstring unchanged for brevity …)
 """
 
 from __future__ import annotations
@@ -60,9 +16,26 @@ from typing import Dict, List, Optional, Tuple
 
 import matplotlib.pyplot as plt
 
+# =========================================================
+# MODE TOGGLE (set this)
+# =========================================================
+# "coverage_weighted"       -> 2% + fill to coverage, weighted points (p_i * abs(pct_change))
+# "naive_unweighted"        -> >=ALT_MIN_CONTRIB_FRAC only, unweighted points (abs(pct_change))
+# "coverage_total_change"   -> 2% + fill to coverage, ONE point per benchmark:
+#                              pct_change of total selected samples (sum_on vs sum_off)
+MODE = "coverage_weighted"
+#MODE = "naive_unweighted"
+#MODE = "coverage_total_change"
+
+# Thresholds
+MIN_CONTRIB_FRAC = 0.02   # 2% initial filter (coverage modes)
+TARGET_COVERAGE = 0.80    # 80% target coverage
+
+ALT_MIN_CONTRIB_FRAC = 0.05  # naive cutoff (you set 5% here)
+
+EXCLUDE_METHOD = "java.lang.String.hashCode"
 
 RUN_DIR_RE = re.compile(r"^bubo_runs\d+_BuboWithDebug$")
-
 FILE_RE = re.compile(r"^(?P<bench>.+?)_Bubo(?P<mode>On|Off)\.txt$")
 
 TOTAL_SAMPLES_RE = re.compile(r"^\s*Total\s+samples\s*:\s*(?P<n>\d+)\s*$")
@@ -70,11 +43,6 @@ TABLE_HEADER_RE = re.compile(r"^\s*ns\s+percent\s+samples\s+top\s*$", re.IGNOREC
 TABLE_ROW_RE = re.compile(
     r"^\s*(?P<ns>[\d,]+)\s+(?P<pct>\d+(?:\.\d+)?)%\s+(?P<samples>[\d,]+)\s+(?P<method>.+?)\s*$"
 )
-
-EXCLUDE_METHOD = "java.lang.String.hashCode"
-
-MIN_CONTRIB_FRAC = 0.02   # 2% initial filter
-TARGET_COVERAGE = 0.80    # 85% desired minimum coverage
 
 
 @dataclass
@@ -287,23 +255,22 @@ def process_one_file(
     return True, " | ".join(msg_bits)
 
 
-def _select_methods_to_reach_coverage(
-    total_off_med: int,
-    method_items: List[Tuple[str, int, int]],
-) -> List[Tuple[str, int, int]]:
-    """
-    method_items: list of (method, off_med, on_med), already filtered for validity
-    Returns a selected list that starts with methods >= 2% share, then adds more by share
-    until coverage reaches 85% or we run out.
-    """
+def _select_methods(total_off_med: int, method_items: List[Tuple[str, int, int]]) -> List[Tuple[str, int, int]]:
     items_sorted = sorted(method_items, key=lambda t: t[1], reverse=True)
 
+    if MODE == "naive_unweighted":
+        selected_alt: List[Tuple[str, int, int]] = []
+        for method, off_med, on_med in items_sorted:
+            share = off_med / total_off_med
+            if share >= ALT_MIN_CONTRIB_FRAC:
+                selected_alt.append((method, off_med, on_med))
+        return selected_alt
+
+    # coverage modes: coverage_weighted, coverage_total_change
     selected: List[Tuple[str, int, int]] = []
     selected_set = set()
-
     coverage = 0.0
 
-    # First pass: include methods meeting the 2% threshold
     for method, off_med, on_med in items_sorted:
         share = off_med / total_off_med
         if share >= MIN_CONTRIB_FRAC:
@@ -311,7 +278,6 @@ def _select_methods_to_reach_coverage(
             selected_set.add(method)
             coverage += share
 
-    # If still below target, add more methods by descending share
     if coverage < TARGET_COVERAGE:
         for method, off_med, on_med in items_sorted:
             if method in selected_set:
@@ -333,14 +299,20 @@ def plot_benchmark_pct_change(
 ) -> Tuple[Optional[Path], Optional[float], Optional[float], int, List[float]]:
     """
     Returns:
-      (plot_path, mean_weighted_abs_pct_change, coverage_frac, n_plotted, w_points)
+      (plot_path, mean_point, coverage_frac, n_plotted, points_for_final_plot)
 
-    w_points are per method:
-      w_i = p_i * abs(pct_change_i)
-    where p_i = off_med / total_off_med
+    points_for_final_plot depends on MODE:
 
-    mean_weighted_abs_pct_change is:
-      mean(w_points)
+      coverage_weighted:
+          per-method points: p_i * abs(pct_change_i)
+
+      naive_unweighted:
+          per-method points: abs(pct_change_i)
+
+      coverage_total_change:
+          single point per benchmark:
+              pct_change_total_selected = (sum_on - sum_off) / sum_off * 100
+          returned as a 1-element list: [pct_change_total_selected]
     """
     if total_off_med is None or total_off_med <= 0:
         return (None, None, None, 0, [])
@@ -363,61 +335,84 @@ def plot_benchmark_pct_change(
     if not eligible:
         return (None, None, None, 0, [])
 
-    selected = _select_methods_to_reach_coverage(total_off_med, eligible)
+    selected = _select_methods(total_off_med, eligible)
     if not selected:
         return (None, None, None, 0, [])
 
-    # Compute per method values
     methods: List[str] = []
     pct_changes: List[float] = []
     contrib_pcts: List[float] = []
     off_meds: List[int] = []
-    w_points: List[float] = []
 
     for method, off_med, on_med in selected:
         p_i = off_med / total_off_med
         pct_change = ((on_med - off_med) / off_med) * 100.0
-        w_i = p_i * abs(pct_change)
 
         methods.append(method)
         pct_changes.append(pct_change)
         contrib_pcts.append(p_i * 100.0)
         off_meds.append(off_med)
-        w_points.append(w_i)
 
     coverage_frac = sum(off_meds) / total_off_med
+    coverage_pct = coverage_frac * 100.0
 
-    # You asked for mean, not sum
-    mean_weighted_abs_pct = float(statistics.mean(w_points)) if w_points else None
+    # --------------------------
+    # Compute the "points" list
+    # --------------------------
+    points: List[float] = []
 
-    # Sort bars by absolute percent change for visibility
+    if MODE == "coverage_total_change":
+        sum_off = float(sum(off_med for _m, off_med, _on in selected))
+        sum_on = float(sum(on_med for _m, _off, on_med in selected))
+        pct_change_total = ((sum_on - sum_off) / sum_off) * 100.0 if sum_off > 0 else 0.0
+        points = [pct_change_total]
+        mean_point = pct_change_total  # one value
+    else:
+        for (method, off_med, on_med), pct_change in zip(selected, pct_changes):
+            p_i = off_med / total_off_med
+            if MODE == "naive_unweighted":
+                points.append(abs(pct_change))
+            else:
+                points.append(p_i * abs(pct_change))
+        mean_point = float(statistics.mean(points)) if points else None
+
+    # --------------------------
+    # Plot per-method bars (still useful in all modes)
+    # --------------------------
     order = sorted(range(len(methods)), key=lambda i: abs(pct_changes[i]), reverse=True)
     methods_sorted = [methods[i] for i in order]
     pct_sorted = [pct_changes[i] for i in order]
     contrib_sorted = [contrib_pcts[i] for i in order]
-
     labels = [f"{m} ({c:.2f}%)" for m, c in zip(methods_sorted, contrib_sorted)]
 
     plots_dir.mkdir(parents=True, exist_ok=True)
     out_path = plots_dir / f"{benchmark}_pct_change_vs_off.pdf"
 
-    plt.figure(figsize=(max(10, 0.35 * len(labels)), 4.9))
+    plt.figure(figsize=(6,4))
     plt.bar(range(len(labels)), pct_sorted)
     plt.axhline(0.0, linewidth=1.0)
 
     plt.title(f"{benchmark}: pct_change_vs_off per method")
     plt.ylabel("pct_change_vs_off (%)")
     plt.xlabel("method")
-
     plt.xticks(range(len(labels)), labels, rotation=75, ha="right")
 
-    coverage_pct = coverage_frac * 100.0
+    if MODE == "naive_unweighted":
+        point_label = "Mean abs pct change"
+        sel_label = f"Naive selection >= {ALT_MIN_CONTRIB_FRAC*100:.0f}%"
+    elif MODE == "coverage_total_change":
+        point_label = "Total pct change (selected sum)"
+        sel_label = f"Start >= {MIN_CONTRIB_FRAC*100:.0f}%, fill to {TARGET_COVERAGE*100:.0f}% coverage"
+    else:
+        point_label = "Mean weighted abs pct change"
+        sel_label = f"Start >= {MIN_CONTRIB_FRAC*100:.0f}%, fill to {TARGET_COVERAGE*100:.0f}% coverage"
+
     plt.gcf().text(
         0.01,
         0.01,
-        f"Coverage {coverage_pct:.2f}% of median total samples (BuboOff). "
-        f"Excluded {EXCLUDE_METHOD}. Start threshold {MIN_CONTRIB_FRAC*100:.0f}%, target {TARGET_COVERAGE*100:.0f}%. "
-        f"Mean of weighted abs changes {mean_weighted_abs_pct:.3f}%.",
+        f"Mode {MODE}. Coverage {coverage_pct:.2f}% of median total samples (BuboOff). "
+        f"Excluded {EXCLUDE_METHOD}. Selection: {sel_label}. "
+        f"{point_label} {mean_point:.3f}%.",
         fontsize=8,
         va="bottom",
     )
@@ -426,89 +421,60 @@ def plot_benchmark_pct_change(
     plt.savefig(out_path)
     plt.close()
 
-    return (out_path, mean_weighted_abs_pct, coverage_frac, len(labels), w_points)
+    return (out_path, mean_point, coverage_frac, len(labels), points)
 
 
-def plot_final_boxplot(
-    out_path: Path,
-    bench_to_wpoints: Dict[str, List[float]],
-) -> Optional[Path]:
-    """
-    Final box plot across benchmarks.
-
-    Keeps all previous behaviour, plus:
-      - Square PDF canvas (good for LaTeX centring)
-      - Constrained layout for label padding
-      - Square axes box, centred in the figure
-      - Avoids bbox_inches="tight" so the saved PDF canvas stays square
-    """
-    benches_raw = sorted([b for b in bench_to_wpoints.keys() if bench_to_wpoints[b]])
+def plot_final_boxplot(out_path: Path, bench_to_points: Dict[str, List[float]]) -> Optional[Path]:
+    benches_raw = sorted([b for b in bench_to_points.keys() if bench_to_points[b]])
     if not benches_raw:
         return None
 
-    label_map = {
-        "LoopBenchmarks": "LoopsBench",
-    }
+    label_map = {"LoopBenchmarks": "LoopsBench"}
     benches = [label_map.get(b, b) for b in benches_raw]
-    data = [bench_to_wpoints[b] for b in benches_raw]
+    data = [bench_to_points[b] for b in benches_raw]
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Square canvas, and let Matplotlib manage padding for labels
-    fig, ax = plt.subplots(figsize=(6, 6), layout="constrained")
+    fig, ax = plt.subplots(figsize=(6,4.5))
+    positions = [i * 0.4 for i in range(1, len(data) + 1)]
+    ax.set_ylim(positions[0] - 0.3, positions[-1] + 0.3)
+
+    
 
     bp = ax.boxplot(
         data,
+        widths=0.2,
         labels=benches,
-        vert=False,               # horizontal, names on the left
-        patch_artist=True,        # allow filled boxes
-        showmeans=False,          # remove mean marker (no green triangle)
-        medianprops={
-            "linestyle": "-",
-            "linewidth": 1.0,
-            "color": "orange",
-        },
-        whiskerprops={
-            "linestyle": "-",
-            "linewidth": 1.0,
-        },
-        capprops={
-            "linestyle": "-",
-            "linewidth": 1.0,
-        },
+        vert=False,
+        positions=positions,
+        patch_artist=True,
+        showmeans=False,
+        medianprops={"linestyle": "-", "linewidth": 1.0, "color": "orange"},
+        whiskerprops={"linestyle": "-", "linewidth": 1.0},
+        capprops={"linestyle": "-", "linewidth": 1.0},
     )
 
-    # Give each box a different light colour
     cmap = plt.get_cmap("tab10")
     for i, box in enumerate(bp["boxes"]):
         box.set_facecolor(cmap(i % 10))
         box.set_alpha(0.65)
         box.set_linewidth(1.0)
 
-    ax.set_xlabel("Weighted absolute percentage change (%)")
+    if MODE == "naive_unweighted":
+        ax.set_xlabel("Absolute percentage change (%)")
+    elif MODE == "coverage_total_change":
+        ax.set_xlabel("Total percentage change of selected samples (%)")
+    else:
+        ax.set_xlabel("Weighted absolute percentage change (%)")
 
-    # Make the *axes box* square, and keep it centred in the figure
-    ax.set_box_aspect(1)
-    ax.set_anchor("C")
+    #ax.set_box_aspect(1)
+    #ax.set_anchor("C")
+    fig.subplots_adjust(left=0.28, right=0.82, top=0.92, bottom=0.18)
 
-    # Manually control padding:
-    # more space on the left for benchmark names,
-    # symmetric top/bottom, tight right edge
-    fig.subplots_adjust(
-        left=0.35,   # space for labels
-        right=0.95,
-        top=0.95,
-        bottom=0.15,
-    )
-    
 
-    # IMPORTANT: keep square PDF canvas
     fig.savefig(out_path, pad_inches=0.25)
     plt.close(fig)
-
     return out_path
-
-
 
 
 def main() -> int:
@@ -554,7 +520,7 @@ def main() -> int:
     bench_summaries: List[Tuple[str, float, float, int]] = []
     all_means: List[float] = []
 
-    bench_to_wpoints: Dict[str, List[float]] = {}
+    bench_to_points: Dict[str, List[float]] = {}
 
     for bench in sorted(aggregate_samples.keys()):
         out_path, total_off_med, _total_on_med = write_benchmark_aggregate_csv(
@@ -566,45 +532,49 @@ def main() -> int:
         print(f"Wrote aggregate {out_path}")
         agg_written += 1
 
-        plot_path, mean_wabs, coverage_frac, n_plotted, w_points = plot_benchmark_pct_change(
+        plot_path, mean_point, coverage_frac, n_plotted, points = plot_benchmark_pct_change(
             plots_dir=plots_dir,
             benchmark=bench,
             total_off_med=total_off_med,
             samples_by_method=aggregate_samples[bench],
         )
 
-        bench_to_wpoints[bench] = w_points
+        bench_to_points[bench] = points
 
         if plot_path is not None:
             print(f"Wrote plot {plot_path}")
             plot_written += 1
 
-            if mean_wabs is not None and coverage_frac is not None:
-                bench_summaries.append((bench, mean_wabs, coverage_frac, n_plotted))
-                all_means.append(mean_wabs)
+            if mean_point is not None and coverage_frac is not None:
+                bench_summaries.append((bench, mean_point, coverage_frac, n_plotted))
+                all_means.append(mean_point)
 
-    # Final box plot across benchmarks
     final_box_path = plots_dir / "Whole_Program_Observer_Effect.pdf"
-    made_box = plot_final_boxplot(final_box_path, bench_to_wpoints)
+    made_box = plot_final_boxplot(final_box_path, bench_to_points)
     if made_box is not None:
         print(f"Wrote final box plot {made_box}")
 
     print()
     if bench_summaries:
-        print("Summary (per benchmark): mean of per method weighted absolute percent changes")
-        print("Each method point is p_i * abs(pct_change_i), where p_i is BuboOff median share.")
-        for bench, mean_wabs, cov, n in sorted(bench_summaries, key=lambda x: x[0]):
-            print(f"  {bench}: mean_weighted_abs_pct_change={mean_wabs:.3f}% , coverage={cov*100:.2f}% , n_methods={n}")
+        if MODE == "naive_unweighted":
+            print("Summary (per benchmark): mean of per-method absolute percent changes")
+        elif MODE == "coverage_total_change":
+            print("Summary (per benchmark): total pct change of selected samples (one value per benchmark)")
+        else:
+            print("Summary (per benchmark): mean of per-method weighted absolute percent changes")
+
+        for bench, mean_point, cov, n in sorted(bench_summaries, key=lambda x: x[0]):
+            print(f"  {bench}: value={mean_point:.3f}% , coverage={cov*100:.2f}% , n_methods={n}")
 
         overall = float(statistics.median(all_means)) if all_means else float("nan")
         print()
-        print(f"Overall median of per benchmark mean_weighted_abs_pct_change = {overall:.3f}%")
+        print(f"Overall median of per benchmark values = {overall:.3f}%")
     else:
         print("Summary: no plots produced, no methods passed filters.")
 
     print()
     print(
-        f"Done. Found {total_files} .txt files, wrote {written} per file CSVs, "
+        f"Done. Mode {MODE}. Found {total_files} .txt files, wrote {written} per file CSVs, "
         f"skipped {skipped}, wrote {agg_written} aggregate CSVs, wrote {plot_written} plots."
     )
     return 0

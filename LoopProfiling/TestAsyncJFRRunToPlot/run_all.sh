@@ -8,7 +8,7 @@ PY="${PY:-python3}"
 # CONFIG DEFAULTS (CLI can override)
 # ============================================================
 ITER_DEFAULT="500"
-BENCHMARK_DEFAULT="LoopBenchmarks"
+BENCHMARK_DEFAULT="Mandelbrot"
 SUITE_DEFAULT="AWFY"
 MODE_DEFAULT="WithoutProbe"
 TAG_DEFAULT="AUTO_PIPELINE"
@@ -96,13 +96,12 @@ run_one() {
 # fi
 
 
-# BUILD_VTUNE="${ROOT_DIR}/scripts/build_total_pct_slowdown_per_loop.py"
+BUILD_VTUNE="${ROOT_DIR}/scripts/build_total_pct_slowdown_per_loop.py"
 
-# DEBUG_OUT="${ROOT_DIR}/rawdata/cfg/${SUITE}/${BENCHMARK}/${MODE}/${BENCHMARK}_baseline_cfg.out"
-# SLOWDOWN_TXT="${ROOT_DIR}/rawdata/vtune/${SUITE}/${BENCHMARK}/${MODE}/${TAG}/slowdown_blocks.txt"
+DEBUG_OUT="${ROOT_DIR}/rawdata/cfg/${SUITE}/${BENCHMARK}/${MODE}/${BENCHMARK}_baseline_cfg.out"
+SLOWDOWN_TXT="${ROOT_DIR}/rawdata/vtune/${SUITE}/${BENCHMARK}/${MODE}/${TAG}/slowdown_blocks.txt"
 
-# MARKERPHASE_JSON="/home/hb478/repos/GTSlowdownSchedular/FinalBuboTests/${MODE}/${SUITE}/${BENCHMARK}/MarkerPhaseInfo.json"
-# BRIDGE_JSON="/home/hb478/repos/GTSlowdownSchedular/FinalBuboTests/${MODE}/${SUITE}/${BENCHMARK}/Final_${BENCHMARK}.json"
+MARKERPHASE_JSON="/home/hb478/repos/GTSlowdownSchedular/FinalBuboTests/${MODE}/${SUITE}/${BENCHMARK}/MarkerPhaseInfo.json"
 
 # if run_one "vtune"; then
 #   echo "[STEP 3] Building per loop totals into: ${PROCESSED_DIR}"
@@ -115,72 +114,69 @@ run_one() {
 #     --min-normal 1e-9
 #   )
 
-#   if [[ -f "${BRIDGE_JSON}" ]]; then
-#     args+=( --bridge-json "${BRIDGE_JSON}" )
-#   fi
 
 #   "${args[@]}"
 # fi
 
-# echo "[STEP 3] Converting async and jfr dumps into CSVs under processed/"
+echo "[STEP 3] Converting async and jfr dumps into CSVs under processed/"
 
-# PROCESS_PROFILERS="${ROOT_DIR}/scripts/process_async_jfr_to_csv.py"
+PROCESS_PROFILERS="${ROOT_DIR}/scripts/process_async_jfr_to_csv.py"
 
-# # Must match the run scripts defaults, but allow override via env
-# ASYNC_VARIANT="${ASYNC_VARIANT:-cpu_10ms}"
-# JFR_VARIANT="${JFR_VARIANT:-profile_10ms}"
+# Must match the run scripts defaults, but allow override via env
+ASYNC_VARIANT="${ASYNC_VARIANT:-cpu_10ms}"
+JFR_VARIANT="${JFR_VARIANT:-profile_10ms}"
 
-# RAW_ASYNC_DIR="${ROOT_DIR}/rawdata/async/${SUITE}/${BENCHMARK}/${MODE}/${ASYNC_VARIANT}/${TAG}"
-# RAW_JFR_DIR="${ROOT_DIR}/rawdata/jfr/${SUITE}/${BENCHMARK}/${MODE}/${JFR_VARIANT}/${TAG}"
+RAW_ASYNC_DIR="${ROOT_DIR}/rawdata/async/${SUITE}/${BENCHMARK}/${MODE}/${ASYNC_VARIANT}/${TAG}"
+RAW_JFR_DIR="${ROOT_DIR}/rawdata/jfr/${SUITE}/${BENCHMARK}/${MODE}/${JFR_VARIANT}/${TAG}"
 
-# ASYNC_NO="${RAW_ASYNC_DIR}/${BENCHMARK}_async_no_slowdown.txt"
-# ASYNC_SLOW="${RAW_ASYNC_DIR}/${BENCHMARK}_async_slowdown.txt"
+ASYNC_NO="${RAW_ASYNC_DIR}/${BENCHMARK}_async_no_slowdown.txt"
+ASYNC_SLOW="${RAW_ASYNC_DIR}/${BENCHMARK}_async_slowdown.txt"
 
-# JFR_NO="${RAW_JFR_DIR}/${BENCHMARK}_no_slowdown.jfr"
-# JFR_SLOW="${RAW_JFR_DIR}/${BENCHMARK}_slowdown.jfr"
+JFR_NO="${RAW_JFR_DIR}/${BENCHMARK}_no_slowdown.jfr"
+JFR_SLOW="${RAW_JFR_DIR}/${BENCHMARK}_slowdown.jfr"
 
-# JFR_NO_TXT="${RAW_JFR_DIR}/${BENCHMARK}_no_slowdown.jfr.print.txt"
-# JFR_SLOW_TXT="${RAW_JFR_DIR}/${BENCHMARK}_slowdown.jfr.print.txt"
+JFR_NO_TXT="${RAW_JFR_DIR}/${BENCHMARK}_no_slowdown.jfr.print.txt"
+JFR_SLOW_TXT="${RAW_JFR_DIR}/${BENCHMARK}_slowdown.jfr.print.txt"
 
-# # Hard fail if missing, because we want BOTH runs and both profilers
-# [[ -f "${ASYNC_NO}" ]]   || { echo "[ERROR] Missing async no_slowdown: ${ASYNC_NO}" >&2; exit 1; }
-# [[ -f "${ASYNC_SLOW}" ]] || { echo "[ERROR] Missing async slowdown:    ${ASYNC_SLOW}" >&2; exit 1; }
-# [[ -f "${JFR_NO}" ]]     || { echo "[ERROR] Missing jfr no_slowdown:   ${JFR_NO}" >&2; exit 1; }
-# [[ -f "${JFR_SLOW}" ]]   || { echo "[ERROR] Missing jfr slowdown:      ${JFR_SLOW}" >&2; exit 1; }
+# Hard fail if missing, because we want BOTH runs and both profilers
+[[ -f "${ASYNC_NO}" ]]   || { echo "[ERROR] Missing async no_slowdown: ${ASYNC_NO}" >&2; exit 1; }
+[[ -f "${ASYNC_SLOW}" ]] || { echo "[ERROR] Missing async slowdown:    ${ASYNC_SLOW}" >&2; exit 1; }
+[[ -f "${JFR_NO}" ]]     || { echo "[ERROR] Missing jfr no_slowdown:   ${JFR_NO}" >&2; exit 1; }
+[[ -f "${JFR_SLOW}" ]]   || { echo "[ERROR] Missing jfr slowdown:      ${JFR_SLOW}" >&2; exit 1; }
 
-# # Convert JFR binaries to text for the python parser
-# echo "[STEP 3.1] jfr print (no_slowdown) -> ${JFR_NO_TXT}"
-# jfr print --events jdk.ExecutionSample,jdk.NativeMethodSample "${JFR_NO}" > "${JFR_NO_TXT}"
+#Convert JFR binaries to text for the python parser
+echo "[STEP 3.1] jfr print (no_slowdown) -> ${JFR_NO_TXT}"
+jfr print --events jdk.ExecutionSample,jdk.NativeMethodSample "${JFR_NO}" > "${JFR_NO_TXT}"
 
-# echo "[STEP 3.2] jfr print (slowdown) -> ${JFR_SLOW_TXT}"
-# jfr print --events jdk.ExecutionSample,jdk.NativeMethodSample "${JFR_SLOW}" > "${JFR_SLOW_TXT}"
+echo "[STEP 3.2] jfr print (slowdown) -> ${JFR_SLOW_TXT}"
+jfr print --events jdk.ExecutionSample,jdk.NativeMethodSample "${JFR_SLOW}" > "${JFR_SLOW_TXT}"
 
-# # Write per-run CSVs into processed/{async,jfr}/
-# # (I am assuming the python script writes to processed-dir/{async|jfr}/loops_profile.csv,
-# # so we give it different processed dirs to avoid overwriting.)
-# PROC_NO="${PROCESSED_DIR}/no_slowdown"
-# PROC_SLOW="${PROCESSED_DIR}/slowdown"
-# mkdir -p "${PROC_NO}" "${PROC_SLOW}"
+# Write per-run CSVs into processed/{async,jfr}/
+# (I am assuming the python script writes to processed-dir/{async|jfr}/loops_profile.csv,
+# so we give it different processed dirs to avoid overwriting.)
+PROC_NO="${PROCESSED_DIR}/no_slowdown"
+PROC_SLOW="${PROCESSED_DIR}/slowdown"
+mkdir -p "${PROC_NO}" "${PROC_SLOW}"
 
-# echo "[STEP 3.3] Build CSVs (no_slowdown)"
-# "${PY}" "${PROCESS_PROFILERS}" \
-#   --benchmark "${BENCHMARK}" \
-#   --suite "${SUITE}" \
-#   --mode "${MODE}" \
-#   --tag "${TAG}" \
-#   --processed-dir "${PROC_NO}" \
-#   --async-txt "${ASYNC_NO}" \
-#   --jfr-txt "${JFR_NO_TXT}"
+echo "[STEP 3.3] Build CSVs (no_slowdown)"
+"${PY}" "${PROCESS_PROFILERS}" \
+  --benchmark "${BENCHMARK}" \
+  --suite "${SUITE}" \
+  --mode "${MODE}" \
+  --tag "${TAG}" \
+  --processed-dir "${PROC_NO}" \
+  --async-txt "${ASYNC_NO}" \
+  --jfr-txt "${JFR_NO_TXT}"
 
-# echo "[STEP 3.4] Build CSVs (slowdown)"
-# "${PY}" "${PROCESS_PROFILERS}" \
-#   --benchmark "${BENCHMARK}" \
-#   --suite "${SUITE}" \
-#   --mode "${MODE}" \
-#   --tag "${TAG}" \
-#   --processed-dir "${PROC_SLOW}" \
-#   --async-txt "${ASYNC_SLOW}" \
-#   --jfr-txt "${JFR_SLOW_TXT}"
+echo "[STEP 3.4] Build CSVs (slowdown)"
+"${PY}" "${PROCESS_PROFILERS}" \
+  --benchmark "${BENCHMARK}" \
+  --suite "${SUITE}" \
+  --mode "${MODE}" \
+  --tag "${TAG}" \
+  --processed-dir "${PROC_SLOW}" \
+  --async-txt "${ASYNC_SLOW}" \
+  --jfr-txt "${JFR_SLOW_TXT}"
 
 PLOT="${ROOT_DIR}/scripts/plot_loopbenchmarks.py"
 

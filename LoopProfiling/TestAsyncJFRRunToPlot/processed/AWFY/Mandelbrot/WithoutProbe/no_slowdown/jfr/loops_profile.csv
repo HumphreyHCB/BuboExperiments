@@ -1,9 +1,21 @@
 benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,2,5724,6347,90.184339,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,1,362,6347,5.703482,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Mandelbrot.mandelbrot(int),,,244,6347,3.844336,no_marker
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,2,11,6347,0.173310,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,0,3,6347,0.047266,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,1,1,6347,0.015755,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"Run.printResult(long, int)",,,1,6347,0.015755,no_marker
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.jfr.internal.JVM.emitEvent(long, long, long)",,,1,6347,0.015755,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,2,5749,6407,89.729983,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,1,378,6407,5.899797,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Mandelbrot.mandelbrot(int),,,246,6407,3.839550,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,2,13,6407,0.202903,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,0,4,6407,0.062432,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.io.FileOutputStream.writeBytes(byte[], int, int, boolean)",,,3,6407,0.046824,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.io.PrintStream.println(String) line: 1011,,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.Math.round(float) line: 780,,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.lang.String.getBytes(byte[], int, byte) line: 4796",,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.lang.StringLatin1.toUpperCase(String, byte[], Locale) line: 494",,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy$7.accept(CodeBuilder) line: 1740,,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.nio.Buffer.position(int) line: 325,,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.nio.CharBuffer.wrap(char[], int, int) line: 443",,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.util.Properties$LineReader.readLine() line: 542,,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.internal.classfile.impl.DirectCodeBuilder$4.writeBody(BufWriterImpl) line: 394,,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.internal.classfile.impl.DirectMethodBuilder.with(MethodElement) line: 108,,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.internal.event.FileWriteEvent.enabled(),,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.jfr.internal.JVM.emitEvent(long, long, long)",,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"sun.nio.cs.StreamEncoder.implWrite(char[], int, int) line: 267",,,1,6407,0.015608,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"sun.nio.cs.UTF_8$Encoder.encodeLoop(CharBuffer, ByteBuffer) line: 563",,,1,6407,0.015608,no_marker

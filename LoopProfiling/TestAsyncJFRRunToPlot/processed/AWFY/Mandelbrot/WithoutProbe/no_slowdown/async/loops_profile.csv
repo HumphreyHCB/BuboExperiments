@@ -1,7 +1,88 @@
 benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,121,2,5744,6404,89.693941,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,121,1,394,6404,6.152405,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.mandelbrot,,,241,6404,3.763273,no_marker
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,121,0,12,6404,0.187383,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,120,2,11,6404,0.171768,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,120,1,2,6404,0.031230,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,121,2,7824595,8706775,89.867890,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,121,1,503256,8706775,5.780051,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.mandelbrot,,,346862,8706775,3.983817,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,120,2,15772,8706775,0.181146,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,121,0,7053,8706775,0.081006,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,generic_exec_single_[k],121,2,1247,8706775,0.014322,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,120,1,1049,8706775,0.012048,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,restore_fpregs_from_user_[k],121,2,390,8706775,0.004479,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Run.measure,,,247,8706775,0.002837,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.String* com.oracle.svm.core.util.Utf8::utf8ToString,,,228,8706775,0.002619,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,do_user_addr_fault_[k],,,216,8706775,0.002481,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.AbstractStringBuilder* java.lang.AbstractStringBuilder::append,,,216,8706775,0.002481,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,_raw_spin_unlock_irq_[k],121,2,207,8706775,0.002377,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,readConfiguration0,,,193,8706775,0.002217,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,syscall_enter_from_user_mode_[k],121,2,179,8706775,0.002056,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,void com.oracle.svm.core.genscavenge.GreyToBlackObjRefVisitor::visitObjectReferences,,,164,8706775,0.001884,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__x64_sys_rt_sigreturn_[k],121,2,160,8706775,0.001838,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,_invokeBasic,,,142,8706775,0.001631,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,void com.oracle.svm.core.genscavenge.GreyToBlackObjectVisitor::visitObject,,,138,8706775,0.001585,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__memcpy_avx_unaligned_erms,,,136,8706775,0.001562,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,sun.nio.cs.UTF_8$Encoder.encodeArrayLoop,,,135,8706775,0.001551,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,jdk.internal.util.DecimalDigits.stringSize,,,134,8706775,0.001539,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,_raw_spin_unlock_irqrestore_[k],,,132,8706775,0.001516,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,fpu__restore_sig_[k],121,2,132,8706775,0.001516,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.innerBenchmarkLoop,,,127,8706775,0.001459,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mandelbrot.verifyResult,,,127,8706775,0.001459,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.invoke.LambdaForm$MH.0x0000000092045400.linkToTargetMethod,,,113,8706775,0.001298,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,TypeArrayKlass::copy_array,,,106,8706775,0.001217,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,restore_sigcontext_[k],121,2,106,8706775,0.001217,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__fpu_restore_sig_[k],121,2,100,8706775,0.001149,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__tls_get_addr,,,99,8706775,0.001137,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.invoke.LambdaForm$MH.0x0000000092045000.invoke,,,99,8706775,0.001137,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,copy_user_enhanced_fast_string_[k],121,2,97,8706775,0.001114,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,generic_exec_single_[k],121,1,96,8706775,0.001103,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,ObjectSynchronizer::is_async_deflation_needed,,,91,8706775,0.001045,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,jdk.internal.util.DecimalDigits.uncheckedGetCharsLatin1,,,89,8706775,0.001022,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.StringCoding.implEncodeAsciiArray,,,86,8706775,0.000988,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,do_sigaltstack.constprop.0_[k],121,2,76,8706775,0.000873,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,void sun.security.provider.SHA2::implCompress0,,,76,8706775,0.000873,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Mutex::set_owner_implementation,,,74,8706775,0.000850,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,TypeArrayKlass::allocate_common,,,74,8706775,0.000850,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,filldir64_[k],,,74,8706775,0.000850,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,fpregs_mark_activate_[k],121,2,71,8706775,0.000815,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.StringLatin1.inflate,,,69,8706775,0.000792,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,jdk.internal.misc.Blocker.begin,,,68,8706775,0.000781,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__get_user_nocheck_8_[k],121,2,66,8706775,0.000758,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,copy_user_short_string_[k],121,2,66,8706775,0.000758,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,LightweightSynchronizer::enter,,,62,8706775,0.000712,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.StringConcatHelper.newArray,,,62,8706775,0.000712,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,memchr_[k],,,62,8706775,0.000712,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.io.PrintStream.writeln,,,59,8706775,0.000678,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.StringConcatHelper.stringSize,,,59,8706775,0.000678,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Klass::next_sibling,,,58,8706775,0.000666,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,generic_exec_single_[k],,,53,8706775,0.000609,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.StringConcatHelper.stringOf,,,53,8706775,0.000609,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.extended.AnchoringNode* LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.LoweringPhase::process,,,52,8706775,0.000597,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.String.getBytes,,,52,8706775,0.000597,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,InterpreterRuntime::ldc,,,51,8706775,0.000586,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,NoHandleMark::NoHandleMark,,,50,8706775,0.000574,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,sun.nio.cs.StreamEncoder.implWrite,,,50,8706775,0.000574,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply,,,50,8706775,0.000574,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__futex_abstimed_wait_common,,,48,8706775,0.000551,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,_linkToSpecial,,,48,8706775,0.000551,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.System$1.uncheckedEncodeASCII,,,48,8706775,0.000551,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.io.PrintStream.println,,,47,8706775,0.000540,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,void com.oracle.svm.core.UnmanagedMemoryUtil::copyLongsForward,,,47,8706775,0.000540,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,InstanceKlass::find_local_field_from_offset,,,46,8706775,0.000528,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.lang.System$Out.write,,,46,8706775,0.000528,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,G1CollectedHeap::is_in,,,45,8706775,0.000517,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,Run.printResult,,,45,8706775,0.000517,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,java.nio.charset.CharsetEncoder.encode,,,45,8706775,0.000517,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__get_user_nocheck_4_[k],121,2,43,8706775,0.000494,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__get_user_8_[k],,,42,8706775,0.000482,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,restore_altstack_[k],121,2,41,8706775,0.000471,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,do_syscall_64_[k],121,2,39,8706775,0.000448,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__audit_syscall_exit_[k],,,36,8706775,0.000413,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,set_current_blocked_[k],121,2,35,8706775,0.000402,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__do_softirq_[k],121,2,33,8706775,0.000379,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,update_sg_lb_stats_[k],121,2,33,8706775,0.000379,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,__audit_syscall_entry_[k],121,2,32,8706775,0.000368,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,load_balance_[k],121,2,32,8706775,0.000368,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,restore_fpregs_from_user_[k],121,1,31,8706775,0.000356,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,update_blocked_averages_[k],121,2,24,8706775,0.000276,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,finish_task_switch.isra.0_[k],,,23,8706775,0.000264,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,syscall_exit_work_[k],,,22,8706775,0.000253,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,syscall_exit_work_[k],121,2,20,8706775,0.000230,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,async,fput_many_[k],121,2,18,8706775,0.000207,

@@ -119,7 +119,7 @@ run_one() {
   local stdout_file="$3"
   local slowdown_enabled="$4"
 
-  local async_agent_opts="start,event=cpu,interval=10ms,file=${stacks_file}"
+  local async_agent_opts="start,event=cpu,interval=10us,file=${stacks_file}"
 
   echo
   echo "[RUN ${label}] async-profiler"

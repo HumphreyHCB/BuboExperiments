@@ -1,9 +1,14 @@
 benchmark,suite,mode,tag,profiler,method,comp_id,loop_id,samples,total_samples,runtime_share_pct,notes
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,2,12334,12972,95.081714,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,1,618,12972,4.764107,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,2,13,12972,0.100216,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Mandelbrot.mandelbrot(int),,,3,12972,0.023127,no_marker
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,0,1,12972,0.007709,
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.lang.String.<init>(char[], int, int) line: 314",,,1,12972,0.007709,no_marker
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.nio.CharBuffer.position(int) line: 1561,,,1,12972,0.007709,no_marker
-Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,jdk.jfr.internal.PlatformRecorder.takeNap(long) line: 537,,,1,12972,0.007709,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,2,12771,13530,94.390244,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,1,674,13530,4.981523,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,Mandelbrot.mandelbrot(int),,,63,13530,0.465632,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,2,12,13530,0.088692,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,559,0,2,13530,0.014782,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,...,558,1,1,13530,0.007391,
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"Run.printResult(long, int)",,,1,13530,0.007391,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int) line: 122",,,1,13530,0.007391,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.lang.invoke.MemberName.isField() line: 461,,,1,13530,0.007391,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,java.nio.CharBuffer.position(int) line: 1561,,,1,13530,0.007391,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"jdk.jfr.internal.event.EventWriter.beginEvent(EventConfiguration, long) line: 244",,,1,13530,0.007391,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,"sun.net.www.ParseUtil.encodePath(String, boolean) line: 78",,,1,13530,0.007391,no_marker
+Mandelbrot,AWFY,WithoutProbe,AUTO_PIPELINE,jfr,sun.nio.cs.StreamEncoder.implFlushBuffer() line: 315,,,1,13530,0.007391,no_marker
